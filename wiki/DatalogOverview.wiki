@@ -90,7 +90,7 @@ In addition to the database itself, Datalog lets you define a series of _inferen
                                        (:employee :id ?b-id :name ?y))
 }}}
 
-The `<--` operator represents implication.  The first form is the head of the rule, the remainder the body.  The meaning is that the head is true if each member of the body is true.  We can read this above rule as:
+The `<-` operator represents implication.  The first form is the head of the rule, the remainder the body.  The meaning is that the head is true if each member of the body is true.  We can read this above rule as:
 
   * An employee (?x) works for a boss (?y) if: in the :boss relation there is an employee id (?e-id) matched to a boss id (?b-id) *and* in the :employee relation that (?e-id) matches the name (?x) *and also* in the :employee relation the id (?b-id) matches the name (?y).
 
@@ -156,8 +156,6 @@ Where wp is the result of (build-work-plan ...) and db is a database.  The last 
 A completed example is provided at [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/example.clj].
 
 (Author: Jeffrey Straszheim)
-
-
 
 
 
