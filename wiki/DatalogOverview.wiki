@@ -28,7 +28,6 @@ Tables are build with *make-database*, like this:
       (index :can-do-job :position)
 
       (relation :job-replacement [:job :can-be-done-by])
-      ;(index :job-replacement :can-be-done-by)
 
       (relation :job-exceptions [:id :job]))
 }}}
@@ -82,3 +81,85 @@ Functions that add/remove individual tuples are also provided.  Use the source.
 
 
 == Rules ==
+
+In addition to the database itself, Datalog lets you define a series of ''inference rules'' to apply to your data.  Rules look like this:
+
+{{{
+(<- (:works-for :employee ?x :boss ?y) (:boss :employee-id ?e-id :boss-id ?b-id)
+                                       (:employee :id ?e-id :name ?x)
+                                       (:employee :id ?b-id :name ?y))
+}}}
+
+The ''<--'' operator represents implication.  The first form is the head of the rule, the remainder the body.  The meaning is that the head is true if each member of the body is true.  We can read this above rule as:
+
+  * An employee (?x) works for a boss (?y) if: (1.) in the :boss relation there is an employee id (?e-id) matched to a boss id (?b-id) *and* in the :employee relation that (?e-id) matches the name (?x) *and also* in the :employee relation the id (?b-id) matches the name (?y).
+
+Notice two things:  Logic variables are prefixed by a '?', and the meaning of those variables in a rule can join together entities.
+
+That same rule might be expressed in SQL as:
+
+{{{
+select e.name, b.name
+   from employee as e, employee as b, boss
+   where e.id = boss.employee-id and b.id = boss.boss-id
+}}}
+
+However, unlike SQL, Datalog rules can be recursive.  Like this:
+
+{{{
+ (<- (:works-for :employee ?x :boss ?y) (:works-for :employee ?x :boss ?z)
+                                        (:works-for :employee ?z :boss ?y))
+}}}
+
+If you combine these two rules, this builds a ''transitive closure'' of the works-for relation.  It will return not only ?x's direct boss, but the boss of his boss, and so on.  This cannot be done in most forms of SQL.
+
+=== Negation and Conditionals ===
+
+''Todo''
+
+== Queries ==
+
+A query is how you request information from a set of rules and a database.  Queries look like this:
+
+{{{
+  (?- :works-for :employee ??name :boss ?y)
+}}}
+
+Notice the double '?'!
+
+This asks for the name and boss columns from the works-for relation, which was defined by the two rules above.  The double ?? allow you to parameterize your query.
+
+== Work Plans ==
+
+A set of work rules and a query can form a work plan.  It is done like this:
+
+{{{
+  (build-work-plan rules (?- :works-for :employee '??name :boss ?x))
+}}}
+
+This takes a set of rules and a query, and performs some basic filtering an optimization.  it is a fairly expensive operation, so try to build the plans you need once in your program, or perhaps cache them somehow.
+
+In SQL, a work plan is similar to a prepared statement.
+
+== Running your Work Plan ==
+
+You run a work plan like this:
+
+{{{
+  (run-work-plan wp db {'??name "Albert"})
+}}}
+
+Where wp is the result of (build-work-plan ...) and db is a database.  The last argument is a map of bindings.  It provides the specific values for any ??X forms in your query.  Given the rules and query defined above, it should return a sequence of tuples of all the people that "Albert" works for.
+
+== Examples ==
+
+A completed example is provided at [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/example.clj].
+
+(Athor: Jeffrey Straszheim)
+
+
+
+
+
+
+
