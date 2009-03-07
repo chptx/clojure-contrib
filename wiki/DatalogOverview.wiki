@@ -4,9 +4,9 @@
 
 = Introduction =
 
-Datalog is a logical query language.  It exists somewhere between relational algebra (the formal theory behind SQL) and Prolog, but is closer in motivation to the former than the later.  It was invented to apply some of the principles of logic programming to database theory.  Its primary addition to the semantics of databases is ''recursive'' queries.  Examples will be provided below.
+Datalog is a logical query language.  It exists somewhere between relational algebra (the formal theory behind SQL) and Prolog, but is closer in motivation to the former than the later.  It was invented to apply some of the principles of logic programming to database theory.  Its primary addition to the semantics of databases is _recursive_ queries.  Examples will be provided below.
 
-The implementation of Datalog that is provided (in this library) departs a bit from the original model insofar as it supports ''in memory'' data structures only.  It is intended to give developers tools to use relational modeling for their data.  A good overview of why you would want to do this is Ben Mosely's ''Functional Relational Programming'' material, found here: [http://web.mac.com/ben_moseley/frp/frp.html].
+The implementation of Datalog that is provided (in this library) departs a bit from the original model insofar as it supports _in memory_ data structures only.  It is intended to give developers tools to use relational modeling for their data.  A good overview of why you would want to do this is Ben Mosely's _Functional Relational Programming_ material, found here: [http://web.mac.com/ben_moseley/frp/frp.html].
 
 = Details =
 
@@ -32,7 +32,7 @@ Tables are build with *make-database*, like this:
       (relation :job-exceptions [:id :job]))
 }}}
 
-The schema can be modified by *add-relation* and *add-index*.  Under the hood, it is standard Clojure map from relation name to relation, and can be directly modified if needed.
+The schema can be modified by `add-relation` and `add-index`.  Under the hood, it is standard Clojure map from relation name to relation, and can be directly modified if needed.
 
 Data is added like this:
 
@@ -82,7 +82,7 @@ Functions that add/remove individual tuples are also provided.  Use the source.
 
 == Rules ==
 
-In addition to the database itself, Datalog lets you define a series of ''inference rules'' to apply to your data.  Rules look like this:
+In addition to the database itself, Datalog lets you define a series of _inference rules_ to apply to your data.  Rules look like this:
 
 {{{
 (<- (:works-for :employee ?x :boss ?y) (:boss :employee-id ?e-id :boss-id ?b-id)
@@ -90,9 +90,9 @@ In addition to the database itself, Datalog lets you define a series of ''infere
                                        (:employee :id ?b-id :name ?y))
 }}}
 
-The ''<--'' operator represents implication.  The first form is the head of the rule, the remainder the body.  The meaning is that the head is true if each member of the body is true.  We can read this above rule as:
+The `<--` operator represents implication.  The first form is the head of the rule, the remainder the body.  The meaning is that the head is true if each member of the body is true.  We can read this above rule as:
 
-  * An employee (?x) works for a boss (?y) if: (1.) in the :boss relation there is an employee id (?e-id) matched to a boss id (?b-id) *and* in the :employee relation that (?e-id) matches the name (?x) *and also* in the :employee relation the id (?b-id) matches the name (?y).
+  * An employee (?x) works for a boss (?y) if: in the :boss relation there is an employee id (?e-id) matched to a boss id (?b-id) *and* in the :employee relation that (?e-id) matches the name (?x) *and also* in the :employee relation the id (?b-id) matches the name (?y).
 
 Notice two things:  Logic variables are prefixed by a '?', and the meaning of those variables in a rule can join together entities.
 
@@ -111,11 +111,11 @@ However, unlike SQL, Datalog rules can be recursive.  Like this:
                                         (:works-for :employee ?z :boss ?y))
 }}}
 
-If you combine these two rules, this builds a ''transitive closure'' of the works-for relation.  It will return not only ?x's direct boss, but the boss of his boss, and so on.  This cannot be done in most forms of SQL.
+If you combine these two rules, this builds a _transitive closure_ of the works-for relation.  It will return not only ?x's direct boss, but the boss of his boss, and so on.  This cannot be done in most forms of SQL.
 
 === Negation and Conditionals ===
 
-''Todo''
+_Todo_
 
 == Queries ==
 
@@ -155,9 +155,7 @@ Where wp is the result of (build-work-plan ...) and db is a database.  The last 
 
 A completed example is provided at [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/example.clj].
 
-(Athor: Jeffrey Straszheim)
-
-
+(Author: Jeffrey Straszheim)
 
 
 
