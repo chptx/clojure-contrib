@@ -1,0 +1,54 @@
+#summary An api-out of the API of clojure.contrib.shell-out
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.shell-out=
+==Public Variables and Functions==
+[[#*sh-dir*]]
+----
+===(_*sh-dir*_)===
+[[#*sh-env*]]
+----
+===(_*sh-env*_)===
+[[#sh]]
+----
+===(_sh_ & args)===
+Passes the given strings to Runtime.exec() to launch a sub-process.
+
+  Options are
+
+  :in    may be given followed by a String specifying text to be fed to the 
+         sub-process's stdin.  
+  :out   option may be given followed by :bytes or a String. If a String 
+         is given, it will be used as a character encoding name (for 
+         example "UTF-8" or "ISO-8859-1") to convert the 
+         sub-process's stdout to a String which is returned.
+         If :bytes is given, the sub-process's stdout will be stored in 
+         a byte array and returned.  Defaults to UTF-8.
+  :return-map
+         when followed by boolean true, sh returns a map of
+           :exit => sub-process's exit code
+           :out  => sub-process's stdout (as byte[] or String)
+           :err  => sub-process's stderr (as byte[] or String)
+         when not given or followed by false, sh returns a single
+         array or String of the sub-process's stdout followed by its
+         stderr
+  :env   override the process env with a map (or the underlying Java
+         String[] if you are a masochist).
+  :dir   override the process dir with a String or java.io.File.
+
+  You can bind :env or :dir for multiple operations using with-sh-env
+  and with-sh-dir.
+[[#with-sh-dir]]
+----
+===(_with-sh-dir_ dir & forms)===
+====Macro====
+[[#with-sh-env]]
+----
+===(_with-sh-env_ env & forms)===
+====Macro====

@@ -1,0 +1,29 @@
+#summary An api-out of the API of clojure.contrib.pprint.examples.hexdump
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.pprint.examples.hexdump=
+==Public Variables and Functions==
+[[#*buffer-length*]]
+----
+===(_*buffer-length*_)===
+[[#-main]]
+----
+===(_-main_ & args)===
+[[#hexdump]]
+----
+===(_hexdump_ in-stream)===
+===(_hexdump_ in-stream out-stream)===
+===(_hexdump_ in-stream out-stream offset)===
+[[#hexdump-file]]
+----
+===(_hexdump-file_ file-name)===
+===(_hexdump-file_ file-name stream)===
+[[#zip-array]]
+----
+===(_zip-array_ base-offset arr)===

@@ -1,0 +1,73 @@
+#summary An api-out of the API of clojure.contrib.generic.math-functions
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.generic.math-functions=
+==Public Variables and Functions==
+[[#abs]]
+----
+===(_abs_)===
+[[#acos]]
+----
+===(_acos_)===
+[[#approx=]]
+----
+===(_approx=_ x y eps)===
+Return true if the absolute value of the difference between x and y
+   is less than eps
+[[#asin]]
+----
+===(_asin_)===
+[[#atan]]
+----
+===(_atan_)===
+[[#atan2]]
+----
+===(_atan2_)===
+[[#ceil]]
+----
+===(_ceil_)===
+[[#conjugate]]
+----
+===(_conjugate_)===
+[[#cos]]
+----
+===(_cos_)===
+[[#exp]]
+----
+===(_exp_)===
+[[#floor]]
+----
+===(_floor_)===
+[[#log]]
+----
+===(_log_)===
+[[#pow]]
+----
+===(_pow_)===
+[[#rint]]
+----
+===(_rint_)===
+[[#round]]
+----
+===(_round_)===
+[[#sgn]]
+----
+===(_sgn_)===
+[[#sin]]
+----
+===(_sin_)===
+[[#sqr]]
+----
+===(_sqr_)===
+[[#sqrt]]
+----
+===(_sqrt_)===
+[[#tan]]
+----
+===(_tan_)===

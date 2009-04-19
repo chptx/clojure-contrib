@@ -1,0 +1,34 @@
+#summary An api-out of the API of clojure.contrib.gen-html-docs
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.gen-html-docs=
+==Public Variables and Functions==
+[[#*script*]]
+----
+===(_*script*_)===
+[[#*style*]]
+----
+===(_*style*_)===
+[[#generate-all-namespaces-action-script]]
+----
+===(_generate-all-namespaces-action-script_ action toggle-text libs)===
+[[#generate-documentation]]
+----
+===(_generate-documentation_ libs)===
+Returns a string which is the HTML documentation for the libraries
+named by libs. Libs is a vector of symbols identifying Clojure
+libraries.
+[[#generate-documentation-to-file]]
+----
+===(_generate-documentation-to-file_ path libs)===
+Calls generate-documentation on the libraries named by libs and
+emits the generated HTML to the path named by path.
+[[#generate-toggle-namespace-script]]
+----
+===(_generate-toggle-namespace-script_ action toggle-text lib)===

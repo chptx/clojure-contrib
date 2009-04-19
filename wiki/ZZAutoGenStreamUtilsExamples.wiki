@@ -1,0 +1,38 @@
+#summary An api-out of the API of clojure.contrib.stream-utils.examples
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.stream-utils.examples=
+==Public Variables and Functions==
+[[#fib-stream]]
+----
+===(_fib-stream_)===
+[[#last-two-fib]]
+----
+===(_last-two-fib_)===
+[[#my-filter]]
+----
+===(_my-filter_ p xs)===
+[[#my-map]]
+----
+===(_my-map_ f & streams)===
+[[#my-map-1]]
+----
+===(_my-map-1_ f xs)===
+[[#my-map-2]]
+----
+===(_my-map-2_ f xs ys)===
+[[#rng-seed]]
+----
+===(_rng-seed_)===
+[[#s]]
+----
+===(_s_)===
+[[#sum-two]]
+----
+===(_sum-two_ xs)===

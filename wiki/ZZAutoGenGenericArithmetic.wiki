@@ -1,0 +1,37 @@
+#summary An api-out of the API of clojure.contrib.generic.arithmetic
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.generic.arithmetic=
+==Public Variables and Functions==
+[[#*]]
+----
+===(_*_)===
+[[#+]]
+----
+===(_+_)===
+[[#-]]
+----
+===(_-_)===
+[[#/]]
+----
+===(_/_)===
+[[#defmethod*]]
+----
+===(_defmethod*_ ns name & args)===
+====Macro====
+[[#one]]
+----
+===(_one_)===
+[[#qsym]]
+----
+===(_qsym_ ns sym)===
+====Macro====
+[[#zero]]
+----
+===(_zero_)===

@@ -1,0 +1,24 @@
+#summary An api-out of the API of clojure.contrib.datalog
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.datalog=
+==Public Variables and Functions==
+[[#build-work-plan]]
+----
+===(_build-work-plan_ rules query)===
+Given a list of rules and a query, build a work plan that can be
+   used to execute the query.
+[[#run-work-plan]]
+----
+===(_run-work-plan_ work-plan database query-bindings)===
+Given a work plan, a database, and some query bindings, run the
+   work plan and return the results.
+[[#work-plan]]
+----
+===(_work-plan_)===

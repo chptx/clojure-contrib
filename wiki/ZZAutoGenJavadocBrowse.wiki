@@ -1,0 +1,27 @@
+#summary An api-out of the API of clojure.contrib.javadoc.browse
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.javadoc.browse=
+==Public Variables and Functions==
+[[#*open-url-script*]]
+----
+===(_*open-url-script*_)===
+[[#browse-url]]
+----
+===(_browse-url_ url)===
+[[#open-url-in-browser]]
+----
+===(_open-url-in-browser_ url)===
+Opens url (a string) in the default system web browser.  May not
+  work on all platforms.  Returns url on success, nil if not
+  supported.
+[[#open-url-in-swing]]
+----
+===(_open-url-in-swing_ url)===
+Opens url (a string) in a Swing window.

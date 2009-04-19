@@ -1,0 +1,27 @@
+#summary An api-out of the API of clojure.contrib.set
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.set=
+==Public Variables and Functions==
+[[#proper-subset?]]
+----
+===(_proper-subset?_ set1 set2)===
+Is s1 a proper subset of s2?
+[[#proper-superset?]]
+----
+===(_proper-superset?_ set1 set2)===
+Is s1 a proper superset of s2?
+[[#subset?]]
+----
+===(_subset?_ set1 set2)===
+Is set1 a subset of set2?
+[[#superset?]]
+----
+===(_superset?_ set1 set2)===
+Is set1 a superset of set2?

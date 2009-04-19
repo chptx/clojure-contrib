@@ -1,0 +1,221 @@
+#summary An api-out of the API of clojure.contrib.monads
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.monads=
+==Public Variables and Functions==
+[[#call-cc]]
+----
+===(_call-cc_ f)===
+A computation in the cont monad that calls function f with a single
+   argument representing the current continuation. The function f should
+   return a continuation (which becomes the return value of call-cc),
+   or call the passed-in current continuation to terminate.
+[[#censor]]
+----
+===(_censor_ f mv)===
+[[#cont-m]]
+----
+===(_cont-m_)===
+Monad describing computations in continuation-passing style. The monadic
+   values are functions that are called with a single argument representing
+   the continuation of the computation, to which they pass their result.
+[[#defmonad]]
+----
+===(_defmonad_ name doc-string operations)===
+===(_defmonad_ name operations)===
+====Macro====
+Define a named monad by defining the monad operations. The definitions
+    are written like bindings to the monad operations m-bind and
+    m-result (required) and m-zero and m-plus (optional).
+[[#defmonadfn]]
+----
+===(_defmonadfn_ name doc-string args expr)===
+===(_defmonadfn_ name args expr)===
+====Macro====
+Like defn, but for functions that use monad operations and are used inside
+   a with-monad block.
+[[#domonad]]
+----
+===(_domonad_ steps expr)===
+===(_domonad_ name steps expr)===
+====Macro====
+Monad comprehension. Takes the name of a monad, a vector of steps
+    given as binding-form/monadic-expression pairs, and a result value
+    specified by expr. The monadic-expression terms can use the binding
+    variables of the previous steps.
+    If the monad contains a definition of m-zero, the step list can also
+    contain conditions of the form :when p, where the predicate p can
+    contain the binding variables from all previous steps.
+    A clause of the form :let [binding-form expr ...], where the bindings
+    are given as a vector as for the use in let, establishes additional
+    bindings that can be used in the following steps.
+[[#fetch-state]]
+----
+===(_fetch-state_)===
+[[#fetch-val]]
+----
+===(_fetch-val_ key)===
+[[#identity-m]]
+----
+===(_identity-m_)===
+Monad describing plain computations. This monad does in fact nothing
+    at all. It is useful for testing, for combination with monad
+    transformers, and for code that is parameterized with a monad.
+[[#listen]]
+----
+===(_listen_ mv)===
+[[#m+m-chain+m]]
+----
+===(_m+m-chain+m_ m-bind m-result m-zero m-plus steps)===
+[[#m+m-fmap+m]]
+----
+===(_m+m-fmap+m_ m-bind m-result m-zero m-plus f m)===
+[[#m+m-join+m]]
+----
+===(_m+m-join+m_ m-bind m-result m-zero m-plus m)===
+[[#m+m-map+m]]
+----
+===(_m+m-map+m_ m-bind m-result m-zero m-plus f xs)===
+[[#m+m-seq+m]]
+----
+===(_m+m-seq+m_ m-bind m-result m-zero m-plus ms)===
+[[#m+write+m]]
+----
+===(_m+write+m_ m-bind m-result m-zero m-plus v)===
+[[#m-chain]]
+----
+===(_m-chain_ steps)===
+====Macro====
+Chains together monadic computation steps that are each functions
+   of one parameter. Each step is called with the result of the previous
+   step as its argument. (m-chain (step1 step2)) is equivalent to
+   (fn [x] (domonad [r1 (step1 x) r2 (step2 r1)] r2)).
+[[#m-fmap]]
+----
+===(_m-fmap_ f m)===
+====Macro====
+Bind the monadic value m to the function returning (f x) for argument x
+[[#m-join]]
+----
+===(_m-join_ m)===
+====Macro====
+Converts a monadic value containing a monadic value into a 'simple'
+   monadic value.
+[[#m-lift]]
+----
+===(_m-lift_ n f)===
+====Macro====
+Converts a function f of n arguments into a function of n
+  monadic arguments returning a monadic value.
+[[#m-map]]
+----
+===(_m-map_ f xs)===
+====Macro====
+'Executes' the sequence of monadic values resulting from mapping
+   f onto the values xs. f must return a monadic value.
+[[#m-seq]]
+----
+===(_m-seq_ ms)===
+====Macro====
+'Executes' the monadic values in ms and returns a sequence of the
+   basic values contained in them.
+[[#m-when]]
+----
+===(_m-when_ test m-expr)===
+====Macro====
+If test if logical true, return monadic value m-expr, else return
+   (m-result nil).
+[[#m-when-not]]
+----
+===(_m-when-not_ test m-expr)===
+====Macro====
+If test if logical false, return monadic value m-expr, else return
+   (m-result nil).
+[[#maybe-m]]
+----
+===(_maybe-m_)===
+Monad describing computations with possible failures. Failure is
+    represented by nil, any other value is considered valid. As soon as
+    a step returns nil, the whole computation will yield nil as well.
+[[#maybe-t]]
+----
+===(_maybe-t_ m)===
+===(_maybe-t_ m nothing which-m-plus)===
+Monad transformer that transforms a monad m into a monad in which
+   the base values can be invalid (represented by nothing, which defaults
+   to nil). The third argument chooses if m-zero and m-plus are inherited
+   from the base monad (use :m-plus-from-base) or adopt maybe-like
+   behaviour (use :m-plus-from-maybe).
+[[#monad]]
+----
+===(_monad_ operations)===
+====Macro====
+Define a monad by defining the monad operations. The definitions
+    are written like bindings to the monad operations m-bind and
+    m-result (required) and m-zero and m-plus (optional).
+[[#run-cont]]
+----
+===(_run-cont_ c)===
+Execute the computation c in the cont monad and return its result.
+[[#sequence-m]]
+----
+===(_sequence-m_)===
+Monad describing multi-valued computations, i.e. computations
+    that can yield multiple values. Any object implementing the seq
+    protocol can be used as a monadic value.
+[[#sequence-t]]
+----
+===(_sequence-t_ m)===
+Monad transformer that transforms a monad m into a monad in which
+   the base values are sequences.
+[[#set-m]]
+----
+===(_set-m_)===
+Monad describing multi-valued computations, like sequence-m,
+    but returning sets of results instead of sequences of results.
+[[#set-state]]
+----
+===(_set-state_ s)===
+[[#set-val]]
+----
+===(_set-val_ key val)===
+[[#state-m]]
+----
+===(_state-m_)===
+Monad describing stateful computations. The monadic values have the
+    structure (fn [old-state] (list result new-state)).
+[[#state-t]]
+----
+===(_state-t_ m)===
+Monad transformer that transforms a monad m into a monad of stateful
+  computations that have the base monad type as their result.
+[[#update-state]]
+----
+===(_update-state_ f)===
+[[#update-val]]
+----
+===(_update-val_ key f)===
+[[#with-monad]]
+----
+===(_with-monad_ name & exprs)===
+====Macro====
+Evaluates an expression after replacing the keywords defining the
+    monad operations by the functions associated with these keywords
+    in the monad definition given by name.
+[[#write]]
+----
+===(_write_ v)===
+====Macro====
+[[#writer-m]]
+----
+===(_writer-m_ empty-accumulator)===
+Monad describing computations that accumulate data on the side, e.g. for
+   logging. The monadic values have the structure [value log]. Any of the
+   accumulators from clojure.contrib.accumulators can be used for storing the
+   log data. Its empty value is passed as a parameter.

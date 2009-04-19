@@ -1,0 +1,42 @@
+#summary An api-out of the API of clojure.contrib.pprint.utilities
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.pprint.utilities=
+==Public Variables and Functions==
+[[#consume]]
+----
+===(_consume_ func initial-context)===
+[[#consume-while]]
+----
+===(_consume-while_ func initial-context)===
+[[#ltrim]]
+----
+===(_ltrim_ s c)===
+[[#map-passing-context]]
+----
+===(_map-passing-context_ func initial-context lis)===
+[[#prefix-count]]
+----
+===(_prefix-count_ aseq val)===
+[[#prerr]]
+----
+===(_prerr_ & args)===
+[[#prlabel]]
+----
+===(_prlabel_ prefix arg & more-args)===
+====Macro====
+[[#rtrim]]
+----
+===(_rtrim_ s c)===
+[[#tuple-map]]
+----
+===(_tuple-map_ m v1)===
+[[#unzip-map]]
+----
+===(_unzip-map_ m)===

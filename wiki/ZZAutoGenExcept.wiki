@@ -1,0 +1,44 @@
+#summary An api-out of the API of clojure.contrib.except
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.except=
+==Public Variables and Functions==
+[[#throw-arg]]
+----
+===(_throw-arg_ & args)===
+Throws an IllegalArgumentException. All arguments are optional:
+
+        format? format-args*
+
+  - format is a format string for clojure/format
+  - format-args are objects that correspond to format specifiers in
+    format.
+[[#throw-if]]
+----
+===(_throw-if_ test & args)===
+Throws an Exception or Error if test is true. args are those documented
+  for throwf.
+[[#throw-if-not]]
+----
+===(_throw-if-not_ test & args)===
+Throws an Exception or Error if test is false. args are those documented
+  for throwf.
+[[#throwf]]
+----
+===(_throwf_ & args)===
+Throws an Exception or Error with an optional message formatted using
+  clojure/format. All arguments are optional:
+
+      class? format? format-args*
+
+  - class defaults to Exception, if present it must name a kind of
+    Throwable
+  - format is a format string for clojure/format
+  - format-args are objects that correspond to format specifiers in
+    format.

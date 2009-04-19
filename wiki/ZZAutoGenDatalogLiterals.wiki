@@ -1,0 +1,126 @@
+#summary An api-out of the API of clojure.contrib.datalog.literals
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.datalog.literals=
+==Public Variables and Functions==
+[[#adorned-literal]]
+----
+===(_adorned-literal_)===
+When passed a set of bound columns, returns the adorned literal
+[[#atomic-literal]]
+----
+===(_atomic-literal_)===
+[[#build-atom]]
+----
+===(_build-atom_ f type)===
+Returns an unevaluated expression (to be used in a macro) of an
+   atom.
+[[#build-literal]]
+----
+===(_build-literal_)===
+(Returns an unevaluated expression (to be used in macros) of a
+   literal.
+[[#build-seed-bindings]]
+----
+===(_build-seed-bindings_ s)===
+Given a seed literal, already adorned and in magic form, convert
+   its bound constants to new variables.
+[[#conditional-literal]]
+----
+===(_conditional-literal_)===
+[[#conditional-symbol]]
+----
+===(_conditional-symbol_)===
+[[#delta-literal]]
+----
+===(_delta-literal_ l)===
+Given a literal l, return a delta version
+[[#display-literal]]
+----
+===(_display-literal_)===
+Converts a struct representing a literal to a normal list
+[[#get-adorned-bindings]]
+----
+===(_get-adorned-bindings_ pred)===
+Get the bindings from this adorned literal.
+[[#get-base-predicate]]
+----
+===(_get-base-predicate_ pred)===
+Get the base predicate from this predicate.
+[[#get-cs-from-vs]]
+----
+===(_get-cs-from-vs_)===
+From a set of vars, get the columns
+[[#get-self-bound-cs]]
+----
+===(_get-self-bound-cs_)===
+Get the columns that are bound withing the literal.
+[[#get-vs-from-cs]]
+----
+===(_get-vs-from-cs_)===
+From a set of columns, return the vars
+[[#join-literal]]
+----
+===(_join-literal_)===
+Given a database (db), a literal (lit) and a seq of bindings (bs),
+   return a new seq of bindings by joining this literal.
+[[#literal-appropriate?]]
+----
+===(_literal-appropriate?_)===
+When passed a set of bound vars, determines if this literal can be
+   used during this point of a SIP computation.
+[[#literal-columns]]
+----
+===(_literal-columns_)===
+Return the column names this applies to
+[[#literal-magic?]]
+----
+===(_literal-magic?_ lit)===
+Is this literal magic?
+[[#literal-predicate]]
+----
+===(_literal-predicate_)===
+Return the predicate/relation this conditional operates over
+[[#literal-vars]]
+----
+===(_literal-vars_)===
+Returns the logic vars used by this literal
+[[#magic-literal]]
+----
+===(_magic-literal_ l)===
+Create a magic version of this adorned predicate.
+[[#negated-literal]]
+----
+===(_negated-literal_ l)===
+Given a literal l, return a negated version
+[[#negated?]]
+----
+===(_negated?_ l)===
+Is this literal a negated literal?
+[[#negation-symbol]]
+----
+===(_negation-symbol_)===
+[[#negative-vars]]
+----
+===(_negative-vars_)===
+Returns the logic vars used in a negative position
+[[#positive-vars]]
+----
+===(_positive-vars_)===
+Returns the logic vars used in a positive position
+[[#positive?]]
+----
+===(_positive?_ l)===
+Is this a positive literal?
+[[#project-literal]]
+----
+===(_project-literal_ db lit bs)===
+===(_project-literal_ db lit bs var?)===
+Project a stream of bindings onto a literal/relation. Returns a new
+   db.

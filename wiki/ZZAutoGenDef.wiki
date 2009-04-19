@@ -1,0 +1,65 @@
+#summary An api-out of the API of clojure.contrib.def
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.def=
+==Public Variables and Functions==
+[[#defalias]]
+----
+===(_defalias_ name orig)===
+===(_defalias_ name orig doc)===
+====Macro====
+Defines an alias for a var: a new var with the same root binding (if
+  any) and similar metadata. The metadata of the alias is its initial
+  metadata (as provided by def) merged into the metadata of the original.
+[[#defhinted]]
+----
+===(_defhinted_ sym init)===
+====Macro====
+Defines a var with a type hint matching the class of the given
+  init.  Be careful about using any form of 'def' or 'binding' to a
+  value of a different type.  See http://paste.lisp.org/display/73344
+[[#defmacro-]]
+----
+===(_defmacro-_ name & decls)===
+====Macro====
+Same as defmacro but yields a private definition
+[[#defonce-]]
+----
+===(_defonce-_ name expr)===
+===(_defonce-_ name expr doc)===
+====Macro====
+Same as defonce but yields a private definition
+[[#defstruct-]]
+----
+===(_defstruct-_ name & decls)===
+====Macro====
+Same as defstruct but yields a private definition
+[[#defunbound]]
+----
+===(_defunbound_ name)===
+===(_defunbound_ name doc)===
+====Macro====
+Defines an unbound var with optional doc string
+[[#defunbound-]]
+----
+===(_defunbound-_ name & decls)===
+====Macro====
+Same as defunbound but yields a private definition
+[[#defvar]]
+----
+===(_defvar_ name)===
+===(_defvar_ name init)===
+===(_defvar_ name init doc)===
+====Macro====
+Defines a var with an optional intializer and doc string
+[[#defvar-]]
+----
+===(_defvar-_ name & decls)===
+====Macro====
+Same as defvar but yields a private definition

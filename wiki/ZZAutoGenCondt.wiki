@@ -1,0 +1,26 @@
+#summary An api-out of the API of clojure.contrib.condt
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.condt=
+==Public Variables and Functions==
+[[#condt]]
+----
+===(_condt_ expr & clauses)===
+====Macro====
+expr is a template expression (see template), clauses are test/expr
+  pairs like cond.  Evalautes the template on each test value, one at
+  a time.  If a test returns logical true, condt evaluates the
+  corresponding expr and returns its value.  If none of the tests are
+  true, and there are an odd number of clauses, the last clause is
+  evaluated, otherwise returns nil.
+[[#econdt]]
+----
+===(_econdt_ expr & clauses)===
+====Macro====
+Like condt but throws Exception if no tests match.

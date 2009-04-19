@@ -1,0 +1,62 @@
+#summary An api-out of the API of clojure.contrib.test-is.tests
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.test-is.tests=
+==Public Variables and Functions==
+[[#can-catch-unexpected-exceptions]]
+----
+===(_can-catch-unexpected-exceptions_)===
+[[#can-test-=]]
+----
+===(_can-test-=_)===
+[[#can-test-anonymous-fn]]
+----
+===(_can-test-anonymous-fn_)===
+[[#can-test-boolean]]
+----
+===(_can-test-boolean_)===
+[[#can-test-instance]]
+----
+===(_can-test-instance_)===
+[[#can-test-method-call]]
+----
+===(_can-test-method-call_)===
+[[#can-test-nil]]
+----
+===(_can-test-nil_)===
+[[#can-test-regexps]]
+----
+===(_can-test-regexps_)===
+[[#can-test-symbol]]
+----
+===(_can-test-symbol_)===
+[[#can-test-thrown]]
+----
+===(_can-test-thrown_)===
+[[#can-test-thrown-with-msg]]
+----
+===(_can-test-thrown-with-msg_)===
+[[#can-test-unbound-function]]
+----
+===(_can-test-unbound-function_)===
+[[#can-test-unbound-symbol]]
+----
+===(_can-test-unbound-symbol_)===
+[[#custom-report]]
+----
+===(_custom-report_ event msg expected actual)===
+[[#does-not-exist]]
+----
+===(_does-not-exist_)===
+[[#original-report]]
+----
+===(_original-report_)===
+[[#test-ns-hook]]
+----
+===(_test-ns-hook_)===

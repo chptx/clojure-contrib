@@ -1,0 +1,78 @@
+#summary An api-out of the API of clojure.contrib.sql.test
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.sql.test=
+==Public Variables and Functions==
+[[#create-fruit]]
+----
+===(_create-fruit_)===
+Create a table
+[[#db]]
+----
+===(_db_)===
+[[#db-exception]]
+----
+===(_db-exception_)===
+Demonstrate rolling back a partially completed transaction on exception
+[[#db-get-tables]]
+----
+===(_db-get-tables_)===
+Demonstrate getting table info
+[[#db-grade-a]]
+----
+===(_db-grade-a_)===
+Print rows describing all grade a fruit (grade between 90 and 100)
+[[#db-grade-range]]
+----
+===(_db-grade-range_ min max)===
+Print rows describing fruit that are within a grade range
+[[#db-read]]
+----
+===(_db-read_)===
+Read the entire fruit table
+[[#db-read-all]]
+----
+===(_db-read-all_)===
+Return all the rows of the fruit table as a vector
+[[#db-rollback]]
+----
+===(_db-rollback_)===
+Demonstrate a rollback-only trasaction
+[[#db-update]]
+----
+===(_db-update_)===
+Update two fruits as a transaction
+[[#db-update-appearance-cost]]
+----
+===(_db-update-appearance-cost_ name appearance cost)===
+Update the appearance and cost of the named fruit
+[[#db-update-or-insert]]
+----
+===(_db-update-or-insert_ record)===
+Updates or inserts a fruit
+[[#db-write]]
+----
+===(_db-write_)===
+Write initial values to the database as a transaction
+[[#drop-fruit]]
+----
+===(_drop-fruit_)===
+Drop a table
+[[#insert-records-fruit]]
+----
+===(_insert-records-fruit_)===
+Insert records, maps from keys specifying columns to values
+[[#insert-rows-fruit]]
+----
+===(_insert-rows-fruit_)===
+Insert complete rows
+[[#insert-values-fruit]]
+----
+===(_insert-values-fruit_)===
+Insert rows with values for only specific columns

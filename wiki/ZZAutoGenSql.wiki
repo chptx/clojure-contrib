@@ -1,0 +1,128 @@
+#summary An api-out of the API of clojure.contrib.sql
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.sql=
+==Public Variables and Functions==
+[[#connection]]
+----
+===(_connection_)===
+Returns the current database connection (or throws if there is none)
+[[#create-table]]
+----
+===(_create-table_ name & specs)===
+Creates a table on the open database connection given a table name and
+  specs. Each spec is either a column spec: a vector containing a column
+  name and optionally a type and other constraints, or a table-level
+  constraint: a vector containing words that express the constraint. All
+  words used to describe the table may be supplied as strings or keywords.
+[[#delete-rows]]
+----
+===(_delete-rows_ table where-params)===
+Deletes rows from a table. where-params is a vector containing a string
+  providing the (optionally parameterized) selection criteria followed by
+  values for any parameters.
+[[#do-commands]]
+----
+===(_do-commands_ & commands)===
+Executes SQL commands on the open database connection.
+[[#do-prepared]]
+----
+===(_do-prepared_ sql & param-groups)===
+Executes an (optionally parameterized) SQL prepared statement on the
+  open database connection. Each param-group is a seq of values for all of
+  the parameters.
+[[#drop-table]]
+----
+===(_drop-table_ name)===
+Drops a table on the open database connection given its name, a string
+  or keyword
+[[#find-connection]]
+----
+===(_find-connection_)===
+Returns the current database connection (or nil if there is none)
+[[#insert-records]]
+----
+===(_insert-records_ table & records)===
+Inserts records into a table. records are maps from strings or
+  keywords (identifying columns) to values.
+[[#insert-rows]]
+----
+===(_insert-rows_ table & rows)===
+Inserts complete rows into a table. Each row is a vector of values for
+  each of the table's columns in order.
+[[#insert-values]]
+----
+===(_insert-values_ table column-names & value-groups)===
+Inserts rows into a table with values for specified columns only.
+  column-names is a vector of strings or keywords identifying columns. Each
+  value-group is a vector containing a values for each column in
+  order. When inserting complete rows (all columns), consider using
+  insert-rows instead.
+[[#is-rollback-only]]
+----
+===(_is-rollback-only_)===
+Returns true if the outermost transaction will rollback rather than
+  commit when complete
+[[#set-rollback-only]]
+----
+===(_set-rollback-only_)===
+Marks the outermost transaction such that it will rollback rather than
+  commit when complete
+[[#transaction]]
+----
+===(_transaction_ & body)===
+====Macro====
+Evaluates body as a transaction on the open database connection. Any
+  nested transactions are absorbed into the outermost transaction. By
+  default, all database updates are committed together as a group after
+  evaluating the outermost body, or rolled back on any uncaught
+  exception. If set-rollback-only is called within scope of the outermost
+  transaction, the entire transaction will be rolled back rather than
+  committed when complete.
+[[#update-or-insert-values]]
+----
+===(_update-or-insert-values_ table where-params record)===
+Updates values on selected rows in a table, or inserts a new row when no
+  existing row matches the selection criteria. where-params is a vector
+  containing a string providing the (optionally parameterized) selection
+  criteria followed by values for any parameters. record is a map from
+  strings or keywords (identifying columns) to updated values.
+[[#update-values]]
+----
+===(_update-values_ table where-params record)===
+Updates values on selected rows in a table. where-params is a vector
+  containing a string providing the (optionally parameterized) selection
+  criteria followed by values for any parameters. record is a map from
+  strings or keywords (identifying columns) to updated values.
+[[#with-connection]]
+----
+===(_with-connection_ db-spec & body)===
+====Macro====
+Evaluates body in the context of a new connection to a database then
+  closes the connection. db-spec is a map containing values for one of the
+  following parameter sets:
+
+  DataSource:
+    :datasource  (required) a javax.sql.DataSource
+    :username    (optional) a String
+    :password    (optional) a String
+
+  DriverManager:
+    :classname   (required) a String, the jdbc driver class name
+    :subprotocol (required) a String, the jdbc subprotocol
+    :subname     (required) a String, the jdbc subname
+    (others)     (optional) passed to the driver as properties.
+[[#with-query-results]]
+----
+===(_with-query-results_ results sql-params & body)===
+====Macro====
+Executes a query, then evaluates body with results bound to a seq of the
+  results. sql-params is a vector containing a string providing
+  the (optionally parameterized) SQL query followed by values for any
+  parameters.

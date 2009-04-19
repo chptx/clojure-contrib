@@ -1,0 +1,110 @@
+#summary An api-out of the API of clojure.contrib.datalog.database
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.datalog.database=
+==Public Variables and Functions==
+[[#add-index]]
+----
+===(_add-index_ db name key)===
+Adds an index to an empty relation named name
+[[#add-relation]]
+----
+===(_add-relation_ db name keys)===
+Adds a relation to the database
+[[#add-tuple]]
+----
+===(_add-tuple_ db rel-name tuple)===
+===(_add-tuple_ rel tuple)===
+Two forms:
+
+   [db relation-name tuple] adds tuple to the named relation.  Returns
+   the new database.
+
+   [rel tuple] adds to the relation object.  Returns the new relation.
+[[#add-tuples]]
+----
+===(_add-tuples_ db & tupls)===
+Adds a collection of tuples to the db, as
+   (add-tuples db
+      [:rel-name :key-1 1 :key-2 2]
+      [:rel-name :key-1 2 :key-2 3])
+[[#any-match?]]
+----
+===(_any-match?_ db rn pt)===
+Finds if there are any matching records for the partial tuple
+[[#database-counts]]
+----
+===(_database-counts_ db)===
+Returns a map with the count of elements in each relation.
+[[#database-merge]]
+----
+===(_database-merge_ dbs)===
+Merges databases together
+[[#database-merge-parallel]]
+----
+===(_database-merge-parallel_ dbs)===
+Merges databases together in parallel
+[[#datalog-database]]
+----
+===(_datalog-database_ rels)===
+[[#datalog-relation]]
+----
+===(_datalog-relation_ schema data indexes)===
+Creates a relation
+[[#empty-database]]
+----
+===(_empty-database_)===
+[[#ensure-relation]]
+----
+===(_ensure-relation_ db name keys indexes)===
+If the database lacks the named relation, add it
+[[#get-relation]]
+----
+===(_get-relation_ db rel-name)===
+Get a relation object by name
+[[#make-database]]
+----
+===(_make-database_ & commands)===
+====Macro====
+Makes a database, like this
+   (make-database
+     (relation :fred [:mary :sue])
+     (index :fred :mary)
+     (relation :sally [:jen :becky])
+     (index :sally :jen)
+     (index :sally :becky))
+[[#merge-indexes]]
+----
+===(_merge-indexes_ idx1 idx2)===
+[[#merge-relations]]
+----
+===(_merge-relations_ r1 r2)===
+Merges two relations
+[[#relation]]
+----
+===(_relation_)===
+[[#remove-tuple]]
+----
+===(_remove-tuple_ db rel-name tuple)===
+===(_remove-tuple_ rel tuple)===
+Two forms:
+
+   [db relation-name tuple] removes the tuple from the named relation,
+   returns a new database.
+
+   [rel tuple] removes the tuple from the relation.  Returns the new
+   relation.
+[[#replace-relation]]
+----
+===(_replace-relation_ db rel-name rel)===
+Add or replace a fully constructed relation object to the database.
+[[#select]]
+----
+===(_select_ db rn pt)===
+finds all matching tuples to the partial tuple (pt) in the relation named (rn)

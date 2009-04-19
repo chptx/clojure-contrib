@@ -1,0 +1,62 @@
+#summary An api-out of the API of clojure.contrib.str-utils
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.str-utils=
+==Public Variables and Functions==
+[[#chomp]]
+----
+===(_chomp_ s)===
+Removes all trailing newline  or return \r characters from
+  string.  Note: String.trim() is similar and faster.
+[[#chop]]
+----
+===(_chop_ s)===
+Removes the last character of string.
+[[#re-gsub]]
+----
+===(_re-gsub_ regex replacement string)===
+Replaces all instances of 'pattern' in 'string' with
+  'replacement'.  Like Ruby's 'String#gsub'.
+  
+  If (ifn? replacment) is true, the replacement is called with the
+  match.
+  
+[[#re-partition]]
+----
+===(_re-partition_ re string)===
+Splits the string into a lazy sequence of substrings, alternating
+  between substrings that match the patthern and the substrings
+  between the matches.  The sequence always starts with the substring
+  before the first match, or an empty string if the beginning of the
+  string matches.
+
+  For example: (re-partition #"[a-z]+" "abc123def")
+
+  Returns: ("" "abc" "123" "def")
+[[#re-split]]
+----
+===(_re-split_ pattern string)===
+===(_re-split_ pattern string limit)===
+Splits the string on instances of 'pattern'.  Returns a sequence of
+  strings.  Optional 'limit' argument is the maximum number of
+  splits.  Like Perl's 'split'.
+[[#re-sub]]
+----
+===(_re-sub_ regex replacement string)===
+Replaces the first instance of 'pattern' in 'string' with
+  'replacement'.  Like Ruby's 'String#sub'.
+  
+  If (ifn? replacement) is true, the replacement is called with
+  the match.
+  
+[[#str-join]]
+----
+===(_str-join_ separator sequence)===
+Returns a string of all elements in 'sequence', separated by
+  'separator'.  Like Perl's 'join'.

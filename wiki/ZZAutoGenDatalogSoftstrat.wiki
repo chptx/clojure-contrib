@@ -1,0 +1,26 @@
+#summary An api-out of the API of clojure.contrib.datalog.softstrat
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.datalog.softstrat=
+==Public Variables and Functions==
+[[#build-soft-strat-work-plan]]
+----
+===(_build-soft-strat-work-plan_ rs q)===
+Return a work plan for the given rules-set and query
+[[#evaluate-soft-work-set]]
+----
+===(_evaluate-soft-work-set_ ws db)===
+===(_evaluate-soft-work-set_ ws db bindings)===
+[[#get-all-relations]]
+----
+===(_get-all-relations_ ws)===
+Return a set of all relation names defined in this workplan
+[[#soft-strat-work-plan]]
+----
+===(_soft-strat-work-plan_)===

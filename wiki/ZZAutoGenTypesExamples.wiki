@@ -1,0 +1,39 @@
+#summary An api-out of the API of clojure.contrib.types.examples
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.types.examples=
+==Public Variables and Functions==
+[[#a-tree]]
+----
+===(_a-tree_)===
+[[#bar]]
+----
+===(_bar_ a b c)===
+[[#depth]]
+----
+===(_depth_ t)===
+[[#empty-tree]]
+----
+===(_empty-tree_)===
+[[#foo-to-int]]
+----
+===(_foo-to-int_ a-foo)===
+[[#leaf]]
+----
+===(_leaf_ value)===
+[[#multiset]]
+----
+===(_multiset_)===
+Multiset (demo implementation)
+[[#node]]
+----
+===(_node_ left-tree right-tree)===
+[[#union]]
+----
+===(_union_)===

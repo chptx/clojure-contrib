@@ -1,0 +1,26 @@
+#summary An api-out of the API of clojure.contrib.complex-numbers
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.complex-numbers=
+==Public Variables and Functions==
+[[#complex]]
+----
+===(_complex_)===
+[[#complex-struct]]
+----
+===(_complex-struct_)===
+[[#imag]]
+----
+===(_imag_)===
+[[#imaginary]]
+----
+===(_imaginary_)===
+[[#real]]
+----
+===(_real_)===

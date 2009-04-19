@@ -1,0 +1,21 @@
+#summary An api-out of the API of clojure.contrib.lazy-seqs
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.lazy-seqs=
+==Public Variables and Functions==
+[[#fibs]]
+----
+===(_fibs_)===
+[[#powers-of-2]]
+----
+===(_powers-of-2_)===
+[[#primes]]
+----
+===(_primes_)===
+Lazy sequence of all the prime numbers.

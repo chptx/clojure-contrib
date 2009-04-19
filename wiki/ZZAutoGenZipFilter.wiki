@@ -1,0 +1,57 @@
+#summary An api-out of the API of clojure.contrib.zip-filter
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.zip-filter=
+==Public Variables and Functions==
+[[#ancestors]]
+----
+===(_ancestors_ loc)===
+Returns a lazy sequence of all ancestors of location loc, starting
+  with loc and proceeding to loc's parent node and on through to the
+  root of the tree.
+[[#auto]]
+----
+===(_auto_ v x)===
+[[#auto?]]
+----
+===(_auto?_ x)===
+[[#children]]
+----
+===(_children_ loc)===
+Returns a lazy sequence of all immediate children of location loc,
+  left-to-right.
+[[#children-auto]]
+----
+===(_children-auto_ loc)===
+Returns a lazy sequence of all immediate children of location loc,
+  left-to-right, marked so that a following tag= predicate will auto-descend.
+[[#descendants]]
+----
+===(_descendants_ loc)===
+Returns a lazy sequence of all descendants of location loc, in
+  depth-first order, left-to-right, starting with loc.
+[[#left-locs]]
+----
+===(_left-locs_ loc)===
+Returns a lazy sequence of locations to the left of loc, starting with loc.
+[[#leftmost?]]
+----
+===(_leftmost?_ loc)===
+Returns true if there are no more nodes to the left of location loc.
+[[#mapcat-chain]]
+----
+===(_mapcat-chain_ loc preds mkpred)===
+[[#right-locs]]
+----
+===(_right-locs_ loc)===
+Returns a lazy sequence of locations to the right of loc, starting with loc.
+[[#rightmost?]]
+----
+===(_rightmost?_ loc)===
+Returns true if there are no more nodes to the right of location loc.

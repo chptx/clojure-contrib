@@ -1,0 +1,26 @@
+#summary An api-out of the API of clojure.contrib.generic
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for clojure.contrib.generic=
+==Public Variables and Functions==
+[[#nary-dispatch]]
+----
+===(_nary-dispatch_)===
+===(_nary-dispatch_ x)===
+===(_nary-dispatch_ x y)===
+===(_nary-dispatch_ x y & more)===
+[[#nary-type]]
+----
+===(_nary-type_)===
+[[#nulary-type]]
+----
+===(_nulary-type_)===
+[[#root-type]]
+----
+===(_root-type_)===
