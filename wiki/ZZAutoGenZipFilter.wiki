@@ -21,7 +21,7 @@ Returns a lazy sequence of all ancestors of location loc, starting
 [[#auto?]]
 ----
 ===(_auto?_ x)===
-[[#children]]
+
 ----
 ===(_children_ loc)===
 Returns a lazy sequence of all immediate children of location loc,
@@ -44,7 +44,7 @@ Returns a lazy sequence of locations to the left of loc, starting with loc.
 ----
 ===(_leftmost?_ loc)===
 Returns true if there are no more nodes to the left of location loc.
-[[#mapcat-chain]]
+<a name="mapcat-chain"></a>
 ----
 ===(_mapcat-chain_ loc preds mkpred)===
 [[#right-locs]]
