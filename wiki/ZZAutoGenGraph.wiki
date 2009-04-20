@@ -71,6 +71,7 @@ graph, node a must be equal or later in the sequence.
 ----
 ===(_transitive-closure_ g)===
 Returns the transitive closure of a graph.  The neighbors are lazily computed.
+
 Note: some version of this algorithm return all edges a->a
 regardless of whether such loops exist in the original graph.  This
 version does not.  Loops will be included only if produced by

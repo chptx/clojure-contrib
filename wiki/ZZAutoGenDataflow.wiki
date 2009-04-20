@@ -34,19 +34,30 @@ Builds a validator cell
 ===(_cell_ type & data)===
 ====Macro====
 Build a standard cell, like this:
+
 (cell fred
 (* ?mary ?joe))
+
 Which creates a cell named fred that is the product of a cell mary and cell joe
+
 Or:
+
 (cell joe
 (apply * ?*sally))
+
 Which creates a cell that applies * to the collection of all cells named sally
+
 Or:
+
 (cell :source fred 0)
+
 Which builds a source cell fred with initial value 0
+
 Or:
+
 (cell :validator (when (< ?fred ?sally)
 (throwf "%s must be greater than %s" ?fred ?sally))
+
 Which will perform the validation
 ----
 ===_display-cell_===

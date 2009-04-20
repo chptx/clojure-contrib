@@ -13,6 +13,7 @@ namespace.
 ===(_<-_ hd & body)===
 ====Macro====
 Build a datalog rule.  Like this:
+
 (<- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if > ?y ?z))
 ----
 ===(_?-_ & q)===

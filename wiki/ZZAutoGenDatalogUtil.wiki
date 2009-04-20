@@ -25,6 +25,7 @@ Like map, but works over the values of a hash map
 ===(_preduce_ f data)===
 Similar to merge-with, but the contents of each key are merged in
 parallel using f.
+
 f - a function of 2 arguments.
 data - a collection of hashes.
 ----

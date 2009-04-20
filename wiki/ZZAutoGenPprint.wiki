@@ -60,6 +60,7 @@ performance when you're using the same format string repeatedly
 Makes a function which can directly run format-in. The function is
 fn [stream & args] ... and returns nil unless the stream is nil (meaning 
 output to a string) in which case it returns the resulting string.
+
 format-in can be either a control string or a previously compiled format.
 ----
 ===(_pp_)===
@@ -76,8 +77,10 @@ Create an indent at this point in the pretty printing stream. This defines how
 following lines are indented. relative-to can be either :block or :current depending 
 whether the indent should be computed relative to the start of the logical block or
 the current column position. n is an offset. 
+
 Optionally, a third argument which is a stream may be used. If supplied, that is 
 the writer indented, otherwise *out* is used.
+
 If the requested stream is not a PrettyWriter, this function does nothing.
 ----
 ===(_pprint-logical-block_ base-stream & body)===
@@ -85,24 +88,31 @@ If the requested stream is not a PrettyWriter, this function does nothing.
 Execute the body as a pretty printing logical block with output to *out* which 
 is a pretty printing writer wrapping base-stream (unless base-stream is already a pretty 
 printing writer in which case *out* is just bound to base-stream). 
+
 After the writer, the caller can optionally specify :prefix, :per-line-prefix, and
 :suffix.
 ----
 ===(_pprint-newline_ kind & more)===
 Print a conditional newline to a pretty printing stream. kind specifies if the 
 newline is :linear, :miser, :fill, or :mandatory. 
+
 Optionally, a second argument which is a stream may be used. If supplied, that is 
 the writer to which the newline is sent, otherwise *out* is used.
+
 If the requested stream is not a PrettyWriter, this function does nothing.
 ----
 ===(_pprint-tab_ kind colnum colinc & more)===
 Tab at this point in the pretty printing stream. kind specifies whether the tab
 is :line, :section, :line-relative, or :section-relative. 
+
 Colnum and colinc specify the target column and the increment to move the target
 forward if the output is already past the original target.
+
 Optionally, a fourth argument which is a stream may be used. If supplied, that is 
 the writer indented, otherwise *out* is used.
+
 If the requested stream is not a PrettyWriter, this function does nothing.
+
 THIS FUNCTION IS NOT YET IMPLEMENTED.
 ----
 ===(_set-pprint-dispatch_ table)===

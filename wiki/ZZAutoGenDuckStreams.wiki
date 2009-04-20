@@ -27,9 +27,11 @@ closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.
 Attempts to coerce its argument into an open
 java.io.BufferedReader.  Argument may be an instance of Reader,
 BufferedReader, InputStream, File, URI, URL, or String.
+
 If argument is a String, it tries to resolve it first as a URI, then
 as a local file name.  URIs with a 'file' protocol are converted to
 local file names.  Uses *default-encoding* as the text encoding.
+
 Should be used inside with-open to ensure the Reader is properly
 closed.
 ----
@@ -57,8 +59,10 @@ Attempts to coerce its argument into an open java.io.PrintWriter
 wrapped around a java.io.BufferedWriter.  Argument may be an
 instance of Writer, PrintWriter, BufferedWriter, OutputStream, File,
 URI, URL, or String.
+
 If argument is a String, it tries to resolve it first as a URI, then
 as a local file name.  URIs with a 'file' protocol are converted to
 local file names.
+
 Should be used inside with-open to ensure the Writer is properly
 closed.

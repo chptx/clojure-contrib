@@ -41,12 +41,15 @@ predicate.  If it returns a location, the location is passed to the
 next predicate.  If it returns true, the input location is passed to
 the next predicate.  If it returns false or nil, the next predicate
 is not called.
+
 This process is repeated, passing the processed results of each
 predicate to the next predicate.  xml-> returns the final sequence.
 The entire chain is evaluated lazily.
+
 There are also special predicates: keywords are converted to tag=,
 strings to text=, and vectors to sub-queries that return true if
 they match.
+
 See the footer of zip-query.clj for examples.
 ----
 ===(_xml1->_ loc & preds)===

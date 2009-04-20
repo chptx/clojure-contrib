@@ -19,8 +19,10 @@ Adds a relation to the database
 ===(_add-tuple_ db rel-name tuple)===
 ===(_add-tuple_ rel tuple)===
 Two forms:
+
 [db relation-name tuple] adds tuple to the named relation.  Returns
 the new database.
+
 [rel tuple] adds to the relation object.  Returns the new relation.
 ----
 ===(_add-tuples_ db & tupls)===
@@ -66,8 +68,10 @@ Merges two relations
 ===(_remove-tuple_ db rel-name tuple)===
 ===(_remove-tuple_ rel tuple)===
 Two forms:
+
 [db relation-name tuple] removes the tuple from the named relation,
 returns a new database.
+
 [rel tuple] removes the tuple from the relation.  Returns the new
 relation.
 ----

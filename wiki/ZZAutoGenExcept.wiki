@@ -12,7 +12,9 @@ namespace.
 ----
 ===(_throw-arg_ & args)===
 Throws an IllegalArgumentException. All arguments are optional:
+
 format? format-args*
+
 - format is a format string for clojure/format
 - format-args are objects that correspond to format specifiers in
 format.
@@ -28,7 +30,9 @@ for throwf.
 ===(_throwf_ & args)===
 Throws an Exception or Error with an optional message formatted using
 clojure/format. All arguments are optional:
+
 class? format? format-args*
+
 - class defaults to Exception, if present it must name a kind of
 Throwable
 - format is a format string for clojure/format

@@ -20,6 +20,8 @@ create a repl on a socket
 ===(_create-server_ port fun)===
 Creates a server socket on port. Upon accept, a new thread is
 created which calls:
+
 (fun input-stream output-stream)
+
 Optional arguments support specifying a listen backlog and binding
 to a specific endpoint.
