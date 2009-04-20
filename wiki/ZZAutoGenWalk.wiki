@@ -9,56 +9,46 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.walk=
 ==Public Variables and Functions==
-[[#keywordize-keys]]
 ----
 ===(_keywordize-keys_ m)===
 Recursively transforms all map keys from strings to keywords.
-[[#macroexpand-all]]
 ----
 ===(_macroexpand-all_ form)===
 Recursively performs all possible macroexpansions in form.
-[[#postwalk]]
 ----
 ===(_postwalk_ f form)===
 Performs a depth-first, post-order traversal of form.  Calls f on
-  each sub-form, uses f's return value in place of the original.
-  Recognizes all Clojure data structures except sorted-map-by.
-  Consumes seqs as with doall.
-[[#postwalk-demo]]
+each sub-form, uses f's return value in place of the original.
+Recognizes all Clojure data structures except sorted-map-by.
+Consumes seqs as with doall.
 ----
 ===(_postwalk-demo_ form)===
 Demonstrates the behavior of postwalk by printing each form as it is
-  walked.  Returns form.
-[[#postwalk-replace]]
+walked.  Returns form.
 ----
 ===(_postwalk-replace_ smap form)===
 Recursively transforms form by replacing keys in smap with their
-  values.  Like clojure/replace but works on any data structure.  Does
-  replacement at the leaves of the tree first.
-[[#prewalk]]
+values.  Like clojure/replace but works on any data structure.  Does
+replacement at the leaves of the tree first.
 ----
 ===(_prewalk_ f form)===
 Like postwalk, but does pre-order traversal.
-[[#prewalk-demo]]
 ----
 ===(_prewalk-demo_ form)===
 Demonstrates the behavior of prewalk by printing each form as it is
-  walked.  Returns form.
-[[#prewalk-replace]]
+walked.  Returns form.
 ----
 ===(_prewalk-replace_ smap form)===
 Recursively transforms form by replacing keys in smap with their
-  values.  Like clojure/replace but works on any data structure.  Does
-  replacement at the root of the tree first.
-[[#stringify-keys]]
+values.  Like clojure/replace but works on any data structure.  Does
+replacement at the root of the tree first.
 ----
 ===(_stringify-keys_ m)===
 Recursively transforms all map keys from keywords to strings.
-[[#walk]]
 ----
 ===(_walk_ inner outer form)===
 Traverses form, an arbitrary data structure.  inner and outer are
-  functions.  Applies inner to each element of form, building up a
-  data structure of the same type, then applies outer to the result.
-  Recognizes all Clojure data structures except sorted-map-by.
-  Consumes seqs as with doall.
+functions.  Applies inner to each element of form, building up a
+data structure of the same type, then applies outer to the result.
+Recognizes all Clojure data structures except sorted-map-by.
+Consumes seqs as with doall.

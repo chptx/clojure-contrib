@@ -9,55 +9,44 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.java-utils=
 ==Public Variables and Functions==
-[[#as-file]]
 ----
-===(_as-file_)===
+===_as-file_===
 Interpret a String or a java.io.File as a File. Building block
-   for clojure.contrib.java-utils/file, which you should prefer
-   in most cases.
-[[#as-properties]]
+for clojure.contrib.java-utils/file, which you should prefer
+in most cases.
 ----
 ===(_as-properties_ m)===
 Convert any seq of pairs to a java.utils.Properties instance.
-   Uses as-str to convert both keys and values into strings.
-[[#as-str]]
+Uses as-str to convert both keys and values into strings.
 ----
 ===(_as-str_ x)===
 Returns the name or string representation of x
-[[#file]]
 ----
 ===(_file_ arg)===
 ===(_file_ parent child)===
 ===(_file_ parent child & more)===
 Returns a java.io.File from string or file args.
-[[#get-system-property]]
 ----
 ===(_get-system-property_ stringable)===
 ===(_get-system-property_ stringable default)===
 Get a system property.
-[[#read-properties]]
 ----
 ===(_read-properties_ file-able)===
 Read properties from file-able.
-[[#relative-path-string]]
 ----
-===(_relative-path-string_)===
+===_relative-path-string_===
 Interpret a String or java.io.File as a relative path string. 
-   Building block for clojure.contrib.java-utils/file.
-[[#set-system-properties]]
+Building block for clojure.contrib.java-utils/file.
 ----
 ===(_set-system-properties_ settings)===
 Set some system properties. Nil clears a property.
-[[#with-system-properties]]
 ----
 ===(_with-system-properties_ settings & body)===
 ====Macro====
 setting => property-name value
-
-  Sets the system properties to the supplied values, executes the body, and
-  sets the properties back to their original values. Values of nil are
-  translated to a clearing of the property.
-[[#write-properties]]
+Sets the system properties to the supplied values, executes the body, and
+sets the properties back to their original values. Values of nil are
+translated to a clearing of the property.
 ----
 ===(_write-properties_ m file-able)===
 ===(_write-properties_ m file-able comments)===

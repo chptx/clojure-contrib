@@ -9,35 +9,27 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.greatest-least=
 ==Public Variables and Functions==
-[[#all-greatest]]
 ----
 ===(_all-greatest_ & args)===
 Returns all the greatest elements.
-[[#all-greatest-by]]
 ----
 ===(_all-greatest-by_ f & args)===
 Return all the elements for which f yields the greatest value.
-[[#all-least]]
 ----
 ===(_all-least_ & args)===
 Returns all the least elements.
-[[#all-least-by]]
 ----
 ===(_all-least-by_ f & args)===
 Return all the elements for which f yields the least value.
-[[#greatest]]
 ----
 ===(_greatest_ & args)===
 Return the greatest argument.
-[[#greatest-by]]
 ----
 ===(_greatest-by_ f & args)===
 Return the argument for which f yields the greatest value.
-[[#least]]
 ----
 ===(_least_ & args)===
 Return the smallest element.
-[[#least-by]]
 ----
 ===(_least-by_ f & args)===
 Return the argument for which f yields the smallest value.

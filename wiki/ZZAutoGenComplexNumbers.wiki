@@ -9,18 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.complex-numbers=
 ==Public Variables and Functions==
-[[#complex]]
-----
-===(_complex_)===
-[[#complex-struct]]
-----
-===(_complex-struct_)===
-[[#imag]]
-----
-===(_imag_)===
-[[#imaginary]]
-----
-===(_imaginary_)===
-[[#real]]
-----
-===(_real_)===

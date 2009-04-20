@@ -9,33 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.test-is.test-fixtures=
 ==Public Variables and Functions==
-[[#*a*]]
-----
-===(_*a*_)===
-[[#*b*]]
-----
-===(_*b*_)===
-[[#*c*]]
-----
-===(_*c*_)===
-[[#*d*]]
-----
-===(_*d*_)===
-[[#can-use-each-fixtures]]
-----
-===(_can-use-each-fixtures_)===
-[[#can-use-once-fixtures]]
-----
-===(_can-use-once-fixtures_)===
-[[#fixture-a]]
-----
-===(_fixture-a_ f)===
-[[#fixture-b]]
-----
-===(_fixture-b_ f)===
-[[#fixture-c]]
-----
-===(_fixture-c_ f)===
-[[#fixture-d]]
-----
-===(_fixture-d_ f)===

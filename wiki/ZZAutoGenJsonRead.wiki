@@ -9,13 +9,9 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.json.read=
 ==Public Variables and Functions==
-[[#read-json]]
 ----
 ===(_read-json_)===
 ===(_read-json_ stream)===
 ===(_read-json_ stream eof-error? eof-value)===
 Read the next JSON record from stream, which must be an instance of
-  java.io.PushbackReader.
-[[#read-json-string]]
-----
-===(_read-json-string_ string)===
+java.io.PushbackReader.

@@ -9,19 +9,11 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.javadoc.browse=
 ==Public Variables and Functions==
-[[#*open-url-script*]]
-----
-===(_*open-url-script*_)===
-[[#browse-url]]
-----
-===(_browse-url_ url)===
-[[#open-url-in-browser]]
 ----
 ===(_open-url-in-browser_ url)===
 Opens url (a string) in the default system web browser.  May not
-  work on all platforms.  Returns url on success, nil if not
-  supported.
-[[#open-url-in-swing]]
+work on all platforms.  Returns url on success, nil if not
+supported.
 ----
 ===(_open-url-in-swing_ url)===
 Opens url (a string) in a Swing window.

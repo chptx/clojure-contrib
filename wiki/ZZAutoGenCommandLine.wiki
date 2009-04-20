@@ -9,13 +9,6 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.command-line=
 ==Public Variables and Functions==
-[[#make-map]]
-----
-===(_make-map_ args cmdspec)===
-[[#print-help]]
-----
-===(_print-help_ desc cmdmap)===
-[[#with-command-line]]
 ----
 ===(_with-command-line_ args desc cmdspec & body)===
 ====Macro====

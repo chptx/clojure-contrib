@@ -9,21 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.pprint.examples.hexdump=
 ==Public Variables and Functions==
-[[#*buffer-length*]]
-----
-===(_*buffer-length*_)===
-[[#-main]]
-----
-===(_-main_ & args)===
-[[#hexdump]]
-----
-===(_hexdump_ in-stream)===
-===(_hexdump_ in-stream out-stream)===
-===(_hexdump_ in-stream out-stream offset)===
-[[#hexdump-file]]
-----
-===(_hexdump-file_ file-name)===
-===(_hexdump-file_ file-name stream)===
-[[#zip-array]]
-----
-===(_zip-array_ base-offset arr)===

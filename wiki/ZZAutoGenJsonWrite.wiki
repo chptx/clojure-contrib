@@ -9,14 +9,12 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.json.write=
 ==Public Variables and Functions==
-[[#json-str]]
 ----
 ===(_json-str_ x)===
 Converts Clojure data structures to a JSON-formatted string.
-[[#print-json]]
 ----
-===(_print-json_)===
+===_print-json_===
 Prints Clojure data types as JSON.  Nil becomes JSON null.
-  Keywords become strings, without the leading colon.  Maps become
-  JSON objects, all other collection types become JSON arrays.
-  Strings and numbers print as with pr.
+Keywords become strings, without the leading colon.  Maps become
+JSON objects, all other collection types become JSON arrays.
+Strings and numbers print as with pr.

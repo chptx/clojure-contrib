@@ -9,49 +9,32 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.zip-filter=
 ==Public Variables and Functions==
-[[#ancestors]]
 ----
 ===(_ancestors_ loc)===
 Returns a lazy sequence of all ancestors of location loc, starting
-  with loc and proceeding to loc's parent node and on through to the
-  root of the tree.
-[[#auto]]
-----
-===(_auto_ v x)===
-[[#auto?]]
-----
-===(_auto?_ x)===
-
+with loc and proceeding to loc's parent node and on through to the
+root of the tree.
 ----
 ===(_children_ loc)===
 Returns a lazy sequence of all immediate children of location loc,
-  left-to-right.
-[[#children-auto]]
+left-to-right.
 ----
 ===(_children-auto_ loc)===
 Returns a lazy sequence of all immediate children of location loc,
-  left-to-right, marked so that a following tag= predicate will auto-descend.
-[[#descendants]]
+left-to-right, marked so that a following tag= predicate will auto-descend.
 ----
 ===(_descendants_ loc)===
 Returns a lazy sequence of all descendants of location loc, in
-  depth-first order, left-to-right, starting with loc.
-[[#left-locs]]
+depth-first order, left-to-right, starting with loc.
 ----
 ===(_left-locs_ loc)===
 Returns a lazy sequence of locations to the left of loc, starting with loc.
-[[#leftmost?]]
 ----
 ===(_leftmost?_ loc)===
 Returns true if there are no more nodes to the left of location loc.
-<a name="mapcat-chain"></a>
-----
-===(_mapcat-chain_ loc preds mkpred)===
-[[#right-locs]]
 ----
 ===(_right-locs_ loc)===
 Returns a lazy sequence of locations to the right of loc, starting with loc.
-[[#rightmost?]]
 ----
 ===(_rightmost?_ loc)===
 Returns true if there are no more nodes to the right of location loc.

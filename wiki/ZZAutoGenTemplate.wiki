@@ -9,44 +9,36 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.template=
 ==Public Variables and Functions==
-[[#apply-template]]
 ----
 ===(_apply-template_ expr values)===
 Replaces _1, _2, _3, etc. in expr with corresponding elements of
-  values.  Returns the modified expression.  For use in macros.
-[[#do-template]]
+values.  Returns the modified expression.  For use in macros.
 ----
 ===(_do-template_ expr & args)===
 ====Macro====
 Repeatedly evaluates template expr (in a do block) using values in
-  args.  args are grouped by the number of holes in the template.
-  Example: (do-template (check _1 _2) :a :b :c :d)
-  expands to (do (check :a :b) (check :c :d))
-[[#find-holes]]
+args.  args are grouped by the number of holes in the template.
+Example: (do-template (check _1 _2) :a :b :c :d)
+expands to (do (check :a :b) (check :c :d))
 ----
 ===(_find-holes_ form)===
 Recursively finds all symbols starting with _ in form.
-[[#find-pure-exprs]]
 ----
 ===(_find-pure-exprs_ form)===
 Recursively finds all sub-expressions in form that do not contain
-  any symbols starting with _
-[[#find-symbols]]
+any symbols starting with _
 ----
 ===(_find-symbols_ form)===
 Recursively finds all symbols in form.
-[[#flatten-map]]
 ----
 ===(_flatten-map_ m)===
 Transforms a map into a vector like [key value key value].
-[[#template]]
 ----
 ===(_template_ & form)===
 ====Macro====
 Expands to a fn using _1, _2, _3, etc. as arguments (_ is the same
-  as _1).  Any sub-expressions without any _* variables are evaluated
-  when the fn is created, not when it is called.
-[[#template?]]
+as _1).  Any sub-expressions without any _* variables are evaluated
+when the fn is created, not when it is called.
 ----
 ===(_template?_ form)===
 Returns true if form is a valid template expression.

@@ -9,30 +9,17 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.server-socket=
 ==Public Variables and Functions==
-[[#close-server]]
-----
-===(_close-server_ server)===
-[[#connection-count]]
-----
-===(_connection-count_ server)===
-[[#create-repl-server]]
 ----
 ===(_create-repl-server_ port backlog bind-addr)===
 ===(_create-repl-server_ port backlog)===
 ===(_create-repl-server_ port)===
 create a repl on a socket
-[[#create-server]]
 ----
 ===(_create-server_ port fun backlog bind-addr)===
 ===(_create-server_ port fun backlog)===
 ===(_create-server_ port fun)===
 Creates a server socket on port. Upon accept, a new thread is
-  created which calls:
-
-  (fun input-stream output-stream)
-
-  Optional arguments support specifying a listen backlog and binding
-  to a specific endpoint.
-[[#server-def]]
-----
-===(_server-def_)===
+created which calls:
+(fun input-stream output-stream)
+Optional arguments support specifying a listen backlog and binding
+to a specific endpoint.

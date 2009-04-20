@@ -9,105 +9,64 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.accumulators=
 ==Public Variables and Functions==
-[[#acc-tuple]]
-----
-===(_acc-tuple_)===
-[[#add]]
 ----
 ===(_add_ acc item)===
 Add item to the accumulator acc. The exact meaning of adding an
-   an item depends on the type of the accumulator.
-[[#add-items]]
+an item depends on the type of the accumulator.
 ----
 ===(_add-items_ acc items)===
 Add all elements of a collection coll to the accumulator acc.
-[[#combine]]
 ----
 ===(_combine_ & accs)===
 Combine the values of the accumulators acc1 and acc2 into a
-   single accumulator of the same type.
-[[#counter]]
+single accumulator of the same type.
 ----
-===(_counter_)===
-[[#counter-with-total]]
-----
-===(_counter-with-total_)===
-[[#empty-counter]]
-----
-===(_empty-counter_)===
+===_empty-counter_===
 An empty counter accumulator. Its value is a map that stores for
-   every item the number of times it was added.
-[[#empty-counter-with-total]]
+every item the number of times it was added.
 ----
-===(_empty-counter-with-total_)===
+===_empty-counter-with-total_===
 An empty counter-with-total accumulator. It works like the counter
-   accumulator, except that the total number of items added is stored as the
-   value of the key :total.
-[[#empty-list]]
+accumulator, except that the total number of items added is stored as the
+value of the key :total.
 ----
-===(_empty-list_)===
+===_empty-list_===
 An empty list accumulator. Adding an item appends it at the beginning.
-[[#empty-map]]
 ----
-===(_empty-map_)===
+===_empty-map_===
 An empty map accumulator. Items to be added must be [key value] pairs.
-[[#empty-maximum]]
 ----
-===(_empty-maximum_)===
+===_empty-maximum_===
 An empty maximum accumulator. Only numbers can be added.
-[[#empty-min-max]]
 ----
-===(_empty-min-max_)===
+===_empty-min-max_===
 An empty min-max accumulator, combining minimum and maximum.
-   Only numbers can be added.
-[[#empty-minimum]]
+Only numbers can be added.
 ----
-===(_empty-minimum_)===
+===_empty-minimum_===
 An empty minimum accumulator. Only numbers can be added.
-[[#empty-product]]
 ----
-===(_empty-product_)===
+===_empty-product_===
 An empty sum accumulator. Only numbers can be added.
-[[#empty-queue]]
 ----
-===(_empty-queue_)===
+===_empty-queue_===
 An empty queue accumulator. Adding an item appends it at the end.
-[[#empty-set]]
 ----
-===(_empty-set_)===
+===_empty-set_===
 An empty set accumulator.
-[[#empty-string]]
 ----
-===(_empty-string_)===
+===_empty-string_===
 An empty string accumulator. Adding an item (string or character)
-   appends it at the end.
-[[#empty-sum]]
+appends it at the end.
 ----
-===(_empty-sum_)===
+===_empty-sum_===
 An empty sum accumulator. Only numbers can be added.
-[[#empty-tuple]]
 ----
 ===(_empty-tuple_ empty-accumulators)===
 Returns an accumulator tuple with the supplied empty-accumulators
-   as its value. Accumulator tuples consist of several accumulators that
-   work in parallel. Added items must be sequences whose number of elements
-   matches the number of sub-accumulators.
-[[#empty-vector]]
+as its value. Accumulator tuples consist of several accumulators that
+work in parallel. Added items must be sequences whose number of elements
+matches the number of sub-accumulators.
 ----
-===(_empty-vector_)===
+===_empty-vector_===
 An empty vector accumulator. Adding an item appends it at the end.
-[[#maximum]]
-----
-===(_maximum_)===
-[[#min-max]]
-----
-===(_min-max_)===
-[[#minimum]]
-----
-===(_minimum_)===
-[[#product]]
-----
-===(_product_)===
-[[#sum]]
-----
-===(_sum_)===

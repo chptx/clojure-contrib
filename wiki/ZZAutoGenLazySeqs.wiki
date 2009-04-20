@@ -9,13 +9,6 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.lazy-seqs=
 ==Public Variables and Functions==
-[[#fibs]]
 ----
-===(_fibs_)===
-[[#powers-of-2]]
-----
-===(_powers-of-2_)===
-[[#primes]]
-----
-===(_primes_)===
+===_primes_===
 Lazy sequence of all the prime numbers.

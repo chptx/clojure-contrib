@@ -9,32 +9,21 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.test-is.tap=
 ==Public Variables and Functions==
-[[#print-tap-diagnostic]]
 ----
 ===(_print-tap-diagnostic_ data)===
 Prints a TAP diagnostic line.  data is a (possibly multi-line)
-  string.
-[[#print-tap-fail]]
+string.
 ----
 ===(_print-tap-fail_ msg)===
 Prints a TAP 'not ok' line.  msg is a string, with no line breaks
-[[#print-tap-pass]]
 ----
 ===(_print-tap-pass_ msg)===
 Prints a TAP 'ok' line.  msg is a string, with no line breaks
-[[#print-tap-plan]]
 ----
 ===(_print-tap-plan_ n)===
 Prints a TAP plan line like '1..n'.  n is the number of tests
-[[#tap-print-results]]
-----
-===(_tap-print-results_ r)===
-[[#tap-report]]
-----
-===(_tap-report_)===
-[[#with-tap-output]]
 ----
 ===(_with-tap-output_ & body)===
 ====Macro====
 Execute body with modified test-is reporting functions that produce
-  TAP output
+TAP output

@@ -9,134 +9,85 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.dataflow=
 ==Public Variables and Functions==
-[[#*empty-value*]]
-----
-===(_*empty-value*_)===
-[[#*meta*]]
-----
-===(_*meta*_)===
-[[#add-cell-watcher]]
 ----
 ===(_add-cell-watcher_ cell key fun)===
 Adds a watcher to a cell to respond to changes of value.  The is a
-   function of 4 values: a key, the cell, its old value, its new
-   value.  This is implemented using Clojure's add-watch to the
-   underlying ref, and shared its sematics
-[[#add-cells]]
+function of 4 values: a key, the cell, its old value, its new
+value.  This is implemented using Clojure's add-watch to the
+underlying ref, and shared its sematics
 ----
 ===(_add-cells_ df cells)===
 Given a collection of cells, add them to the dataflow.
-[[#build-dataflow]]
 ----
 ===(_build-dataflow_ cs)===
 Given a collection of cells, build and return a dataflow object
-[[#build-source-cell]]
 ----
 ===(_build-source-cell_ name init)===
 Builds a source cell
-[[#build-standard-cell]]
 ----
 ===(_build-standard-cell_ name deps fun expr)===
 Builds a standard cell
-[[#build-validator-cell]]
 ----
 ===(_build-validator-cell_ deps fun expr)===
 Builds a validator cell
-[[#cell]]
 ----
 ===(_cell_ type & data)===
 ====Macro====
 Build a standard cell, like this:
-
-    (cell fred
-       (* ?mary ?joe))
-
-   Which creates a cell named fred that is the product of a cell mary and cell joe
-
-   Or:
-
-    (cell joe
-      (apply * ?*sally))
-
-   Which creates a cell that applies * to the collection of all cells named sally
-
-   Or:
-
-    (cell :source fred 0)
-
-   Which builds a source cell fred with initial value 0
-
-   Or:
-
-     (cell :validator (when (< ?fred ?sally)
-                          (throwf "%s must be greater than %s" ?fred ?sally))
-
-   Which will perform the validation
-[[#dataflow]]
+(cell fred
+(* ?mary ?joe))
+Which creates a cell named fred that is the product of a cell mary and cell joe
+Or:
+(cell joe
+(apply * ?*sally))
+Which creates a cell that applies * to the collection of all cells named sally
+Or:
+(cell :source fred 0)
+Which builds a source cell fred with initial value 0
+Or:
+(cell :validator (when (< ?fred ?sally)
+(throwf "%s must be greater than %s" ?fred ?sally))
+Which will perform the validation
 ----
-===(_dataflow_)===
-[[#display-cell]]
-----
-===(_display-cell_)===
+===_display-cell_===
 A 'readable' form of the cell
-[[#eval-cell]]
 ----
-===(_eval-cell_)===
+===_eval-cell_===
 Evaluate a dataflow cell.  Return [changed, old val]
-[[#get-cell]]
 ----
 ===(_get-cell_ df name)===
 Get the single cell named by name
-[[#get-cells]]
 ----
 ===(_get-cells_ df name)===
 Get all the cells named by name
-[[#get-old-value]]
 ----
 ===(_get-old-value_ df env name)===
 Looks up an old value
-[[#get-source-cells]]
 ----
 ===(_get-source-cells_ df)===
 Returns a collection of source cells from the dataflow
-[[#get-value]]
 ----
 ===(_get-value_ df name)===
 Gets a value from the df matching the passed symbol.
-   Signals an error if the name is not present, or if it not a single
-   value.
-[[#get-value-from-cell]]
+Signals an error if the name is not present, or if it not a single
+value.
 ----
 ===(_get-value-from-cell_ cell)===
 Given a cell, get its value
-[[#get-values]]
 ----
 ===(_get-values_ df name)===
 Gets a collection of values from the df by name
-[[#print-dataflow]]
 ----
 ===(_print-dataflow_ df)===
 Prints a dataflow, one cell per line
-[[#remove-cells]]
 ----
 ===(_remove-cells_ df cells)===
 Given a collection of cells, remove them from the dataflow.
-[[#source-cell]]
-----
-===(_source-cell_)===
-[[#source-cell?]]
 ----
 ===(_source-cell?_ cell)===
 Is this cell a source cell?
-[[#standard-cell]]
-----
-===(_standard-cell_)===
-[[#update-values]]
 ----
 ===(_update-values_ df data)===
 Given a dataflow, and a map of name-value pairs, update the
-   dataflow by binding the new values.  Each name must be of a source
-   cell
-[[#validator-cell]]
-----
-===(_validator-cell_)===
+dataflow by binding the new values.  Each name must be of a source
+cell

@@ -9,16 +9,14 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.macros=
 ==Public Variables and Functions==
-[[#const]]
 ----
 ===(_const_ expr)===
 ====Macro====
 Evaluate the constant expression expr at compile time.
-[[#letfn-]]
 ----
 ===(_letfn-_ fn-bindings & exprs)===
 ====Macro====
 OBSOLETE: use clojure.core/letfn
-   A variant of let for local function definitions. fn-bindings consists
-   of name/args/body triples, with (letfn [name args body] ...)
-   being equivalent to (let [name (fn name args body)] ...).
+A variant of let for local function definitions. fn-bindings consists
+of name/args/body triples, with (letfn [name args body] ...)
+being equivalent to (let [name (fn name args body)] ...).

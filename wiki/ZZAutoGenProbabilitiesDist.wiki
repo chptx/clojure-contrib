@@ -9,58 +9,43 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.probabilities.dist=
 ==Public Variables and Functions==
-[[#certainly]]
 ----
 ===(_certainly_ v)===
 Returns a distribution in which the single value v has probability 1.
-[[#choose]]
 ----
 ===(_choose_ & choices)===
 Construct a distribution from an explicit list of probabilities
-   and values. They are given in the form of a vector of probability-value
-   pairs. In the last pair, the probability can be given by the keyword
-   :else, which stands for 1 minus the total of the other probabilities.
-[[#cond-dist-m]]
+and values. They are given in the form of a vector of probability-value
+pairs. In the last pair, the probability can be given by the keyword
+:else, which stands for 1 minus the total of the other probabilities.
 ----
-===(_cond-dist-m_)===
+===_cond-dist-m_===
 Variant of the dist monad that can handle undefined values.
-[[#cond-prob]]
 ----
 ===(_cond-prob_ pred dist)===
 Returns the conditional probability for the values in dist that satisfy
-   the predicate pred.
-[[#dist-m]]
+the predicate pred.
 ----
-===(_dist-m_)===
+===_dist-m_===
 Monad describing computations on fuzzy quantities, represented by a finite
-   probability distribution for the possible values. A distribution is
-   represented by a map from values to probabilities.
-[[#join-with]]
+probability distribution for the possible values. A distribution is
+represented by a map from values to probabilities.
 ----
 ===(_join-with_ f dist1 dist2)===
 Returns the distribution of (f x y) with x from dist1 and y from dist2.
-[[#normalize]]
 ----
 ===(_normalize_ weights)===
 Convert a weight map (e.g. a map of counter values) to a distribution
-   by multiplying with a normalization factor. If the map has a key
-   :total, its value is assumed to be the sum over all the other values and
-   it is used for normalization. Otherwise, the sum is calculated
-   explicitly. The :total key is removed from the resulting distribution.
-[[#normalize-cond]]
-----
-===(_normalize-cond_ cdist)===
-[[#prob]]
+by multiplying with a normalization factor. If the map has a key
+:total, its value is assumed to be the sum over all the other values and
+it is used for normalization. Otherwise, the sum is calculated
+explicitly. The :total key is removed from the resulting distribution.
 ----
 ===(_prob_ pred dist)===
 Return the probability that the predicate pred is satisfied in the
-   distribution dist, i.e. the sum of the probabilities of the values
-   that satisfy pred.
-[[#select]]
-----
-===(_select_ n xs)===
-[[#uniform]]
+distribution dist, i.e. the sum of the probabilities of the values
+that satisfy pred.
 ----
 ===(_uniform_ coll)===
 Return a distribution in which each of the elements of coll
-   has the same probability.
+has the same probability.

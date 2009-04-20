@@ -9,31 +9,6 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.types.examples=
 ==Public Variables and Functions==
-[[#a-tree]]
 ----
-===(_a-tree_)===
-[[#bar]]
-----
-===(_bar_ a b c)===
-[[#depth]]
-----
-===(_depth_ t)===
-[[#empty-tree]]
-----
-===(_empty-tree_)===
-[[#foo-to-int]]
-----
-===(_foo-to-int_ a-foo)===
-[[#leaf]]
-----
-===(_leaf_ value)===
-[[#multiset]]
-----
-===(_multiset_)===
+===_multiset_===
 Multiset (demo implementation)
-[[#node]]
-----
-===(_node_ left-tree right-tree)===
-[[#union]]
-----
-===(_union_)===

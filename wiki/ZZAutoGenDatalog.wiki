@@ -9,16 +9,11 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.datalog=
 ==Public Variables and Functions==
-[[#build-work-plan]]
 ----
 ===(_build-work-plan_ rules query)===
 Given a list of rules and a query, build a work plan that can be
-   used to execute the query.
-[[#run-work-plan]]
+used to execute the query.
 ----
 ===(_run-work-plan_ work-plan database query-bindings)===
 Given a work plan, a database, and some query bindings, run the
-   work plan and return the results.
-[[#work-plan]]
-----
-===(_work-plan_)===
+work plan and return the results.

@@ -9,16 +9,14 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.with-ns=
 ==Public Variables and Functions==
-[[#with-ns]]
 ----
 ===(_with-ns_ ns & body)===
 ====Macro====
 Evaluates body in another namespace.  ns is either a namespace
-  object or a symbol.  This makes it possible to define functions in
-  namespaces other than the current one.
-[[#with-temp-ns]]
+object or a symbol.  This makes it possible to define functions in
+namespaces other than the current one.
 ----
 ===(_with-temp-ns_ & body)===
 ====Macro====
 Evaluates body in an anonymous namespace, which is then immediately
-  removed.  The temporary namespace will 'refer' clojure.core.
+removed.  The temporary namespace will 'refer' clojure.core.

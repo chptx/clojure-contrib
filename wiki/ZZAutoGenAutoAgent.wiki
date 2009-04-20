@@ -9,11 +9,10 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.auto-agent=
 ==Public Variables and Functions==
-[[#auto-agent]]
 ----
 ===(_auto-agent_ expr)===
 ====Macro====
 Creates an agent whose value is the result of evaluating expr.
-  Whenever one of the agents/atoms/refs dererenced within expr
-  changes, expr is reevaluated and this agent's state is set to its
-  new value.
+Whenever one of the agents/atoms/refs dererenced within expr
+changes, expr is reevaluated and this agent's state is set to its
+new value.

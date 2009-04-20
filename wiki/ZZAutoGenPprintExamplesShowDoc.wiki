@@ -9,14 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.pprint.examples.show-doc=
 ==Public Variables and Functions==
-[[#create-api-file]]
-----
-===(_create-api-file_ pattern out-file)===
-[[#ns-list]]
-----
-===(_ns-list_)===
-===(_ns-list_ pattern)===
-[[#show-doc]]
-----
-===(_show-doc_)===
-===(_show-doc_ pattern)===

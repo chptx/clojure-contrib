@@ -9,29 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.generic.arithmetic=
 ==Public Variables and Functions==
-[[#*]]
-----
-===(_*_)===
-[[#+]]
-----
-===(_+_)===
-[[#-]]
-----
-===(_-_)===
-[[#/]]
-----
-===(_/_)===
-[[#defmethod*]]
-----
-===(_defmethod*_ ns name & args)===
-====Macro====
-[[#one]]
-----
-===(_one_)===
-[[#qsym]]
-----
-===(_qsym_ ns sym)===
-====Macro====
-[[#zero]]
-----
-===(_zero_)===

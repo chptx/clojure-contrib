@@ -9,29 +9,24 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.miglayout.internal=
 ==Public Variables and Functions==
-[[#component?]]
 ----
 ===(_component?_ x)===
 Returns true if x is a java.awt.Component
-[[#constraint?]]
 ----
 ===(_constraint?_ x)===
 Returns true if x is not a keyword-item or component
-[[#format-constraint]]
 ----
 ===(_format-constraint_ c)===
 Returns a vector of vectors representing one or more constraints
-  separated by commas. Constraints may be specified in Clojure using
-  strings, keywords, vectors, maps, and/or sets.
-[[#format-constraints]]
+separated by commas. Constraints may be specified in Clojure using
+strings, keywords, vectors, maps, and/or sets.
 ----
 ===(_format-constraints_ & constraints)===
 Returns a string representing all the constraints for one keyword-item
-  or component formatted for miglayout.
-[[#parse-item-constraints]]
+or component formatted for miglayout.
 ----
 ===(_parse-item-constraints_ & args)===
 Iterates over args and builds a map containing values associated with
-  :keywords and :components. The value for :keywords is a map from keyword
-  items to constraints strings. The value for :components is a vector of
-  vectors each associating a component with its constraints string.
+:keywords and :components. The value for :keywords is a map from keyword
+items to constraints strings. The value for :components is a vector of
+vectors each associating a component with its constraints string.

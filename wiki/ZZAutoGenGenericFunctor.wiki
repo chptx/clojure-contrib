@@ -9,8 +9,7 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.generic.functor=
 ==Public Variables and Functions==
-[[#fmap]]
 ----
 ===(_fmap_ f s)===
 Applies function f to each item in the data structure s and returns
-   a structure of the same kind.
+a structure of the same kind.

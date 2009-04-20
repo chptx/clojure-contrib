@@ -9,62 +9,40 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.lazy-xml=
 ==Public Variables and Functions==
-[[#element]]
-----
-===(_element_)===
-[[#emit]]
 ----
 ===(_emit_ x & opts)===
 Prints an <?xml?> declaration line, and then calls emit-element
-[[#emit-element]]
 ----
 ===(_emit-element_ e & opts)===
 Recursively prints as XML text the element struct e.  To have it
-  print extra whitespace like clojure.xml/emit, use the :pad true
-  option.
-[[#escape-xml]]
-----
-===(_escape-xml_ text)===
-[[#escape-xml-map]]
-----
-===(_escape-xml-map_)===
-[[#has-pull]]
-----
-===(_has-pull_)===
-[[#node]]
-----
-===(_node_)===
-[[#parse-seq]]
+print extra whitespace like clojure.xml/emit, use the :pad true
+option.
 ----
 ===(_parse-seq_ s)===
 ===(_parse-seq_ s startparse)===
 ===(_parse-seq_ s startparse queue-size)===
 Parses the source s, which can be a File, InputStream or String
-  naming a URI. Returns a lazy sequence of maps with two or more of
-  the keys :type, :name, :attrs, and :str. Other SAX-compatible
-  parsers can be supplied by passing startparse, a fn taking a source
-  and a ContentHandler and returning a parser. If a parser is
-  specified, it will be run in a separate thread and be allowed to get
-  ahead by queue-size items, which defaults to maxing.  If no parser
-  is specified and org.xmlpull.v1.XmlPullParser is in the classpath,
-  this superior pull parser will be used.
-[[#parse-trim]]
+naming a URI. Returns a lazy sequence of maps with two or more of
+the keys :type, :name, :attrs, and :str. Other SAX-compatible
+parsers can be supplied by passing startparse, a fn taking a source
+and a ContentHandler and returning a parser. If a parser is
+specified, it will be run in a separate thread and be allowed to get
+ahead by queue-size items, which defaults to maxing.  If no parser
+is specified and org.xmlpull.v1.XmlPullParser is in the classpath,
+this superior pull parser will be used.
 ----
 ===(_parse-trim_ s)===
 ===(_parse-trim_ s startparse queue-size)===
 Parses the source s, which can be a File, InputStream or String
-  naming a URI. Returns a lazy tree of the clojure.xml/element
-  struct-map, which has the keys :tag, :attrs, and :content and
-  accessor fns tag, attrs, and content, with the whitespace trimmed
-  from around each content string. This format is compatible with what
-  clojure.xml/parse produces, except :content is a lazy seq instead of
-  a vector.  Other SAX-compatible parsers can be supplied by passing
-  startparse, a fn taking a source and a ContentHandler and returning
-  a parser. If a parser is specified, it will be run in a separate
-  thread and be allowed to get ahead by queue-size items, which
-  defaults to maxing.  If no parser is specified and
-  org.xmlpull.v1.XmlPullParser is in the classpath, this superior pull
-  parser will be used.
-[[#startparse-sax]]
-----
-===(_startparse-sax_ s ch)===
+naming a URI. Returns a lazy tree of the clojure.xml/element
+struct-map, which has the keys :tag, :attrs, and :content and
+accessor fns tag, attrs, and content, with the whitespace trimmed
+from around each content string. This format is compatible with what
+clojure.xml/parse produces, except :content is a lazy seq instead of
+a vector.  Other SAX-compatible parsers can be supplied by passing
+startparse, a fn taking a source and a ContentHandler and returning
+a parser. If a parser is specified, it will be run in a separate
+thread and be allowed to get ahead by queue-size items, which
+defaults to maxing.  If no parser is specified and
+org.xmlpull.v1.XmlPullParser is in the classpath, this superior pull
+parser will be used.

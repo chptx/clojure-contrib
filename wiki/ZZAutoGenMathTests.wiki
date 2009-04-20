@@ -9,30 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.math.tests=
 ==Public Variables and Functions==
-[[#test-abs]]
-----
-===(_test-abs_)===
-[[#test-ceil]]
-----
-===(_test-ceil_)===
-[[#test-exact-integer-sqrt]]
-----
-===(_test-exact-integer-sqrt_)===
-[[#test-expt]]
-----
-===(_test-expt_)===
-[[#test-floor]]
-----
-===(_test-floor_)===
-[[#test-gcd]]
-----
-===(_test-gcd_)===
-[[#test-lcm]]
-----
-===(_test-lcm_)===
-[[#test-round]]
-----
-===(_test-round_)===
-[[#test-sqrt]]
-----
-===(_test-sqrt_)===

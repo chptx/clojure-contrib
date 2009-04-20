@@ -9,23 +9,21 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.core=
 ==Public Variables and Functions==
-[[#-?>]]
 ----
 ===(_-?>_ x form)===
 ===(_-?>_ x form & forms)===
 ====Macro====
 Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
-   Examples :
-   (-?> "foo" .toUpperCase (.substring 1)) returns "OO"
-   (-?> nil .toUpperCase (.substring 1)) returns nil
-   
-[[#.?.]]
+Examples :
+(-?> "foo" .toUpperCase (.substring 1)) returns "OO"
+(-?> nil .toUpperCase (.substring 1)) returns nil
+
 ----
 ===(_.?._ x form)===
 ===(_.?._ x form & forms)===
 ====Macro====
 Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
-   Examples :
-   (.?. "foo" .toUpperCase (.substring 1)) returns "OO"
-   (.?. nil .toUpperCase (.substring 1)) returns nil
-   
+Examples :
+(.?. "foo" .toUpperCase (.substring 1)) returns "OO"
+(.?. nil .toUpperCase (.substring 1)) returns nil
+

@@ -9,65 +9,7 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.generic.math-functions=
 ==Public Variables and Functions==
-[[#abs]]
-----
-===(_abs_)===
-[[#acos]]
-----
-===(_acos_)===
-[[#approx=]]
 ----
 ===(_approx=_ x y eps)===
 Return true if the absolute value of the difference between x and y
-   is less than eps
-[[#asin]]
-----
-===(_asin_)===
-[[#atan]]
-----
-===(_atan_)===
-[[#atan2]]
-----
-===(_atan2_)===
-[[#ceil]]
-----
-===(_ceil_)===
-[[#conjugate]]
-----
-===(_conjugate_)===
-[[#cos]]
-----
-===(_cos_)===
-[[#exp]]
-----
-===(_exp_)===
-[[#floor]]
-----
-===(_floor_)===
-[[#log]]
-----
-===(_log_)===
-[[#pow]]
-----
-===(_pow_)===
-[[#rint]]
-----
-===(_rint_)===
-[[#round]]
-----
-===(_round_)===
-[[#sgn]]
-----
-===(_sgn_)===
-[[#sin]]
-----
-===(_sin_)===
-[[#sqr]]
-----
-===(_sqr_)===
-[[#sqrt]]
-----
-===(_sqrt_)===
-[[#tan]]
-----
-===(_tan_)===
+is less than eps

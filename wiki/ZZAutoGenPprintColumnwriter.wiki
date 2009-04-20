@@ -9,6 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.pprint.ColumnWriter=
 ==Public Variables and Functions==
-[[#*default-page-width*]]
-----
-===(_*default-page-width*_)===

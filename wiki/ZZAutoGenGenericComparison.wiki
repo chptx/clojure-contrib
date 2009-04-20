@@ -9,21 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.generic.comparison=
 ==Public Variables and Functions==
-[[#<]]
-----
-===(_<_)===
-[[#<=]]
-----
-===(_<=_)===
-[[#=]]
-----
-===(_=_)===
-[[#>]]
-----
-===(_>_)===
-[[#>=]]
-----
-===(_>=_)===
-[[#zero?]]
-----
-===(_zero?_)===

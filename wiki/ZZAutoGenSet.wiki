@@ -9,19 +9,15 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.set=
 ==Public Variables and Functions==
-[[#proper-subset?]]
 ----
 ===(_proper-subset?_ set1 set2)===
 Is s1 a proper subset of s2?
-[[#proper-superset?]]
 ----
 ===(_proper-superset?_ set1 set2)===
 Is s1 a proper superset of s2?
-[[#subset?]]
 ----
 ===(_subset?_ set1 set2)===
 Is set1 a subset of set2?
-[[#superset?]]
 ----
 ===(_superset?_ set1 set2)===
 Is set1 a superset of set2?

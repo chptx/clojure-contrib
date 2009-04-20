@@ -9,54 +9,43 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.str-utils=
 ==Public Variables and Functions==
-[[#chomp]]
 ----
 ===(_chomp_ s)===
 Removes all trailing newline  or return \r characters from
-  string.  Note: String.trim() is similar and faster.
-[[#chop]]
+string.  Note: String.trim() is similar and faster.
 ----
 ===(_chop_ s)===
 Removes the last character of string.
-[[#re-gsub]]
 ----
 ===(_re-gsub_ regex replacement string)===
 Replaces all instances of 'pattern' in 'string' with
-  'replacement'.  Like Ruby's 'String#gsub'.
-  
-  If (ifn? replacment) is true, the replacement is called with the
-  match.
-  
-[[#re-partition]]
+'replacement'.  Like Ruby's 'String#gsub'.
+If (ifn? replacment) is true, the replacement is called with the
+match.
+
 ----
 ===(_re-partition_ re string)===
 Splits the string into a lazy sequence of substrings, alternating
-  between substrings that match the patthern and the substrings
-  between the matches.  The sequence always starts with the substring
-  before the first match, or an empty string if the beginning of the
-  string matches.
-
-  For example: (re-partition #"[a-z]+" "abc123def")
-
-  Returns: ("" "abc" "123" "def")
-[[#re-split]]
+between substrings that match the patthern and the substrings
+between the matches.  The sequence always starts with the substring
+before the first match, or an empty string if the beginning of the
+string matches.
+For example: (re-partition #"[a-z]+" "abc123def")
+Returns: ("" "abc" "123" "def")
 ----
 ===(_re-split_ pattern string)===
 ===(_re-split_ pattern string limit)===
 Splits the string on instances of 'pattern'.  Returns a sequence of
-  strings.  Optional 'limit' argument is the maximum number of
-  splits.  Like Perl's 'split'.
-[[#re-sub]]
+strings.  Optional 'limit' argument is the maximum number of
+splits.  Like Perl's 'split'.
 ----
 ===(_re-sub_ regex replacement string)===
 Replaces the first instance of 'pattern' in 'string' with
-  'replacement'.  Like Ruby's 'String#sub'.
-  
-  If (ifn? replacement) is true, the replacement is called with
-  the match.
-  
-[[#str-join]]
+'replacement'.  Like Ruby's 'String#sub'.
+If (ifn? replacement) is true, the replacement is called with
+the match.
+
 ----
 ===(_str-join_ separator sequence)===
 Returns a string of all elements in 'sequence', separated by
-  'separator'.  Like Perl's 'join'.
+'separator'.  Like Perl's 'join'.

@@ -9,9 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.core.tests=
 ==Public Variables and Functions==
-[[#test-classic-versions]]
-----
-===(_test-classic-versions_)===
-[[#test-new-versions]]
-----
-===(_test-new-versions_)===

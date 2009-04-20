@@ -9,38 +9,27 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.datalog.util=
 ==Public Variables and Functions==
-[[#*trace-datalog*]]
-----
-===(_*trace-datalog*_)===
-[[#is-query-var?]]
 ----
 ===(_is-query-var?_ sym)===
 Is this a query variable: e.g. a symbol prefixed with ??
-[[#is-var?]]
 ----
 ===(_is-var?_ sym)===
 Is this a logic variable: e.g. a symbol prefixed with a ?
-[[#keys-to-vals]]
 ----
 ===(_keys-to-vals_ m ks)===
 Given a map and a collection of keys, return the collection of vals
-[[#map-values]]
 ----
 ===(_map-values_ f hash)===
 Like map, but works over the values of a hash map
-[[#preduce]]
 ----
 ===(_preduce_ f data)===
 Similar to merge-with, but the contents of each key are merged in
-   parallel using f.
-
-   f - a function of 2 arguments.
-   data - a collection of hashes.
-[[#reverse-map]]
+parallel using f.
+f - a function of 2 arguments.
+data - a collection of hashes.
 ----
 ===(_reverse-map_ m)===
 Reverse the keys/values of a map
-[[#trace-datalog]]
 ----
 ===(_trace-datalog_ & body)===
 ====Macro====

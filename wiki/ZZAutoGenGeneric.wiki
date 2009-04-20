@@ -9,18 +9,3 @@ namespace.
 </wiki:comment>
 =API for clojure.contrib.generic=
 ==Public Variables and Functions==
-[[#nary-dispatch]]
-----
-===(_nary-dispatch_)===
-===(_nary-dispatch_ x)===
-===(_nary-dispatch_ x y)===
-===(_nary-dispatch_ x y & more)===
-[[#nary-type]]
-----
-===(_nary-type_)===
-[[#nulary-type]]
-----
-===(_nulary-type_)===
-[[#root-type]]
-----
-===(_root-type_)===
