@@ -11,7 +11,7 @@ namespace.
 ==Public Variables and Functions==
 ----
 ===(_chomp_ s)===
-Removes all trailing newline  or return \r characters from
+Removes all trailing newline \n or return \r characters from
 string.  Note: String.trim() is similar and faster.
 ----
 ===(_chop_ s)===
