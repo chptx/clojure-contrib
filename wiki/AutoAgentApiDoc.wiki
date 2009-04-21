@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.auto-agent))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_auto-agent_expr) auto-agent] 
 ----
 ===(_auto-agent_ expr)===
 ====Macro====

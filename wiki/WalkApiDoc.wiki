@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.walk))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_keywordize-keys_m) keywordize-keys] [#(_macroexpand-all_form) macroexpand-all] [#(_postwalk_f_form) postwalk] [#(_postwalk-demo_form) postwalk-demo] [#(_postwalk-replace_smap_form) postwalk-replace] [#(_prewalk_f_form) prewalk] [#(_prewalk-demo_form) prewalk-demo] [#(_prewalk-replace_smap_form) prewalk-replace] [#(_stringify-keys_m) stringify-keys] [#(_walk_inner_outer_form) walk] 
 ----
 ===(_keywordize-keys_ m)===
 Recursively transforms all map keys from strings to keywords.

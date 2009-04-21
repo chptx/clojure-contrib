@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.repl-ln))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_print-repl-info_) print-repl-info] [#(_repl_&_options) repl] [#(_repl-info_) repl-info] [#(_repl-prompt_) repl-prompt] [#(_set-repl-name_) set-repl-name] [#(_set-repl-prompt_) set-repl-prompt] [#(_stream-repl_&_options) stream-repl] 
 ----
 ===(_print-repl-info_)===
 Prints info about the current repl

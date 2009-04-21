@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.sql.internal))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_connection*_) connection*] [#(_find-connection*_) find-connection*] [#(_get-connection_{:keys_[datasource_username_password_classname_subprotocol_subname],_:as_db-spec}) get-connection] [#(_rollback_) rollback] [#(_transaction*_func) transaction*] [#(_with-connection*_db-spec_func) with-connection*] [#(_with-query-results*_[sql_&_params_:as_sql-params]_func) with-query-results*] 
 ----
 ===(_connection*_)===
 Returns the current database connection (or throws if there is none)

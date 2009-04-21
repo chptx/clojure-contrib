@@ -14,3 +14,5 @@ Usage:
   (:use clojure.contrib.monads.examples))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+

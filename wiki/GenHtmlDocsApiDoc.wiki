@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.gen-html-docs))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_generate-documentation_libs) generate-documentation] [#(_generate-documentation-to-file_path_libs) generate-documentation-to-file] 
 ----
 ===(_generate-documentation_ libs)===
 Returns a string which is the HTML documentation for the libraries

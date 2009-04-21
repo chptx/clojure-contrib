@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.datalog.softstrat))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] [#(_get-all-relations_ws) get-all-relations] 
 ----
 ===(_build-soft-strat-work-plan_ rs q)===
 Return a work plan for the given rules-set and query

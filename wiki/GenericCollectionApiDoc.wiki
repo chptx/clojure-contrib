@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.generic.collection))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_assoc_coll_&_key-val-pairs) assoc] [#(_dissoc_coll_&_keys) dissoc] [#(_empty_coll) empty] [#(_get_coll_key) get] [#(_into_to_from) into] [#(_seq_s) seq] 
 ----
 ===(_assoc_ coll & key-val-pairs)===
 Returns a new collection in which the values corresponding to the

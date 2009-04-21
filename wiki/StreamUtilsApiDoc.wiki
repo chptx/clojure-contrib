@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.stream-utils))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_defst_name_args_streams_&_body) defst] [#(_defstream_type-tag_args_&_body) defstream] [#(_pick_n) pick] [#(_pick-all_streams) pick-all] [#(_stream-drop_n_stream) stream-drop] [#(_stream-filter_p_stream) stream-filter] [#(_stream-flatten_s) stream-flatten] [#_stream-m_ stream-m] [#(_stream-map_f_stream) stream-map] [#(_stream-next_stream-state) stream-next] [#(_stream-seq_s) stream-seq] [#_stream-type_ stream-type] 
 ----
 ===(_defst_ name args streams & body)===
 ====Macro====

@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.datalog.magic))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_adorn-query_q) adorn-query] [#(_adorn-rules-set_rs_q) adorn-rules-set] [#(_build-partial-tuple_q_bindings) build-partial-tuple] [#(_magic-transform_rs) magic-transform] [#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] [#(_seed-relation_q) seed-relation] [#(_seed-rule_q) seed-rule] 
 ----
 ===(_adorn-query_ q)===
 Adorn a query

@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.def))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_defalias_name_orig) defalias] [#(_defhinted_sym_init) defhinted] [#(_defmacro-_name_&_decls) defmacro-] [#(_defonce-_name_expr) defonce-] [#(_defstruct-_name_&_decls) defstruct-] [#(_defunbound_name) defunbound] [#(_defunbound-_name_&_decls) defunbound-] [#(_defvar_name) defvar] [#(_defvar-_name_&_decls) defvar-] [#(_name-with-attributes_name_macro-args) name-with-attributes] 
 ----
 ===(_defalias_ name orig)===
 ===(_defalias_ name orig doc)===
@@ -59,3 +61,14 @@ Defines a var with an optional intializer and doc string
 ===(_defvar-_ name & decls)===
 ====Macro====
 Same as defvar but yields a private definition
+----
+===(_name-with-attributes_ name macro-args)===
+To be used in macro definitions.
+Handles optional docstrings and attribute maps for a name to be defined
+in a list of macro arguments. If the first macro argument is a string,
+it is added as a docstring to name and removed from the macro argument
+list. If afterwards the first macro argument is a map, its entries are
+added to the name's metadata map and the map is removed from the
+macro argument list. The return value is a vector containing the name
+with its extended metadata map and the list of unprocessed macro
+arguments.

@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.str-utils))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_chomp_s) chomp] [#(_chop_s) chop] [#(_re-gsub_regex_replacement_string) re-gsub] [#(_re-partition_re_string) re-partition] [#(_re-split_pattern_string) re-split] [#(_re-sub_regex_replacement_string) re-sub] [#(_str-join_separator_sequence) str-join] 
 ----
 ===(_chomp_ s)===
 Removes all trailing newline \n or return \r characters from

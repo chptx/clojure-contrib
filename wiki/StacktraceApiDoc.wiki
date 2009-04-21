@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.stacktrace))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_e_) e] [#(_print-cause-trace_tr) print-cause-trace] [#(_print-stack-trace_tr) print-stack-trace] [#(_print-throwable_tr) print-throwable] [#(_print-trace-element_e) print-trace-element] [#(_root-cause_tr) root-cause] 
 ----
 ===(_e_)===
 REPL utility.  Prints a brief stack trace for the root cause of the

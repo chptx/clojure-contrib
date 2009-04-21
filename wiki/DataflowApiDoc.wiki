@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.dataflow))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_add-cell-watcher_cell_key_fun) add-cell-watcher] [#(_add-cells_df_cells) add-cells] [#(_build-dataflow_cs) build-dataflow] [#(_build-source-cell_name_init) build-source-cell] [#(_build-standard-cell_name_deps_fun_expr) build-standard-cell] [#(_build-validator-cell_deps_fun_expr) build-validator-cell] [#(_cell_type_&_data) cell] [#_display-cell_ display-cell] [#_eval-cell_ eval-cell] [#(_get-cell_df_name) get-cell] [#(_get-cells_df_name) get-cells] [#(_get-old-value_df_env_name) get-old-value] [#(_get-source-cells_df) get-source-cells] [#(_get-value_df_name) get-value] [#(_get-value-from-cell_cell) get-value-from-cell] [#(_get-values_df_name) get-values] [#(_print-dataflow_df) print-dataflow] [#(_remove-cells_df_cells) remove-cells] [#(_source-cell?_cell) source-cell?] [#(_update-values_df_data) update-values] 
 ----
 ===(_add-cell-watcher_ cell key fun)===
 Adds a watcher to a cell to respond to changes of value.  The is a

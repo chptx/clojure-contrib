@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.lazy-seqs))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#_primes_ primes] 
 ----
 ===_primes_===
 Lazy sequence of all the prime numbers.

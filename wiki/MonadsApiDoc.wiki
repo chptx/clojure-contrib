@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.monads))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_call-cc_f) call-cc] [#_cont-m_ cont-m] [#(_defmonad_name_doc-string_operations) defmonad] [#(_defmonadfn_name_docstring?_attr-map?_args_expr) defmonadfn] [#(_domonad_steps_expr) domonad] [#_identity-m_ identity-m] [#(_m-chain_steps) m-chain] [#(_m-fmap_f_m) m-fmap] [#(_m-join_m) m-join] [#(_m-lift_n_f) m-lift] [#(_m-map_f_xs) m-map] [#(_m-reduce_f_mvs) m-reduce] [#(_m-seq_ms) m-seq] [#(_m-when_test_m-expr) m-when] [#(_m-when-not_test_m-expr) m-when-not] [#_maybe-m_ maybe-m] [#(_maybe-t_m) maybe-t] [#(_monad_operations) monad] [#(_run-cont_c) run-cont] [#_sequence-m_ sequence-m] [#(_sequence-t_m) sequence-t] [#_set-m_ set-m] [#_state-m_ state-m] [#(_state-t_m) state-t] [#(_with-monad_name_&_exprs) with-monad] [#(_writer-m_empty-accumulator) writer-m] 
 ----
 ===(_call-cc_ f)===
 A computation in the cont monad that calls function f with a single
@@ -33,8 +35,8 @@ Define a named monad by defining the monad operations. The definitions
 are written like bindings to the monad operations m-bind and
 m-result (required) and m-zero and m-plus (optional).
 ----
-===(_defmonadfn_ name doc-string args expr)===
-===(_defmonadfn_ name args expr)===
+===(_defmonadfn_ name docstring? attr-map? args expr)===
+===(_defmonadfn_ name docstring? attr-map? (args expr) ...)===
 ====Macro====
 Like defn, but for functions that use monad operations and are used inside
 a with-monad block.
@@ -83,6 +85,12 @@ monadic arguments returning a monadic value.
 ====Macro====
 'Executes' the sequence of monadic values resulting from mapping
 f onto the values xs. f must return a monadic value.
+----
+===(_m-reduce_ f mvs)===
+===(_m-reduce_ f val mvs)===
+====Macro====
+Return the reduction of (m-lift 2 f) over the list of monadic values mvs
+with initial value (m-result val).
 ----
 ===(_m-seq_ ms)===
 ====Macro====

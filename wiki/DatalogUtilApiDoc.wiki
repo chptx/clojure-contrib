@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.datalog.util))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_is-query-var?_sym) is-query-var?] [#(_is-var?_sym) is-var?] [#(_keys-to-vals_m_ks) keys-to-vals] [#(_map-values_f_hash) map-values] [#(_preduce_f_data) preduce] [#(_reverse-map_m) reverse-map] [#(_trace-datalog_&_body) trace-datalog] 
 ----
 ===(_is-query-var?_ sym)===
 Is this a query variable: e.g. a symbol prefixed with ??

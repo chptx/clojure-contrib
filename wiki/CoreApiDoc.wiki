@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.core))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_-?>_x_form) -?>] [#(_.?._x_form) .?.] 
 ----
 ===(_-?>_ x form)===
 ===(_-?>_ x form & forms)===

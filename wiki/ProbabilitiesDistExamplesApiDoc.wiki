@@ -14,3 +14,5 @@ Usage:
   (:use clojure.contrib.probabilities.dist.examples))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+

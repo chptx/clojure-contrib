@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.types.examples))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#_multiset_ multiset] 
 ----
 ===_multiset_===
 Multiset (demo implementation)

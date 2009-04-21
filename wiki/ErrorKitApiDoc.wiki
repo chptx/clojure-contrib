@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.error-kit))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_bind-continue_continue-name_[args*]_&_body) bind-continue] [#(_deferror_name_[parent-error?]_doc-string?_[args*]_&_body) deferror] [#(_do-not-handle_) do-not-handle] [#(_error_details) error] [#(_handle_error-name?_[args*]_&_body) handle] [#(_raise_err-name_&_args) raise] [#(_raise*_err) raise*] [#(_throw-msg_class-name) throw-msg] [#(_with-handler_&_forms) with-handler] 
 ----
 ===(_bind-continue_ continue-name [args*] & body)===
 Special form to be used inside a 'with-handler'.

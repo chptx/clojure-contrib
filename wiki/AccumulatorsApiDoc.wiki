@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.accumulators))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_add_acc_item) add] [#(_add-items_acc_items) add-items] [#(_combine_&_accs) combine] [#_empty-counter_ empty-counter] [#_empty-counter-with-total_ empty-counter-with-total] [#_empty-list_ empty-list] [#_empty-map_ empty-map] [#_empty-maximum_ empty-maximum] [#_empty-mean-variance_ empty-mean-variance] [#_empty-min-max_ empty-min-max] [#_empty-minimum_ empty-minimum] [#_empty-product_ empty-product] [#_empty-queue_ empty-queue] [#_empty-set_ empty-set] [#_empty-string_ empty-string] [#_empty-sum_ empty-sum] [#(_empty-tuple_empty-accumulators) empty-tuple] [#_empty-vector_ empty-vector] 
 ----
 ===(_add_ acc item)===
 Add item to the accumulator acc. The exact meaning of adding an
@@ -43,6 +45,10 @@ An empty map accumulator. Items to be added must be [key value] pairs.
 ----
 ===_empty-maximum_===
 An empty maximum accumulator. Only numbers can be added.
+----
+===_empty-mean-variance_===
+An empty mean-variance accumulator, combining sample mean and
+sample variance. Only numbers can be added.
 ----
 ===_empty-min-max_===
 An empty min-max accumulator, combining minimum and maximum.

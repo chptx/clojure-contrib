@@ -14,3 +14,5 @@ Usage:
   (:use clojure.contrib.generic))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+

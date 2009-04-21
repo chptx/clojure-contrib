@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.singleton))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_global-singleton_f) global-singleton] [#(_per-thread-singleton_f) per-thread-singleton] 
 ----
 ===(_global-singleton_ f)===
 Returns a global singleton function.  f is a function of no

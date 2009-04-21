@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.sql))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_connection_) connection] [#(_create-table_name_&_specs) create-table] [#(_delete-rows_table_where-params) delete-rows] [#(_do-commands_&_commands) do-commands] [#(_do-prepared_sql_&_param-groups) do-prepared] [#(_drop-table_name) drop-table] [#(_find-connection_) find-connection] [#(_insert-records_table_&_records) insert-records] [#(_insert-rows_table_&_rows) insert-rows] [#(_insert-values_table_column-names_&_value-groups) insert-values] [#(_is-rollback-only_) is-rollback-only] [#(_set-rollback-only_) set-rollback-only] [#(_transaction_&_body) transaction] [#(_update-or-insert-values_table_where-params_record) update-or-insert-values] [#(_update-values_table_where-params_record) update-values] [#(_with-connection_db-spec_&_body) with-connection] [#(_with-query-results_results_sql-params_&_body) with-query-results] 
 ----
 ===(_connection_)===
 Returns the current database connection (or throws if there is none)

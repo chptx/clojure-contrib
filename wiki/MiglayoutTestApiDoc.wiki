@@ -14,3 +14,5 @@ Usage:
   (:use clojure.contrib.miglayout.test))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+

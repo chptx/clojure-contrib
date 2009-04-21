@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.test-is))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#_*load-tests*_ *load-tests*] [#_*stack-trace-depth*_ *stack-trace-depth*] [#(_are_expr_&_args) are] [#(_assert-any_msg_form) assert-any] [#(_assert-predicate_msg_form) assert-predicate] [#(_compose-fixtures_f1_f2) compose-fixtures] [#(_deftest_name_&_body) deftest] [#(_deftest-_name_&_body) deftest-] [#(_file-position_n) file-position] [#(_function?_x) function?] [#(_get-possibly-unbound-var_v) get-possibly-unbound-var] [#(_inc-report-counter_name) inc-report-counter] [#(_is_form) is] [#(_join-fixtures_fixtures) join-fixtures] [#(_print-results_r) print-results] [#_report_ report] [#(_run-all-tests_) run-all-tests] [#(_run-tests_) run-tests] [#(_set-test_name_&_body) set-test] [#(_test-all-vars_ns) test-all-vars] [#(_test-ns_ns) test-ns] [#(_test-var_v) test-var] [#(_testing_string_&_body) testing] [#(_testing-contexts-str_) testing-contexts-str] [#(_testing-vars-str_) testing-vars-str] [#(_try-expr_msg_form) try-expr] [#(_with-test_definition_&_body) with-test] 
 ----
 ===_*load-tests*_===
 True by default.  If set to false, no test functions will

@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.miglayout.internal))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_component?_x) component?] [#(_constraint?_x) constraint?] [#(_format-constraint_c) format-constraint] [#(_format-constraints_&_constraints) format-constraints] [#(_parse-item-constraints_&_args) parse-item-constraints] 
 ----
 ===(_component?_ x)===
 Returns true if x is a java.awt.Component

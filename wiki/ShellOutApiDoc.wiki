@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.shell-out))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_sh_&_args) sh] 
 ----
 ===(_sh_ & args)===
 Passes the given strings to Runtime.exec() to launch a sub-process.

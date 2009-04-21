@@ -14,6 +14,8 @@ Usage:
   (:use clojure.contrib.greatest-least))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+[#(_all-greatest_&_args) all-greatest] [#(_all-greatest-by_f_&_args) all-greatest-by] [#(_all-least_&_args) all-least] [#(_all-least-by_f_&_args) all-least-by] [#(_greatest_&_args) greatest] [#(_greatest-by_f_&_args) greatest-by] [#(_least_&_args) least] [#(_least-by_f_&_args) least-by] 
 ----
 ===(_all-greatest_ & args)===
 Returns all the greatest elements.

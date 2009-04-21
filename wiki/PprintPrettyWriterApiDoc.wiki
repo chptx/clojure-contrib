@@ -14,3 +14,5 @@ Usage:
   (:use clojure.contrib.pprint.PrettyWriter))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+

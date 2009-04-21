@@ -14,3 +14,5 @@ Usage:
   (:use clojure.contrib.pprint.examples.multiply))
 }}}
 ==Public Variables and Functions==
+Shortcuts:
+
