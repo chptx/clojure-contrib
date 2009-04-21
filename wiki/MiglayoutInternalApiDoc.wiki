@@ -1,0 +1,37 @@
+#summary miglayout.internal API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for miglayout.internal=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.miglayout.internal))
+}}}
+==Public Variables and Functions==
+----
+===(_component?_ x)===
+Returns true if x is a java.awt.Component
+----
+===(_constraint?_ x)===
+Returns true if x is not a keyword-item or component
+----
+===(_format-constraint_ c)===
+Returns a vector of vectors representing one or more constraints
+separated by commas. Constraints may be specified in Clojure using
+strings, keywords, vectors, maps, and/or sets.
+----
+===(_format-constraints_ & constraints)===
+Returns a string representing all the constraints for one keyword-item
+or component formatted for miglayout.
+----
+===(_parse-item-constraints_ & args)===
+Iterates over args and builds a map containing values associated with
+:keywords and :components. The value for :keywords is a map from keyword
+items to constraints strings. The value for :components is a vector of
+vectors each associating a component with its constraints string.

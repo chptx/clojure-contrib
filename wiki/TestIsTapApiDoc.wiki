@@ -1,0 +1,34 @@
+#summary test-is.tap API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for test-is.tap=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.test-is.tap))
+}}}
+==Public Variables and Functions==
+----
+===(_print-tap-diagnostic_ data)===
+Prints a TAP diagnostic line.  data is a (possibly multi-line)
+string.
+----
+===(_print-tap-fail_ msg)===
+Prints a TAP 'not ok' line.  msg is a string, with no line breaks
+----
+===(_print-tap-pass_ msg)===
+Prints a TAP 'ok' line.  msg is a string, with no line breaks
+----
+===(_print-tap-plan_ n)===
+Prints a TAP plan line like '1..n'.  n is the number of tests
+----
+===(_with-tap-output_ & body)===
+====Macro====
+Execute body with modified test-is reporting functions that produce
+TAP output

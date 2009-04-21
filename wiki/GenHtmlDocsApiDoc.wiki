@@ -1,0 +1,25 @@
+#summary gen-html-docs API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for gen-html-docs=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.gen-html-docs))
+}}}
+==Public Variables and Functions==
+----
+===(_generate-documentation_ libs)===
+Returns a string which is the HTML documentation for the libraries
+named by libs. Libs is a vector of symbols identifying Clojure
+libraries.
+----
+===(_generate-documentation-to-file_ path libs)===
+Calls generate-documentation on the libraries named by libs and
+emits the generated HTML to the path named by path.

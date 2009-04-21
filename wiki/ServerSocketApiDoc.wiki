@@ -1,0 +1,32 @@
+#summary server-socket API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for server-socket=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.server-socket))
+}}}
+==Public Variables and Functions==
+----
+===(_create-repl-server_ port backlog bind-addr)===
+===(_create-repl-server_ port backlog)===
+===(_create-repl-server_ port)===
+create a repl on a socket
+----
+===(_create-server_ port fun backlog bind-addr)===
+===(_create-server_ port fun backlog)===
+===(_create-server_ port fun)===
+Creates a server socket on port. Upon accept, a new thread is
+created which calls:
+
+(fun input-stream output-stream)
+
+Optional arguments support specifying a listen backlog and binding
+to a specific endpoint.

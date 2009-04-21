@@ -1,0 +1,73 @@
+#summary duck-streams API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for duck-streams=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.duck-streams))
+}}}
+==Public Variables and Functions==
+----
+===(_file_ & args)===
+Concatenates args as strings returns a java.io.File.  Replaces all
+/ and \ with File/separatorChar.  Replaces ~ at the start of the
+path with the user.home system property.
+----
+===(_pwd_)===
+Returns current working directory as a String.  (Like UNIX 'pwd'.)
+Note: In Java, you cannot change the current working directory.
+----
+===(_read-lines_ f)===
+Like clojure.core/line-seq but opens f with reader.  Automatically
+closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.
+----
+===_reader_===
+Attempts to coerce its argument into an open
+java.io.BufferedReader.  Argument may be an instance of Reader,
+BufferedReader, InputStream, File, URI, URL, or String.
+
+If argument is a String, it tries to resolve it first as a URI, then
+as a local file name.  URIs with a 'file' protocol are converted to
+local file names.  Uses *default-encoding* as the text encoding.
+
+Should be used inside with-open to ensure the Reader is properly
+closed.
+----
+===(_slurp*_ f)===
+Like clojure.core/slurp but opens f with reader.
+----
+===(_spit_ f content)===
+Opposite of slurp.  Opens f with writer, writes content, then
+closes f.
+----
+===(_with-in-reader_ f & body)===
+====Macro====
+Opens a PushbackReader on f, binds it to *in*, and evaluates body.
+----
+===(_with-out-writer_ f & body)===
+====Macro====
+Opens a writer on f, binds it to *out*, and evalutes body.
+----
+===(_write-lines_ f lines)===
+Writes lines (a seq) to f, separated by newlines.  f is opened with
+writer.
+----
+===_writer_===
+Attempts to coerce its argument into an open java.io.PrintWriter
+wrapped around a java.io.BufferedWriter.  Argument may be an
+instance of Writer, PrintWriter, BufferedWriter, OutputStream, File,
+URI, URL, or String.
+
+If argument is a String, it tries to resolve it first as a URI, then
+as a local file name.  URIs with a 'file' protocol are converted to
+local file names.
+
+Should be used inside with-open to ensure the Writer is properly
+closed.

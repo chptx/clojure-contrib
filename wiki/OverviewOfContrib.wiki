@@ -1,0 +1,313 @@
+#summary An overview of the clojure.contrib library
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=The User Contributions Library, clojure.contrb=
+The user contributions library, clojure.contrib, is a collection
+of namespaces each of which implements features that we believe may be useful to 
+a large part of the clojure community. 
+
+This library was created by Rich Hickey but has been populated and is maintained by a 
+group of volunteers who are excited about the success of the Clojure language and 
+want to do our part to help it along. The current list of contributors is available 
+on the [http://code.google.com/p/clojure-contrib/ clojure.contrib home page].
+
+More contributions (and contributors) are welcome. If you wish to contribute, you will need
+to sign a contributor agreement (which allows Clojure and clojure.contrib to proceed
+without entanglements, see [http://clojure.org/contributing contributing] for more info). 
+The best way to start is to share a project you've written with the google group and gauge
+the interest in adding it to contrib. (Publishing it in an open source form on google code,
+github or some other easy-to-access place in the net will also help.)
+
+Some parts of clojure.contrib may migrate into clojure.core if they prove to be so 
+generally useful that they justify being everywhere. (For example, condp started out
+as an extension in contrib, but was moved to core by popular acclamation.)
+
+The exact role of clojure.contrib is the subject of pretty much continuous discussion
+in the clojure google group and in #clojure on freenode. Feel free to join that 
+discussion and help shape the ways Clojure is extended.
+
+Like Clojure itself, clojure.contrib is made available under the [http://opensource.org/licenses/eclipse-1.0.php Eclipse Public License (EPL)]. 
+clojure.contrib is copyright 2008-2009 Rich Hickey and the various contributers.
+=Summary of the Namespaces in clojure.contrib=
+*accumulators* [AccumulatorsApiDoc api]
+
+
+*accumulators.examples* [AccumulatorsExamplesApiDoc api]
+
+
+*agent-utils* [AgentUtilsApiDoc api]
+
+
+*auto-agent* [AutoAgentApiDoc api]
+
+
+*combinatorics* [CombinatoricsApiDoc api]
+
+
+*command-line* [CommandLineApiDoc api]
+
+
+*complex-numbers* [ComplexNumbersApiDoc api]
+
+
+*cond* [CondApiDoc api]
+
+
+*condt* [CondtApiDoc api]
+
+
+*core* [CoreApiDoc api]
+
+
+*core.tests* [CoreTestsApiDoc api]
+
+
+*dataflow* [DataflowApiDoc api]
+
+
+*datalog* [DatalogApiDoc api]
+
+
+*datalog.database* [DatalogDatabaseApiDoc api]
+
+
+*datalog.literals* [DatalogLiteralsApiDoc api]
+
+
+*datalog.magic* [DatalogMagicApiDoc api]
+
+
+*datalog.rules* [DatalogRulesApiDoc api]
+
+
+*datalog.softstrat* [DatalogSoftstratApiDoc api]
+
+
+*datalog.util* [DatalogUtilApiDoc api]
+
+
+*def* [DefApiDoc api]
+
+
+*duck-streams* [DuckStreamsApiDoc api]
+
+
+*error-kit* [ErrorKitApiDoc api]
+
+
+*except* [ExceptApiDoc api]
+
+
+*fcase* [FcaseApiDoc api]
+
+
+*gen-html-docs* [GenHtmlDocsApiDoc api]
+
+
+*generic* [GenericApiDoc api]
+
+
+*generic.arithmetic* [GenericArithmeticApiDoc api]
+
+
+*generic.collection* [GenericCollectionApiDoc api]
+
+
+*generic.comparison* [GenericComparisonApiDoc api]
+
+
+*generic.functor* [GenericFunctorApiDoc api]
+
+
+*generic.math-functions* [GenericMathFunctionsApiDoc api]
+
+
+*graph* [GraphApiDoc api]
+
+
+*greatest-least* [GreatestLeastApiDoc api]
+
+
+*import-static* [ImportStaticApiDoc api]
+
+
+*java-utils* [JavaUtilsApiDoc api]
+
+
+*javadoc.browse* [JavadocBrowseApiDoc api]
+
+
+*javalog* [JavalogApiDoc api]
+
+
+*json.read* [JsonReadApiDoc api]
+
+
+*json.write* [JsonWriteApiDoc api]
+
+
+*lazy-seqs* [LazySeqsApiDoc api]
+
+
+*lazy-xml* [LazyXmlApiDoc api]
+
+
+*macros* [MacrosApiDoc api]
+
+
+*map-utils* [MapUtilsApiDoc api]
+
+
+*math* [MathApiDoc api]
+
+
+*math.tests* [MathTestsApiDoc api]
+
+
+*miglayout* [MiglayoutApiDoc api]
+
+
+*miglayout.internal* [MiglayoutInternalApiDoc api]
+
+
+*miglayout.test* [MiglayoutTestApiDoc api]
+
+
+*mmap* [MmapApiDoc api]
+
+
+*monads* [MonadsApiDoc api]
+
+
+*monads.examples* [MonadsExamplesApiDoc api]
+
+
+*ns-utils* [NsUtilsApiDoc api]
+
+
+*pprint* [PprintApiDoc api]
+<br>by Tom Faulhaber
+
+This module comprises two elements:
+ # A pretty printer for Clojure data structures, implemented in the function "pprint"
+ # A Common Lisp compatible format function, implemented as "cl-format" because Clojure is using the name "format" for its own format.
+
+The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format
+where the markdown README is currently displayed. I will be moving it into the 
+clojure.contrib wiki RSN.
+
+
+*pprint.ColumnWriter* [PprintColumnWriterApiDoc api]
+
+
+*pprint.PrettyWriter* [PprintPrettyWriterApiDoc api]
+
+
+*pprint.examples.hexdump* [PprintExamplesHexdumpApiDoc api]
+
+
+*pprint.examples.multiply* [PprintExamplesMultiplyApiDoc api]
+
+
+*pprint.examples.props* [PprintExamplesPropsApiDoc api]
+
+
+*pprint.examples.show-doc* [PprintExamplesShowDocApiDoc api]
+
+
+*pprint.utilities* [PprintUtilitiesApiDoc api]
+
+
+*probabilities.dist* [ProbabilitiesDistApiDoc api]
+
+
+*probabilities.dist.examples* [ProbabilitiesDistExamplesApiDoc api]
+
+
+*prxml* [PrxmlApiDoc api]
+
+
+*repl-ln* [ReplLnApiDoc api]
+
+
+*repl-utils* [ReplUtilsApiDoc api]
+
+
+*seq-utils* [SeqUtilsApiDoc api]
+
+
+*server-socket* [ServerSocketApiDoc api]
+
+
+*set* [SetApiDoc api]
+
+
+*shell-out* [ShellOutApiDoc api]
+
+
+*singleton* [SingletonApiDoc api]
+
+
+*sql* [SqlApiDoc api]
+
+
+*sql.internal* [SqlInternalApiDoc api]
+
+
+*sql.test* [SqlTestApiDoc api]
+
+
+*stacktrace* [StacktraceApiDoc api]
+
+
+*str-utils* [StrUtilsApiDoc api]
+
+
+*stream-utils* [StreamUtilsApiDoc api]
+
+
+*stream-utils.examples* [StreamUtilsExamplesApiDoc api]
+
+
+*template* [TemplateApiDoc api]
+
+
+*test-is* [TestIsApiDoc api]
+
+
+*test-is.tap* [TestIsTapApiDoc api]
+
+
+*test-is.test-fixtures* [TestIsTestFixturesApiDoc api]
+
+
+*test-is.tests* [TestIsTestsApiDoc api]
+
+
+*trace* [TraceApiDoc api]
+
+
+*types* [TypesApiDoc api]
+
+
+*types.examples* [TypesExamplesApiDoc api]
+
+
+*walk* [WalkApiDoc api]
+
+
+*with-ns* [WithNsApiDoc api]
+
+
+*zip-filter* [ZipFilterApiDoc api]
+
+
+*zip-filter.xml* [ZipFilterXmlApiDoc api]
+
+

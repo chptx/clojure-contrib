@@ -1,0 +1,65 @@
+#summary datalog.rules API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for datalog.rules=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.datalog.rules))
+}}}
+==Public Variables and Functions==
+----
+===(_<-_ hd & body)===
+====Macro====
+Build a datalog rule.  Like this:
+
+(<- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if > ?y ?z))
+----
+===(_?-_ & q)===
+====Macro====
+Define a datalog query
+----
+===(_all-predicates_ rs)===
+Given a rules-set, return all defined predicates
+----
+===(_apply-rule_ db rule)===
+===(_apply-rule_ db-1 db-2 rule)===
+Apply the rule against db-1, adding the results to the appropriate
+relation in db-2.  The relation will be created if needed.
+----
+===(_compute-sip_ bindings i-preds rule)===
+Given a set of bound column names, return an adorned sip for this
+rule.  A set of intensional predicates should be provided to
+determine what should be adorned.
+----
+===(_display-query_ query)===
+Return a query in a readable format.
+----
+===(_display-rule_ rule)===
+Return the rule in a readable format.
+----
+===(_is-safe?_ rule)===
+Is the rule safe according to the datalog protocol?
+----
+===(_make-rules-set_ rs)===
+Given an existing set of rules, make it a 'rules-set' for
+printing.
+----
+===(_non-base-rules_ rs)===
+Return a collection of rules that depend, somehow, on other rules
+----
+===(_predicate-map_ rs)===
+Given a rules-set, return a map of rules keyed by their predicates.
+Each value will be a set of rules.
+----
+===(_return-rule-data_ rule)===
+Returns an untypted rule that will be fully printed
+----
+===(_rules-set_ & rules)===
+Given a collection of rules return a rules set

@@ -1,0 +1,24 @@
+#summary agent-utils API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for agent-utils=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.agent-utils))
+}}}
+==Public Variables and Functions==
+----
+===(_capture-and-send_ vars agent action & args)===
+====Macro====
+Capture the current value of the specified vars and rebind 
+them on the agent thread before executing the action.
+
+Example:
+(capture-and-send [*out*] a f b c)

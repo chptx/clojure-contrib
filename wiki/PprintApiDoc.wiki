@@ -1,0 +1,134 @@
+#summary pprint API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for pprint=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.pprint))
+}}}
+==Overview==
+This module comprises two elements:
+ # A pretty printer for Clojure data structures, implemented in the function "pprint"
+ # A Common Lisp compatible format function, implemented as "cl-format" because Clojure is using the name "format" for its own format.
+
+The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format
+where the markdown README is currently displayed. I will be moving it into the 
+clojure.contrib wiki RSN.
+
+
+==Public Variables and Functions==
+----
+===_*print-circle*_===
+Mark circular structures (N.B. This is not yet used)
+----
+===_*print-lines*_===
+Maximum number of lines to print in a pretty print instance (N.B. This is not yet used)
+----
+===_*print-miser-width*_===
+The column at which to enter miser style. Depending on the dispatch table, 
+miser style add newlines in more places to try to keep lines short allowing for further 
+levels of nesting.
+----
+===_*print-pprint-dispatch*_===
+The pretty print dispatch table
+----
+===_*print-pretty*_===
+Bind to true if you want write to use pretty printing
+----
+===_*print-right-margin*_===
+Pretty printing will try to avoid anything going beyond this column.
+----
+===_*print-shared*_===
+Mark repeated structures rather than repeat them (N.B. This is not yet used)
+----
+===_*print-suppress-namespaces*_===
+Don't print namespaces with symbols. This is particularly useful when 
+pretty printing the results of macro expansions
+----
+===(_cl-format_ stream format-in & args)===
+An implementation of a Common Lisp compatible format function
+----
+===(_compile-format_ format-str)===
+Compiles format-str into a compiled format which can be used as an argument
+to cl-format just like a plain format string. Use this function for improved 
+performance when you're using the same format string repeatedly
+----
+===(_formatter_ format-in)===
+====Macro====
+Makes a function which can directly run format-in. The function is
+fn [stream & args] ... and returns nil unless the stream is nil (meaning 
+output to a string) in which case it returns the resulting string.
+
+format-in can be either a control string or a previously compiled format.
+----
+===(_pp_)===
+====Macro====
+A convenience macro that pretty prints the last thing output. This is
+exactly equivalent to (pprint *1).
+----
+===(_pprint_ object & more)===
+Pretty print object to the optional output writer. If the writer is not provided, 
+print the object to the currently bound value of *out*.
+----
+===(_pprint-indent_ relative-to n & more)===
+Create an indent at this point in the pretty printing stream. This defines how 
+following lines are indented. relative-to can be either :block or :current depending 
+whether the indent should be computed relative to the start of the logical block or
+the current column position. n is an offset. 
+
+Optionally, a third argument which is a stream may be used. If supplied, that is 
+the writer indented, otherwise *out* is used.
+
+If the requested stream is not a PrettyWriter, this function does nothing.
+----
+===(_pprint-logical-block_ base-stream & body)===
+====Macro====
+Execute the body as a pretty printing logical block with output to *out* which 
+is a pretty printing writer wrapping base-stream (unless base-stream is already a pretty 
+printing writer in which case *out* is just bound to base-stream). 
+
+After the writer, the caller can optionally specify :prefix, :per-line-prefix, and
+:suffix.
+----
+===(_pprint-newline_ kind & more)===
+Print a conditional newline to a pretty printing stream. kind specifies if the 
+newline is :linear, :miser, :fill, or :mandatory. 
+
+Optionally, a second argument which is a stream may be used. If supplied, that is 
+the writer to which the newline is sent, otherwise *out* is used.
+
+If the requested stream is not a PrettyWriter, this function does nothing.
+----
+===(_pprint-tab_ kind colnum colinc & more)===
+Tab at this point in the pretty printing stream. kind specifies whether the tab
+is :line, :section, :line-relative, or :section-relative. 
+
+Colnum and colinc specify the target column and the increment to move the target
+forward if the output is already past the original target.
+
+Optionally, a fourth argument which is a stream may be used. If supplied, that is 
+the writer indented, otherwise *out* is used.
+
+If the requested stream is not a PrettyWriter, this function does nothing.
+
+THIS FUNCTION IS NOT YET IMPLEMENTED.
+----
+===(_set-pprint-dispatch_ table)===
+Set the pretty print dispatch table to TABLE. Currently the supported values are
+*simple-dispatch* or *code-dispatch*. In the future, this will support custom tables.
+----
+===(_with-pprint-dispatch_ table & body)===
+====Macro====
+Execute body with the pretty print dispatch table bound to table.
+----
+===(_write_ object & kw-args)===
+Write an object subject to the current bindings of the printer control variables.
+Use the options argument to override individual variables for this call (and any 
+recursive calls). Returns the string result if :stream is nil or nil otherwise.

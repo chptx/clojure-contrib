@@ -1,0 +1,48 @@
+#summary math API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for math=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.math))
+}}}
+==Public Variables and Functions==
+----
+===(_abs_ n)===
+(abs n) is the absolute value of n
+----
+===(_ceil_ n)===
+(ceil n) returns the least integer greater than or equal to n.
+If n is an exact number, ceil returns an integer, otherwise a double.
+----
+===(_exact-integer-sqrt_ n)===
+(exact-integer-sqrt n) expects a non-negative integer n, and returns [s r] where n = s^2+r and n < (s+1)^2.  In other words, it returns the floor of the square root and the 'remainder'.
+For example, (exact-integer-sqrt 15) is [3 6] because 15 = 3^2+6.
+----
+===(_expt_ base pow)===
+(expt base pow) is base to the pow power.
+Returns an exact number if the base is an exact number and the power is an integer, otherwise returns a double.
+----
+===(_floor_ n)===
+(floor n) returns the greatest integer less than or equal to n.
+If n is an exact number, floor returns an integer, otherwise a double.
+----
+===(_gcd_ a b)===
+(gcd a b) returns the greatest common divisor of a and b
+----
+===(_lcm_ a b)===
+(lcm a b) returns the least common multiple of a and b
+----
+===(_round_ n)===
+(round n) rounds to the nearest integer.
+round always returns an integer.  Rounds up for values exactly in between two integers.
+----
+===(_sqrt_ n)===
+Square root, but returns exact number if possible.

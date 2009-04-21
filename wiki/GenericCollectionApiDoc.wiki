@@ -1,0 +1,41 @@
+#summary generic.collection API Reference
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for generic.collection=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.generic.collection))
+}}}
+==Public Variables and Functions==
+----
+===(_assoc_ coll & key-val-pairs)===
+Returns a new collection in which the values corresponding to the
+given keys are updated by the given values. Each type of collection
+can have specific restrictions on the possible keys.
+----
+===(_dissoc_ coll & keys)===
+Returns a new collection in which the entries corresponding to the
+given keys are removed. Each type of collection can have specific
+restrictions on the possible keys.
+----
+===(_empty_ coll)===
+Returns an empty collection of the same kind as the argument
+----
+===(_get_ coll key)===
+===(_get_ coll key not-found)===
+Returns the element of coll referred to by key. Each type of collection
+can have specific restrictions on the possible keys.
+----
+===(_into_ to from)===
+Returns a new coll consisting of to-coll with all of the items of
+from-coll conjoined.
+----
+===(_seq_ s)===
+Returns a seq on the object s.
