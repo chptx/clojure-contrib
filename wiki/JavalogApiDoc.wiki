@@ -17,7 +17,7 @@ Usage:
 Shortcuts:
 [#_*logger*_ *logger*] [#(_add-log-file_logger-name_filename) add-log-file] [#(_log_level_&_strings) log] [#(_log-level_level) log-level] [#(_root-logger_) root-logger] [#(_set-console-log-level_level) set-console-log-level] [#(_with-logger_logger-name_level_&_body) with-logger] 
 ----
-===_*logger*_===
+===_`*`logger`*`_===
 The current java.util.logging.Logger.  By default, the
 global logger, modified by 'with-logger'.
 ----
@@ -30,7 +30,7 @@ the names.
 ----
 ===(_log_ level & strings)===
 ====Macro====
-Logs a message to *logger*.  'level' is expanded with 'log-level'.
+Logs a message to `*`logger`*`.  'level' is expanded with 'log-level'.
 Example: (log :severe "Bad argument: " object)
 ----
 ===(_log-level_ level)===
@@ -54,5 +54,5 @@ debugging at the REPL.
 ----
 ===(_with-logger_ logger-name level & body)===
 ====Macro====
-Executes 'body' with *logger* bound to a logger with the given name
+Executes 'body' with `*`logger`*` bound to a logger with the given name
 and level.  'level' is expanded with 'log-level'.

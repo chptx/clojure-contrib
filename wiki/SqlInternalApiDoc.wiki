@@ -17,10 +17,10 @@ Usage:
 Shortcuts:
 [#(_connection*_) connection*] [#(_find-connection*_) find-connection*] [#(_get-connection_{:keys_[datasource_username_password_classname_subprotocol_subname],_:as_db-spec}) get-connection] [#(_rollback_) rollback] [#(_transaction*_func) transaction*] [#(_with-connection*_db-spec_func) with-connection*] [#(_with-query-results*_[sql_&_params_:as_sql-params]_func) with-query-results*] 
 ----
-===(_connection*_)===
+===(_connection`*`_)===
 Returns the current database connection (or throws if there is none)
 ----
-===(_find-connection*_)===
+===(_find-connection`*`_)===
 Returns the current database connection (or nil if there is none)
 ----
 ===(_get-connection_ {:keys [datasource username password classname subprotocol subname], :as db-spec})===
@@ -42,7 +42,7 @@ DriverManager:
 ===(_rollback_ val)===
 Accessor for the rollback flag on the current connection
 ----
-===(_transaction*_ func)===
+===(_transaction`*`_ func)===
 Evaluates func as a transaction on the open database connection. Any
 nested transactions are absorbed into the outermost transaction. By
 default, all database updates are committed together as a group after
@@ -51,11 +51,11 @@ exception. If rollback is set within scope of the outermost transaction,
 the entire transaction will be rolled back rather than committed when
 complete.
 ----
-===(_with-connection*_ db-spec func)===
+===(_with-connection`*`_ db-spec func)===
 Evaluates func in the context of a new connection to a database then
 closes the connection.
 ----
-===(_with-query-results*_ [sql & params :as sql-params] func)===
+===(_with-query-results`*`_ [sql & params :as sql-params] func)===
 Executes a query, then evaluates func passing in a seq of the results as
 an argument. The first argument is a vector containing the (optionally
 parameterized) sql query string followed by values for any parameters.

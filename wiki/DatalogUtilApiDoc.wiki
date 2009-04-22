@@ -41,4 +41,4 @@ Reverse the keys/values of a map
 ----
 ===(_trace-datalog_ & body)===
 ====Macro====
-If *test-datalog* is set to true, run the enclosed commands
+If `*`test-datalog`*` is set to true, run the enclosed commands

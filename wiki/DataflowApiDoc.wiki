@@ -43,16 +43,16 @@ Builds a validator cell
 Build a standard cell, like this:
 
 (cell fred
-(* ?mary ?joe))
+(`*` ?mary ?joe))
 
 Which creates a cell named fred that is the product of a cell mary and cell joe
 
 Or:
 
 (cell joe
-(apply * ?*sally))
+(apply `*` ?`*`sally))
 
-Which creates a cell that applies * to the collection of all cells named sally
+Which creates a cell that applies `*` to the collection of all cells named sally
 
 Or:
 

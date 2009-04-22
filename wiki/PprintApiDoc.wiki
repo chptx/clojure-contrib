@@ -27,30 +27,30 @@ clojure.contrib wiki RSN.
 Shortcuts:
 [#_*print-circle*_ *print-circle*] [#_*print-lines*_ *print-lines*] [#_*print-miser-width*_ *print-miser-width*] [#_*print-pprint-dispatch*_ *print-pprint-dispatch*] [#_*print-pretty*_ *print-pretty*] [#_*print-right-margin*_ *print-right-margin*] [#_*print-shared*_ *print-shared*] [#_*print-suppress-namespaces*_ *print-suppress-namespaces*] [#(_cl-format_stream_format-in_&_args) cl-format] [#(_compile-format_format-str) compile-format] [#(_formatter_format-in) formatter] [#(_pp_) pp] [#(_pprint_object_&_more) pprint] [#(_pprint-indent_relative-to_n_&_more) pprint-indent] [#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [#(_pprint-newline_kind_&_more) pprint-newline] [#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [#(_set-pprint-dispatch_table) set-pprint-dispatch] [#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [#(_write_object_&_kw-args) write] 
 ----
-===_*print-circle*_===
+===_`*`print-circle`*`_===
 Mark circular structures (N.B. This is not yet used)
 ----
-===_*print-lines*_===
+===_`*`print-lines`*`_===
 Maximum number of lines to print in a pretty print instance (N.B. This is not yet used)
 ----
-===_*print-miser-width*_===
+===_`*`print-miser-width`*`_===
 The column at which to enter miser style. Depending on the dispatch table, 
 miser style add newlines in more places to try to keep lines short allowing for further 
 levels of nesting.
 ----
-===_*print-pprint-dispatch*_===
+===_`*`print-pprint-dispatch`*`_===
 The pretty print dispatch table
 ----
-===_*print-pretty*_===
+===_`*`print-pretty`*`_===
 Bind to true if you want write to use pretty printing
 ----
-===_*print-right-margin*_===
+===_`*`print-right-margin`*`_===
 Pretty printing will try to avoid anything going beyond this column.
 ----
-===_*print-shared*_===
+===_`*`print-shared`*`_===
 Mark repeated structures rather than repeat them (N.B. This is not yet used)
 ----
-===_*print-suppress-namespaces*_===
+===_`*`print-suppress-namespaces`*`_===
 Don't print namespaces with symbols. This is particularly useful when 
 pretty printing the results of macro expansions
 ----
@@ -73,11 +73,11 @@ format-in can be either a control string or a previously compiled format.
 ===(_pp_)===
 ====Macro====
 A convenience macro that pretty prints the last thing output. This is
-exactly equivalent to (pprint *1).
+exactly equivalent to (pprint `*`1).
 ----
 ===(_pprint_ object & more)===
 Pretty print object to the optional output writer. If the writer is not provided, 
-print the object to the currently bound value of *out*.
+print the object to the currently bound value of `*`out`*`.
 ----
 ===(_pprint-indent_ relative-to n & more)===
 Create an indent at this point in the pretty printing stream. This defines how 
@@ -86,15 +86,15 @@ whether the indent should be computed relative to the start of the logical block
 the current column position. n is an offset. 
 
 Optionally, a third argument which is a stream may be used. If supplied, that is 
-the writer indented, otherwise *out* is used.
+the writer indented, otherwise `*`out`*` is used.
 
 If the requested stream is not a PrettyWriter, this function does nothing.
 ----
 ===(_pprint-logical-block_ base-stream & body)===
 ====Macro====
-Execute the body as a pretty printing logical block with output to *out* which 
+Execute the body as a pretty printing logical block with output to `*`out`*` which 
 is a pretty printing writer wrapping base-stream (unless base-stream is already a pretty 
-printing writer in which case *out* is just bound to base-stream). 
+printing writer in which case `*`out`*` is just bound to base-stream). 
 
 After the writer, the caller can optionally specify :prefix, :per-line-prefix, and
 :suffix.
@@ -104,7 +104,7 @@ Print a conditional newline to a pretty printing stream. kind specifies if the
 newline is :linear, :miser, :fill, or :mandatory. 
 
 Optionally, a second argument which is a stream may be used. If supplied, that is 
-the writer to which the newline is sent, otherwise *out* is used.
+the writer to which the newline is sent, otherwise `*`out`*` is used.
 
 If the requested stream is not a PrettyWriter, this function does nothing.
 ----
@@ -116,7 +116,7 @@ Colnum and colinc specify the target column and the increment to move the target
 forward if the output is already past the original target.
 
 Optionally, a fourth argument which is a stream may be used. If supplied, that is 
-the writer indented, otherwise *out* is used.
+the writer indented, otherwise `*`out`*` is used.
 
 If the requested stream is not a PrettyWriter, this function does nothing.
 
@@ -124,7 +124,7 @@ THIS FUNCTION IS NOT YET IMPLEMENTED.
 ----
 ===(_set-pprint-dispatch_ table)===
 Set the pretty print dispatch table to TABLE. Currently the supported values are
-*simple-dispatch* or *code-dispatch*. In the future, this will support custom tables.
+`*`simple-dispatch`*` or `*`code-dispatch`*`. In the future, this will support custom tables.
 ----
 ===(_with-pprint-dispatch_ table & body)===
 ====Macro====

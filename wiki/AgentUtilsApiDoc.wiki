@@ -23,4 +23,4 @@ Capture the current value of the specified vars and rebind
 them on the agent thread before executing the action.
 
 Example:
-(capture-and-send [*out*] a f b c)
+(capture-and-send [`*`out`*`] a f b c)

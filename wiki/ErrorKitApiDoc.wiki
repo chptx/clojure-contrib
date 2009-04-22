@@ -17,13 +17,13 @@ Usage:
 Shortcuts:
 [#(_bind-continue_continue-name_[args*]_&_body) bind-continue] [#(_deferror_name_[parent-error?]_doc-string?_[args*]_&_body) deferror] [#(_do-not-handle_) do-not-handle] [#(_error_details) error] [#(_handle_error-name?_[args*]_&_body) handle] [#(_raise_err-name_&_args) raise] [#(_raise*_err) raise*] [#(_throw-msg_class-name) throw-msg] [#(_with-handler_&_forms) with-handler] 
 ----
-===(_bind-continue_ continue-name [args*] & body)===
+===(_bind-continue_ continue-name [args`*`] & body)===
 Special form to be used inside a 'with-handler'.
 Control can be passed to this 'continue' form from a 'raise' enclosed
 in this with-handler's dynamic scope, when this 'continue-name' is
 given to a 'continue' form.
 ----
-===(_deferror_ name [parent-error?] doc-string? [args*] & body)===
+===(_deferror_ name [parent-error?] doc-string? [args`*`] & body)===
 ===(_deferror_ name [parent-error?] doc-string? args-destruct-map & body)===
 ====Macro====
 Define a new error type
@@ -38,7 +38,7 @@ than just the error type.
 ===(_error_ details)===
 Base type for all error-kit errors
 ----
-===(_handle_ error-name? [args*] & body)===
+===(_handle_ error-name? [args`*`] & body)===
 ===(_handle_ error-name? args-destruct-map-args & body)===
 Special form to be used inside a 'with-handler'.  When
 any error is 'raised' from withing the dynamic scope of 'body' that
@@ -53,7 +53,7 @@ return forms, 'do-not-handle', 'continue-with', or 'continue'.
 ====Macro====
 Raise an error of the type err-name, constructed with the given args
 ----
-===(_raise*_ err)===
+===(_raise`*`_ err)===
 Raise the given error object, best if created by an error
 constructor defined with deferror.  See also 'raise' macro.
 ----

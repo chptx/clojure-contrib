@@ -17,11 +17,11 @@ Usage:
 Shortcuts:
 [#_*local-javadocs*_ *local-javadocs*] [#_*remote-javadocs*_ *remote-javadocs*] [#(_add-break-thread!_) add-break-thread!] [#(_add-local-javadoc_path) add-local-javadoc] [#(_add-remote-javadoc_package-prefix_url) add-remote-javadoc] [#_break-threads_ break-threads] [#(_find-javadoc-url_classname) find-javadoc-url] [#(_get-source_x) get-source] [#(_javadoc_class-or-object) javadoc] [#(_show_x) show] [#(_source_n) source] [#(_start-handling-break_) start-handling-break] 
 ----
-===_*local-javadocs*_===
+===_`*`local-javadocs`*`_===
 Ref to a list of local paths for Javadoc-generated HTML
 files.
 ----
-===_*remote-javadocs*_===
+===_`*`remote-javadocs`*`_===
 Ref to a map from package name prefixes to URLs for remote
 Javadocs.
 ----
@@ -43,7 +43,7 @@ Threads to stop when Ctrl-C is pressed.  See 'add-break-thread!'
 ----
 ===(_find-javadoc-url_ classname)===
 Searches for a URL for the given class name.  Tries
-*local-javadocs* first, then *remote-javadocs*.  Returns a string.
+`*`local-javadocs`*` first, then `*`remote-javadocs`*`.  Returns a string.
 ----
 ===(_get-source_ x)===
 Returns a string of the source code for the given symbol, if it can
@@ -56,7 +56,7 @@ Example: (get-source 'filter)
 ----
 ===(_javadoc_ class-or-object)===
 Opens a browser window displaying the javadoc for the argument.
-Tries *local-javadocs* first, then *remote-javadocs*.
+Tries `*`local-javadocs`*` first, then `*`remote-javadocs`*`.
 ----
 ===(_show_ x)===
 ===(_show_ x selector)===
