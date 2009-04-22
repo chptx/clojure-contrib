@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_print-tap-diagnostic_data) print-tap-diagnostic] [#(_print-tap-fail_msg) print-tap-fail] [#(_print-tap-pass_msg) print-tap-pass] [#(_print-tap-plan_n) print-tap-plan] [#(_with-tap-output_&_body) with-tap-output] 
+
 ----
 ===(_print-tap-diagnostic_ data)===
 Prints a TAP diagnostic line.  data is a (possibly multi-line)

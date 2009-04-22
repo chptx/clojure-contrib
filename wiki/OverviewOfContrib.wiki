@@ -39,267 +39,300 @@ discussion and help shape the ways Clojure is extended.
 Like Clojure itself, clojure.contrib is made available under the [http://opensource.org/licenses/eclipse-1.0.php Eclipse Public License (EPL)]. 
 clojure.contrib is copyright 2008-2009 Rich Hickey and the various contributers.
 =Summary of the Namespaces in clojure.contrib=
-===accumulators=== [AccumulatorsApiDoc api]
+===accumulators===
+API Overview [AccumulatorsApiDoc here]
 
 Public Variables and Functions:
-[AccumulatorsApiDoc#(_add_acc_item) add] [AccumulatorsApiDoc#(_add-items_acc_items) add-items] [AccumulatorsApiDoc#(_combine_&_accs) combine] [AccumulatorsApiDoc#_empty-counter_ empty-counter] [AccumulatorsApiDoc#_empty-counter-with-total_ empty-counter-with-total] [AccumulatorsApiDoc#_empty-list_ empty-list] [AccumulatorsApiDoc#_empty-map_ empty-map] [AccumulatorsApiDoc#_empty-maximum_ empty-maximum] [AccumulatorsApiDoc#_empty-mean-variance_ empty-mean-variance] [AccumulatorsApiDoc#_empty-min-max_ empty-min-max] [AccumulatorsApiDoc#_empty-minimum_ empty-minimum] [AccumulatorsApiDoc#_empty-product_ empty-product] [AccumulatorsApiDoc#_empty-queue_ empty-queue] [AccumulatorsApiDoc#_empty-set_ empty-set] [AccumulatorsApiDoc#_empty-string_ empty-string] [AccumulatorsApiDoc#_empty-sum_ empty-sum] [AccumulatorsApiDoc#(_empty-tuple_empty-accumulators) empty-tuple] [AccumulatorsApiDoc#_empty-vector_ empty-vector] 
+[AccumulatorsApiDoc#(_add_acc_item) add] [AccumulatorsApiDoc#(_add-items_acc_items) add-items] [AccumulatorsApiDoc#(_combine_&_accs) combine] [AccumulatorsApiDoc#empty-counter empty-counter] [AccumulatorsApiDoc#empty-counter-with-total empty-counter-with-total] [AccumulatorsApiDoc#empty-list empty-list] [AccumulatorsApiDoc#empty-map empty-map] [AccumulatorsApiDoc#empty-maximum empty-maximum] [AccumulatorsApiDoc#empty-mean-variance empty-mean-variance] [AccumulatorsApiDoc#empty-min-max empty-min-max] [AccumulatorsApiDoc#empty-minimum empty-minimum] [AccumulatorsApiDoc#empty-product empty-product] [AccumulatorsApiDoc#empty-queue empty-queue] [AccumulatorsApiDoc#empty-set empty-set] [AccumulatorsApiDoc#empty-string empty-string] [AccumulatorsApiDoc#empty-sum empty-sum] [AccumulatorsApiDoc#(_empty-tuple_empty-accumulators) empty-tuple] [AccumulatorsApiDoc#empty-vector empty-vector] 
 
-===accumulators.examples=== [AccumulatorsExamplesApiDoc api]
+===accumulators.examples===
+API Overview [AccumulatorsExamplesApiDoc here]
 
-Public Variables and Functions:
 
-
-===agent-utils=== [AgentUtilsApiDoc api]
+===agent-utils===
+API Overview [AgentUtilsApiDoc here]
 
 Public Variables and Functions:
 [AgentUtilsApiDoc#(_capture-and-send_vars_agent_action_&_args) capture-and-send] 
 
-===auto-agent=== [AutoAgentApiDoc api]
+===auto-agent===
+API Overview [AutoAgentApiDoc here]
 
 Public Variables and Functions:
 [AutoAgentApiDoc#(_auto-agent_expr) auto-agent] 
 
-===combinatorics=== [CombinatoricsApiDoc api]
+===combinatorics===
+API Overview [CombinatoricsApiDoc here]
 
 Public Variables and Functions:
 [CombinatoricsApiDoc#(_cartesian-product_&_seqs) cartesian-product] [CombinatoricsApiDoc#(_combinations_items_n) combinations] [CombinatoricsApiDoc#(_lex-permutations_c) lex-permutations] [CombinatoricsApiDoc#(_permutations_items) permutations] [CombinatoricsApiDoc#(_selections_items_n) selections] [CombinatoricsApiDoc#(_subsets_items) subsets] 
 
-===command-line=== [CommandLineApiDoc api]
+===command-line===
+API Overview [CommandLineApiDoc here]
 
 Public Variables and Functions:
 [CommandLineApiDoc#(_with-command-line_args_desc_cmdspec_&_body) with-command-line] 
 
-===complex-numbers=== [ComplexNumbersApiDoc api]
+===complex-numbers===
+API Overview [ComplexNumbersApiDoc here]
 
-Public Variables and Functions:
 
-
-===cond=== [CondApiDoc api]
+===cond===
+API Overview [CondApiDoc here]
 
 Public Variables and Functions:
 [CondApiDoc#(_cond-let_bindings_&_clauses) cond-let] 
 
-===condt=== [CondtApiDoc api]
+===condt===
+API Overview [CondtApiDoc here]
 
 Public Variables and Functions:
 [CondtApiDoc#(_condt_expr_&_clauses) condt] [CondtApiDoc#(_econdt_expr_&_clauses) econdt] 
 
-===core=== [CoreApiDoc api]
+===core===
+API Overview [CoreApiDoc here]
 
 Public Variables and Functions:
 [CoreApiDoc#(_-?>_x_form) -?>] [CoreApiDoc#(_.?._x_form) .?.] 
 
-===core.tests=== [CoreTestsApiDoc api]
+===core.tests===
+API Overview [CoreTestsApiDoc here]
+
+
+===dataflow===
+API Overview [DataflowApiDoc here]
 
 Public Variables and Functions:
+[DataflowApiDoc#(_add-cell-watcher_cell_key_fun) add-cell-watcher] [DataflowApiDoc#(_add-cells_df_cells) add-cells] [DataflowApiDoc#(_build-dataflow_cs) build-dataflow] [DataflowApiDoc#(_build-source-cell_name_init) build-source-cell] [DataflowApiDoc#(_build-standard-cell_name_deps_fun_expr) build-standard-cell] [DataflowApiDoc#(_build-validator-cell_deps_fun_expr) build-validator-cell] [DataflowApiDoc#(_cell_type_&_data) cell] [DataflowApiDoc#display-cell display-cell] [DataflowApiDoc#eval-cell eval-cell] [DataflowApiDoc#(_get-cell_df_name) get-cell] [DataflowApiDoc#(_get-cells_df_name) get-cells] [DataflowApiDoc#(_get-old-value_df_env_name) get-old-value] [DataflowApiDoc#(_get-source-cells_df) get-source-cells] [DataflowApiDoc#(_get-value_df_name) get-value] [DataflowApiDoc#(_get-value-from-cell_cell) get-value-from-cell] [DataflowApiDoc#(_get-values_df_name) get-values] [DataflowApiDoc#(_print-dataflow_df) print-dataflow] [DataflowApiDoc#(_remove-cells_df_cells) remove-cells] [DataflowApiDoc#(_source-cell?_cell) source-cell?] [DataflowApiDoc#(_update-values_df_data) update-values] 
 
-
-===dataflow=== [DataflowApiDoc api]
-
-Public Variables and Functions:
-[DataflowApiDoc#(_add-cell-watcher_cell_key_fun) add-cell-watcher] [DataflowApiDoc#(_add-cells_df_cells) add-cells] [DataflowApiDoc#(_build-dataflow_cs) build-dataflow] [DataflowApiDoc#(_build-source-cell_name_init) build-source-cell] [DataflowApiDoc#(_build-standard-cell_name_deps_fun_expr) build-standard-cell] [DataflowApiDoc#(_build-validator-cell_deps_fun_expr) build-validator-cell] [DataflowApiDoc#(_cell_type_&_data) cell] [DataflowApiDoc#_display-cell_ display-cell] [DataflowApiDoc#_eval-cell_ eval-cell] [DataflowApiDoc#(_get-cell_df_name) get-cell] [DataflowApiDoc#(_get-cells_df_name) get-cells] [DataflowApiDoc#(_get-old-value_df_env_name) get-old-value] [DataflowApiDoc#(_get-source-cells_df) get-source-cells] [DataflowApiDoc#(_get-value_df_name) get-value] [DataflowApiDoc#(_get-value-from-cell_cell) get-value-from-cell] [DataflowApiDoc#(_get-values_df_name) get-values] [DataflowApiDoc#(_print-dataflow_df) print-dataflow] [DataflowApiDoc#(_remove-cells_df_cells) remove-cells] [DataflowApiDoc#(_source-cell?_cell) source-cell?] [DataflowApiDoc#(_update-values_df_data) update-values] 
-
-===datalog=== [DatalogApiDoc api]
+===datalog===
+API Overview [DatalogApiDoc here]
 
 Public Variables and Functions:
 [DatalogApiDoc#(_build-work-plan_rules_query) build-work-plan] [DatalogApiDoc#(_run-work-plan_work-plan_database_query-bindings) run-work-plan] 
 
-===datalog.database=== [DatalogDatabaseApiDoc api]
+===datalog.database===
+API Overview [DatalogDatabaseApiDoc here]
 
 Public Variables and Functions:
 [DatalogDatabaseApiDoc#(_add-index_db_name_key) add-index] [DatalogDatabaseApiDoc#(_add-relation_db_name_keys) add-relation] [DatalogDatabaseApiDoc#(_add-tuple_db_rel-name_tuple) add-tuple] [DatalogDatabaseApiDoc#(_add-tuples_db_&_tupls) add-tuples] [DatalogDatabaseApiDoc#(_any-match?_db_rn_pt) any-match?] [DatalogDatabaseApiDoc#(_database-counts_db) database-counts] [DatalogDatabaseApiDoc#(_database-merge_dbs) database-merge] [DatalogDatabaseApiDoc#(_database-merge-parallel_dbs) database-merge-parallel] [DatalogDatabaseApiDoc#(_datalog-relation_schema_data_indexes) datalog-relation] [DatalogDatabaseApiDoc#(_ensure-relation_db_name_keys_indexes) ensure-relation] [DatalogDatabaseApiDoc#(_get-relation_db_rel-name) get-relation] [DatalogDatabaseApiDoc#(_make-database_&_commands) make-database] [DatalogDatabaseApiDoc#(_merge-relations_r1_r2) merge-relations] [DatalogDatabaseApiDoc#(_remove-tuple_db_rel-name_tuple) remove-tuple] [DatalogDatabaseApiDoc#(_replace-relation_db_rel-name_rel) replace-relation] [DatalogDatabaseApiDoc#(_select_db_rn_pt) select] 
 
-===datalog.literals=== [DatalogLiteralsApiDoc api]
+===datalog.literals===
+API Overview [DatalogLiteralsApiDoc here]
 
 Public Variables and Functions:
-[DatalogLiteralsApiDoc#_adorned-literal_ adorned-literal] [DatalogLiteralsApiDoc#(_build-atom_f_type) build-atom] [DatalogLiteralsApiDoc#_build-literal_ build-literal] [DatalogLiteralsApiDoc#(_build-seed-bindings_s) build-seed-bindings] [DatalogLiteralsApiDoc#(_delta-literal_l) delta-literal] [DatalogLiteralsApiDoc#_display-literal_ display-literal] [DatalogLiteralsApiDoc#(_get-adorned-bindings_pred) get-adorned-bindings] [DatalogLiteralsApiDoc#(_get-base-predicate_pred) get-base-predicate] [DatalogLiteralsApiDoc#_get-cs-from-vs_ get-cs-from-vs] [DatalogLiteralsApiDoc#_get-self-bound-cs_ get-self-bound-cs] [DatalogLiteralsApiDoc#_get-vs-from-cs_ get-vs-from-cs] [DatalogLiteralsApiDoc#_join-literal_ join-literal] [DatalogLiteralsApiDoc#_literal-appropriate?_ literal-appropriate?] [DatalogLiteralsApiDoc#_literal-columns_ literal-columns] [DatalogLiteralsApiDoc#(_literal-magic?_lit) literal-magic?] [DatalogLiteralsApiDoc#_literal-predicate_ literal-predicate] [DatalogLiteralsApiDoc#_literal-vars_ literal-vars] [DatalogLiteralsApiDoc#(_magic-literal_l) magic-literal] [DatalogLiteralsApiDoc#(_negated-literal_l) negated-literal] [DatalogLiteralsApiDoc#(_negated?_l) negated?] [DatalogLiteralsApiDoc#_negative-vars_ negative-vars] [DatalogLiteralsApiDoc#_positive-vars_ positive-vars] [DatalogLiteralsApiDoc#(_positive?_l) positive?] [DatalogLiteralsApiDoc#(_project-literal_db_lit_bs) project-literal] 
+[DatalogLiteralsApiDoc#adorned-literal adorned-literal] [DatalogLiteralsApiDoc#(_build-atom_f_type) build-atom] [DatalogLiteralsApiDoc#build-literal build-literal] [DatalogLiteralsApiDoc#(_build-seed-bindings_s) build-seed-bindings] [DatalogLiteralsApiDoc#(_delta-literal_l) delta-literal] [DatalogLiteralsApiDoc#display-literal display-literal] [DatalogLiteralsApiDoc#(_get-adorned-bindings_pred) get-adorned-bindings] [DatalogLiteralsApiDoc#(_get-base-predicate_pred) get-base-predicate] [DatalogLiteralsApiDoc#get-cs-from-vs get-cs-from-vs] [DatalogLiteralsApiDoc#get-self-bound-cs get-self-bound-cs] [DatalogLiteralsApiDoc#get-vs-from-cs get-vs-from-cs] [DatalogLiteralsApiDoc#join-literal join-literal] [DatalogLiteralsApiDoc#literal-appropriate? literal-appropriate?] [DatalogLiteralsApiDoc#literal-columns literal-columns] [DatalogLiteralsApiDoc#(_literal-magic?_lit) literal-magic?] [DatalogLiteralsApiDoc#literal-predicate literal-predicate] [DatalogLiteralsApiDoc#literal-vars literal-vars] [DatalogLiteralsApiDoc#(_magic-literal_l) magic-literal] [DatalogLiteralsApiDoc#(_negated-literal_l) negated-literal] [DatalogLiteralsApiDoc#(_negated?_l) negated?] [DatalogLiteralsApiDoc#negative-vars negative-vars] [DatalogLiteralsApiDoc#positive-vars positive-vars] [DatalogLiteralsApiDoc#(_positive?_l) positive?] [DatalogLiteralsApiDoc#(_project-literal_db_lit_bs) project-literal] 
 
-===datalog.magic=== [DatalogMagicApiDoc api]
+===datalog.magic===
+API Overview [DatalogMagicApiDoc here]
 
 Public Variables and Functions:
 [DatalogMagicApiDoc#(_adorn-query_q) adorn-query] [DatalogMagicApiDoc#(_adorn-rules-set_rs_q) adorn-rules-set] [DatalogMagicApiDoc#(_build-partial-tuple_q_bindings) build-partial-tuple] [DatalogMagicApiDoc#(_magic-transform_rs) magic-transform] [DatalogMagicApiDoc#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] [DatalogMagicApiDoc#(_seed-relation_q) seed-relation] [DatalogMagicApiDoc#(_seed-rule_q) seed-rule] 
 
-===datalog.rules=== [DatalogRulesApiDoc api]
+===datalog.rules===
+API Overview [DatalogRulesApiDoc here]
 
 Public Variables and Functions:
 [DatalogRulesApiDoc#(_<-_hd_&_body) <-] [DatalogRulesApiDoc#(_?-_&_q) ?-] [DatalogRulesApiDoc#(_all-predicates_rs) all-predicates] [DatalogRulesApiDoc#(_apply-rule_db_rule) apply-rule] [DatalogRulesApiDoc#(_compute-sip_bindings_i-preds_rule) compute-sip] [DatalogRulesApiDoc#(_display-query_query) display-query] [DatalogRulesApiDoc#(_display-rule_rule) display-rule] [DatalogRulesApiDoc#(_is-safe?_rule) is-safe?] [DatalogRulesApiDoc#(_make-rules-set_rs) make-rules-set] [DatalogRulesApiDoc#(_non-base-rules_rs) non-base-rules] [DatalogRulesApiDoc#(_predicate-map_rs) predicate-map] [DatalogRulesApiDoc#(_return-rule-data_rule) return-rule-data] [DatalogRulesApiDoc#(_rules-set_&_rules) rules-set] 
 
-===datalog.softstrat=== [DatalogSoftstratApiDoc api]
+===datalog.softstrat===
+API Overview [DatalogSoftstratApiDoc here]
 
 Public Variables and Functions:
 [DatalogSoftstratApiDoc#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] [DatalogSoftstratApiDoc#(_get-all-relations_ws) get-all-relations] 
 
-===datalog.util=== [DatalogUtilApiDoc api]
+===datalog.util===
+API Overview [DatalogUtilApiDoc here]
 
 Public Variables and Functions:
 [DatalogUtilApiDoc#(_is-query-var?_sym) is-query-var?] [DatalogUtilApiDoc#(_is-var?_sym) is-var?] [DatalogUtilApiDoc#(_keys-to-vals_m_ks) keys-to-vals] [DatalogUtilApiDoc#(_map-values_f_hash) map-values] [DatalogUtilApiDoc#(_preduce_f_data) preduce] [DatalogUtilApiDoc#(_reverse-map_m) reverse-map] [DatalogUtilApiDoc#(_trace-datalog_&_body) trace-datalog] 
 
-===def=== [DefApiDoc api]
+===def===
+API Overview [DefApiDoc here]
 
 Public Variables and Functions:
 [DefApiDoc#(_defalias_name_orig) defalias] [DefApiDoc#(_defhinted_sym_init) defhinted] [DefApiDoc#(_defmacro-_name_&_decls) defmacro-] [DefApiDoc#(_defonce-_name_expr) defonce-] [DefApiDoc#(_defstruct-_name_&_decls) defstruct-] [DefApiDoc#(_defunbound_name) defunbound] [DefApiDoc#(_defunbound-_name_&_decls) defunbound-] [DefApiDoc#(_defvar_name) defvar] [DefApiDoc#(_defvar-_name_&_decls) defvar-] [DefApiDoc#(_name-with-attributes_name_macro-args) name-with-attributes] 
 
-===duck-streams=== [DuckStreamsApiDoc api]
+===duck-streams===
+API Overview [DuckStreamsApiDoc here]
 
 Public Variables and Functions:
-[DuckStreamsApiDoc#(_file_&_args) file] [DuckStreamsApiDoc#(_pwd_) pwd] [DuckStreamsApiDoc#(_read-lines_f) read-lines] [DuckStreamsApiDoc#_reader_ reader] [DuckStreamsApiDoc#(_slurp*_f) slurp*] [DuckStreamsApiDoc#(_spit_f_content) spit] [DuckStreamsApiDoc#(_with-in-reader_f_&_body) with-in-reader] [DuckStreamsApiDoc#(_with-out-writer_f_&_body) with-out-writer] [DuckStreamsApiDoc#(_write-lines_f_lines) write-lines] [DuckStreamsApiDoc#_writer_ writer] 
+[DuckStreamsApiDoc#(_file_&_args) file] [DuckStreamsApiDoc#(_pwd_) pwd] [DuckStreamsApiDoc#(_read-lines_f) read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#(_slurp*_f) slurp*] [DuckStreamsApiDoc#(_spit_f_content) spit] [DuckStreamsApiDoc#(_with-in-reader_f_&_body) with-in-reader] [DuckStreamsApiDoc#(_with-out-writer_f_&_body) with-out-writer] [DuckStreamsApiDoc#(_write-lines_f_lines) write-lines] [DuckStreamsApiDoc#writer writer] 
 
-===error-kit=== [ErrorKitApiDoc api]
+===error-kit===
+API Overview [ErrorKitApiDoc here]
 
 Public Variables and Functions:
-[ErrorKitApiDoc#(_bind-continue_continue-name_[args*]_&_body) bind-continue] [ErrorKitApiDoc#(_deferror_name_[parent-error?]_doc-string?_[args*]_&_body) deferror] [ErrorKitApiDoc#(_do-not-handle_) do-not-handle] [ErrorKitApiDoc#(_error_details) error] [ErrorKitApiDoc#(_handle_error-name?_[args*]_&_body) handle] [ErrorKitApiDoc#(_raise_err-name_&_args) raise] [ErrorKitApiDoc#(_raise*_err) raise*] [ErrorKitApiDoc#(_throw-msg_class-name) throw-msg] [ErrorKitApiDoc#(_with-handler_&_forms) with-handler] 
+bind-continue deferror [ErrorKitApiDoc#(_do-not-handle_) do-not-handle] [ErrorKitApiDoc#(_error_details) error] handle [ErrorKitApiDoc#(_raise_err-name_&_args) raise] [ErrorKitApiDoc#(_raise*_err) raise*] [ErrorKitApiDoc#(_throw-msg_class-name) throw-msg] [ErrorKitApiDoc#(_with-handler_&_forms) with-handler] 
 
-===except=== [ExceptApiDoc api]
+===except===
+API Overview [ExceptApiDoc here]
 
 Public Variables and Functions:
 [ExceptApiDoc#(_throw-arg_&_args) throw-arg] [ExceptApiDoc#(_throw-if_test_&_args) throw-if] [ExceptApiDoc#(_throw-if-not_test_&_args) throw-if-not] [ExceptApiDoc#(_throwf_&_args) throwf] 
 
-===fcase=== [FcaseApiDoc api]
+===fcase===
+API Overview [FcaseApiDoc here]
 
 Public Variables and Functions:
 [FcaseApiDoc#(_case_test-value_&_clauses) case] [FcaseApiDoc#(_fcase_compare-fn_case-value_&_test-expr-clauses) fcase] [FcaseApiDoc#(_in-case_test-value_&_clauses) in-case] [FcaseApiDoc#(_instance-case_test-value_&_clauses) instance-case] [FcaseApiDoc#(_re-case_test-value_&_clauses) re-case] 
 
-===gen-html-docs=== [GenHtmlDocsApiDoc api]
+===gen-html-docs===
+API Overview [GenHtmlDocsApiDoc here]
 
 Public Variables and Functions:
 [GenHtmlDocsApiDoc#(_generate-documentation_libs) generate-documentation] [GenHtmlDocsApiDoc#(_generate-documentation-to-file_path_libs) generate-documentation-to-file] 
 
-===generic=== [GenericApiDoc api]
-
-Public Variables and Functions:
-
-
-===generic.arithmetic=== [GenericArithmeticApiDoc api]
-
-Public Variables and Functions:
+===generic===
+API Overview [GenericApiDoc here]
 
 
-===generic.collection=== [GenericCollectionApiDoc api]
+===generic.arithmetic===
+API Overview [GenericArithmeticApiDoc here]
+
+
+===generic.collection===
+API Overview [GenericCollectionApiDoc here]
 
 Public Variables and Functions:
 [GenericCollectionApiDoc#(_assoc_coll_&_key-val-pairs) assoc] [GenericCollectionApiDoc#(_dissoc_coll_&_keys) dissoc] [GenericCollectionApiDoc#(_empty_coll) empty] [GenericCollectionApiDoc#(_get_coll_key) get] [GenericCollectionApiDoc#(_into_to_from) into] [GenericCollectionApiDoc#(_seq_s) seq] 
 
-===generic.comparison=== [GenericComparisonApiDoc api]
+===generic.comparison===
+API Overview [GenericComparisonApiDoc here]
 
-Public Variables and Functions:
 
-
-===generic.functor=== [GenericFunctorApiDoc api]
+===generic.functor===
+API Overview [GenericFunctorApiDoc here]
 
 Public Variables and Functions:
 [GenericFunctorApiDoc#(_fmap_f_s) fmap] 
 
-===generic.math-functions=== [GenericMathFunctionsApiDoc api]
+===generic.math-functions===
+API Overview [GenericMathFunctionsApiDoc here]
 
 Public Variables and Functions:
 [GenericMathFunctionsApiDoc#(_approx=_x_y_eps) approx=] 
 
-===graph=== [GraphApiDoc api]
+===graph===
+API Overview [GraphApiDoc here]
 
 Public Variables and Functions:
 [GraphApiDoc#(_add-loops_g) add-loops] [GraphApiDoc#(_component-graph_g) component-graph] [GraphApiDoc#(_dependency-list_g) dependency-list] [GraphApiDoc#(_fixed-point_data_fun_max_equal) fixed-point] [GraphApiDoc#(_get-neighbors_g_n) get-neighbors] [GraphApiDoc#(_lazy-walk_g_n) lazy-walk] [GraphApiDoc#(_post-ordered-nodes_g) post-ordered-nodes] [GraphApiDoc#(_recursive-component?_g_ns) recursive-component?] [GraphApiDoc#(_remove-loops_g) remove-loops] [GraphApiDoc#(_reverse-graph_g) reverse-graph] [GraphApiDoc#(_scc_g) scc] [GraphApiDoc#(_self-recursive-sets_g) self-recursive-sets] [GraphApiDoc#(_stratification-list_g1_g2) stratification-list] [GraphApiDoc#(_transitive-closure_g) transitive-closure] 
 
-===greatest-least=== [GreatestLeastApiDoc api]
+===greatest-least===
+API Overview [GreatestLeastApiDoc here]
 
 Public Variables and Functions:
 [GreatestLeastApiDoc#(_all-greatest_&_args) all-greatest] [GreatestLeastApiDoc#(_all-greatest-by_f_&_args) all-greatest-by] [GreatestLeastApiDoc#(_all-least_&_args) all-least] [GreatestLeastApiDoc#(_all-least-by_f_&_args) all-least-by] [GreatestLeastApiDoc#(_greatest_&_args) greatest] [GreatestLeastApiDoc#(_greatest-by_f_&_args) greatest-by] [GreatestLeastApiDoc#(_least_&_args) least] [GreatestLeastApiDoc#(_least-by_f_&_args) least-by] 
 
-===import-static=== [ImportStaticApiDoc api]
+===import-static===
+API Overview [ImportStaticApiDoc here]
 
 Public Variables and Functions:
 [ImportStaticApiDoc#(_import-static_class_&_fields-and-methods) import-static] 
 
-===java-utils=== [JavaUtilsApiDoc api]
+===java-utils===
+API Overview [JavaUtilsApiDoc here]
 
 Public Variables and Functions:
-[JavaUtilsApiDoc#_as-file_ as-file] [JavaUtilsApiDoc#(_as-properties_m) as-properties] [JavaUtilsApiDoc#(_as-str_x) as-str] [JavaUtilsApiDoc#(_file_arg) file] [JavaUtilsApiDoc#(_get-system-property_stringable) get-system-property] [JavaUtilsApiDoc#(_read-properties_file-able) read-properties] [JavaUtilsApiDoc#_relative-path-string_ relative-path-string] [JavaUtilsApiDoc#(_set-system-properties_settings) set-system-properties] [JavaUtilsApiDoc#(_with-system-properties_settings_&_body) with-system-properties] [JavaUtilsApiDoc#(_write-properties_m_file-able) write-properties] 
+[JavaUtilsApiDoc#as-file as-file] [JavaUtilsApiDoc#(_as-properties_m) as-properties] [JavaUtilsApiDoc#(_as-str_x) as-str] [JavaUtilsApiDoc#(_file_arg) file] [JavaUtilsApiDoc#(_get-system-property_stringable) get-system-property] [JavaUtilsApiDoc#(_read-properties_file-able) read-properties] [JavaUtilsApiDoc#relative-path-string relative-path-string] [JavaUtilsApiDoc#(_set-system-properties_settings) set-system-properties] [JavaUtilsApiDoc#(_with-system-properties_settings_&_body) with-system-properties] [JavaUtilsApiDoc#(_write-properties_m_file-able) write-properties] 
 
-===javadoc.browse=== [JavadocBrowseApiDoc api]
+===javadoc.browse===
+API Overview [JavadocBrowseApiDoc here]
 
 Public Variables and Functions:
 [JavadocBrowseApiDoc#(_open-url-in-browser_url) open-url-in-browser] [JavadocBrowseApiDoc#(_open-url-in-swing_url) open-url-in-swing] 
 
-===javalog=== [JavalogApiDoc api]
+===javalog===
+API Overview [JavalogApiDoc here]
 
 Public Variables and Functions:
-[JavalogApiDoc#_*logger*_ *logger*] [JavalogApiDoc#(_add-log-file_logger-name_filename) add-log-file] [JavalogApiDoc#(_log_level_&_strings) log] [JavalogApiDoc#(_log-level_level) log-level] [JavalogApiDoc#(_root-logger_) root-logger] [JavalogApiDoc#(_set-console-log-level_level) set-console-log-level] [JavalogApiDoc#(_with-logger_logger-name_level_&_body) with-logger] 
+[JavalogApiDoc#*logger* *logger*] [JavalogApiDoc#(_add-log-file_logger-name_filename) add-log-file] [JavalogApiDoc#(_log_level_&_strings) log] [JavalogApiDoc#(_log-level_level) log-level] [JavalogApiDoc#(_root-logger_) root-logger] [JavalogApiDoc#(_set-console-log-level_level) set-console-log-level] [JavalogApiDoc#(_with-logger_logger-name_level_&_body) with-logger] 
 
-===json.read=== [JsonReadApiDoc api]
+===json.read===
+API Overview [JsonReadApiDoc here]
 
 Public Variables and Functions:
 [JsonReadApiDoc#(_read-json_) read-json] 
 
-===json.write=== [JsonWriteApiDoc api]
+===json.write===
+API Overview [JsonWriteApiDoc here]
 
 Public Variables and Functions:
-[JsonWriteApiDoc#(_json-str_x) json-str] [JsonWriteApiDoc#_print-json_ print-json] 
+[JsonWriteApiDoc#(_json-str_x) json-str] [JsonWriteApiDoc#print-json print-json] 
 
-===lazy-seqs=== [LazySeqsApiDoc api]
+===lazy-seqs===
+API Overview [LazySeqsApiDoc here]
 
 Public Variables and Functions:
-[LazySeqsApiDoc#_primes_ primes] 
+[LazySeqsApiDoc#primes primes] 
 
-===lazy-xml=== [LazyXmlApiDoc api]
+===lazy-xml===
+API Overview [LazyXmlApiDoc here]
 
 Public Variables and Functions:
 [LazyXmlApiDoc#(_emit_x_&_opts) emit] [LazyXmlApiDoc#(_emit-element_e_&_opts) emit-element] [LazyXmlApiDoc#(_parse-seq_s) parse-seq] [LazyXmlApiDoc#(_parse-trim_s) parse-trim] 
 
-===macros=== [MacrosApiDoc api]
+===macros===
+API Overview [MacrosApiDoc here]
 
 Public Variables and Functions:
 [MacrosApiDoc#(_const_expr) const] [MacrosApiDoc#(_letfn-_fn-bindings_&_exprs) letfn-] 
 
-===map-utils=== [MapUtilsApiDoc api]
+===map-utils===
+API Overview [MapUtilsApiDoc here]
 
 Public Variables and Functions:
 [MapUtilsApiDoc#(_deep-merge-with_f_&_maps) deep-merge-with] [MapUtilsApiDoc#(_lazy-get_map_key_not-found) lazy-get] [MapUtilsApiDoc#(_safe-get_map_key) safe-get] [MapUtilsApiDoc#(_safe-get-in_map_ks) safe-get-in] 
 
-===math=== [MathApiDoc api]
+===math===
+API Overview [MathApiDoc here]
 
 Public Variables and Functions:
 [MathApiDoc#(_abs_n) abs] [MathApiDoc#(_ceil_n) ceil] [MathApiDoc#(_exact-integer-sqrt_n) exact-integer-sqrt] [MathApiDoc#(_expt_base_pow) expt] [MathApiDoc#(_floor_n) floor] [MathApiDoc#(_gcd_a_b) gcd] [MathApiDoc#(_lcm_a_b) lcm] [MathApiDoc#(_round_n) round] [MathApiDoc#(_sqrt_n) sqrt] 
 
-===math.tests=== [MathTestsApiDoc api]
-
-Public Variables and Functions:
-
-
-===miglayout=== [MiglayoutApiDoc api]
-
-Public Variables and Functions:
+===math.tests===
+API Overview [MathTestsApiDoc here]
 
 
-===miglayout.internal=== [MiglayoutInternalApiDoc api]
+===miglayout===
+API Overview [MiglayoutApiDoc here]
+
+
+===miglayout.internal===
+API Overview [MiglayoutInternalApiDoc here]
 
 Public Variables and Functions:
 [MiglayoutInternalApiDoc#(_component?_x) component?] [MiglayoutInternalApiDoc#(_constraint?_x) constraint?] [MiglayoutInternalApiDoc#(_format-constraint_c) format-constraint] [MiglayoutInternalApiDoc#(_format-constraints_&_constraints) format-constraints] [MiglayoutInternalApiDoc#(_parse-item-constraints_&_args) parse-item-constraints] 
 
-===miglayout.test=== [MiglayoutTestApiDoc api]
+===miglayout.test===
+API Overview [MiglayoutTestApiDoc here]
 
-Public Variables and Functions:
 
-
-===mmap=== [MmapApiDoc api]
+===mmap===
+API Overview [MmapApiDoc here]
 
 Public Variables and Functions:
 [MmapApiDoc#(_buffer-stream_buf) buffer-stream] [MmapApiDoc#(_mmap_f) mmap] [MmapApiDoc#(_slurp_f) slurp] 
 
-===monads=== [MonadsApiDoc api]
+===monads===
+API Overview [MonadsApiDoc here]
 
 Public Variables and Functions:
-[MonadsApiDoc#(_call-cc_f) call-cc] [MonadsApiDoc#_cont-m_ cont-m] [MonadsApiDoc#(_defmonad_name_doc-string_operations) defmonad] [MonadsApiDoc#(_defmonadfn_name_docstring?_attr-map?_args_expr) defmonadfn] [MonadsApiDoc#(_domonad_steps_expr) domonad] [MonadsApiDoc#_identity-m_ identity-m] [MonadsApiDoc#(_m-chain_steps) m-chain] [MonadsApiDoc#(_m-fmap_f_m) m-fmap] [MonadsApiDoc#(_m-join_m) m-join] [MonadsApiDoc#(_m-lift_n_f) m-lift] [MonadsApiDoc#(_m-map_f_xs) m-map] [MonadsApiDoc#(_m-reduce_f_mvs) m-reduce] [MonadsApiDoc#(_m-seq_ms) m-seq] [MonadsApiDoc#(_m-when_test_m-expr) m-when] [MonadsApiDoc#(_m-when-not_test_m-expr) m-when-not] [MonadsApiDoc#_maybe-m_ maybe-m] [MonadsApiDoc#(_maybe-t_m) maybe-t] [MonadsApiDoc#(_monad_operations) monad] [MonadsApiDoc#(_run-cont_c) run-cont] [MonadsApiDoc#_sequence-m_ sequence-m] [MonadsApiDoc#(_sequence-t_m) sequence-t] [MonadsApiDoc#_set-m_ set-m] [MonadsApiDoc#_state-m_ state-m] [MonadsApiDoc#(_state-t_m) state-t] [MonadsApiDoc#(_with-monad_name_&_exprs) with-monad] [MonadsApiDoc#(_writer-m_empty-accumulator) writer-m] 
+[MonadsApiDoc#(_call-cc_f) call-cc] [MonadsApiDoc#cont-m cont-m] [MonadsApiDoc#(_defmonad_name_doc-string_operations) defmonad] [MonadsApiDoc#(_defmonadfn_name_docstring?_attr-map?_args_expr) defmonadfn] [MonadsApiDoc#(_domonad_steps_expr) domonad] [MonadsApiDoc#identity-m identity-m] [MonadsApiDoc#(_m-chain_steps) m-chain] [MonadsApiDoc#(_m-fmap_f_m) m-fmap] [MonadsApiDoc#(_m-join_m) m-join] [MonadsApiDoc#(_m-lift_n_f) m-lift] [MonadsApiDoc#(_m-map_f_xs) m-map] [MonadsApiDoc#(_m-reduce_f_mvs) m-reduce] [MonadsApiDoc#(_m-seq_ms) m-seq] [MonadsApiDoc#(_m-when_test_m-expr) m-when] [MonadsApiDoc#(_m-when-not_test_m-expr) m-when-not] [MonadsApiDoc#maybe-m maybe-m] [MonadsApiDoc#(_maybe-t_m) maybe-t] [MonadsApiDoc#(_monad_operations) monad] [MonadsApiDoc#(_run-cont_c) run-cont] [MonadsApiDoc#sequence-m sequence-m] [MonadsApiDoc#(_sequence-t_m) sequence-t] [MonadsApiDoc#set-m set-m] [MonadsApiDoc#state-m state-m] [MonadsApiDoc#(_state-t_m) state-t] [MonadsApiDoc#(_with-monad_name_&_exprs) with-monad] [MonadsApiDoc#(_writer-m_empty-accumulator) writer-m] 
 
-===monads.examples=== [MonadsExamplesApiDoc api]
+===monads.examples===
+API Overview [MonadsExamplesApiDoc here]
 
-Public Variables and Functions:
 
-
-===ns-utils=== [NsUtilsApiDoc api]
+===ns-utils===
+API Overview [NsUtilsApiDoc here]
 
 Public Variables and Functions:
 [NsUtilsApiDoc#(_dir_nsname) dir] [NsUtilsApiDoc#(_docs_nsname) docs] [NsUtilsApiDoc#(_get-ns_ns-sym) get-ns] [NsUtilsApiDoc#(_ns-vars_ns) ns-vars] [NsUtilsApiDoc#(_print-dir_ns) print-dir] [NsUtilsApiDoc#(_print-docs_ns) print-docs] [NsUtilsApiDoc#(_vars_nsname) vars] 
 
-===pprint=== [PprintApiDoc api]
+===pprint===
+API Overview [PprintApiDoc here]
 <br>by Tom Faulhaber
 
 This module comprises two elements:
@@ -311,159 +344,168 @@ where the markdown README is currently displayed. I will be moving it into the
 clojure.contrib wiki RSN.
 
 Public Variables and Functions:
-[PprintApiDoc#_*print-circle*_ *print-circle*] [PprintApiDoc#_*print-lines*_ *print-lines*] [PprintApiDoc#_*print-miser-width*_ *print-miser-width*] [PprintApiDoc#_*print-pprint-dispatch*_ *print-pprint-dispatch*] [PprintApiDoc#_*print-pretty*_ *print-pretty*] [PprintApiDoc#_*print-right-margin*_ *print-right-margin*] [PprintApiDoc#_*print-shared*_ *print-shared*] [PprintApiDoc#_*print-suppress-namespaces*_ *print-suppress-namespaces*] [PprintApiDoc#(_cl-format_stream_format-in_&_args) cl-format] [PprintApiDoc#(_compile-format_format-str) compile-format] [PprintApiDoc#(_formatter_format-in) formatter] [PprintApiDoc#(_pp_) pp] [PprintApiDoc#(_pprint_object_&_more) pprint] [PprintApiDoc#(_pprint-indent_relative-to_n_&_more) pprint-indent] [PprintApiDoc#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [PprintApiDoc#(_pprint-newline_kind_&_more) pprint-newline] [PprintApiDoc#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [PprintApiDoc#(_set-pprint-dispatch_table) set-pprint-dispatch] [PprintApiDoc#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [PprintApiDoc#(_write_object_&_kw-args) write] 
+[PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#(_cl-format_stream_format-in_&_args) cl-format] [PprintApiDoc#(_compile-format_format-str) compile-format] [PprintApiDoc#(_formatter_format-in) formatter] [PprintApiDoc#(_pp_) pp] [PprintApiDoc#(_pprint_object_&_more) pprint] [PprintApiDoc#(_pprint-indent_relative-to_n_&_more) pprint-indent] [PprintApiDoc#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [PprintApiDoc#(_pprint-newline_kind_&_more) pprint-newline] [PprintApiDoc#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [PprintApiDoc#(_set-pprint-dispatch_table) set-pprint-dispatch] [PprintApiDoc#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [PprintApiDoc#(_write_object_&_kw-args) write] 
 
-===pprint.ColumnWriter=== [PprintColumnWriterApiDoc api]
-
-Public Variables and Functions:
-
-
-===pprint.PrettyWriter=== [PprintPrettyWriterApiDoc api]
-
-Public Variables and Functions:
+===pprint.ColumnWriter===
+API Overview [PprintColumnWriterApiDoc here]
 
 
-===pprint.examples.hexdump=== [PprintExamplesHexdumpApiDoc api]
-
-Public Variables and Functions:
-
-
-===pprint.examples.multiply=== [PprintExamplesMultiplyApiDoc api]
-
-Public Variables and Functions:
+===pprint.PrettyWriter===
+API Overview [PprintPrettyWriterApiDoc here]
 
 
-===pprint.examples.props=== [PprintExamplesPropsApiDoc api]
-
-Public Variables and Functions:
-
-
-===pprint.examples.show-doc=== [PprintExamplesShowDocApiDoc api]
-
-Public Variables and Functions:
+===pprint.examples.hexdump===
+API Overview [PprintExamplesHexdumpApiDoc here]
 
 
-===pprint.utilities=== [PprintUtilitiesApiDoc api]
+===pprint.examples.multiply===
+API Overview [PprintExamplesMultiplyApiDoc here]
 
-Public Variables and Functions:
+
+===pprint.examples.props===
+API Overview [PprintExamplesPropsApiDoc here]
 
 
-===probabilities.dist=== [ProbabilitiesDistApiDoc api]
+===pprint.examples.show-doc===
+API Overview [PprintExamplesShowDocApiDoc here]
+
+
+===pprint.utilities===
+API Overview [PprintUtilitiesApiDoc here]
+
+
+===probabilities.dist===
+API Overview [ProbabilitiesDistApiDoc here]
 
 Public Variables and Functions:
-[ProbabilitiesDistApiDoc#(_certainly_v) certainly] [ProbabilitiesDistApiDoc#(_choose_&_choices) choose] [ProbabilitiesDistApiDoc#_cond-dist-m_ cond-dist-m] [ProbabilitiesDistApiDoc#(_cond-prob_pred_dist) cond-prob] [ProbabilitiesDistApiDoc#_dist-m_ dist-m] [ProbabilitiesDistApiDoc#(_join-with_f_dist1_dist2) join-with] [ProbabilitiesDistApiDoc#(_normalize_weights) normalize] [ProbabilitiesDistApiDoc#(_prob_pred_dist) prob] [ProbabilitiesDistApiDoc#(_uniform_coll) uniform] 
+[ProbabilitiesDistApiDoc#(_certainly_v) certainly] [ProbabilitiesDistApiDoc#(_choose_&_choices) choose] [ProbabilitiesDistApiDoc#cond-dist-m cond-dist-m] [ProbabilitiesDistApiDoc#(_cond-prob_pred_dist) cond-prob] [ProbabilitiesDistApiDoc#dist-m dist-m] [ProbabilitiesDistApiDoc#(_join-with_f_dist1_dist2) join-with] [ProbabilitiesDistApiDoc#(_normalize_weights) normalize] [ProbabilitiesDistApiDoc#(_prob_pred_dist) prob] [ProbabilitiesDistApiDoc#(_uniform_coll) uniform] 
 
-===probabilities.dist.examples=== [ProbabilitiesDistExamplesApiDoc api]
+===probabilities.dist.examples===
+API Overview [ProbabilitiesDistExamplesApiDoc here]
+
+
+===prxml===
+API Overview [PrxmlApiDoc here]
 
 Public Variables and Functions:
+[PrxmlApiDoc#*html-compatible* *html-compatible*] [PrxmlApiDoc#*prxml-indent* *prxml-indent*] [PrxmlApiDoc#(_prxml_&_args) prxml] 
 
-
-===prxml=== [PrxmlApiDoc api]
-
-Public Variables and Functions:
-[PrxmlApiDoc#_*html-compatible*_ *html-compatible*] [PrxmlApiDoc#_*prxml-indent*_ *prxml-indent*] [PrxmlApiDoc#(_prxml_&_args) prxml] 
-
-===repl-ln=== [ReplLnApiDoc api]
+===repl-ln===
+API Overview [ReplLnApiDoc here]
 
 Public Variables and Functions:
 [ReplLnApiDoc#(_print-repl-info_) print-repl-info] [ReplLnApiDoc#(_repl_&_options) repl] [ReplLnApiDoc#(_repl-info_) repl-info] [ReplLnApiDoc#(_repl-prompt_) repl-prompt] [ReplLnApiDoc#(_set-repl-name_) set-repl-name] [ReplLnApiDoc#(_set-repl-prompt_) set-repl-prompt] [ReplLnApiDoc#(_stream-repl_&_options) stream-repl] 
 
-===repl-utils=== [ReplUtilsApiDoc api]
+===repl-utils===
+API Overview [ReplUtilsApiDoc here]
 
 Public Variables and Functions:
-[ReplUtilsApiDoc#_*local-javadocs*_ *local-javadocs*] [ReplUtilsApiDoc#_*remote-javadocs*_ *remote-javadocs*] [ReplUtilsApiDoc#(_add-break-thread!_) add-break-thread!] [ReplUtilsApiDoc#(_add-local-javadoc_path) add-local-javadoc] [ReplUtilsApiDoc#(_add-remote-javadoc_package-prefix_url) add-remote-javadoc] [ReplUtilsApiDoc#_break-threads_ break-threads] [ReplUtilsApiDoc#(_find-javadoc-url_classname) find-javadoc-url] [ReplUtilsApiDoc#(_get-source_x) get-source] [ReplUtilsApiDoc#(_javadoc_class-or-object) javadoc] [ReplUtilsApiDoc#(_show_x) show] [ReplUtilsApiDoc#(_source_n) source] [ReplUtilsApiDoc#(_start-handling-break_) start-handling-break] 
+[ReplUtilsApiDoc#*local-javadocs* *local-javadocs*] [ReplUtilsApiDoc#*remote-javadocs* *remote-javadocs*] [ReplUtilsApiDoc#(_add-break-thread!_) add-break-thread!] [ReplUtilsApiDoc#(_add-local-javadoc_path) add-local-javadoc] [ReplUtilsApiDoc#(_add-remote-javadoc_package-prefix_url) add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#(_find-javadoc-url_classname) find-javadoc-url] [ReplUtilsApiDoc#(_get-source_x) get-source] [ReplUtilsApiDoc#(_javadoc_class-or-object) javadoc] [ReplUtilsApiDoc#(_show_x) show] [ReplUtilsApiDoc#(_source_n) source] [ReplUtilsApiDoc#(_start-handling-break_) start-handling-break] 
 
-===seq-utils=== [SeqUtilsApiDoc api]
+===seq-utils===
+API Overview [SeqUtilsApiDoc here]
 
 Public Variables and Functions:
 [SeqUtilsApiDoc#(_find-first_pred_coll) find-first] [SeqUtilsApiDoc#(_flatten_x) flatten] [SeqUtilsApiDoc#(_frequencies_coll) frequencies] [SeqUtilsApiDoc#(_group-by_f_coll) group-by] [SeqUtilsApiDoc#(_includes?_coll_x) includes?] [SeqUtilsApiDoc#(_indexed_s) indexed] [SeqUtilsApiDoc#(_partition-all_n_coll) partition-all] [SeqUtilsApiDoc#(_partition-by_f_coll) partition-by] [SeqUtilsApiDoc#(_rand-elt_s) rand-elt] [SeqUtilsApiDoc#(_rec-cat_binding-name_&_exprs) rec-cat] [SeqUtilsApiDoc#(_rec-seq_binding-name_&_body) rec-seq] [SeqUtilsApiDoc#(_reductions_f_coll) reductions] [SeqUtilsApiDoc#(_rotations_x) rotations] [SeqUtilsApiDoc#(_separate_f_s) separate] [SeqUtilsApiDoc#(_seq-on_s) seq-on] [SeqUtilsApiDoc#(_shuffle_coll) shuffle] 
 
-===server-socket=== [ServerSocketApiDoc api]
+===server-socket===
+API Overview [ServerSocketApiDoc here]
 
 Public Variables and Functions:
 [ServerSocketApiDoc#(_create-repl-server_port_backlog_bind-addr) create-repl-server] [ServerSocketApiDoc#(_create-server_port_fun_backlog_bind-addr) create-server] 
 
-===set=== [SetApiDoc api]
+===set===
+API Overview [SetApiDoc here]
 
 Public Variables and Functions:
 [SetApiDoc#(_proper-subset?_set1_set2) proper-subset?] [SetApiDoc#(_proper-superset?_set1_set2) proper-superset?] [SetApiDoc#(_subset?_set1_set2) subset?] [SetApiDoc#(_superset?_set1_set2) superset?] 
 
-===shell-out=== [ShellOutApiDoc api]
+===shell-out===
+API Overview [ShellOutApiDoc here]
 
 Public Variables and Functions:
 [ShellOutApiDoc#(_sh_&_args) sh] 
 
-===singleton=== [SingletonApiDoc api]
+===singleton===
+API Overview [SingletonApiDoc here]
 
 Public Variables and Functions:
 [SingletonApiDoc#(_global-singleton_f) global-singleton] [SingletonApiDoc#(_per-thread-singleton_f) per-thread-singleton] 
 
-===sql=== [SqlApiDoc api]
+===sql===
+API Overview [SqlApiDoc here]
 
 Public Variables and Functions:
 [SqlApiDoc#(_connection_) connection] [SqlApiDoc#(_create-table_name_&_specs) create-table] [SqlApiDoc#(_delete-rows_table_where-params) delete-rows] [SqlApiDoc#(_do-commands_&_commands) do-commands] [SqlApiDoc#(_do-prepared_sql_&_param-groups) do-prepared] [SqlApiDoc#(_drop-table_name) drop-table] [SqlApiDoc#(_find-connection_) find-connection] [SqlApiDoc#(_insert-records_table_&_records) insert-records] [SqlApiDoc#(_insert-rows_table_&_rows) insert-rows] [SqlApiDoc#(_insert-values_table_column-names_&_value-groups) insert-values] [SqlApiDoc#(_is-rollback-only_) is-rollback-only] [SqlApiDoc#(_set-rollback-only_) set-rollback-only] [SqlApiDoc#(_transaction_&_body) transaction] [SqlApiDoc#(_update-or-insert-values_table_where-params_record) update-or-insert-values] [SqlApiDoc#(_update-values_table_where-params_record) update-values] [SqlApiDoc#(_with-connection_db-spec_&_body) with-connection] [SqlApiDoc#(_with-query-results_results_sql-params_&_body) with-query-results] 
 
-===sql.internal=== [SqlInternalApiDoc api]
+===sql.internal===
+API Overview [SqlInternalApiDoc here]
 
 Public Variables and Functions:
-[SqlInternalApiDoc#(_connection*_) connection*] [SqlInternalApiDoc#(_find-connection*_) find-connection*] [SqlInternalApiDoc#(_get-connection_{:keys_[datasource_username_password_classname_subprotocol_subname],_:as_db-spec}) get-connection] [SqlInternalApiDoc#(_rollback_) rollback] [SqlInternalApiDoc#(_transaction*_func) transaction*] [SqlInternalApiDoc#(_with-connection*_db-spec_func) with-connection*] [SqlInternalApiDoc#(_with-query-results*_[sql_&_params_:as_sql-params]_func) with-query-results*] 
+[SqlInternalApiDoc#(_connection*_) connection*] [SqlInternalApiDoc#(_find-connection*_) find-connection*] get-connection [SqlInternalApiDoc#(_rollback_) rollback] [SqlInternalApiDoc#(_transaction*_func) transaction*] [SqlInternalApiDoc#(_with-connection*_db-spec_func) with-connection*] with-query-results* 
 
-===sql.test=== [SqlTestApiDoc api]
+===sql.test===
+API Overview [SqlTestApiDoc here]
 
 Public Variables and Functions:
 [SqlTestApiDoc#(_create-fruit_) create-fruit] [SqlTestApiDoc#(_db-exception_) db-exception] [SqlTestApiDoc#(_db-get-tables_) db-get-tables] [SqlTestApiDoc#(_db-grade-a_) db-grade-a] [SqlTestApiDoc#(_db-grade-range_min_max) db-grade-range] [SqlTestApiDoc#(_db-read_) db-read] [SqlTestApiDoc#(_db-read-all_) db-read-all] [SqlTestApiDoc#(_db-rollback_) db-rollback] [SqlTestApiDoc#(_db-update_) db-update] [SqlTestApiDoc#(_db-update-appearance-cost_name_appearance_cost) db-update-appearance-cost] [SqlTestApiDoc#(_db-update-or-insert_record) db-update-or-insert] [SqlTestApiDoc#(_db-write_) db-write] [SqlTestApiDoc#(_drop-fruit_) drop-fruit] [SqlTestApiDoc#(_insert-records-fruit_) insert-records-fruit] [SqlTestApiDoc#(_insert-rows-fruit_) insert-rows-fruit] [SqlTestApiDoc#(_insert-values-fruit_) insert-values-fruit] 
 
-===stacktrace=== [StacktraceApiDoc api]
+===stacktrace===
+API Overview [StacktraceApiDoc here]
 
 Public Variables and Functions:
 [StacktraceApiDoc#(_e_) e] [StacktraceApiDoc#(_print-cause-trace_tr) print-cause-trace] [StacktraceApiDoc#(_print-stack-trace_tr) print-stack-trace] [StacktraceApiDoc#(_print-throwable_tr) print-throwable] [StacktraceApiDoc#(_print-trace-element_e) print-trace-element] [StacktraceApiDoc#(_root-cause_tr) root-cause] 
 
-===str-utils=== [StrUtilsApiDoc api]
+===str-utils===
+API Overview [StrUtilsApiDoc here]
 
 Public Variables and Functions:
 [StrUtilsApiDoc#(_chomp_s) chomp] [StrUtilsApiDoc#(_chop_s) chop] [StrUtilsApiDoc#(_re-gsub_regex_replacement_string) re-gsub] [StrUtilsApiDoc#(_re-partition_re_string) re-partition] [StrUtilsApiDoc#(_re-split_pattern_string) re-split] [StrUtilsApiDoc#(_re-sub_regex_replacement_string) re-sub] [StrUtilsApiDoc#(_str-join_separator_sequence) str-join] 
 
-===stream-utils=== [StreamUtilsApiDoc api]
+===stream-utils===
+API Overview [StreamUtilsApiDoc here]
 
 Public Variables and Functions:
-[StreamUtilsApiDoc#(_defst_name_args_streams_&_body) defst] [StreamUtilsApiDoc#(_defstream_type-tag_args_&_body) defstream] [StreamUtilsApiDoc#(_pick_n) pick] [StreamUtilsApiDoc#(_pick-all_streams) pick-all] [StreamUtilsApiDoc#(_stream-drop_n_stream) stream-drop] [StreamUtilsApiDoc#(_stream-filter_p_stream) stream-filter] [StreamUtilsApiDoc#(_stream-flatten_s) stream-flatten] [StreamUtilsApiDoc#_stream-m_ stream-m] [StreamUtilsApiDoc#(_stream-map_f_stream) stream-map] [StreamUtilsApiDoc#(_stream-next_stream-state) stream-next] [StreamUtilsApiDoc#(_stream-seq_s) stream-seq] [StreamUtilsApiDoc#_stream-type_ stream-type] 
+[StreamUtilsApiDoc#(_defst_name_args_streams_&_body) defst] [StreamUtilsApiDoc#(_defstream_type-tag_args_&_body) defstream] [StreamUtilsApiDoc#(_pick_n) pick] [StreamUtilsApiDoc#(_pick-all_streams) pick-all] [StreamUtilsApiDoc#(_stream-drop_n_stream) stream-drop] [StreamUtilsApiDoc#(_stream-filter_p_stream) stream-filter] [StreamUtilsApiDoc#(_stream-flatten_s) stream-flatten] [StreamUtilsApiDoc#stream-m stream-m] [StreamUtilsApiDoc#(_stream-map_f_stream) stream-map] [StreamUtilsApiDoc#(_stream-next_stream-state) stream-next] [StreamUtilsApiDoc#(_stream-seq_s) stream-seq] [StreamUtilsApiDoc#stream-type stream-type] 
 
-===stream-utils.examples=== [StreamUtilsExamplesApiDoc api]
+===stream-utils.examples===
+API Overview [StreamUtilsExamplesApiDoc here]
 
-Public Variables and Functions:
 
-
-===template=== [TemplateApiDoc api]
+===template===
+API Overview [TemplateApiDoc here]
 
 Public Variables and Functions:
 [TemplateApiDoc#(_apply-template_expr_values) apply-template] [TemplateApiDoc#(_do-template_expr_&_args) do-template] [TemplateApiDoc#(_find-holes_form) find-holes] [TemplateApiDoc#(_find-pure-exprs_form) find-pure-exprs] [TemplateApiDoc#(_find-symbols_form) find-symbols] [TemplateApiDoc#(_flatten-map_m) flatten-map] [TemplateApiDoc#(_template_&_form) template] [TemplateApiDoc#(_template?_form) template?] 
 
-===test-is=== [TestIsApiDoc api]
+===test-is===
+API Overview [TestIsApiDoc here]
 
 Public Variables and Functions:
-[TestIsApiDoc#_*load-tests*_ *load-tests*] [TestIsApiDoc#_*stack-trace-depth*_ *stack-trace-depth*] [TestIsApiDoc#(_are_expr_&_args) are] [TestIsApiDoc#(_assert-any_msg_form) assert-any] [TestIsApiDoc#(_assert-predicate_msg_form) assert-predicate] [TestIsApiDoc#(_compose-fixtures_f1_f2) compose-fixtures] [TestIsApiDoc#(_deftest_name_&_body) deftest] [TestIsApiDoc#(_deftest-_name_&_body) deftest-] [TestIsApiDoc#(_file-position_n) file-position] [TestIsApiDoc#(_function?_x) function?] [TestIsApiDoc#(_get-possibly-unbound-var_v) get-possibly-unbound-var] [TestIsApiDoc#(_inc-report-counter_name) inc-report-counter] [TestIsApiDoc#(_is_form) is] [TestIsApiDoc#(_join-fixtures_fixtures) join-fixtures] [TestIsApiDoc#(_print-results_r) print-results] [TestIsApiDoc#_report_ report] [TestIsApiDoc#(_run-all-tests_) run-all-tests] [TestIsApiDoc#(_run-tests_) run-tests] [TestIsApiDoc#(_set-test_name_&_body) set-test] [TestIsApiDoc#(_test-all-vars_ns) test-all-vars] [TestIsApiDoc#(_test-ns_ns) test-ns] [TestIsApiDoc#(_test-var_v) test-var] [TestIsApiDoc#(_testing_string_&_body) testing] [TestIsApiDoc#(_testing-contexts-str_) testing-contexts-str] [TestIsApiDoc#(_testing-vars-str_) testing-vars-str] [TestIsApiDoc#(_try-expr_msg_form) try-expr] [TestIsApiDoc#(_with-test_definition_&_body) with-test] 
+[TestIsApiDoc#*load-tests* *load-tests*] [TestIsApiDoc#*stack-trace-depth* *stack-trace-depth*] [TestIsApiDoc#(_are_expr_&_args) are] [TestIsApiDoc#(_assert-any_msg_form) assert-any] [TestIsApiDoc#(_assert-predicate_msg_form) assert-predicate] [TestIsApiDoc#(_compose-fixtures_f1_f2) compose-fixtures] [TestIsApiDoc#(_deftest_name_&_body) deftest] [TestIsApiDoc#(_deftest-_name_&_body) deftest-] [TestIsApiDoc#(_file-position_n) file-position] [TestIsApiDoc#(_function?_x) function?] [TestIsApiDoc#(_get-possibly-unbound-var_v) get-possibly-unbound-var] [TestIsApiDoc#(_inc-report-counter_name) inc-report-counter] [TestIsApiDoc#(_is_form) is] [TestIsApiDoc#(_join-fixtures_fixtures) join-fixtures] [TestIsApiDoc#(_print-results_r) print-results] [TestIsApiDoc#report report] [TestIsApiDoc#(_run-all-tests_) run-all-tests] [TestIsApiDoc#(_run-tests_) run-tests] [TestIsApiDoc#(_set-test_name_&_body) set-test] [TestIsApiDoc#(_test-all-vars_ns) test-all-vars] [TestIsApiDoc#(_test-ns_ns) test-ns] [TestIsApiDoc#(_test-var_v) test-var] [TestIsApiDoc#(_testing_string_&_body) testing] [TestIsApiDoc#(_testing-contexts-str_) testing-contexts-str] [TestIsApiDoc#(_testing-vars-str_) testing-vars-str] [TestIsApiDoc#(_try-expr_msg_form) try-expr] [TestIsApiDoc#(_with-test_definition_&_body) with-test] 
 
-===test-is.tap=== [TestIsTapApiDoc api]
+===test-is.tap===
+API Overview [TestIsTapApiDoc here]
 
 Public Variables and Functions:
 [TestIsTapApiDoc#(_print-tap-diagnostic_data) print-tap-diagnostic] [TestIsTapApiDoc#(_print-tap-fail_msg) print-tap-fail] [TestIsTapApiDoc#(_print-tap-pass_msg) print-tap-pass] [TestIsTapApiDoc#(_print-tap-plan_n) print-tap-plan] [TestIsTapApiDoc#(_with-tap-output_&_body) with-tap-output] 
 
-===test-is.test-fixtures=== [TestIsTestFixturesApiDoc api]
+===test-is.test-fixtures===
+API Overview [TestIsTestFixturesApiDoc here]
+
+
+===test-is.tests===
+API Overview [TestIsTestsApiDoc here]
+
+
+===trace===
+API Overview [TraceApiDoc here]
 
 Public Variables and Functions:
+[TraceApiDoc#*trace-depth* *trace-depth*] [TraceApiDoc#(_deftrace_name_&_definition) deftrace] [TraceApiDoc#(_trace_value) trace] [TraceApiDoc#(_trace-fn-call_name_f_args) trace-fn-call] [TraceApiDoc#(_trace-indent_) trace-indent] [TraceApiDoc#(_tracer_name_value) tracer] 
 
-
-===test-is.tests=== [TestIsTestsApiDoc api]
-
-Public Variables and Functions:
-
-
-===trace=== [TraceApiDoc api]
-
-Public Variables and Functions:
-[TraceApiDoc#_*trace-depth*_ *trace-depth*] [TraceApiDoc#(_deftrace_name_&_definition) deftrace] [TraceApiDoc#(_trace_value) trace] [TraceApiDoc#(_trace-fn-call_name_f_args) trace-fn-call] [TraceApiDoc#(_trace-indent_) trace-indent] [TraceApiDoc#(_tracer_name_value) tracer] 
-
-===types=== [TypesApiDoc api]
+===types===
+API Overview [TypesApiDoc here]
 
 General and algebraic data types
 
@@ -472,27 +514,32 @@ with future release.
 Public Variables and Functions:
 [TypesApiDoc#(_defadt_type-tag_&_constructors) defadt] [TypesApiDoc#(_deftype_type-tag_constructor-name_docstring?_attr-map?) deftype] [TypesApiDoc#(_deftype-_type-tag_constructor-name_&_optional) deftype-] [TypesApiDoc#(_match_value_&_clauses) match] 
 
-===types.examples=== [TypesExamplesApiDoc api]
+===types.examples===
+API Overview [TypesExamplesApiDoc here]
 
 Public Variables and Functions:
-[TypesExamplesApiDoc#_multiset_ multiset] 
+[TypesExamplesApiDoc#multiset multiset] 
 
-===walk=== [WalkApiDoc api]
+===walk===
+API Overview [WalkApiDoc here]
 
 Public Variables and Functions:
 [WalkApiDoc#(_keywordize-keys_m) keywordize-keys] [WalkApiDoc#(_macroexpand-all_form) macroexpand-all] [WalkApiDoc#(_postwalk_f_form) postwalk] [WalkApiDoc#(_postwalk-demo_form) postwalk-demo] [WalkApiDoc#(_postwalk-replace_smap_form) postwalk-replace] [WalkApiDoc#(_prewalk_f_form) prewalk] [WalkApiDoc#(_prewalk-demo_form) prewalk-demo] [WalkApiDoc#(_prewalk-replace_smap_form) prewalk-replace] [WalkApiDoc#(_stringify-keys_m) stringify-keys] [WalkApiDoc#(_walk_inner_outer_form) walk] 
 
-===with-ns=== [WithNsApiDoc api]
+===with-ns===
+API Overview [WithNsApiDoc here]
 
 Public Variables and Functions:
 [WithNsApiDoc#(_with-ns_ns_&_body) with-ns] [WithNsApiDoc#(_with-temp-ns_&_body) with-temp-ns] 
 
-===zip-filter=== [ZipFilterApiDoc api]
+===zip-filter===
+API Overview [ZipFilterApiDoc here]
 
 Public Variables and Functions:
 [ZipFilterApiDoc#(_ancestors_loc) ancestors] [ZipFilterApiDoc#(_children_loc) children] [ZipFilterApiDoc#(_children-auto_loc) children-auto] [ZipFilterApiDoc#(_descendants_loc) descendants] [ZipFilterApiDoc#(_left-locs_loc) left-locs] [ZipFilterApiDoc#(_leftmost?_loc) leftmost?] [ZipFilterApiDoc#(_right-locs_loc) right-locs] [ZipFilterApiDoc#(_rightmost?_loc) rightmost?] 
 
-===zip-filter.xml=== [ZipFilterXmlApiDoc api]
+===zip-filter.xml===
+API Overview [ZipFilterXmlApiDoc here]
 
 Public Variables and Functions:
 [ZipFilterXmlApiDoc#(_attr_attrname) attr] [ZipFilterXmlApiDoc#(_attr=_attrname_attrval) attr=] [ZipFilterXmlApiDoc#(_seq-test_preds) seq-test] [ZipFilterXmlApiDoc#(_tag=_tagname) tag=] [ZipFilterXmlApiDoc#(_text_loc) text] [ZipFilterXmlApiDoc#(_text=_s) text=] [ZipFilterXmlApiDoc#(_xml->_loc_&_preds) xml->] [ZipFilterXmlApiDoc#(_xml1->_loc_&_preds) xml1->] 

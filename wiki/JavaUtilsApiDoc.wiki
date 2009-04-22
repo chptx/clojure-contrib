@@ -15,7 +15,8 @@ Usage:
 }}}
 ==Public Variables and Functions==
 Shortcuts:
-[#_as-file_ as-file] [#(_as-properties_m) as-properties] [#(_as-str_x) as-str] [#(_file_arg) file] [#(_get-system-property_stringable) get-system-property] [#(_read-properties_file-able) read-properties] [#_relative-path-string_ relative-path-string] [#(_set-system-properties_settings) set-system-properties] [#(_with-system-properties_settings_&_body) with-system-properties] [#(_write-properties_m_file-able) write-properties] 
+[#as-file as-file] [#(_as-properties_m) as-properties] [#(_as-str_x) as-str] [#(_file_arg) file] [#(_get-system-property_stringable) get-system-property] [#(_read-properties_file-able) read-properties] [#relative-path-string relative-path-string] [#(_set-system-properties_settings) set-system-properties] [#(_with-system-properties_settings_&_body) with-system-properties] [#(_write-properties_m_file-able) write-properties] 
+
 ----
 ===_as-file_===
 Interpret a String or a java.io.File as a File. Building block

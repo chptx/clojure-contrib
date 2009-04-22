@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_import-static_class_&_fields-and-methods) import-static] 
+
 ----
 ===(_import-static_ class & fields-and-methods)===
 ====Macro====

@@ -25,7 +25,8 @@ clojure.contrib wiki RSN.
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*print-circle*_ *print-circle*] [#_*print-lines*_ *print-lines*] [#_*print-miser-width*_ *print-miser-width*] [#_*print-pprint-dispatch*_ *print-pprint-dispatch*] [#_*print-pretty*_ *print-pretty*] [#_*print-right-margin*_ *print-right-margin*] [#_*print-shared*_ *print-shared*] [#_*print-suppress-namespaces*_ *print-suppress-namespaces*] [#(_cl-format_stream_format-in_&_args) cl-format] [#(_compile-format_format-str) compile-format] [#(_formatter_format-in) formatter] [#(_pp_) pp] [#(_pprint_object_&_more) pprint] [#(_pprint-indent_relative-to_n_&_more) pprint-indent] [#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [#(_pprint-newline_kind_&_more) pprint-newline] [#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [#(_set-pprint-dispatch_table) set-pprint-dispatch] [#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [#(_write_object_&_kw-args) write] 
+[#*print-circle* *print-circle*] [#*print-lines* *print-lines*] [#*print-miser-width* *print-miser-width*] [#*print-pprint-dispatch* *print-pprint-dispatch*] [#*print-pretty* *print-pretty*] [#*print-right-margin* *print-right-margin*] [#*print-shared* *print-shared*] [#*print-suppress-namespaces* *print-suppress-namespaces*] [#(_cl-format_stream_format-in_&_args) cl-format] [#(_compile-format_format-str) compile-format] [#(_formatter_format-in) formatter] [#(_pp_) pp] [#(_pprint_object_&_more) pprint] [#(_pprint-indent_relative-to_n_&_more) pprint-indent] [#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [#(_pprint-newline_kind_&_more) pprint-newline] [#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [#(_set-pprint-dispatch_table) set-pprint-dispatch] [#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [#(_write_object_&_kw-args) write] 
+
 ----
 ===_`*`print-circle`*`_===
 Mark circular structures (N.B. This is not yet used)

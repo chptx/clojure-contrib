@@ -15,7 +15,8 @@ Usage:
 }}}
 ==Public Variables and Functions==
 Shortcuts:
-[#_adorned-literal_ adorned-literal] [#(_build-atom_f_type) build-atom] [#_build-literal_ build-literal] [#(_build-seed-bindings_s) build-seed-bindings] [#(_delta-literal_l) delta-literal] [#_display-literal_ display-literal] [#(_get-adorned-bindings_pred) get-adorned-bindings] [#(_get-base-predicate_pred) get-base-predicate] [#_get-cs-from-vs_ get-cs-from-vs] [#_get-self-bound-cs_ get-self-bound-cs] [#_get-vs-from-cs_ get-vs-from-cs] [#_join-literal_ join-literal] [#_literal-appropriate?_ literal-appropriate?] [#_literal-columns_ literal-columns] [#(_literal-magic?_lit) literal-magic?] [#_literal-predicate_ literal-predicate] [#_literal-vars_ literal-vars] [#(_magic-literal_l) magic-literal] [#(_negated-literal_l) negated-literal] [#(_negated?_l) negated?] [#_negative-vars_ negative-vars] [#_positive-vars_ positive-vars] [#(_positive?_l) positive?] [#(_project-literal_db_lit_bs) project-literal] 
+[#adorned-literal adorned-literal] [#(_build-atom_f_type) build-atom] [#build-literal build-literal] [#(_build-seed-bindings_s) build-seed-bindings] [#(_delta-literal_l) delta-literal] [#display-literal display-literal] [#(_get-adorned-bindings_pred) get-adorned-bindings] [#(_get-base-predicate_pred) get-base-predicate] [#get-cs-from-vs get-cs-from-vs] [#get-self-bound-cs get-self-bound-cs] [#get-vs-from-cs get-vs-from-cs] [#join-literal join-literal] [#literal-appropriate? literal-appropriate?] [#literal-columns literal-columns] [#(_literal-magic?_lit) literal-magic?] [#literal-predicate literal-predicate] [#literal-vars literal-vars] [#(_magic-literal_l) magic-literal] [#(_negated-literal_l) negated-literal] [#(_negated?_l) negated?] [#negative-vars negative-vars] [#positive-vars positive-vars] [#(_positive?_l) positive?] [#(_project-literal_db_lit_bs) project-literal] 
+
 ----
 ===_adorned-literal_===
 When passed a set of bound columns, returns the adorned literal

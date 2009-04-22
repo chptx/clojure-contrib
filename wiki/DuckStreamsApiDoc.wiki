@@ -15,7 +15,8 @@ Usage:
 }}}
 ==Public Variables and Functions==
 Shortcuts:
-[#(_file_&_args) file] [#(_pwd_) pwd] [#(_read-lines_f) read-lines] [#_reader_ reader] [#(_slurp*_f) slurp*] [#(_spit_f_content) spit] [#(_with-in-reader_f_&_body) with-in-reader] [#(_with-out-writer_f_&_body) with-out-writer] [#(_write-lines_f_lines) write-lines] [#_writer_ writer] 
+[#(_file_&_args) file] [#(_pwd_) pwd] [#(_read-lines_f) read-lines] [#reader reader] [#(_slurp*_f) slurp*] [#(_spit_f_content) spit] [#(_with-in-reader_f_&_body) with-in-reader] [#(_with-out-writer_f_&_body) with-out-writer] [#(_write-lines_f_lines) write-lines] [#writer writer] 
+
 ----
 ===(_file_ & args)===
 Concatenates args as strings returns a java.io.File.  Replaces all

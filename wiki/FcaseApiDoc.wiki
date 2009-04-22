@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_case_test-value_&_clauses) case] [#(_fcase_compare-fn_case-value_&_test-expr-clauses) fcase] [#(_in-case_test-value_&_clauses) in-case] [#(_instance-case_test-value_&_clauses) instance-case] [#(_re-case_test-value_&_clauses) re-case] 
+
 ----
 ===(_case_ test-value & clauses)===
 ====Macro====

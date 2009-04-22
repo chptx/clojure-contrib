@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_create-fruit_) create-fruit] [#(_db-exception_) db-exception] [#(_db-get-tables_) db-get-tables] [#(_db-grade-a_) db-grade-a] [#(_db-grade-range_min_max) db-grade-range] [#(_db-read_) db-read] [#(_db-read-all_) db-read-all] [#(_db-rollback_) db-rollback] [#(_db-update_) db-update] [#(_db-update-appearance-cost_name_appearance_cost) db-update-appearance-cost] [#(_db-update-or-insert_record) db-update-or-insert] [#(_db-write_) db-write] [#(_drop-fruit_) drop-fruit] [#(_insert-records-fruit_) insert-records-fruit] [#(_insert-rows-fruit_) insert-rows-fruit] [#(_insert-values-fruit_) insert-values-fruit] 
+
 ----
 ===(_create-fruit_)===
 Create a table

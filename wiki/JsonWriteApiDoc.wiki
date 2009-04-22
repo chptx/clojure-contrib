@@ -15,7 +15,8 @@ Usage:
 }}}
 ==Public Variables and Functions==
 Shortcuts:
-[#(_json-str_x) json-str] [#_print-json_ print-json] 
+[#(_json-str_x) json-str] [#print-json print-json] 
+
 ----
 ===(_json-str_ x)===
 Converts Clojure data structures to a JSON-formatted string.

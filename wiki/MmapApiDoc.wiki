@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_buffer-stream_buf) buffer-stream] [#(_mmap_f) mmap] [#(_slurp_f) slurp] 
+
 ----
 ===(_buffer-stream_ buf)===
 Returns an InputStream for a ByteBuffer, such as returned by mmap.

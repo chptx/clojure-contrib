@@ -14,5 +14,4 @@ Usage:
   (:use clojure.contrib.test-is.test-fixtures))
 }}}
 ==Public Variables and Functions==
-Shortcuts:
 

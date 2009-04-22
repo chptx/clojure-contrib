@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_approx=_x_y_eps) approx=] 
+
 ----
 ===(_approx=_ x y eps)===
 Return true if the absolute value of the difference between x and y

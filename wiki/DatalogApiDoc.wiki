@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_build-work-plan_rules_query) build-work-plan] [#(_run-work-plan_work-plan_database_query-bindings) run-work-plan] 
+
 ----
 ===(_build-work-plan_ rules query)===
 Given a list of rules and a query, build a work plan that can be

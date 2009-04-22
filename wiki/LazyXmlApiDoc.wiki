@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_emit_x_&_opts) emit] [#(_emit-element_e_&_opts) emit-element] [#(_parse-seq_s) parse-seq] [#(_parse-trim_s) parse-trim] 
+
 ----
 ===(_emit_ x & opts)===
 Prints an <?xml?> declaration line, and then calls emit-element

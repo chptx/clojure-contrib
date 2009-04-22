@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_cartesian-product_&_seqs) cartesian-product] [#(_combinations_items_n) combinations] [#(_lex-permutations_c) lex-permutations] [#(_permutations_items) permutations] [#(_selections_items_n) selections] [#(_subsets_items) subsets] 
+
 ----
 ===(_cartesian-product_ & seqs)===
 All the ways to take one item from each sequence

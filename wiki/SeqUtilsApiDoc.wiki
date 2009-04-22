@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_find-first_pred_coll) find-first] [#(_flatten_x) flatten] [#(_frequencies_coll) frequencies] [#(_group-by_f_coll) group-by] [#(_includes?_coll_x) includes?] [#(_indexed_s) indexed] [#(_partition-all_n_coll) partition-all] [#(_partition-by_f_coll) partition-by] [#(_rand-elt_s) rand-elt] [#(_rec-cat_binding-name_&_exprs) rec-cat] [#(_rec-seq_binding-name_&_body) rec-seq] [#(_reductions_f_coll) reductions] [#(_rotations_x) rotations] [#(_separate_f_s) separate] [#(_seq-on_s) seq-on] [#(_shuffle_coll) shuffle] 
+
 ----
 ===(_find-first_ pred coll)===
 Returns the first item of coll for which (pred item) returns logical true.

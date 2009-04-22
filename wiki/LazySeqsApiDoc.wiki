@@ -15,7 +15,8 @@ Usage:
 }}}
 ==Public Variables and Functions==
 Shortcuts:
-[#_primes_ primes] 
+[#primes primes] 
+
 ----
 ===_primes_===
 Lazy sequence of all the prime numbers.

@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_deep-merge-with_f_&_maps) deep-merge-with] [#(_lazy-get_map_key_not-found) lazy-get] [#(_safe-get_map_key) safe-get] [#(_safe-get-in_map_ks) safe-get-in] 
+
 ----
 ===(_deep-merge-with_ f & maps)===
 Like merge-with, but merges maps recursively, appling the given fn

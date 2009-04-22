@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_<-_hd_&_body) <-] [#(_?-_&_q) ?-] [#(_all-predicates_rs) all-predicates] [#(_apply-rule_db_rule) apply-rule] [#(_compute-sip_bindings_i-preds_rule) compute-sip] [#(_display-query_query) display-query] [#(_display-rule_rule) display-rule] [#(_is-safe?_rule) is-safe?] [#(_make-rules-set_rs) make-rules-set] [#(_non-base-rules_rs) non-base-rules] [#(_predicate-map_rs) predicate-map] [#(_return-rule-data_rule) return-rule-data] [#(_rules-set_&_rules) rules-set] 
+
 ----
 ===(_<-_ hd & body)===
 ====Macro====

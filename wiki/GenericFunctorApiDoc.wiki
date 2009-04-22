@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_fmap_f_s) fmap] 
+
 ----
 ===(_fmap_ f s)===
 Applies function f to each item in the data structure s and returns

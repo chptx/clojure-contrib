@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_ancestors_loc) ancestors] [#(_children_loc) children] [#(_children-auto_loc) children-auto] [#(_descendants_loc) descendants] [#(_left-locs_loc) left-locs] [#(_leftmost?_loc) leftmost?] [#(_right-locs_loc) right-locs] [#(_rightmost?_loc) rightmost?] 
+
 ----
 ===(_ancestors_ loc)===
 Returns a lazy sequence of all ancestors of location loc, starting

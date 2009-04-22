@@ -15,7 +15,8 @@ Usage:
 }}}
 ==Public Variables and Functions==
 Shortcuts:
-[#(_add_acc_item) add] [#(_add-items_acc_items) add-items] [#(_combine_&_accs) combine] [#_empty-counter_ empty-counter] [#_empty-counter-with-total_ empty-counter-with-total] [#_empty-list_ empty-list] [#_empty-map_ empty-map] [#_empty-maximum_ empty-maximum] [#_empty-mean-variance_ empty-mean-variance] [#_empty-min-max_ empty-min-max] [#_empty-minimum_ empty-minimum] [#_empty-product_ empty-product] [#_empty-queue_ empty-queue] [#_empty-set_ empty-set] [#_empty-string_ empty-string] [#_empty-sum_ empty-sum] [#(_empty-tuple_empty-accumulators) empty-tuple] [#_empty-vector_ empty-vector] 
+[#(_add_acc_item) add] [#(_add-items_acc_items) add-items] [#(_combine_&_accs) combine] [#empty-counter empty-counter] [#empty-counter-with-total empty-counter-with-total] [#empty-list empty-list] [#empty-map empty-map] [#empty-maximum empty-maximum] [#empty-mean-variance empty-mean-variance] [#empty-min-max empty-min-max] [#empty-minimum empty-minimum] [#empty-product empty-product] [#empty-queue empty-queue] [#empty-set empty-set] [#empty-string empty-string] [#empty-sum empty-sum] [#(_empty-tuple_empty-accumulators) empty-tuple] [#empty-vector empty-vector] 
+
 ----
 ===(_add_ acc item)===
 Add item to the accumulator acc. The exact meaning of adding an

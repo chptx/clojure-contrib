@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_add-index_db_name_key) add-index] [#(_add-relation_db_name_keys) add-relation] [#(_add-tuple_db_rel-name_tuple) add-tuple] [#(_add-tuples_db_&_tupls) add-tuples] [#(_any-match?_db_rn_pt) any-match?] [#(_database-counts_db) database-counts] [#(_database-merge_dbs) database-merge] [#(_database-merge-parallel_dbs) database-merge-parallel] [#(_datalog-relation_schema_data_indexes) datalog-relation] [#(_ensure-relation_db_name_keys_indexes) ensure-relation] [#(_get-relation_db_rel-name) get-relation] [#(_make-database_&_commands) make-database] [#(_merge-relations_r1_r2) merge-relations] [#(_remove-tuple_db_rel-name_tuple) remove-tuple] [#(_replace-relation_db_rel-name_rel) replace-relation] [#(_select_db_rn_pt) select] 
+
 ----
 ===(_add-index_ db name key)===
 Adds an index to an empty relation named name

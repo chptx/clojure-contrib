@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_throw-arg_&_args) throw-arg] [#(_throw-if_test_&_args) throw-if] [#(_throw-if-not_test_&_args) throw-if-not] [#(_throwf_&_args) throwf] 
+
 ----
 ===(_throw-arg_ & args)===
 Throws an IllegalArgumentException. All arguments are optional:

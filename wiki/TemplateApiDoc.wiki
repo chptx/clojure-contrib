@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_apply-template_expr_values) apply-template] [#(_do-template_expr_&_args) do-template] [#(_find-holes_form) find-holes] [#(_find-pure-exprs_form) find-pure-exprs] [#(_find-symbols_form) find-symbols] [#(_flatten-map_m) flatten-map] [#(_template_&_form) template] [#(_template?_form) template?] 
+
 ----
 ===(_apply-template_ expr values)===
 Replaces _1, _2, _3, etc. in expr with corresponding elements of

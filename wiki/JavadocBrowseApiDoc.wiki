@@ -16,6 +16,7 @@ Usage:
 ==Public Variables and Functions==
 Shortcuts:
 [#(_open-url-in-browser_url) open-url-in-browser] [#(_open-url-in-swing_url) open-url-in-swing] 
+
 ----
 ===(_open-url-in-browser_ url)===
 Opens url (a string) in the default system web browser.  May not

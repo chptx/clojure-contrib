@@ -15,7 +15,8 @@ Usage:
 }}}
 ==Public Variables and Functions==
 Shortcuts:
-[#_multiset_ multiset] 
+[#multiset multiset] 
+
 ----
 ===_multiset_===
 Multiset (demo implementation)
