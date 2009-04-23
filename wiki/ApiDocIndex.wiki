@@ -1,0 +1,546 @@
+#summary Index of documented functions and variables
+#sidebar ApiDocSidebar
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=Index of Functions and Variables=
+This page has an alphabetical index of all the documented functions and variables
+in clojure.contrib. 
+
+Shortcuts:
+
+ [A]   [B]   [C]   [D]   [E]   [F]   [G]   [H]   [I]   [J]   [K]   [L]   [M]
+
+ [N]   [O]   [P]   [Q]   [R]   [S]   [T]   [U]   [V]   [W]   [X]   [Y]   [Z]
+
+ [Other]
+
+==A==
+[AccumulatorsApiDoc#(_add_acc_item) add] <br/>
+[AccumulatorsApiDoc#(_add-items_acc_items) add-items] <br/>
+[AutoAgentApiDoc#(_auto-agent_expr) auto-agent] <br/>
+[DataflowApiDoc#(_add-cell-watcher_cell_key_fun) add-cell-watcher] <br/>
+[DataflowApiDoc#(_add-cells_df_cells) add-cells] <br/>
+[DatalogApiDoc#(_add-index_db_name_key) add-index] <br/>
+[DatalogApiDoc#(_add-relation_db_name_keys) add-relation] <br/>
+[DatalogApiDoc#(_add-tuple_db_rel-name_tuple) add-tuple] <br/>
+[DatalogApiDoc#(_add-tuples_db_&_tupls) add-tuples] <br/>
+[DatalogApiDoc#(_any-match?_db_rn_pt) any-match?] <br/>
+[DatalogApiDoc#adorned-literal adorned-literal] <br/>
+[DatalogApiDoc#(_adorn-query_q) adorn-query] <br/>
+[DatalogApiDoc#(_adorn-rules-set_rs_q) adorn-rules-set] <br/>
+[DatalogApiDoc#(_all-predicates_rs) all-predicates] <br/>
+[DatalogApiDoc#(_apply-rule_db_rule) apply-rule] <br/>
+[GenericApiDoc#(_assoc_coll_&_key-val-pairs) assoc] <br/>
+[GenericApiDoc#(_approx=_x_y_eps) approx=] <br/>
+[GraphApiDoc#(_add-loops_g) add-loops] <br/>
+[GreatestLeastApiDoc#(_all-greatest_&_args) all-greatest] <br/>
+[GreatestLeastApiDoc#(_all-greatest-by_f_&_args) all-greatest-by] <br/>
+[GreatestLeastApiDoc#(_all-least_&_args) all-least] <br/>
+[GreatestLeastApiDoc#(_all-least-by_f_&_args) all-least-by] <br/>
+[JavaUtilsApiDoc#as-file as-file] <br/>
+[JavaUtilsApiDoc#(_as-properties_m) as-properties] <br/>
+[JavaUtilsApiDoc#(_as-str_x) as-str] <br/>
+[JavalogApiDoc#(_add-log-file_logger-name_filename) add-log-file] <br/>
+[MathApiDoc#(_abs_n) abs] <br/>
+[ReplUtilsApiDoc#(_add-break-thread!_) add-break-thread!] <br/>
+[ReplUtilsApiDoc#(_add-local-javadoc_path) add-local-javadoc] <br/>
+[ReplUtilsApiDoc#(_add-remote-javadoc_package-prefix_url) add-remote-javadoc] <br/>
+[TemplateApiDoc#(_apply-template_expr_values) apply-template] <br/>
+[TestIsApiDoc#(_are_expr_&_args) are] <br/>
+[TestIsApiDoc#(_assert-any_msg_form) assert-any] <br/>
+[TestIsApiDoc#(_assert-predicate_msg_form) assert-predicate] <br/>
+[ZipFilterApiDoc#(_ancestors_loc) ancestors] <br/>
+[ZipFilterApiDoc#(_attr_attrname) attr] <br/>
+[ZipFilterApiDoc#(_attr=_attrname_attrval) attr=] <br/>
+==B==
+[DataflowApiDoc#(_build-dataflow_cs) build-dataflow] <br/>
+[DataflowApiDoc#(_build-source-cell_name_init) build-source-cell] <br/>
+[DataflowApiDoc#(_build-standard-cell_name_deps_fun_expr) build-standard-cell] <br/>
+[DataflowApiDoc#(_build-validator-cell_deps_fun_expr) build-validator-cell] <br/>
+[DatalogApiDoc#(_build-work-plan_rules_query) build-work-plan] <br/>
+[DatalogApiDoc#(_build-atom_f_type) build-atom] <br/>
+[DatalogApiDoc#build-literal build-literal] <br/>
+[DatalogApiDoc#(_build-seed-bindings_s) build-seed-bindings] <br/>
+[DatalogApiDoc#(_build-partial-tuple_q_bindings) build-partial-tuple] <br/>
+[DatalogApiDoc#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] <br/>
+bind-continue <br/>
+[MmapApiDoc#(_buffer-stream_buf) buffer-stream] <br/>
+[ReplUtilsApiDoc#break-threads break-threads] <br/>
+==C==
+[AccumulatorsApiDoc#(_combine_&_accs) combine] <br/>
+[AgentUtilsApiDoc#(_capture-and-send_vars_agent_action_&_args) capture-and-send] <br/>
+[CombinatoricsApiDoc#(_cartesian-product_&_seqs) cartesian-product] <br/>
+[CombinatoricsApiDoc#(_combinations_items_n) combinations] <br/>
+[CondApiDoc#(_cond-let_bindings_&_clauses) cond-let] <br/>
+[CondtApiDoc#(_condt_expr_&_clauses) condt] <br/>
+[DataflowApiDoc#(_cell_type_&_data) cell] <br/>
+[DatalogApiDoc#(_compute-sip_bindings_i-preds_rule) compute-sip] <br/>
+[FcaseApiDoc#(_case_test-value_&_clauses) case] <br/>
+[GraphApiDoc#(_component-graph_g) component-graph] <br/>
+[MacrosApiDoc#(_const_expr) const] <br/>
+[MathApiDoc#(_ceil_n) ceil] <br/>
+[MiglayoutApiDoc#(_component?_x) component?] <br/>
+[MiglayoutApiDoc#(_constraint?_x) constraint?] <br/>
+[MonadsApiDoc#(_call-cc_f) call-cc] <br/>
+[MonadsApiDoc#cont-m cont-m] <br/>
+[PprintApiDoc#(_cl-format_stream_format-in_&_args) cl-format] <br/>
+[PprintApiDoc#(_compile-format_format-str) compile-format] <br/>
+[ProbabilitiesDistApiDoc#(_certainly_v) certainly] <br/>
+[ProbabilitiesDistApiDoc#(_choose_&_choices) choose] <br/>
+[ProbabilitiesDistApiDoc#cond-dist-m cond-dist-m] <br/>
+[ProbabilitiesDistApiDoc#(_cond-prob_pred_dist) cond-prob] <br/>
+[ServerSocketApiDoc#(_create-repl-server_port_backlog_bind-addr) create-repl-server] <br/>
+[ServerSocketApiDoc#(_create-server_port_fun_backlog_bind-addr) create-server] <br/>
+[SqlApiDoc#(_connection_) connection] <br/>
+[SqlApiDoc#(_create-table_name_&_specs) create-table] <br/>
+[SqlApiDoc#(_connection*_) connection*] <br/>
+[SqlApiDoc#(_create-fruit_) create-fruit] <br/>
+[StrUtilsApiDoc#(_chomp_s) chomp] <br/>
+[StrUtilsApiDoc#(_chop_s) chop] <br/>
+[TestIsApiDoc#(_compose-fixtures_f1_f2) compose-fixtures] <br/>
+[ZipFilterApiDoc#(_children_loc) children] <br/>
+[ZipFilterApiDoc#(_children-auto_loc) children-auto] <br/>
+==D==
+[DataflowApiDoc#display-cell display-cell] <br/>
+[DatalogApiDoc#(_database-counts_db) database-counts] <br/>
+[DatalogApiDoc#(_database-merge_dbs) database-merge] <br/>
+[DatalogApiDoc#(_database-merge-parallel_dbs) database-merge-parallel] <br/>
+[DatalogApiDoc#(_datalog-relation_schema_data_indexes) datalog-relation] <br/>
+[DatalogApiDoc#(_delta-literal_l) delta-literal] <br/>
+[DatalogApiDoc#display-literal display-literal] <br/>
+[DatalogApiDoc#(_display-query_query) display-query] <br/>
+[DatalogApiDoc#(_display-rule_rule) display-rule] <br/>
+[DefApiDoc#(_defalias_name_orig) defalias] <br/>
+[DefApiDoc#(_defhinted_sym_init) defhinted] <br/>
+[DefApiDoc#(_defmacro-_name_&_decls) defmacro-] <br/>
+[DefApiDoc#(_defonce-_name_expr) defonce-] <br/>
+[DefApiDoc#(_defstruct-_name_&_decls) defstruct-] <br/>
+[DefApiDoc#(_defunbound_name) defunbound] <br/>
+[DefApiDoc#(_defunbound-_name_&_decls) defunbound-] <br/>
+[DefApiDoc#(_defvar_name) defvar] <br/>
+[DefApiDoc#(_defvar-_name_&_decls) defvar-] <br/>
+deferror <br/>
+[ErrorKitApiDoc#(_do-not-handle_) do-not-handle] <br/>
+[GenericApiDoc#(_dissoc_coll_&_keys) dissoc] <br/>
+[GraphApiDoc#(_dependency-list_g) dependency-list] <br/>
+[MapUtilsApiDoc#(_deep-merge-with_f_&_maps) deep-merge-with] <br/>
+[MonadsApiDoc#(_defmonad_name_doc-string_operations) defmonad] <br/>
+[MonadsApiDoc#(_defmonadfn_name_docstring?_attr-map?_args_expr) defmonadfn] <br/>
+[MonadsApiDoc#(_domonad_steps_expr) domonad] <br/>
+[NsUtilsApiDoc#(_dir_nsname) dir] <br/>
+[NsUtilsApiDoc#(_docs_nsname) docs] <br/>
+[ProbabilitiesDistApiDoc#dist-m dist-m] <br/>
+[SqlApiDoc#(_delete-rows_table_where-params) delete-rows] <br/>
+[SqlApiDoc#(_do-commands_&_commands) do-commands] <br/>
+[SqlApiDoc#(_do-prepared_sql_&_param-groups) do-prepared] <br/>
+[SqlApiDoc#(_drop-table_name) drop-table] <br/>
+[SqlApiDoc#(_db-exception_) db-exception] <br/>
+[SqlApiDoc#(_db-get-tables_) db-get-tables] <br/>
+[SqlApiDoc#(_db-grade-a_) db-grade-a] <br/>
+[SqlApiDoc#(_db-grade-range_min_max) db-grade-range] <br/>
+[SqlApiDoc#(_db-read_) db-read] <br/>
+[SqlApiDoc#(_db-read-all_) db-read-all] <br/>
+[SqlApiDoc#(_db-rollback_) db-rollback] <br/>
+[SqlApiDoc#(_db-update_) db-update] <br/>
+[SqlApiDoc#(_db-update-appearance-cost_name_appearance_cost) db-update-appearance-cost] <br/>
+[SqlApiDoc#(_db-update-or-insert_record) db-update-or-insert] <br/>
+[SqlApiDoc#(_db-write_) db-write] <br/>
+[SqlApiDoc#(_drop-fruit_) drop-fruit] <br/>
+[StreamUtilsApiDoc#(_defst_name_args_streams_&_body) defst] <br/>
+[StreamUtilsApiDoc#(_defstream_type-tag_args_&_body) defstream] <br/>
+[TemplateApiDoc#(_do-template_expr_&_args) do-template] <br/>
+[TestIsApiDoc#(_deftest_name_&_body) deftest] <br/>
+[TestIsApiDoc#(_deftest-_name_&_body) deftest-] <br/>
+[TraceApiDoc#(_deftrace_name_&_definition) deftrace] <br/>
+[TypesApiDoc#(_defadt_type-tag_&_constructors) defadt] <br/>
+[TypesApiDoc#(_deftype_type-tag_constructor-name_docstring?_attr-map?) deftype] <br/>
+[TypesApiDoc#(_deftype-_type-tag_constructor-name_&_optional) deftype-] <br/>
+[ZipFilterApiDoc#(_descendants_loc) descendants] <br/>
+==E==
+[AccumulatorsApiDoc#empty-counter empty-counter] <br/>
+[AccumulatorsApiDoc#empty-counter-with-total empty-counter-with-total] <br/>
+[AccumulatorsApiDoc#empty-list empty-list] <br/>
+[AccumulatorsApiDoc#empty-map empty-map] <br/>
+[AccumulatorsApiDoc#empty-maximum empty-maximum] <br/>
+[AccumulatorsApiDoc#empty-mean-variance empty-mean-variance] <br/>
+[AccumulatorsApiDoc#empty-min-max empty-min-max] <br/>
+[AccumulatorsApiDoc#empty-minimum empty-minimum] <br/>
+[AccumulatorsApiDoc#empty-product empty-product] <br/>
+[AccumulatorsApiDoc#empty-queue empty-queue] <br/>
+[AccumulatorsApiDoc#empty-set empty-set] <br/>
+[AccumulatorsApiDoc#empty-string empty-string] <br/>
+[AccumulatorsApiDoc#empty-sum empty-sum] <br/>
+[AccumulatorsApiDoc#(_empty-tuple_empty-accumulators) empty-tuple] <br/>
+[AccumulatorsApiDoc#empty-vector empty-vector] <br/>
+[CondtApiDoc#(_econdt_expr_&_clauses) econdt] <br/>
+[DataflowApiDoc#eval-cell eval-cell] <br/>
+[DatalogApiDoc#(_ensure-relation_db_name_keys_indexes) ensure-relation] <br/>
+[ErrorKitApiDoc#(_error_details) error] <br/>
+[GenericApiDoc#(_empty_coll) empty] <br/>
+[LazyXmlApiDoc#(_emit_x_&_opts) emit] <br/>
+[LazyXmlApiDoc#(_emit-element_e_&_opts) emit-element] <br/>
+[MathApiDoc#(_exact-integer-sqrt_n) exact-integer-sqrt] <br/>
+[MathApiDoc#(_expt_base_pow) expt] <br/>
+[StacktraceApiDoc#(_e_) e] <br/>
+==F==
+[DuckStreamsApiDoc#(_file_&_args) file] <br/>
+[FcaseApiDoc#(_fcase_compare-fn_case-value_&_test-expr-clauses) fcase] <br/>
+[GenericApiDoc#(_fmap_f_s) fmap] <br/>
+[GraphApiDoc#(_fixed-point_data_fun_max_equal) fixed-point] <br/>
+[JavaUtilsApiDoc#(_file_arg) file] <br/>
+[MathApiDoc#(_floor_n) floor] <br/>
+[MiglayoutApiDoc#(_format-constraint_c) format-constraint] <br/>
+[MiglayoutApiDoc#(_format-constraints_&_constraints) format-constraints] <br/>
+[PprintApiDoc#(_formatter_format-in) formatter] <br/>
+[ReplUtilsApiDoc#(_find-javadoc-url_classname) find-javadoc-url] <br/>
+[SeqUtilsApiDoc#(_find-first_pred_coll) find-first] <br/>
+[SeqUtilsApiDoc#(_flatten_x) flatten] <br/>
+[SeqUtilsApiDoc#(_frequencies_coll) frequencies] <br/>
+[SqlApiDoc#(_find-connection_) find-connection] <br/>
+[SqlApiDoc#(_find-connection*_) find-connection*] <br/>
+[TemplateApiDoc#(_find-holes_form) find-holes] <br/>
+[TemplateApiDoc#(_find-pure-exprs_form) find-pure-exprs] <br/>
+[TemplateApiDoc#(_find-symbols_form) find-symbols] <br/>
+[TemplateApiDoc#(_flatten-map_m) flatten-map] <br/>
+[TestIsApiDoc#(_file-position_n) file-position] <br/>
+[TestIsApiDoc#(_function?_x) function?] <br/>
+==G==
+[DataflowApiDoc#(_get-cell_df_name) get-cell] <br/>
+[DataflowApiDoc#(_get-cells_df_name) get-cells] <br/>
+[DataflowApiDoc#(_get-old-value_df_env_name) get-old-value] <br/>
+[DataflowApiDoc#(_get-source-cells_df) get-source-cells] <br/>
+[DataflowApiDoc#(_get-value_df_name) get-value] <br/>
+[DataflowApiDoc#(_get-value-from-cell_cell) get-value-from-cell] <br/>
+[DataflowApiDoc#(_get-values_df_name) get-values] <br/>
+[DatalogApiDoc#(_get-relation_db_rel-name) get-relation] <br/>
+[DatalogApiDoc#(_get-adorned-bindings_pred) get-adorned-bindings] <br/>
+[DatalogApiDoc#(_get-base-predicate_pred) get-base-predicate] <br/>
+[DatalogApiDoc#get-cs-from-vs get-cs-from-vs] <br/>
+[DatalogApiDoc#get-self-bound-cs get-self-bound-cs] <br/>
+[DatalogApiDoc#get-vs-from-cs get-vs-from-cs] <br/>
+[DatalogApiDoc#(_get-all-relations_ws) get-all-relations] <br/>
+[GenHtmlDocsApiDoc#(_generate-documentation_libs) generate-documentation] <br/>
+[GenHtmlDocsApiDoc#(_generate-documentation-to-file_path_libs) generate-documentation-to-file] <br/>
+[GenericApiDoc#(_get_coll_key) get] <br/>
+[GraphApiDoc#(_get-neighbors_g_n) get-neighbors] <br/>
+[GreatestLeastApiDoc#(_greatest_&_args) greatest] <br/>
+[GreatestLeastApiDoc#(_greatest-by_f_&_args) greatest-by] <br/>
+[JavaUtilsApiDoc#(_get-system-property_stringable) get-system-property] <br/>
+[MathApiDoc#(_gcd_a_b) gcd] <br/>
+[NsUtilsApiDoc#(_get-ns_ns-sym) get-ns] <br/>
+[ReplUtilsApiDoc#(_get-source_x) get-source] <br/>
+[SeqUtilsApiDoc#(_group-by_f_coll) group-by] <br/>
+[SingletonApiDoc#(_global-singleton_f) global-singleton] <br/>
+get-connection <br/>
+[TestIsApiDoc#(_get-possibly-unbound-var_v) get-possibly-unbound-var] <br/>
+==H==
+handle <br/>
+[PrxmlApiDoc#*html-compatible* *html-compatible*] <br/>
+==I==
+[DatalogApiDoc#(_is-safe?_rule) is-safe?] <br/>
+[DatalogApiDoc#(_is-query-var?_sym) is-query-var?] <br/>
+[DatalogApiDoc#(_is-var?_sym) is-var?] <br/>
+[FcaseApiDoc#(_in-case_test-value_&_clauses) in-case] <br/>
+[FcaseApiDoc#(_instance-case_test-value_&_clauses) instance-case] <br/>
+[GenericApiDoc#(_into_to_from) into] <br/>
+[ImportStaticApiDoc#(_import-static_class_&_fields-and-methods) import-static] <br/>
+[MonadsApiDoc#identity-m identity-m] <br/>
+[SeqUtilsApiDoc#(_includes?_coll_x) includes?] <br/>
+[SeqUtilsApiDoc#(_indexed_s) indexed] <br/>
+[SqlApiDoc#(_insert-records_table_&_records) insert-records] <br/>
+[SqlApiDoc#(_insert-rows_table_&_rows) insert-rows] <br/>
+[SqlApiDoc#(_insert-values_table_column-names_&_value-groups) insert-values] <br/>
+[SqlApiDoc#(_is-rollback-only_) is-rollback-only] <br/>
+[SqlApiDoc#(_insert-records-fruit_) insert-records-fruit] <br/>
+[SqlApiDoc#(_insert-rows-fruit_) insert-rows-fruit] <br/>
+[SqlApiDoc#(_insert-values-fruit_) insert-values-fruit] <br/>
+[TestIsApiDoc#(_inc-report-counter_name) inc-report-counter] <br/>
+[TestIsApiDoc#(_is_form) is] <br/>
+==J==
+[DatalogApiDoc#join-literal join-literal] <br/>
+[JsonWriteApiDoc#(_json-str_x) json-str] <br/>
+[ProbabilitiesDistApiDoc#(_join-with_f_dist1_dist2) join-with] <br/>
+[ReplUtilsApiDoc#(_javadoc_class-or-object) javadoc] <br/>
+[TestIsApiDoc#(_join-fixtures_fixtures) join-fixtures] <br/>
+==K==
+[DatalogApiDoc#(_keys-to-vals_m_ks) keys-to-vals] <br/>
+[WalkApiDoc#(_keywordize-keys_m) keywordize-keys] <br/>
+==L==
+[CombinatoricsApiDoc#(_lex-permutations_c) lex-permutations] <br/>
+[DatalogApiDoc#literal-appropriate? literal-appropriate?] <br/>
+[DatalogApiDoc#literal-columns literal-columns] <br/>
+[DatalogApiDoc#(_literal-magic?_lit) literal-magic?] <br/>
+[DatalogApiDoc#literal-predicate literal-predicate] <br/>
+[DatalogApiDoc#literal-vars literal-vars] <br/>
+[GraphApiDoc#(_lazy-walk_g_n) lazy-walk] <br/>
+[GreatestLeastApiDoc#(_least_&_args) least] <br/>
+[GreatestLeastApiDoc#(_least-by_f_&_args) least-by] <br/>
+[JavalogApiDoc#*logger* *logger*] <br/>
+[JavalogApiDoc#(_log_level_&_strings) log] <br/>
+[JavalogApiDoc#(_log-level_level) log-level] <br/>
+[MacrosApiDoc#(_letfn-_fn-bindings_&_exprs) letfn-] <br/>
+[MapUtilsApiDoc#(_lazy-get_map_key_not-found) lazy-get] <br/>
+[MathApiDoc#(_lcm_a_b) lcm] <br/>
+[ReplUtilsApiDoc#*local-javadocs* *local-javadocs*] <br/>
+[TestIsApiDoc#*load-tests* *load-tests*] <br/>
+[ZipFilterApiDoc#(_left-locs_loc) left-locs] <br/>
+[ZipFilterApiDoc#(_leftmost?_loc) leftmost?] <br/>
+==M==
+[DatalogApiDoc#(_make-database_&_commands) make-database] <br/>
+[DatalogApiDoc#(_merge-relations_r1_r2) merge-relations] <br/>
+[DatalogApiDoc#(_magic-literal_l) magic-literal] <br/>
+[DatalogApiDoc#(_magic-transform_rs) magic-transform] <br/>
+[DatalogApiDoc#(_make-rules-set_rs) make-rules-set] <br/>
+[DatalogApiDoc#(_map-values_f_hash) map-values] <br/>
+[MmapApiDoc#(_mmap_f) mmap] <br/>
+[MonadsApiDoc#(_m-chain_steps) m-chain] <br/>
+[MonadsApiDoc#(_m-fmap_f_m) m-fmap] <br/>
+[MonadsApiDoc#(_m-join_m) m-join] <br/>
+[MonadsApiDoc#(_m-lift_n_f) m-lift] <br/>
+[MonadsApiDoc#(_m-map_f_xs) m-map] <br/>
+[MonadsApiDoc#(_m-reduce_f_mvs) m-reduce] <br/>
+[MonadsApiDoc#(_m-seq_ms) m-seq] <br/>
+[MonadsApiDoc#(_m-when_test_m-expr) m-when] <br/>
+[MonadsApiDoc#(_m-when-not_test_m-expr) m-when-not] <br/>
+[MonadsApiDoc#maybe-m maybe-m] <br/>
+[MonadsApiDoc#(_maybe-t_m) maybe-t] <br/>
+[MonadsApiDoc#(_monad_operations) monad] <br/>
+[TypesApiDoc#(_match_value_&_clauses) match] <br/>
+[TypesApiDoc#multiset multiset] <br/>
+[WalkApiDoc#(_macroexpand-all_form) macroexpand-all] <br/>
+==N==
+[DatalogApiDoc#(_negated-literal_l) negated-literal] <br/>
+[DatalogApiDoc#(_negated?_l) negated?] <br/>
+[DatalogApiDoc#negative-vars negative-vars] <br/>
+[DatalogApiDoc#(_non-base-rules_rs) non-base-rules] <br/>
+[DefApiDoc#(_name-with-attributes_name_macro-args) name-with-attributes] <br/>
+[NsUtilsApiDoc#(_ns-vars_ns) ns-vars] <br/>
+[ProbabilitiesDistApiDoc#(_normalize_weights) normalize] <br/>
+==O==
+[JavadocBrowseApiDoc#(_open-url-in-browser_url) open-url-in-browser] <br/>
+[JavadocBrowseApiDoc#(_open-url-in-swing_url) open-url-in-swing] <br/>
+==P==
+[CombinatoricsApiDoc#(_permutations_items) permutations] <br/>
+[DataflowApiDoc#(_print-dataflow_df) print-dataflow] <br/>
+[DatalogApiDoc#positive-vars positive-vars] <br/>
+[DatalogApiDoc#(_positive?_l) positive?] <br/>
+[DatalogApiDoc#(_project-literal_db_lit_bs) project-literal] <br/>
+[DatalogApiDoc#(_predicate-map_rs) predicate-map] <br/>
+[DatalogApiDoc#(_preduce_f_data) preduce] <br/>
+[DuckStreamsApiDoc#(_pwd_) pwd] <br/>
+[GraphApiDoc#(_post-ordered-nodes_g) post-ordered-nodes] <br/>
+[JsonWriteApiDoc#print-json print-json] <br/>
+[LazySeqsApiDoc#primes primes] <br/>
+[LazyXmlApiDoc#(_parse-seq_s) parse-seq] <br/>
+[LazyXmlApiDoc#(_parse-trim_s) parse-trim] <br/>
+[MiglayoutApiDoc#(_parse-item-constraints_&_args) parse-item-constraints] <br/>
+[NsUtilsApiDoc#(_print-dir_ns) print-dir] <br/>
+[NsUtilsApiDoc#(_print-docs_ns) print-docs] <br/>
+[PprintApiDoc#*print-circle* *print-circle*] <br/>
+[PprintApiDoc#*print-lines* *print-lines*] <br/>
+[PprintApiDoc#*print-miser-width* *print-miser-width*] <br/>
+[PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] <br/>
+[PprintApiDoc#*print-pretty* *print-pretty*] <br/>
+[PprintApiDoc#*print-right-margin* *print-right-margin*] <br/>
+[PprintApiDoc#*print-shared* *print-shared*] <br/>
+[PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] <br/>
+[PprintApiDoc#(_pp_) pp] <br/>
+[PprintApiDoc#(_pprint_object_&_more) pprint] <br/>
+[PprintApiDoc#(_pprint-indent_relative-to_n_&_more) pprint-indent] <br/>
+[PprintApiDoc#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] <br/>
+[PprintApiDoc#(_pprint-newline_kind_&_more) pprint-newline] <br/>
+[PprintApiDoc#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] <br/>
+[ProbabilitiesDistApiDoc#(_prob_pred_dist) prob] <br/>
+[PrxmlApiDoc#*prxml-indent* *prxml-indent*] <br/>
+[PrxmlApiDoc#(_prxml_&_args) prxml] <br/>
+[ReplLnApiDoc#(_print-repl-info_) print-repl-info] <br/>
+[SeqUtilsApiDoc#(_partition-all_n_coll) partition-all] <br/>
+[SeqUtilsApiDoc#(_partition-by_f_coll) partition-by] <br/>
+[SetApiDoc#(_proper-subset?_set1_set2) proper-subset?] <br/>
+[SetApiDoc#(_proper-superset?_set1_set2) proper-superset?] <br/>
+[SingletonApiDoc#(_per-thread-singleton_f) per-thread-singleton] <br/>
+[StacktraceApiDoc#(_print-cause-trace_tr) print-cause-trace] <br/>
+[StacktraceApiDoc#(_print-stack-trace_tr) print-stack-trace] <br/>
+[StacktraceApiDoc#(_print-throwable_tr) print-throwable] <br/>
+[StacktraceApiDoc#(_print-trace-element_e) print-trace-element] <br/>
+[StreamUtilsApiDoc#(_pick_n) pick] <br/>
+[StreamUtilsApiDoc#(_pick-all_streams) pick-all] <br/>
+[TestIsApiDoc#(_print-results_r) print-results] <br/>
+[TestIsApiDoc#(_print-tap-diagnostic_data) print-tap-diagnostic] <br/>
+[TestIsApiDoc#(_print-tap-fail_msg) print-tap-fail] <br/>
+[TestIsApiDoc#(_print-tap-pass_msg) print-tap-pass] <br/>
+[TestIsApiDoc#(_print-tap-plan_n) print-tap-plan] <br/>
+[WalkApiDoc#(_postwalk_f_form) postwalk] <br/>
+[WalkApiDoc#(_postwalk-demo_form) postwalk-demo] <br/>
+[WalkApiDoc#(_postwalk-replace_smap_form) postwalk-replace] <br/>
+[WalkApiDoc#(_prewalk_f_form) prewalk] <br/>
+[WalkApiDoc#(_prewalk-demo_form) prewalk-demo] <br/>
+[WalkApiDoc#(_prewalk-replace_smap_form) prewalk-replace] <br/>
+==Q==
+==R==
+[DataflowApiDoc#(_remove-cells_df_cells) remove-cells] <br/>
+[DatalogApiDoc#(_run-work-plan_work-plan_database_query-bindings) run-work-plan] <br/>
+[DatalogApiDoc#(_remove-tuple_db_rel-name_tuple) remove-tuple] <br/>
+[DatalogApiDoc#(_replace-relation_db_rel-name_rel) replace-relation] <br/>
+[DatalogApiDoc#(_return-rule-data_rule) return-rule-data] <br/>
+[DatalogApiDoc#(_rules-set_&_rules) rules-set] <br/>
+[DatalogApiDoc#(_reverse-map_m) reverse-map] <br/>
+[DuckStreamsApiDoc#(_read-lines_f) read-lines] <br/>
+[DuckStreamsApiDoc#reader reader] <br/>
+[ErrorKitApiDoc#(_raise_err-name_&_args) raise] <br/>
+[ErrorKitApiDoc#(_raise*_err) raise*] <br/>
+[FcaseApiDoc#(_re-case_test-value_&_clauses) re-case] <br/>
+[GraphApiDoc#(_recursive-component?_g_ns) recursive-component?] <br/>
+[GraphApiDoc#(_remove-loops_g) remove-loops] <br/>
+[GraphApiDoc#(_reverse-graph_g) reverse-graph] <br/>
+[JavaUtilsApiDoc#(_read-properties_file-able) read-properties] <br/>
+[JavaUtilsApiDoc#relative-path-string relative-path-string] <br/>
+[JavalogApiDoc#(_root-logger_) root-logger] <br/>
+[JsonReadApiDoc#(_read-json_) read-json] <br/>
+[MathApiDoc#(_round_n) round] <br/>
+[MonadsApiDoc#(_run-cont_c) run-cont] <br/>
+[ReplLnApiDoc#(_repl_&_options) repl] <br/>
+[ReplLnApiDoc#(_repl-info_) repl-info] <br/>
+[ReplLnApiDoc#(_repl-prompt_) repl-prompt] <br/>
+[ReplUtilsApiDoc#*remote-javadocs* *remote-javadocs*] <br/>
+[SeqUtilsApiDoc#(_rand-elt_s) rand-elt] <br/>
+[SeqUtilsApiDoc#(_rec-cat_binding-name_&_exprs) rec-cat] <br/>
+[SeqUtilsApiDoc#(_rec-seq_binding-name_&_body) rec-seq] <br/>
+[SeqUtilsApiDoc#(_reductions_f_coll) reductions] <br/>
+[SeqUtilsApiDoc#(_rotations_x) rotations] <br/>
+[SqlApiDoc#(_rollback_) rollback] <br/>
+[StacktraceApiDoc#(_root-cause_tr) root-cause] <br/>
+[StrUtilsApiDoc#(_re-gsub_regex_replacement_string) re-gsub] <br/>
+[StrUtilsApiDoc#(_re-partition_re_string) re-partition] <br/>
+[StrUtilsApiDoc#(_re-split_pattern_string) re-split] <br/>
+[StrUtilsApiDoc#(_re-sub_regex_replacement_string) re-sub] <br/>
+[TestIsApiDoc#report report] <br/>
+[TestIsApiDoc#(_run-all-tests_) run-all-tests] <br/>
+[TestIsApiDoc#(_run-tests_) run-tests] <br/>
+[ZipFilterApiDoc#(_right-locs_loc) right-locs] <br/>
+[ZipFilterApiDoc#(_rightmost?_loc) rightmost?] <br/>
+==S==
+[CombinatoricsApiDoc#(_selections_items_n) selections] <br/>
+[CombinatoricsApiDoc#(_subsets_items) subsets] <br/>
+[DataflowApiDoc#(_source-cell?_cell) source-cell?] <br/>
+[DatalogApiDoc#(_select_db_rn_pt) select] <br/>
+[DatalogApiDoc#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] <br/>
+[DatalogApiDoc#(_seed-relation_q) seed-relation] <br/>
+[DatalogApiDoc#(_seed-rule_q) seed-rule] <br/>
+[DuckStreamsApiDoc#(_slurp*_f) slurp*] <br/>
+[DuckStreamsApiDoc#(_spit_f_content) spit] <br/>
+[GenericApiDoc#(_seq_s) seq] <br/>
+[GraphApiDoc#(_scc_g) scc] <br/>
+[GraphApiDoc#(_self-recursive-sets_g) self-recursive-sets] <br/>
+[GraphApiDoc#(_stratification-list_g1_g2) stratification-list] <br/>
+[JavaUtilsApiDoc#(_set-system-properties_settings) set-system-properties] <br/>
+[JavalogApiDoc#(_set-console-log-level_level) set-console-log-level] <br/>
+[MapUtilsApiDoc#(_safe-get_map_key) safe-get] <br/>
+[MapUtilsApiDoc#(_safe-get-in_map_ks) safe-get-in] <br/>
+[MathApiDoc#(_sqrt_n) sqrt] <br/>
+[MmapApiDoc#(_slurp_f) slurp] <br/>
+[MonadsApiDoc#sequence-m sequence-m] <br/>
+[MonadsApiDoc#(_sequence-t_m) sequence-t] <br/>
+[MonadsApiDoc#set-m set-m] <br/>
+[MonadsApiDoc#state-m state-m] <br/>
+[MonadsApiDoc#(_state-t_m) state-t] <br/>
+[PprintApiDoc#(_set-pprint-dispatch_table) set-pprint-dispatch] <br/>
+[ReplLnApiDoc#(_set-repl-name_) set-repl-name] <br/>
+[ReplLnApiDoc#(_set-repl-prompt_) set-repl-prompt] <br/>
+[ReplLnApiDoc#(_stream-repl_&_options) stream-repl] <br/>
+[ReplUtilsApiDoc#(_show_x) show] <br/>
+[ReplUtilsApiDoc#(_source_n) source] <br/>
+[ReplUtilsApiDoc#(_start-handling-break_) start-handling-break] <br/>
+[SeqUtilsApiDoc#(_separate_f_s) separate] <br/>
+[SeqUtilsApiDoc#(_seq-on_s) seq-on] <br/>
+[SeqUtilsApiDoc#(_shuffle_coll) shuffle] <br/>
+[SetApiDoc#(_subset?_set1_set2) subset?] <br/>
+[SetApiDoc#(_superset?_set1_set2) superset?] <br/>
+[ShellOutApiDoc#(_sh_&_args) sh] <br/>
+[SqlApiDoc#(_set-rollback-only_) set-rollback-only] <br/>
+[StrUtilsApiDoc#(_str-join_separator_sequence) str-join] <br/>
+[StreamUtilsApiDoc#(_stream-drop_n_stream) stream-drop] <br/>
+[StreamUtilsApiDoc#(_stream-filter_p_stream) stream-filter] <br/>
+[StreamUtilsApiDoc#(_stream-flatten_s) stream-flatten] <br/>
+[StreamUtilsApiDoc#stream-m stream-m] <br/>
+[StreamUtilsApiDoc#(_stream-map_f_stream) stream-map] <br/>
+[StreamUtilsApiDoc#(_stream-next_stream-state) stream-next] <br/>
+[StreamUtilsApiDoc#(_stream-seq_s) stream-seq] <br/>
+[StreamUtilsApiDoc#stream-type stream-type] <br/>
+[TestIsApiDoc#*stack-trace-depth* *stack-trace-depth*] <br/>
+[TestIsApiDoc#(_set-test_name_&_body) set-test] <br/>
+[WalkApiDoc#(_stringify-keys_m) stringify-keys] <br/>
+[ZipFilterApiDoc#(_seq-test_preds) seq-test] <br/>
+==T==
+[DatalogApiDoc#(_trace-datalog_&_body) trace-datalog] <br/>
+[ErrorKitApiDoc#(_throw-msg_class-name) throw-msg] <br/>
+[ExceptApiDoc#(_throw-arg_&_args) throw-arg] <br/>
+[ExceptApiDoc#(_throw-if_test_&_args) throw-if] <br/>
+[ExceptApiDoc#(_throw-if-not_test_&_args) throw-if-not] <br/>
+[ExceptApiDoc#(_throwf_&_args) throwf] <br/>
+[GraphApiDoc#(_transitive-closure_g) transitive-closure] <br/>
+[SqlApiDoc#(_transaction_&_body) transaction] <br/>
+[SqlApiDoc#(_transaction*_func) transaction*] <br/>
+[TemplateApiDoc#(_template_&_form) template] <br/>
+[TemplateApiDoc#(_template?_form) template?] <br/>
+[TestIsApiDoc#(_test-all-vars_ns) test-all-vars] <br/>
+[TestIsApiDoc#(_test-ns_ns) test-ns] <br/>
+[TestIsApiDoc#(_test-var_v) test-var] <br/>
+[TestIsApiDoc#(_testing_string_&_body) testing] <br/>
+[TestIsApiDoc#(_testing-contexts-str_) testing-contexts-str] <br/>
+[TestIsApiDoc#(_testing-vars-str_) testing-vars-str] <br/>
+[TestIsApiDoc#(_try-expr_msg_form) try-expr] <br/>
+[TraceApiDoc#*trace-depth* *trace-depth*] <br/>
+[TraceApiDoc#(_trace_value) trace] <br/>
+[TraceApiDoc#(_trace-fn-call_name_f_args) trace-fn-call] <br/>
+[TraceApiDoc#(_trace-indent_) trace-indent] <br/>
+[TraceApiDoc#(_tracer_name_value) tracer] <br/>
+[ZipFilterApiDoc#(_tag=_tagname) tag=] <br/>
+[ZipFilterApiDoc#(_text_loc) text] <br/>
+[ZipFilterApiDoc#(_text=_s) text=] <br/>
+==U==
+[DataflowApiDoc#(_update-values_df_data) update-values] <br/>
+[ProbabilitiesDistApiDoc#(_uniform_coll) uniform] <br/>
+[SqlApiDoc#(_update-or-insert-values_table_where-params_record) update-or-insert-values] <br/>
+[SqlApiDoc#(_update-values_table_where-params_record) update-values] <br/>
+==V==
+[NsUtilsApiDoc#(_vars_nsname) vars] <br/>
+==W==
+[CommandLineApiDoc#(_with-command-line_args_desc_cmdspec_&_body) with-command-line] <br/>
+[DuckStreamsApiDoc#(_with-in-reader_f_&_body) with-in-reader] <br/>
+[DuckStreamsApiDoc#(_with-out-writer_f_&_body) with-out-writer] <br/>
+[DuckStreamsApiDoc#(_write-lines_f_lines) write-lines] <br/>
+[DuckStreamsApiDoc#writer writer] <br/>
+[ErrorKitApiDoc#(_with-handler_&_forms) with-handler] <br/>
+[JavaUtilsApiDoc#(_with-system-properties_settings_&_body) with-system-properties] <br/>
+[JavaUtilsApiDoc#(_write-properties_m_file-able) write-properties] <br/>
+[JavalogApiDoc#(_with-logger_logger-name_level_&_body) with-logger] <br/>
+[MonadsApiDoc#(_with-monad_name_&_exprs) with-monad] <br/>
+[MonadsApiDoc#(_writer-m_empty-accumulator) writer-m] <br/>
+[PprintApiDoc#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] <br/>
+[PprintApiDoc#(_write_object_&_kw-args) write] <br/>
+[SqlApiDoc#(_with-connection_db-spec_&_body) with-connection] <br/>
+[SqlApiDoc#(_with-query-results_results_sql-params_&_body) with-query-results] <br/>
+[SqlApiDoc#(_with-connection*_db-spec_func) with-connection*] <br/>
+with-query-results* <br/>
+[TestIsApiDoc#(_with-test_definition_&_body) with-test] <br/>
+[TestIsApiDoc#(_with-tap-output_&_body) with-tap-output] <br/>
+[WalkApiDoc#(_walk_inner_outer_form) walk] <br/>
+[WithNsApiDoc#(_with-ns_ns_&_body) with-ns] <br/>
+[WithNsApiDoc#(_with-temp-ns_&_body) with-temp-ns] <br/>
+==X==
+[ZipFilterApiDoc#(_xml->_loc_&_preds) xml->] <br/>
+[ZipFilterApiDoc#(_xml1->_loc_&_preds) xml1->] <br/>
+==Y==
+==Z==
+==Other==
+[CoreApiDoc#(_-?>_x_form) -?>] <br/>
+[CoreApiDoc#(_.?._x_form) .?.] <br/>
+[DatalogApiDoc#(_<-_hd_&_body) <-] <br/>
+[DatalogApiDoc#(_?-_&_q) ?-] <br/>
