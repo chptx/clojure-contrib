@@ -14,11 +14,11 @@ in clojure.contrib.
 
 Shortcuts:
 
- [A]   [B]   [C]   [D]   [E]   [F]   [G]   [H]   [I]   [J]   [K]   [L]   [M]
+ [#A]  [#B]  [#C]  [#D]  [#E]  [#F]  [#G]  [#H]  [#I]  [#J]  [#K]  [#L]  [#M]
 
- [N]   [O]   [P]   [Q]   [R]   [S]   [T]   [U]   [V]   [W]   [X]   [Y]   [Z]
+ [#N]  [#O]  [#P]  [#Q]  [#R]  [#S]  [#T]  [#U]  [#V]  [#W]  [#X]  [#Y]  [#Z]
 
- [Other]
+ [#Other]
 
 ==A==
 [AccumulatorsApiDoc#(_add_acc_item) add] <br/>
