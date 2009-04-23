@@ -31,14 +31,14 @@ origin. Use set-repl-name and set-repl-prompt to customize the repl name
 and prompt. This repl supports all of the keyword arguments documented
 for clojure.main/repl with the following change and additions:
 
-- :prompt has a new default
-default: #(clojure.core/print (repl-prompt))
+     - :prompt has a new default
+       default: #(clojure.core/print (repl-prompt))
 
-- :name-fmt, Name format string
-default: the name-fmt of the parent repl, or "repl-%S"
+     - :name-fmt, Name format string
+       default: the name-fmt of the parent repl, or "repl-%S"
 
-- :prompt-fmt, Prompt format string
-default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
+     - :prompt-fmt, Prompt format string
+       default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
 ----
 ===(_repl-info_)===
 <pre>Returns a map of info about the current repl</pre>
@@ -51,9 +51,9 @@ default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
 <pre>Sets the repl name format to the string name-fmt. Include the following
 codes in the name to make the corresponding dynamic values part of it:
 
-%S - repl serial number
-%T - thread id
-%D - nesting depth in this thread
+  %S - repl serial number
+  %T - thread id
+  %D - nesting depth in this thread
 
 With no arguments, resets the repl name to its default: "repl-%S"</pre>
 ----
@@ -62,11 +62,11 @@ With no arguments, resets the repl name to its default: "repl-%S"</pre>
 <pre>Sets the repl prompt. Include the following codes in the prompt to make
 the corresponding dynamic values part of it:
 
-%S - repl serial number
-%T - thread id
-%D - nesting depth in this thread
-%L - input line number
-%N - namespace name
+  %S - repl serial number
+  %T - thread id
+  %D - nesting depth in this thread
+  %L - input line number
+  %N - namespace name
 
 With no arguments, resets the repl pompt to its default: "%S:%L %N=> "</pre>
 ----

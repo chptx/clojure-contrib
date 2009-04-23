@@ -35,19 +35,19 @@ tag name; optional second item is a map of attributes.
 Sequences are processed recursively, so you can use map and other
 sequence functions inside prxml.
 
-(prxml `[`:p {:class "greet"} `[`:i "Ladies & gentlemen"`]``]`)
-; => <p class="greet"><i>Ladies &amp; gentlemen</i></p>
+  (prxml `[`:p {:class "greet"} `[`:i "Ladies & gentlemen"`]``]`)
+  ; => <p class="greet"><i>Ladies &amp; gentlemen</i></p>
 
 PSEUDO-TAGS: some keywords have special meaning:
 
-:raw!      do not XML-escape contents
-:comment!  create an XML comment
-:decl!     create an XML declaration, with attributes
-:cdata!    create a CDATA section
-:doctype!  create a DOCTYPE!
+  :raw!      do not XML-escape contents
+  :comment!  create an XML comment
+  :decl!     create an XML declaration, with attributes
+  :cdata!    create a CDATA section
+  :doctype!  create a DOCTYPE!
 
-(prxml `[`:p `[`:raw! "<i>here & gone</i>"`]``]`)
-; => <p><i>here & gone</i></p>
+  (prxml `[`:p `[`:raw! "<i>here & gone</i>"`]``]`)
+  ; => <p><i>here & gone</i></p>
 
-(prxml `[`:decl! {:version "1.1"}`]`)
-; => <?xml version="1.1" encoding="UTF-8"?></pre>
+  (prxml `[`:decl! {:version "1.1"}`]`)
+  ; => <?xml version="1.1" encoding="UTF-8"?></pre>

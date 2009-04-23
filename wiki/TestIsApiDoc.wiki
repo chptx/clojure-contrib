@@ -41,11 +41,11 @@ See clojure.contrib.template/do-template for an explanation of
 templates.
 
 Example: (are (= _1 _2)  
-2 (+ 1 1)
-4 (`*` 2 2))
+              2 (+ 1 1)
+              4 (`*` 2 2))
 Expands to: 
-(do (is (= 2 (+ 1 1)))
-(is (= 4 (`*` 2 2))))
+         (do (is (= 2 (+ 1 1)))
+             (is (= 4 (`*` 2 2))))
 
 Note: This breaks some reporting features, such as line numbers.</pre>
 ----

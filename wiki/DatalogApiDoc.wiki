@@ -66,8 +66,8 @@ the new database.
 ===(_add-tuples_ db & tupls)===
 <pre>Adds a collection of tuples to the db, as
 (add-tuples db
-`[`:rel-name :key-1 1 :key-2 2`]`
-`[`:rel-name :key-1 2 :key-2 3`]`)</pre>
+   `[`:rel-name :key-1 1 :key-2 2`]`
+   `[`:rel-name :key-1 2 :key-2 3`]`)</pre>
 ----
 ===(_any-match?_ db rn pt)===
 <pre>Finds if there are any matching records for the partial tuple</pre>
@@ -94,11 +94,11 @@ the new database.
 ====Macro====
 <pre>Makes a database, like this
 (make-database
-(relation :fred `[`:mary :sue`]`)
-(index :fred :mary)
-(relation :sally `[`:jen :becky`]`)
-(index :sally :jen)
-(index :sally :becky))</pre>
+  (relation :fred `[`:mary :sue`]`)
+  (index :fred :mary)
+  (relation :sally `[`:jen :becky`]`)
+  (index :sally :jen)
+  (index :sally :becky))</pre>
 ----
 ===(_merge-relations_ r1 r2)===
 <pre>Merges two relations</pre>

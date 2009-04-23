@@ -59,13 +59,13 @@ object. It is used for printing and matching.</pre>
 <pre>Given a value and a list of template-expr clauses, evaluate the first
 expr whose template matches the value. There are four kinds of templates:
 1) Lists of the form (tag x1 x2 ...) match instances of types
-whose constructor has the same form as the list.
+   whose constructor has the same form as the list.
 2) Quoted lists of the form '(x1 x2 ...) match lists of the same
-length.
+   length.
 3) Vectors of the form `[`x1 x2 ...`]` match vectors of the same length.
 4) Maps of the form {:key1 x1 :key2 x2 ...} match maps that have
-the same keys as the template, but which can have additional keys
-that are not part of the template.
+   the same keys as the template, but which can have additional keys
+   that are not part of the template.
 The values x1, x2, ... can be symbols or non-symbol values. Non-symbols
 must be equal to the corresponding values in the object to be matched.
 Symbols will be bound to the corresponding value in the object in the
