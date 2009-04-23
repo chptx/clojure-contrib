@@ -23,7 +23,7 @@ Shortcuts:
 ----
 ===(_auto-agent_ expr)===
 ====Macro====
-<pre>Creates an agent whose value is the result of evaluating expr.
+<pre> Creates an agent whose value is the result of evaluating expr.
 Whenever one of the agents/atoms/refs dererenced within expr
 changes, expr is reevaluated and this agent's state is set to its
 new value.</pre>

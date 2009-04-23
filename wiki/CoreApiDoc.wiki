@@ -24,7 +24,7 @@ Shortcuts:
 ===(_-?>_ x form)===
 ===(_-?>_ x form & forms)===
 ====Macro====
-<pre>Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+<pre> Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
 (-?> "foo" .toUpperCase (.substring 1)) returns "OO"
 (-?> nil .toUpperCase (.substring 1)) returns nil
@@ -33,7 +33,7 @@ Examples :
 ===(_.?._ x form)===
 ===(_.?._ x form & forms)===
 ====Macro====
-<pre>Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+<pre> Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
 (.?. "foo" .toUpperCase (.substring 1)) returns "OO"
 (.?. nil .toUpperCase (.substring 1)) returns nil

@@ -22,71 +22,71 @@ Shortcuts:
 
 ----
 ===(_find-first_ pred coll)===
-<pre>Returns the first item of coll for which (pred item) returns logical true.
+<pre> Returns the first item of coll for which (pred item) returns logical true.
 Consumes sequences up to the first match, will consume the entire sequence
 and return nil if no match is found.</pre>
 ----
 ===(_flatten_ x)===
-<pre>Takes any nested combination of sequential things (lists, vectors,
+<pre> Takes any nested combination of sequential things (lists, vectors,
 etc.) and returns their contents as a single, flat sequence.
 (flatten nil) returns nil.</pre>
 ----
 ===(_frequencies_ coll)===
-<pre>Returns a map from distinct items in coll to the number of times
+<pre> Returns a map from distinct items in coll to the number of times
 they appear.</pre>
 ----
 ===(_group-by_ f coll)===
-<pre>Returns a sorted map of the elements of coll keyed by the result of
+<pre> Returns a sorted map of the elements of coll keyed by the result of
 f on each element. The value at each key will be a vector of the
 corresponding elements, in the order they appeared in coll.</pre>
 ----
 ===(_includes?_ coll x)===
-<pre>Returns true if coll contains something equal (with =) to x,
+<pre> Returns true if coll contains something equal (with =) to x,
 in linear time.</pre>
 ----
 ===(_indexed_ s)===
-<pre>Returns a lazy sequence of `[`index, item`]` pairs, where items come
+<pre> Returns a lazy sequence of `[`index, item`]` pairs, where items come
 from 's' and indexes count up from zero.
 
-(indexed '(a b c d))  =>  (`[`0 a`]` `[`1 b`]` `[`2 c`]` `[`3 d`]`)</pre>
+ (indexed '(a b c d))  =>  (`[`0 a`]` `[`1 b`]` `[`2 c`]` `[`3 d`]`)</pre>
 ----
 ===(_partition-all_ n coll)===
 ===(_partition-all_ n step coll)===
-<pre>Returns a lazy sequence of lists like clojure.core/partition, but may
+<pre> Returns a lazy sequence of lists like clojure.core/partition, but may
 include lists with fewer than n items at the end.</pre>
 ----
 ===(_partition-by_ f coll)===
-<pre>Applies f to each value in coll, splitting it each time f returns
+<pre> Applies f to each value in coll, splitting it each time f returns
 a new value.  Returns a lazy seq of lazy seqs.</pre>
 ----
 ===(_rand-elt_ s)===
-<pre>Return a random element of this seq</pre>
+<pre> Return a random element of this seq</pre>
 ----
 ===(_rec-cat_ binding-name & exprs)===
 ====Macro====
-<pre>Similar to lazy-cat but binds the resulting sequence to the supplied 
+<pre> Similar to lazy-cat but binds the resulting sequence to the supplied 
 binding-name, allowing for recursive expressions.</pre>
 ----
 ===(_rec-seq_ binding-name & body)===
 ====Macro====
-<pre>Similar to lazy-seq but binds the resulting seq to the supplied 
+<pre> Similar to lazy-seq but binds the resulting seq to the supplied 
 binding-name, allowing for recursive expressions.</pre>
 ----
 ===(_reductions_ f coll)===
 ===(_reductions_ f init coll)===
-<pre>Returns a lazy seq of the intermediate values of the reduction (as
+<pre> Returns a lazy seq of the intermediate values of the reduction (as
 per reduce) of coll by f, starting with init.</pre>
 ----
 ===(_rotations_ x)===
-<pre>Returns a lazy seq of all rotations of a seq</pre>
+<pre> Returns a lazy seq of all rotations of a seq</pre>
 ----
 ===(_separate_ f s)===
-<pre>Returns a vector:
+<pre> Returns a vector:
 `[` (filter f s), (filter (complement f) s) `]`</pre>
 ----
 ===(_seq-on_ s)===
-<pre>Returns a seq on the object s. Works like the built-in seq but as
+<pre> Returns a seq on the object s. Works like the built-in seq but as
 a multimethod that can have implementations for new classes and types.</pre>
 ----
 ===(_shuffle_ coll)===
-<pre>Return a random permutation of coll</pre>
+<pre> Return a random permutation of coll</pre>

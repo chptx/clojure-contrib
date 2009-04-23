@@ -25,77 +25,77 @@ Variables and Functions in zip-filter.xml:
 
 ----
 ===(_ancestors_ loc)===
-<pre>Returns a lazy sequence of all ancestors of location loc, starting
+<pre> Returns a lazy sequence of all ancestors of location loc, starting
 with loc and proceeding to loc's parent node and on through to the
 root of the tree.</pre>
 ----
 ===(_children_ loc)===
-<pre>Returns a lazy sequence of all immediate children of location loc,
+<pre> Returns a lazy sequence of all immediate children of location loc,
 left-to-right.</pre>
 ----
 ===(_children-auto_ loc)===
-<pre>Returns a lazy sequence of all immediate children of location loc,
+<pre> Returns a lazy sequence of all immediate children of location loc,
 left-to-right, marked so that a following tag= predicate will auto-descend.</pre>
 ----
 ===(_descendants_ loc)===
-<pre>Returns a lazy sequence of all descendants of location loc, in
+<pre> Returns a lazy sequence of all descendants of location loc, in
 depth-first order, left-to-right, starting with loc.</pre>
 ----
 ===(_left-locs_ loc)===
-<pre>Returns a lazy sequence of locations to the left of loc, starting with loc.</pre>
+<pre> Returns a lazy sequence of locations to the left of loc, starting with loc.</pre>
 ----
 ===(_leftmost?_ loc)===
-<pre>Returns true if there are no more nodes to the left of location loc.</pre>
+<pre> Returns true if there are no more nodes to the left of location loc.</pre>
 ----
 ===(_right-locs_ loc)===
-<pre>Returns a lazy sequence of locations to the right of loc, starting with loc.</pre>
+<pre> Returns a lazy sequence of locations to the right of loc, starting with loc.</pre>
 ----
 ===(_rightmost?_ loc)===
-<pre>Returns true if there are no more nodes to the right of location loc.</pre>
+<pre> Returns true if there are no more nodes to the right of location loc.</pre>
 ==Namespace clojure.contrib.zip-filter.xml==
 ----
 ===(_attr_ attrname)===
 ===(_attr_ loc attrname)===
-<pre>Returns the xml attribute named attrname, of the xml node at location loc.</pre>
+<pre> Returns the xml attribute named attrname, of the xml node at location loc.</pre>
 ----
 ===(_attr=_ attrname attrval)===
-<pre>Returns a query predicate that matches a node when it has an
+<pre> Returns a query predicate that matches a node when it has an
 attribute named attrname whose value is attrval.</pre>
 ----
 ===(_seq-test_ preds)===
-<pre>Returns a query predicate that matches a node when its xml content
+<pre> Returns a query predicate that matches a node when its xml content
 matches the query expresions given.</pre>
 ----
 ===(_tag=_ tagname)===
-<pre>Returns a query predicate that matches a node when its is a tag
+<pre> Returns a query predicate that matches a node when its is a tag
 named tagname.</pre>
 ----
 ===(_text_ loc)===
-<pre>Returns the textual contents of the given location, similar to
+<pre> Returns the textual contents of the given location, similar to
 xpaths's value-of</pre>
 ----
 ===(_text=_ s)===
-<pre>Returns a query predicate that matches a node when its textual
+<pre> Returns a query predicate that matches a node when its textual
 content equals s.</pre>
 ----
 ===(_xml->_ loc & preds)===
-<pre>The loc is passed to the first predicate.  If the predicate returns
+<pre> The loc is passed to the first predicate.  If the predicate returns
 a collection, each value of the collection is passed to the next
 predicate.  If it returns a location, the location is passed to the
 next predicate.  If it returns true, the input location is passed to
 the next predicate.  If it returns false or nil, the next predicate
 is not called.
 
-This process is repeated, passing the processed results of each
+ This process is repeated, passing the processed results of each
 predicate to the next predicate.  xml-> returns the final sequence.
 The entire chain is evaluated lazily.
 
-There are also special predicates: keywords are converted to tag=,
+ There are also special predicates: keywords are converted to tag=,
 strings to text=, and vectors to sub-queries that return true if
 they match.
 
-See the footer of zip-query.clj for examples.</pre>
+ See the footer of zip-query.clj for examples.</pre>
 ----
 ===(_xml1->_ loc & preds)===
-<pre>Returns the first item from loc based on the query predicates
+<pre> Returns the first item from loc based on the query predicates
 given.  See xml-></pre>

@@ -23,4 +23,4 @@ Shortcuts:
 ----
 ===(_with-command-line_ args desc cmdspec & body)===
 ====Macro====
-<pre>Bind locals to command-line args.</pre>
+<pre> Bind locals to command-line args.</pre>

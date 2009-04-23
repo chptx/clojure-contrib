@@ -24,15 +24,15 @@ Shortcuts:
 ===(_create-repl-server_ port backlog bind-addr)===
 ===(_create-repl-server_ port backlog)===
 ===(_create-repl-server_ port)===
-<pre>create a repl on a socket</pre>
+<pre> create a repl on a socket</pre>
 ----
 ===(_create-server_ port fun backlog bind-addr)===
 ===(_create-server_ port fun backlog)===
 ===(_create-server_ port fun)===
-<pre>Creates a server socket on port. Upon accept, a new thread is
+<pre> Creates a server socket on port. Upon accept, a new thread is
 created which calls:
 
-(fun input-stream output-stream)
+ (fun input-stream output-stream)
 
-Optional arguments support specifying a listen backlog and binding
+ Optional arguments support specifying a listen backlog and binding
 to a specific endpoint.</pre>

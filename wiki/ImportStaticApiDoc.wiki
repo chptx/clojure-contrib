@@ -23,10 +23,10 @@ Shortcuts:
 ----
 ===(_import-static_ class & fields-and-methods)===
 ====Macro====
-<pre>Imports the named static fields and/or static methods of the class
+<pre> Imports the named static fields and/or static methods of the class
 as (private) symbols in the current namespace.
 
-Example: 
+ Example: 
     user=> (import-static java.lang.Math PI sqrt)
     nil
     user=> PI
@@ -34,6 +34,6 @@ Example:
     user=> (sqrt 16)
     4.0
 
-Note: The class name must be fully qualified, even if it has already
+ Note: The class name must be fully qualified, even if it has already
 been imported.  Static methods are defined as MACROS, not
 first-class fns.</pre>

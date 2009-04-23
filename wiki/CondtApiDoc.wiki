@@ -23,7 +23,7 @@ Shortcuts:
 ----
 ===(_condt_ expr & clauses)===
 ====Macro====
-<pre>expr is a template expression (see template), clauses are test/expr
+<pre> expr is a template expression (see template), clauses are test/expr
 pairs like cond.  Evalautes the template on each test value, one at
 a time.  If a test returns logical true, condt evaluates the
 corresponding expr and returns its value.  If none of the tests are
@@ -32,4 +32,4 @@ evaluated, otherwise returns nil.</pre>
 ----
 ===(_econdt_ expr & clauses)===
 ====Macro====
-<pre>Like condt but throws Exception if no tests match.</pre>
+<pre> Like condt but throws Exception if no tests match.</pre>

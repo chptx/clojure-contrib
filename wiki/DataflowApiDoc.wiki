@@ -22,94 +22,94 @@ Shortcuts:
 
 ----
 ===(_add-cell-watcher_ cell key fun)===
-<pre>Adds a watcher to a cell to respond to changes of value.  The is a
+<pre> Adds a watcher to a cell to respond to changes of value.  The is a
 function of 4 values: a key, the cell, its old value, its new
 value.  This is implemented using Clojure's add-watch to the
 underlying ref, and shared its sematics</pre>
 ----
 ===(_add-cells_ df cells)===
-<pre>Given a collection of cells, add them to the dataflow.</pre>
+<pre> Given a collection of cells, add them to the dataflow.</pre>
 ----
 ===(_build-dataflow_ cs)===
-<pre>Given a collection of cells, build and return a dataflow object</pre>
+<pre> Given a collection of cells, build and return a dataflow object</pre>
 ----
 ===(_build-source-cell_ name init)===
-<pre>Builds a source cell</pre>
+<pre> Builds a source cell</pre>
 ----
 ===(_build-standard-cell_ name deps fun expr)===
-<pre>Builds a standard cell</pre>
+<pre> Builds a standard cell</pre>
 ----
 ===(_build-validator-cell_ deps fun expr)===
-<pre>Builds a validator cell</pre>
+<pre> Builds a validator cell</pre>
 ----
 ===(_cell_ type & data)===
 ====Macro====
-<pre>Build a standard cell, like this:
+<pre> Build a standard cell, like this:
 
- (cell fred
+  (cell fred
     (`*` ?mary ?joe))
 
-Which creates a cell named fred that is the product of a cell mary and cell joe
+ Which creates a cell named fred that is the product of a cell mary and cell joe
 
-Or:
+ Or:
 
- (cell joe
+  (cell joe
    (apply `*` ?`*`sally))
 
-Which creates a cell that applies `*` to the collection of all cells named sally
+ Which creates a cell that applies `*` to the collection of all cells named sally
 
-Or:
+ Or:
 
- (cell :source fred 0)
+  (cell :source fred 0)
 
-Which builds a source cell fred with initial value 0
+ Which builds a source cell fred with initial value 0
 
-Or:
+ Or:
 
-  (cell :validator (when (< ?fred ?sally)
+   (cell :validator (when (< ?fred ?sally)
                        (throwf "%s must be greater than %s" ?fred ?sally))
 
-Which will perform the validation</pre>
+ Which will perform the validation</pre>
 ----
 ===_display-cell_===
-<pre>A 'readable' form of the cell</pre>
+<pre> A 'readable' form of the cell</pre>
 ----
 ===_eval-cell_===
-<pre>Evaluate a dataflow cell.  Return `[`changed, old val`]`</pre>
+<pre> Evaluate a dataflow cell.  Return `[`changed, old val`]`</pre>
 ----
 ===(_get-cell_ df name)===
-<pre>Get the single cell named by name</pre>
+<pre> Get the single cell named by name</pre>
 ----
 ===(_get-cells_ df name)===
-<pre>Get all the cells named by name</pre>
+<pre> Get all the cells named by name</pre>
 ----
 ===(_get-old-value_ df env name)===
-<pre>Looks up an old value</pre>
+<pre> Looks up an old value</pre>
 ----
 ===(_get-source-cells_ df)===
-<pre>Returns a collection of source cells from the dataflow</pre>
+<pre> Returns a collection of source cells from the dataflow</pre>
 ----
 ===(_get-value_ df name)===
-<pre>Gets a value from the df matching the passed symbol.
+<pre> Gets a value from the df matching the passed symbol.
 Signals an error if the name is not present, or if it not a single
 value.</pre>
 ----
 ===(_get-value-from-cell_ cell)===
-<pre>Given a cell, get its value</pre>
+<pre> Given a cell, get its value</pre>
 ----
 ===(_get-values_ df name)===
-<pre>Gets a collection of values from the df by name</pre>
+<pre> Gets a collection of values from the df by name</pre>
 ----
 ===(_print-dataflow_ df)===
-<pre>Prints a dataflow, one cell per line</pre>
+<pre> Prints a dataflow, one cell per line</pre>
 ----
 ===(_remove-cells_ df cells)===
-<pre>Given a collection of cells, remove them from the dataflow.</pre>
+<pre> Given a collection of cells, remove them from the dataflow.</pre>
 ----
 ===(_source-cell?_ cell)===
-<pre>Is this cell a source cell?</pre>
+<pre> Is this cell a source cell?</pre>
 ----
 ===(_update-values_ df data)===
-<pre>Given a dataflow, and a map of name-value pairs, update the
+<pre> Given a dataflow, and a map of name-value pairs, update the
 dataflow by binding the new values.  Each name must be of a source
 cell</pre>

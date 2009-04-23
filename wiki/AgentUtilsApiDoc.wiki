@@ -23,8 +23,8 @@ Shortcuts:
 ----
 ===(_capture-and-send_ vars agent action & args)===
 ====Macro====
-<pre>Capture the current value of the specified vars and rebind 
+<pre> Capture the current value of the specified vars and rebind 
 them on the agent thread before executing the action.
 
-Example:
+ Example:
   (capture-and-send `[``*`out`*``]` a f b c)</pre>

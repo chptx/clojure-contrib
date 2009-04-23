@@ -394,9 +394,9 @@ Public Variables and Functions:
 ===types===
 API Overview [TypesApiDoc here]
 
-<pre>General and algebraic data types
+<pre> General and algebraic data types
 
-NOTE: This library is experimental. It may change significantly
+ NOTE: This library is experimental. It may change significantly
 with future release.</pre>
 Public Variables and Functions:
 [TypesApiDoc#(_defadt_type-tag_&_constructors) defadt] [TypesApiDoc#(_deftype_type-tag_constructor-name_docstring?_attr-map?) deftype] [TypesApiDoc#(_deftype-_type-tag_constructor-name_&_optional) deftype-] [TypesApiDoc#(_match_value_&_clauses) match] 

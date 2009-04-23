@@ -23,27 +23,27 @@ Shortcuts:
 ----
 ===(_dir_ nsname)===
 ====Macro====
-<pre>Prints a sorted directory of public vars in a namespace</pre>
+<pre> Prints a sorted directory of public vars in a namespace</pre>
 ----
 ===(_docs_ nsname)===
 ====Macro====
-<pre>Prints documentation for the public vars in a namespace</pre>
+<pre> Prints documentation for the public vars in a namespace</pre>
 ----
 ===(_get-ns_ ns-sym)===
-<pre>Returns the namespace named by ns-sym or throws if the
+<pre> Returns the namespace named by ns-sym or throws if the
 namespace does not exist</pre>
 ----
 ===(_ns-vars_ ns)===
-<pre>Returns a sorted seq of symbols naming public vars in
+<pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>
 ----
 ===(_print-dir_ ns)===
-<pre>Prints a sorted directory of public vars in a namespace</pre>
+<pre> Prints a sorted directory of public vars in a namespace</pre>
 ----
 ===(_print-docs_ ns)===
-<pre>Prints documentation for the public vars in a namespace</pre>
+<pre> Prints documentation for the public vars in a namespace</pre>
 ----
 ===(_vars_ nsname)===
 ====Macro====
-<pre>Returns a sorted seq of symbols naming public vars in
+<pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>

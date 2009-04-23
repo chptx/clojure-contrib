@@ -23,11 +23,11 @@ Shortcuts:
 ----
 ===(_const_ expr)===
 ====Macro====
-<pre>Evaluate the constant expression expr at compile time.</pre>
+<pre> Evaluate the constant expression expr at compile time.</pre>
 ----
 ===(_letfn-_ fn-bindings & exprs)===
 ====Macro====
-<pre>OBSOLETE: use clojure.core/letfn
+<pre> OBSOLETE: use clojure.core/letfn
 A variant of let for local function definitions. fn-bindings consists
 of name/args/body triples, with (letfn `[`name args body`]` ...)
 being equivalent to (let `[`name (fn name args body)`]` ...).</pre>

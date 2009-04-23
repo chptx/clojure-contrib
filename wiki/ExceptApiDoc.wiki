@@ -22,29 +22,29 @@ Shortcuts:
 
 ----
 ===(_throw-arg_ & args)===
-<pre>Throws an IllegalArgumentException. All arguments are optional:
+<pre> Throws an IllegalArgumentException. All arguments are optional:
 
-      format? format-args`*`
+       format? format-args`*`
 
-- format is a format string for clojure/format
+ - format is a format string for clojure/format
 - format-args are objects that correspond to format specifiers in
   format.</pre>
 ----
 ===(_throw-if_ test & args)===
-<pre>Throws an Exception or Error if test is true. args are those documented
+<pre> Throws an Exception or Error if test is true. args are those documented
 for throwf.</pre>
 ----
 ===(_throw-if-not_ test & args)===
-<pre>Throws an Exception or Error if test is false. args are those documented
+<pre> Throws an Exception or Error if test is false. args are those documented
 for throwf.</pre>
 ----
 ===(_throwf_ & args)===
-<pre>Throws an Exception or Error with an optional message formatted using
+<pre> Throws an Exception or Error with an optional message formatted using
 clojure/format. All arguments are optional:
 
-    class? format? format-args`*`
+     class? format? format-args`*`
 
-- class defaults to Exception, if present it must name a kind of
+ - class defaults to Exception, if present it must name a kind of
   Throwable
 - format is a format string for clojure/format
 - format-args are objects that correspond to format specifiers in

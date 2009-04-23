@@ -22,33 +22,33 @@ Shortcuts:
 
 ----
 ===(_call-cc_ f)===
-<pre>A computation in the cont monad that calls function f with a single
+<pre> A computation in the cont monad that calls function f with a single
 argument representing the current continuation. The function f should
 return a continuation (which becomes the return value of call-cc),
 or call the passed-in current continuation to terminate.</pre>
 ----
 ===_cont-m_===
-<pre>Monad describing computations in continuation-passing style. The monadic
+<pre> Monad describing computations in continuation-passing style. The monadic
 values are functions that are called with a single argument representing
 the continuation of the computation, to which they pass their result.</pre>
 ----
 ===(_defmonad_ name doc-string operations)===
 ===(_defmonad_ name operations)===
 ====Macro====
-<pre>Define a named monad by defining the monad operations. The definitions
+<pre> Define a named monad by defining the monad operations. The definitions
 are written like bindings to the monad operations m-bind and
 m-result (required) and m-zero and m-plus (optional).</pre>
 ----
 ===(_defmonadfn_ name docstring? attr-map? args expr)===
 ===(_defmonadfn_ name docstring? attr-map? (args expr) ...)===
 ====Macro====
-<pre>Like defn, but for functions that use monad operations and are used inside
+<pre> Like defn, but for functions that use monad operations and are used inside
 a with-monad block.</pre>
 ----
 ===(_domonad_ steps expr)===
 ===(_domonad_ name steps expr)===
 ====Macro====
-<pre>Monad comprehension. Takes the name of a monad, a vector of steps
+<pre> Monad comprehension. Takes the name of a monad, a vector of steps
 given as binding-form/monadic-expression pairs, and a result value
 specified by expr. The monadic-expression terms can use the binding
 variables of the previous steps.
@@ -60,66 +60,66 @@ are given as a vector as for the use in let, establishes additional
 bindings that can be used in the following steps.</pre>
 ----
 ===_identity-m_===
-<pre>Monad describing plain computations. This monad does in fact nothing
+<pre> Monad describing plain computations. This monad does in fact nothing
 at all. It is useful for testing, for combination with monad
 transformers, and for code that is parameterized with a monad.</pre>
 ----
 ===(_m-chain_ steps)===
 ====Macro====
-<pre>Chains together monadic computation steps that are each functions
+<pre> Chains together monadic computation steps that are each functions
 of one parameter. Each step is called with the result of the previous
 step as its argument. (m-chain (step1 step2)) is equivalent to
 (fn `[`x`]` (domonad `[`r1 (step1 x) r2 (step2 r1)`]` r2)).</pre>
 ----
 ===(_m-fmap_ f m)===
 ====Macro====
-<pre>Bind the monadic value m to the function returning (f x) for argument x</pre>
+<pre> Bind the monadic value m to the function returning (f x) for argument x</pre>
 ----
 ===(_m-join_ m)===
 ====Macro====
-<pre>Converts a monadic value containing a monadic value into a 'simple'
+<pre> Converts a monadic value containing a monadic value into a 'simple'
 monadic value.</pre>
 ----
 ===(_m-lift_ n f)===
 ====Macro====
-<pre>Converts a function f of n arguments into a function of n
+<pre> Converts a function f of n arguments into a function of n
 monadic arguments returning a monadic value.</pre>
 ----
 ===(_m-map_ f xs)===
 ====Macro====
-<pre>'Executes' the sequence of monadic values resulting from mapping
+<pre> 'Executes' the sequence of monadic values resulting from mapping
 f onto the values xs. f must return a monadic value.</pre>
 ----
 ===(_m-reduce_ f mvs)===
 ===(_m-reduce_ f val mvs)===
 ====Macro====
-<pre>Return the reduction of (m-lift 2 f) over the list of monadic values mvs
+<pre> Return the reduction of (m-lift 2 f) over the list of monadic values mvs
 with initial value (m-result val).</pre>
 ----
 ===(_m-seq_ ms)===
 ====Macro====
-<pre>'Executes' the monadic values in ms and returns a sequence of the
+<pre> 'Executes' the monadic values in ms and returns a sequence of the
 basic values contained in them.</pre>
 ----
 ===(_m-when_ test m-expr)===
 ====Macro====
-<pre>If test if logical true, return monadic value m-expr, else return
+<pre> If test if logical true, return monadic value m-expr, else return
 (m-result nil).</pre>
 ----
 ===(_m-when-not_ test m-expr)===
 ====Macro====
-<pre>If test if logical false, return monadic value m-expr, else return
+<pre> If test if logical false, return monadic value m-expr, else return
 (m-result nil).</pre>
 ----
 ===_maybe-m_===
-<pre>Monad describing computations with possible failures. Failure is
+<pre> Monad describing computations with possible failures. Failure is
 represented by nil, any other value is considered valid. As soon as
 a step returns nil, the whole computation will yield nil as well.</pre>
 ----
 ===(_maybe-t_ m)===
 ===(_maybe-t_ m nothing)===
 ===(_maybe-t_ m nothing which-m-plus)===
-<pre>Monad transformer that transforms a monad m into a monad in which
+<pre> Monad transformer that transforms a monad m into a monad in which
 the base values can be invalid (represented by nothing, which defaults
 to nil). The third argument chooses if m-zero and m-plus are inherited
 from the base monad (use :m-plus-from-base) or adopt maybe-like
@@ -129,42 +129,42 @@ otherwise.</pre>
 ----
 ===(_monad_ operations)===
 ====Macro====
-<pre>Define a monad by defining the monad operations. The definitions
+<pre> Define a monad by defining the monad operations. The definitions
 are written like bindings to the monad operations m-bind and
 m-result (required) and m-zero and m-plus (optional).</pre>
 ----
 ===(_run-cont_ c)===
-<pre>Execute the computation c in the cont monad and return its result.</pre>
+<pre> Execute the computation c in the cont monad and return its result.</pre>
 ----
 ===_sequence-m_===
-<pre>Monad describing multi-valued computations, i.e. computations
+<pre> Monad describing multi-valued computations, i.e. computations
 that can yield multiple values. Any object implementing the seq
 protocol can be used as a monadic value.</pre>
 ----
 ===(_sequence-t_ m)===
-<pre>Monad transformer that transforms a monad m into a monad in which
+<pre> Monad transformer that transforms a monad m into a monad in which
 the base values are sequences.</pre>
 ----
 ===_set-m_===
-<pre>Monad describing multi-valued computations, like sequence-m,
+<pre> Monad describing multi-valued computations, like sequence-m,
 but returning sets of results instead of sequences of results.</pre>
 ----
 ===_state-m_===
-<pre>Monad describing stateful computations. The monadic values have the
+<pre> Monad describing stateful computations. The monadic values have the
 structure (fn `[`old-state`]` (list result new-state)).</pre>
 ----
 ===(_state-t_ m)===
-<pre>Monad transformer that transforms a monad m into a monad of stateful
+<pre> Monad transformer that transforms a monad m into a monad of stateful
 computations that have the base monad type as their result.</pre>
 ----
 ===(_with-monad_ name & exprs)===
 ====Macro====
-<pre>Evaluates an expression after replacing the keywords defining the
+<pre> Evaluates an expression after replacing the keywords defining the
 monad operations by the functions associated with these keywords
 in the monad definition given by name.</pre>
 ----
 ===(_writer-m_ empty-accumulator)===
-<pre>Monad describing computations that accumulate data on the side, e.g. for
+<pre> Monad describing computations that accumulate data on the side, e.g. for
 logging. The monadic values have the structure `[`value log`]`. Any of the
 accumulators from clojure.contrib.accumulators can be used for storing the
 log data. Its empty value is passed as a parameter.</pre>

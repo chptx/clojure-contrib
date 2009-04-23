@@ -22,10 +22,10 @@ Shortcuts:
 
 ----
 ===(_buffer-stream_ buf)===
-<pre>Returns an InputStream for a ByteBuffer, such as returned by mmap.</pre>
+<pre> Returns an InputStream for a ByteBuffer, such as returned by mmap.</pre>
 ----
 ===(_mmap_ f)===
-<pre>Memory-map the file named f.  Returns a ByteBuffer.</pre>
+<pre> Memory-map the file named f.  Returns a ByteBuffer.</pre>
 ----
 ===(_slurp_ f)===
-<pre>Reads the file named by f and returns it as a string.</pre>
+<pre> Reads the file named by f and returns it as a string.</pre>

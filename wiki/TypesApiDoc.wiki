@@ -15,9 +15,9 @@ Usage:
   (:use clojure.contrib.types))
 }}}
 ==Overview==
-<pre>General and algebraic data types
+<pre> General and algebraic data types
 
-NOTE: This library is experimental. It may change significantly
+ NOTE: This library is experimental. It may change significantly
 with future release.</pre>
 
 
@@ -31,7 +31,7 @@ Variables and Functions in types.examples:
 ----
 ===(_defadt_ type-tag & constructors)===
 ====Macro====
-<pre>Define an algebraic data type name by an exhaustive list of constructors.
+<pre> Define an algebraic data type name by an exhaustive list of constructors.
 Each constructor can be a symbol (argument-free constructor) or a
 list consisting of a tag symbol followed by the argument symbols.
 The data type tag must be a keyword.</pre>
@@ -40,7 +40,7 @@ The data type tag must be a keyword.</pre>
 ===(_deftype_ type-tag constructor-name docstring? attr-map? constructor)===
 ===(_deftype_ type-tag constructor-name docstring? attr-map? constructor deconstructor)===
 ====Macro====
-<pre>Define a data type by a type tag (a namespace-qualified keyword)
+<pre> Define a data type by a type tag (a namespace-qualified keyword)
 and a symbol naming the constructor function. Optionally, a
 constructor and a deconstructor function can be given as well,
 the defaults being clojure.core/identity and clojure.core/list.
@@ -52,11 +52,11 @@ object. It is used for printing and matching.</pre>
 ----
 ===(_deftype-_ type-tag constructor-name & optional)===
 ====Macro====
-<pre>Same as deftype but the constructor is private.</pre>
+<pre> Same as deftype but the constructor is private.</pre>
 ----
 ===(_match_ value & clauses)===
 ====Macro====
-<pre>Given a value and a list of template-expr clauses, evaluate the first
+<pre> Given a value and a list of template-expr clauses, evaluate the first
 expr whose template matches the value. There are four kinds of templates:
 1) Lists of the form (tag x1 x2 ...) match instances of types
    whose constructor has the same form as the list.
@@ -75,4 +75,4 @@ for the template to match.</pre>
 ==Namespace clojure.contrib.types.examples==
 ----
 ===_multiset_===
-<pre>Multiset (demo implementation)</pre>
+<pre> Multiset (demo implementation)</pre>

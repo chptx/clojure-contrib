@@ -22,13 +22,13 @@ Shortcuts:
 
 ----
 ===(_proper-subset?_ set1 set2)===
-<pre>Is s1 a proper subset of s2?</pre>
+<pre> Is s1 a proper subset of s2?</pre>
 ----
 ===(_proper-superset?_ set1 set2)===
-<pre>Is s1 a proper superset of s2?</pre>
+<pre> Is s1 a proper superset of s2?</pre>
 ----
 ===(_subset?_ set1 set2)===
-<pre>Is set1 a subset of set2?</pre>
+<pre> Is set1 a subset of set2?</pre>
 ----
 ===(_superset?_ set1 set2)===
-<pre>Is set1 a superset of set2?</pre>
+<pre> Is set1 a superset of set2?</pre>

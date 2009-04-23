@@ -24,50 +24,50 @@ Shortcuts:
 ===(_defalias_ name orig)===
 ===(_defalias_ name orig doc)===
 ====Macro====
-<pre>Defines an alias for a var: a new var with the same root binding (if
+<pre> Defines an alias for a var: a new var with the same root binding (if
 any) and similar metadata. The metadata of the alias is its initial
 metadata (as provided by def) merged into the metadata of the original.</pre>
 ----
 ===(_defhinted_ sym init)===
 ====Macro====
-<pre>Defines a var with a type hint matching the class of the given
+<pre> Defines a var with a type hint matching the class of the given
 init.  Be careful about using any form of 'def' or 'binding' to a
 value of a different type.  See http://paste.lisp.org/display/73344</pre>
 ----
 ===(_defmacro-_ name & decls)===
 ====Macro====
-<pre>Same as defmacro but yields a private definition</pre>
+<pre> Same as defmacro but yields a private definition</pre>
 ----
 ===(_defonce-_ name expr)===
 ===(_defonce-_ name expr doc)===
 ====Macro====
-<pre>Same as defonce but yields a private definition</pre>
+<pre> Same as defonce but yields a private definition</pre>
 ----
 ===(_defstruct-_ name & decls)===
 ====Macro====
-<pre>Same as defstruct but yields a private definition</pre>
+<pre> Same as defstruct but yields a private definition</pre>
 ----
 ===(_defunbound_ name)===
 ===(_defunbound_ name doc)===
 ====Macro====
-<pre>Defines an unbound var with optional doc string</pre>
+<pre> Defines an unbound var with optional doc string</pre>
 ----
 ===(_defunbound-_ name & decls)===
 ====Macro====
-<pre>Same as defunbound but yields a private definition</pre>
+<pre> Same as defunbound but yields a private definition</pre>
 ----
 ===(_defvar_ name)===
 ===(_defvar_ name init)===
 ===(_defvar_ name init doc)===
 ====Macro====
-<pre>Defines a var with an optional intializer and doc string</pre>
+<pre> Defines a var with an optional intializer and doc string</pre>
 ----
 ===(_defvar-_ name & decls)===
 ====Macro====
-<pre>Same as defvar but yields a private definition</pre>
+<pre> Same as defvar but yields a private definition</pre>
 ----
 ===(_name-with-attributes_ name macro-args)===
-<pre>To be used in macro definitions.
+<pre> To be used in macro definitions.
 Handles optional docstrings and attribute maps for a name to be defined
 in a list of macro arguments. If the first macro argument is a string,
 it is added as a docstring to name and removed from the macro argument

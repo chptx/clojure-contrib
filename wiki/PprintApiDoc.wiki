@@ -33,109 +33,109 @@ Shortcuts:
 
 ----
 ===_`*`print-circle`*`_===
-<pre>Mark circular structures (N.B. This is not yet used)</pre>
+<pre> Mark circular structures (N.B. This is not yet used)</pre>
 ----
 ===_`*`print-lines`*`_===
-<pre>Maximum number of lines to print in a pretty print instance (N.B. This is not yet used)</pre>
+<pre> Maximum number of lines to print in a pretty print instance (N.B. This is not yet used)</pre>
 ----
 ===_`*`print-miser-width`*`_===
-<pre>The column at which to enter miser style. Depending on the dispatch table, 
+<pre> The column at which to enter miser style. Depending on the dispatch table, 
 miser style add newlines in more places to try to keep lines short allowing for further 
 levels of nesting.</pre>
 ----
 ===_`*`print-pprint-dispatch`*`_===
-<pre>The pretty print dispatch table</pre>
+<pre> The pretty print dispatch table</pre>
 ----
 ===_`*`print-pretty`*`_===
-<pre>Bind to true if you want write to use pretty printing</pre>
+<pre> Bind to true if you want write to use pretty printing</pre>
 ----
 ===_`*`print-right-margin`*`_===
-<pre>Pretty printing will try to avoid anything going beyond this column.</pre>
+<pre> Pretty printing will try to avoid anything going beyond this column.</pre>
 ----
 ===_`*`print-shared`*`_===
-<pre>Mark repeated structures rather than repeat them (N.B. This is not yet used)</pre>
+<pre> Mark repeated structures rather than repeat them (N.B. This is not yet used)</pre>
 ----
 ===_`*`print-suppress-namespaces`*`_===
-<pre>Don't print namespaces with symbols. This is particularly useful when 
+<pre> Don't print namespaces with symbols. This is particularly useful when 
 pretty printing the results of macro expansions</pre>
 ----
 ===(_cl-format_ stream format-in & args)===
-<pre>An implementation of a Common Lisp compatible format function</pre>
+<pre> An implementation of a Common Lisp compatible format function</pre>
 ----
 ===(_compile-format_ format-str)===
-<pre>Compiles format-str into a compiled format which can be used as an argument
+<pre> Compiles format-str into a compiled format which can be used as an argument
 to cl-format just like a plain format string. Use this function for improved 
 performance when you're using the same format string repeatedly</pre>
 ----
 ===(_formatter_ format-in)===
 ====Macro====
-<pre>Makes a function which can directly run format-in. The function is
+<pre> Makes a function which can directly run format-in. The function is
 fn `[`stream & args`]` ... and returns nil unless the stream is nil (meaning 
 output to a string) in which case it returns the resulting string.
 
-format-in can be either a control string or a previously compiled format.</pre>
+ format-in can be either a control string or a previously compiled format.</pre>
 ----
 ===(_pp_)===
 ====Macro====
-<pre>A convenience macro that pretty prints the last thing output. This is
+<pre> A convenience macro that pretty prints the last thing output. This is
 exactly equivalent to (pprint `*`1).</pre>
 ----
 ===(_pprint_ object & more)===
-<pre>Pretty print object to the optional output writer. If the writer is not provided, 
+<pre> Pretty print object to the optional output writer. If the writer is not provided, 
 print the object to the currently bound value of `*`out`*`.</pre>
 ----
 ===(_pprint-indent_ relative-to n & more)===
-<pre>Create an indent at this point in the pretty printing stream. This defines how 
+<pre> Create an indent at this point in the pretty printing stream. This defines how 
 following lines are indented. relative-to can be either :block or :current depending 
 whether the indent should be computed relative to the start of the logical block or
 the current column position. n is an offset. 
 
-Optionally, a third argument which is a stream may be used. If supplied, that is 
+ Optionally, a third argument which is a stream may be used. If supplied, that is 
 the writer indented, otherwise `*`out`*` is used.
 
-If the requested stream is not a PrettyWriter, this function does nothing.</pre>
+ If the requested stream is not a PrettyWriter, this function does nothing.</pre>
 ----
 ===(_pprint-logical-block_ base-stream & body)===
 ====Macro====
-<pre>Execute the body as a pretty printing logical block with output to `*`out`*` which 
+<pre> Execute the body as a pretty printing logical block with output to `*`out`*` which 
 is a pretty printing writer wrapping base-stream (unless base-stream is already a pretty 
 printing writer in which case `*`out`*` is just bound to base-stream). 
 
-After the writer, the caller can optionally specify :prefix, :per-line-prefix, and
+ After the writer, the caller can optionally specify :prefix, :per-line-prefix, and
 :suffix.</pre>
 ----
 ===(_pprint-newline_ kind & more)===
-<pre>Print a conditional newline to a pretty printing stream. kind specifies if the 
+<pre> Print a conditional newline to a pretty printing stream. kind specifies if the 
 newline is :linear, :miser, :fill, or :mandatory. 
 
-Optionally, a second argument which is a stream may be used. If supplied, that is 
+ Optionally, a second argument which is a stream may be used. If supplied, that is 
 the writer to which the newline is sent, otherwise `*`out`*` is used.
 
-If the requested stream is not a PrettyWriter, this function does nothing.</pre>
+ If the requested stream is not a PrettyWriter, this function does nothing.</pre>
 ----
 ===(_pprint-tab_ kind colnum colinc & more)===
-<pre>Tab at this point in the pretty printing stream. kind specifies whether the tab
+<pre> Tab at this point in the pretty printing stream. kind specifies whether the tab
 is :line, :section, :line-relative, or :section-relative. 
 
-Colnum and colinc specify the target column and the increment to move the target
+ Colnum and colinc specify the target column and the increment to move the target
 forward if the output is already past the original target.
 
-Optionally, a fourth argument which is a stream may be used. If supplied, that is 
+ Optionally, a fourth argument which is a stream may be used. If supplied, that is 
 the writer indented, otherwise `*`out`*` is used.
 
-If the requested stream is not a PrettyWriter, this function does nothing.
+ If the requested stream is not a PrettyWriter, this function does nothing.
 
-THIS FUNCTION IS NOT YET IMPLEMENTED.</pre>
+ THIS FUNCTION IS NOT YET IMPLEMENTED.</pre>
 ----
 ===(_set-pprint-dispatch_ table)===
-<pre>Set the pretty print dispatch table to TABLE. Currently the supported values are
+<pre> Set the pretty print dispatch table to TABLE. Currently the supported values are
 `*`simple-dispatch`*` or `*`code-dispatch`*`. In the future, this will support custom tables.</pre>
 ----
 ===(_with-pprint-dispatch_ table & body)===
 ====Macro====
-<pre>Execute body with the pretty print dispatch table bound to table.</pre>
+<pre> Execute body with the pretty print dispatch table bound to table.</pre>
 ----
 ===(_write_ object & kw-args)===
-<pre>Write an object subject to the current bindings of the printer control variables.
+<pre> Write an object subject to the current bindings of the printer control variables.
 Use the options argument to override individual variables for this call (and any 
 recursive calls). Returns the string result if :stream is nil or nil otherwise.</pre>

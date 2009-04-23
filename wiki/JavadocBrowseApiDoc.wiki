@@ -22,9 +22,9 @@ Shortcuts:
 
 ----
 ===(_open-url-in-browser_ url)===
-<pre>Opens url (a string) in the default system web browser.  May not
+<pre> Opens url (a string) in the default system web browser.  May not
 work on all platforms.  Returns url on success, nil if not
 supported.</pre>
 ----
 ===(_open-url-in-swing_ url)===
-<pre>Opens url (a string) in a Swing window.</pre>
+<pre> Opens url (a string) in a Swing window.</pre>

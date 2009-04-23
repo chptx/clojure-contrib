@@ -22,4 +22,4 @@ Shortcuts:
 
 ----
 ===_primes_===
-<pre>Lazy sequence of all the prime numbers.</pre>
+<pre> Lazy sequence of all the prime numbers.</pre>
