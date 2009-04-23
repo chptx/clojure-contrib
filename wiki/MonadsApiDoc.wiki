@@ -117,12 +117,15 @@ represented by nil, any other value is considered valid. As soon as
 a step returns nil, the whole computation will yield nil as well.</pre>
 ----
 ===(_maybe-t_ m)===
+===(_maybe-t_ m nothing)===
 ===(_maybe-t_ m nothing which-m-plus)===
 <pre>Monad transformer that transforms a monad m into a monad in which
 the base values can be invalid (represented by nothing, which defaults
 to nil). The third argument chooses if m-zero and m-plus are inherited
 from the base monad (use :m-plus-from-base) or adopt maybe-like
-behaviour (use :m-plus-from-maybe).</pre>
+behaviour (use :m-plus-from-maybe). The default is :m-plus-from-base
+if the base monad m has a definition for m-plus, and :m-plus-from-maybe
+otherwise.</pre>
 ----
 ===(_monad_ operations)===
 ====Macro====
