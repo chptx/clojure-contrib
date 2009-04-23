@@ -1,4 +1,5 @@
 #summary auto-agent API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,7 +23,7 @@ Shortcuts:
 ----
 ===(_auto-agent_ expr)===
 ====Macro====
-Creates an agent whose value is the result of evaluating expr.
+<pre>Creates an agent whose value is the result of evaluating expr.
 Whenever one of the agents/atoms/refs dererenced within expr
 changes, expr is reevaluated and this agent's state is set to its
-new value.
+new value.</pre>

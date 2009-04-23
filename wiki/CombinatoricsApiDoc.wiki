@@ -1,4 +1,5 @@
 #summary combinatorics API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,19 +22,19 @@ Shortcuts:
 
 ----
 ===(_cartesian-product_ & seqs)===
-All the ways to take one item from each sequence
+<pre>All the ways to take one item from each sequence</pre>
 ----
 ===(_combinations_ items n)===
-All the unique ways of taking n different elements from items
+<pre>All the unique ways of taking n different elements from items</pre>
 ----
 ===(_lex-permutations_ c)===
-Fast lexicographic permutation generator for a sequence of numbers
+<pre>Fast lexicographic permutation generator for a sequence of numbers</pre>
 ----
 ===(_permutations_ items)===
-All the permutations of items, lexicographic by index
+<pre>All the permutations of items, lexicographic by index</pre>
 ----
 ===(_selections_ items n)===
-All the ways of taking n (possibly the same) elements from the sequence of items
+<pre>All the ways of taking n (possibly the same) elements from the sequence of items</pre>
 ----
 ===(_subsets_ items)===
-All the subsets of items
+<pre>All the subsets of items</pre>

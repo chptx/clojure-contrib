@@ -1,4 +1,5 @@
 #summary An overview of the clojure.contrib library
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -102,23 +103,23 @@ API Overview [DatalogApiDoc here]
 Public Variables and Functions:
 [DatalogApiDoc#(_build-work-plan_rules_query) build-work-plan] [DatalogApiDoc#(_run-work-plan_work-plan_database_query-bindings) run-work-plan] 
 
-Variables and Functions in datalog.magic:
-[DatalogApiDoc#(_adorn-query_q) adorn-query] [DatalogApiDoc#(_adorn-rules-set_rs_q) adorn-rules-set] [DatalogApiDoc#(_build-partial-tuple_q_bindings) build-partial-tuple] [DatalogApiDoc#(_magic-transform_rs) magic-transform] [DatalogApiDoc#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] [DatalogApiDoc#(_seed-relation_q) seed-relation] [DatalogApiDoc#(_seed-rule_q) seed-rule] 
-
-Variables and Functions in datalog.softstrat:
-[DatalogApiDoc#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] [DatalogApiDoc#(_get-all-relations_ws) get-all-relations] 
-
-Variables and Functions in datalog.rules:
-[DatalogApiDoc#(_<-_hd_&_body) <-] [DatalogApiDoc#(_?-_&_q) ?-] [DatalogApiDoc#(_all-predicates_rs) all-predicates] [DatalogApiDoc#(_apply-rule_db_rule) apply-rule] [DatalogApiDoc#(_compute-sip_bindings_i-preds_rule) compute-sip] [DatalogApiDoc#(_display-query_query) display-query] [DatalogApiDoc#(_display-rule_rule) display-rule] [DatalogApiDoc#(_is-safe?_rule) is-safe?] [DatalogApiDoc#(_make-rules-set_rs) make-rules-set] [DatalogApiDoc#(_non-base-rules_rs) non-base-rules] [DatalogApiDoc#(_predicate-map_rs) predicate-map] [DatalogApiDoc#(_return-rule-data_rule) return-rule-data] [DatalogApiDoc#(_rules-set_&_rules) rules-set] 
-
-Variables and Functions in datalog.util:
-[DatalogApiDoc#(_is-query-var?_sym) is-query-var?] [DatalogApiDoc#(_is-var?_sym) is-var?] [DatalogApiDoc#(_keys-to-vals_m_ks) keys-to-vals] [DatalogApiDoc#(_map-values_f_hash) map-values] [DatalogApiDoc#(_preduce_f_data) preduce] [DatalogApiDoc#(_reverse-map_m) reverse-map] [DatalogApiDoc#(_trace-datalog_&_body) trace-datalog] 
+Variables and Functions in datalog.database:
+[DatalogApiDoc#(_add-index_db_name_key) add-index] [DatalogApiDoc#(_add-relation_db_name_keys) add-relation] [DatalogApiDoc#(_add-tuple_db_rel-name_tuple) add-tuple] [DatalogApiDoc#(_add-tuples_db_&_tupls) add-tuples] [DatalogApiDoc#(_any-match?_db_rn_pt) any-match?] [DatalogApiDoc#(_database-counts_db) database-counts] [DatalogApiDoc#(_database-merge_dbs) database-merge] [DatalogApiDoc#(_database-merge-parallel_dbs) database-merge-parallel] [DatalogApiDoc#(_datalog-relation_schema_data_indexes) datalog-relation] [DatalogApiDoc#(_ensure-relation_db_name_keys_indexes) ensure-relation] [DatalogApiDoc#(_get-relation_db_rel-name) get-relation] [DatalogApiDoc#(_make-database_&_commands) make-database] [DatalogApiDoc#(_merge-relations_r1_r2) merge-relations] [DatalogApiDoc#(_remove-tuple_db_rel-name_tuple) remove-tuple] [DatalogApiDoc#(_replace-relation_db_rel-name_rel) replace-relation] [DatalogApiDoc#(_select_db_rn_pt) select] 
 
 Variables and Functions in datalog.literals:
 [DatalogApiDoc#adorned-literal adorned-literal] [DatalogApiDoc#(_build-atom_f_type) build-atom] [DatalogApiDoc#build-literal build-literal] [DatalogApiDoc#(_build-seed-bindings_s) build-seed-bindings] [DatalogApiDoc#(_delta-literal_l) delta-literal] [DatalogApiDoc#display-literal display-literal] [DatalogApiDoc#(_get-adorned-bindings_pred) get-adorned-bindings] [DatalogApiDoc#(_get-base-predicate_pred) get-base-predicate] [DatalogApiDoc#get-cs-from-vs get-cs-from-vs] [DatalogApiDoc#get-self-bound-cs get-self-bound-cs] [DatalogApiDoc#get-vs-from-cs get-vs-from-cs] [DatalogApiDoc#join-literal join-literal] [DatalogApiDoc#literal-appropriate? literal-appropriate?] [DatalogApiDoc#literal-columns literal-columns] [DatalogApiDoc#(_literal-magic?_lit) literal-magic?] [DatalogApiDoc#literal-predicate literal-predicate] [DatalogApiDoc#literal-vars literal-vars] [DatalogApiDoc#(_magic-literal_l) magic-literal] [DatalogApiDoc#(_negated-literal_l) negated-literal] [DatalogApiDoc#(_negated?_l) negated?] [DatalogApiDoc#negative-vars negative-vars] [DatalogApiDoc#positive-vars positive-vars] [DatalogApiDoc#(_positive?_l) positive?] [DatalogApiDoc#(_project-literal_db_lit_bs) project-literal] 
 
-Variables and Functions in datalog.database:
-[DatalogApiDoc#(_add-index_db_name_key) add-index] [DatalogApiDoc#(_add-relation_db_name_keys) add-relation] [DatalogApiDoc#(_add-tuple_db_rel-name_tuple) add-tuple] [DatalogApiDoc#(_add-tuples_db_&_tupls) add-tuples] [DatalogApiDoc#(_any-match?_db_rn_pt) any-match?] [DatalogApiDoc#(_database-counts_db) database-counts] [DatalogApiDoc#(_database-merge_dbs) database-merge] [DatalogApiDoc#(_database-merge-parallel_dbs) database-merge-parallel] [DatalogApiDoc#(_datalog-relation_schema_data_indexes) datalog-relation] [DatalogApiDoc#(_ensure-relation_db_name_keys_indexes) ensure-relation] [DatalogApiDoc#(_get-relation_db_rel-name) get-relation] [DatalogApiDoc#(_make-database_&_commands) make-database] [DatalogApiDoc#(_merge-relations_r1_r2) merge-relations] [DatalogApiDoc#(_remove-tuple_db_rel-name_tuple) remove-tuple] [DatalogApiDoc#(_replace-relation_db_rel-name_rel) replace-relation] [DatalogApiDoc#(_select_db_rn_pt) select] 
+Variables and Functions in datalog.magic:
+[DatalogApiDoc#(_adorn-query_q) adorn-query] [DatalogApiDoc#(_adorn-rules-set_rs_q) adorn-rules-set] [DatalogApiDoc#(_build-partial-tuple_q_bindings) build-partial-tuple] [DatalogApiDoc#(_magic-transform_rs) magic-transform] [DatalogApiDoc#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] [DatalogApiDoc#(_seed-relation_q) seed-relation] [DatalogApiDoc#(_seed-rule_q) seed-rule] 
+
+Variables and Functions in datalog.rules:
+[DatalogApiDoc#(_<-_hd_&_body) <-] [DatalogApiDoc#(_?-_&_q) ?-] [DatalogApiDoc#(_all-predicates_rs) all-predicates] [DatalogApiDoc#(_apply-rule_db_rule) apply-rule] [DatalogApiDoc#(_compute-sip_bindings_i-preds_rule) compute-sip] [DatalogApiDoc#(_display-query_query) display-query] [DatalogApiDoc#(_display-rule_rule) display-rule] [DatalogApiDoc#(_is-safe?_rule) is-safe?] [DatalogApiDoc#(_make-rules-set_rs) make-rules-set] [DatalogApiDoc#(_non-base-rules_rs) non-base-rules] [DatalogApiDoc#(_predicate-map_rs) predicate-map] [DatalogApiDoc#(_return-rule-data_rule) return-rule-data] [DatalogApiDoc#(_rules-set_&_rules) rules-set] 
+
+Variables and Functions in datalog.softstrat:
+[DatalogApiDoc#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] [DatalogApiDoc#(_get-all-relations_ws) get-all-relations] 
+
+Variables and Functions in datalog.util:
+[DatalogApiDoc#(_is-query-var?_sym) is-query-var?] [DatalogApiDoc#(_is-var?_sym) is-var?] [DatalogApiDoc#(_keys-to-vals_m_ks) keys-to-vals] [DatalogApiDoc#(_map-values_f_hash) map-values] [DatalogApiDoc#(_preduce_f_data) preduce] [DatalogApiDoc#(_reverse-map_m) reverse-map] [DatalogApiDoc#(_trace-datalog_&_body) trace-datalog] 
 
 ===def===
 API Overview [DefApiDoc here]
@@ -159,14 +160,14 @@ Public Variables and Functions:
 ===generic===
 API Overview [GenericApiDoc here]
 
-Variables and Functions in generic.math-functions:
-[GenericApiDoc#(_approx=_x_y_eps) approx=] 
-
 Variables and Functions in generic.collection:
 [GenericApiDoc#(_assoc_coll_&_key-val-pairs) assoc] [GenericApiDoc#(_dissoc_coll_&_keys) dissoc] [GenericApiDoc#(_empty_coll) empty] [GenericApiDoc#(_get_coll_key) get] [GenericApiDoc#(_into_to_from) into] [GenericApiDoc#(_seq_s) seq] 
 
 Variables and Functions in generic.functor:
 [GenericApiDoc#(_fmap_f_s) fmap] 
+
+Variables and Functions in generic.math-functions:
+[GenericApiDoc#(_approx=_x_y_eps) approx=] 
 
 ===graph===
 API Overview [GraphApiDoc here]
@@ -393,10 +394,10 @@ Public Variables and Functions:
 ===types===
 API Overview [TypesApiDoc here]
 
-General and algebraic data types
+<pre>General and algebraic data types
 
 NOTE: This library is experimental. It may change significantly
-with future release.
+with future release.</pre>
 Public Variables and Functions:
 [TypesApiDoc#(_defadt_type-tag_&_constructors) defadt] [TypesApiDoc#(_deftype_type-tag_constructor-name_docstring?_attr-map?) deftype] [TypesApiDoc#(_deftype-_type-tag_constructor-name_&_optional) deftype-] [TypesApiDoc#(_match_value_&_clauses) match] 
 

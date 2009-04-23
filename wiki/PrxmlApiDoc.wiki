@@ -1,4 +1,5 @@
 #summary prxml API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,20 +22,20 @@ Shortcuts:
 
 ----
 ===_`*`html-compatible`*`_===
-If true, empty tags will have a space before the closing />
+<pre>If true, empty tags will have a space before the closing /></pre>
 ----
 ===_`*`prxml-indent`*`_===
-The number of spaces to indent sub-tags.  nil for no indent
-and no extra line-breaks.
+<pre>The number of spaces to indent sub-tags.  nil for no indent
+and no extra line-breaks.</pre>
 ----
 ===(_prxml_ & args)===
-Print XML to `*`out`*`.  Vectors become XML tags: the first item is the
+<pre>Print XML to `*`out`*`.  Vectors become XML tags: the first item is the
 tag name; optional second item is a map of attributes.
 
 Sequences are processed recursively, so you can use map and other
 sequence functions inside prxml.
 
-(prxml [:p {:class "greet"} [:i "Ladies & gentlemen"]])
+(prxml `[`:p {:class "greet"} `[`:i "Ladies & gentlemen"`]``]`)
 ; => <p class="greet"><i>Ladies &amp; gentlemen</i></p>
 
 PSEUDO-TAGS: some keywords have special meaning:
@@ -45,8 +46,8 @@ PSEUDO-TAGS: some keywords have special meaning:
 :cdata!    create a CDATA section
 :doctype!  create a DOCTYPE!
 
-(prxml [:p [:raw! "<i>here & gone</i>"]])
+(prxml `[`:p `[`:raw! "<i>here & gone</i>"`]``]`)
 ; => <p><i>here & gone</i></p>
 
-(prxml [:decl! {:version "1.1"}])
-; => <?xml version="1.1" encoding="UTF-8"?>
+(prxml `[`:decl! {:version "1.1"}`]`)
+; => <?xml version="1.1" encoding="UTF-8"?></pre>

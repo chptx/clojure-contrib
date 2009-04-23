@@ -1,4 +1,5 @@
 #summary datalog API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -19,293 +20,293 @@ Usage:
 Shortcuts:
 [#(_build-work-plan_rules_query) build-work-plan] [#(_run-work-plan_work-plan_database_query-bindings) run-work-plan] 
 
-Variables and Functions in datalog.magic:
-[DatalogApiDoc#(_adorn-query_q) adorn-query] [DatalogApiDoc#(_adorn-rules-set_rs_q) adorn-rules-set] [DatalogApiDoc#(_build-partial-tuple_q_bindings) build-partial-tuple] [DatalogApiDoc#(_magic-transform_rs) magic-transform] [DatalogApiDoc#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] [DatalogApiDoc#(_seed-relation_q) seed-relation] [DatalogApiDoc#(_seed-rule_q) seed-rule] 
-
-Variables and Functions in datalog.softstrat:
-[DatalogApiDoc#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] [DatalogApiDoc#(_get-all-relations_ws) get-all-relations] 
-
-Variables and Functions in datalog.rules:
-[DatalogApiDoc#(_<-_hd_&_body) <-] [DatalogApiDoc#(_?-_&_q) ?-] [DatalogApiDoc#(_all-predicates_rs) all-predicates] [DatalogApiDoc#(_apply-rule_db_rule) apply-rule] [DatalogApiDoc#(_compute-sip_bindings_i-preds_rule) compute-sip] [DatalogApiDoc#(_display-query_query) display-query] [DatalogApiDoc#(_display-rule_rule) display-rule] [DatalogApiDoc#(_is-safe?_rule) is-safe?] [DatalogApiDoc#(_make-rules-set_rs) make-rules-set] [DatalogApiDoc#(_non-base-rules_rs) non-base-rules] [DatalogApiDoc#(_predicate-map_rs) predicate-map] [DatalogApiDoc#(_return-rule-data_rule) return-rule-data] [DatalogApiDoc#(_rules-set_&_rules) rules-set] 
-
-Variables and Functions in datalog.util:
-[DatalogApiDoc#(_is-query-var?_sym) is-query-var?] [DatalogApiDoc#(_is-var?_sym) is-var?] [DatalogApiDoc#(_keys-to-vals_m_ks) keys-to-vals] [DatalogApiDoc#(_map-values_f_hash) map-values] [DatalogApiDoc#(_preduce_f_data) preduce] [DatalogApiDoc#(_reverse-map_m) reverse-map] [DatalogApiDoc#(_trace-datalog_&_body) trace-datalog] 
+Variables and Functions in datalog.database:
+[DatalogApiDoc#(_add-index_db_name_key) add-index] [DatalogApiDoc#(_add-relation_db_name_keys) add-relation] [DatalogApiDoc#(_add-tuple_db_rel-name_tuple) add-tuple] [DatalogApiDoc#(_add-tuples_db_&_tupls) add-tuples] [DatalogApiDoc#(_any-match?_db_rn_pt) any-match?] [DatalogApiDoc#(_database-counts_db) database-counts] [DatalogApiDoc#(_database-merge_dbs) database-merge] [DatalogApiDoc#(_database-merge-parallel_dbs) database-merge-parallel] [DatalogApiDoc#(_datalog-relation_schema_data_indexes) datalog-relation] [DatalogApiDoc#(_ensure-relation_db_name_keys_indexes) ensure-relation] [DatalogApiDoc#(_get-relation_db_rel-name) get-relation] [DatalogApiDoc#(_make-database_&_commands) make-database] [DatalogApiDoc#(_merge-relations_r1_r2) merge-relations] [DatalogApiDoc#(_remove-tuple_db_rel-name_tuple) remove-tuple] [DatalogApiDoc#(_replace-relation_db_rel-name_rel) replace-relation] [DatalogApiDoc#(_select_db_rn_pt) select] 
 
 Variables and Functions in datalog.literals:
 [DatalogApiDoc#adorned-literal adorned-literal] [DatalogApiDoc#(_build-atom_f_type) build-atom] [DatalogApiDoc#build-literal build-literal] [DatalogApiDoc#(_build-seed-bindings_s) build-seed-bindings] [DatalogApiDoc#(_delta-literal_l) delta-literal] [DatalogApiDoc#display-literal display-literal] [DatalogApiDoc#(_get-adorned-bindings_pred) get-adorned-bindings] [DatalogApiDoc#(_get-base-predicate_pred) get-base-predicate] [DatalogApiDoc#get-cs-from-vs get-cs-from-vs] [DatalogApiDoc#get-self-bound-cs get-self-bound-cs] [DatalogApiDoc#get-vs-from-cs get-vs-from-cs] [DatalogApiDoc#join-literal join-literal] [DatalogApiDoc#literal-appropriate? literal-appropriate?] [DatalogApiDoc#literal-columns literal-columns] [DatalogApiDoc#(_literal-magic?_lit) literal-magic?] [DatalogApiDoc#literal-predicate literal-predicate] [DatalogApiDoc#literal-vars literal-vars] [DatalogApiDoc#(_magic-literal_l) magic-literal] [DatalogApiDoc#(_negated-literal_l) negated-literal] [DatalogApiDoc#(_negated?_l) negated?] [DatalogApiDoc#negative-vars negative-vars] [DatalogApiDoc#positive-vars positive-vars] [DatalogApiDoc#(_positive?_l) positive?] [DatalogApiDoc#(_project-literal_db_lit_bs) project-literal] 
 
-Variables and Functions in datalog.database:
-[DatalogApiDoc#(_add-index_db_name_key) add-index] [DatalogApiDoc#(_add-relation_db_name_keys) add-relation] [DatalogApiDoc#(_add-tuple_db_rel-name_tuple) add-tuple] [DatalogApiDoc#(_add-tuples_db_&_tupls) add-tuples] [DatalogApiDoc#(_any-match?_db_rn_pt) any-match?] [DatalogApiDoc#(_database-counts_db) database-counts] [DatalogApiDoc#(_database-merge_dbs) database-merge] [DatalogApiDoc#(_database-merge-parallel_dbs) database-merge-parallel] [DatalogApiDoc#(_datalog-relation_schema_data_indexes) datalog-relation] [DatalogApiDoc#(_ensure-relation_db_name_keys_indexes) ensure-relation] [DatalogApiDoc#(_get-relation_db_rel-name) get-relation] [DatalogApiDoc#(_make-database_&_commands) make-database] [DatalogApiDoc#(_merge-relations_r1_r2) merge-relations] [DatalogApiDoc#(_remove-tuple_db_rel-name_tuple) remove-tuple] [DatalogApiDoc#(_replace-relation_db_rel-name_rel) replace-relation] [DatalogApiDoc#(_select_db_rn_pt) select] 
+Variables and Functions in datalog.magic:
+[DatalogApiDoc#(_adorn-query_q) adorn-query] [DatalogApiDoc#(_adorn-rules-set_rs_q) adorn-rules-set] [DatalogApiDoc#(_build-partial-tuple_q_bindings) build-partial-tuple] [DatalogApiDoc#(_magic-transform_rs) magic-transform] [DatalogApiDoc#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] [DatalogApiDoc#(_seed-relation_q) seed-relation] [DatalogApiDoc#(_seed-rule_q) seed-rule] 
+
+Variables and Functions in datalog.rules:
+[DatalogApiDoc#(_<-_hd_&_body) <-] [DatalogApiDoc#(_?-_&_q) ?-] [DatalogApiDoc#(_all-predicates_rs) all-predicates] [DatalogApiDoc#(_apply-rule_db_rule) apply-rule] [DatalogApiDoc#(_compute-sip_bindings_i-preds_rule) compute-sip] [DatalogApiDoc#(_display-query_query) display-query] [DatalogApiDoc#(_display-rule_rule) display-rule] [DatalogApiDoc#(_is-safe?_rule) is-safe?] [DatalogApiDoc#(_make-rules-set_rs) make-rules-set] [DatalogApiDoc#(_non-base-rules_rs) non-base-rules] [DatalogApiDoc#(_predicate-map_rs) predicate-map] [DatalogApiDoc#(_return-rule-data_rule) return-rule-data] [DatalogApiDoc#(_rules-set_&_rules) rules-set] 
+
+Variables and Functions in datalog.softstrat:
+[DatalogApiDoc#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] [DatalogApiDoc#(_get-all-relations_ws) get-all-relations] 
+
+Variables and Functions in datalog.util:
+[DatalogApiDoc#(_is-query-var?_sym) is-query-var?] [DatalogApiDoc#(_is-var?_sym) is-var?] [DatalogApiDoc#(_keys-to-vals_m_ks) keys-to-vals] [DatalogApiDoc#(_map-values_f_hash) map-values] [DatalogApiDoc#(_preduce_f_data) preduce] [DatalogApiDoc#(_reverse-map_m) reverse-map] [DatalogApiDoc#(_trace-datalog_&_body) trace-datalog] 
 
 ----
 ===(_build-work-plan_ rules query)===
-Given a list of rules and a query, build a work plan that can be
-used to execute the query.
+<pre>Given a list of rules and a query, build a work plan that can be
+used to execute the query.</pre>
 ----
 ===(_run-work-plan_ work-plan database query-bindings)===
-Given a work plan, a database, and some query bindings, run the
-work plan and return the results.
+<pre>Given a work plan, a database, and some query bindings, run the
+work plan and return the results.</pre>
+==Namespace clojure.contrib.datalog.database==
+----
+===(_add-index_ db name key)===
+<pre>Adds an index to an empty relation named name</pre>
+----
+===(_add-relation_ db name keys)===
+<pre>Adds a relation to the database</pre>
+----
+===(_add-tuple_ db rel-name tuple)===
+===(_add-tuple_ rel tuple)===
+<pre>Two forms:
+
+`[`db relation-name tuple`]` adds tuple to the named relation.  Returns
+the new database.
+
+`[`rel tuple`]` adds to the relation object.  Returns the new relation.</pre>
+----
+===(_add-tuples_ db & tupls)===
+<pre>Adds a collection of tuples to the db, as
+(add-tuples db
+`[`:rel-name :key-1 1 :key-2 2`]`
+`[`:rel-name :key-1 2 :key-2 3`]`)</pre>
+----
+===(_any-match?_ db rn pt)===
+<pre>Finds if there are any matching records for the partial tuple</pre>
+----
+===(_database-counts_ db)===
+<pre>Returns a map with the count of elements in each relation.</pre>
+----
+===(_database-merge_ dbs)===
+<pre>Merges databases together</pre>
+----
+===(_database-merge-parallel_ dbs)===
+<pre>Merges databases together in parallel</pre>
+----
+===(_datalog-relation_ schema data indexes)===
+<pre>Creates a relation</pre>
+----
+===(_ensure-relation_ db name keys indexes)===
+<pre>If the database lacks the named relation, add it</pre>
+----
+===(_get-relation_ db rel-name)===
+<pre>Get a relation object by name</pre>
+----
+===(_make-database_ & commands)===
+====Macro====
+<pre>Makes a database, like this
+(make-database
+(relation :fred `[`:mary :sue`]`)
+(index :fred :mary)
+(relation :sally `[`:jen :becky`]`)
+(index :sally :jen)
+(index :sally :becky))</pre>
+----
+===(_merge-relations_ r1 r2)===
+<pre>Merges two relations</pre>
+----
+===(_remove-tuple_ db rel-name tuple)===
+===(_remove-tuple_ rel tuple)===
+<pre>Two forms:
+
+`[`db relation-name tuple`]` removes the tuple from the named relation,
+returns a new database.
+
+`[`rel tuple`]` removes the tuple from the relation.  Returns the new
+relation.</pre>
+----
+===(_replace-relation_ db rel-name rel)===
+<pre>Add or replace a fully constructed relation object to the database.</pre>
+----
+===(_select_ db rn pt)===
+<pre>finds all matching tuples to the partial tuple (pt) in the relation named (rn)</pre>
+==Namespace clojure.contrib.datalog.literals==
+----
+===_adorned-literal_===
+<pre>When passed a set of bound columns, returns the adorned literal</pre>
+----
+===(_build-atom_ f type)===
+<pre>Returns an unevaluated expression (to be used in a macro) of an
+atom.</pre>
+----
+===_build-literal_===
+<pre>(Returns an unevaluated expression (to be used in macros) of a
+literal.</pre>
+----
+===(_build-seed-bindings_ s)===
+<pre>Given a seed literal, already adorned and in magic form, convert
+its bound constants to new variables.</pre>
+----
+===(_delta-literal_ l)===
+<pre>Given a literal l, return a delta version</pre>
+----
+===_display-literal_===
+<pre>Converts a struct representing a literal to a normal list</pre>
+----
+===(_get-adorned-bindings_ pred)===
+<pre>Get the bindings from this adorned literal.</pre>
+----
+===(_get-base-predicate_ pred)===
+<pre>Get the base predicate from this predicate.</pre>
+----
+===_get-cs-from-vs_===
+<pre>From a set of vars, get the columns</pre>
+----
+===_get-self-bound-cs_===
+<pre>Get the columns that are bound withing the literal.</pre>
+----
+===_get-vs-from-cs_===
+<pre>From a set of columns, return the vars</pre>
+----
+===_join-literal_===
+<pre>Given a database (db), a literal (lit) and a seq of bindings (bs),
+return a new seq of bindings by joining this literal.</pre>
+----
+===_literal-appropriate?_===
+<pre>When passed a set of bound vars, determines if this literal can be
+used during this point of a SIP computation.</pre>
+----
+===_literal-columns_===
+<pre>Return the column names this applies to</pre>
+----
+===(_literal-magic?_ lit)===
+<pre>Is this literal magic?</pre>
+----
+===_literal-predicate_===
+<pre>Return the predicate/relation this conditional operates over</pre>
+----
+===_literal-vars_===
+<pre>Returns the logic vars used by this literal</pre>
+----
+===(_magic-literal_ l)===
+<pre>Create a magic version of this adorned predicate.</pre>
+----
+===(_negated-literal_ l)===
+<pre>Given a literal l, return a negated version</pre>
+----
+===(_negated?_ l)===
+<pre>Is this literal a negated literal?</pre>
+----
+===_negative-vars_===
+<pre>Returns the logic vars used in a negative position</pre>
+----
+===_positive-vars_===
+<pre>Returns the logic vars used in a positive position</pre>
+----
+===(_positive?_ l)===
+<pre>Is this a positive literal?</pre>
+----
+===(_project-literal_ db lit bs)===
+===(_project-literal_ db lit bs var?)===
+<pre>Project a stream of bindings onto a literal/relation. Returns a new
+db.</pre>
 ==Namespace clojure.contrib.datalog.magic==
 ----
 ===(_adorn-query_ q)===
-Adorn a query
+<pre>Adorn a query</pre>
 ----
 ===(_adorn-rules-set_ rs q)===
-Adorns the given rules-set for the given query.  (rs) is a
-rules-set, (q) is an adorned query.
+<pre>Adorns the given rules-set for the given query.  (rs) is a
+rules-set, (q) is an adorned query.</pre>
 ----
 ===(_build-partial-tuple_ q bindings)===
-Given a query and a set of bindings, build a partial tuple needed
-to extract the relation from the database.
+<pre>Given a query and a set of bindings, build a partial tuple needed
+to extract the relation from the database.</pre>
 ----
 ===(_magic-transform_ rs)===
 ===(_magic-transform_ rs i-preds)===
-Return a magic transformation of an adorned rules-set (rs).  The
+<pre>Return a magic transformation of an adorned rules-set (rs).  The
 (i-preds) are the predicates of the intension database.  These
-default to the predicates within the rules-set.
+default to the predicates within the rules-set.</pre>
 ----
 ===(_seed-predicate-for-insertion_ q)===
-Given a query, return the predicate to use for database insertion.
+<pre>Given a query, return the predicate to use for database insertion.</pre>
 ----
 ===(_seed-relation_ q)===
-Given a magic form of a query, give back the literal form of its seed
-relation
+<pre>Given a magic form of a query, give back the literal form of its seed
+relation</pre>
 ----
 ===(_seed-rule_ q)===
-Given an adorned query, give back its seed rule
-==Namespace clojure.contrib.datalog.softstrat==
-----
-===(_build-soft-strat-work-plan_ rs q)===
-Return a work plan for the given rules-set and query
-----
-===(_get-all-relations_ ws)===
-Return a set of all relation names defined in this workplan
+<pre>Given an adorned query, give back its seed rule</pre>
 ==Namespace clojure.contrib.datalog.rules==
 ----
 ===(_<-_ hd & body)===
 ====Macro====
-Build a datalog rule.  Like this:
+<pre>Build a datalog rule.  Like this:
 
-(<- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if > ?y ?z))
+(<- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if > ?y ?z))</pre>
 ----
 ===(_?-_ & q)===
 ====Macro====
-Define a datalog query
+<pre>Define a datalog query</pre>
 ----
 ===(_all-predicates_ rs)===
-Given a rules-set, return all defined predicates
+<pre>Given a rules-set, return all defined predicates</pre>
 ----
 ===(_apply-rule_ db rule)===
 ===(_apply-rule_ db-1 db-2 rule)===
-Apply the rule against db-1, adding the results to the appropriate
-relation in db-2.  The relation will be created if needed.
+<pre>Apply the rule against db-1, adding the results to the appropriate
+relation in db-2.  The relation will be created if needed.</pre>
 ----
 ===(_compute-sip_ bindings i-preds rule)===
-Given a set of bound column names, return an adorned sip for this
+<pre>Given a set of bound column names, return an adorned sip for this
 rule.  A set of intensional predicates should be provided to
-determine what should be adorned.
+determine what should be adorned.</pre>
 ----
 ===(_display-query_ query)===
-Return a query in a readable format.
+<pre>Return a query in a readable format.</pre>
 ----
 ===(_display-rule_ rule)===
-Return the rule in a readable format.
+<pre>Return the rule in a readable format.</pre>
 ----
 ===(_is-safe?_ rule)===
-Is the rule safe according to the datalog protocol?
+<pre>Is the rule safe according to the datalog protocol?</pre>
 ----
 ===(_make-rules-set_ rs)===
-Given an existing set of rules, make it a 'rules-set' for
-printing.
+<pre>Given an existing set of rules, make it a 'rules-set' for
+printing.</pre>
 ----
 ===(_non-base-rules_ rs)===
-Return a collection of rules that depend, somehow, on other rules
+<pre>Return a collection of rules that depend, somehow, on other rules</pre>
 ----
 ===(_predicate-map_ rs)===
-Given a rules-set, return a map of rules keyed by their predicates.
-Each value will be a set of rules.
+<pre>Given a rules-set, return a map of rules keyed by their predicates.
+Each value will be a set of rules.</pre>
 ----
 ===(_return-rule-data_ rule)===
-Returns an untypted rule that will be fully printed
+<pre>Returns an untypted rule that will be fully printed</pre>
 ----
 ===(_rules-set_ & rules)===
-Given a collection of rules return a rules set
+<pre>Given a collection of rules return a rules set</pre>
+==Namespace clojure.contrib.datalog.softstrat==
+----
+===(_build-soft-strat-work-plan_ rs q)===
+<pre>Return a work plan for the given rules-set and query</pre>
+----
+===(_get-all-relations_ ws)===
+<pre>Return a set of all relation names defined in this workplan</pre>
 ==Namespace clojure.contrib.datalog.util==
 ----
 ===(_is-query-var?_ sym)===
-Is this a query variable: e.g. a symbol prefixed with ??
+<pre>Is this a query variable: e.g. a symbol prefixed with ??</pre>
 ----
 ===(_is-var?_ sym)===
-Is this a logic variable: e.g. a symbol prefixed with a ?
+<pre>Is this a logic variable: e.g. a symbol prefixed with a ?</pre>
 ----
 ===(_keys-to-vals_ m ks)===
-Given a map and a collection of keys, return the collection of vals
+<pre>Given a map and a collection of keys, return the collection of vals</pre>
 ----
 ===(_map-values_ f hash)===
-Like map, but works over the values of a hash map
+<pre>Like map, but works over the values of a hash map</pre>
 ----
 ===(_preduce_ f data)===
-Similar to merge-with, but the contents of each key are merged in
+<pre>Similar to merge-with, but the contents of each key are merged in
 parallel using f.
 
 f - a function of 2 arguments.
-data - a collection of hashes.
+data - a collection of hashes.</pre>
 ----
 ===(_reverse-map_ m)===
-Reverse the keys/values of a map
+<pre>Reverse the keys/values of a map</pre>
 ----
 ===(_trace-datalog_ & body)===
 ====Macro====
-If `*`test-datalog`*` is set to true, run the enclosed commands
-==Namespace clojure.contrib.datalog.literals==
-----
-===_adorned-literal_===
-When passed a set of bound columns, returns the adorned literal
-----
-===(_build-atom_ f type)===
-Returns an unevaluated expression (to be used in a macro) of an
-atom.
-----
-===_build-literal_===
-(Returns an unevaluated expression (to be used in macros) of a
-literal.
-----
-===(_build-seed-bindings_ s)===
-Given a seed literal, already adorned and in magic form, convert
-its bound constants to new variables.
-----
-===(_delta-literal_ l)===
-Given a literal l, return a delta version
-----
-===_display-literal_===
-Converts a struct representing a literal to a normal list
-----
-===(_get-adorned-bindings_ pred)===
-Get the bindings from this adorned literal.
-----
-===(_get-base-predicate_ pred)===
-Get the base predicate from this predicate.
-----
-===_get-cs-from-vs_===
-From a set of vars, get the columns
-----
-===_get-self-bound-cs_===
-Get the columns that are bound withing the literal.
-----
-===_get-vs-from-cs_===
-From a set of columns, return the vars
-----
-===_join-literal_===
-Given a database (db), a literal (lit) and a seq of bindings (bs),
-return a new seq of bindings by joining this literal.
-----
-===_literal-appropriate?_===
-When passed a set of bound vars, determines if this literal can be
-used during this point of a SIP computation.
-----
-===_literal-columns_===
-Return the column names this applies to
-----
-===(_literal-magic?_ lit)===
-Is this literal magic?
-----
-===_literal-predicate_===
-Return the predicate/relation this conditional operates over
-----
-===_literal-vars_===
-Returns the logic vars used by this literal
-----
-===(_magic-literal_ l)===
-Create a magic version of this adorned predicate.
-----
-===(_negated-literal_ l)===
-Given a literal l, return a negated version
-----
-===(_negated?_ l)===
-Is this literal a negated literal?
-----
-===_negative-vars_===
-Returns the logic vars used in a negative position
-----
-===_positive-vars_===
-Returns the logic vars used in a positive position
-----
-===(_positive?_ l)===
-Is this a positive literal?
-----
-===(_project-literal_ db lit bs)===
-===(_project-literal_ db lit bs var?)===
-Project a stream of bindings onto a literal/relation. Returns a new
-db.
-==Namespace clojure.contrib.datalog.database==
-----
-===(_add-index_ db name key)===
-Adds an index to an empty relation named name
-----
-===(_add-relation_ db name keys)===
-Adds a relation to the database
-----
-===(_add-tuple_ db rel-name tuple)===
-===(_add-tuple_ rel tuple)===
-Two forms:
-
-[db relation-name tuple] adds tuple to the named relation.  Returns
-the new database.
-
-[rel tuple] adds to the relation object.  Returns the new relation.
-----
-===(_add-tuples_ db & tupls)===
-Adds a collection of tuples to the db, as
-(add-tuples db
-[:rel-name :key-1 1 :key-2 2]
-[:rel-name :key-1 2 :key-2 3])
-----
-===(_any-match?_ db rn pt)===
-Finds if there are any matching records for the partial tuple
-----
-===(_database-counts_ db)===
-Returns a map with the count of elements in each relation.
-----
-===(_database-merge_ dbs)===
-Merges databases together
-----
-===(_database-merge-parallel_ dbs)===
-Merges databases together in parallel
-----
-===(_datalog-relation_ schema data indexes)===
-Creates a relation
-----
-===(_ensure-relation_ db name keys indexes)===
-If the database lacks the named relation, add it
-----
-===(_get-relation_ db rel-name)===
-Get a relation object by name
-----
-===(_make-database_ & commands)===
-====Macro====
-Makes a database, like this
-(make-database
-(relation :fred [:mary :sue])
-(index :fred :mary)
-(relation :sally [:jen :becky])
-(index :sally :jen)
-(index :sally :becky))
-----
-===(_merge-relations_ r1 r2)===
-Merges two relations
-----
-===(_remove-tuple_ db rel-name tuple)===
-===(_remove-tuple_ rel tuple)===
-Two forms:
-
-[db relation-name tuple] removes the tuple from the named relation,
-returns a new database.
-
-[rel tuple] removes the tuple from the relation.  Returns the new
-relation.
-----
-===(_replace-relation_ db rel-name rel)===
-Add or replace a fully constructed relation object to the database.
-----
-===(_select_ db rn pt)===
-finds all matching tuples to the partial tuple (pt) in the relation named (rn)
+<pre>If `*`test-datalog`*` is set to true, run the enclosed commands</pre>

@@ -1,4 +1,5 @@
 #summary walk API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,44 +22,44 @@ Shortcuts:
 
 ----
 ===(_keywordize-keys_ m)===
-Recursively transforms all map keys from strings to keywords.
+<pre>Recursively transforms all map keys from strings to keywords.</pre>
 ----
 ===(_macroexpand-all_ form)===
-Recursively performs all possible macroexpansions in form.
+<pre>Recursively performs all possible macroexpansions in form.</pre>
 ----
 ===(_postwalk_ f form)===
-Performs a depth-first, post-order traversal of form.  Calls f on
+<pre>Performs a depth-first, post-order traversal of form.  Calls f on
 each sub-form, uses f's return value in place of the original.
 Recognizes all Clojure data structures except sorted-map-by.
-Consumes seqs as with doall.
+Consumes seqs as with doall.</pre>
 ----
 ===(_postwalk-demo_ form)===
-Demonstrates the behavior of postwalk by printing each form as it is
-walked.  Returns form.
+<pre>Demonstrates the behavior of postwalk by printing each form as it is
+walked.  Returns form.</pre>
 ----
 ===(_postwalk-replace_ smap form)===
-Recursively transforms form by replacing keys in smap with their
+<pre>Recursively transforms form by replacing keys in smap with their
 values.  Like clojure/replace but works on any data structure.  Does
-replacement at the leaves of the tree first.
+replacement at the leaves of the tree first.</pre>
 ----
 ===(_prewalk_ f form)===
-Like postwalk, but does pre-order traversal.
+<pre>Like postwalk, but does pre-order traversal.</pre>
 ----
 ===(_prewalk-demo_ form)===
-Demonstrates the behavior of prewalk by printing each form as it is
-walked.  Returns form.
+<pre>Demonstrates the behavior of prewalk by printing each form as it is
+walked.  Returns form.</pre>
 ----
 ===(_prewalk-replace_ smap form)===
-Recursively transforms form by replacing keys in smap with their
+<pre>Recursively transforms form by replacing keys in smap with their
 values.  Like clojure/replace but works on any data structure.  Does
-replacement at the root of the tree first.
+replacement at the root of the tree first.</pre>
 ----
 ===(_stringify-keys_ m)===
-Recursively transforms all map keys from keywords to strings.
+<pre>Recursively transforms all map keys from keywords to strings.</pre>
 ----
 ===(_walk_ inner outer form)===
-Traverses form, an arbitrary data structure.  inner and outer are
+<pre>Traverses form, an arbitrary data structure.  inner and outer are
 functions.  Applies inner to each element of form, building up a
 data structure of the same type, then applies outer to the result.
 Recognizes all Clojure data structures except sorted-map-by.
-Consumes seqs as with doall.
+Consumes seqs as with doall.</pre>

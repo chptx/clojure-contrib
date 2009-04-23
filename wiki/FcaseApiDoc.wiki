@@ -1,4 +1,5 @@
 #summary fcase API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,14 +23,14 @@ Shortcuts:
 ----
 ===(_case_ test-value & clauses)===
 ====Macro====
-Like cond, but test-value is compared against the value of each
+<pre>Like cond, but test-value is compared against the value of each
 test expression with =.  If they are equal, executes the "body"
 expression.  Optional last expression is executed if none of the
-test expressions match.
+test expressions match.</pre>
 ----
 ===(_fcase_ compare-fn case-value & test-expr-clauses)===
 ====Macro====
-Generic switch/case macro.  'fcase' is short for 'function case'.
+<pre>Generic switch/case macro.  'fcase' is short for 'function case'.
 
 The 'compare-fn' is a fn of two arguments.
 
@@ -52,20 +53,20 @@ See specific forms of this macro in 'case' and 're-case'.
 
 The test expressions in 'fcase' are always evaluated linearly, in
 order.  For a large number of case expressions it may be more
-efficient to use a hash lookup.
+efficient to use a hash lookup.</pre>
 ----
 ===(_in-case_ test-value & clauses)===
 ====Macro====
-Like case, but test expressions are sequences.  The test expression
+<pre>Like case, but test expressions are sequences.  The test expression
 is true if any item in the sequence is equal (tested with '=') to
-the test value.
+the test value.</pre>
 ----
 ===(_instance-case_ test-value & clauses)===
 ====Macro====
-Like case, but the test expressions are Java class names, tested with
-'instance?'.
+<pre>Like case, but the test expressions are Java class names, tested with
+'instance?'.</pre>
 ----
 ===(_re-case_ test-value & clauses)===
 ====Macro====
-Like case, but the test expressions are regular expressions, tested
-with re-find.
+<pre>Like case, but the test expressions are regular expressions, tested
+with re-find.</pre>

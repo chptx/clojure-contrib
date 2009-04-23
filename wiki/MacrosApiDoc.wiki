@@ -1,4 +1,5 @@
 #summary macros API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,11 +23,11 @@ Shortcuts:
 ----
 ===(_const_ expr)===
 ====Macro====
-Evaluate the constant expression expr at compile time.
+<pre>Evaluate the constant expression expr at compile time.</pre>
 ----
 ===(_letfn-_ fn-bindings & exprs)===
 ====Macro====
-OBSOLETE: use clojure.core/letfn
+<pre>OBSOLETE: use clojure.core/letfn
 A variant of let for local function definitions. fn-bindings consists
-of name/args/body triples, with (letfn [name args body] ...)
-being equivalent to (let [name (fn name args body)] ...).
+of name/args/body triples, with (letfn `[`name args body`]` ...)
+being equivalent to (let `[`name (fn name args body)`]` ...).</pre>

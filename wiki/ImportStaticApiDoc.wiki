@@ -1,4 +1,5 @@
 #summary import-static API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,7 +23,7 @@ Shortcuts:
 ----
 ===(_import-static_ class & fields-and-methods)===
 ====Macro====
-Imports the named static fields and/or static methods of the class
+<pre>Imports the named static fields and/or static methods of the class
 as (private) symbols in the current namespace.
 
 Example: 
@@ -35,4 +36,4 @@ user=> (sqrt 16)
 
 Note: The class name must be fully qualified, even if it has already
 been imported.  Static methods are defined as MACROS, not
-first-class fns.
+first-class fns.</pre>

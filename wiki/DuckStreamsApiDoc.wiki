@@ -1,4 +1,5 @@
 #summary duck-streams API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,20 +22,20 @@ Shortcuts:
 
 ----
 ===(_file_ & args)===
-Concatenates args as strings returns a java.io.File.  Replaces all
+<pre>Concatenates args as strings returns a java.io.File.  Replaces all
 / and \ with File/separatorChar.  Replaces ~ at the start of the
-path with the user.home system property.
+path with the user.home system property.</pre>
 ----
 ===(_pwd_)===
-Returns current working directory as a String.  (Like UNIX 'pwd'.)
-Note: In Java, you cannot change the current working directory.
+<pre>Returns current working directory as a String.  (Like UNIX 'pwd'.)
+Note: In Java, you cannot change the current working directory.</pre>
 ----
 ===(_read-lines_ f)===
-Like clojure.core/line-seq but opens f with reader.  Automatically
-closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.
+<pre>Like clojure.core/line-seq but opens f with reader.  Automatically
+closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.</pre>
 ----
 ===_reader_===
-Attempts to coerce its argument into an open
+<pre>Attempts to coerce its argument into an open
 java.io.BufferedReader.  Argument may be an instance of Reader,
 BufferedReader, InputStream, File, URI, URL, or String.
 
@@ -43,29 +44,29 @@ as a local file name.  URIs with a 'file' protocol are converted to
 local file names.  Uses `*`default-encoding`*` as the text encoding.
 
 Should be used inside with-open to ensure the Reader is properly
-closed.
+closed.</pre>
 ----
 ===(_slurp`*`_ f)===
-Like clojure.core/slurp but opens f with reader.
+<pre>Like clojure.core/slurp but opens f with reader.</pre>
 ----
 ===(_spit_ f content)===
-Opposite of slurp.  Opens f with writer, writes content, then
-closes f.
+<pre>Opposite of slurp.  Opens f with writer, writes content, then
+closes f.</pre>
 ----
 ===(_with-in-reader_ f & body)===
 ====Macro====
-Opens a PushbackReader on f, binds it to `*`in`*`, and evaluates body.
+<pre>Opens a PushbackReader on f, binds it to `*`in`*`, and evaluates body.</pre>
 ----
 ===(_with-out-writer_ f & body)===
 ====Macro====
-Opens a writer on f, binds it to `*`out`*`, and evalutes body.
+<pre>Opens a writer on f, binds it to `*`out`*`, and evalutes body.</pre>
 ----
 ===(_write-lines_ f lines)===
-Writes lines (a seq) to f, separated by newlines.  f is opened with
-writer.
+<pre>Writes lines (a seq) to f, separated by newlines.  f is opened with
+writer.</pre>
 ----
 ===_writer_===
-Attempts to coerce its argument into an open java.io.PrintWriter
+<pre>Attempts to coerce its argument into an open java.io.PrintWriter
 wrapped around a java.io.BufferedWriter.  Argument may be an
 instance of Writer, PrintWriter, BufferedWriter, OutputStream, File,
 URI, URL, or String.
@@ -75,4 +76,4 @@ as a local file name.  URIs with a 'file' protocol are converted to
 local file names.
 
 Should be used inside with-open to ensure the Writer is properly
-closed.
+closed.</pre>

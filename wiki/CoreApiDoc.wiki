@@ -1,4 +1,5 @@
 #summary core API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -23,17 +24,17 @@ Shortcuts:
 ===(_-?>_ x form)===
 ===(_-?>_ x form & forms)===
 ====Macro====
-Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+<pre>Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
 (-?> "foo" .toUpperCase (.substring 1)) returns "OO"
 (-?> nil .toUpperCase (.substring 1)) returns nil
-
+</pre>
 ----
 ===(_.?._ x form)===
 ===(_.?._ x form & forms)===
 ====Macro====
-Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+<pre>Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
 (.?. "foo" .toUpperCase (.substring 1)) returns "OO"
 (.?. nil .toUpperCase (.substring 1)) returns nil
-
+</pre>

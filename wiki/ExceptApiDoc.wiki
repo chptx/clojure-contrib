@@ -1,4 +1,5 @@
 #summary except API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,24 +22,24 @@ Shortcuts:
 
 ----
 ===(_throw-arg_ & args)===
-Throws an IllegalArgumentException. All arguments are optional:
+<pre>Throws an IllegalArgumentException. All arguments are optional:
 
 format? format-args`*`
 
 - format is a format string for clojure/format
 - format-args are objects that correspond to format specifiers in
-format.
+format.</pre>
 ----
 ===(_throw-if_ test & args)===
-Throws an Exception or Error if test is true. args are those documented
-for throwf.
+<pre>Throws an Exception or Error if test is true. args are those documented
+for throwf.</pre>
 ----
 ===(_throw-if-not_ test & args)===
-Throws an Exception or Error if test is false. args are those documented
-for throwf.
+<pre>Throws an Exception or Error if test is false. args are those documented
+for throwf.</pre>
 ----
 ===(_throwf_ & args)===
-Throws an Exception or Error with an optional message formatted using
+<pre>Throws an Exception or Error with an optional message formatted using
 clojure/format. All arguments are optional:
 
 class? format? format-args`*`
@@ -47,4 +48,4 @@ class? format? format-args`*`
 Throwable
 - format is a format string for clojure/format
 - format-args are objects that correspond to format specifiers in
-format.
+format.</pre>

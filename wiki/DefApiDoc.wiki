@@ -1,4 +1,5 @@
 #summary def API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -23,50 +24,50 @@ Shortcuts:
 ===(_defalias_ name orig)===
 ===(_defalias_ name orig doc)===
 ====Macro====
-Defines an alias for a var: a new var with the same root binding (if
+<pre>Defines an alias for a var: a new var with the same root binding (if
 any) and similar metadata. The metadata of the alias is its initial
-metadata (as provided by def) merged into the metadata of the original.
+metadata (as provided by def) merged into the metadata of the original.</pre>
 ----
 ===(_defhinted_ sym init)===
 ====Macro====
-Defines a var with a type hint matching the class of the given
+<pre>Defines a var with a type hint matching the class of the given
 init.  Be careful about using any form of 'def' or 'binding' to a
-value of a different type.  See http://paste.lisp.org/display/73344
+value of a different type.  See http://paste.lisp.org/display/73344</pre>
 ----
 ===(_defmacro-_ name & decls)===
 ====Macro====
-Same as defmacro but yields a private definition
+<pre>Same as defmacro but yields a private definition</pre>
 ----
 ===(_defonce-_ name expr)===
 ===(_defonce-_ name expr doc)===
 ====Macro====
-Same as defonce but yields a private definition
+<pre>Same as defonce but yields a private definition</pre>
 ----
 ===(_defstruct-_ name & decls)===
 ====Macro====
-Same as defstruct but yields a private definition
+<pre>Same as defstruct but yields a private definition</pre>
 ----
 ===(_defunbound_ name)===
 ===(_defunbound_ name doc)===
 ====Macro====
-Defines an unbound var with optional doc string
+<pre>Defines an unbound var with optional doc string</pre>
 ----
 ===(_defunbound-_ name & decls)===
 ====Macro====
-Same as defunbound but yields a private definition
+<pre>Same as defunbound but yields a private definition</pre>
 ----
 ===(_defvar_ name)===
 ===(_defvar_ name init)===
 ===(_defvar_ name init doc)===
 ====Macro====
-Defines a var with an optional intializer and doc string
+<pre>Defines a var with an optional intializer and doc string</pre>
 ----
 ===(_defvar-_ name & decls)===
 ====Macro====
-Same as defvar but yields a private definition
+<pre>Same as defvar but yields a private definition</pre>
 ----
 ===(_name-with-attributes_ name macro-args)===
-To be used in macro definitions.
+<pre>To be used in macro definitions.
 Handles optional docstrings and attribute maps for a name to be defined
 in a list of macro arguments. If the first macro argument is a string,
 it is added as a docstring to name and removed from the macro argument
@@ -74,4 +75,4 @@ list. If afterwards the first macro argument is a map, its entries are
 added to the name's metadata map and the map is removed from the
 macro argument list. The return value is a vector containing the name
 with its extended metadata map and the list of unprocessed macro
-arguments.
+arguments.</pre>

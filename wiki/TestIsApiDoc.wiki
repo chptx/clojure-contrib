@@ -1,4 +1,5 @@
 #summary test-is API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -24,18 +25,18 @@ Variables and Functions in test-is.tap:
 
 ----
 ===_`*`load-tests`*`_===
-True by default.  If set to false, no test functions will
+<pre>True by default.  If set to false, no test functions will
 be created by deftest, set-test, or with-test.  Use this to omit
-tests when compiling or loading production code.
+tests when compiling or loading production code.</pre>
 ----
 ===_`*`stack-trace-depth`*`_===
-The maximum depth of stack traces to print when an Exception
+<pre>The maximum depth of stack traces to print when an Exception
 is thrown during a test.  Defaults to nil, which means print the 
-complete stack trace.
+complete stack trace.</pre>
 ----
 ===(_are_ expr & args)===
 ====Macro====
-Checks multiple assertions with a template expression.
+<pre>Checks multiple assertions with a template expression.
 See clojure.contrib.template/do-template for an explanation of
 templates.
 
@@ -46,26 +47,26 @@ Expands to:
 (do (is (= 2 (+ 1 1)))
 (is (= 4 (`*` 2 2))))
 
-Note: This breaks some reporting features, such as line numbers.
+Note: This breaks some reporting features, such as line numbers.</pre>
 ----
 ===(_assert-any_ msg form)===
-Returns generic assertion code for any test, including macros, Java
-method calls, or isolated symbols.
+<pre>Returns generic assertion code for any test, including macros, Java
+method calls, or isolated symbols.</pre>
 ----
 ===(_assert-predicate_ msg form)===
-Returns generic assertion code for any functional predicate.  The
+<pre>Returns generic assertion code for any functional predicate.  The
 'expected' argument to 'report' will contains the original form, the
 'actual' argument will contain the form with all its sub-forms
 evaluated.  If the predicate returns false, the 'actual' form will
-be wrapped in (not...).
+be wrapped in (not...).</pre>
 ----
 ===(_compose-fixtures_ f1 f2)===
-Composes two fixture functions, creating a new fixture function
-that combines their behavior.
+<pre>Composes two fixture functions, creating a new fixture function
+that combines their behavior.</pre>
 ----
 ===(_deftest_ name & body)===
 ====Macro====
-Defines a test function with no arguments.  Test functions may call
+<pre>Defines a test function with no arguments.  Test functions may call
 other tests, so tests may be composed.  If you compose tests, you
 should also define a function named test-ns-hook; run-tests will
 call test-ns-hook instead of testing all vars.
@@ -74,31 +75,31 @@ Note: Actually, the test body goes in the :test metadata on the var,
 and the real function (the value of the var) calls test-var on
 itself.
 
-When `*`load-tests`*` is false, deftest is ignored.
+When `*`load-tests`*` is false, deftest is ignored.</pre>
 ----
 ===(_deftest-_ name & body)===
 ====Macro====
-Like deftest but creates a private var.
+<pre>Like deftest but creates a private var.</pre>
 ----
 ===(_file-position_ n)===
-Returns a vector [filename line-number] for the nth call up the
-stack.
+<pre>Returns a vector `[`filename line-number`]` for the nth call up the
+stack.</pre>
 ----
 ===(_function?_ x)===
-Returns true if argument is a function or a symbol that resolves to
-a function (not a macro).
+<pre>Returns true if argument is a function or a symbol that resolves to
+a function (not a macro).</pre>
 ----
 ===(_get-possibly-unbound-var_ v)===
-Like var-get but returns nil if the var is unbound.
+<pre>Like var-get but returns nil if the var is unbound.</pre>
 ----
 ===(_inc-report-counter_ name)===
-Increments the named counter in `*`report-counters`*`, a ref to a map.
-Does nothing if `*`report-counters`*` is nil.
+<pre>Increments the named counter in `*`report-counters`*`, a ref to a map.
+Does nothing if `*`report-counters`*` is nil.</pre>
 ----
 ===(_is_ form)===
 ===(_is_ form msg)===
 ====Macro====
-Generic assertion macro.  'form' is any predicate test.
+<pre>Generic assertion macro.  'form' is any predicate test.
 'msg' is an optional message to attach to the assertion.
 
 Example: (is (= 4 (+ 2 2)) "Two plus two should be 4")
@@ -110,18 +111,18 @@ body, fails if not; then returns the thing thrown.
 
 (is (thrown-with-msg? c re body)) checks that an instance of c is
 thrown AND that the message on the exception matches (with
-re-matches) the regular expression re.
+re-matches) the regular expression re.</pre>
 ----
 ===(_join-fixtures_ fixtures)===
-Composes a collection of fixtures, in order.  Always returns a valid
-fixture function, even if the collection is empty.
+<pre>Composes a collection of fixtures, in order.  Always returns a valid
+fixture function, even if the collection is empty.</pre>
 ----
 ===(_print-results_ r)===
-Prints formatted results message based on the reported counts
-returned by test-ns.
+<pre>Prints formatted results message based on the reported counts
+returned by test-ns.</pre>
 ----
 ===_report_===
-Handles the result of a single assertion.  'event' is one
+<pre>Handles the result of a single assertion.  'event' is one
 of :pass, :fail, or :error.  'msg' is a comment string associated
 with the assertion.  'expected' and 'actual' are quoted forms,
 which will be rendered with pr-str.
@@ -130,82 +131,82 @@ Special case: if 'event' is :info, just the 'msg' will be
 printed.
 
 You can rebind this function during testing to plug in your own
-test-reporting framework.
+test-reporting framework.</pre>
 ----
 ===(_run-all-tests_)===
-Runs all tests in all namespaces; prints results.
+<pre>Runs all tests in all namespaces; prints results.</pre>
 ----
 ===(_run-tests_)===
 ===(_run-tests_ & namespaces)===
-Runs all tests in the given namespaces; prints results.
-Defaults to current namespace if none given.
+<pre>Runs all tests in the given namespaces; prints results.
+Defaults to current namespace if none given.</pre>
 ----
 ===(_set-test_ name & body)===
 ====Macro====
-Experimental.
+<pre>Experimental.
 Sets :test metadata of the named var to a fn with the given body.
 The var must already exist.  Does not modify the value of the var.
 
-When `*`load-tests`*` is false, set-test is ignored.
+When `*`load-tests`*` is false, set-test is ignored.</pre>
 ----
 ===(_test-all-vars_ ns)===
-Calls test-var on every var interned in the namespace, with fixtures.
+<pre>Calls test-var on every var interned in the namespace, with fixtures.</pre>
 ----
 ===(_test-ns_ ns)===
-If the namespace defines a function named test-ns-hook, calls that.
+<pre>If the namespace defines a function named test-ns-hook, calls that.
 Otherwise, calls test-all-vars on the namespace.  'ns' is a
 namespace object or a symbol.
 
 Internally binds `*`report-counters`*` to a ref initialized to
 `*`inital-report-counters`*`.  Returns the final, dereferenced state of
-`*`report-counters`*`.
+`*`report-counters`*`.</pre>
 ----
 ===(_test-var_ v)===
-If v has a function in its :test metadata, calls that function,
-with `*`testing-vars`*` bound to (conj `*`testing-vars`*` v).
+<pre>If v has a function in its :test metadata, calls that function,
+with `*`testing-vars`*` bound to (conj `*`testing-vars`*` v).</pre>
 ----
 ===(_testing_ string & body)===
 ====Macro====
-Adds a new string to the list of testing contexts.  May be nested,
-but must occur inside a test function (deftest).
+<pre>Adds a new string to the list of testing contexts.  May be nested,
+but must occur inside a test function (deftest).</pre>
 ----
 ===(_testing-contexts-str_)===
-Returns a string representation of the current test context. Joins
-strings in `*`testing-contexts`*` with spaces.
+<pre>Returns a string representation of the current test context. Joins
+strings in `*`testing-contexts`*` with spaces.</pre>
 ----
 ===(_testing-vars-str_)===
-Returns a string representation of the current test.  Renders names
+<pre>Returns a string representation of the current test.  Renders names
 in `*`testing-vars`*` as a list, then the source file and line of
-current assertion.
+current assertion.</pre>
 ----
 ===(_try-expr_ msg form)===
 ====Macro====
-Used by the 'is' macro to catch unexpected exceptions.
-You don't call this.
+<pre>Used by the 'is' macro to catch unexpected exceptions.
+You don't call this.</pre>
 ----
 ===(_with-test_ definition & body)===
 ====Macro====
-Takes any definition form (that returns a Var) as the first argument.
+<pre>Takes any definition form (that returns a Var) as the first argument.
 Remaining body goes in the :test metadata function for that Var.
 
 When `*`load-tests`*` is false, only evaluates the definition, ignoring
-the tests.
+the tests.</pre>
 ==Namespace clojure.contrib.test-is.tap==
 ----
 ===(_print-tap-diagnostic_ data)===
-Prints a TAP diagnostic line.  data is a (possibly multi-line)
-string.
+<pre>Prints a TAP diagnostic line.  data is a (possibly multi-line)
+string.</pre>
 ----
 ===(_print-tap-fail_ msg)===
-Prints a TAP 'not ok' line.  msg is a string, with no line breaks
+<pre>Prints a TAP 'not ok' line.  msg is a string, with no line breaks</pre>
 ----
 ===(_print-tap-pass_ msg)===
-Prints a TAP 'ok' line.  msg is a string, with no line breaks
+<pre>Prints a TAP 'ok' line.  msg is a string, with no line breaks</pre>
 ----
 ===(_print-tap-plan_ n)===
-Prints a TAP plan line like '1..n'.  n is the number of tests
+<pre>Prints a TAP plan line like '1..n'.  n is the number of tests</pre>
 ----
 ===(_with-tap-output_ & body)===
 ====Macro====
-Execute body with modified test-is reporting functions that produce
-TAP output
+<pre>Execute body with modified test-is reporting functions that produce
+TAP output</pre>

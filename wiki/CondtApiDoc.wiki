@@ -1,4 +1,5 @@
 #summary condt API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,13 +23,13 @@ Shortcuts:
 ----
 ===(_condt_ expr & clauses)===
 ====Macro====
-expr is a template expression (see template), clauses are test/expr
+<pre>expr is a template expression (see template), clauses are test/expr
 pairs like cond.  Evalautes the template on each test value, one at
 a time.  If a test returns logical true, condt evaluates the
 corresponding expr and returns its value.  If none of the tests are
 true, and there are an odd number of clauses, the last clause is
-evaluated, otherwise returns nil.
+evaluated, otherwise returns nil.</pre>
 ----
 ===(_econdt_ expr & clauses)===
 ====Macro====
-Like condt but throws Exception if no tests match.
+<pre>Like condt but throws Exception if no tests match.</pre>

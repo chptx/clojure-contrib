@@ -1,4 +1,5 @@
 #summary repl-utils API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,49 +22,49 @@ Shortcuts:
 
 ----
 ===_`*`local-javadocs`*`_===
-Ref to a list of local paths for Javadoc-generated HTML
-files.
+<pre>Ref to a list of local paths for Javadoc-generated HTML
+files.</pre>
 ----
 ===_`*`remote-javadocs`*`_===
-Ref to a map from package name prefixes to URLs for remote
-Javadocs.
+<pre>Ref to a map from package name prefixes to URLs for remote
+Javadocs.</pre>
 ----
 ===(_add-break-thread!_)===
 ===(_add-break-thread!_ t)===
-Add the given thread to break-threads so that it will be stopped
+<pre>Add the given thread to break-threads so that it will be stopped
 any time the user presses Ctrl-C.  Calls start-handling-break for
-you.  Adds the current thread if none is given.
+you.  Adds the current thread if none is given.</pre>
 ----
 ===(_add-local-javadoc_ path)===
-Adds to the list of local Javadoc paths.
+<pre>Adds to the list of local Javadoc paths.</pre>
 ----
 ===(_add-remote-javadoc_ package-prefix url)===
-Adds to the list of remote Javadoc URLs.  package-prefix is the
-beginning of the package name that has docs at this URL.
+<pre>Adds to the list of remote Javadoc URLs.  package-prefix is the
+beginning of the package name that has docs at this URL.</pre>
 ----
 ===_break-threads_===
-Threads to stop when Ctrl-C is pressed.  See 'add-break-thread!'
+<pre>Threads to stop when Ctrl-C is pressed.  See 'add-break-thread!'</pre>
 ----
 ===(_find-javadoc-url_ classname)===
-Searches for a URL for the given class name.  Tries
-`*`local-javadocs`*` first, then `*`remote-javadocs`*`.  Returns a string.
+<pre>Searches for a URL for the given class name.  Tries
+`*`local-javadocs`*` first, then `*`remote-javadocs`*`.  Returns a string.</pre>
 ----
 ===(_get-source_ x)===
-Returns a string of the source code for the given symbol, if it can
+<pre>Returns a string of the source code for the given symbol, if it can
 find it.  This requires that the symbol resolve to a Var defined in
 a namespace for which the .clj is in the classpath.  Returns nil if
 it can't find the source.  For most REPL usage, 'source' is more
 convenient.
 
-Example: (get-source 'filter)
+Example: (get-source 'filter)</pre>
 ----
 ===(_javadoc_ class-or-object)===
-Opens a browser window displaying the javadoc for the argument.
-Tries `*`local-javadocs`*` first, then `*`remote-javadocs`*`.
+<pre>Opens a browser window displaying the javadoc for the argument.
+Tries `*`local-javadocs`*` first, then `*`remote-javadocs`*`.</pre>
 ----
 ===(_show_ x)===
 ===(_show_ x selector)===
-With one arg prints all static and instance members of x or (class x).
+<pre>With one arg prints all static and instance members of x or (class x).
 Each member is listed with a number which can be given as 'selector'
 to return the member object -- the REPL will print more details for
 that member.
@@ -78,16 +79,16 @@ predicate will be passed a single argument, a map that includes the
 :text that will be printed and the :member object itself, as well as
 all the properies of the member object as translated by 'bean'.
 
-Examples: (show Integer)  (show [])  (show String 23)  (show String "case")
+Examples: (show Integer)  (show `[``]`)  (show String 23)  (show String "case")</pre>
 ----
 ===(_source_ n)===
 ====Macro====
-Prints the source code for the given symbol, if it can find it.
+<pre>Prints the source code for the given symbol, if it can find it.
 This requires that the symbol resolve to a Var defined in a
 namespace for which the .clj is in the classpath.
 
-Example: (source filter)
+Example: (source filter)</pre>
 ----
 ===(_start-handling-break_)===
-Register INT signal handler.  After calling this, Ctrl-C will cause
-all break-threads to be stopped.  See 'add-break-thread!'
+<pre>Register INT signal handler.  After calling this, Ctrl-C will cause
+all break-threads to be stopped.  See 'add-break-thread!'</pre>

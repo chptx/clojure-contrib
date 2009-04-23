@@ -1,4 +1,5 @@
 #summary graph API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,69 +22,69 @@ Shortcuts:
 
 ----
 ===(_add-loops_ g)===
-For each node n, add the edge n->n if not already present.
+<pre>For each node n, add the edge n->n if not already present.</pre>
 ----
 ===(_component-graph_ g)===
 ===(_component-graph_ g sccs)===
-Given a graph, perhaps with cycles, return a reduced graph that is acyclic.
+<pre>Given a graph, perhaps with cycles, return a reduced graph that is acyclic.
 Each node in the new graph will be a set of nodes from the old.
 These sets are the strongly connected components.  Each edge will
-be the union of the corresponding edges of the prior graph.
+be the union of the corresponding edges of the prior graph.</pre>
 ----
 ===(_dependency-list_ g)===
-Similar to a topological sort, this returns a vector of sets. The
+<pre>Similar to a topological sort, this returns a vector of sets. The
 set of nodes at index 0 are independent.  The set at index 1 depend
 on index 0; those at 2 depend on 0 and 1, and so on.  Those withing
 a set have no mutual dependencies.  Assume the input graph (which
-much be acyclic) has an edge a->b when a depends on b.
+much be acyclic) has an edge a->b when a depends on b.</pre>
 ----
 ===(_fixed-point_ data fun max equal)===
-Repeatedly apply fun to data until (equal old-data new-data)
+<pre>Repeatedly apply fun to data until (equal old-data new-data)
 returns true.  If max iterations occur, it will throw an
-exception.  Set max to nil for unlimited iterations.
+exception.  Set max to nil for unlimited iterations.</pre>
 ----
 ===(_get-neighbors_ g n)===
-Get the neighbors of a node.
+<pre>Get the neighbors of a node.</pre>
 ----
 ===(_lazy-walk_ g n)===
 ===(_lazy-walk_ g ns v)===
-Return a lazy sequence of the nodes of a graph starting a node n.  Optionally,
+<pre>Return a lazy sequence of the nodes of a graph starting a node n.  Optionally,
 provide a set of visited notes (v) and a collection of nodes to
-visit (ns).
+visit (ns).</pre>
 ----
 ===(_post-ordered-nodes_ g)===
-Return a sequence of indexes of a post-ordered walk of the graph.
+<pre>Return a sequence of indexes of a post-ordered walk of the graph.</pre>
 ----
 ===(_recursive-component?_ g ns)===
-Is the component (recieved from scc) self recursive?
+<pre>Is the component (recieved from scc) self recursive?</pre>
 ----
 ===(_remove-loops_ g)===
-For each node n, remove any edges n->n.
+<pre>For each node n, remove any edges n->n.</pre>
 ----
 ===(_reverse-graph_ g)===
-Given a directed graph, return another directed graph with the
-order of the edges reversed.
+<pre>Given a directed graph, return another directed graph with the
+order of the edges reversed.</pre>
 ----
 ===(_scc_ g)===
-Returns, as a sequence of sets, the strongly connected components
-of g.
+<pre>Returns, as a sequence of sets, the strongly connected components
+of g.</pre>
 ----
 ===(_self-recursive-sets_ g)===
-Returns, as a sequence of sets, the components of a graph that are
-self-recursive.
+<pre>Returns, as a sequence of sets, the components of a graph that are
+self-recursive.</pre>
 ----
 ===(_stratification-list_ g1 g2)===
-Similar to dependency-list (see doc), except two graphs are
+<pre>Similar to dependency-list (see doc), except two graphs are
 provided.  The first is as dependency-list.  The second (which may
 have cycles) provides a partial-dependency relation.  If node a
 depends on node b (meaning an edge a->b exists) in the second
-graph, node a must be equal or later in the sequence.
+graph, node a must be equal or later in the sequence.</pre>
 ----
 ===(_transitive-closure_ g)===
-Returns the transitive closure of a graph.  The neighbors are lazily computed.
+<pre>Returns the transitive closure of a graph.  The neighbors are lazily computed.
 
 Note: some version of this algorithm return all edges a->a
 regardless of whether such loops exist in the original graph.  This
 version does not.  Loops will be included only if produced by
 cycles in the graph.  If you have code that depends on such
-behavior, call (-> g transitive-closure add-loops)
+behavior, call (-> g transitive-closure add-loops)</pre>

@@ -1,4 +1,5 @@
 #summary sql API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -27,84 +28,84 @@ Variables and Functions in sql.test:
 
 ----
 ===(_connection_)===
-Returns the current database connection (or throws if there is none)
+<pre>Returns the current database connection (or throws if there is none)</pre>
 ----
 ===(_create-table_ name & specs)===
-Creates a table on the open database connection given a table name and
+<pre>Creates a table on the open database connection given a table name and
 specs. Each spec is either a column spec: a vector containing a column
 name and optionally a type and other constraints, or a table-level
 constraint: a vector containing words that express the constraint. All
-words used to describe the table may be supplied as strings or keywords.
+words used to describe the table may be supplied as strings or keywords.</pre>
 ----
 ===(_delete-rows_ table where-params)===
-Deletes rows from a table. where-params is a vector containing a string
+<pre>Deletes rows from a table. where-params is a vector containing a string
 providing the (optionally parameterized) selection criteria followed by
-values for any parameters.
+values for any parameters.</pre>
 ----
 ===(_do-commands_ & commands)===
-Executes SQL commands on the open database connection.
+<pre>Executes SQL commands on the open database connection.</pre>
 ----
 ===(_do-prepared_ sql & param-groups)===
-Executes an (optionally parameterized) SQL prepared statement on the
+<pre>Executes an (optionally parameterized) SQL prepared statement on the
 open database connection. Each param-group is a seq of values for all of
-the parameters.
+the parameters.</pre>
 ----
 ===(_drop-table_ name)===
-Drops a table on the open database connection given its name, a string
-or keyword
+<pre>Drops a table on the open database connection given its name, a string
+or keyword</pre>
 ----
 ===(_find-connection_)===
-Returns the current database connection (or nil if there is none)
+<pre>Returns the current database connection (or nil if there is none)</pre>
 ----
 ===(_insert-records_ table & records)===
-Inserts records into a table. records are maps from strings or
-keywords (identifying columns) to values.
+<pre>Inserts records into a table. records are maps from strings or
+keywords (identifying columns) to values.</pre>
 ----
 ===(_insert-rows_ table & rows)===
-Inserts complete rows into a table. Each row is a vector of values for
-each of the table's columns in order.
+<pre>Inserts complete rows into a table. Each row is a vector of values for
+each of the table's columns in order.</pre>
 ----
 ===(_insert-values_ table column-names & value-groups)===
-Inserts rows into a table with values for specified columns only.
+<pre>Inserts rows into a table with values for specified columns only.
 column-names is a vector of strings or keywords identifying columns. Each
 value-group is a vector containing a values for each column in
 order. When inserting complete rows (all columns), consider using
-insert-rows instead.
+insert-rows instead.</pre>
 ----
 ===(_is-rollback-only_)===
-Returns true if the outermost transaction will rollback rather than
-commit when complete
+<pre>Returns true if the outermost transaction will rollback rather than
+commit when complete</pre>
 ----
 ===(_set-rollback-only_)===
-Marks the outermost transaction such that it will rollback rather than
-commit when complete
+<pre>Marks the outermost transaction such that it will rollback rather than
+commit when complete</pre>
 ----
 ===(_transaction_ & body)===
 ====Macro====
-Evaluates body as a transaction on the open database connection. Any
+<pre>Evaluates body as a transaction on the open database connection. Any
 nested transactions are absorbed into the outermost transaction. By
 default, all database updates are committed together as a group after
 evaluating the outermost body, or rolled back on any uncaught
 exception. If set-rollback-only is called within scope of the outermost
 transaction, the entire transaction will be rolled back rather than
-committed when complete.
+committed when complete.</pre>
 ----
 ===(_update-or-insert-values_ table where-params record)===
-Updates values on selected rows in a table, or inserts a new row when no
+<pre>Updates values on selected rows in a table, or inserts a new row when no
 existing row matches the selection criteria. where-params is a vector
 containing a string providing the (optionally parameterized) selection
 criteria followed by values for any parameters. record is a map from
-strings or keywords (identifying columns) to updated values.
+strings or keywords (identifying columns) to updated values.</pre>
 ----
 ===(_update-values_ table where-params record)===
-Updates values on selected rows in a table. where-params is a vector
+<pre>Updates values on selected rows in a table. where-params is a vector
 containing a string providing the (optionally parameterized) selection
 criteria followed by values for any parameters. record is a map from
-strings or keywords (identifying columns) to updated values.
+strings or keywords (identifying columns) to updated values.</pre>
 ----
 ===(_with-connection_ db-spec & body)===
 ====Macro====
-Evaluates body in the context of a new connection to a database then
+<pre>Evaluates body in the context of a new connection to a database then
 closes the connection. db-spec is a map containing values for one of the
 following parameter sets:
 
@@ -117,24 +118,24 @@ DriverManager:
 :classname   (required) a String, the jdbc driver class name
 :subprotocol (required) a String, the jdbc subprotocol
 :subname     (required) a String, the jdbc subname
-(others)     (optional) passed to the driver as properties.
+(others)     (optional) passed to the driver as properties.</pre>
 ----
 ===(_with-query-results_ results sql-params & body)===
 ====Macro====
-Executes a query, then evaluates body with results bound to a seq of the
+<pre>Executes a query, then evaluates body with results bound to a seq of the
 results. sql-params is a vector containing a string providing
 the (optionally parameterized) SQL query followed by values for any
-parameters.
+parameters.</pre>
 ==Namespace clojure.contrib.sql.internal==
 ----
 ===(_connection`*`_)===
-Returns the current database connection (or throws if there is none)
+<pre>Returns the current database connection (or throws if there is none)</pre>
 ----
 ===(_find-connection`*`_)===
-Returns the current database connection (or nil if there is none)
+<pre>Returns the current database connection (or nil if there is none)</pre>
 ----
-===(_get-connection_ {:keys [datasource username password classname subprotocol subname], :as db-spec})===
-Creates a connection to a database. db-spec is a map containing values
+===(_get-connection_ {:keys `[`datasource username password classname subprotocol subname`]`, :as db-spec})===
+<pre>Creates a connection to a database. db-spec is a map containing values
 for one of the following parameter sets:
 
 DataSource:
@@ -146,75 +147,75 @@ DriverManager:
 :classname   (required) a String, the jdbc driver class name
 :subprotocol (required) a String, the jdbc subprotocol
 :subname     (required) a String, the jdbc subname
-(others)     (optional) passed to the driver as properties.
+(others)     (optional) passed to the driver as properties.</pre>
 ----
 ===(_rollback_)===
 ===(_rollback_ val)===
-Accessor for the rollback flag on the current connection
+<pre>Accessor for the rollback flag on the current connection</pre>
 ----
 ===(_transaction`*`_ func)===
-Evaluates func as a transaction on the open database connection. Any
+<pre>Evaluates func as a transaction on the open database connection. Any
 nested transactions are absorbed into the outermost transaction. By
 default, all database updates are committed together as a group after
 evaluating the outermost body, or rolled back on any uncaught
 exception. If rollback is set within scope of the outermost transaction,
 the entire transaction will be rolled back rather than committed when
-complete.
+complete.</pre>
 ----
 ===(_with-connection`*`_ db-spec func)===
-Evaluates func in the context of a new connection to a database then
-closes the connection.
+<pre>Evaluates func in the context of a new connection to a database then
+closes the connection.</pre>
 ----
-===(_with-query-results`*`_ [sql & params :as sql-params] func)===
-Executes a query, then evaluates func passing in a seq of the results as
+===(_with-query-results`*`_ `[`sql & params :as sql-params`]` func)===
+<pre>Executes a query, then evaluates func passing in a seq of the results as
 an argument. The first argument is a vector containing the (optionally
-parameterized) sql query string followed by values for any parameters.
+parameterized) sql query string followed by values for any parameters.</pre>
 ==Namespace clojure.contrib.sql.test==
 ----
 ===(_create-fruit_)===
-Create a table
+<pre>Create a table</pre>
 ----
 ===(_db-exception_)===
-Demonstrate rolling back a partially completed transaction on exception
+<pre>Demonstrate rolling back a partially completed transaction on exception</pre>
 ----
 ===(_db-get-tables_)===
-Demonstrate getting table info
+<pre>Demonstrate getting table info</pre>
 ----
 ===(_db-grade-a_)===
-Print rows describing all grade a fruit (grade between 90 and 100)
+<pre>Print rows describing all grade a fruit (grade between 90 and 100)</pre>
 ----
 ===(_db-grade-range_ min max)===
-Print rows describing fruit that are within a grade range
+<pre>Print rows describing fruit that are within a grade range</pre>
 ----
 ===(_db-read_)===
-Read the entire fruit table
+<pre>Read the entire fruit table</pre>
 ----
 ===(_db-read-all_)===
-Return all the rows of the fruit table as a vector
+<pre>Return all the rows of the fruit table as a vector</pre>
 ----
 ===(_db-rollback_)===
-Demonstrate a rollback-only trasaction
+<pre>Demonstrate a rollback-only trasaction</pre>
 ----
 ===(_db-update_)===
-Update two fruits as a transaction
+<pre>Update two fruits as a transaction</pre>
 ----
 ===(_db-update-appearance-cost_ name appearance cost)===
-Update the appearance and cost of the named fruit
+<pre>Update the appearance and cost of the named fruit</pre>
 ----
 ===(_db-update-or-insert_ record)===
-Updates or inserts a fruit
+<pre>Updates or inserts a fruit</pre>
 ----
 ===(_db-write_)===
-Write initial values to the database as a transaction
+<pre>Write initial values to the database as a transaction</pre>
 ----
 ===(_drop-fruit_)===
-Drop a table
+<pre>Drop a table</pre>
 ----
 ===(_insert-records-fruit_)===
-Insert records, maps from keys specifying columns to values
+<pre>Insert records, maps from keys specifying columns to values</pre>
 ----
 ===(_insert-rows-fruit_)===
-Insert complete rows
+<pre>Insert complete rows</pre>
 ----
 ===(_insert-values-fruit_)===
-Insert rows with values for only specific columns
+<pre>Insert rows with values for only specific columns</pre>

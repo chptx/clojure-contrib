@@ -1,4 +1,5 @@
 #summary agent-utils API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,8 +23,8 @@ Shortcuts:
 ----
 ===(_capture-and-send_ vars agent action & args)===
 ====Macro====
-Capture the current value of the specified vars and rebind 
+<pre>Capture the current value of the specified vars and rebind 
 them on the agent thread before executing the action.
 
 Example:
-(capture-and-send [`*`out`*`] a f b c)
+(capture-and-send `[``*`out`*``]` a f b c)</pre>

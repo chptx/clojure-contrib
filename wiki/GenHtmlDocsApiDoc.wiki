@@ -1,4 +1,5 @@
 #summary gen-html-docs API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,10 +22,10 @@ Shortcuts:
 
 ----
 ===(_generate-documentation_ libs)===
-Returns a string which is the HTML documentation for the libraries
+<pre>Returns a string which is the HTML documentation for the libraries
 named by libs. Libs is a vector of symbols identifying Clojure
-libraries.
+libraries.</pre>
 ----
 ===(_generate-documentation-to-file_ path libs)===
-Calls generate-documentation on the libraries named by libs and
-emits the generated HTML to the path named by path.
+<pre>Calls generate-documentation on the libraries named by libs and
+emits the generated HTML to the path named by path.</pre>

@@ -1,4 +1,5 @@
 #summary ns-utils API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,27 +23,27 @@ Shortcuts:
 ----
 ===(_dir_ nsname)===
 ====Macro====
-Prints a sorted directory of public vars in a namespace
+<pre>Prints a sorted directory of public vars in a namespace</pre>
 ----
 ===(_docs_ nsname)===
 ====Macro====
-Prints documentation for the public vars in a namespace
+<pre>Prints documentation for the public vars in a namespace</pre>
 ----
 ===(_get-ns_ ns-sym)===
-Returns the namespace named by ns-sym or throws if the
-namespace does not exist
+<pre>Returns the namespace named by ns-sym or throws if the
+namespace does not exist</pre>
 ----
 ===(_ns-vars_ ns)===
-Returns a sorted seq of symbols naming public vars in
-a namespace
+<pre>Returns a sorted seq of symbols naming public vars in
+a namespace</pre>
 ----
 ===(_print-dir_ ns)===
-Prints a sorted directory of public vars in a namespace
+<pre>Prints a sorted directory of public vars in a namespace</pre>
 ----
 ===(_print-docs_ ns)===
-Prints documentation for the public vars in a namespace
+<pre>Prints documentation for the public vars in a namespace</pre>
 ----
 ===(_vars_ nsname)===
 ====Macro====
-Returns a sorted seq of symbols naming public vars in
-a namespace
+<pre>Returns a sorted seq of symbols naming public vars in
+a namespace</pre>

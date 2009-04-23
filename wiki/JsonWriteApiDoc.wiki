@@ -1,4 +1,5 @@
 #summary json.write API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,10 +22,10 @@ Shortcuts:
 
 ----
 ===(_json-str_ x)===
-Converts Clojure data structures to a JSON-formatted string.
+<pre>Converts Clojure data structures to a JSON-formatted string.</pre>
 ----
 ===_print-json_===
-Prints Clojure data types as JSON.  Nil becomes JSON null.
+<pre>Prints Clojure data types as JSON.  Nil becomes JSON null.
 Keywords become strings, without the leading colon.  Maps become
 JSON objects, all other collection types become JSON arrays.
-Strings and numbers print as with pr.
+Strings and numbers print as with pr.</pre>

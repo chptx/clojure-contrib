@@ -1,4 +1,5 @@
 #summary map-utils API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,19 +22,19 @@ Shortcuts:
 
 ----
 ===(_deep-merge-with_ f & maps)===
-Like merge-with, but merges maps recursively, appling the given fn
+<pre>Like merge-with, but merges maps recursively, appling the given fn
 only when there's a non-map at a particular level.
 
 (deepmerge + {:a {:b {:c 1 :d {:x 1 :y 2}} :e 3} :f 4}
 {:a {:b {:c 2 :d {:z 9} :z 3} :e 100}})
--> {:a {:b {:z 3, :c 3, :d {:z 9, :x 1, :y 2}}, :e 103}, :f 4}
+-> {:a {:b {:z 3, :c 3, :d {:z 9, :x 1, :y 2}}, :e 103}, :f 4}</pre>
 ----
 ===(_lazy-get_ map key not-found)===
 ====Macro====
-Like get, but doesn't evaluate not-found unless it is needed.
+<pre>Like get, but doesn't evaluate not-found unless it is needed.</pre>
 ----
 ===(_safe-get_ map key)===
-Like get, but throws an exception if the key is not found.
+<pre>Like get, but throws an exception if the key is not found.</pre>
 ----
 ===(_safe-get-in_ map ks)===
-Like get-in, but throws an exception if any key is not found.
+<pre>Like get-in, but throws an exception if any key is not found.</pre>

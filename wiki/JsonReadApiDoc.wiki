@@ -1,4 +1,5 @@
 #summary json.read API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -23,5 +24,5 @@ Shortcuts:
 ===(_read-json_)===
 ===(_read-json_ stream)===
 ===(_read-json_ stream eof-error? eof-value)===
-Read the next JSON record from stream, which must be an instance of
-java.io.PushbackReader.
+<pre>Read the next JSON record from stream, which must be an instance of
+java.io.PushbackReader.</pre>

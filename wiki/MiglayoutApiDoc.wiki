@@ -1,4 +1,5 @@
 #summary miglayout API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,22 +23,22 @@ Variables and Functions in miglayout.internal:
 ==Namespace clojure.contrib.miglayout.internal==
 ----
 ===(_component?_ x)===
-Returns true if x is a java.awt.Component
+<pre>Returns true if x is a java.awt.Component</pre>
 ----
 ===(_constraint?_ x)===
-Returns true if x is not a keyword-item or component
+<pre>Returns true if x is not a keyword-item or component</pre>
 ----
 ===(_format-constraint_ c)===
-Returns a vector of vectors representing one or more constraints
+<pre>Returns a vector of vectors representing one or more constraints
 separated by commas. Constraints may be specified in Clojure using
-strings, keywords, vectors, maps, and/or sets.
+strings, keywords, vectors, maps, and/or sets.</pre>
 ----
 ===(_format-constraints_ & constraints)===
-Returns a string representing all the constraints for one keyword-item
-or component formatted for miglayout.
+<pre>Returns a string representing all the constraints for one keyword-item
+or component formatted for miglayout.</pre>
 ----
 ===(_parse-item-constraints_ & args)===
-Iterates over args and builds a map containing values associated with
+<pre>Iterates over args and builds a map containing values associated with
 :keywords and :components. The value for :keywords is a map from keyword
 items to constraints strings. The value for :components is a vector of
-vectors each associating a component with its constraints string.
+vectors each associating a component with its constraints string.</pre>

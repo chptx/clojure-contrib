@@ -1,4 +1,5 @@
 #summary javalog API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,41 +22,41 @@ Shortcuts:
 
 ----
 ===_`*`logger`*`_===
-The current java.util.logging.Logger.  By default, the
-global logger, modified by 'with-logger'.
+<pre>The current java.util.logging.Logger.  By default, the
+global logger, modified by 'with-logger'.</pre>
 ----
 ===(_add-log-file_ logger-name filename)===
 ===(_add-log-file_ logger-name filename level)===
-Attaches a log file, using SimpleFormatter, with the given level,
+<pre>Attaches a log file, using SimpleFormatter, with the given level,
 to the named logger.  'level' defaults to ALL.  Note: multiple
 invocations will create multiple log files, with numbers appended to
-the names.
+the names.</pre>
 ----
 ===(_log_ level & strings)===
 ====Macro====
-Logs a message to `*`logger`*`.  'level' is expanded with 'log-level'.
-Example: (log :severe "Bad argument: " object)
+<pre>Logs a message to `*`logger`*`.  'level' is expanded with 'log-level'.
+Example: (log :severe "Bad argument: " object)</pre>
 ----
 ===(_log-level_ level)===
 ====Macro====
-Translates 'level' (a lower-case keyword) into a static field of
+<pre>Translates 'level' (a lower-case keyword) into a static field of
 java.util.logging.Level, by name.  
 
 Example: (log-level :severe)  =>  java.util.logging.Level.SEVERE
 
 If 'level' is not a keyword, it is assumed to be a user-defined
-instance of java.util.logging.Level and is returned unchanged.
+instance of java.util.logging.Level and is returned unchanged.</pre>
 ----
 ===(_root-logger_)===
 ===(_root-logger_ logger)===
-Returns the root Logger instance.
+<pre>Returns the root Logger instance.</pre>
 ----
 ===(_set-console-log-level_ level)===
-Attempts to set the level of the current logger and the root
+<pre>Attempts to set the level of the current logger and the root
 ConsoleHandler to 'level' (a java.util.logging.Level).  Useful for
-debugging at the REPL.
+debugging at the REPL.</pre>
 ----
 ===(_with-logger_ logger-name level & body)===
 ====Macro====
-Executes 'body' with `*`logger`*` bound to a logger with the given name
-and level.  'level' is expanded with 'log-level'.
+<pre>Executes 'body' with `*`logger`*` bound to a logger with the given name
+and level.  'level' is expanded with 'log-level'.</pre>

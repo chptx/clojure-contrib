@@ -1,4 +1,5 @@
 #summary command-line API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -22,4 +23,4 @@ Shortcuts:
 ----
 ===(_with-command-line_ args desc cmdspec & body)===
 ====Macro====
-Bind locals to command-line args.
+<pre>Bind locals to command-line args.</pre>

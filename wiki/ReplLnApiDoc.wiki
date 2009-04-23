@@ -1,4 +1,5 @@
 #summary repl-ln API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,10 +22,10 @@ Shortcuts:
 
 ----
 ===(_print-repl-info_)===
-Prints info about the current repl
+<pre>Prints info about the current repl</pre>
 ----
 ===(_repl_ & options)===
-A repl that supports line numbers. For definitions and evaluations made
+<pre>A repl that supports line numbers. For definitions and evaluations made
 at the repl, the repl-name and line number will be reported as the
 origin. Use set-repl-name and set-repl-prompt to customize the repl name
 and prompt. This repl supports all of the keyword arguments documented
@@ -37,28 +38,28 @@ default: #(clojure.core/print (repl-prompt))
 default: the name-fmt of the parent repl, or "repl-%S"
 
 - :prompt-fmt, Prompt format string
-default: the prompt-fmt of the parent repl, or "%S:%L %N=> "
+default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
 ----
 ===(_repl-info_)===
-Returns a map of info about the current repl
+<pre>Returns a map of info about the current repl</pre>
 ----
 ===(_repl-prompt_)===
-Returns the current repl prompt based on this repl's prompt-fmt
+<pre>Returns the current repl prompt based on this repl's prompt-fmt</pre>
 ----
 ===(_set-repl-name_)===
 ===(_set-repl-name_ name-fmt)===
-Sets the repl name format to the string name-fmt. Include the following
+<pre>Sets the repl name format to the string name-fmt. Include the following
 codes in the name to make the corresponding dynamic values part of it:
 
 %S - repl serial number
 %T - thread id
 %D - nesting depth in this thread
 
-With no arguments, resets the repl name to its default: "repl-%S"
+With no arguments, resets the repl name to its default: "repl-%S"</pre>
 ----
 ===(_set-repl-prompt_)===
 ===(_set-repl-prompt_ prompt-fmt)===
-Sets the repl prompt. Include the following codes in the prompt to make
+<pre>Sets the repl prompt. Include the following codes in the prompt to make
 the corresponding dynamic values part of it:
 
 %S - repl serial number
@@ -67,11 +68,11 @@ the corresponding dynamic values part of it:
 %L - input line number
 %N - namespace name
 
-With no arguments, resets the repl pompt to its default: "%S:%L %N=> "
+With no arguments, resets the repl pompt to its default: "%S:%L %N=> "</pre>
 ----
 ===(_stream-repl_ & options)===
-Repl entry point that provides convenient overriding of input, output,
+<pre>Repl entry point that provides convenient overriding of input, output,
 and err streams via sequential keyword-value pairs. Default values
 for :in, :out, and :err are streams associated with System/in,
 System/out, and System/err using UTF-8 encoding. Also supports all the
-options provided by clojure.contrib.repl-ln/repl.
+options provided by clojure.contrib.repl-ln/repl.</pre>

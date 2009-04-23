@@ -1,4 +1,5 @@
 #summary set API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,13 +22,13 @@ Shortcuts:
 
 ----
 ===(_proper-subset?_ set1 set2)===
-Is s1 a proper subset of s2?
+<pre>Is s1 a proper subset of s2?</pre>
 ----
 ===(_proper-superset?_ set1 set2)===
-Is s1 a proper superset of s2?
+<pre>Is s1 a proper superset of s2?</pre>
 ----
 ===(_subset?_ set1 set2)===
-Is set1 a subset of set2?
+<pre>Is set1 a subset of set2?</pre>
 ----
 ===(_superset?_ set1 set2)===
-Is set1 a superset of set2?
+<pre>Is set1 a superset of set2?</pre>

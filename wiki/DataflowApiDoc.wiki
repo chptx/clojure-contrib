@@ -1,4 +1,5 @@
 #summary dataflow API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,29 +22,29 @@ Shortcuts:
 
 ----
 ===(_add-cell-watcher_ cell key fun)===
-Adds a watcher to a cell to respond to changes of value.  The is a
+<pre>Adds a watcher to a cell to respond to changes of value.  The is a
 function of 4 values: a key, the cell, its old value, its new
 value.  This is implemented using Clojure's add-watch to the
-underlying ref, and shared its sematics
+underlying ref, and shared its sematics</pre>
 ----
 ===(_add-cells_ df cells)===
-Given a collection of cells, add them to the dataflow.
+<pre>Given a collection of cells, add them to the dataflow.</pre>
 ----
 ===(_build-dataflow_ cs)===
-Given a collection of cells, build and return a dataflow object
+<pre>Given a collection of cells, build and return a dataflow object</pre>
 ----
 ===(_build-source-cell_ name init)===
-Builds a source cell
+<pre>Builds a source cell</pre>
 ----
 ===(_build-standard-cell_ name deps fun expr)===
-Builds a standard cell
+<pre>Builds a standard cell</pre>
 ----
 ===(_build-validator-cell_ deps fun expr)===
-Builds a validator cell
+<pre>Builds a validator cell</pre>
 ----
 ===(_cell_ type & data)===
 ====Macro====
-Build a standard cell, like this:
+<pre>Build a standard cell, like this:
 
 (cell fred
 (`*` ?mary ?joe))
@@ -68,47 +69,47 @@ Or:
 (cell :validator (when (< ?fred ?sally)
 (throwf "%s must be greater than %s" ?fred ?sally))
 
-Which will perform the validation
+Which will perform the validation</pre>
 ----
 ===_display-cell_===
-A 'readable' form of the cell
+<pre>A 'readable' form of the cell</pre>
 ----
 ===_eval-cell_===
-Evaluate a dataflow cell.  Return [changed, old val]
+<pre>Evaluate a dataflow cell.  Return `[`changed, old val`]`</pre>
 ----
 ===(_get-cell_ df name)===
-Get the single cell named by name
+<pre>Get the single cell named by name</pre>
 ----
 ===(_get-cells_ df name)===
-Get all the cells named by name
+<pre>Get all the cells named by name</pre>
 ----
 ===(_get-old-value_ df env name)===
-Looks up an old value
+<pre>Looks up an old value</pre>
 ----
 ===(_get-source-cells_ df)===
-Returns a collection of source cells from the dataflow
+<pre>Returns a collection of source cells from the dataflow</pre>
 ----
 ===(_get-value_ df name)===
-Gets a value from the df matching the passed symbol.
+<pre>Gets a value from the df matching the passed symbol.
 Signals an error if the name is not present, or if it not a single
-value.
+value.</pre>
 ----
 ===(_get-value-from-cell_ cell)===
-Given a cell, get its value
+<pre>Given a cell, get its value</pre>
 ----
 ===(_get-values_ df name)===
-Gets a collection of values from the df by name
+<pre>Gets a collection of values from the df by name</pre>
 ----
 ===(_print-dataflow_ df)===
-Prints a dataflow, one cell per line
+<pre>Prints a dataflow, one cell per line</pre>
 ----
 ===(_remove-cells_ df cells)===
-Given a collection of cells, remove them from the dataflow.
+<pre>Given a collection of cells, remove them from the dataflow.</pre>
 ----
 ===(_source-cell?_ cell)===
-Is this cell a source cell?
+<pre>Is this cell a source cell?</pre>
 ----
 ===(_update-values_ df data)===
-Given a dataflow, and a map of name-value pairs, update the
+<pre>Given a dataflow, and a map of name-value pairs, update the
 dataflow by binding the new values.  Each name must be of a source
-cell
+cell</pre>

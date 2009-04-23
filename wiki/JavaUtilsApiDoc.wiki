@@ -1,4 +1,5 @@
 #summary java-utils API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,44 +22,44 @@ Shortcuts:
 
 ----
 ===_as-file_===
-Interpret a String or a java.io.File as a File. Building block
+<pre>Interpret a String or a java.io.File as a File. Building block
 for clojure.contrib.java-utils/file, which you should prefer
-in most cases.
+in most cases.</pre>
 ----
 ===(_as-properties_ m)===
-Convert any seq of pairs to a java.utils.Properties instance.
-Uses as-str to convert both keys and values into strings.
+<pre>Convert any seq of pairs to a java.utils.Properties instance.
+Uses as-str to convert both keys and values into strings.</pre>
 ----
 ===(_as-str_ x)===
-Returns the name or string representation of x
+<pre>Returns the name or string representation of x</pre>
 ----
 ===(_file_ arg)===
 ===(_file_ parent child)===
 ===(_file_ parent child & more)===
-Returns a java.io.File from string or file args.
+<pre>Returns a java.io.File from string or file args.</pre>
 ----
 ===(_get-system-property_ stringable)===
 ===(_get-system-property_ stringable default)===
-Get a system property.
+<pre>Get a system property.</pre>
 ----
 ===(_read-properties_ file-able)===
-Read properties from file-able.
+<pre>Read properties from file-able.</pre>
 ----
 ===_relative-path-string_===
-Interpret a String or java.io.File as a relative path string. 
-Building block for clojure.contrib.java-utils/file.
+<pre>Interpret a String or java.io.File as a relative path string. 
+Building block for clojure.contrib.java-utils/file.</pre>
 ----
 ===(_set-system-properties_ settings)===
-Set some system properties. Nil clears a property.
+<pre>Set some system properties. Nil clears a property.</pre>
 ----
 ===(_with-system-properties_ settings & body)===
 ====Macro====
-setting => property-name value
+<pre>setting => property-name value
 
 Sets the system properties to the supplied values, executes the body, and
 sets the properties back to their original values. Values of nil are
-translated to a clearing of the property.
+translated to a clearing of the property.</pre>
 ----
 ===(_write-properties_ m file-able)===
 ===(_write-properties_ m file-able comments)===
-Write properties to file-able.
+<pre>Write properties to file-able.</pre>

@@ -1,4 +1,5 @@
 #summary singleton API Reference
+#sidebar ApiDocSidebar
 
 <wiki:comment>
 This document was auto-generated from the clojure.contrib source by contrib-autodoc.
@@ -21,16 +22,16 @@ Shortcuts:
 
 ----
 ===(_global-singleton_ f)===
-Returns a global singleton function.  f is a function of no
+<pre>Returns a global singleton function.  f is a function of no
 arguments that creates and returns some object.  The singleton
 function will call f just once, the first time it is needed, and
 cache the value for all subsequent calls.
 
 Warning: global singletons are often unsafe in multi-threaded code.
-Consider per-thread-singleton instead.
+Consider per-thread-singleton instead.</pre>
 ----
 ===(_per-thread-singleton_ f)===
-Returns a per-thread singleton function.  f is a function of no
+<pre>Returns a per-thread singleton function.  f is a function of no
 arguments that creates and returns some object.  The singleton
 function will call f only once for each thread, and cache its value
 for subsequent calls from the same thread.  This allows you to
@@ -39,4 +40,4 @@ safely and lazily initialize shared objects on a per-thread basis.
 Warning: due to a bug in JDK 5, it may not be safe to use a
 per-thread-singleton in the initialization function for another
 per-thread-singleton.  See
-http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5025230
+http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5025230</pre>
