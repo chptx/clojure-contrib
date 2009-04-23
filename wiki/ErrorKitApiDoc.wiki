@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.error-kit))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 bind-continue deferror [#(_do-not-handle_) do-not-handle] [#(_error_details) error] handle [#(_raise_err-name_&_args) raise] [#(_raise*_err) raise*] [#(_throw-msg_class-name) throw-msg] [#(_with-handler_&_forms) with-handler] 

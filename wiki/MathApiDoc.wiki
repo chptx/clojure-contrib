@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.math))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_abs_n) abs] [#(_ceil_n) ceil] [#(_exact-integer-sqrt_n) exact-integer-sqrt] [#(_expt_base_pow) expt] [#(_floor_n) floor] [#(_gcd_a_b) gcd] [#(_lcm_a_b) lcm] [#(_round_n) round] [#(_sqrt_n) sqrt] 

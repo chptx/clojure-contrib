@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.probabilities.dist))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_certainly_v) certainly] [#(_choose_&_choices) choose] [#cond-dist-m cond-dist-m] [#(_cond-prob_pred_dist) cond-prob] [#dist-m dist-m] [#(_join-with_f_dist1_dist2) join-with] [#(_normalize_weights) normalize] [#(_prob_pred_dist) prob] [#(_uniform_coll) uniform] 

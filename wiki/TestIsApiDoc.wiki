@@ -13,9 +13,14 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.test-is))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#*load-tests* *load-tests*] [#*stack-trace-depth* *stack-trace-depth*] [#(_are_expr_&_args) are] [#(_assert-any_msg_form) assert-any] [#(_assert-predicate_msg_form) assert-predicate] [#(_compose-fixtures_f1_f2) compose-fixtures] [#(_deftest_name_&_body) deftest] [#(_deftest-_name_&_body) deftest-] [#(_file-position_n) file-position] [#(_function?_x) function?] [#(_get-possibly-unbound-var_v) get-possibly-unbound-var] [#(_inc-report-counter_name) inc-report-counter] [#(_is_form) is] [#(_join-fixtures_fixtures) join-fixtures] [#(_print-results_r) print-results] [#report report] [#(_run-all-tests_) run-all-tests] [#(_run-tests_) run-tests] [#(_set-test_name_&_body) set-test] [#(_test-all-vars_ns) test-all-vars] [#(_test-ns_ns) test-ns] [#(_test-var_v) test-var] [#(_testing_string_&_body) testing] [#(_testing-contexts-str_) testing-contexts-str] [#(_testing-vars-str_) testing-vars-str] [#(_try-expr_msg_form) try-expr] [#(_with-test_definition_&_body) with-test] 
+
+Variables and Functions in test-is.tap:
+[TestIsApiDoc#(_print-tap-diagnostic_data) print-tap-diagnostic] [TestIsApiDoc#(_print-tap-fail_msg) print-tap-fail] [TestIsApiDoc#(_print-tap-pass_msg) print-tap-pass] [TestIsApiDoc#(_print-tap-plan_n) print-tap-plan] [TestIsApiDoc#(_with-tap-output_&_body) with-tap-output] 
 
 ----
 ===_`*`load-tests`*`_===
@@ -185,3 +190,22 @@ Remaining body goes in the :test metadata function for that Var.
 
 When `*`load-tests`*` is false, only evaluates the definition, ignoring
 the tests.
+==Namespace clojure.contrib.test-is.tap==
+----
+===(_print-tap-diagnostic_ data)===
+Prints a TAP diagnostic line.  data is a (possibly multi-line)
+string.
+----
+===(_print-tap-fail_ msg)===
+Prints a TAP 'not ok' line.  msg is a string, with no line breaks
+----
+===(_print-tap-pass_ msg)===
+Prints a TAP 'ok' line.  msg is a string, with no line breaks
+----
+===(_print-tap-plan_ n)===
+Prints a TAP plan line like '1..n'.  n is the number of tests
+----
+===(_with-tap-output_ & body)===
+====Macro====
+Execute body with modified test-is reporting functions that produce
+TAP output

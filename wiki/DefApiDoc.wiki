@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.def))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_defalias_name_orig) defalias] [#(_defhinted_sym_init) defhinted] [#(_defmacro-_name_&_decls) defmacro-] [#(_defonce-_name_expr) defonce-] [#(_defstruct-_name_&_decls) defstruct-] [#(_defunbound_name) defunbound] [#(_defunbound-_name_&_decls) defunbound-] [#(_defvar_name) defvar] [#(_defvar-_name_&_decls) defvar-] [#(_name-with-attributes_name_macro-args) name-with-attributes] 

@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.monads))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_call-cc_f) call-cc] [#cont-m cont-m] [#(_defmonad_name_doc-string_operations) defmonad] [#(_defmonadfn_name_docstring?_attr-map?_args_expr) defmonadfn] [#(_domonad_steps_expr) domonad] [#identity-m identity-m] [#(_m-chain_steps) m-chain] [#(_m-fmap_f_m) m-fmap] [#(_m-join_m) m-join] [#(_m-lift_n_f) m-lift] [#(_m-map_f_xs) m-map] [#(_m-reduce_f_mvs) m-reduce] [#(_m-seq_ms) m-seq] [#(_m-when_test_m-expr) m-when] [#(_m-when-not_test_m-expr) m-when-not] [#maybe-m maybe-m] [#(_maybe-t_m) maybe-t] [#(_monad_operations) monad] [#(_run-cont_c) run-cont] [#sequence-m sequence-m] [#(_sequence-t_m) sequence-t] [#set-m set-m] [#state-m state-m] [#(_state-t_m) state-t] [#(_with-monad_name_&_exprs) with-monad] [#(_writer-m_empty-accumulator) writer-m] 

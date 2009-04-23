@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.except))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_throw-arg_&_args) throw-arg] [#(_throw-if_test_&_args) throw-if] [#(_throw-if-not_test_&_args) throw-if-not] [#(_throwf_&_args) throwf] 

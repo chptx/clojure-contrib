@@ -13,9 +13,14 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.zip-filter))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_ancestors_loc) ancestors] [#(_children_loc) children] [#(_children-auto_loc) children-auto] [#(_descendants_loc) descendants] [#(_left-locs_loc) left-locs] [#(_leftmost?_loc) leftmost?] [#(_right-locs_loc) right-locs] [#(_rightmost?_loc) rightmost?] 
+
+Variables and Functions in zip-filter.xml:
+[ZipFilterApiDoc#(_attr_attrname) attr] [ZipFilterApiDoc#(_attr=_attrname_attrval) attr=] [ZipFilterApiDoc#(_seq-test_preds) seq-test] [ZipFilterApiDoc#(_tag=_tagname) tag=] [ZipFilterApiDoc#(_text_loc) text] [ZipFilterApiDoc#(_text=_s) text=] [ZipFilterApiDoc#(_xml->_loc_&_preds) xml->] [ZipFilterApiDoc#(_xml1->_loc_&_preds) xml1->] 
 
 ----
 ===(_ancestors_ loc)===
@@ -46,3 +51,50 @@ Returns a lazy sequence of locations to the right of loc, starting with loc.
 ----
 ===(_rightmost?_ loc)===
 Returns true if there are no more nodes to the right of location loc.
+==Namespace clojure.contrib.zip-filter.xml==
+----
+===(_attr_ attrname)===
+===(_attr_ loc attrname)===
+Returns the xml attribute named attrname, of the xml node at location loc.
+----
+===(_attr=_ attrname attrval)===
+Returns a query predicate that matches a node when it has an
+attribute named attrname whose value is attrval.
+----
+===(_seq-test_ preds)===
+Returns a query predicate that matches a node when its xml content
+matches the query expresions given.
+----
+===(_tag=_ tagname)===
+Returns a query predicate that matches a node when its is a tag
+named tagname.
+----
+===(_text_ loc)===
+Returns the textual contents of the given location, similar to
+xpaths's value-of
+----
+===(_text=_ s)===
+Returns a query predicate that matches a node when its textual
+content equals s.
+----
+===(_xml->_ loc & preds)===
+The loc is passed to the first predicate.  If the predicate returns
+a collection, each value of the collection is passed to the next
+predicate.  If it returns a location, the location is passed to the
+next predicate.  If it returns true, the input location is passed to
+the next predicate.  If it returns false or nil, the next predicate
+is not called.
+
+This process is repeated, passing the processed results of each
+predicate to the next predicate.  xml-> returns the final sequence.
+The entire chain is evaluated lazily.
+
+There are also special predicates: keywords are converted to tag=,
+strings to text=, and vectors to sub-queries that return true if
+they match.
+
+See the footer of zip-query.clj for examples.
+----
+===(_xml1->_ loc & preds)===
+Returns the first item from loc based on the query predicates
+given.  See xml->

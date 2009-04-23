@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.shell-out))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_sh_&_args) sh] 

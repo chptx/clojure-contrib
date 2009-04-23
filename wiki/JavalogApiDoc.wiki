@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.javalog))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#*logger* *logger*] [#(_add-log-file_logger-name_filename) add-log-file] [#(_log_level_&_strings) log] [#(_log-level_level) log-level] [#(_root-logger_) root-logger] [#(_set-console-log-level_level) set-console-log-level] [#(_with-logger_logger-name_level_&_body) with-logger] 

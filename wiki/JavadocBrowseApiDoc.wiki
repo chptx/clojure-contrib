@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.javadoc.browse))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_open-url-in-browser_url) open-url-in-browser] [#(_open-url-in-swing_url) open-url-in-swing] 

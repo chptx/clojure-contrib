@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.lazy-xml))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_emit_x_&_opts) emit] [#(_emit-element_e_&_opts) emit-element] [#(_parse-seq_s) parse-seq] [#(_parse-trim_s) parse-trim] 

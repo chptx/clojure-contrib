@@ -13,5 +13,6 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.complex-numbers))
 }}}
-==Public Variables and Functions==
 
+
+==Public Variables and Functions==

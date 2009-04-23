@@ -13,9 +13,17 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.sql))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_connection_) connection] [#(_create-table_name_&_specs) create-table] [#(_delete-rows_table_where-params) delete-rows] [#(_do-commands_&_commands) do-commands] [#(_do-prepared_sql_&_param-groups) do-prepared] [#(_drop-table_name) drop-table] [#(_find-connection_) find-connection] [#(_insert-records_table_&_records) insert-records] [#(_insert-rows_table_&_rows) insert-rows] [#(_insert-values_table_column-names_&_value-groups) insert-values] [#(_is-rollback-only_) is-rollback-only] [#(_set-rollback-only_) set-rollback-only] [#(_transaction_&_body) transaction] [#(_update-or-insert-values_table_where-params_record) update-or-insert-values] [#(_update-values_table_where-params_record) update-values] [#(_with-connection_db-spec_&_body) with-connection] [#(_with-query-results_results_sql-params_&_body) with-query-results] 
+
+Variables and Functions in sql.internal:
+[SqlApiDoc#(_connection*_) connection*] [SqlApiDoc#(_find-connection*_) find-connection*] get-connection [SqlApiDoc#(_rollback_) rollback] [SqlApiDoc#(_transaction*_func) transaction*] [SqlApiDoc#(_with-connection*_db-spec_func) with-connection*] with-query-results* 
+
+Variables and Functions in sql.test:
+[SqlApiDoc#(_create-fruit_) create-fruit] [SqlApiDoc#(_db-exception_) db-exception] [SqlApiDoc#(_db-get-tables_) db-get-tables] [SqlApiDoc#(_db-grade-a_) db-grade-a] [SqlApiDoc#(_db-grade-range_min_max) db-grade-range] [SqlApiDoc#(_db-read_) db-read] [SqlApiDoc#(_db-read-all_) db-read-all] [SqlApiDoc#(_db-rollback_) db-rollback] [SqlApiDoc#(_db-update_) db-update] [SqlApiDoc#(_db-update-appearance-cost_name_appearance_cost) db-update-appearance-cost] [SqlApiDoc#(_db-update-or-insert_record) db-update-or-insert] [SqlApiDoc#(_db-write_) db-write] [SqlApiDoc#(_drop-fruit_) drop-fruit] [SqlApiDoc#(_insert-records-fruit_) insert-records-fruit] [SqlApiDoc#(_insert-rows-fruit_) insert-rows-fruit] [SqlApiDoc#(_insert-values-fruit_) insert-values-fruit] 
 
 ----
 ===(_connection_)===
@@ -117,3 +125,96 @@ Executes a query, then evaluates body with results bound to a seq of the
 results. sql-params is a vector containing a string providing
 the (optionally parameterized) SQL query followed by values for any
 parameters.
+==Namespace clojure.contrib.sql.internal==
+----
+===(_connection`*`_)===
+Returns the current database connection (or throws if there is none)
+----
+===(_find-connection`*`_)===
+Returns the current database connection (or nil if there is none)
+----
+===(_get-connection_ {:keys [datasource username password classname subprotocol subname], :as db-spec})===
+Creates a connection to a database. db-spec is a map containing values
+for one of the following parameter sets:
+
+DataSource:
+:datasource  (required) a javax.sql.DataSource
+:username    (optional) a String
+:password    (optional) a String
+
+DriverManager:
+:classname   (required) a String, the jdbc driver class name
+:subprotocol (required) a String, the jdbc subprotocol
+:subname     (required) a String, the jdbc subname
+(others)     (optional) passed to the driver as properties.
+----
+===(_rollback_)===
+===(_rollback_ val)===
+Accessor for the rollback flag on the current connection
+----
+===(_transaction`*`_ func)===
+Evaluates func as a transaction on the open database connection. Any
+nested transactions are absorbed into the outermost transaction. By
+default, all database updates are committed together as a group after
+evaluating the outermost body, or rolled back on any uncaught
+exception. If rollback is set within scope of the outermost transaction,
+the entire transaction will be rolled back rather than committed when
+complete.
+----
+===(_with-connection`*`_ db-spec func)===
+Evaluates func in the context of a new connection to a database then
+closes the connection.
+----
+===(_with-query-results`*`_ [sql & params :as sql-params] func)===
+Executes a query, then evaluates func passing in a seq of the results as
+an argument. The first argument is a vector containing the (optionally
+parameterized) sql query string followed by values for any parameters.
+==Namespace clojure.contrib.sql.test==
+----
+===(_create-fruit_)===
+Create a table
+----
+===(_db-exception_)===
+Demonstrate rolling back a partially completed transaction on exception
+----
+===(_db-get-tables_)===
+Demonstrate getting table info
+----
+===(_db-grade-a_)===
+Print rows describing all grade a fruit (grade between 90 and 100)
+----
+===(_db-grade-range_ min max)===
+Print rows describing fruit that are within a grade range
+----
+===(_db-read_)===
+Read the entire fruit table
+----
+===(_db-read-all_)===
+Return all the rows of the fruit table as a vector
+----
+===(_db-rollback_)===
+Demonstrate a rollback-only trasaction
+----
+===(_db-update_)===
+Update two fruits as a transaction
+----
+===(_db-update-appearance-cost_ name appearance cost)===
+Update the appearance and cost of the named fruit
+----
+===(_db-update-or-insert_ record)===
+Updates or inserts a fruit
+----
+===(_db-write_)===
+Write initial values to the database as a transaction
+----
+===(_drop-fruit_)===
+Drop a table
+----
+===(_insert-records-fruit_)===
+Insert records, maps from keys specifying columns to values
+----
+===(_insert-rows-fruit_)===
+Insert complete rows
+----
+===(_insert-values-fruit_)===
+Insert rows with values for only specific columns

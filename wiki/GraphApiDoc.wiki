@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.graph))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_add-loops_g) add-loops] [#(_component-graph_g) component-graph] [#(_dependency-list_g) dependency-list] [#(_fixed-point_data_fun_max_equal) fixed-point] [#(_get-neighbors_g_n) get-neighbors] [#(_lazy-walk_g_n) lazy-walk] [#(_post-ordered-nodes_g) post-ordered-nodes] [#(_recursive-component?_g_ns) recursive-component?] [#(_remove-loops_g) remove-loops] [#(_reverse-graph_g) reverse-graph] [#(_scc_g) scc] [#(_self-recursive-sets_g) self-recursive-sets] [#(_stratification-list_g1_g2) stratification-list] [#(_transitive-closure_g) transitive-closure] 

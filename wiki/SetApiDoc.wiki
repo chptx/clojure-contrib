@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.set))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_proper-subset?_set1_set2) proper-subset?] [#(_proper-superset?_set1_set2) proper-superset?] [#(_subset?_set1_set2) subset?] [#(_superset?_set1_set2) superset?] 

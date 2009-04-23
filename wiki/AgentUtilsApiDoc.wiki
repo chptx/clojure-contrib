@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.agent-utils))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_capture-and-send_vars_agent_action_&_args) capture-and-send] 

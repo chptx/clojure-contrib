@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.combinatorics))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_cartesian-product_&_seqs) cartesian-product] [#(_combinations_items_n) combinations] [#(_lex-permutations_c) lex-permutations] [#(_permutations_items) permutations] [#(_selections_items_n) selections] [#(_subsets_items) subsets] 

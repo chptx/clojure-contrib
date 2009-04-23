@@ -8,6 +8,8 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for pprint=
+<br>by Tom Faulhaber
+
 Usage: 
 {{{
 (ns <your-namespace>
@@ -21,6 +23,7 @@ This module comprises two elements:
 The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format
 where the markdown README is currently displayed. I will be moving it into the 
 clojure.contrib wiki RSN.
+
 
 
 ==Public Variables and Functions==

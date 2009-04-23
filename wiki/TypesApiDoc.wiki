@@ -19,9 +19,13 @@ General and algebraic data types
 NOTE: This library is experimental. It may change significantly
 with future release.
 
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_defadt_type-tag_&_constructors) defadt] [#(_deftype_type-tag_constructor-name_docstring?_attr-map?) deftype] [#(_deftype-_type-tag_constructor-name_&_optional) deftype-] [#(_match_value_&_clauses) match] 
+
+Variables and Functions in types.examples:
+[TypesApiDoc#multiset multiset] 
 
 ----
 ===(_defadt_ type-tag & constructors)===
@@ -67,3 +71,7 @@ Symbols will be bound to the corresponding value in the object in the
 evaluation of expr. If the same symbol occurs more than once in a,
 template the corresponding elements of the object must be equal
 for the template to match.
+==Namespace clojure.contrib.types.examples==
+----
+===_multiset_===
+Multiset (demo implementation)

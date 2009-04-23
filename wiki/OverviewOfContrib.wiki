@@ -45,10 +45,6 @@ API Overview [AccumulatorsApiDoc here]
 Public Variables and Functions:
 [AccumulatorsApiDoc#(_add_acc_item) add] [AccumulatorsApiDoc#(_add-items_acc_items) add-items] [AccumulatorsApiDoc#(_combine_&_accs) combine] [AccumulatorsApiDoc#empty-counter empty-counter] [AccumulatorsApiDoc#empty-counter-with-total empty-counter-with-total] [AccumulatorsApiDoc#empty-list empty-list] [AccumulatorsApiDoc#empty-map empty-map] [AccumulatorsApiDoc#empty-maximum empty-maximum] [AccumulatorsApiDoc#empty-mean-variance empty-mean-variance] [AccumulatorsApiDoc#empty-min-max empty-min-max] [AccumulatorsApiDoc#empty-minimum empty-minimum] [AccumulatorsApiDoc#empty-product empty-product] [AccumulatorsApiDoc#empty-queue empty-queue] [AccumulatorsApiDoc#empty-set empty-set] [AccumulatorsApiDoc#empty-string empty-string] [AccumulatorsApiDoc#empty-sum empty-sum] [AccumulatorsApiDoc#(_empty-tuple_empty-accumulators) empty-tuple] [AccumulatorsApiDoc#empty-vector empty-vector] 
 
-===accumulators.examples===
-API Overview [AccumulatorsExamplesApiDoc here]
-
-
 ===agent-utils===
 API Overview [AgentUtilsApiDoc here]
 
@@ -76,7 +72,6 @@ Public Variables and Functions:
 ===complex-numbers===
 API Overview [ComplexNumbersApiDoc here]
 
-
 ===cond===
 API Overview [CondApiDoc here]
 
@@ -95,10 +90,6 @@ API Overview [CoreApiDoc here]
 Public Variables and Functions:
 [CoreApiDoc#(_-?>_x_form) -?>] [CoreApiDoc#(_.?._x_form) .?.] 
 
-===core.tests===
-API Overview [CoreTestsApiDoc here]
-
-
 ===dataflow===
 API Overview [DataflowApiDoc here]
 
@@ -111,41 +102,23 @@ API Overview [DatalogApiDoc here]
 Public Variables and Functions:
 [DatalogApiDoc#(_build-work-plan_rules_query) build-work-plan] [DatalogApiDoc#(_run-work-plan_work-plan_database_query-bindings) run-work-plan] 
 
-===datalog.database===
-API Overview [DatalogDatabaseApiDoc here]
+Variables and Functions in datalog.magic:
+[DatalogApiDoc#(_adorn-query_q) adorn-query] [DatalogApiDoc#(_adorn-rules-set_rs_q) adorn-rules-set] [DatalogApiDoc#(_build-partial-tuple_q_bindings) build-partial-tuple] [DatalogApiDoc#(_magic-transform_rs) magic-transform] [DatalogApiDoc#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] [DatalogApiDoc#(_seed-relation_q) seed-relation] [DatalogApiDoc#(_seed-rule_q) seed-rule] 
 
-Public Variables and Functions:
-[DatalogDatabaseApiDoc#(_add-index_db_name_key) add-index] [DatalogDatabaseApiDoc#(_add-relation_db_name_keys) add-relation] [DatalogDatabaseApiDoc#(_add-tuple_db_rel-name_tuple) add-tuple] [DatalogDatabaseApiDoc#(_add-tuples_db_&_tupls) add-tuples] [DatalogDatabaseApiDoc#(_any-match?_db_rn_pt) any-match?] [DatalogDatabaseApiDoc#(_database-counts_db) database-counts] [DatalogDatabaseApiDoc#(_database-merge_dbs) database-merge] [DatalogDatabaseApiDoc#(_database-merge-parallel_dbs) database-merge-parallel] [DatalogDatabaseApiDoc#(_datalog-relation_schema_data_indexes) datalog-relation] [DatalogDatabaseApiDoc#(_ensure-relation_db_name_keys_indexes) ensure-relation] [DatalogDatabaseApiDoc#(_get-relation_db_rel-name) get-relation] [DatalogDatabaseApiDoc#(_make-database_&_commands) make-database] [DatalogDatabaseApiDoc#(_merge-relations_r1_r2) merge-relations] [DatalogDatabaseApiDoc#(_remove-tuple_db_rel-name_tuple) remove-tuple] [DatalogDatabaseApiDoc#(_replace-relation_db_rel-name_rel) replace-relation] [DatalogDatabaseApiDoc#(_select_db_rn_pt) select] 
+Variables and Functions in datalog.softstrat:
+[DatalogApiDoc#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] [DatalogApiDoc#(_get-all-relations_ws) get-all-relations] 
 
-===datalog.literals===
-API Overview [DatalogLiteralsApiDoc here]
+Variables and Functions in datalog.rules:
+[DatalogApiDoc#(_<-_hd_&_body) <-] [DatalogApiDoc#(_?-_&_q) ?-] [DatalogApiDoc#(_all-predicates_rs) all-predicates] [DatalogApiDoc#(_apply-rule_db_rule) apply-rule] [DatalogApiDoc#(_compute-sip_bindings_i-preds_rule) compute-sip] [DatalogApiDoc#(_display-query_query) display-query] [DatalogApiDoc#(_display-rule_rule) display-rule] [DatalogApiDoc#(_is-safe?_rule) is-safe?] [DatalogApiDoc#(_make-rules-set_rs) make-rules-set] [DatalogApiDoc#(_non-base-rules_rs) non-base-rules] [DatalogApiDoc#(_predicate-map_rs) predicate-map] [DatalogApiDoc#(_return-rule-data_rule) return-rule-data] [DatalogApiDoc#(_rules-set_&_rules) rules-set] 
 
-Public Variables and Functions:
-[DatalogLiteralsApiDoc#adorned-literal adorned-literal] [DatalogLiteralsApiDoc#(_build-atom_f_type) build-atom] [DatalogLiteralsApiDoc#build-literal build-literal] [DatalogLiteralsApiDoc#(_build-seed-bindings_s) build-seed-bindings] [DatalogLiteralsApiDoc#(_delta-literal_l) delta-literal] [DatalogLiteralsApiDoc#display-literal display-literal] [DatalogLiteralsApiDoc#(_get-adorned-bindings_pred) get-adorned-bindings] [DatalogLiteralsApiDoc#(_get-base-predicate_pred) get-base-predicate] [DatalogLiteralsApiDoc#get-cs-from-vs get-cs-from-vs] [DatalogLiteralsApiDoc#get-self-bound-cs get-self-bound-cs] [DatalogLiteralsApiDoc#get-vs-from-cs get-vs-from-cs] [DatalogLiteralsApiDoc#join-literal join-literal] [DatalogLiteralsApiDoc#literal-appropriate? literal-appropriate?] [DatalogLiteralsApiDoc#literal-columns literal-columns] [DatalogLiteralsApiDoc#(_literal-magic?_lit) literal-magic?] [DatalogLiteralsApiDoc#literal-predicate literal-predicate] [DatalogLiteralsApiDoc#literal-vars literal-vars] [DatalogLiteralsApiDoc#(_magic-literal_l) magic-literal] [DatalogLiteralsApiDoc#(_negated-literal_l) negated-literal] [DatalogLiteralsApiDoc#(_negated?_l) negated?] [DatalogLiteralsApiDoc#negative-vars negative-vars] [DatalogLiteralsApiDoc#positive-vars positive-vars] [DatalogLiteralsApiDoc#(_positive?_l) positive?] [DatalogLiteralsApiDoc#(_project-literal_db_lit_bs) project-literal] 
+Variables and Functions in datalog.util:
+[DatalogApiDoc#(_is-query-var?_sym) is-query-var?] [DatalogApiDoc#(_is-var?_sym) is-var?] [DatalogApiDoc#(_keys-to-vals_m_ks) keys-to-vals] [DatalogApiDoc#(_map-values_f_hash) map-values] [DatalogApiDoc#(_preduce_f_data) preduce] [DatalogApiDoc#(_reverse-map_m) reverse-map] [DatalogApiDoc#(_trace-datalog_&_body) trace-datalog] 
 
-===datalog.magic===
-API Overview [DatalogMagicApiDoc here]
+Variables and Functions in datalog.literals:
+[DatalogApiDoc#adorned-literal adorned-literal] [DatalogApiDoc#(_build-atom_f_type) build-atom] [DatalogApiDoc#build-literal build-literal] [DatalogApiDoc#(_build-seed-bindings_s) build-seed-bindings] [DatalogApiDoc#(_delta-literal_l) delta-literal] [DatalogApiDoc#display-literal display-literal] [DatalogApiDoc#(_get-adorned-bindings_pred) get-adorned-bindings] [DatalogApiDoc#(_get-base-predicate_pred) get-base-predicate] [DatalogApiDoc#get-cs-from-vs get-cs-from-vs] [DatalogApiDoc#get-self-bound-cs get-self-bound-cs] [DatalogApiDoc#get-vs-from-cs get-vs-from-cs] [DatalogApiDoc#join-literal join-literal] [DatalogApiDoc#literal-appropriate? literal-appropriate?] [DatalogApiDoc#literal-columns literal-columns] [DatalogApiDoc#(_literal-magic?_lit) literal-magic?] [DatalogApiDoc#literal-predicate literal-predicate] [DatalogApiDoc#literal-vars literal-vars] [DatalogApiDoc#(_magic-literal_l) magic-literal] [DatalogApiDoc#(_negated-literal_l) negated-literal] [DatalogApiDoc#(_negated?_l) negated?] [DatalogApiDoc#negative-vars negative-vars] [DatalogApiDoc#positive-vars positive-vars] [DatalogApiDoc#(_positive?_l) positive?] [DatalogApiDoc#(_project-literal_db_lit_bs) project-literal] 
 
-Public Variables and Functions:
-[DatalogMagicApiDoc#(_adorn-query_q) adorn-query] [DatalogMagicApiDoc#(_adorn-rules-set_rs_q) adorn-rules-set] [DatalogMagicApiDoc#(_build-partial-tuple_q_bindings) build-partial-tuple] [DatalogMagicApiDoc#(_magic-transform_rs) magic-transform] [DatalogMagicApiDoc#(_seed-predicate-for-insertion_q) seed-predicate-for-insertion] [DatalogMagicApiDoc#(_seed-relation_q) seed-relation] [DatalogMagicApiDoc#(_seed-rule_q) seed-rule] 
-
-===datalog.rules===
-API Overview [DatalogRulesApiDoc here]
-
-Public Variables and Functions:
-[DatalogRulesApiDoc#(_<-_hd_&_body) <-] [DatalogRulesApiDoc#(_?-_&_q) ?-] [DatalogRulesApiDoc#(_all-predicates_rs) all-predicates] [DatalogRulesApiDoc#(_apply-rule_db_rule) apply-rule] [DatalogRulesApiDoc#(_compute-sip_bindings_i-preds_rule) compute-sip] [DatalogRulesApiDoc#(_display-query_query) display-query] [DatalogRulesApiDoc#(_display-rule_rule) display-rule] [DatalogRulesApiDoc#(_is-safe?_rule) is-safe?] [DatalogRulesApiDoc#(_make-rules-set_rs) make-rules-set] [DatalogRulesApiDoc#(_non-base-rules_rs) non-base-rules] [DatalogRulesApiDoc#(_predicate-map_rs) predicate-map] [DatalogRulesApiDoc#(_return-rule-data_rule) return-rule-data] [DatalogRulesApiDoc#(_rules-set_&_rules) rules-set] 
-
-===datalog.softstrat===
-API Overview [DatalogSoftstratApiDoc here]
-
-Public Variables and Functions:
-[DatalogSoftstratApiDoc#(_build-soft-strat-work-plan_rs_q) build-soft-strat-work-plan] [DatalogSoftstratApiDoc#(_get-all-relations_ws) get-all-relations] 
-
-===datalog.util===
-API Overview [DatalogUtilApiDoc here]
-
-Public Variables and Functions:
-[DatalogUtilApiDoc#(_is-query-var?_sym) is-query-var?] [DatalogUtilApiDoc#(_is-var?_sym) is-var?] [DatalogUtilApiDoc#(_keys-to-vals_m_ks) keys-to-vals] [DatalogUtilApiDoc#(_map-values_f_hash) map-values] [DatalogUtilApiDoc#(_preduce_f_data) preduce] [DatalogUtilApiDoc#(_reverse-map_m) reverse-map] [DatalogUtilApiDoc#(_trace-datalog_&_body) trace-datalog] 
+Variables and Functions in datalog.database:
+[DatalogApiDoc#(_add-index_db_name_key) add-index] [DatalogApiDoc#(_add-relation_db_name_keys) add-relation] [DatalogApiDoc#(_add-tuple_db_rel-name_tuple) add-tuple] [DatalogApiDoc#(_add-tuples_db_&_tupls) add-tuples] [DatalogApiDoc#(_any-match?_db_rn_pt) any-match?] [DatalogApiDoc#(_database-counts_db) database-counts] [DatalogApiDoc#(_database-merge_dbs) database-merge] [DatalogApiDoc#(_database-merge-parallel_dbs) database-merge-parallel] [DatalogApiDoc#(_datalog-relation_schema_data_indexes) datalog-relation] [DatalogApiDoc#(_ensure-relation_db_name_keys_indexes) ensure-relation] [DatalogApiDoc#(_get-relation_db_rel-name) get-relation] [DatalogApiDoc#(_make-database_&_commands) make-database] [DatalogApiDoc#(_merge-relations_r1_r2) merge-relations] [DatalogApiDoc#(_remove-tuple_db_rel-name_tuple) remove-tuple] [DatalogApiDoc#(_replace-relation_db_rel-name_rel) replace-relation] [DatalogApiDoc#(_select_db_rn_pt) select] 
 
 ===def===
 API Overview [DefApiDoc here]
@@ -186,32 +159,14 @@ Public Variables and Functions:
 ===generic===
 API Overview [GenericApiDoc here]
 
+Variables and Functions in generic.math-functions:
+[GenericApiDoc#(_approx=_x_y_eps) approx=] 
 
-===generic.arithmetic===
-API Overview [GenericArithmeticApiDoc here]
+Variables and Functions in generic.collection:
+[GenericApiDoc#(_assoc_coll_&_key-val-pairs) assoc] [GenericApiDoc#(_dissoc_coll_&_keys) dissoc] [GenericApiDoc#(_empty_coll) empty] [GenericApiDoc#(_get_coll_key) get] [GenericApiDoc#(_into_to_from) into] [GenericApiDoc#(_seq_s) seq] 
 
-
-===generic.collection===
-API Overview [GenericCollectionApiDoc here]
-
-Public Variables and Functions:
-[GenericCollectionApiDoc#(_assoc_coll_&_key-val-pairs) assoc] [GenericCollectionApiDoc#(_dissoc_coll_&_keys) dissoc] [GenericCollectionApiDoc#(_empty_coll) empty] [GenericCollectionApiDoc#(_get_coll_key) get] [GenericCollectionApiDoc#(_into_to_from) into] [GenericCollectionApiDoc#(_seq_s) seq] 
-
-===generic.comparison===
-API Overview [GenericComparisonApiDoc here]
-
-
-===generic.functor===
-API Overview [GenericFunctorApiDoc here]
-
-Public Variables and Functions:
-[GenericFunctorApiDoc#(_fmap_f_s) fmap] 
-
-===generic.math-functions===
-API Overview [GenericMathFunctionsApiDoc here]
-
-Public Variables and Functions:
-[GenericMathFunctionsApiDoc#(_approx=_x_y_eps) approx=] 
+Variables and Functions in generic.functor:
+[GenericApiDoc#(_fmap_f_s) fmap] 
 
 ===graph===
 API Overview [GraphApiDoc here]
@@ -291,23 +246,11 @@ API Overview [MathApiDoc here]
 Public Variables and Functions:
 [MathApiDoc#(_abs_n) abs] [MathApiDoc#(_ceil_n) ceil] [MathApiDoc#(_exact-integer-sqrt_n) exact-integer-sqrt] [MathApiDoc#(_expt_base_pow) expt] [MathApiDoc#(_floor_n) floor] [MathApiDoc#(_gcd_a_b) gcd] [MathApiDoc#(_lcm_a_b) lcm] [MathApiDoc#(_round_n) round] [MathApiDoc#(_sqrt_n) sqrt] 
 
-===math.tests===
-API Overview [MathTestsApiDoc here]
-
-
 ===miglayout===
 API Overview [MiglayoutApiDoc here]
 
-
-===miglayout.internal===
-API Overview [MiglayoutInternalApiDoc here]
-
-Public Variables and Functions:
-[MiglayoutInternalApiDoc#(_component?_x) component?] [MiglayoutInternalApiDoc#(_constraint?_x) constraint?] [MiglayoutInternalApiDoc#(_format-constraint_c) format-constraint] [MiglayoutInternalApiDoc#(_format-constraints_&_constraints) format-constraints] [MiglayoutInternalApiDoc#(_parse-item-constraints_&_args) parse-item-constraints] 
-
-===miglayout.test===
-API Overview [MiglayoutTestApiDoc here]
-
+Variables and Functions in miglayout.internal:
+[MiglayoutApiDoc#(_component?_x) component?] [MiglayoutApiDoc#(_constraint?_x) constraint?] [MiglayoutApiDoc#(_format-constraint_c) format-constraint] [MiglayoutApiDoc#(_format-constraints_&_constraints) format-constraints] [MiglayoutApiDoc#(_parse-item-constraints_&_args) parse-item-constraints] 
 
 ===mmap===
 API Overview [MmapApiDoc here]
@@ -320,10 +263,6 @@ API Overview [MonadsApiDoc here]
 
 Public Variables and Functions:
 [MonadsApiDoc#(_call-cc_f) call-cc] [MonadsApiDoc#cont-m cont-m] [MonadsApiDoc#(_defmonad_name_doc-string_operations) defmonad] [MonadsApiDoc#(_defmonadfn_name_docstring?_attr-map?_args_expr) defmonadfn] [MonadsApiDoc#(_domonad_steps_expr) domonad] [MonadsApiDoc#identity-m identity-m] [MonadsApiDoc#(_m-chain_steps) m-chain] [MonadsApiDoc#(_m-fmap_f_m) m-fmap] [MonadsApiDoc#(_m-join_m) m-join] [MonadsApiDoc#(_m-lift_n_f) m-lift] [MonadsApiDoc#(_m-map_f_xs) m-map] [MonadsApiDoc#(_m-reduce_f_mvs) m-reduce] [MonadsApiDoc#(_m-seq_ms) m-seq] [MonadsApiDoc#(_m-when_test_m-expr) m-when] [MonadsApiDoc#(_m-when-not_test_m-expr) m-when-not] [MonadsApiDoc#maybe-m maybe-m] [MonadsApiDoc#(_maybe-t_m) maybe-t] [MonadsApiDoc#(_monad_operations) monad] [MonadsApiDoc#(_run-cont_c) run-cont] [MonadsApiDoc#sequence-m sequence-m] [MonadsApiDoc#(_sequence-t_m) sequence-t] [MonadsApiDoc#set-m set-m] [MonadsApiDoc#state-m state-m] [MonadsApiDoc#(_state-t_m) state-t] [MonadsApiDoc#(_with-monad_name_&_exprs) with-monad] [MonadsApiDoc#(_writer-m_empty-accumulator) writer-m] 
-
-===monads.examples===
-API Overview [MonadsExamplesApiDoc here]
-
 
 ===ns-utils===
 API Overview [NsUtilsApiDoc here]
@@ -346,43 +285,11 @@ clojure.contrib wiki RSN.
 Public Variables and Functions:
 [PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#(_cl-format_stream_format-in_&_args) cl-format] [PprintApiDoc#(_compile-format_format-str) compile-format] [PprintApiDoc#(_formatter_format-in) formatter] [PprintApiDoc#(_pp_) pp] [PprintApiDoc#(_pprint_object_&_more) pprint] [PprintApiDoc#(_pprint-indent_relative-to_n_&_more) pprint-indent] [PprintApiDoc#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [PprintApiDoc#(_pprint-newline_kind_&_more) pprint-newline] [PprintApiDoc#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [PprintApiDoc#(_set-pprint-dispatch_table) set-pprint-dispatch] [PprintApiDoc#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [PprintApiDoc#(_write_object_&_kw-args) write] 
 
-===pprint.ColumnWriter===
-API Overview [PprintColumnWriterApiDoc here]
-
-
-===pprint.PrettyWriter===
-API Overview [PprintPrettyWriterApiDoc here]
-
-
-===pprint.examples.hexdump===
-API Overview [PprintExamplesHexdumpApiDoc here]
-
-
-===pprint.examples.multiply===
-API Overview [PprintExamplesMultiplyApiDoc here]
-
-
-===pprint.examples.props===
-API Overview [PprintExamplesPropsApiDoc here]
-
-
-===pprint.examples.show-doc===
-API Overview [PprintExamplesShowDocApiDoc here]
-
-
-===pprint.utilities===
-API Overview [PprintUtilitiesApiDoc here]
-
-
 ===probabilities.dist===
 API Overview [ProbabilitiesDistApiDoc here]
 
 Public Variables and Functions:
 [ProbabilitiesDistApiDoc#(_certainly_v) certainly] [ProbabilitiesDistApiDoc#(_choose_&_choices) choose] [ProbabilitiesDistApiDoc#cond-dist-m cond-dist-m] [ProbabilitiesDistApiDoc#(_cond-prob_pred_dist) cond-prob] [ProbabilitiesDistApiDoc#dist-m dist-m] [ProbabilitiesDistApiDoc#(_join-with_f_dist1_dist2) join-with] [ProbabilitiesDistApiDoc#(_normalize_weights) normalize] [ProbabilitiesDistApiDoc#(_prob_pred_dist) prob] [ProbabilitiesDistApiDoc#(_uniform_coll) uniform] 
-
-===probabilities.dist.examples===
-API Overview [ProbabilitiesDistExamplesApiDoc here]
-
 
 ===prxml===
 API Overview [PrxmlApiDoc here]
@@ -438,17 +345,11 @@ API Overview [SqlApiDoc here]
 Public Variables and Functions:
 [SqlApiDoc#(_connection_) connection] [SqlApiDoc#(_create-table_name_&_specs) create-table] [SqlApiDoc#(_delete-rows_table_where-params) delete-rows] [SqlApiDoc#(_do-commands_&_commands) do-commands] [SqlApiDoc#(_do-prepared_sql_&_param-groups) do-prepared] [SqlApiDoc#(_drop-table_name) drop-table] [SqlApiDoc#(_find-connection_) find-connection] [SqlApiDoc#(_insert-records_table_&_records) insert-records] [SqlApiDoc#(_insert-rows_table_&_rows) insert-rows] [SqlApiDoc#(_insert-values_table_column-names_&_value-groups) insert-values] [SqlApiDoc#(_is-rollback-only_) is-rollback-only] [SqlApiDoc#(_set-rollback-only_) set-rollback-only] [SqlApiDoc#(_transaction_&_body) transaction] [SqlApiDoc#(_update-or-insert-values_table_where-params_record) update-or-insert-values] [SqlApiDoc#(_update-values_table_where-params_record) update-values] [SqlApiDoc#(_with-connection_db-spec_&_body) with-connection] [SqlApiDoc#(_with-query-results_results_sql-params_&_body) with-query-results] 
 
-===sql.internal===
-API Overview [SqlInternalApiDoc here]
+Variables and Functions in sql.internal:
+[SqlApiDoc#(_connection*_) connection*] [SqlApiDoc#(_find-connection*_) find-connection*] get-connection [SqlApiDoc#(_rollback_) rollback] [SqlApiDoc#(_transaction*_func) transaction*] [SqlApiDoc#(_with-connection*_db-spec_func) with-connection*] with-query-results* 
 
-Public Variables and Functions:
-[SqlInternalApiDoc#(_connection*_) connection*] [SqlInternalApiDoc#(_find-connection*_) find-connection*] get-connection [SqlInternalApiDoc#(_rollback_) rollback] [SqlInternalApiDoc#(_transaction*_func) transaction*] [SqlInternalApiDoc#(_with-connection*_db-spec_func) with-connection*] with-query-results* 
-
-===sql.test===
-API Overview [SqlTestApiDoc here]
-
-Public Variables and Functions:
-[SqlTestApiDoc#(_create-fruit_) create-fruit] [SqlTestApiDoc#(_db-exception_) db-exception] [SqlTestApiDoc#(_db-get-tables_) db-get-tables] [SqlTestApiDoc#(_db-grade-a_) db-grade-a] [SqlTestApiDoc#(_db-grade-range_min_max) db-grade-range] [SqlTestApiDoc#(_db-read_) db-read] [SqlTestApiDoc#(_db-read-all_) db-read-all] [SqlTestApiDoc#(_db-rollback_) db-rollback] [SqlTestApiDoc#(_db-update_) db-update] [SqlTestApiDoc#(_db-update-appearance-cost_name_appearance_cost) db-update-appearance-cost] [SqlTestApiDoc#(_db-update-or-insert_record) db-update-or-insert] [SqlTestApiDoc#(_db-write_) db-write] [SqlTestApiDoc#(_drop-fruit_) drop-fruit] [SqlTestApiDoc#(_insert-records-fruit_) insert-records-fruit] [SqlTestApiDoc#(_insert-rows-fruit_) insert-rows-fruit] [SqlTestApiDoc#(_insert-values-fruit_) insert-values-fruit] 
+Variables and Functions in sql.test:
+[SqlApiDoc#(_create-fruit_) create-fruit] [SqlApiDoc#(_db-exception_) db-exception] [SqlApiDoc#(_db-get-tables_) db-get-tables] [SqlApiDoc#(_db-grade-a_) db-grade-a] [SqlApiDoc#(_db-grade-range_min_max) db-grade-range] [SqlApiDoc#(_db-read_) db-read] [SqlApiDoc#(_db-read-all_) db-read-all] [SqlApiDoc#(_db-rollback_) db-rollback] [SqlApiDoc#(_db-update_) db-update] [SqlApiDoc#(_db-update-appearance-cost_name_appearance_cost) db-update-appearance-cost] [SqlApiDoc#(_db-update-or-insert_record) db-update-or-insert] [SqlApiDoc#(_db-write_) db-write] [SqlApiDoc#(_drop-fruit_) drop-fruit] [SqlApiDoc#(_insert-records-fruit_) insert-records-fruit] [SqlApiDoc#(_insert-rows-fruit_) insert-rows-fruit] [SqlApiDoc#(_insert-values-fruit_) insert-values-fruit] 
 
 ===stacktrace===
 API Overview [StacktraceApiDoc here]
@@ -468,10 +369,6 @@ API Overview [StreamUtilsApiDoc here]
 Public Variables and Functions:
 [StreamUtilsApiDoc#(_defst_name_args_streams_&_body) defst] [StreamUtilsApiDoc#(_defstream_type-tag_args_&_body) defstream] [StreamUtilsApiDoc#(_pick_n) pick] [StreamUtilsApiDoc#(_pick-all_streams) pick-all] [StreamUtilsApiDoc#(_stream-drop_n_stream) stream-drop] [StreamUtilsApiDoc#(_stream-filter_p_stream) stream-filter] [StreamUtilsApiDoc#(_stream-flatten_s) stream-flatten] [StreamUtilsApiDoc#stream-m stream-m] [StreamUtilsApiDoc#(_stream-map_f_stream) stream-map] [StreamUtilsApiDoc#(_stream-next_stream-state) stream-next] [StreamUtilsApiDoc#(_stream-seq_s) stream-seq] [StreamUtilsApiDoc#stream-type stream-type] 
 
-===stream-utils.examples===
-API Overview [StreamUtilsExamplesApiDoc here]
-
-
 ===template===
 API Overview [TemplateApiDoc here]
 
@@ -484,19 +381,8 @@ API Overview [TestIsApiDoc here]
 Public Variables and Functions:
 [TestIsApiDoc#*load-tests* *load-tests*] [TestIsApiDoc#*stack-trace-depth* *stack-trace-depth*] [TestIsApiDoc#(_are_expr_&_args) are] [TestIsApiDoc#(_assert-any_msg_form) assert-any] [TestIsApiDoc#(_assert-predicate_msg_form) assert-predicate] [TestIsApiDoc#(_compose-fixtures_f1_f2) compose-fixtures] [TestIsApiDoc#(_deftest_name_&_body) deftest] [TestIsApiDoc#(_deftest-_name_&_body) deftest-] [TestIsApiDoc#(_file-position_n) file-position] [TestIsApiDoc#(_function?_x) function?] [TestIsApiDoc#(_get-possibly-unbound-var_v) get-possibly-unbound-var] [TestIsApiDoc#(_inc-report-counter_name) inc-report-counter] [TestIsApiDoc#(_is_form) is] [TestIsApiDoc#(_join-fixtures_fixtures) join-fixtures] [TestIsApiDoc#(_print-results_r) print-results] [TestIsApiDoc#report report] [TestIsApiDoc#(_run-all-tests_) run-all-tests] [TestIsApiDoc#(_run-tests_) run-tests] [TestIsApiDoc#(_set-test_name_&_body) set-test] [TestIsApiDoc#(_test-all-vars_ns) test-all-vars] [TestIsApiDoc#(_test-ns_ns) test-ns] [TestIsApiDoc#(_test-var_v) test-var] [TestIsApiDoc#(_testing_string_&_body) testing] [TestIsApiDoc#(_testing-contexts-str_) testing-contexts-str] [TestIsApiDoc#(_testing-vars-str_) testing-vars-str] [TestIsApiDoc#(_try-expr_msg_form) try-expr] [TestIsApiDoc#(_with-test_definition_&_body) with-test] 
 
-===test-is.tap===
-API Overview [TestIsTapApiDoc here]
-
-Public Variables and Functions:
-[TestIsTapApiDoc#(_print-tap-diagnostic_data) print-tap-diagnostic] [TestIsTapApiDoc#(_print-tap-fail_msg) print-tap-fail] [TestIsTapApiDoc#(_print-tap-pass_msg) print-tap-pass] [TestIsTapApiDoc#(_print-tap-plan_n) print-tap-plan] [TestIsTapApiDoc#(_with-tap-output_&_body) with-tap-output] 
-
-===test-is.test-fixtures===
-API Overview [TestIsTestFixturesApiDoc here]
-
-
-===test-is.tests===
-API Overview [TestIsTestsApiDoc here]
-
+Variables and Functions in test-is.tap:
+[TestIsApiDoc#(_print-tap-diagnostic_data) print-tap-diagnostic] [TestIsApiDoc#(_print-tap-fail_msg) print-tap-fail] [TestIsApiDoc#(_print-tap-pass_msg) print-tap-pass] [TestIsApiDoc#(_print-tap-plan_n) print-tap-plan] [TestIsApiDoc#(_with-tap-output_&_body) with-tap-output] 
 
 ===trace===
 API Overview [TraceApiDoc here]
@@ -514,11 +400,8 @@ with future release.
 Public Variables and Functions:
 [TypesApiDoc#(_defadt_type-tag_&_constructors) defadt] [TypesApiDoc#(_deftype_type-tag_constructor-name_docstring?_attr-map?) deftype] [TypesApiDoc#(_deftype-_type-tag_constructor-name_&_optional) deftype-] [TypesApiDoc#(_match_value_&_clauses) match] 
 
-===types.examples===
-API Overview [TypesExamplesApiDoc here]
-
-Public Variables and Functions:
-[TypesExamplesApiDoc#multiset multiset] 
+Variables and Functions in types.examples:
+[TypesApiDoc#multiset multiset] 
 
 ===walk===
 API Overview [WalkApiDoc here]
@@ -538,9 +421,6 @@ API Overview [ZipFilterApiDoc here]
 Public Variables and Functions:
 [ZipFilterApiDoc#(_ancestors_loc) ancestors] [ZipFilterApiDoc#(_children_loc) children] [ZipFilterApiDoc#(_children-auto_loc) children-auto] [ZipFilterApiDoc#(_descendants_loc) descendants] [ZipFilterApiDoc#(_left-locs_loc) left-locs] [ZipFilterApiDoc#(_leftmost?_loc) leftmost?] [ZipFilterApiDoc#(_right-locs_loc) right-locs] [ZipFilterApiDoc#(_rightmost?_loc) rightmost?] 
 
-===zip-filter.xml===
-API Overview [ZipFilterXmlApiDoc here]
-
-Public Variables and Functions:
-[ZipFilterXmlApiDoc#(_attr_attrname) attr] [ZipFilterXmlApiDoc#(_attr=_attrname_attrval) attr=] [ZipFilterXmlApiDoc#(_seq-test_preds) seq-test] [ZipFilterXmlApiDoc#(_tag=_tagname) tag=] [ZipFilterXmlApiDoc#(_text_loc) text] [ZipFilterXmlApiDoc#(_text=_s) text=] [ZipFilterXmlApiDoc#(_xml->_loc_&_preds) xml->] [ZipFilterXmlApiDoc#(_xml1->_loc_&_preds) xml1->] 
+Variables and Functions in zip-filter.xml:
+[ZipFilterApiDoc#(_attr_attrname) attr] [ZipFilterApiDoc#(_attr=_attrname_attrval) attr=] [ZipFilterApiDoc#(_seq-test_preds) seq-test] [ZipFilterApiDoc#(_tag=_tagname) tag=] [ZipFilterApiDoc#(_text_loc) text] [ZipFilterApiDoc#(_text=_s) text=] [ZipFilterApiDoc#(_xml->_loc_&_preds) xml->] [ZipFilterApiDoc#(_xml1->_loc_&_preds) xml1->] 
 

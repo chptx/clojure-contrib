@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.accumulators))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_add_acc_item) add] [#(_add-items_acc_items) add-items] [#(_combine_&_accs) combine] [#empty-counter empty-counter] [#empty-counter-with-total empty-counter-with-total] [#empty-list empty-list] [#empty-map empty-map] [#empty-maximum empty-maximum] [#empty-mean-variance empty-mean-variance] [#empty-min-max empty-min-max] [#empty-minimum empty-minimum] [#empty-product empty-product] [#empty-queue empty-queue] [#empty-set empty-set] [#empty-string empty-string] [#empty-sum empty-sum] [#(_empty-tuple_empty-accumulators) empty-tuple] [#empty-vector empty-vector] 

@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.auto-agent))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_auto-agent_expr) auto-agent] 

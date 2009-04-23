@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.java-utils))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#as-file as-file] [#(_as-properties_m) as-properties] [#(_as-str_x) as-str] [#(_file_arg) file] [#(_get-system-property_stringable) get-system-property] [#(_read-properties_file-able) read-properties] [#relative-path-string relative-path-string] [#(_set-system-properties_settings) set-system-properties] [#(_with-system-properties_settings_&_body) with-system-properties] [#(_write-properties_m_file-able) write-properties] 

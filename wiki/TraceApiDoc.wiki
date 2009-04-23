@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.trace))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#*trace-depth* *trace-depth*] [#(_deftrace_name_&_definition) deftrace] [#(_trace_value) trace] [#(_trace-fn-call_name_f_args) trace-fn-call] [#(_trace-indent_) trace-indent] [#(_tracer_name_value) tracer] 

@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.repl-utils))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#*local-javadocs* *local-javadocs*] [#*remote-javadocs* *remote-javadocs*] [#(_add-break-thread!_) add-break-thread!] [#(_add-local-javadoc_path) add-local-javadoc] [#(_add-remote-javadoc_package-prefix_url) add-remote-javadoc] [#break-threads break-threads] [#(_find-javadoc-url_classname) find-javadoc-url] [#(_get-source_x) get-source] [#(_javadoc_class-or-object) javadoc] [#(_show_x) show] [#(_source_n) source] [#(_start-handling-break_) start-handling-break] 

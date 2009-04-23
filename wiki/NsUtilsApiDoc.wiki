@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.ns-utils))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_dir_nsname) dir] [#(_docs_nsname) docs] [#(_get-ns_ns-sym) get-ns] [#(_ns-vars_ns) ns-vars] [#(_print-dir_ns) print-dir] [#(_print-docs_ns) print-docs] [#(_vars_nsname) vars] 

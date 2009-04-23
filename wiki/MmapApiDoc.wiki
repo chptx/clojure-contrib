@@ -13,6 +13,8 @@ Usage:
 (ns <your-namespace>
   (:use clojure.contrib.mmap))
 }}}
+
+
 ==Public Variables and Functions==
 Shortcuts:
 [#(_buffer-stream_buf) buffer-stream] [#(_mmap_f) mmap] [#(_slurp_f) slurp] 
