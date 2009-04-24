@@ -21,7 +21,7 @@ Shortcuts:
 [#(_sh_&_args) sh] 
 
 ----
-===(_sh_ & args)===
+===(`_`sh`_` & args)===
 <pre> Passes the given strings to Runtime.exec() to launch a sub-process.
 
  Options are

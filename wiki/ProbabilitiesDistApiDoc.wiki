@@ -21,42 +21,42 @@ Shortcuts:
 [#(_certainly_v) certainly] [#(_choose_&_choices) choose] [#cond-dist-m cond-dist-m] [#(_cond-prob_pred_dist) cond-prob] [#dist-m dist-m] [#(_join-with_f_dist1_dist2) join-with] [#(_normalize_weights) normalize] [#(_prob_pred_dist) prob] [#(_uniform_coll) uniform] 
 
 ----
-===(_certainly_ v)===
+===(`_`certainly`_` v)===
 <pre> Returns a distribution in which the single value v has probability 1.</pre>
 ----
-===(_choose_ & choices)===
+===(`_`choose`_` & choices)===
 <pre> Construct a distribution from an explicit list of probabilities
 and values. They are given in the form of a vector of probability-value
 pairs. In the last pair, the probability can be given by the keyword
 :else, which stands for 1 minus the total of the other probabilities.</pre>
 ----
-===_cond-dist-m_===
+===`_`cond-dist-m`_`===
 <pre> Variant of the dist monad that can handle undefined values.</pre>
 ----
-===(_cond-prob_ pred dist)===
+===(`_`cond-prob`_` pred dist)===
 <pre> Returns the conditional probability for the values in dist that satisfy
 the predicate pred.</pre>
 ----
-===_dist-m_===
+===`_`dist-m`_`===
 <pre> Monad describing computations on fuzzy quantities, represented by a finite
 probability distribution for the possible values. A distribution is
 represented by a map from values to probabilities.</pre>
 ----
-===(_join-with_ f dist1 dist2)===
+===(`_`join-with`_` f dist1 dist2)===
 <pre> Returns the distribution of (f x y) with x from dist1 and y from dist2.</pre>
 ----
-===(_normalize_ weights)===
+===(`_`normalize`_` weights)===
 <pre> Convert a weight map (e.g. a map of counter values) to a distribution
 by multiplying with a normalization factor. If the map has a key
 :total, its value is assumed to be the sum over all the other values and
 it is used for normalization. Otherwise, the sum is calculated
 explicitly. The :total key is removed from the resulting distribution.</pre>
 ----
-===(_prob_ pred dist)===
+===(`_`prob`_` pred dist)===
 <pre> Return the probability that the predicate pred is satisfied in the
 distribution dist, i.e. the sum of the probabilities of the values
 that satisfy pred.</pre>
 ----
-===(_uniform_ coll)===
+===(`_`uniform`_` coll)===
 <pre> Return a distribution in which each of the elements of coll
 has the same probability.</pre>

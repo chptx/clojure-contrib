@@ -32,42 +32,42 @@ Shortcuts:
 [#*print-circle* *print-circle*] [#*print-lines* *print-lines*] [#*print-miser-width* *print-miser-width*] [#*print-pprint-dispatch* *print-pprint-dispatch*] [#*print-pretty* *print-pretty*] [#*print-right-margin* *print-right-margin*] [#*print-shared* *print-shared*] [#*print-suppress-namespaces* *print-suppress-namespaces*] [#(_cl-format_stream_format-in_&_args) cl-format] [#(_compile-format_format-str) compile-format] [#(_formatter_format-in) formatter] [#(_pp_) pp] [#(_pprint_object_&_more) pprint] [#(_pprint-indent_relative-to_n_&_more) pprint-indent] [#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [#(_pprint-newline_kind_&_more) pprint-newline] [#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [#(_set-pprint-dispatch_table) set-pprint-dispatch] [#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [#(_write_object_&_kw-args) write] 
 
 ----
-===_`*`print-circle`*`_===
+===`_``*`print-circle`*``_`===
 <pre> Mark circular structures (N.B. This is not yet used)</pre>
 ----
-===_`*`print-lines`*`_===
+===`_``*`print-lines`*``_`===
 <pre> Maximum number of lines to print in a pretty print instance (N.B. This is not yet used)</pre>
 ----
-===_`*`print-miser-width`*`_===
+===`_``*`print-miser-width`*``_`===
 <pre> The column at which to enter miser style. Depending on the dispatch table, 
 miser style add newlines in more places to try to keep lines short allowing for further 
 levels of nesting.</pre>
 ----
-===_`*`print-pprint-dispatch`*`_===
+===`_``*`print-pprint-dispatch`*``_`===
 <pre> The pretty print dispatch table</pre>
 ----
-===_`*`print-pretty`*`_===
+===`_``*`print-pretty`*``_`===
 <pre> Bind to true if you want write to use pretty printing</pre>
 ----
-===_`*`print-right-margin`*`_===
+===`_``*`print-right-margin`*``_`===
 <pre> Pretty printing will try to avoid anything going beyond this column.</pre>
 ----
-===_`*`print-shared`*`_===
+===`_``*`print-shared`*``_`===
 <pre> Mark repeated structures rather than repeat them (N.B. This is not yet used)</pre>
 ----
-===_`*`print-suppress-namespaces`*`_===
+===`_``*`print-suppress-namespaces`*``_`===
 <pre> Don't print namespaces with symbols. This is particularly useful when 
 pretty printing the results of macro expansions</pre>
 ----
-===(_cl-format_ stream format-in & args)===
+===(`_`cl-format`_` stream format-in & args)===
 <pre> An implementation of a Common Lisp compatible format function</pre>
 ----
-===(_compile-format_ format-str)===
+===(`_`compile-format`_` format-str)===
 <pre> Compiles format-str into a compiled format which can be used as an argument
 to cl-format just like a plain format string. Use this function for improved 
 performance when you're using the same format string repeatedly</pre>
 ----
-===(_formatter_ format-in)===
+===(`_`formatter`_` format-in)===
 ====Macro====
 <pre> Makes a function which can directly run format-in. The function is
 fn `[`stream & args`]` ... and returns nil unless the stream is nil (meaning 
@@ -75,16 +75,16 @@ output to a string) in which case it returns the resulting string.
 
  format-in can be either a control string or a previously compiled format.</pre>
 ----
-===(_pp_)===
+===(`_`pp`_`)===
 ====Macro====
 <pre> A convenience macro that pretty prints the last thing output. This is
 exactly equivalent to (pprint `*`1).</pre>
 ----
-===(_pprint_ object & more)===
+===(`_`pprint`_` object & more)===
 <pre> Pretty print object to the optional output writer. If the writer is not provided, 
 print the object to the currently bound value of `*`out`*`.</pre>
 ----
-===(_pprint-indent_ relative-to n & more)===
+===(`_`pprint-indent`_` relative-to n & more)===
 <pre> Create an indent at this point in the pretty printing stream. This defines how 
 following lines are indented. relative-to can be either :block or :current depending 
 whether the indent should be computed relative to the start of the logical block or
@@ -95,7 +95,7 @@ the writer indented, otherwise `*`out`*` is used.
 
  If the requested stream is not a PrettyWriter, this function does nothing.</pre>
 ----
-===(_pprint-logical-block_ base-stream & body)===
+===(`_`pprint-logical-block`_` base-stream & body)===
 ====Macro====
 <pre> Execute the body as a pretty printing logical block with output to `*`out`*` which 
 is a pretty printing writer wrapping base-stream (unless base-stream is already a pretty 
@@ -104,7 +104,7 @@ printing writer in which case `*`out`*` is just bound to base-stream).
  After the writer, the caller can optionally specify :prefix, :per-line-prefix, and
 :suffix.</pre>
 ----
-===(_pprint-newline_ kind & more)===
+===(`_`pprint-newline`_` kind & more)===
 <pre> Print a conditional newline to a pretty printing stream. kind specifies if the 
 newline is :linear, :miser, :fill, or :mandatory. 
 
@@ -113,7 +113,7 @@ the writer to which the newline is sent, otherwise `*`out`*` is used.
 
  If the requested stream is not a PrettyWriter, this function does nothing.</pre>
 ----
-===(_pprint-tab_ kind colnum colinc & more)===
+===(`_`pprint-tab`_` kind colnum colinc & more)===
 <pre> Tab at this point in the pretty printing stream. kind specifies whether the tab
 is :line, :section, :line-relative, or :section-relative. 
 
@@ -127,15 +127,15 @@ the writer indented, otherwise `*`out`*` is used.
 
  THIS FUNCTION IS NOT YET IMPLEMENTED.</pre>
 ----
-===(_set-pprint-dispatch_ table)===
+===(`_`set-pprint-dispatch`_` table)===
 <pre> Set the pretty print dispatch table to TABLE. Currently the supported values are
 `*`simple-dispatch`*` or `*`code-dispatch`*`. In the future, this will support custom tables.</pre>
 ----
-===(_with-pprint-dispatch_ table & body)===
+===(`_`with-pprint-dispatch`_` table & body)===
 ====Macro====
 <pre> Execute body with the pretty print dispatch table bound to table.</pre>
 ----
-===(_write_ object & kw-args)===
+===(`_`write`_` object & kw-args)===
 <pre> Write an object subject to the current bindings of the printer control variables.
 Use the options argument to override individual variables for this call (and any 
 recursive calls). Returns the string result if :stream is nil or nil otherwise.</pre>

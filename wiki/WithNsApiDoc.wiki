@@ -21,13 +21,13 @@ Shortcuts:
 [#(_with-ns_ns_&_body) with-ns] [#(_with-temp-ns_&_body) with-temp-ns] 
 
 ----
-===(_with-ns_ ns & body)===
+===(`_`with-ns`_` ns & body)===
 ====Macro====
 <pre> Evaluates body in another namespace.  ns is either a namespace
 object or a symbol.  This makes it possible to define functions in
 namespaces other than the current one.</pre>
 ----
-===(_with-temp-ns_ & body)===
+===(`_`with-temp-ns`_` & body)===
 ====Macro====
 <pre> Evaluates body in an anonymous namespace, which is then immediately
 removed.  The temporary namespace will 'refer' clojure.core.</pre>

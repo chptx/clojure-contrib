@@ -21,11 +21,11 @@ Shortcuts:
 [#(_const_expr) const] [#(_letfn-_fn-bindings_&_exprs) letfn-] 
 
 ----
-===(_const_ expr)===
+===(`_`const`_` expr)===
 ====Macro====
 <pre> Evaluate the constant expression expr at compile time.</pre>
 ----
-===(_letfn-_ fn-bindings & exprs)===
+===(`_`letfn-`_` fn-bindings & exprs)===
 ====Macro====
 <pre> OBSOLETE: use clojure.core/letfn
 A variant of let for local function definitions. fn-bindings consists

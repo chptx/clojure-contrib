@@ -21,11 +21,11 @@ Shortcuts:
 [#(_buffer-stream_buf) buffer-stream] [#(_mmap_f) mmap] [#(_slurp_f) slurp] 
 
 ----
-===(_buffer-stream_ buf)===
+===(`_`buffer-stream`_` buf)===
 <pre> Returns an InputStream for a ByteBuffer, such as returned by mmap.</pre>
 ----
-===(_mmap_ f)===
+===(`_`mmap`_` f)===
 <pre> Memory-map the file named f.  Returns a ByteBuffer.</pre>
 ----
-===(_slurp_ f)===
+===(`_`slurp`_` f)===
 <pre> Reads the file named by f and returns it as a string.</pre>

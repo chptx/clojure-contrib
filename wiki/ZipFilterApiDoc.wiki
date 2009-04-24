@@ -24,61 +24,61 @@ Variables and Functions in zip-filter.xml:
 [ZipFilterApiDoc#(_attr_attrname) attr] [ZipFilterApiDoc#(_attr=_attrname_attrval) attr=] [ZipFilterApiDoc#(_seq-test_preds) seq-test] [ZipFilterApiDoc#(_tag=_tagname) tag=] [ZipFilterApiDoc#(_text_loc) text] [ZipFilterApiDoc#(_text=_s) text=] [ZipFilterApiDoc#(_xml->_loc_&_preds) xml->] [ZipFilterApiDoc#(_xml1->_loc_&_preds) xml1->] 
 
 ----
-===(_ancestors_ loc)===
+===(`_`ancestors`_` loc)===
 <pre> Returns a lazy sequence of all ancestors of location loc, starting
 with loc and proceeding to loc's parent node and on through to the
 root of the tree.</pre>
 ----
-===(_children_ loc)===
+===(`_`children`_` loc)===
 <pre> Returns a lazy sequence of all immediate children of location loc,
 left-to-right.</pre>
 ----
-===(_children-auto_ loc)===
+===(`_`children-auto`_` loc)===
 <pre> Returns a lazy sequence of all immediate children of location loc,
 left-to-right, marked so that a following tag= predicate will auto-descend.</pre>
 ----
-===(_descendants_ loc)===
+===(`_`descendants`_` loc)===
 <pre> Returns a lazy sequence of all descendants of location loc, in
 depth-first order, left-to-right, starting with loc.</pre>
 ----
-===(_left-locs_ loc)===
+===(`_`left-locs`_` loc)===
 <pre> Returns a lazy sequence of locations to the left of loc, starting with loc.</pre>
 ----
-===(_leftmost?_ loc)===
+===(`_`leftmost?`_` loc)===
 <pre> Returns true if there are no more nodes to the left of location loc.</pre>
 ----
-===(_right-locs_ loc)===
+===(`_`right-locs`_` loc)===
 <pre> Returns a lazy sequence of locations to the right of loc, starting with loc.</pre>
 ----
-===(_rightmost?_ loc)===
+===(`_`rightmost?`_` loc)===
 <pre> Returns true if there are no more nodes to the right of location loc.</pre>
 ==Namespace clojure.contrib.zip-filter.xml==
 ----
-===(_attr_ attrname)===
-===(_attr_ loc attrname)===
+===(`_`attr`_` attrname)===
+===(`_`attr`_` loc attrname)===
 <pre> Returns the xml attribute named attrname, of the xml node at location loc.</pre>
 ----
-===(_attr=_ attrname attrval)===
+===(`_`attr=`_` attrname attrval)===
 <pre> Returns a query predicate that matches a node when it has an
 attribute named attrname whose value is attrval.</pre>
 ----
-===(_seq-test_ preds)===
+===(`_`seq-test`_` preds)===
 <pre> Returns a query predicate that matches a node when its xml content
 matches the query expresions given.</pre>
 ----
-===(_tag=_ tagname)===
+===(`_`tag=`_` tagname)===
 <pre> Returns a query predicate that matches a node when its is a tag
 named tagname.</pre>
 ----
-===(_text_ loc)===
+===(`_`text`_` loc)===
 <pre> Returns the textual contents of the given location, similar to
 xpaths's value-of</pre>
 ----
-===(_text=_ s)===
+===(`_`text=`_` s)===
 <pre> Returns a query predicate that matches a node when its textual
 content equals s.</pre>
 ----
-===(_xml->_ loc & preds)===
+===(`_`xml->`_` loc & preds)===
 <pre> The loc is passed to the first predicate.  If the predicate returns
 a collection, each value of the collection is passed to the next
 predicate.  If it returns a location, the location is passed to the
@@ -96,6 +96,6 @@ they match.
 
  See the footer of zip-query.clj for examples.</pre>
 ----
-===(_xml1->_ loc & preds)===
+===(`_`xml1->`_` loc & preds)===
 <pre> Returns the first item from loc based on the query predicates
 given.  See xml-></pre>

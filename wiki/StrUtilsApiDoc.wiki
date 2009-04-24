@@ -21,14 +21,14 @@ Shortcuts:
 [#(_chomp_s) chomp] [#(_chop_s) chop] [#(_re-gsub_regex_replacement_string) re-gsub] [#(_re-partition_re_string) re-partition] [#(_re-split_pattern_string) re-split] [#(_re-sub_regex_replacement_string) re-sub] [#(_str-join_separator_sequence) str-join] 
 
 ----
-===(_chomp_ s)===
+===(`_`chomp`_` s)===
 <pre> Removes all trailing newline \n or return \r characters from
 string.  Note: String.trim() is similar and faster.</pre>
 ----
-===(_chop_ s)===
+===(`_`chop`_` s)===
 <pre> Removes the last character of string.</pre>
 ----
-===(_re-gsub_ regex replacement string)===
+===(`_`re-gsub`_` regex replacement string)===
 <pre> Replaces all instances of 'pattern' in 'string' with
 'replacement'.  Like Ruby's 'String#gsub'.
 
@@ -36,7 +36,7 @@ string.  Note: String.trim() is similar and faster.</pre>
 match.
 </pre>
 ----
-===(_re-partition_ re string)===
+===(`_`re-partition`_` re string)===
 <pre> Splits the string into a lazy sequence of substrings, alternating
 between substrings that match the patthern and the substrings
 between the matches.  The sequence always starts with the substring
@@ -47,13 +47,13 @@ string matches.
 
  Returns: ("" "abc" "123" "def")</pre>
 ----
-===(_re-split_ pattern string)===
-===(_re-split_ pattern string limit)===
+===(`_`re-split`_` pattern string)===
+===(`_`re-split`_` pattern string limit)===
 <pre> Splits the string on instances of 'pattern'.  Returns a sequence of
 strings.  Optional 'limit' argument is the maximum number of
 splits.  Like Perl's 'split'.</pre>
 ----
-===(_re-sub_ regex replacement string)===
+===(`_`re-sub`_` regex replacement string)===
 <pre> Replaces the first instance of 'pattern' in 'string' with
 'replacement'.  Like Ruby's 'String#sub'.
 
@@ -61,6 +61,6 @@ splits.  Like Perl's 'split'.</pre>
 the match.
 </pre>
 ----
-===(_str-join_ separator sequence)===
+===(`_`str-join`_` separator sequence)===
 <pre> Returns a string of all elements in 'sequence', separated by
 'separator'.  Like Perl's 'join'.</pre>

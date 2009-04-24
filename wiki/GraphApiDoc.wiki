@@ -21,66 +21,66 @@ Shortcuts:
 [#(_add-loops_g) add-loops] [#(_component-graph_g) component-graph] [#(_dependency-list_g) dependency-list] [#(_fixed-point_data_fun_max_equal) fixed-point] [#(_get-neighbors_g_n) get-neighbors] [#(_lazy-walk_g_n) lazy-walk] [#(_post-ordered-nodes_g) post-ordered-nodes] [#(_recursive-component?_g_ns) recursive-component?] [#(_remove-loops_g) remove-loops] [#(_reverse-graph_g) reverse-graph] [#(_scc_g) scc] [#(_self-recursive-sets_g) self-recursive-sets] [#(_stratification-list_g1_g2) stratification-list] [#(_transitive-closure_g) transitive-closure] 
 
 ----
-===(_add-loops_ g)===
+===(`_`add-loops`_` g)===
 <pre> For each node n, add the edge n->n if not already present.</pre>
 ----
-===(_component-graph_ g)===
-===(_component-graph_ g sccs)===
+===(`_`component-graph`_` g)===
+===(`_`component-graph`_` g sccs)===
 <pre> Given a graph, perhaps with cycles, return a reduced graph that is acyclic.
 Each node in the new graph will be a set of nodes from the old.
 These sets are the strongly connected components.  Each edge will
 be the union of the corresponding edges of the prior graph.</pre>
 ----
-===(_dependency-list_ g)===
+===(`_`dependency-list`_` g)===
 <pre> Similar to a topological sort, this returns a vector of sets. The
 set of nodes at index 0 are independent.  The set at index 1 depend
 on index 0; those at 2 depend on 0 and 1, and so on.  Those withing
 a set have no mutual dependencies.  Assume the input graph (which
 much be acyclic) has an edge a->b when a depends on b.</pre>
 ----
-===(_fixed-point_ data fun max equal)===
+===(`_`fixed-point`_` data fun max equal)===
 <pre> Repeatedly apply fun to data until (equal old-data new-data)
 returns true.  If max iterations occur, it will throw an
 exception.  Set max to nil for unlimited iterations.</pre>
 ----
-===(_get-neighbors_ g n)===
+===(`_`get-neighbors`_` g n)===
 <pre> Get the neighbors of a node.</pre>
 ----
-===(_lazy-walk_ g n)===
-===(_lazy-walk_ g ns v)===
+===(`_`lazy-walk`_` g n)===
+===(`_`lazy-walk`_` g ns v)===
 <pre> Return a lazy sequence of the nodes of a graph starting a node n.  Optionally,
 provide a set of visited notes (v) and a collection of nodes to
 visit (ns).</pre>
 ----
-===(_post-ordered-nodes_ g)===
+===(`_`post-ordered-nodes`_` g)===
 <pre> Return a sequence of indexes of a post-ordered walk of the graph.</pre>
 ----
-===(_recursive-component?_ g ns)===
+===(`_`recursive-component?`_` g ns)===
 <pre> Is the component (recieved from scc) self recursive?</pre>
 ----
-===(_remove-loops_ g)===
+===(`_`remove-loops`_` g)===
 <pre> For each node n, remove any edges n->n.</pre>
 ----
-===(_reverse-graph_ g)===
+===(`_`reverse-graph`_` g)===
 <pre> Given a directed graph, return another directed graph with the
 order of the edges reversed.</pre>
 ----
-===(_scc_ g)===
+===(`_`scc`_` g)===
 <pre> Returns, as a sequence of sets, the strongly connected components
 of g.</pre>
 ----
-===(_self-recursive-sets_ g)===
+===(`_`self-recursive-sets`_` g)===
 <pre> Returns, as a sequence of sets, the components of a graph that are
 self-recursive.</pre>
 ----
-===(_stratification-list_ g1 g2)===
+===(`_`stratification-list`_` g1 g2)===
 <pre> Similar to dependency-list (see doc), except two graphs are
 provided.  The first is as dependency-list.  The second (which may
 have cycles) provides a partial-dependency relation.  If node a
 depends on node b (meaning an edge a->b exists) in the second
 graph, node a must be equal or later in the sequence.</pre>
 ----
-===(_transitive-closure_ g)===
+===(`_`transitive-closure`_` g)===
 <pre> Returns the transitive closure of a graph.  The neighbors are lazily computed.
 
  Note: some version of this algorithm return all edges a->a

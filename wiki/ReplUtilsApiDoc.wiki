@@ -21,35 +21,35 @@ Shortcuts:
 [#*local-javadocs* *local-javadocs*] [#*remote-javadocs* *remote-javadocs*] [#(_add-break-thread!_) add-break-thread!] [#(_add-local-javadoc_path) add-local-javadoc] [#(_add-remote-javadoc_package-prefix_url) add-remote-javadoc] [#break-threads break-threads] [#(_find-javadoc-url_classname) find-javadoc-url] [#(_get-source_x) get-source] [#(_javadoc_class-or-object) javadoc] [#(_show_x) show] [#(_source_n) source] [#(_start-handling-break_) start-handling-break] 
 
 ----
-===_`*`local-javadocs`*`_===
+===`_``*`local-javadocs`*``_`===
 <pre> Ref to a list of local paths for Javadoc-generated HTML
 files.</pre>
 ----
-===_`*`remote-javadocs`*`_===
+===`_``*`remote-javadocs`*``_`===
 <pre> Ref to a map from package name prefixes to URLs for remote
 Javadocs.</pre>
 ----
-===(_add-break-thread!_)===
-===(_add-break-thread!_ t)===
+===(`_`add-break-thread!`_`)===
+===(`_`add-break-thread!`_` t)===
 <pre> Add the given thread to break-threads so that it will be stopped
 any time the user presses Ctrl-C.  Calls start-handling-break for
 you.  Adds the current thread if none is given.</pre>
 ----
-===(_add-local-javadoc_ path)===
+===(`_`add-local-javadoc`_` path)===
 <pre> Adds to the list of local Javadoc paths.</pre>
 ----
-===(_add-remote-javadoc_ package-prefix url)===
+===(`_`add-remote-javadoc`_` package-prefix url)===
 <pre> Adds to the list of remote Javadoc URLs.  package-prefix is the
 beginning of the package name that has docs at this URL.</pre>
 ----
-===_break-threads_===
+===`_`break-threads`_`===
 <pre> Threads to stop when Ctrl-C is pressed.  See 'add-break-thread!'</pre>
 ----
-===(_find-javadoc-url_ classname)===
+===(`_`find-javadoc-url`_` classname)===
 <pre> Searches for a URL for the given class name.  Tries
 `*`local-javadocs`*` first, then `*`remote-javadocs`*`.  Returns a string.</pre>
 ----
-===(_get-source_ x)===
+===(`_`get-source`_` x)===
 <pre> Returns a string of the source code for the given symbol, if it can
 find it.  This requires that the symbol resolve to a Var defined in
 a namespace for which the .clj is in the classpath.  Returns nil if
@@ -58,12 +58,12 @@ convenient.
 
  Example: (get-source 'filter)</pre>
 ----
-===(_javadoc_ class-or-object)===
+===(`_`javadoc`_` class-or-object)===
 <pre> Opens a browser window displaying the javadoc for the argument.
 Tries `*`local-javadocs`*` first, then `*`remote-javadocs`*`.</pre>
 ----
-===(_show_ x)===
-===(_show_ x selector)===
+===(`_`show`_` x)===
+===(`_`show`_` x selector)===
 <pre> With one arg prints all static and instance members of x or (class x).
 Each member is listed with a number which can be given as 'selector'
 to return the member object -- the REPL will print more details for
@@ -81,7 +81,7 @@ all the properies of the member object as translated by 'bean'.
 
  Examples: (show Integer)  (show `[``]`)  (show String 23)  (show String "case")</pre>
 ----
-===(_source_ n)===
+===(`_`source`_` n)===
 ====Macro====
 <pre> Prints the source code for the given symbol, if it can find it.
 This requires that the symbol resolve to a Var defined in a
@@ -89,6 +89,6 @@ namespace for which the .clj is in the classpath.
 
  Example: (source filter)</pre>
 ----
-===(_start-handling-break_)===
+===(`_`start-handling-break`_`)===
 <pre> Register INT signal handler.  After calling this, Ctrl-C will cause
 all break-threads to be stopped.  See 'add-break-thread!'</pre>

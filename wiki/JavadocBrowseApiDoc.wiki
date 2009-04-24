@@ -21,10 +21,10 @@ Shortcuts:
 [#(_open-url-in-browser_url) open-url-in-browser] [#(_open-url-in-swing_url) open-url-in-swing] 
 
 ----
-===(_open-url-in-browser_ url)===
+===(`_`open-url-in-browser`_` url)===
 <pre> Opens url (a string) in the default system web browser.  May not
 work on all platforms.  Returns url on success, nil if not
 supported.</pre>
 ----
-===(_open-url-in-swing_ url)===
+===(`_`open-url-in-swing`_` url)===
 <pre> Opens url (a string) in a Swing window.</pre>

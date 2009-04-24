@@ -21,67 +21,67 @@ Shortcuts:
 [#(_add_acc_item) add] [#(_add-items_acc_items) add-items] [#(_combine_&_accs) combine] [#empty-counter empty-counter] [#empty-counter-with-total empty-counter-with-total] [#empty-list empty-list] [#empty-map empty-map] [#empty-maximum empty-maximum] [#empty-mean-variance empty-mean-variance] [#empty-min-max empty-min-max] [#empty-minimum empty-minimum] [#empty-product empty-product] [#empty-queue empty-queue] [#empty-set empty-set] [#empty-string empty-string] [#empty-sum empty-sum] [#(_empty-tuple_empty-accumulators) empty-tuple] [#empty-vector empty-vector] 
 
 ----
-===(_add_ acc item)===
+===(`_`add`_` acc item)===
 <pre> Add item to the accumulator acc. The exact meaning of adding an
 an item depends on the type of the accumulator.</pre>
 ----
-===(_add-items_ acc items)===
+===(`_`add-items`_` acc items)===
 <pre> Add all elements of a collection coll to the accumulator acc.</pre>
 ----
-===(_combine_ & accs)===
+===(`_`combine`_` & accs)===
 <pre> Combine the values of the accumulators acc1 and acc2 into a
 single accumulator of the same type.</pre>
 ----
-===_empty-counter_===
+===`_`empty-counter`_`===
 <pre> An empty counter accumulator. Its value is a map that stores for
 every item the number of times it was added.</pre>
 ----
-===_empty-counter-with-total_===
+===`_`empty-counter-with-total`_`===
 <pre> An empty counter-with-total accumulator. It works like the counter
 accumulator, except that the total number of items added is stored as the
 value of the key :total.</pre>
 ----
-===_empty-list_===
+===`_`empty-list`_`===
 <pre> An empty list accumulator. Adding an item appends it at the beginning.</pre>
 ----
-===_empty-map_===
+===`_`empty-map`_`===
 <pre> An empty map accumulator. Items to be added must be `[`key value`]` pairs.</pre>
 ----
-===_empty-maximum_===
+===`_`empty-maximum`_`===
 <pre> An empty maximum accumulator. Only numbers can be added.</pre>
 ----
-===_empty-mean-variance_===
+===`_`empty-mean-variance`_`===
 <pre> An empty mean-variance accumulator, combining sample mean and
 sample variance. Only numbers can be added.</pre>
 ----
-===_empty-min-max_===
+===`_`empty-min-max`_`===
 <pre> An empty min-max accumulator, combining minimum and maximum.
 Only numbers can be added.</pre>
 ----
-===_empty-minimum_===
+===`_`empty-minimum`_`===
 <pre> An empty minimum accumulator. Only numbers can be added.</pre>
 ----
-===_empty-product_===
+===`_`empty-product`_`===
 <pre> An empty sum accumulator. Only numbers can be added.</pre>
 ----
-===_empty-queue_===
+===`_`empty-queue`_`===
 <pre> An empty queue accumulator. Adding an item appends it at the end.</pre>
 ----
-===_empty-set_===
+===`_`empty-set`_`===
 <pre> An empty set accumulator.</pre>
 ----
-===_empty-string_===
+===`_`empty-string`_`===
 <pre> An empty string accumulator. Adding an item (string or character)
 appends it at the end.</pre>
 ----
-===_empty-sum_===
+===`_`empty-sum`_`===
 <pre> An empty sum accumulator. Only numbers can be added.</pre>
 ----
-===(_empty-tuple_ empty-accumulators)===
+===(`_`empty-tuple`_` empty-accumulators)===
 <pre> Returns an accumulator tuple with the supplied empty-accumulators
 as its value. Accumulator tuples consist of several accumulators that
 work in parallel. Added items must be sequences whose number of elements
 matches the number of sub-accumulators.</pre>
 ----
-===_empty-vector_===
+===`_`empty-vector`_`===
 <pre> An empty vector accumulator. Adding an item appends it at the end.</pre>

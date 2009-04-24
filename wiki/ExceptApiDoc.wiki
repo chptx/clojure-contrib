@@ -21,7 +21,7 @@ Shortcuts:
 [#(_throw-arg_&_args) throw-arg] [#(_throw-if_test_&_args) throw-if] [#(_throw-if-not_test_&_args) throw-if-not] [#(_throwf_&_args) throwf] 
 
 ----
-===(_throw-arg_ & args)===
+===(`_`throw-arg`_` & args)===
 <pre> Throws an IllegalArgumentException. All arguments are optional:
 
        format? format-args`*`
@@ -30,15 +30,15 @@ Shortcuts:
 - format-args are objects that correspond to format specifiers in
   format.</pre>
 ----
-===(_throw-if_ test & args)===
+===(`_`throw-if`_` test & args)===
 <pre> Throws an Exception or Error if test is true. args are those documented
 for throwf.</pre>
 ----
-===(_throw-if-not_ test & args)===
+===(`_`throw-if-not`_` test & args)===
 <pre> Throws an Exception or Error if test is false. args are those documented
 for throwf.</pre>
 ----
-===(_throwf_ & args)===
+===(`_`throwf`_` & args)===
 <pre> Throws an Exception or Error with an optional message formatted using
 clojure/format. All arguments are optional:
 

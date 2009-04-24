@@ -29,16 +29,16 @@ Variables and Functions in types.examples:
 [TypesApiDoc#multiset multiset] 
 
 ----
-===(_defadt_ type-tag & constructors)===
+===(`_`defadt`_` type-tag & constructors)===
 ====Macro====
 <pre> Define an algebraic data type name by an exhaustive list of constructors.
 Each constructor can be a symbol (argument-free constructor) or a
 list consisting of a tag symbol followed by the argument symbols.
 The data type tag must be a keyword.</pre>
 ----
-===(_deftype_ type-tag constructor-name docstring? attr-map?)===
-===(_deftype_ type-tag constructor-name docstring? attr-map? constructor)===
-===(_deftype_ type-tag constructor-name docstring? attr-map? constructor deconstructor)===
+===(`_`deftype`_` type-tag constructor-name docstring? attr-map?)===
+===(`_`deftype`_` type-tag constructor-name docstring? attr-map? constructor)===
+===(`_`deftype`_` type-tag constructor-name docstring? attr-map? constructor deconstructor)===
 ====Macro====
 <pre> Define a data type by a type tag (a namespace-qualified keyword)
 and a symbol naming the constructor function. Optionally, a
@@ -50,11 +50,11 @@ as metadata. The deconstructor function must return the arguments
 to be passed to the constructor in order to create an equivalent
 object. It is used for printing and matching.</pre>
 ----
-===(_deftype-_ type-tag constructor-name & optional)===
+===(`_`deftype-`_` type-tag constructor-name & optional)===
 ====Macro====
 <pre> Same as deftype but the constructor is private.</pre>
 ----
-===(_match_ value & clauses)===
+===(`_`match`_` value & clauses)===
 ====Macro====
 <pre> Given a value and a list of template-expr clauses, evaluate the first
 expr whose template matches the value. There are four kinds of templates:
@@ -74,5 +74,5 @@ template the corresponding elements of the object must be equal
 for the template to match.</pre>
 ==Namespace clojure.contrib.types.examples==
 ----
-===_multiset_===
+===`_`multiset`_`===
 <pre> Multiset (demo implementation)</pre>

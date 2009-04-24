@@ -21,34 +21,34 @@ Shortcuts:
 [#(_abs_n) abs] [#(_ceil_n) ceil] [#(_exact-integer-sqrt_n) exact-integer-sqrt] [#(_expt_base_pow) expt] [#(_floor_n) floor] [#(_gcd_a_b) gcd] [#(_lcm_a_b) lcm] [#(_round_n) round] [#(_sqrt_n) sqrt] 
 
 ----
-===(_abs_ n)===
+===(`_`abs`_` n)===
 <pre> (abs n) is the absolute value of n</pre>
 ----
-===(_ceil_ n)===
+===(`_`ceil`_` n)===
 <pre> (ceil n) returns the least integer greater than or equal to n.
 If n is an exact number, ceil returns an integer, otherwise a double.</pre>
 ----
-===(_exact-integer-sqrt_ n)===
+===(`_`exact-integer-sqrt`_` n)===
 <pre> (exact-integer-sqrt n) expects a non-negative integer n, and returns `[`s r`]` where n = s^2+r and n < (s+1)^2.  In other words, it returns the floor of the square root and the 'remainder'.
 For example, (exact-integer-sqrt 15) is `[`3 6`]` because 15 = 3^2+6.</pre>
 ----
-===(_expt_ base pow)===
+===(`_`expt`_` base pow)===
 <pre> (expt base pow) is base to the pow power.
 Returns an exact number if the base is an exact number and the power is an integer, otherwise returns a double.</pre>
 ----
-===(_floor_ n)===
+===(`_`floor`_` n)===
 <pre> (floor n) returns the greatest integer less than or equal to n.
 If n is an exact number, floor returns an integer, otherwise a double.</pre>
 ----
-===(_gcd_ a b)===
+===(`_`gcd`_` a b)===
 <pre> (gcd a b) returns the greatest common divisor of a and b</pre>
 ----
-===(_lcm_ a b)===
+===(`_`lcm`_` a b)===
 <pre> (lcm a b) returns the least common multiple of a and b</pre>
 ----
-===(_round_ n)===
+===(`_`round`_` n)===
 <pre> (round n) rounds to the nearest integer.
 round always returns an integer.  Rounds up for values exactly in between two integers.</pre>
 ----
-===(_sqrt_ n)===
+===(`_`sqrt`_` n)===
 <pre> Square root, but returns exact number if possible.</pre>

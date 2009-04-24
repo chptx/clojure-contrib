@@ -21,10 +21,10 @@ Shortcuts:
 [#(_json-str_x) json-str] [#print-json print-json] 
 
 ----
-===(_json-str_ x)===
+===(`_`json-str`_` x)===
 <pre> Converts Clojure data structures to a JSON-formatted string.</pre>
 ----
-===_print-json_===
+===`_`print-json`_`===
 <pre> Prints Clojure data types as JSON.  Nil becomes JSON null.
 Keywords become strings, without the leading colon.  Maps become
 JSON objects, all other collection types become JSON arrays.

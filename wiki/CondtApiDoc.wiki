@@ -21,7 +21,7 @@ Shortcuts:
 [#(_condt_expr_&_clauses) condt] [#(_econdt_expr_&_clauses) econdt] 
 
 ----
-===(_condt_ expr & clauses)===
+===(`_`condt`_` expr & clauses)===
 ====Macro====
 <pre> expr is a template expression (see template), clauses are test/expr
 pairs like cond.  Evalautes the template on each test value, one at
@@ -30,6 +30,6 @@ corresponding expr and returns its value.  If none of the tests are
 true, and there are an odd number of clauses, the last clause is
 evaluated, otherwise returns nil.</pre>
 ----
-===(_econdt_ expr & clauses)===
+===(`_`econdt`_` expr & clauses)===
 ====Macro====
 <pre> Like condt but throws Exception if no tests match.</pre>
