@@ -21,29 +21,29 @@ Shortcuts:
 [#(_dir_nsname) dir] [#(_docs_nsname) docs] [#(_get-ns_ns-sym) get-ns] [#(_ns-vars_ns) ns-vars] [#(_print-dir_ns) print-dir] [#(_print-docs_ns) print-docs] [#(_vars_nsname) vars] 
 
 ----
-===(`_`dir`_` nsname)===
+===(_dir_ nsname)===
 ====Macro====
 <pre> Prints a sorted directory of public vars in a namespace</pre>
 ----
-===(`_`docs`_` nsname)===
+===(_docs_ nsname)===
 ====Macro====
 <pre> Prints documentation for the public vars in a namespace</pre>
 ----
-===(`_`get-ns`_` ns-sym)===
+===(_get-ns_ ns-sym)===
 <pre> Returns the namespace named by ns-sym or throws if the
 namespace does not exist</pre>
 ----
-===(`_`ns-vars`_` ns)===
+===(_ns-vars_ ns)===
 <pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>
 ----
-===(`_`print-dir`_` ns)===
+===(_print-dir_ ns)===
 <pre> Prints a sorted directory of public vars in a namespace</pre>
 ----
-===(`_`print-docs`_` ns)===
+===(_print-docs_ ns)===
 <pre> Prints documentation for the public vars in a namespace</pre>
 ----
-===(`_`vars`_` nsname)===
+===(_vars_ nsname)===
 ====Macro====
 <pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>

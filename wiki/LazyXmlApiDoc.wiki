@@ -21,17 +21,17 @@ Shortcuts:
 [#(_emit_x_&_opts) emit] [#(_emit-element_e_&_opts) emit-element] [#(_parse-seq_s) parse-seq] [#(_parse-trim_s) parse-trim] 
 
 ----
-===(`_`emit`_` x & opts)===
+===(_emit_ x & opts)===
 <pre> Prints an <?xml?> declaration line, and then calls emit-element</pre>
 ----
-===(`_`emit-element`_` e & opts)===
+===(_emit-element_ e & opts)===
 <pre> Recursively prints as XML text the element struct e.  To have it
 print extra whitespace like clojure.xml/emit, use the :pad true
 option.</pre>
 ----
-===(`_`parse-seq`_` s)===
-===(`_`parse-seq`_` s startparse)===
-===(`_`parse-seq`_` s startparse queue-size)===
+===(_parse-seq_ s)===
+===(_parse-seq_ s startparse)===
+===(_parse-seq_ s startparse queue-size)===
 <pre> Parses the source s, which can be a File, InputStream or String
 naming a URI. Returns a lazy sequence of maps with two or more of
 the keys :type, :name, :attrs, and :str. Other SAX-compatible
@@ -42,8 +42,8 @@ ahead by queue-size items, which defaults to maxing.  If no parser
 is specified and org.xmlpull.v1.XmlPullParser is in the classpath,
 this superior pull parser will be used.</pre>
 ----
-===(`_`parse-trim`_` s)===
-===(`_`parse-trim`_` s startparse queue-size)===
+===(_parse-trim_ s)===
+===(_parse-trim_ s startparse queue-size)===
 <pre> Parses the source s, which can be a File, InputStream or String
 naming a URI. Returns a lazy tree of the clojure.xml/element
 struct-map, which has the keys :tag, :attrs, and :content and

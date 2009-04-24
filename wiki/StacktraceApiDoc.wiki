@@ -21,25 +21,25 @@ Shortcuts:
 [#(_e_) e] [#(_print-cause-trace_tr) print-cause-trace] [#(_print-stack-trace_tr) print-stack-trace] [#(_print-throwable_tr) print-throwable] [#(_print-trace-element_e) print-trace-element] [#(_root-cause_tr) root-cause] 
 
 ----
-===(`_`e`_`)===
+===(_e_)===
 <pre> REPL utility.  Prints a brief stack trace for the root cause of the
 most recent exception.</pre>
 ----
-===(`_`print-cause-trace`_` tr)===
-===(`_`print-cause-trace`_` tr n)===
+===(_print-cause-trace_ tr)===
+===(_print-cause-trace_ tr n)===
 <pre> Like print-stack-trace but prints chained exceptions (causes).</pre>
 ----
-===(`_`print-stack-trace`_` tr)===
-===(`_`print-stack-trace`_` tr n)===
+===(_print-stack-trace_ tr)===
+===(_print-stack-trace_ tr n)===
 <pre> Prints a Clojure-oriented stack trace of tr, a Throwable.
 Prints a maximum of n stack frames (default: unlimited).
 Does not print chained exceptions (causes).</pre>
 ----
-===(`_`print-throwable`_` tr)===
+===(_print-throwable_ tr)===
 <pre> Prints the class and message of a Throwable.</pre>
 ----
-===(`_`print-trace-element`_` e)===
+===(_print-trace-element_ e)===
 <pre> Prints a Clojure-oriented view of one element in a stack trace.</pre>
 ----
-===(`_`root-cause`_` tr)===
+===(_root-cause_ tr)===
 <pre> Returns the last 'cause' Throwable in a chain of Throwables.</pre>

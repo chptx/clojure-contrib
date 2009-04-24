@@ -21,14 +21,14 @@ Shortcuts:
 [#*html-compatible* *html-compatible*] [#*prxml-indent* *prxml-indent*] [#(_prxml_&_args) prxml] 
 
 ----
-===`_``*`html-compatible`*``_`===
+===_`*`html-compatible`*`_===
 <pre> If true, empty tags will have a space before the closing /></pre>
 ----
-===`_``*`prxml-indent`*``_`===
+===_`*`prxml-indent`*`_===
 <pre> The number of spaces to indent sub-tags.  nil for no indent
 and no extra line-breaks.</pre>
 ----
-===(`_`prxml`_` & args)===
+===(_prxml_ & args)===
 <pre> Print XML to `*`out`*`.  Vectors become XML tags: the first item is the
 tag name; optional second item is a map of attributes.
 

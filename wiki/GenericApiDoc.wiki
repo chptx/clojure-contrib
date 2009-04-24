@@ -28,37 +28,37 @@ Variables and Functions in generic.math-functions:
 
 ==Namespace clojure.contrib.generic.collection==
 ----
-===(`_`assoc`_` coll & key-val-pairs)===
+===(_assoc_ coll & key-val-pairs)===
 <pre> Returns a new collection in which the values corresponding to the
 given keys are updated by the given values. Each type of collection
 can have specific restrictions on the possible keys.</pre>
 ----
-===(`_`dissoc`_` coll & keys)===
+===(_dissoc_ coll & keys)===
 <pre> Returns a new collection in which the entries corresponding to the
 given keys are removed. Each type of collection can have specific
 restrictions on the possible keys.</pre>
 ----
-===(`_`empty`_` coll)===
+===(_empty_ coll)===
 <pre> Returns an empty collection of the same kind as the argument</pre>
 ----
-===(`_`get`_` coll key)===
-===(`_`get`_` coll key not-found)===
+===(_get_ coll key)===
+===(_get_ coll key not-found)===
 <pre> Returns the element of coll referred to by key. Each type of collection
 can have specific restrictions on the possible keys.</pre>
 ----
-===(`_`into`_` to from)===
+===(_into_ to from)===
 <pre> Returns a new coll consisting of to-coll with all of the items of
 from-coll conjoined.</pre>
 ----
-===(`_`seq`_` s)===
+===(_seq_ s)===
 <pre> Returns a seq on the object s.</pre>
 ==Namespace clojure.contrib.generic.functor==
 ----
-===(`_`fmap`_` f s)===
+===(_fmap_ f s)===
 <pre> Applies function f to each item in the data structure s and returns
 a structure of the same kind.</pre>
 ==Namespace clojure.contrib.generic.math-functions==
 ----
-===(`_`approx=`_` x y eps)===
+===(_approx=_ x y eps)===
 <pre> Return true if the absolute value of the difference between x and y
 is less than eps</pre>

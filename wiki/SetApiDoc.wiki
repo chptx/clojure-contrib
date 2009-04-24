@@ -21,14 +21,14 @@ Shortcuts:
 [#(_proper-subset?_set1_set2) proper-subset?] [#(_proper-superset?_set1_set2) proper-superset?] [#(_subset?_set1_set2) subset?] [#(_superset?_set1_set2) superset?] 
 
 ----
-===(`_`proper-subset?`_` set1 set2)===
+===(_proper-subset?_ set1 set2)===
 <pre> Is s1 a proper subset of s2?</pre>
 ----
-===(`_`proper-superset?`_` set1 set2)===
+===(_proper-superset?_ set1 set2)===
 <pre> Is s1 a proper superset of s2?</pre>
 ----
-===(`_`subset?`_` set1 set2)===
+===(_subset?_ set1 set2)===
 <pre> Is set1 a subset of set2?</pre>
 ----
-===(`_`superset?`_` set1 set2)===
+===(_superset?_ set1 set2)===
 <pre> Is set1 a superset of set2?</pre>

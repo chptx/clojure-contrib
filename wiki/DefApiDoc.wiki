@@ -21,52 +21,52 @@ Shortcuts:
 [#(_defalias_name_orig) defalias] [#(_defhinted_sym_init) defhinted] [#(_defmacro-_name_&_decls) defmacro-] [#(_defonce-_name_expr) defonce-] [#(_defstruct-_name_&_decls) defstruct-] [#(_defunbound_name) defunbound] [#(_defunbound-_name_&_decls) defunbound-] [#(_defvar_name) defvar] [#(_defvar-_name_&_decls) defvar-] [#(_name-with-attributes_name_macro-args) name-with-attributes] 
 
 ----
-===(`_`defalias`_` name orig)===
-===(`_`defalias`_` name orig doc)===
+===(_defalias_ name orig)===
+===(_defalias_ name orig doc)===
 ====Macro====
 <pre> Defines an alias for a var: a new var with the same root binding (if
 any) and similar metadata. The metadata of the alias is its initial
 metadata (as provided by def) merged into the metadata of the original.</pre>
 ----
-===(`_`defhinted`_` sym init)===
+===(_defhinted_ sym init)===
 ====Macro====
 <pre> Defines a var with a type hint matching the class of the given
 init.  Be careful about using any form of 'def' or 'binding' to a
 value of a different type.  See http://paste.lisp.org/display/73344</pre>
 ----
-===(`_`defmacro-`_` name & decls)===
+===(_defmacro-_ name & decls)===
 ====Macro====
 <pre> Same as defmacro but yields a private definition</pre>
 ----
-===(`_`defonce-`_` name expr)===
-===(`_`defonce-`_` name expr doc)===
+===(_defonce-_ name expr)===
+===(_defonce-_ name expr doc)===
 ====Macro====
 <pre> Same as defonce but yields a private definition</pre>
 ----
-===(`_`defstruct-`_` name & decls)===
+===(_defstruct-_ name & decls)===
 ====Macro====
 <pre> Same as defstruct but yields a private definition</pre>
 ----
-===(`_`defunbound`_` name)===
-===(`_`defunbound`_` name doc)===
+===(_defunbound_ name)===
+===(_defunbound_ name doc)===
 ====Macro====
 <pre> Defines an unbound var with optional doc string</pre>
 ----
-===(`_`defunbound-`_` name & decls)===
+===(_defunbound-_ name & decls)===
 ====Macro====
 <pre> Same as defunbound but yields a private definition</pre>
 ----
-===(`_`defvar`_` name)===
-===(`_`defvar`_` name init)===
-===(`_`defvar`_` name init doc)===
+===(_defvar_ name)===
+===(_defvar_ name init)===
+===(_defvar_ name init doc)===
 ====Macro====
 <pre> Defines a var with an optional intializer and doc string</pre>
 ----
-===(`_`defvar-`_` name & decls)===
+===(_defvar-_ name & decls)===
 ====Macro====
 <pre> Same as defvar but yields a private definition</pre>
 ----
-===(`_`name-with-attributes`_` name macro-args)===
+===(_name-with-attributes_ name macro-args)===
 <pre> To be used in macro definitions.
 Handles optional docstrings and attribute maps for a name to be defined
 in a list of macro arguments. If the first macro argument is a string,

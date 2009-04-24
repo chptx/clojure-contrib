@@ -21,35 +21,35 @@ Shortcuts:
 [#(_apply-template_expr_values) apply-template] [#(_do-template_expr_&_args) do-template] [#(_find-holes_form) find-holes] [#(_find-pure-exprs_form) find-pure-exprs] [#(_find-symbols_form) find-symbols] [#(_flatten-map_m) flatten-map] [#(_template_&_form) template] [#(_template?_form) template?] 
 
 ----
-===(`_`apply-template`_` expr values)===
+===(_apply-template_ expr values)===
 <pre> Replaces `_`1, `_`2, `_`3, etc. in expr with corresponding elements of
 values.  Returns the modified expression.  For use in macros.</pre>
 ----
-===(`_`do-template`_` expr & args)===
+===(_do-template_ expr & args)===
 ====Macro====
 <pre> Repeatedly evaluates template expr (in a do block) using values in
 args.  args are grouped by the number of holes in the template.
 Example: (do-template (check `_`1 `_`2) :a :b :c :d)
 expands to (do (check :a :b) (check :c :d))</pre>
 ----
-===(`_`find-holes`_` form)===
+===(_find-holes_ form)===
 <pre> Recursively finds all symbols starting with `_` in form.</pre>
 ----
-===(`_`find-pure-exprs`_` form)===
+===(_find-pure-exprs_ form)===
 <pre> Recursively finds all sub-expressions in form that do not contain
 any symbols starting with `_`</pre>
 ----
-===(`_`find-symbols`_` form)===
+===(_find-symbols_ form)===
 <pre> Recursively finds all symbols in form.</pre>
 ----
-===(`_`flatten-map`_` m)===
+===(_flatten-map_ m)===
 <pre> Transforms a map into a vector like `[`key value key value`]`.</pre>
 ----
-===(`_`template`_` & form)===
+===(_template_ & form)===
 ====Macro====
 <pre> Expands to a fn using `_`1, `_`2, `_`3, etc. as arguments (`_` is the same
 as `_`1).  Any sub-expressions without any `_``*` variables are evaluated
 when the fn is created, not when it is called.</pre>
 ----
-===(`_`template?`_` form)===
+===(_template?_ form)===
 <pre> Returns true if form is a valid template expression.</pre>

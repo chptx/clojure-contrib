@@ -21,7 +21,7 @@ Shortcuts:
 [#(_import-static_class_&_fields-and-methods) import-static] 
 
 ----
-===(`_`import-static`_` class & fields-and-methods)===
+===(_import-static_ class & fields-and-methods)===
 ====Macro====
 <pre> Imports the named static fields and/or static methods of the class
 as (private) symbols in the current namespace.

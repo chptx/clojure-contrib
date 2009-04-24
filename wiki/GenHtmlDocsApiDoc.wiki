@@ -21,11 +21,11 @@ Shortcuts:
 [#(_generate-documentation_libs) generate-documentation] [#(_generate-documentation-to-file_path_libs) generate-documentation-to-file] 
 
 ----
-===(`_`generate-documentation`_` libs)===
+===(_generate-documentation_ libs)===
 <pre> Returns a string which is the HTML documentation for the libraries
 named by libs. Libs is a vector of symbols identifying Clojure
 libraries.</pre>
 ----
-===(`_`generate-documentation-to-file`_` path libs)===
+===(_generate-documentation-to-file_ path libs)===
 <pre> Calls generate-documentation on the libraries named by libs and
 emits the generated HTML to the path named by path.</pre>

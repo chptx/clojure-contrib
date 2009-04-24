@@ -21,7 +21,7 @@ Shortcuts:
 [#(_capture-and-send_vars_agent_action_&_args) capture-and-send] 
 
 ----
-===(`_`capture-and-send`_` vars agent action & args)===
+===(_capture-and-send_ vars agent action & args)===
 ====Macro====
 <pre> Capture the current value of the specified vars and rebind 
 them on the agent thread before executing the action.

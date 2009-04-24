@@ -21,7 +21,7 @@ Shortcuts:
 [#(_deep-merge-with_f_&_maps) deep-merge-with] [#(_lazy-get_map_key_not-found) lazy-get] [#(_safe-get_map_key) safe-get] [#(_safe-get-in_map_ks) safe-get-in] 
 
 ----
-===(`_`deep-merge-with`_` f & maps)===
+===(_deep-merge-with_ f & maps)===
 <pre> Like merge-with, but merges maps recursively, appling the given fn
 only when there's a non-map at a particular level.
 
@@ -29,12 +29,12 @@ only when there's a non-map at a particular level.
              {:a {:b {:c 2 :d {:z 9} :z 3} :e 100}})
 -> {:a {:b {:z 3, :c 3, :d {:z 9, :x 1, :y 2}}, :e 103}, :f 4}</pre>
 ----
-===(`_`lazy-get`_` map key not-found)===
+===(_lazy-get_ map key not-found)===
 ====Macro====
 <pre> Like get, but doesn't evaluate not-found unless it is needed.</pre>
 ----
-===(`_`safe-get`_` map key)===
+===(_safe-get_ map key)===
 <pre> Like get, but throws an exception if the key is not found.</pre>
 ----
-===(`_`safe-get-in`_` map ks)===
+===(_safe-get-in_ map ks)===
 <pre> Like get-in, but throws an exception if any key is not found.</pre>

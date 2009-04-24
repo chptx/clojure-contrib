@@ -21,29 +21,29 @@ Shortcuts:
 bind-continue deferror [#(_do-not-handle_) do-not-handle] [#(_error_details) error] handle [#(_raise_err-name_&_args) raise] [#(_raise*_err) raise*] [#(_throw-msg_class-name) throw-msg] [#(_with-handler_&_forms) with-handler] 
 
 ----
-===(`_`bind-continue`_` continue-name `[`args`*``]` & body)===
+===(_bind-continue_ continue-name `[`args`*``]` & body)===
 <pre> Special form to be used inside a 'with-handler'.
 Control can be passed to this 'continue' form from a 'raise' enclosed
 in this with-handler's dynamic scope, when this 'continue-name' is
 given to a 'continue' form.</pre>
 ----
-===(`_`deferror`_` name `[`parent-error?`]` doc-string? `[`args`*``]` & body)===
-===(`_`deferror`_` name `[`parent-error?`]` doc-string? args-destruct-map & body)===
+===(_deferror_ name `[`parent-error?`]` doc-string? `[`args`*``]` & body)===
+===(_deferror_ name `[`parent-error?`]` doc-string? args-destruct-map & body)===
 ====Macro====
 <pre> Define a new error type</pre>
 ----
-===(`_`do-not-handle`_`)===
+===(_do-not-handle_)===
 ====Macro====
 <pre> Use in a tail position of a 'handle' form to indicate 'raise' should
 not consider the error handled, but should continue searching for an
 appropriate 'handle' form.  Allows finer-grain control over catching
 than just the error type.</pre>
 ----
-===(`_`error`_` details)===
+===(_error_ details)===
 <pre> Base type for all error-kit errors</pre>
 ----
-===(`_`handle`_` error-name? `[`args`*``]` & body)===
-===(`_`handle`_` error-name? args-destruct-map-args & body)===
+===(_handle_ error-name? `[`args`*``]` & body)===
+===(_handle_ error-name? args-destruct-map-args & body)===
 <pre> Special form to be used inside a 'with-handler'.  When
 any error is 'raised' from withing the dynamic scope of 'body' that
 is of error-name's type or a derived type, the args will be bound
@@ -53,21 +53,21 @@ may return a value, in which case that will be the return value of
 the entire 'with-handler' form, or it may use any of the special
 return forms, 'do-not-handle', 'continue-with', or 'continue'.</pre>
 ----
-===(`_`raise`_` err-name & args)===
+===(_raise_ err-name & args)===
 ====Macro====
 <pre> Raise an error of the type err-name, constructed with the given args</pre>
 ----
-===(`_`raise`*``_` err)===
+===(_raise`*`_ err)===
 <pre> Raise the given error object, best if created by an error
 constructor defined with deferror.  See also 'raise' macro.</pre>
 ----
-===(`_`throw-msg`_` class-name)===
+===(_throw-msg_ class-name)===
 ====Macro====
 <pre> Returns a function that throws a Java Exception with the given
 name.  Useful to associate a new error-kit error type with a
 particular Java Exception class, via the :unhandled error key.</pre>
 ----
-===(`_`with-handler`_` & forms)===
+===(_with-handler_ & forms)===
 ====Macro====
 <pre> This is error-kit's dynamic scope form.  The body will be executed
 in a dynamic context that includes all of the following 'handle' and

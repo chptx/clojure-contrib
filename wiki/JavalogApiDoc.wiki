@@ -21,23 +21,23 @@ Shortcuts:
 [#*logger* *logger*] [#(_add-log-file_logger-name_filename) add-log-file] [#(_log_level_&_strings) log] [#(_log-level_level) log-level] [#(_root-logger_) root-logger] [#(_set-console-log-level_level) set-console-log-level] [#(_with-logger_logger-name_level_&_body) with-logger] 
 
 ----
-===`_``*`logger`*``_`===
+===_`*`logger`*`_===
 <pre> The current java.util.logging.Logger.  By default, the
 global logger, modified by 'with-logger'.</pre>
 ----
-===(`_`add-log-file`_` logger-name filename)===
-===(`_`add-log-file`_` logger-name filename level)===
+===(_add-log-file_ logger-name filename)===
+===(_add-log-file_ logger-name filename level)===
 <pre> Attaches a log file, using SimpleFormatter, with the given level,
 to the named logger.  'level' defaults to ALL.  Note: multiple
 invocations will create multiple log files, with numbers appended to
 the names.</pre>
 ----
-===(`_`log`_` level & strings)===
+===(_log_ level & strings)===
 ====Macro====
 <pre> Logs a message to `*`logger`*`.  'level' is expanded with 'log-level'.
 Example: (log :severe "Bad argument: " object)</pre>
 ----
-===(`_`log-level`_` level)===
+===(_log-level_ level)===
 ====Macro====
 <pre> Translates 'level' (a lower-case keyword) into a static field of
 java.util.logging.Level, by name.  
@@ -47,16 +47,16 @@ java.util.logging.Level, by name.
  If 'level' is not a keyword, it is assumed to be a user-defined
 instance of java.util.logging.Level and is returned unchanged.</pre>
 ----
-===(`_`root-logger`_`)===
-===(`_`root-logger`_` logger)===
+===(_root-logger_)===
+===(_root-logger_ logger)===
 <pre> Returns the root Logger instance.</pre>
 ----
-===(`_`set-console-log-level`_` level)===
+===(_set-console-log-level_ level)===
 <pre> Attempts to set the level of the current logger and the root
 ConsoleHandler to 'level' (a java.util.logging.Level).  Useful for
 debugging at the REPL.</pre>
 ----
-===(`_`with-logger`_` logger-name level & body)===
+===(_with-logger_ logger-name level & body)===
 ====Macro====
 <pre> Executes 'body' with `*`logger`*` bound to a logger with the given name
 and level.  'level' is expanded with 'log-level'.</pre>

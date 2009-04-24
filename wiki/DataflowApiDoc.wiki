@@ -21,28 +21,28 @@ Shortcuts:
 [#(_add-cell-watcher_cell_key_fun) add-cell-watcher] [#(_add-cells_df_cells) add-cells] [#(_build-dataflow_cs) build-dataflow] [#(_build-source-cell_name_init) build-source-cell] [#(_build-standard-cell_name_deps_fun_expr) build-standard-cell] [#(_build-validator-cell_deps_fun_expr) build-validator-cell] [#(_cell_type_&_data) cell] [#display-cell display-cell] [#eval-cell eval-cell] [#(_get-cell_df_name) get-cell] [#(_get-cells_df_name) get-cells] [#(_get-old-value_df_env_name) get-old-value] [#(_get-source-cells_df) get-source-cells] [#(_get-value_df_name) get-value] [#(_get-value-from-cell_cell) get-value-from-cell] [#(_get-values_df_name) get-values] [#(_print-dataflow_df) print-dataflow] [#(_remove-cells_df_cells) remove-cells] [#(_source-cell?_cell) source-cell?] [#(_update-values_df_data) update-values] 
 
 ----
-===(`_`add-cell-watcher`_` cell key fun)===
+===(_add-cell-watcher_ cell key fun)===
 <pre> Adds a watcher to a cell to respond to changes of value.  The is a
 function of 4 values: a key, the cell, its old value, its new
 value.  This is implemented using Clojure's add-watch to the
 underlying ref, and shared its sematics</pre>
 ----
-===(`_`add-cells`_` df cells)===
+===(_add-cells_ df cells)===
 <pre> Given a collection of cells, add them to the dataflow.</pre>
 ----
-===(`_`build-dataflow`_` cs)===
+===(_build-dataflow_ cs)===
 <pre> Given a collection of cells, build and return a dataflow object</pre>
 ----
-===(`_`build-source-cell`_` name init)===
+===(_build-source-cell_ name init)===
 <pre> Builds a source cell</pre>
 ----
-===(`_`build-standard-cell`_` name deps fun expr)===
+===(_build-standard-cell_ name deps fun expr)===
 <pre> Builds a standard cell</pre>
 ----
-===(`_`build-validator-cell`_` deps fun expr)===
+===(_build-validator-cell_ deps fun expr)===
 <pre> Builds a validator cell</pre>
 ----
-===(`_`cell`_` type & data)===
+===(_cell_ type & data)===
 ====Macro====
 <pre> Build a standard cell, like this:
 
@@ -71,45 +71,45 @@ underlying ref, and shared its sematics</pre>
 
  Which will perform the validation</pre>
 ----
-===`_`display-cell`_`===
+===_display-cell_===
 <pre> A 'readable' form of the cell</pre>
 ----
-===`_`eval-cell`_`===
+===_eval-cell_===
 <pre> Evaluate a dataflow cell.  Return `[`changed, old val`]`</pre>
 ----
-===(`_`get-cell`_` df name)===
+===(_get-cell_ df name)===
 <pre> Get the single cell named by name</pre>
 ----
-===(`_`get-cells`_` df name)===
+===(_get-cells_ df name)===
 <pre> Get all the cells named by name</pre>
 ----
-===(`_`get-old-value`_` df env name)===
+===(_get-old-value_ df env name)===
 <pre> Looks up an old value</pre>
 ----
-===(`_`get-source-cells`_` df)===
+===(_get-source-cells_ df)===
 <pre> Returns a collection of source cells from the dataflow</pre>
 ----
-===(`_`get-value`_` df name)===
+===(_get-value_ df name)===
 <pre> Gets a value from the df matching the passed symbol.
 Signals an error if the name is not present, or if it not a single
 value.</pre>
 ----
-===(`_`get-value-from-cell`_` cell)===
+===(_get-value-from-cell_ cell)===
 <pre> Given a cell, get its value</pre>
 ----
-===(`_`get-values`_` df name)===
+===(_get-values_ df name)===
 <pre> Gets a collection of values from the df by name</pre>
 ----
-===(`_`print-dataflow`_` df)===
+===(_print-dataflow_ df)===
 <pre> Prints a dataflow, one cell per line</pre>
 ----
-===(`_`remove-cells`_` df cells)===
+===(_remove-cells_ df cells)===
 <pre> Given a collection of cells, remove them from the dataflow.</pre>
 ----
-===(`_`source-cell?`_` cell)===
+===(_source-cell?_ cell)===
 <pre> Is this cell a source cell?</pre>
 ----
-===(`_`update-values`_` df data)===
+===(_update-values_ df data)===
 <pre> Given a dataflow, and a map of name-value pairs, update the
 dataflow by binding the new values.  Each name must be of a source
 cell</pre>

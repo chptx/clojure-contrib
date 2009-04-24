@@ -21,10 +21,10 @@ Shortcuts:
 [#(_print-repl-info_) print-repl-info] [#(_repl_&_options) repl] [#(_repl-info_) repl-info] [#(_repl-prompt_) repl-prompt] [#(_set-repl-name_) set-repl-name] [#(_set-repl-prompt_) set-repl-prompt] [#(_stream-repl_&_options) stream-repl] 
 
 ----
-===(`_`print-repl-info`_`)===
+===(_print-repl-info_)===
 <pre> Prints info about the current repl</pre>
 ----
-===(`_`repl`_` & options)===
+===(_repl_ & options)===
 <pre> A repl that supports line numbers. For definitions and evaluations made
 at the repl, the repl-name and line number will be reported as the
 origin. Use set-repl-name and set-repl-prompt to customize the repl name
@@ -40,14 +40,14 @@ for clojure.main/repl with the following change and additions:
       - :prompt-fmt, Prompt format string
        default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
 ----
-===(`_`repl-info`_`)===
+===(_repl-info_)===
 <pre> Returns a map of info about the current repl</pre>
 ----
-===(`_`repl-prompt`_`)===
+===(_repl-prompt_)===
 <pre> Returns the current repl prompt based on this repl's prompt-fmt</pre>
 ----
-===(`_`set-repl-name`_`)===
-===(`_`set-repl-name`_` name-fmt)===
+===(_set-repl-name_)===
+===(_set-repl-name_ name-fmt)===
 <pre> Sets the repl name format to the string name-fmt. Include the following
 codes in the name to make the corresponding dynamic values part of it:
 
@@ -57,8 +57,8 @@ codes in the name to make the corresponding dynamic values part of it:
 
  With no arguments, resets the repl name to its default: "repl-%S"</pre>
 ----
-===(`_`set-repl-prompt`_`)===
-===(`_`set-repl-prompt`_` prompt-fmt)===
+===(_set-repl-prompt_)===
+===(_set-repl-prompt_ prompt-fmt)===
 <pre> Sets the repl prompt. Include the following codes in the prompt to make
 the corresponding dynamic values part of it:
 
@@ -70,7 +70,7 @@ the corresponding dynamic values part of it:
 
  With no arguments, resets the repl pompt to its default: "%S:%L %N=> "</pre>
 ----
-===(`_`stream-repl`_` & options)===
+===(_stream-repl_ & options)===
 <pre> Repl entry point that provides convenient overriding of input, output,
 and err streams via sequential keyword-value pairs. Default values
 for :in, :out, and :err are streams associated with System/in,

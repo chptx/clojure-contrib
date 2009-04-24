@@ -21,26 +21,26 @@ Shortcuts:
 [#(_all-greatest_&_args) all-greatest] [#(_all-greatest-by_f_&_args) all-greatest-by] [#(_all-least_&_args) all-least] [#(_all-least-by_f_&_args) all-least-by] [#(_greatest_&_args) greatest] [#(_greatest-by_f_&_args) greatest-by] [#(_least_&_args) least] [#(_least-by_f_&_args) least-by] 
 
 ----
-===(`_`all-greatest`_` & args)===
+===(_all-greatest_ & args)===
 <pre> Returns all the greatest elements.</pre>
 ----
-===(`_`all-greatest-by`_` f & args)===
+===(_all-greatest-by_ f & args)===
 <pre> Return all the elements for which f yields the greatest value.</pre>
 ----
-===(`_`all-least`_` & args)===
+===(_all-least_ & args)===
 <pre> Returns all the least elements.</pre>
 ----
-===(`_`all-least-by`_` f & args)===
+===(_all-least-by_ f & args)===
 <pre> Return all the elements for which f yields the least value.</pre>
 ----
-===(`_`greatest`_` & args)===
+===(_greatest_ & args)===
 <pre> Return the greatest argument.</pre>
 ----
-===(`_`greatest-by`_` f & args)===
+===(_greatest-by_ f & args)===
 <pre> Return the argument for which f yields the greatest value.</pre>
 ----
-===(`_`least`_` & args)===
+===(_least_ & args)===
 <pre> Return the smallest element.</pre>
 ----
-===(`_`least-by`_` f & args)===
+===(_least-by_ f & args)===
 <pre> Return the argument for which f yields the smallest value.</pre>

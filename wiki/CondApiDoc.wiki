@@ -21,7 +21,7 @@ Shortcuts:
 [#(_cond-let_bindings_&_clauses) cond-let] 
 
 ----
-===(`_`cond-let`_` bindings & clauses)===
+===(_cond-let_ bindings & clauses)===
 ====Macro====
 <pre> Takes a binding-form and a set of test/expr pairs. Evaluates each test
 one at a time. If a test returns logical true, cond-let evaluates and
