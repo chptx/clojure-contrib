@@ -24,30 +24,44 @@ Shortcuts:
 ===_`*`local-javadocs`*`_===
 <pre> Ref to a list of local paths for Javadoc-generated HTML
 files.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#18 Source]
 ----
 ===_`*`remote-javadocs`*`_===
 <pre> Ref to a map from package name prefixes to URLs for remote
 Javadocs.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#28 Source]
 ----
 ===(_add-break-thread!_)===
 ===(_add-break-thread!_ t)===
 <pre> Add the given thread to break-threads so that it will be stopped
 any time the user presses Ctrl-C.  Calls start-handling-break for
 you.  Adds the current thread if none is given.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#139 Source]
 ----
 ===(_add-local-javadoc_ path)===
 <pre> Adds to the list of local Javadoc paths.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#43 Source]
 ----
 ===(_add-remote-javadoc_ package-prefix url)===
 <pre> Adds to the list of remote Javadoc URLs.  package-prefix is the
 beginning of the package name that has docs at this URL.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#48 Source]
 ----
 ===_break-threads_===
 <pre> Threads to stop when Ctrl-C is pressed.  See 'add-break-thread!'</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#119 Source]
 ----
 ===(_find-javadoc-url_ classname)===
 <pre> Searches for a URL for the given class name.  Tries
 `*`local-javadocs`*` first, then `*`remote-javadocs`*`.  Returns a string.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#54 Source]
 ----
 ===(_get-source_ x)===
 <pre> Returns a string of the source code for the given symbol, if it can
@@ -57,10 +71,14 @@ it can't find the source.  For most REPL usage, 'source' is more
 convenient.
 
  Example: (get-source 'filter)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#88 Source]
 ----
 ===(_javadoc_ class-or-object)===
 <pre> Opens a browser window displaying the javadoc for the argument.
 Tries `*`local-javadocs`*` first, then `*`remote-javadocs`*`.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#74 Source]
 ----
 ===(_show_ x)===
 ===(_show_ x selector)===
@@ -80,6 +98,8 @@ predicate will be passed a single argument, a map that includes the
 all the properies of the member object as translated by 'bean'.
 
  Examples: (show Integer)  (show `[``]`)  (show String 23)  (show String "case")</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#53 Source]
 ----
 ===(_source_ n)===
 ====Macro====
@@ -88,7 +108,11 @@ This requires that the symbol resolve to a Var defined in a
 namespace for which the .clj is in the classpath.
 
  Example: (source filter)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#109 Source]
 ----
 ===(_start-handling-break_)===
 <pre> Register INT signal handler.  After calling this, Ctrl-C will cause
 all break-threads to be stopped.  See 'add-break-thread!'</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#122 Source]

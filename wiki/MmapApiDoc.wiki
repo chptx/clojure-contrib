@@ -23,9 +23,15 @@ Shortcuts:
 ----
 ===(_buffer-stream_ buf)===
 <pre> Returns an InputStream for a ByteBuffer, such as returned by mmap.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#35 Source]
 ----
 ===(_mmap_ f)===
 <pre> Memory-map the file named f.  Returns a ByteBuffer.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#23 Source]
 ----
 ===(_slurp_ f)===
 <pre> Reads the file named by f and returns it as a string.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#29 Source]

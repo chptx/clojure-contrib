@@ -23,12 +23,20 @@ Shortcuts:
 ----
 ===(_proper-subset?_ set1 set2)===
 <pre> Is s1 a proper subset of s2?</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#32 Source]
 ----
 ===(_proper-superset?_ set1 set2)===
 <pre> Is s1 a proper superset of s2?</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#39 Source]
 ----
 ===(_subset?_ set1 set2)===
 <pre> Is set1 a subset of set2?</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#18 Source]
 ----
 ===(_superset?_ set1 set2)===
 <pre> Is set1 a superset of set2?</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#25 Source]

@@ -29,6 +29,8 @@ Variables and Functions in sql.test:
 ----
 ===(_connection_)===
 <pre> Returns the current database connection (or throws if there is none)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#25 Source]
 ----
 ===(_create-table_ name & specs)===
 <pre> Creates a table on the open database connection given a table name and
@@ -36,34 +38,50 @@ specs. Each spec is either a column spec: a vector containing a column
 name and optionally a type and other constraints, or a table-level
 constraint: a vector containing words that express the constraint. All
 words used to describe the table may be supplied as strings or keywords.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#90 Source]
 ----
 ===(_delete-rows_ table where-params)===
 <pre> Deletes rows from a table. where-params is a vector containing a string
 providing the (optionally parameterized) selection criteria followed by
 values for any parameters.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#144 Source]
 ----
 ===(_do-commands_ & commands)===
 <pre> Executes SQL commands on the open database connection.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#68 Source]
 ----
 ===(_do-prepared_ sql & param-groups)===
 <pre> Executes an (optionally parameterized) SQL prepared statement on the
 open database connection. Each param-group is a seq of values for all of
 the parameters.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#77 Source]
 ----
 ===(_drop-table_ name)===
 <pre> Drops a table on the open database connection given its name, a string
 or keyword</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#106 Source]
 ----
 ===(_find-connection_)===
 <pre> Returns the current database connection (or nil if there is none)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#24 Source]
 ----
 ===(_insert-records_ table & records)===
 <pre> Inserts records into a table. records are maps from strings or
 keywords (identifying columns) to values.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#137 Source]
 ----
 ===(_insert-rows_ table & rows)===
 <pre> Inserts complete rows into a table. Each row is a vector of values for
 each of the table's columns in order.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#131 Source]
 ----
 ===(_insert-values_ table column-names & value-groups)===
 <pre> Inserts rows into a table with values for specified columns only.
@@ -71,14 +89,20 @@ column-names is a vector of strings or keywords identifying columns. Each
 value-group is a vector containing a values for each column in
 order. When inserting complete rows (all columns), consider using
 insert-rows instead.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#113 Source]
 ----
 ===(_is-rollback-only_)===
 <pre> Returns true if the outermost transaction will rollback rather than
 commit when complete</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#62 Source]
 ----
 ===(_set-rollback-only_)===
 <pre> Marks the outermost transaction such that it will rollback rather than
 commit when complete</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#56 Source]
 ----
 ===(_transaction_ & body)===
 ====Macro====
@@ -89,6 +113,8 @@ evaluating the outermost body, or rolled back on any uncaught
 exception. If set-rollback-only is called within scope of the outermost
 transaction, the entire transaction will be rolled back rather than
 committed when complete.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#45 Source]
 ----
 ===(_update-or-insert-values_ table where-params record)===
 <pre> Updates values on selected rows in a table, or inserts a new row when no
@@ -96,12 +122,16 @@ existing row matches the selection criteria. where-params is a vector
 containing a string providing the (optionally parameterized) selection
 criteria followed by values for any parameters. record is a map from
 strings or keywords (identifying columns) to updated values.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#169 Source]
 ----
 ===(_update-values_ table where-params record)===
 <pre> Updates values on selected rows in a table. where-params is a vector
 containing a string providing the (optionally parameterized) selection
 criteria followed by values for any parameters. record is a map from
 strings or keywords (identifying columns) to updated values.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#155 Source]
 ----
 ===(_with-connection_ db-spec & body)===
 ====Macro====
@@ -119,6 +149,8 @@ following parameter sets:
   :subprotocol (required) a String, the jdbc subprotocol
   :subname     (required) a String, the jdbc subname
   (others)     (optional) passed to the driver as properties.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#27 Source]
 ----
 ===(_with-query-results_ results sql-params & body)===
 ====Macro====
@@ -126,13 +158,19 @@ following parameter sets:
 results. sql-params is a vector containing a string providing
 the (optionally parameterized) SQL query followed by values for any
 parameters.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#182 Source]
 ==Namespace clojure.contrib.sql.internal==
 ----
 ===(_connection`*`_)===
 <pre> Returns the current database connection (or throws if there is none)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#26 Source]
 ----
 ===(_find-connection`*`_)===
 <pre> Returns the current database connection (or nil if there is none)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#21 Source]
 ----
 ===(_get-connection_ {:keys `[`datasource username password classname subprotocol subname`]`, :as db-spec})===
 <pre> Creates a connection to a database. db-spec is a map containing values
@@ -148,10 +186,14 @@ for one of the following parameter sets:
   :subprotocol (required) a String, the jdbc subprotocol
   :subname     (required) a String, the jdbc subname
   (others)     (optional) passed to the driver as properties.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#39 Source]
 ----
 ===(_rollback_)===
 ===(_rollback_ val)===
 <pre> Accessor for the rollback flag on the current connection</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#32 Source]
 ----
 ===(_transaction`*`_ func)===
 <pre> Evaluates func as a transaction on the open database connection. Any
@@ -161,61 +203,99 @@ evaluating the outermost body, or rolled back on any uncaught
 exception. If rollback is set within scope of the outermost transaction,
 the entire transaction will be rolled back rather than committed when
 complete.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#74 Source]
 ----
 ===(_with-connection`*`_ db-spec func)===
 <pre> Evaluates func in the context of a new connection to a database then
 closes the connection.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#65 Source]
 ----
 ===(_with-query-results`*`_ `[`sql & params :as sql-params`]` func)===
 <pre> Executes a query, then evaluates func passing in a seq of the results as
 an argument. The first argument is a vector containing the (optionally
 parameterized) sql query string followed by values for any parameters.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#104 Source]
 ==Namespace clojure.contrib.sql.test==
 ----
 ===(_create-fruit_)===
 <pre> Create a table</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#24 Source]
 ----
 ===(_db-exception_)===
 <pre> Demonstrate rolling back a partially completed transaction on exception</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#160 Source]
 ----
 ===(_db-get-tables_)===
 <pre> Demonstrate getting table info</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#149 Source]
 ----
 ===(_db-grade-a_)===
 <pre> Print rows describing all grade a fruit (grade between 90 and 100)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#144 Source]
 ----
 ===(_db-grade-range_ min max)===
 <pre> Print rows describing fruit that are within a grade range</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#130 Source]
 ----
 ===(_db-read_)===
 <pre> Read the entire fruit table</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#81 Source]
 ----
 ===(_db-read-all_)===
 <pre> Return all the rows of the fruit table as a vector</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#120 Source]
 ----
 ===(_db-rollback_)===
 <pre> Demonstrate a rollback-only trasaction</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#176 Source]
 ----
 ===(_db-update_)===
 <pre> Update two fruits as a transaction</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#100 Source]
 ----
 ===(_db-update-appearance-cost_ name appearance cost)===
 <pre> Update the appearance and cost of the named fruit</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#92 Source]
 ----
 ===(_db-update-or-insert_ record)===
 <pre> Updates or inserts a fruit</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#110 Source]
 ----
 ===(_db-write_)===
 <pre> Write initial values to the database as a transaction</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#68 Source]
 ----
 ===(_drop-fruit_)===
 <pre> Drop a table</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#34 Source]
 ----
 ===(_insert-records-fruit_)===
 <pre> Insert records, maps from keys specifying columns to values</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#60 Source]
 ----
 ===(_insert-rows-fruit_)===
 <pre> Insert complete rows</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#41 Source]
 ----
 ===(_insert-values-fruit_)===
 <pre> Insert rows with values for only specific columns</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#51 Source]

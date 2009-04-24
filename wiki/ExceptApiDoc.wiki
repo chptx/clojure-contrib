@@ -29,14 +29,20 @@ Shortcuts:
  - format is a format string for clojure/format
 - format-args are objects that correspond to format specifiers in
   format.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#51 Source]
 ----
 ===(_throw-if_ test & args)===
 <pre> Throws an Exception or Error if test is true. args are those documented
 for throwf.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#37 Source]
 ----
 ===(_throw-if-not_ test & args)===
 <pre> Throws an Exception or Error if test is false. args are those documented
 for throwf.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#44 Source]
 ----
 ===(_throwf_ & args)===
 <pre> Throws an Exception or Error with an optional message formatted using
@@ -49,3 +55,5 @@ clojure/format. All arguments are optional:
 - format is a format string for clojure/format
 - format-args are objects that correspond to format specifiers in
   format.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#23 Source]

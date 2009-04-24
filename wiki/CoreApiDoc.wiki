@@ -29,6 +29,8 @@ Examples :
 (-?> "foo" .toUpperCase (.substring 1)) returns "OO"
 (-?> nil .toUpperCase (.substring 1)) returns nil
 </pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#26 Source]
 ----
 ===(_.?._ x form)===
 ===(_.?._ x form & forms)===
@@ -38,3 +40,5 @@ Examples :
 (.?. "foo" .toUpperCase (.substring 1)) returns "OO"
 (.?. nil .toUpperCase (.substring 1)) returns nil
 </pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#34 Source]

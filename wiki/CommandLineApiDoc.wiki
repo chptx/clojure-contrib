@@ -24,3 +24,5 @@ Shortcuts:
 ===(_with-command-line_ args desc cmdspec & body)===
 ====Macro====
 <pre> Bind locals to command-line args.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/command_line.clj#85 Source]

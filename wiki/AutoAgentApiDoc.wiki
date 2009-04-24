@@ -27,3 +27,5 @@ Shortcuts:
 Whenever one of the agents/atoms/refs dererenced within expr
 changes, expr is reevaluated and this agent's state is set to its
 new value.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/auto_agent.clj#46 Source]

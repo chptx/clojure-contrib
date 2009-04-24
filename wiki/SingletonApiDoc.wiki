@@ -29,6 +29,8 @@ cache the value for all subsequent calls.
 
  Warning: global singletons are often unsafe in multi-threaded code.
 Consider per-thread-singleton instead.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton.clj#25 Source]
 ----
 ===(_per-thread-singleton_ f)===
 <pre> Returns a per-thread singleton function.  f is a function of no
@@ -41,3 +43,5 @@ safely and lazily initialize shared objects on a per-thread basis.
 per-thread-singleton in the initialization function for another
 per-thread-singleton.  See
 http://bugs.sun.com/bugdatabase/view`_`bug.do?bug`_`id=5025230</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton.clj#38 Source]

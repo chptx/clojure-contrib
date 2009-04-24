@@ -23,24 +23,40 @@ Shortcuts:
 ----
 ===(_all-greatest_ & args)===
 <pre> Returns all the greatest elements.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#49 Source]
 ----
 ===(_all-greatest-by_ f & args)===
 <pre> Return all the elements for which f yields the greatest value.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#44 Source]
 ----
 ===(_all-least_ & args)===
 <pre> Returns all the least elements.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#59 Source]
 ----
 ===(_all-least-by_ f & args)===
 <pre> Return all the elements for which f yields the least value.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#54 Source]
 ----
 ===(_greatest_ & args)===
 <pre> Return the greatest argument.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#15 Source]
 ----
 ===(_greatest-by_ f & args)===
 <pre> Return the argument for which f yields the greatest value.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#10 Source]
 ----
 ===(_least_ & args)===
 <pre> Return the smallest element.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#25 Source]
 ----
 ===(_least-by_ f & args)===
 <pre> Return the argument for which f yields the smallest value.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#20 Source]

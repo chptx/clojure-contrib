@@ -25,6 +25,10 @@ Shortcuts:
 <pre> Opens url (a string) in the default system web browser.  May not
 work on all platforms.  Returns url on success, nil if not
 supported.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javadoc/browse.clj#22 Source]
 ----
 ===(_open-url-in-swing_ url)===
 <pre> Opens url (a string) in a Swing window.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javadoc/browse.clj#37 Source]

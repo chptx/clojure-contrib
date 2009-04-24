@@ -24,64 +24,100 @@ Shortcuts:
 ===(_add_ acc item)===
 <pre> Add item to the accumulator acc. The exact meaning of adding an
 an item depends on the type of the accumulator.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#26 Source]
 ----
 ===(_add-items_ acc items)===
 <pre> Add all elements of a collection coll to the accumulator acc.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#32 Source]
 ----
 ===(_combine_ & accs)===
 <pre> Combine the values of the accumulators acc1 and acc2 into a
 single accumulator of the same type.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#37 Source]
 ----
 ===_empty-counter_===
 <pre> An empty counter accumulator. Its value is a map that stores for
 every item the number of times it was added.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#266 Source]
 ----
 ===_empty-counter-with-total_===
 <pre> An empty counter-with-total accumulator. It works like the counter
 accumulator, except that the total number of items added is stored as the
 value of the key :total.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#287 Source]
 ----
 ===_empty-list_===
 <pre> An empty list accumulator. Adding an item appends it at the beginning.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#83 Source]
 ----
 ===_empty-map_===
 <pre> An empty map accumulator. Items to be added must be `[`key value`]` pairs.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#140 Source]
 ----
 ===_empty-maximum_===
 <pre> An empty maximum accumulator. Only numbers can be added.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#180 Source]
 ----
 ===_empty-mean-variance_===
 <pre> An empty mean-variance accumulator, combining sample mean and
 sample variance. Only numbers can be added.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#227 Source]
 ----
 ===_empty-min-max_===
 <pre> An empty min-max accumulator, combining minimum and maximum.
 Only numbers can be added.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#202 Source]
 ----
 ===_empty-minimum_===
 <pre> An empty minimum accumulator. Only numbers can be added.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#186 Source]
 ----
 ===_empty-product_===
 <pre> An empty sum accumulator. Only numbers can be added.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#172 Source]
 ----
 ===_empty-queue_===
 <pre> An empty queue accumulator. Adding an item appends it at the end.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#97 Source]
 ----
 ===_empty-set_===
 <pre> An empty set accumulator.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#111 Source]
 ----
 ===_empty-string_===
 <pre> An empty string accumulator. Adding an item (string or character)
 appends it at the end.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#125 Source]
 ----
 ===_empty-sum_===
 <pre> An empty sum accumulator. Only numbers can be added.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#169 Source]
 ----
 ===(_empty-tuple_ empty-accumulators)===
 <pre> Returns an accumulator tuple with the supplied empty-accumulators
 as its value. Accumulator tuples consist of several accumulators that
 work in parallel. Added items must be sequences whose number of elements
 matches the number of sub-accumulators.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#305 Source]
 ----
 ===_empty-vector_===
 <pre> An empty vector accumulator. Adding an item appends it at the end.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#69 Source]

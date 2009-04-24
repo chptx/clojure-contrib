@@ -23,3 +23,5 @@ Shortcuts:
 ----
 ===_primes_===
 <pre> Lazy sequence of all the prime numbers.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs.clj#40 Source]

@@ -25,32 +25,48 @@ Shortcuts:
 <pre> Interpret a String or a java.io.File as a File. Building block
 for clojure.contrib.java-utils/file, which you should prefer
 in most cases.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#51 Source]
 ----
 ===(_as-properties_ m)===
 <pre> Convert any seq of pairs to a java.utils.Properties instance.
 Uses as-str to convert both keys and values into strings.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#110 Source]
 ----
 ===(_as-str_ x)===
 <pre> Returns the name or string representation of x</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#68 Source]
 ----
 ===(_file_ arg)===
 ===(_file_ parent child)===
 ===(_file_ parent child & more)===
 <pre> Returns a java.io.File from string or file args.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#59 Source]
 ----
 ===(_get-system-property_ stringable)===
 ===(_get-system-property_ stringable default)===
 <pre> Get a system property.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#75 Source]
 ----
 ===(_read-properties_ file-able)===
 <pre> Read properties from file-able.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#120 Source]
 ----
 ===_relative-path-string_===
 <pre> Interpret a String or java.io.File as a relative path string. 
 Building block for clojure.contrib.java-utils/file.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#38 Source]
 ----
 ===(_set-system-properties_ settings)===
 <pre> Set some system properties. Nil clears a property.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#82 Source]
 ----
 ===(_with-system-properties_ settings & body)===
 ====Macro====
@@ -59,7 +75,11 @@ Building block for clojure.contrib.java-utils/file.</pre>
  Sets the system properties to the supplied values, executes the body, and
 sets the properties back to their original values. Values of nil are
 translated to a clearing of the property.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#90 Source]
 ----
 ===(_write-properties_ m file-able)===
 ===(_write-properties_ m file-able comments)===
 <pre> Write properties to file-able.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#127 Source]

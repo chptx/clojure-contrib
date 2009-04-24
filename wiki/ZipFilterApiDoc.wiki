@@ -28,55 +28,83 @@ Variables and Functions in zip-filter.xml:
 <pre> Returns a lazy sequence of all ancestors of location loc, starting
 with loc and proceeding to loc's parent node and on through to the
 root of the tree.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#60 Source]
 ----
 ===(_children_ loc)===
 <pre> Returns a lazy sequence of all immediate children of location loc,
 left-to-right.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#40 Source]
 ----
 ===(_children-auto_ loc)===
 <pre> Returns a lazy sequence of all immediate children of location loc,
 left-to-right, marked so that a following tag= predicate will auto-descend.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#47 Source]
 ----
 ===(_descendants_ loc)===
 <pre> Returns a lazy sequence of all descendants of location loc, in
 depth-first order, left-to-right, starting with loc.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#55 Source]
 ----
 ===(_left-locs_ loc)===
 <pre> Returns a lazy sequence of locations to the left of loc, starting with loc.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#28 Source]
 ----
 ===(_leftmost?_ loc)===
 <pre> Returns true if there are no more nodes to the left of location loc.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#32 Source]
 ----
 ===(_right-locs_ loc)===
 <pre> Returns a lazy sequence of locations to the right of loc, starting with loc.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#24 Source]
 ----
 ===(_rightmost?_ loc)===
 <pre> Returns true if there are no more nodes to the right of location loc.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#36 Source]
 ==Namespace clojure.contrib.zip-filter.xml==
 ----
 ===(_attr_ attrname)===
 ===(_attr_ loc attrname)===
 <pre> Returns the xml attribute named attrname, of the xml node at location loc.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#18 Source]
 ----
 ===(_attr=_ attrname attrval)===
 <pre> Returns a query predicate that matches a node when it has an
 attribute named attrname whose value is attrval.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#23 Source]
 ----
 ===(_seq-test_ preds)===
 <pre> Returns a query predicate that matches a node when its xml content
 matches the query expresions given.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#51 Source]
 ----
 ===(_tag=_ tagname)===
 <pre> Returns a query predicate that matches a node when its is a tag
 named tagname.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#28 Source]
 ----
 ===(_text_ loc)===
 <pre> Returns the textual contents of the given location, similar to
 xpaths's value-of</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#38 Source]
 ----
 ===(_text=_ s)===
 <pre> Returns a query predicate that matches a node when its textual
 content equals s.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#46 Source]
 ----
 ===(_xml->_ loc & preds)===
 <pre> The loc is passed to the first predicate.  If the predicate returns
@@ -95,7 +123,11 @@ strings to text=, and vectors to sub-queries that return true if
 they match.
 
  See the footer of zip-query.clj for examples.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#57 Source]
 ----
 ===(_xml1->_ loc & preds)===
 <pre> Returns the first item from loc based on the query predicates
 given.  See xml-></pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#80 Source]

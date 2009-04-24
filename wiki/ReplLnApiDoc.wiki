@@ -23,6 +23,8 @@ Shortcuts:
 ----
 ===(_print-repl-info_)===
 <pre> Prints info about the current repl</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#204 Source]
 ----
 ===(_repl_ & options)===
 <pre> A repl that supports line numbers. For definitions and evaluations made
@@ -39,12 +41,18 @@ for clojure.main/repl with the following change and additions:
 
       - :prompt-fmt, Prompt format string
        default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#213 Source]
 ----
 ===(_repl-info_)===
 <pre> Returns a map of info about the current repl</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#198 Source]
 ----
 ===(_repl-prompt_)===
 <pre> Returns the current repl prompt based on this repl's prompt-fmt</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#144 Source]
 ----
 ===(_set-repl-name_)===
 ===(_set-repl-name_ name-fmt)===
@@ -56,6 +64,8 @@ codes in the name to make the corresponding dynamic values part of it:
   %D - nesting depth in this thread
 
  With no arguments, resets the repl name to its default: "repl-%S"</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#153 Source]
 ----
 ===(_set-repl-prompt_)===
 ===(_set-repl-prompt_ prompt-fmt)===
@@ -69,6 +79,8 @@ the corresponding dynamic values part of it:
   %N - namespace name
 
  With no arguments, resets the repl pompt to its default: "%S:%L %N=> "</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#176 Source]
 ----
 ===(_stream-repl_ & options)===
 <pre> Repl entry point that provides convenient overriding of input, output,
@@ -76,3 +88,5 @@ and err streams via sequential keyword-value pairs. Default values
 for :in, :out, and :err are streams associated with System/in,
 System/out, and System/err using UTF-8 encoding. Also supports all the
 options provided by clojure.contrib.repl-ln/repl.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#115 Source]

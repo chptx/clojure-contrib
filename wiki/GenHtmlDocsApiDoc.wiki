@@ -25,7 +25,11 @@ Shortcuts:
 <pre> Returns a string which is the HTML documentation for the libraries
 named by libs. Libs is a vector of symbols identifying Clojure
 libraries.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs.clj#426 Source]
 ----
 ===(_generate-documentation-to-file_ path libs)===
 <pre> Calls generate-documentation on the libraries named by libs and
 emits the generated HTML to the path named by path.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs.clj#452 Source]

@@ -25,6 +25,8 @@ Shortcuts:
 ===(_create-repl-server_ port backlog)===
 ===(_create-repl-server_ port)===
 <pre> create a repl on a socket</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#84 Source]
 ----
 ===(_create-server_ port fun backlog bind-addr)===
 ===(_create-server_ port fun backlog)===
@@ -36,3 +38,5 @@ created which calls:
 
  Optional arguments support specifying a listen backlog and binding
 to a specific endpoint.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#50 Source]

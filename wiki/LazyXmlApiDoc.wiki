@@ -23,11 +23,15 @@ Shortcuts:
 ----
 ===(_emit_ x & opts)===
 <pre> Prints an <?xml?> declaration line, and then calls emit-element</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#155 Source]
 ----
 ===(_emit-element_ e & opts)===
 <pre> Recursively prints as XML text the element struct e.  To have it
 print extra whitespace like clojure.xml/emit, use the :pad true
 option.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#132 Source]
 ----
 ===(_parse-seq_ s)===
 ===(_parse-seq_ s startparse)===
@@ -41,6 +45,8 @@ specified, it will be run in a separate thread and be allowed to get
 ahead by queue-size items, which defaults to maxing.  If no parser
 is specified and org.xmlpull.v1.XmlPullParser is in the classpath,
 this superior pull parser will be used.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#34 Source]
 ----
 ===(_parse-trim_ s)===
 ===(_parse-trim_ s startparse queue-size)===
@@ -57,3 +63,5 @@ thread and be allowed to get ahead by queue-size items, which
 defaults to maxing.  If no parser is specified and
 org.xmlpull.v1.XmlPullParser is in the classpath, this superior pull
 parser will be used.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#109 Source]

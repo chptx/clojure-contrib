@@ -35,6 +35,8 @@ Variables and Functions in types.examples:
 Each constructor can be a symbol (argument-free constructor) or a
 list consisting of a tag symbol followed by the argument symbols.
 The data type tag must be a keyword.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#128 Source]
 ----
 ===(_deftype_ type-tag constructor-name docstring? attr-map?)===
 ===(_deftype_ type-tag constructor-name docstring? attr-map? constructor)===
@@ -49,10 +51,14 @@ constructor function and attaches the type tag to its result
 as metadata. The deconstructor function must return the arguments
 to be passed to the constructor in order to create an equivalent
 object. It is used for printing and matching.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#54 Source]
 ----
 ===(_deftype-_ type-tag constructor-name & optional)===
 ====Macro====
 <pre> Same as deftype but the constructor is private.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#88 Source]
 ----
 ===(_match_ value & clauses)===
 ====Macro====
@@ -72,7 +78,11 @@ Symbols will be bound to the corresponding value in the object in the
 evaluation of expr. If the same symbol occurs more than once in a,
 template the corresponding elements of the object must be equal
 for the template to match.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#241 Source]
 ==Namespace clojure.contrib.types.examples==
 ----
 ===_multiset_===
 <pre> Multiset (demo implementation)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/examples.clj#21 Source]

@@ -26,3 +26,5 @@ Shortcuts:
 ===(_read-json_ stream eof-error? eof-value)===
 <pre> Read the next JSON record from stream, which must be an instance of
 java.io.PushbackReader.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#121 Source]

@@ -37,3 +37,5 @@ as (private) symbols in the current namespace.
  Note: The class name must be fully qualified, even if it has already
 been imported.  Static methods are defined as MACROS, not
 first-class fns.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/import_static.clj#19 Source]

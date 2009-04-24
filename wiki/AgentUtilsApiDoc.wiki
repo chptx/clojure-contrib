@@ -28,3 +28,5 @@ them on the agent thread before executing the action.
 
  Example:
   (capture-and-send `[``*`out`*``]` a f b c)</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/agent_utils.clj#17 Source]

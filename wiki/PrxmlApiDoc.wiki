@@ -23,10 +23,14 @@ Shortcuts:
 ----
 ===_`*`html-compatible`*`_===
 <pre> If true, empty tags will have a space before the closing /></pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#28 Source]
 ----
 ===_`*`prxml-indent`*`_===
 <pre> The number of spaces to indent sub-tags.  nil for no indent
 and no extra line-breaks.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#32 Source]
 ----
 ===(_prxml_ & args)===
 <pre> Print XML to `*`out`*`.  Vectors become XML tags: the first item is the
@@ -51,3 +55,5 @@ sequence functions inside prxml.
 
    (prxml `[`:decl! {:version "1.1"}`]`)
   ; => <?xml version="1.1" encoding="UTF-8"?></pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#138 Source]

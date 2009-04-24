@@ -24,6 +24,8 @@ Shortcuts:
 ===(_apply-template_ expr values)===
 <pre> Replaces `_`1, `_`2, `_`3, etc. in expr with corresponding elements of
 values.  Returns the modified expression.  For use in macros.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#128 Source]
 ----
 ===(_do-template_ expr & args)===
 ====Macro====
@@ -31,25 +33,39 @@ values.  Returns the modified expression.  For use in macros.</pre>
 args.  args are grouped by the number of holes in the template.
 Example: (do-template (check `_`1 `_`2) :a :b :c :d)
 expands to (do (check :a :b) (check :c :d))</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#139 Source]
 ----
 ===(_find-holes_ form)===
 <pre> Recursively finds all symbols starting with `_` in form.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#82 Source]
 ----
 ===(_find-pure-exprs_ form)===
 <pre> Recursively finds all sub-expressions in form that do not contain
 any symbols starting with `_`</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#88 Source]
 ----
 ===(_find-symbols_ form)===
 <pre> Recursively finds all symbols in form.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#77 Source]
 ----
 ===(_flatten-map_ m)===
 <pre> Transforms a map into a vector like `[`key value key value`]`.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#96 Source]
 ----
 ===(_template_ & form)===
 ====Macro====
 <pre> Expands to a fn using `_`1, `_`2, `_`3, etc. as arguments (`_` is the same
 as `_`1).  Any sub-expressions without any `_``*` variables are evaluated
 when the fn is created, not when it is called.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#107 Source]
 ----
 ===(_template?_ form)===
 <pre> Returns true if form is a valid template expression.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#102 Source]
