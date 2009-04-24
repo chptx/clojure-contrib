@@ -1,5 +1,12 @@
 #summary The navigational sidebar for the generated API documentation
 
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
 [OverviewOfContrib Overview]<br/>
 [ApiDocIndex Index]
 
