@@ -23,9 +23,9 @@ Shortcuts:
 ----
 ===create-repl-server===
 <pre>
-Usage: *(_create-repl-server_ port backlog bind-addr)*
-       *(_create-repl-server_ port backlog)*
-       *(_create-repl-server_ port)*
+Usage: *(_create-repl-server_ port backlog bind-addr)
+       (_create-repl-server_ port backlog)
+       (_create-repl-server_ port)*
 </pre>
 <pre> create a repl on a socket</pre>
 
@@ -33,9 +33,9 @@ Usage: *(_create-repl-server_ port backlog bind-addr)*
 ----
 ===create-server===
 <pre>
-Usage: *(_create-server_ port fun backlog bind-addr)*
-       *(_create-server_ port fun backlog)*
-       *(_create-server_ port fun)*
+Usage: *(_create-server_ port fun backlog bind-addr)
+       (_create-server_ port fun backlog)
+       (_create-server_ port fun)*
 </pre>
 <pre> Creates a server socket on port. Upon accept, a new thread is
 created which calls:

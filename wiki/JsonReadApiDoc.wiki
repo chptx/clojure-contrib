@@ -23,9 +23,9 @@ Shortcuts:
 ----
 ===read-json===
 <pre>
-Usage: *(_read-json_)*
-       *(_read-json_ stream)*
-       *(_read-json_ stream eof-error? eof-value)*
+Usage: *(_read-json_)
+       (_read-json_ stream)
+       (_read-json_ stream eof-error? eof-value)*
 </pre>
 <pre> Read the next JSON record from stream, which must be an instance of
 java.io.PushbackReader.</pre>

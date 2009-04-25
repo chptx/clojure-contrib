@@ -76,8 +76,8 @@ Usage: *(_add-relation_ db name keys)*
 ----
 ===add-tuple===
 <pre>
-Usage: *(_add-tuple_ db rel-name tuple)*
-       *(_add-tuple_ rel tuple)*
+Usage: *(_add-tuple_ db rel-name tuple)
+       (_add-tuple_ rel tuple)*
 </pre>
 <pre> Two forms:
 
@@ -180,8 +180,8 @@ Usage: *(_merge-relations_ r1 r2)*
 ----
 ===remove-tuple===
 <pre>
-Usage: *(_remove-tuple_ db rel-name tuple)*
-       *(_remove-tuple_ rel tuple)*
+Usage: *(_remove-tuple_ db rel-name tuple)
+       (_remove-tuple_ rel tuple)*
 </pre>
 <pre> Two forms:
 
@@ -401,8 +401,8 @@ Usage: *(_positive?_ l)*
 ----
 ===project-literal===
 <pre>
-Usage: *(_project-literal_ db lit bs)*
-       *(_project-literal_ db lit bs var?)*
+Usage: *(_project-literal_ db lit bs)
+       (_project-literal_ db lit bs var?)*
 </pre>
 <pre> Project a stream of bindings onto a literal/relation. Returns a new
 db.</pre>
@@ -438,8 +438,8 @@ to extract the relation from the database.</pre>
 ----
 ===magic-transform===
 <pre>
-Usage: *(_magic-transform_ rs)*
-       *(_magic-transform_ rs i-preds)*
+Usage: *(_magic-transform_ rs)
+       (_magic-transform_ rs i-preds)*
 </pre>
 <pre> Return a magic transformation of an adorned rules-set (rs).  The
 (i-preds) are the predicates of the intension database.  These
@@ -503,8 +503,8 @@ Usage: *(_all-predicates_ rs)*
 ----
 ===apply-rule===
 <pre>
-Usage: *(_apply-rule_ db rule)*
-       *(_apply-rule_ db-1 db-2 rule)*
+Usage: *(_apply-rule_ db rule)
+       (_apply-rule_ db-1 db-2 rule)*
 </pre>
 <pre> Apply the rule against db-1, adding the results to the appropriate
 relation in db-2.  The relation will be created if needed.</pre>

@@ -158,8 +158,8 @@ Does nothing if `*`report-counters`*` is nil.</pre>
 ----
 ===is===
 <pre>
-Usage: *(_is_ form)*
-       *(_is_ form msg)*
+Usage: *(_is_ form)
+       (_is_ form msg)*
 </pre>
 ====Macro====
 <pre> Generic assertion macro.  'form' is any predicate test.
@@ -223,8 +223,8 @@ Usage: *(_run-all-tests_)*
 ----
 ===run-tests===
 <pre>
-Usage: *(_run-tests_)*
-       *(_run-tests_ & namespaces)*
+Usage: *(_run-tests_)
+       (_run-tests_ & namespaces)*
 </pre>
 <pre> Runs all tests in the given namespaces; prints results.
 Defaults to current namespace if none given.</pre>

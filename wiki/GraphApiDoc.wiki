@@ -31,8 +31,8 @@ Usage: *(_add-loops_ g)*
 ----
 ===component-graph===
 <pre>
-Usage: *(_component-graph_ g)*
-       *(_component-graph_ g sccs)*
+Usage: *(_component-graph_ g)
+       (_component-graph_ g sccs)*
 </pre>
 <pre> Given a graph, perhaps with cycles, return a reduced graph that is acyclic.
 Each node in the new graph will be a set of nodes from the old.
@@ -73,8 +73,8 @@ Usage: *(_get-neighbors_ g n)*
 ----
 ===lazy-walk===
 <pre>
-Usage: *(_lazy-walk_ g n)*
-       *(_lazy-walk_ g ns v)*
+Usage: *(_lazy-walk_ g n)
+       (_lazy-walk_ g ns v)*
 </pre>
 <pre> Return a lazy sequence of the nodes of a graph starting a node n.  Optionally,
 provide a set of visited notes (v) and a collection of nodes to

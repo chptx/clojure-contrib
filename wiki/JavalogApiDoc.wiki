@@ -32,8 +32,8 @@ global logger, modified by 'with-logger'.</pre>
 ----
 ===add-log-file===
 <pre>
-Usage: *(_add-log-file_ logger-name filename)*
-       *(_add-log-file_ logger-name filename level)*
+Usage: *(_add-log-file_ logger-name filename)
+       (_add-log-file_ logger-name filename level)*
 </pre>
 <pre> Attaches a log file, using SimpleFormatter, with the given level,
 to the named logger.  'level' defaults to ALL.  Note: multiple
@@ -69,8 +69,8 @@ instance of java.util.logging.Level and is returned unchanged.</pre>
 ----
 ===root-logger===
 <pre>
-Usage: *(_root-logger_)*
-       *(_root-logger_ logger)*
+Usage: *(_root-logger_)
+       (_root-logger_ logger)*
 </pre>
 <pre> Returns the root Logger instance.</pre>
 

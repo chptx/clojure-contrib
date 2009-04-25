@@ -32,8 +32,8 @@ most recent exception.</pre>
 ----
 ===print-cause-trace===
 <pre>
-Usage: *(_print-cause-trace_ tr)*
-       *(_print-cause-trace_ tr n)*
+Usage: *(_print-cause-trace_ tr)
+       (_print-cause-trace_ tr n)*
 </pre>
 <pre> Like print-stack-trace but prints chained exceptions (causes).</pre>
 
@@ -41,8 +41,8 @@ Usage: *(_print-cause-trace_ tr)*
 ----
 ===print-stack-trace===
 <pre>
-Usage: *(_print-stack-trace_ tr)*
-       *(_print-stack-trace_ tr n)*
+Usage: *(_print-stack-trace_ tr)
+       (_print-stack-trace_ tr n)*
 </pre>
 <pre> Prints a Clojure-oriented stack trace of tr, a Throwable.
 Prints a maximum of n stack frames (default: unlimited).

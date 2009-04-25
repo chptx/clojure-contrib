@@ -41,8 +41,8 @@ Javadocs.</pre>
 ----
 ===add-break-thread!===
 <pre>
-Usage: *(_add-break-thread!_)*
-       *(_add-break-thread!_ t)*
+Usage: *(_add-break-thread!_)
+       (_add-break-thread!_ t)*
 </pre>
 <pre> Add the given thread to break-threads so that it will be stopped
 any time the user presses Ctrl-C.  Calls start-handling-break for
@@ -109,8 +109,8 @@ Tries `*`local-javadocs`*` first, then `*`remote-javadocs`*`.</pre>
 ----
 ===show===
 <pre>
-Usage: *(_show_ x)*
-       *(_show_ x selector)*
+Usage: *(_show_ x)
+       (_show_ x selector)*
 </pre>
 <pre> With one arg prints all static and instance members of x or (class x).
 Each member is listed with a number which can be given as 'selector'

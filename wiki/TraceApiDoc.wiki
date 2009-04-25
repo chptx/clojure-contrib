@@ -42,8 +42,8 @@ tree-like structure.</pre>
 ----
 ===trace===
 <pre>
-Usage: *(_trace_ value)*
-       *(_trace_ name value)*
+Usage: *(_trace_ value)
+       (_trace_ name value)*
 </pre>
 <pre> Sends name (optional) and value to the tracer function, then
 returns value.  May be wrapped around any expression without

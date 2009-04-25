@@ -68,8 +68,8 @@ Usage: *(_repl-prompt_)*
 ----
 ===set-repl-name===
 <pre>
-Usage: *(_set-repl-name_)*
-       *(_set-repl-name_ name-fmt)*
+Usage: *(_set-repl-name_)
+       (_set-repl-name_ name-fmt)*
 </pre>
 <pre> Sets the repl name format to the string name-fmt. Include the following
 codes in the name to make the corresponding dynamic values part of it:
@@ -84,8 +84,8 @@ codes in the name to make the corresponding dynamic values part of it:
 ----
 ===set-repl-prompt===
 <pre>
-Usage: *(_set-repl-prompt_)*
-       *(_set-repl-prompt_ prompt-fmt)*
+Usage: *(_set-repl-prompt_)
+       (_set-repl-prompt_ prompt-fmt)*
 </pre>
 <pre> Sets the repl prompt. Include the following codes in the prompt to make
 the corresponding dynamic values part of it:

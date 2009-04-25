@@ -41,9 +41,9 @@ option.</pre>
 ----
 ===parse-seq===
 <pre>
-Usage: *(_parse-seq_ s)*
-       *(_parse-seq_ s startparse)*
-       *(_parse-seq_ s startparse queue-size)*
+Usage: *(_parse-seq_ s)
+       (_parse-seq_ s startparse)
+       (_parse-seq_ s startparse queue-size)*
 </pre>
 <pre> Parses the source s, which can be a File, InputStream or String
 naming a URI. Returns a lazy sequence of maps with two or more of
@@ -59,8 +59,8 @@ this superior pull parser will be used.</pre>
 ----
 ===parse-trim===
 <pre>
-Usage: *(_parse-trim_ s)*
-       *(_parse-trim_ s startparse queue-size)*
+Usage: *(_parse-trim_ s)
+       (_parse-trim_ s startparse queue-size)*
 </pre>
 <pre> Parses the source s, which can be a File, InputStream or String
 naming a URI. Returns a lazy tree of the clojure.xml/element

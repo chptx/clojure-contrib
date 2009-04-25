@@ -23,8 +23,8 @@ Shortcuts:
 ----
 ===-?>===
 <pre>
-Usage: *(_-?>_ x form)*
-       *(_-?>_ x form & forms)*
+Usage: *(_-?>_ x form)
+       (_-?>_ x form & forms)*
 </pre>
 ====Macro====
 <pre> Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
@@ -37,8 +37,8 @@ Examples :
 ----
 ===.?.===
 <pre>
-Usage: *(_.?._ x form)*
-       *(_.?._ x form & forms)*
+Usage: *(_.?._ x form)
+       (_.?._ x form & forms)*
 </pre>
 ====Macro====
 <pre> Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).

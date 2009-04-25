@@ -251,8 +251,8 @@ for one of the following parameter sets:
 ----
 ===rollback===
 <pre>
-Usage: *(_rollback_)*
-       *(_rollback_ val)*
+Usage: *(_rollback_)
+       (_rollback_ val)*
 </pre>
 <pre> Accessor for the rollback flag on the current connection</pre>
 

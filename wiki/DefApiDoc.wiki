@@ -23,8 +23,8 @@ Shortcuts:
 ----
 ===defalias===
 <pre>
-Usage: *(_defalias_ name orig)*
-       *(_defalias_ name orig doc)*
+Usage: *(_defalias_ name orig)
+       (_defalias_ name orig doc)*
 </pre>
 ====Macro====
 <pre> Defines an alias for a var: a new var with the same root binding (if
@@ -55,8 +55,8 @@ Usage: *(_defmacro-_ name & decls)*
 ----
 ===defonce-===
 <pre>
-Usage: *(_defonce-_ name expr)*
-       *(_defonce-_ name expr doc)*
+Usage: *(_defonce-_ name expr)
+       (_defonce-_ name expr doc)*
 </pre>
 ====Macro====
 <pre> Same as defonce but yields a private definition</pre>
@@ -74,8 +74,8 @@ Usage: *(_defstruct-_ name & decls)*
 ----
 ===defunbound===
 <pre>
-Usage: *(_defunbound_ name)*
-       *(_defunbound_ name doc)*
+Usage: *(_defunbound_ name)
+       (_defunbound_ name doc)*
 </pre>
 ====Macro====
 <pre> Defines an unbound var with optional doc string</pre>
@@ -93,9 +93,9 @@ Usage: *(_defunbound-_ name & decls)*
 ----
 ===defvar===
 <pre>
-Usage: *(_defvar_ name)*
-       *(_defvar_ name init)*
-       *(_defvar_ name init doc)*
+Usage: *(_defvar_ name)
+       (_defvar_ name init)
+       (_defvar_ name init doc)*
 </pre>
 ====Macro====
 <pre> Defines a var with an optional intializer and doc string</pre>

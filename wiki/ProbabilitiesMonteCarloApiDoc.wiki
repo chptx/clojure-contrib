@@ -125,8 +125,8 @@ the mean and the variance) over n samples from the distribution dist</pre>
 ----
 ===sample-reduce===
 <pre>
-Usage: *(_sample-reduce_ f n dist)*
-       *(_sample-reduce_ f val n dist)*
+Usage: *(_sample-reduce_ f n dist)
+       (_sample-reduce_ f val n dist)*
 </pre>
 <pre> Returns the distribution of the reduction of f over n samples from the
 distribution dist.</pre>

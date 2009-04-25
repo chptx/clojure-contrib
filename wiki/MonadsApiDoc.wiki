@@ -44,8 +44,8 @@ the continuation of the computation, to which they pass their result.</pre>
 ----
 ===defmonad===
 <pre>
-Usage: *(_defmonad_ name doc-string operations)*
-       *(_defmonad_ name operations)*
+Usage: *(_defmonad_ name doc-string operations)
+       (_defmonad_ name operations)*
 </pre>
 ====Macro====
 <pre> Define a named monad by defining the monad operations. The definitions
@@ -56,8 +56,8 @@ m-result (required) and m-zero and m-plus (optional).</pre>
 ----
 ===defmonadfn===
 <pre>
-Usage: *(_defmonadfn_ name docstring? attr-map? args expr)*
-       *(_defmonadfn_ name docstring? attr-map? (args expr) ...)*
+Usage: *(_defmonadfn_ name docstring? attr-map? args expr)
+       (_defmonadfn_ name docstring? attr-map? (args expr) ...)*
 </pre>
 ====Macro====
 <pre> Like defn, but for functions that use monad operations and are used inside
@@ -67,8 +67,8 @@ a with-monad block.</pre>
 ----
 ===domonad===
 <pre>
-Usage: *(_domonad_ steps expr)*
-       *(_domonad_ name steps expr)*
+Usage: *(_domonad_ steps expr)
+       (_domonad_ name steps expr)*
 </pre>
 ====Macro====
 <pre> Monad comprehension. Takes the name of a monad, a vector of steps
@@ -147,8 +147,8 @@ f onto the values xs. f must return a monadic value.</pre>
 ----
 ===m-reduce===
 <pre>
-Usage: *(_m-reduce_ f mvs)*
-       *(_m-reduce_ f val mvs)*
+Usage: *(_m-reduce_ f mvs)
+       (_m-reduce_ f val mvs)*
 </pre>
 ====Macro====
 <pre> Return the reduction of (m-lift 2 f) over the list of monadic values mvs
@@ -198,9 +198,9 @@ a step returns nil, the whole computation will yield nil as well.</pre>
 ----
 ===maybe-t===
 <pre>
-Usage: *(_maybe-t_ m)*
-       *(_maybe-t_ m nothing)*
-       *(_maybe-t_ m nothing which-m-plus)*
+Usage: *(_maybe-t_ m)
+       (_maybe-t_ m nothing)
+       (_maybe-t_ m nothing which-m-plus)*
 </pre>
 <pre> Monad transformer that transforms a monad m into a monad in which
 the base values can be invalid (represented by nothing, which defaults

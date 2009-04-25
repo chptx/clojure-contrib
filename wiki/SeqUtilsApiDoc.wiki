@@ -82,8 +82,8 @@ from 's' and indexes count up from zero.
 ----
 ===partition-all===
 <pre>
-Usage: *(_partition-all_ n coll)*
-       *(_partition-all_ n step coll)*
+Usage: *(_partition-all_ n coll)
+       (_partition-all_ n step coll)*
 </pre>
 <pre> Returns a lazy sequence of lists like clojure.core/partition, but may
 include lists with fewer than n items at the end.</pre>
@@ -129,8 +129,8 @@ binding-name, allowing for recursive expressions.</pre>
 ----
 ===reductions===
 <pre>
-Usage: *(_reductions_ f coll)*
-       *(_reductions_ f init coll)*
+Usage: *(_reductions_ f coll)
+       (_reductions_ f init coll)*
 </pre>
 <pre> Returns a lazy seq of the intermediate values of the reduction (as
 per reduce) of coll by f, starting with init.</pre>

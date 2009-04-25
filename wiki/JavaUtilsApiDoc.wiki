@@ -50,9 +50,9 @@ Usage: *(_as-str_ x)*
 ----
 ===file===
 <pre>
-Usage: *(_file_ arg)*
-       *(_file_ parent child)*
-       *(_file_ parent child & more)*
+Usage: *(_file_ arg)
+       (_file_ parent child)
+       (_file_ parent child & more)*
 </pre>
 <pre> Returns a java.io.File from string or file args.</pre>
 
@@ -60,8 +60,8 @@ Usage: *(_file_ arg)*
 ----
 ===get-system-property===
 <pre>
-Usage: *(_get-system-property_ stringable)*
-       *(_get-system-property_ stringable default)*
+Usage: *(_get-system-property_ stringable)
+       (_get-system-property_ stringable default)*
 </pre>
 <pre> Get a system property.</pre>
 
@@ -107,8 +107,8 @@ translated to a clearing of the property.</pre>
 ----
 ===write-properties===
 <pre>
-Usage: *(_write-properties_ m file-able)*
-       *(_write-properties_ m file-able comments)*
+Usage: *(_write-properties_ m file-able)
+       (_write-properties_ m file-able comments)*
 </pre>
 <pre> Write properties to file-able.</pre>
 

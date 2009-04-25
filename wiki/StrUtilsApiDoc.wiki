@@ -69,8 +69,8 @@ string matches.
 ----
 ===re-split===
 <pre>
-Usage: *(_re-split_ pattern string)*
-       *(_re-split_ pattern string limit)*
+Usage: *(_re-split_ pattern string)
+       (_re-split_ pattern string limit)*
 </pre>
 <pre> Splits the string on instances of 'pattern'.  Returns a sequence of
 strings.  Optional 'limit' argument is the maximum number of

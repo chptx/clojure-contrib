@@ -34,8 +34,8 @@ given to a 'continue' form.</pre>
 ----
 ===deferror===
 <pre>
-Usage: *(_deferror_ name `[`parent-error?`]` doc-string? `[`args`*``]` & body)*
-       *(_deferror_ name `[`parent-error?`]` doc-string? args-destruct-map & body)*
+Usage: *(_deferror_ name `[`parent-error?`]` doc-string? `[`args`*``]` & body)
+       (_deferror_ name `[`parent-error?`]` doc-string? args-destruct-map & body)*
 </pre>
 ====Macro====
 <pre> Define a new error type</pre>
@@ -64,8 +64,8 @@ Usage: *(_error_ details)*
 ----
 ===handle===
 <pre>
-Usage: *(_handle_ error-name? `[`args`*``]` & body)*
-       *(_handle_ error-name? args-destruct-map-args & body)*
+Usage: *(_handle_ error-name? `[`args`*``]` & body)
+       (_handle_ error-name? args-destruct-map-args & body)*
 </pre>
 <pre> Special form to be used inside a 'with-handler'.  When
 any error is 'raised' from withing the dynamic scope of 'body' that

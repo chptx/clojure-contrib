@@ -38,9 +38,9 @@ The data type tag must be a keyword.</pre>
 ----
 ===deftype===
 <pre>
-Usage: *(_deftype_ type-tag constructor-name docstring? attr-map?)*
-       *(_deftype_ type-tag constructor-name docstring? attr-map? constructor)*
-       *(_deftype_ type-tag constructor-name docstring? attr-map? constructor deconstructor)*
+Usage: *(_deftype_ type-tag constructor-name docstring? attr-map?)
+       (_deftype_ type-tag constructor-name docstring? attr-map? constructor)
+       (_deftype_ type-tag constructor-name docstring? attr-map? constructor deconstructor)*
 </pre>
 ====Macro====
 <pre> Define a data type by a type tag (a namespace-qualified keyword)

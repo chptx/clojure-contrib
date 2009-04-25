@@ -96,8 +96,8 @@ Usage: *(_rightmost?_ loc)*
 ----
 ===attr===
 <pre>
-Usage: *(_attr_ attrname)*
-       *(_attr_ loc attrname)*
+Usage: *(_attr_ attrname)
+       (_attr_ loc attrname)*
 </pre>
 <pre> Returns the xml attribute named attrname, of the xml node at location loc.</pre>
 
