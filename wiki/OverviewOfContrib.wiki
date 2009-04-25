@@ -58,6 +58,12 @@ API Overview [AutoAgentApiDoc here]
 Public Variables and Functions:
 [AutoAgentApiDoc#(_auto-agent_expr) auto-agent] 
 
+===classpath===
+API Overview [ClasspathApiDoc here]
+
+Public Variables and Functions:
+[ClasspathApiDoc#(_classpath_) classpath] [ClasspathApiDoc#(_classpath-directories_) classpath-directories] [ClasspathApiDoc#(_classpath-jarfiles_) classpath-jarfiles] 
+
 ===combinatorics===
 API Overview [CombinatoricsApiDoc here]
 
@@ -151,6 +157,12 @@ API Overview [FcaseApiDoc here]
 Public Variables and Functions:
 [FcaseApiDoc#(_case_test-value_&_clauses) case] [FcaseApiDoc#(_fcase_compare-fn_case-value_&_test-expr-clauses) fcase] [FcaseApiDoc#(_in-case_test-value_&_clauses) in-case] [FcaseApiDoc#(_instance-case_test-value_&_clauses) instance-case] [FcaseApiDoc#(_re-case_test-value_&_clauses) re-case] 
 
+===find-namespaces===
+API Overview [FindNamespacesApiDoc here]
+
+Public Variables and Functions:
+[FindNamespacesApiDoc#(_clojure-source-file?_file) clojure-source-file?] [FindNamespacesApiDoc#(_clojure-sources-in-jar_jar-file) clojure-sources-in-jar] [FindNamespacesApiDoc#(_find-clojure-sources-in-dir_dir) find-clojure-sources-in-dir] [FindNamespacesApiDoc#(_find-namespaces-in-dir_dir) find-namespaces-in-dir] [FindNamespacesApiDoc#(_find-namespaces-in-jarfile_jarfile) find-namespaces-in-jarfile] [FindNamespacesApiDoc#(_find-namespaces-on-classpath_) find-namespaces-on-classpath] [FindNamespacesApiDoc#(_find-ns-decls-in-dir_dir) find-ns-decls-in-dir] [FindNamespacesApiDoc#(_find-ns-decls-in-jarfile_jarfile) find-ns-decls-in-jarfile] [FindNamespacesApiDoc#(_find-ns-decls-on-classpath_) find-ns-decls-on-classpath] [FindNamespacesApiDoc#(_read-file-ns-decl_file) read-file-ns-decl] [FindNamespacesApiDoc#(_read-ns-decl_rdr) read-ns-decl] [FindNamespacesApiDoc#(_read-ns-decl-from-jarfile-entry_jarfile_entry-name) read-ns-decl-from-jarfile-entry] 
+
 ===gen-html-docs===
 API Overview [GenHtmlDocsApiDoc here]
 
@@ -186,6 +198,12 @@ API Overview [ImportStaticApiDoc here]
 
 Public Variables and Functions:
 [ImportStaticApiDoc#(_import-static_class_&_fields-and-methods) import-static] 
+
+===jar===
+API Overview [JarApiDoc here]
+
+Public Variables and Functions:
+[JarApiDoc#(_filenames-in-jar_jar-file) filenames-in-jar] [JarApiDoc#(_jar-file?_file) jar-file?] 
 
 ===java-utils===
 API Overview [JavaUtilsApiDoc here]
@@ -286,11 +304,29 @@ clojure.contrib wiki RSN.
 Public Variables and Functions:
 [PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#(_cl-format_stream_format-in_&_args) cl-format] [PprintApiDoc#(_compile-format_format-str) compile-format] [PprintApiDoc#(_formatter_format-in) formatter] [PprintApiDoc#(_pp_) pp] [PprintApiDoc#(_pprint_object_&_more) pprint] [PprintApiDoc#(_pprint-indent_relative-to_n_&_more) pprint-indent] [PprintApiDoc#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [PprintApiDoc#(_pprint-newline_kind_&_more) pprint-newline] [PprintApiDoc#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [PprintApiDoc#(_set-pprint-dispatch_table) set-pprint-dispatch] [PprintApiDoc#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [PprintApiDoc#(_write_object_&_kw-args) write] 
 
-===probabilities.dist===
-API Overview [ProbabilitiesDistApiDoc here]
+===probabilities.examples-finite-distributions===
+API Overview [ProbabilitiesExamplesFiniteDistributionsApiDoc here]
+
+===probabilities.finite-distributions===
+API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
 
 Public Variables and Functions:
-[ProbabilitiesDistApiDoc#(_certainly_v) certainly] [ProbabilitiesDistApiDoc#(_choose_&_choices) choose] [ProbabilitiesDistApiDoc#cond-dist-m cond-dist-m] [ProbabilitiesDistApiDoc#(_cond-prob_pred_dist) cond-prob] [ProbabilitiesDistApiDoc#dist-m dist-m] [ProbabilitiesDistApiDoc#(_join-with_f_dist1_dist2) join-with] [ProbabilitiesDistApiDoc#(_normalize_weights) normalize] [ProbabilitiesDistApiDoc#(_prob_pred_dist) prob] [ProbabilitiesDistApiDoc#(_uniform_coll) uniform] 
+[ProbabilitiesFiniteDistributionsApiDoc#(_certainly_v) certainly] [ProbabilitiesFiniteDistributionsApiDoc#(_choose_&_choices) choose] [ProbabilitiesFiniteDistributionsApiDoc#cond-dist-m cond-dist-m] [ProbabilitiesFiniteDistributionsApiDoc#(_cond-prob_pred_dist) cond-prob] [ProbabilitiesFiniteDistributionsApiDoc#dist-m dist-m] [ProbabilitiesFiniteDistributionsApiDoc#(_join-with_f_dist1_dist2) join-with] [ProbabilitiesFiniteDistributionsApiDoc#(_normalize_weights) normalize] [ProbabilitiesFiniteDistributionsApiDoc#(_prob_pred_dist) prob] [ProbabilitiesFiniteDistributionsApiDoc#(_uniform_coll) uniform] 
+
+===probabilities.monte-carlo===
+API Overview [ProbabilitiesMonteCarloApiDoc here]
+
+Public Variables and Functions:
+[ProbabilitiesMonteCarloApiDoc#(_discrete_dist) discrete] [ProbabilitiesMonteCarloApiDoc#(_exponential_lambda) exponential] [ProbabilitiesMonteCarloApiDoc#(_lognormal_mu_sigma) lognormal] [ProbabilitiesMonteCarloApiDoc#(_n-sphere_n_r) n-sphere] [ProbabilitiesMonteCarloApiDoc#(_normal_mu_sigma) normal] [ProbabilitiesMonteCarloApiDoc#(_normal-box-muller_mu_sigma) normal-box-muller] [ProbabilitiesMonteCarloApiDoc#(_random-stream_distribution_random-stream-state) random-stream] [ProbabilitiesMonteCarloApiDoc#(_reject_p_dist) reject] [ProbabilitiesMonteCarloApiDoc#(_sample_n_dist) sample] [ProbabilitiesMonteCarloApiDoc#(_sample-mean_n_dist) sample-mean] [ProbabilitiesMonteCarloApiDoc#(_sample-mean-variance_n_dist) sample-mean-variance] [ProbabilitiesMonteCarloApiDoc#(_sample-reduce_f_n_dist) sample-reduce] [ProbabilitiesMonteCarloApiDoc#(_sample-sum_n_dist) sample-sum] 
+
+===probabilities.random-numbers===
+API Overview [ProbabilitiesRandomNumbersApiDoc here]
+
+Public Variables and Functions:
+[ProbabilitiesRandomNumbersApiDoc#(_lcg_modulus_multiplier_increment_seed) lcg] [ProbabilitiesRandomNumbersApiDoc#rand-stream rand-stream] 
+
+===probabilities.random.examples-monte-carlo===
+API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
 
 ===prxml===
 API Overview [PrxmlApiDoc here]
@@ -394,10 +430,6 @@ Public Variables and Functions:
 ===types===
 API Overview [TypesApiDoc here]
 
-<pre> General and algebraic data types
-
- NOTE: This library is experimental. It may change significantly
-with future release.</pre>
 Public Variables and Functions:
 [TypesApiDoc#(_defadt_type-tag_&_constructors) defadt] [TypesApiDoc#(_deftype_type-tag_constructor-name_docstring?_attr-map?) deftype] [TypesApiDoc#(_deftype-_type-tag_constructor-name_&_optional) deftype-] [TypesApiDoc#(_match_value_&_clauses) match] 
 

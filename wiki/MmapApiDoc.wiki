@@ -24,14 +24,12 @@ Shortcuts:
 ===(_buffer-stream_ buf)===
 <pre> Returns an InputStream for a ByteBuffer, such as returned by mmap.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#35 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]buffer-stream([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_mmap_ f)===
 <pre> Memory-map the file named f.  Returns a ByteBuffer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#23 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]mmap([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_slurp_ f)===
 <pre> Reads the file named by f and returns it as a string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#29 Source]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]slurp([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

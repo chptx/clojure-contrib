@@ -27,15 +27,13 @@ Control can be passed to this 'continue' form from a 'raise' enclosed
 in this with-handler's dynamic scope, when this 'continue-name' is
 given to a 'continue' form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#144 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]bind-continue([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_deferror_ name `[`parent-error?`]` doc-string? `[`args`*``]` & body)===
 ===(_deferror_ name `[`parent-error?`]` doc-string? args-destruct-map & body)===
 ====Macro====
 <pre> Define a new error type</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#53 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]deferror([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_do-not-handle_)===
 ====Macro====
 <pre> Use in a tail position of a 'handle' form to indicate 'raise' should
@@ -43,13 +41,11 @@ not consider the error handled, but should continue searching for an
 appropriate 'handle' form.  Allows finer-grain control over catching
 than just the error type.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#111 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#111 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]do-not-handle([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_error_ details)===
 <pre> Base type for all error-kit errors</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#40 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]error([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_handle_ error-name? `[`args`*``]` & body)===
 ===(_handle_ error-name? args-destruct-map-args & body)===
 <pre> Special form to be used inside a 'with-handler'.  When
@@ -61,32 +57,28 @@ may return a value, in which case that will be the return value of
 the entire 'with-handler' form, or it may use any of the special
 return forms, 'do-not-handle', 'continue-with', or 'continue'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#132 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#132 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]handle([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_raise_ err-name & args)===
 ====Macro====
 <pre> Raise an error of the type err-name, constructed with the given args</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#104 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]raise([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_raise`*`_ err)===
 <pre> Raise the given error object, best if created by an error
 constructor defined with deferror.  See also 'raise' macro.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#80 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]raise*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_throw-msg_ class-name)===
 ====Macro====
 <pre> Returns a function that throws a Java Exception with the given
 name.  Useful to associate a new error-kit error type with a
 particular Java Exception class, via the :unhandled error key.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#33 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#33 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]throw-msg([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_with-handler_ & forms)===
 ====Macro====
 <pre> This is error-kit's dynamic scope form.  The body will be executed
 in a dynamic context that includes all of the following 'handle' and
 'bind-continue' forms.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#157 Source]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#157 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]with-handler([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

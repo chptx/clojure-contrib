@@ -24,19 +24,16 @@ Shortcuts:
 ===(_proper-subset?_ set1 set2)===
 <pre> Is s1 a proper subset of s2?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#32 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]proper-subset?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_proper-superset?_ set1 set2)===
 <pre> Is s1 a proper superset of s2?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#39 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]proper-superset?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_subset?_ set1 set2)===
 <pre> Is set1 a subset of set2?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#18 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]subset?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_superset?_ set1 set2)===
 <pre> Is set1 a superset of set2?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#25 Source]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]superset?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

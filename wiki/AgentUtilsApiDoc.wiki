@@ -29,4 +29,4 @@ them on the agent thread before executing the action.
  Example:
   (capture-and-send `[``*`out`*``]` a f b c)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/agent_utils.clj#17 Source]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/agent_utils.clj#17 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]capture-and-send([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

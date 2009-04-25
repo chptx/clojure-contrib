@@ -24,37 +24,32 @@ Shortcuts:
 ===_`*`trace-depth`*`_===
 <pre> Current stack depth of traced function calls.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#36 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]*trace-depth*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_deftrace_ name & definition)===
 ====Macro====
 <pre> Use in place of defn; traces each call/return of this fn, including
 arguments.  Nested calls to deftrace'd functions will print a
 tree-like structure.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#71 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]deftrace([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_trace_ value)===
 ===(_trace_ name value)===
 <pre> Sends name (optional) and value to the tracer function, then
 returns value.  May be wrapped around any expression without
 affecting the result.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#46 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]trace([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_trace-fn-call_ name f args)===
 <pre> Traces a single call to a function f with args.  'name' is the
 symbol name of the function.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#60 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]trace-fn-call([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_trace-indent_)===
 <pre> Returns an indentation string based on `*`trace-depth`*`</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#55 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]trace-indent([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_tracer_ name value)===
 <pre> This function is called by trace.  Prints to standard output, but
 may be rebound to do anything you like.  'name' is optional.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#40 Source]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]tracer([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

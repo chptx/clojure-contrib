@@ -1,0 +1,35 @@
+#summary classpath API Reference
+#sidebar ApiDocSidebar
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for classpath=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.classpath))
+}}}
+
+
+==Public Variables and Functions==
+Shortcuts:
+[#(_classpath_) classpath] [#(_classpath-directories_) classpath-directories] [#(_classpath-jarfiles_) classpath-jarfiles] 
+
+----
+===(_classpath_)===
+<pre> Returns a sequence of File objects of the elements on CLASSPATH.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]classpath([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+===(_classpath-directories_)===
+<pre> Returns a sequence of File objects for the directories on classpath.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath.clj#27 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]classpath-directories([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+===(_classpath-jarfiles_)===
+<pre> Returns a sequence of JarFile objects for the JAR files on classpath.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]classpath-jarfiles([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

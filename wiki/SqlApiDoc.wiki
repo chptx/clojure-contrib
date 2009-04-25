@@ -30,8 +30,7 @@ Variables and Functions in sql.test:
 ===(_connection_)===
 <pre> Returns the current database connection (or throws if there is none)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#25 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]connection([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_create-table_ name & specs)===
 <pre> Creates a table on the open database connection given a table name and
 specs. Each spec is either a column spec: a vector containing a column
@@ -39,50 +38,42 @@ name and optionally a type and other constraints, or a table-level
 constraint: a vector containing words that express the constraint. All
 words used to describe the table may be supplied as strings or keywords.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#90 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]create-table([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_delete-rows_ table where-params)===
 <pre> Deletes rows from a table. where-params is a vector containing a string
 providing the (optionally parameterized) selection criteria followed by
 values for any parameters.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#144 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]delete-rows([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_do-commands_ & commands)===
 <pre> Executes SQL commands on the open database connection.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#68 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]do-commands([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_do-prepared_ sql & param-groups)===
 <pre> Executes an (optionally parameterized) SQL prepared statement on the
 open database connection. Each param-group is a seq of values for all of
 the parameters.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#77 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#77 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]do-prepared([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_drop-table_ name)===
 <pre> Drops a table on the open database connection given its name, a string
 or keyword</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#106 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#106 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]drop-table([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_find-connection_)===
 <pre> Returns the current database connection (or nil if there is none)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#24 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#24 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]find-connection([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_insert-records_ table & records)===
 <pre> Inserts records into a table. records are maps from strings or
 keywords (identifying columns) to values.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#137 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#137 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]insert-records([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_insert-rows_ table & rows)===
 <pre> Inserts complete rows into a table. Each row is a vector of values for
 each of the table's columns in order.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#131 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#131 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]insert-rows([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_insert-values_ table column-names & value-groups)===
 <pre> Inserts rows into a table with values for specified columns only.
 column-names is a vector of strings or keywords identifying columns. Each
@@ -90,20 +81,17 @@ value-group is a vector containing a values for each column in
 order. When inserting complete rows (all columns), consider using
 insert-rows instead.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#113 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#113 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]insert-values([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_is-rollback-only_)===
 <pre> Returns true if the outermost transaction will rollback rather than
 commit when complete</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#62 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]is-rollback-only([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_set-rollback-only_)===
 <pre> Marks the outermost transaction such that it will rollback rather than
 commit when complete</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#56 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]set-rollback-only([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_transaction_ & body)===
 ====Macro====
 <pre> Evaluates body as a transaction on the open database connection. Any
@@ -114,8 +102,7 @@ exception. If set-rollback-only is called within scope of the outermost
 transaction, the entire transaction will be rolled back rather than
 committed when complete.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#45 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#45 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]transaction([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_update-or-insert-values_ table where-params record)===
 <pre> Updates values on selected rows in a table, or inserts a new row when no
 existing row matches the selection criteria. where-params is a vector
@@ -123,16 +110,14 @@ containing a string providing the (optionally parameterized) selection
 criteria followed by values for any parameters. record is a map from
 strings or keywords (identifying columns) to updated values.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#169 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#169 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]update-or-insert-values([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_update-values_ table where-params record)===
 <pre> Updates values on selected rows in a table. where-params is a vector
 containing a string providing the (optionally parameterized) selection
 criteria followed by values for any parameters. record is a map from
 strings or keywords (identifying columns) to updated values.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#155 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]update-values([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_with-connection_ db-spec & body)===
 ====Macro====
 <pre> Evaluates body in the context of a new connection to a database then
@@ -150,8 +135,7 @@ following parameter sets:
   :subname     (required) a String, the jdbc subname
   (others)     (optional) passed to the driver as properties.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#27 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#27 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]with-connection([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_with-query-results_ results sql-params & body)===
 ====Macro====
 <pre> Executes a query, then evaluates body with results bound to a seq of the
@@ -159,19 +143,16 @@ results. sql-params is a vector containing a string providing
 the (optionally parameterized) SQL query followed by values for any
 parameters.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#182 Source]
-==Namespace clojure.contrib.sql.internal==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#182 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]with-query-results([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.sql.internal==
 ----
 ===(_connection`*`_)===
 <pre> Returns the current database connection (or throws if there is none)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#26 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]connection*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_find-connection`*`_)===
 <pre> Returns the current database connection (or nil if there is none)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#21 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#21 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]find-connection*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_get-connection_ {:keys `[`datasource username password classname subprotocol subname`]`, :as db-spec})===
 <pre> Creates a connection to a database. db-spec is a map containing values
 for one of the following parameter sets:
@@ -187,14 +168,12 @@ for one of the following parameter sets:
   :subname     (required) a String, the jdbc subname
   (others)     (optional) passed to the driver as properties.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#39 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-connection([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_rollback_)===
 ===(_rollback_ val)===
 <pre> Accessor for the rollback flag on the current connection</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#32 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]rollback([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_transaction`*`_ func)===
 <pre> Evaluates func as a transaction on the open database connection. Any
 nested transactions are absorbed into the outermost transaction. By
@@ -204,98 +183,80 @@ exception. If rollback is set within scope of the outermost transaction,
 the entire transaction will be rolled back rather than committed when
 complete.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#74 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#74 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]transaction*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_with-connection`*`_ db-spec func)===
 <pre> Evaluates func in the context of a new connection to a database then
 closes the connection.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#65 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#65 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]with-connection*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_with-query-results`*`_ `[`sql & params :as sql-params`]` func)===
 <pre> Executes a query, then evaluates func passing in a seq of the results as
 an argument. The first argument is a vector containing the (optionally
 parameterized) sql query string followed by values for any parameters.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#104 Source]
-==Namespace clojure.contrib.sql.test==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]with-query-results*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.sql.test==
 ----
 ===(_create-fruit_)===
 <pre> Create a table</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#24 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#24 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]create-fruit([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-exception_)===
 <pre> Demonstrate rolling back a partially completed transaction on exception</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#160 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#160 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-exception([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-get-tables_)===
 <pre> Demonstrate getting table info</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#149 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#149 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-get-tables([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-grade-a_)===
 <pre> Print rows describing all grade a fruit (grade between 90 and 100)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#144 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-grade-a([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-grade-range_ min max)===
 <pre> Print rows describing fruit that are within a grade range</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#130 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#130 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-grade-range([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-read_)===
 <pre> Read the entire fruit table</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#81 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-read([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-read-all_)===
 <pre> Return all the rows of the fruit table as a vector</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#120 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#120 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-read-all([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-rollback_)===
 <pre> Demonstrate a rollback-only trasaction</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#176 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#176 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-rollback([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-update_)===
 <pre> Update two fruits as a transaction</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#100 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#100 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-update([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-update-appearance-cost_ name appearance cost)===
 <pre> Update the appearance and cost of the named fruit</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#92 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#92 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-update-appearance-cost([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-update-or-insert_ record)===
 <pre> Updates or inserts a fruit</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#110 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-update-or-insert([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_db-write_)===
 <pre> Write initial values to the database as a transaction</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#68 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]db-write([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_drop-fruit_)===
 <pre> Drop a table</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#34 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]drop-fruit([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_insert-records-fruit_)===
 <pre> Insert records, maps from keys specifying columns to values</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#60 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]insert-records-fruit([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_insert-rows-fruit_)===
 <pre> Insert complete rows</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#41 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#41 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]insert-rows-fruit([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_insert-values-fruit_)===
 <pre> Insert rows with values for only specific columns</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#51 Source]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]insert-values-fruit([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

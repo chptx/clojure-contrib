@@ -13,6 +13,7 @@ namespace.
 [AccumulatorsApiDoc accumulators]<br/>
 [AgentUtilsApiDoc agent-utils]<br/>
 [AutoAgentApiDoc auto-agent]<br/>
+[ClasspathApiDoc classpath]<br/>
 [CombinatoricsApiDoc combinatorics]<br/>
 [CommandLineApiDoc command-line]<br/>
 [ComplexNumbersApiDoc complex-numbers]<br/>
@@ -26,11 +27,13 @@ namespace.
 [ErrorKitApiDoc error-kit]<br/>
 [ExceptApiDoc except]<br/>
 [FcaseApiDoc fcase]<br/>
+[FindNamespacesApiDoc find-namespaces]<br/>
 [GenHtmlDocsApiDoc gen-html-docs]<br/>
 [GenericApiDoc generic]<br/>
 [GraphApiDoc graph]<br/>
 [GreatestLeastApiDoc greatest-least]<br/>
 [ImportStaticApiDoc import-static]<br/>
+[JarApiDoc jar]<br/>
 [JavaUtilsApiDoc java-utils]<br/>
 [JavadocBrowseApiDoc javadoc.browse]<br/>
 [JavalogApiDoc javalog]<br/>
@@ -46,7 +49,11 @@ namespace.
 [MonadsApiDoc monads]<br/>
 [NsUtilsApiDoc ns-utils]<br/>
 [PprintApiDoc pprint]<br/>
-[ProbabilitiesDistApiDoc probabilities.dist]<br/>
+[ProbabilitiesExamplesFiniteDistributionsApiDoc probabilities.examples-finite-distributions]<br/>
+[ProbabilitiesFiniteDistributionsApiDoc probabilities.finite-distributions]<br/>
+[ProbabilitiesMonteCarloApiDoc probabilities.monte-carlo]<br/>
+[ProbabilitiesRandomNumbersApiDoc probabilities.random-numbers]<br/>
+[ProbabilitiesRandomExamplesMonteCarloApiDoc probabilities.random.examples-monte-carlo]<br/>
 [PrxmlApiDoc prxml]<br/>
 [ReplLnApiDoc repl-ln]<br/>
 [ReplUtilsApiDoc repl-utils]<br/>

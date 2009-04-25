@@ -1,0 +1,32 @@
+#summary jar API Reference
+#sidebar ApiDocSidebar
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for jar=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.jar))
+}}}
+
+
+==Public Variables and Functions==
+Shortcuts:
+[#(_filenames-in-jar_jar-file) filenames-in-jar] [#(_jar-file?_file) jar-file?] 
+
+----
+===(_filenames-in-jar_ jar-file)===
+<pre> Returns a sequence of Strings naming the non-directory entries in
+the JAR file.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]filenames-in-jar([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+===(_jar-file?_ file)===
+<pre> Returns true if file is a normal file with a .jar or .JAR extension.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]jar-file?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

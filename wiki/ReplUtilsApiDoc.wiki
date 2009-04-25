@@ -25,44 +25,37 @@ Shortcuts:
 <pre> Ref to a list of local paths for Javadoc-generated HTML
 files.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#18 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]*local-javadocs*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_`*`remote-javadocs`*`_===
 <pre> Ref to a map from package name prefixes to URLs for remote
 Javadocs.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#28 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]*remote-javadocs*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_add-break-thread!_)===
 ===(_add-break-thread!_ t)===
 <pre> Add the given thread to break-threads so that it will be stopped
 any time the user presses Ctrl-C.  Calls start-handling-break for
 you.  Adds the current thread if none is given.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#139 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#139 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]add-break-thread!([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_add-local-javadoc_ path)===
 <pre> Adds to the list of local Javadoc paths.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#43 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]add-local-javadoc([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_add-remote-javadoc_ package-prefix url)===
 <pre> Adds to the list of remote Javadoc URLs.  package-prefix is the
 beginning of the package name that has docs at this URL.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#48 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#48 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]add-remote-javadoc([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_break-threads_===
 <pre> Threads to stop when Ctrl-C is pressed.  See 'add-break-thread!'</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#119 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#119 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]break-threads([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_find-javadoc-url_ classname)===
 <pre> Searches for a URL for the given class name.  Tries
 `*`local-javadocs`*` first, then `*`remote-javadocs`*`.  Returns a string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#54 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]find-javadoc-url([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_get-source_ x)===
 <pre> Returns a string of the source code for the given symbol, if it can
 find it.  This requires that the symbol resolve to a Var defined in
@@ -72,14 +65,12 @@ convenient.
 
  Example: (get-source 'filter)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#88 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-source([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_javadoc_ class-or-object)===
 <pre> Opens a browser window displaying the javadoc for the argument.
 Tries `*`local-javadocs`*` first, then `*`remote-javadocs`*`.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#74 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#74 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]javadoc([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_show_ x)===
 ===(_show_ x selector)===
 <pre> With one arg prints all static and instance members of x or (class x).
@@ -99,8 +90,7 @@ all the properies of the member object as translated by 'bean'.
 
  Examples: (show Integer)  (show `[``]`)  (show String 23)  (show String "case")</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#53 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]show([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_source_ n)===
 ====Macro====
 <pre> Prints the source code for the given symbol, if it can find it.
@@ -109,10 +99,9 @@ namespace for which the .clj is in the classpath.
 
  Example: (source filter)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#109 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]source([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_start-handling-break_)===
 <pre> Register INT signal handler.  After calling this, Ctrl-C will cause
 all break-threads to be stopped.  See 'add-break-thread!'</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#122 Source]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#122 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]start-handling-break([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

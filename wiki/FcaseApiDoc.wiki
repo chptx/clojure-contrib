@@ -28,8 +28,7 @@ test expression with =.  If they are equal, executes the "body"
 expression.  Optional last expression is executed if none of the
 test expressions match.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#67 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#67 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]case([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_fcase_ compare-fn case-value & test-expr-clauses)===
 ====Macro====
 <pre> Generic switch/case macro.  'fcase' is short for 'function case'.
@@ -57,26 +56,23 @@ returns nil.
 order.  For a large number of case expressions it may be more
 efficient to use a hash lookup.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#28 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]fcase([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_in-case_ test-value & clauses)===
 ====Macro====
 <pre> Like case, but test expressions are sequences.  The test expression
 is true if any item in the sequence is equal (tested with '=') to
 the test value.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#91 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#91 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]in-case([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_instance-case_ test-value & clauses)===
 ====Macro====
 <pre> Like case, but the test expressions are Java class names, tested with
 'instance?'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#81 Source]
-----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]instance-case([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_re-case_ test-value & clauses)===
 ====Macro====
 <pre> Like case, but the test expressions are regular expressions, tested
 with re-find.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#75 Source]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#75 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]re-case([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
