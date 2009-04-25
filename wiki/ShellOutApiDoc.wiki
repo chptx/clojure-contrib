@@ -18,10 +18,13 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_sh_&_args) sh] 
+[#sh sh] 
 
 ----
-===(_sh_ & args)===
+===sh===
+<pre>
+Usage: *(_sh_ & args)*
+</pre>
 <pre> Passes the given strings to Runtime.exec() to launch a sub-process.
 
  Options are

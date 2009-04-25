@@ -18,92 +18,155 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_find-first_pred_coll) find-first] [#(_flatten_x) flatten] [#(_frequencies_coll) frequencies] [#(_group-by_f_coll) group-by] [#(_includes?_coll_x) includes?] [#(_indexed_s) indexed] [#(_partition-all_n_coll) partition-all] [#(_partition-by_f_coll) partition-by] [#(_rand-elt_s) rand-elt] [#(_rec-cat_binding-name_&_exprs) rec-cat] [#(_rec-seq_binding-name_&_body) rec-seq] [#(_reductions_f_coll) reductions] [#(_rotations_x) rotations] [#(_separate_f_s) separate] [#(_seq-on_s) seq-on] [#(_shuffle_coll) shuffle] 
+[#find-first find-first] [#flatten flatten] [#frequencies frequencies] [#group-by group-by] [#includes? includes?] [#indexed indexed] [#partition-all partition-all] [#partition-by partition-by] [#rand-elt rand-elt] [#rec-cat rec-cat] [#rec-seq rec-seq] [#reductions reductions] [#rotations rotations] [#separate separate] [#seq-on seq-on] [#shuffle shuffle] 
 
 ----
-===(_find-first_ pred coll)===
+===find-first===
+<pre>
+Usage: *(_find-first_ pred coll)*
+</pre>
 <pre> Returns the first item of coll for which (pred item) returns logical true.
 Consumes sequences up to the first match, will consume the entire sequence
 and return nil if no match is found.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#164 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-first+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_flatten_ x)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#164 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-first+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===flatten===
+<pre>
+Usage: *(_flatten_ x)*
+</pre>
 <pre> Takes any nested combination of sequential things (lists, vectors,
 etc.) and returns their contents as a single, flat sequence.
 (flatten nil) returns nil.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=flatten+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_frequencies_ coll)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=flatten+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===frequencies===
+<pre>
+Usage: *(_frequencies_ coll)*
+</pre>
 <pre> Returns a map from distinct items in coll to the number of times
 they appear.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=frequencies+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_group-by_ f coll)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=frequencies+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===group-by===
+<pre>
+Usage: *(_group-by_ f coll)*
+</pre>
 <pre> Returns a sorted map of the elements of coll keyed by the result of
 f on each element. The value at each key will be a vector of the
 corresponding elements, in the order they appeared in coll.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=group-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_includes?_ coll x)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=group-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===includes?===
+<pre>
+Usage: *(_includes?_ coll x)*
+</pre>
 <pre> Returns true if coll contains something equal (with =) to x,
 in linear time.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=includes?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_indexed_ s)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=includes?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===indexed===
+<pre>
+Usage: *(_indexed_ s)*
+</pre>
 <pre> Returns a lazy sequence of `[`index, item`]` pairs, where items come
 from 's' and indexes count up from zero.
 
  (indexed '(a b c d))  =>  (`[`0 a`]` `[`1 b`]` `[`2 c`]` `[`3 d`]`)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=indexed+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_partition-all_ n coll)===
-===(_partition-all_ n step coll)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=indexed+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===partition-all===
+<pre>
+Usage: *(_partition-all_ n coll)*
+       *(_partition-all_ n step coll)*
+</pre>
 <pre> Returns a lazy sequence of lists like clojure.core/partition, but may
 include lists with fewer than n items at the end.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#129 Source] [http://www.google.com/codesearch?hl=en&lr=&q=partition-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_partition-by_ f coll)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#129 Source] [http://www.google.com/codesearch?hl=en&lr=&q=partition-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===partition-by===
+<pre>
+Usage: *(_partition-by_ f coll)*
+</pre>
 <pre> Applies f to each value in coll, splitting it each time f returns
 a new value.  Returns a lazy seq of lazy seqs.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#73 Source] [http://www.google.com/codesearch?hl=en&lr=&q=partition-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_rand-elt_ s)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#73 Source] [http://www.google.com/codesearch?hl=en&lr=&q=partition-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===rand-elt===
+<pre>
+Usage: *(_rand-elt_ s)*
+</pre>
 <pre> Return a random element of this seq</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#146 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rand-elt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_rec-cat_ binding-name & exprs)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#146 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rand-elt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===rec-cat===
+<pre>
+Usage: *(_rec-cat_ binding-name & exprs)*
+</pre>
 ====Macro====
 <pre> Similar to lazy-cat but binds the resulting sequence to the supplied 
 binding-name, allowing for recursive expressions.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#100 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rec-cat+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_rec-seq_ binding-name & body)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#100 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rec-cat+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===rec-seq===
+<pre>
+Usage: *(_rec-seq_ binding-name & body)*
+</pre>
 ====Macro====
 <pre> Similar to lazy-seq but binds the resulting seq to the supplied 
 binding-name, allowing for recursive expressions.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rec-seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_reductions_ f coll)===
-===(_reductions_ f init coll)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rec-seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===reductions===
+<pre>
+Usage: *(_reductions_ f coll)*
+       *(_reductions_ f init coll)*
+</pre>
 <pre> Returns a lazy seq of the intermediate values of the reduction (as
 per reduce) of coll by f, starting with init.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reductions+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_rotations_ x)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reductions+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===rotations===
+<pre>
+Usage: *(_rotations_ x)*
+</pre>
 <pre> Returns a lazy seq of all rotations of a seq</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#119 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rotations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_separate_ f s)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#119 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rotations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===separate===
+<pre>
+Usage: *(_separate_ f s)*
+</pre>
 <pre> Returns a vector:
 `[` (filter f s), (filter (complement f) s) `]`</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=separate+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_seq-on_ s)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=separate+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===seq-on===
+<pre>
+Usage: *(_seq-on_ s)*
+</pre>
 <pre> Returns a seq on the object s. Works like the built-in seq but as
 a multimethod that can have implementations for new classes and types.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#153 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq-on+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_shuffle_ coll)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#153 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq-on+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===shuffle===
+<pre>
+Usage: *(_shuffle_ coll)*
+</pre>
 <pre> Return a random permutation of coll</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#139 Source] [http://www.google.com/codesearch?hl=en&lr=&q=shuffle+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

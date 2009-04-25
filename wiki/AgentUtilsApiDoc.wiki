@@ -18,10 +18,13 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_capture-and-send_vars_agent_action_&_args) capture-and-send] 
+[#capture-and-send capture-and-send] 
 
 ----
-===(_capture-and-send_ vars agent action & args)===
+===capture-and-send===
+<pre>
+Usage: *(_capture-and-send_ vars agent action & args)*
+</pre>
 ====Macro====
 <pre> Capture the current value of the specified vars and rebind 
 them on the agent thread before executing the action.

@@ -18,10 +18,13 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_cond-let_bindings_&_clauses) cond-let] 
+[#cond-let cond-let] 
 
 ----
-===(_cond-let_ bindings & clauses)===
+===cond-let===
+<pre>
+Usage: *(_cond-let_ bindings & clauses)*
+</pre>
 ====Macro====
 <pre> Takes a binding-form and a set of test/expr pairs. Evaluates each test
 one at a time. If a test returns logical true, cond-let evaluates and

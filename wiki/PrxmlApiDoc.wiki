@@ -18,19 +18,30 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#*html-compatible* *html-compatible*] [#*prxml-indent* *prxml-indent*] [#(_prxml_&_args) prxml] 
+[#*html-compatible* *html-compatible*] [#*prxml-indent* *prxml-indent*] [#prxml prxml] 
 
 ----
-===_`*`html-compatible`*`_===
+===*html-compatible*===
+<pre>
+Usage: *_`*`html-compatible`*`_*
+</pre>
 <pre> If true, empty tags will have a space before the closing /></pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*html-compatible*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===_`*`prxml-indent`*`_===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*html-compatible*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===*prxml-indent*===
+<pre>
+Usage: *_`*`prxml-indent`*`_*
+</pre>
 <pre> The number of spaces to indent sub-tags.  nil for no indent
 and no extra line-breaks.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*prxml-indent*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_prxml_ & args)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*prxml-indent*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===prxml===
+<pre>
+Usage: *(_prxml_ & args)*
+</pre>
 <pre> Print XML to `*`out`*`.  Vectors become XML tags: the first item is the
 tag name; optional second item is a map of attributes.
 

@@ -18,37 +18,60 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#*trace-depth* *trace-depth*] [#(_deftrace_name_&_definition) deftrace] [#(_trace_value) trace] [#(_trace-fn-call_name_f_args) trace-fn-call] [#(_trace-indent_) trace-indent] [#(_tracer_name_value) tracer] 
+[#*trace-depth* *trace-depth*] [#deftrace deftrace] [#trace trace] [#trace-fn-call trace-fn-call] [#trace-indent trace-indent] [#tracer tracer] 
 
 ----
-===_`*`trace-depth`*`_===
+===*trace-depth*===
+<pre>
+Usage: *_`*`trace-depth`*`_*
+</pre>
 <pre> Current stack depth of traced function calls.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*trace-depth*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_deftrace_ name & definition)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*trace-depth*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===deftrace===
+<pre>
+Usage: *(_deftrace_ name & definition)*
+</pre>
 ====Macro====
 <pre> Use in place of defn; traces each call/return of this fn, including
 arguments.  Nested calls to deftrace'd functions will print a
 tree-like structure.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftrace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_trace_ value)===
-===(_trace_ name value)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftrace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===trace===
+<pre>
+Usage: *(_trace_ value)*
+       *(_trace_ name value)*
+</pre>
 <pre> Sends name (optional) and value to the tracer function, then
 returns value.  May be wrapped around any expression without
 affecting the result.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_trace-fn-call_ name f args)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===trace-fn-call===
+<pre>
+Usage: *(_trace-fn-call_ name f args)*
+</pre>
 <pre> Traces a single call to a function f with args.  'name' is the
 symbol name of the function.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace-fn-call+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_trace-indent_)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace-fn-call+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===trace-indent===
+<pre>
+Usage: *(_trace-indent_)*
+</pre>
 <pre> Returns an indentation string based on `*`trace-depth`*`</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace-indent+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_tracer_ name value)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace-indent+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===tracer===
+<pre>
+Usage: *(_tracer_ name value)*
+</pre>
 <pre> This function is called by trace.  Prints to standard output, but
 may be rebound to do anything you like.  'name' is optional.</pre>
 

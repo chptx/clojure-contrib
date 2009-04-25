@@ -18,10 +18,13 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_auto-agent_expr) auto-agent] 
+[#auto-agent auto-agent] 
 
 ----
-===(_auto-agent_ expr)===
+===auto-agent===
+<pre>
+Usage: *(_auto-agent_ expr)*
+</pre>
 ====Macro====
 <pre> Creates an agent whose value is the result of evaluating expr.
 Whenever one of the agents/atoms/refs dererenced within expr

@@ -18,55 +18,94 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_keywordize-keys_m) keywordize-keys] [#(_macroexpand-all_form) macroexpand-all] [#(_postwalk_f_form) postwalk] [#(_postwalk-demo_form) postwalk-demo] [#(_postwalk-replace_smap_form) postwalk-replace] [#(_prewalk_f_form) prewalk] [#(_prewalk-demo_form) prewalk-demo] [#(_prewalk-replace_smap_form) prewalk-replace] [#(_stringify-keys_m) stringify-keys] [#(_walk_inner_outer_form) walk] 
+[#keywordize-keys keywordize-keys] [#macroexpand-all macroexpand-all] [#postwalk postwalk] [#postwalk-demo postwalk-demo] [#postwalk-replace postwalk-replace] [#prewalk prewalk] [#prewalk-demo prewalk-demo] [#prewalk-replace prewalk-replace] [#stringify-keys stringify-keys] [#walk walk] 
 
 ----
-===(_keywordize-keys_ m)===
+===keywordize-keys===
+<pre>
+Usage: *(_keywordize-keys_ m)*
+</pre>
 <pre> Recursively transforms all map keys from strings to keywords.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=keywordize-keys+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_macroexpand-all_ form)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=keywordize-keys+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===macroexpand-all===
+<pre>
+Usage: *(_macroexpand-all_ form)*
+</pre>
 <pre> Recursively performs all possible macroexpansions in form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=macroexpand-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_postwalk_ f form)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=macroexpand-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===postwalk===
+<pre>
+Usage: *(_postwalk_ f form)*
+</pre>
 <pre> Performs a depth-first, post-order traversal of form.  Calls f on
 each sub-form, uses f's return value in place of the original.
 Recognizes all Clojure data structures except sorted-map-by.
 Consumes seqs as with doall.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_postwalk-demo_ form)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===postwalk-demo===
+<pre>
+Usage: *(_postwalk-demo_ form)*
+</pre>
 <pre> Demonstrates the behavior of postwalk by printing each form as it is
 walked.  Returns form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_postwalk-replace_ smap form)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===postwalk-replace===
+<pre>
+Usage: *(_postwalk-replace_ smap form)*
+</pre>
 <pre> Recursively transforms form by replacing keys in smap with their
 values.  Like clojure/replace but works on any data structure.  Does
 replacement at the leaves of the tree first.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#111 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_prewalk_ f form)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#111 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===prewalk===
+<pre>
+Usage: *(_prewalk_ f form)*
+</pre>
 <pre> Like postwalk, but does pre-order traversal.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_prewalk-demo_ form)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===prewalk-demo===
+<pre>
+Usage: *(_prewalk-demo_ form)*
+</pre>
 <pre> Demonstrates the behavior of prewalk by printing each form as it is
 walked.  Returns form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_prewalk-replace_ smap form)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===prewalk-replace===
+<pre>
+Usage: *(_prewalk-replace_ smap form)*
+</pre>
 <pre> Recursively transforms form by replacing keys in smap with their
 values.  Like clojure/replace but works on any data structure.  Does
 replacement at the root of the tree first.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_stringify-keys_ m)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===stringify-keys===
+<pre>
+Usage: *(_stringify-keys_ m)*
+</pre>
 <pre> Recursively transforms all map keys from keywords to strings.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stringify-keys+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_walk_ inner outer form)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stringify-keys+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===walk===
+<pre>
+Usage: *(_walk_ inner outer form)*
+</pre>
 <pre> Traverses form, an arbitrary data structure.  inner and outer are
 functions.  Applies inner to each element of form, building up a
 data structure of the same type, then applies outer to the result.

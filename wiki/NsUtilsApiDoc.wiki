@@ -18,38 +18,65 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_dir_nsname) dir] [#(_docs_nsname) docs] [#(_get-ns_ns-sym) get-ns] [#(_ns-vars_ns) ns-vars] [#(_print-dir_ns) print-dir] [#(_print-docs_ns) print-docs] [#(_vars_nsname) vars] 
+[#dir dir] [#docs docs] [#get-ns get-ns] [#ns-vars ns-vars] [#print-dir print-dir] [#print-docs print-docs] [#vars vars] 
 
 ----
-===(_dir_ nsname)===
+===dir===
+<pre>
+Usage: *(_dir_ nsname)*
+</pre>
 ====Macro====
 <pre> Prints a sorted directory of public vars in a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_docs_ nsname)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===docs===
+<pre>
+Usage: *(_docs_ nsname)*
+</pre>
 ====Macro====
 <pre> Prints documentation for the public vars in a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=docs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_get-ns_ ns-sym)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=docs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===get-ns===
+<pre>
+Usage: *(_get-ns_ ns-sym)*
+</pre>
 <pre> Returns the namespace named by ns-sym or throws if the
 namespace does not exist</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_ns-vars_ ns)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===ns-vars===
+<pre>
+Usage: *(_ns-vars_ ns)*
+</pre>
 <pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ns-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_print-dir_ ns)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ns-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===print-dir===
+<pre>
+Usage: *(_print-dir_ ns)*
+</pre>
 <pre> Prints a sorted directory of public vars in a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_print-docs_ ns)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===print-docs===
+<pre>
+Usage: *(_print-docs_ ns)*
+</pre>
 <pre> Prints documentation for the public vars in a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-docs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_vars_ nsname)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-docs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===vars===
+<pre>
+Usage: *(_vars_ nsname)*
+</pre>
 ====Macro====
 <pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>

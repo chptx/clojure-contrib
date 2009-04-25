@@ -18,23 +18,30 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_defadt_type-tag_&_constructors) defadt] [#(_deftype_type-tag_constructor-name_docstring?_attr-map?) deftype] [#(_deftype-_type-tag_constructor-name_&_optional) deftype-] [#(_match_value_&_clauses) match] 
+[#defadt defadt] [#deftype deftype] [#deftype- deftype-] [#match match] 
 
 Variables and Functions in types.examples:
 [TypesApiDoc#multiset multiset] 
 
 ----
-===(_defadt_ type-tag & constructors)===
+===defadt===
+<pre>
+Usage: *(_defadt_ type-tag & constructors)*
+</pre>
 ====Macro====
 <pre> Define an algebraic data type name by an exhaustive list of constructors.
 Each constructor can be a symbol (argument-free constructor) or a
 list consisting of a tag symbol followed by the argument symbols.
 The data type tag must be a keyword.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defadt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_deftype_ type-tag constructor-name docstring? attr-map?)===
-===(_deftype_ type-tag constructor-name docstring? attr-map? constructor)===
-===(_deftype_ type-tag constructor-name docstring? attr-map? constructor deconstructor)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defadt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===deftype===
+<pre>
+Usage: *(_deftype_ type-tag constructor-name docstring? attr-map?)*
+       *(_deftype_ type-tag constructor-name docstring? attr-map? constructor)*
+       *(_deftype_ type-tag constructor-name docstring? attr-map? constructor deconstructor)*
+</pre>
 ====Macro====
 <pre> Define a data type by a type tag (a namespace-qualified keyword)
 and a symbol naming the constructor function. Optionally, a
@@ -46,13 +53,21 @@ as metadata. The deconstructor function must return the arguments
 to be passed to the constructor in order to create an equivalent
 object. It is used for printing and matching.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftype+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_deftype-_ type-tag constructor-name & optional)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftype+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===deftype-===
+<pre>
+Usage: *(_deftype-_ type-tag constructor-name & optional)*
+</pre>
 ====Macro====
 <pre> Same as deftype but the constructor is private.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftype-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_match_ value & clauses)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftype-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===match===
+<pre>
+Usage: *(_match_ value & clauses)*
+</pre>
 ====Macro====
 <pre> Given a value and a list of template-expr clauses, evaluate the first
 expr whose template matches the value. There are four kinds of templates:
@@ -71,9 +86,13 @@ evaluation of expr. If the same symbol occurs more than once in a,
 template the corresponding elements of the object must be equal
 for the template to match.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#241 Source] [http://www.google.com/codesearch?hl=en&lr=&q=match+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.types.examples==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#241 Source] [http://www.google.com/codesearch?hl=en&lr=&q=match+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+==Namespace clojure.contrib.types.examples==
 ----
-===_multiset_===
+===multiset===
+<pre>
+Usage: *_multiset_*
+</pre>
 <pre> Multiset (demo implementation)</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/examples.clj#21 Source] [http://www.google.com/codesearch?hl=en&lr=&q=multiset+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

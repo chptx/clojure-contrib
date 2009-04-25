@@ -18,10 +18,13 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_deep-merge-with_f_&_maps) deep-merge-with] [#(_lazy-get_map_key_not-found) lazy-get] [#(_safe-get_map_key) safe-get] [#(_safe-get-in_map_ks) safe-get-in] 
+[#deep-merge-with deep-merge-with] [#lazy-get lazy-get] [#safe-get safe-get] [#safe-get-in safe-get-in] 
 
 ----
-===(_deep-merge-with_ f & maps)===
+===deep-merge-with===
+<pre>
+Usage: *(_deep-merge-with_ f & maps)*
+</pre>
 <pre> Like merge-with, but merges maps recursively, appling the given fn
 only when there's a non-map at a particular level.
 
@@ -29,17 +32,29 @@ only when there's a non-map at a particular level.
              {:a {:b {:c 2 :d {:z 9} :z 3} :e 100}})
 -> {:a {:b {:z 3, :c 3, :d {:z 9, :x 1, :y 2}}, :e 103}, :f 4}</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deep-merge-with+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_lazy-get_ map key not-found)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deep-merge-with+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===lazy-get===
+<pre>
+Usage: *(_lazy-get_ map key not-found)*
+</pre>
 ====Macro====
 <pre> Like get, but doesn't evaluate not-found unless it is needed.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lazy-get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_safe-get_ map key)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lazy-get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===safe-get===
+<pre>
+Usage: *(_safe-get_ map key)*
+</pre>
 <pre> Like get, but throws an exception if the key is not found.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=safe-get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_safe-get-in_ map ks)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=safe-get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===safe-get-in===
+<pre>
+Usage: *(_safe-get-in_ map ks)*
+</pre>
 <pre> Like get-in, but throws an exception if any key is not found.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=safe-get-in+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

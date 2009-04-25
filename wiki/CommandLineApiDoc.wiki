@@ -18,10 +18,13 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_with-command-line_args_desc_cmdspec_&_body) with-command-line] 
+[#with-command-line with-command-line] 
 
 ----
-===(_with-command-line_ args desc cmdspec & body)===
+===with-command-line===
+<pre>
+Usage: *(_with-command-line_ args desc cmdspec & body)*
+</pre>
 ====Macro====
 <pre> Bind locals to command-line args.</pre>
 

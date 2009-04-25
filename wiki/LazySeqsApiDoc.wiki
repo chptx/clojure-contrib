@@ -21,7 +21,10 @@ Shortcuts:
 [#primes primes] 
 
 ----
-===_primes_===
+===primes===
+<pre>
+Usage: *_primes_*
+</pre>
 <pre> Lazy sequence of all the prime numbers.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=primes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

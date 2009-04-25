@@ -18,18 +18,29 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_buffer-stream_buf) buffer-stream] [#(_mmap_f) mmap] [#(_slurp_f) slurp] 
+[#buffer-stream buffer-stream] [#mmap mmap] [#slurp slurp] 
 
 ----
-===(_buffer-stream_ buf)===
+===buffer-stream===
+<pre>
+Usage: *(_buffer-stream_ buf)*
+</pre>
 <pre> Returns an InputStream for a ByteBuffer, such as returned by mmap.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=buffer-stream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_mmap_ f)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=buffer-stream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===mmap===
+<pre>
+Usage: *(_mmap_ f)*
+</pre>
 <pre> Memory-map the file named f.  Returns a ByteBuffer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_slurp_ f)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===slurp===
+<pre>
+Usage: *(_slurp_ f)*
+</pre>
 <pre> Reads the file named by f and returns it as a string.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=slurp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

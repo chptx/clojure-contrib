@@ -18,16 +18,23 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_open-url-in-browser_url) open-url-in-browser] [#(_open-url-in-swing_url) open-url-in-swing] 
+[#open-url-in-browser open-url-in-browser] [#open-url-in-swing open-url-in-swing] 
 
 ----
-===(_open-url-in-browser_ url)===
+===open-url-in-browser===
+<pre>
+Usage: *(_open-url-in-browser_ url)*
+</pre>
 <pre> Opens url (a string) in the default system web browser.  May not
 work on all platforms.  Returns url on success, nil if not
 supported.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javadoc/browse.clj#22 Source] [http://www.google.com/codesearch?hl=en&lr=&q=open-url-in-browser+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_open-url-in-swing_ url)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javadoc/browse.clj#22 Source] [http://www.google.com/codesearch?hl=en&lr=&q=open-url-in-browser+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===open-url-in-swing===
+<pre>
+Usage: *(_open-url-in-swing_ url)*
+</pre>
 <pre> Opens url (a string) in a Swing window.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javadoc/browse.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=open-url-in-swing+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

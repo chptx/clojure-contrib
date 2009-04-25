@@ -18,16 +18,23 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_generate-documentation_libs) generate-documentation] [#(_generate-documentation-to-file_path_libs) generate-documentation-to-file] 
+[#generate-documentation generate-documentation] [#generate-documentation-to-file generate-documentation-to-file] 
 
 ----
-===(_generate-documentation_ libs)===
+===generate-documentation===
+<pre>
+Usage: *(_generate-documentation_ libs)*
+</pre>
 <pre> Returns a string which is the HTML documentation for the libraries
 named by libs. Libs is a vector of symbols identifying Clojure
 libraries.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs.clj#426 Source] [http://www.google.com/codesearch?hl=en&lr=&q=generate-documentation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_generate-documentation-to-file_ path libs)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs.clj#426 Source] [http://www.google.com/codesearch?hl=en&lr=&q=generate-documentation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===generate-documentation-to-file===
+<pre>
+Usage: *(_generate-documentation-to-file_ path libs)*
+</pre>
 <pre> Calls generate-documentation on the libraries named by libs and
 emits the generated HTML to the path named by path.</pre>
 

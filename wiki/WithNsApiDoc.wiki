@@ -18,17 +18,24 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_with-ns_ns_&_body) with-ns] [#(_with-temp-ns_&_body) with-temp-ns] 
+[#with-ns with-ns] [#with-temp-ns with-temp-ns] 
 
 ----
-===(_with-ns_ ns & body)===
+===with-ns===
+<pre>
+Usage: *(_with-ns_ ns & body)*
+</pre>
 ====Macro====
 <pre> Evaluates body in another namespace.  ns is either a namespace
 object or a symbol.  This makes it possible to define functions in
 namespaces other than the current one.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/with_ns.clj#17 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_with-temp-ns_ & body)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/with_ns.clj#17 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===with-temp-ns===
+<pre>
+Usage: *(_with-temp-ns_ & body)*
+</pre>
 ====Macro====
 <pre> Evaluates body in an anonymous namespace, which is then immediately
 removed.  The temporary namespace will 'refer' clojure.core.</pre>

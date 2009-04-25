@@ -18,11 +18,14 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_-?>_x_form) -?>] [#(_.?._x_form) .?.] 
+[#-?> -?>] [#.?. .?.] 
 
 ----
-===(_-?>_ x form)===
-===(_-?>_ x form & forms)===
+===-?>===
+<pre>
+Usage: *(_-?>_ x form)*
+       *(_-?>_ x form & forms)*
+</pre>
 ====Macro====
 <pre> Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
@@ -30,9 +33,13 @@ Examples :
 (-?> nil .toUpperCase (.substring 1)) returns nil
 </pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=-?>+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_.?._ x form)===
-===(_.?._ x form & forms)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=-?>+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===.?.===
+<pre>
+Usage: *(_.?._ x form)*
+       *(_.?._ x form & forms)*
+</pre>
 ====Macro====
 <pre> Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :

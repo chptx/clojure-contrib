@@ -18,18 +18,25 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_create-repl-server_port_backlog_bind-addr) create-repl-server] [#(_create-server_port_fun_backlog_bind-addr) create-server] 
+[#create-repl-server create-repl-server] [#create-server create-server] 
 
 ----
-===(_create-repl-server_ port backlog bind-addr)===
-===(_create-repl-server_ port backlog)===
-===(_create-repl-server_ port)===
+===create-repl-server===
+<pre>
+Usage: *(_create-repl-server_ port backlog bind-addr)*
+       *(_create-repl-server_ port backlog)*
+       *(_create-repl-server_ port)*
+</pre>
 <pre> create a repl on a socket</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-repl-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_create-server_ port fun backlog bind-addr)===
-===(_create-server_ port fun backlog)===
-===(_create-server_ port fun)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-repl-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===create-server===
+<pre>
+Usage: *(_create-server_ port fun backlog bind-addr)*
+       *(_create-server_ port fun backlog)*
+       *(_create-server_ port fun)*
+</pre>
 <pre> Creates a server socket on port. Upon accept, a new thread is
 created which calls:
 

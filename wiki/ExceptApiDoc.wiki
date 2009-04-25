@@ -18,10 +18,13 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_throw-arg_&_args) throw-arg] [#(_throw-if_test_&_args) throw-if] [#(_throw-if-not_test_&_args) throw-if-not] [#(_throwf_&_args) throwf] 
+[#throw-arg throw-arg] [#throw-if throw-if] [#throw-if-not throw-if-not] [#throwf throwf] 
 
 ----
-===(_throw-arg_ & args)===
+===throw-arg===
+<pre>
+Usage: *(_throw-arg_ & args)*
+</pre>
 <pre> Throws an IllegalArgumentException. All arguments are optional:
 
        format? format-args`*`
@@ -30,18 +33,30 @@ Shortcuts:
 - format-args are objects that correspond to format specifiers in
   format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-arg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_throw-if_ test & args)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-arg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===throw-if===
+<pre>
+Usage: *(_throw-if_ test & args)*
+</pre>
 <pre> Throws an Exception or Error if test is true. args are those documented
 for throwf.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_throw-if-not_ test & args)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===throw-if-not===
+<pre>
+Usage: *(_throw-if-not_ test & args)*
+</pre>
 <pre> Throws an Exception or Error if test is false. args are those documented
 for throwf.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if-not+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_throwf_ & args)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if-not+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===throwf===
+<pre>
+Usage: *(_throwf_ & args)*
+</pre>
 <pre> Throws an Exception or Error with an optional message formatted using
 clojure/format. All arguments are optional:
 

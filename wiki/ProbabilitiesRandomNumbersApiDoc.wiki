@@ -18,14 +18,21 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_lcg_modulus_multiplier_increment_seed) lcg] [#rand-stream rand-stream] 
+[#lcg lcg] [#rand-stream rand-stream] 
 
 ----
-===(_lcg_ modulus multiplier increment seed)===
+===lcg===
+<pre>
+Usage: *(_lcg_ modulus multiplier increment seed)*
+</pre>
 <pre> Create a linear congruential generator</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random_numbers.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lcg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===_rand-stream_===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random_numbers.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lcg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===rand-stream===
+<pre>
+Usage: *_rand-stream_*
+</pre>
 <pre> A random number stream based on clojure.core/rand. Note that this
 generator uses an internal mutable state. The state is thus not stored
 in the stream object and cannot be restored.</pre>

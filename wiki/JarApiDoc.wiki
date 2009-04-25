@@ -18,15 +18,22 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#(_filenames-in-jar_jar-file) filenames-in-jar] [#(_jar-file?_file) jar-file?] 
+[#filenames-in-jar filenames-in-jar] [#jar-file? jar-file?] 
 
 ----
-===(_filenames-in-jar_ jar-file)===
+===filenames-in-jar===
+<pre>
+Usage: *(_filenames-in-jar_ jar-file)*
+</pre>
 <pre> Returns a sequence of Strings naming the non-directory entries in
 the JAR file.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=filenames-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
-===(_jar-file?_ file)===
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=filenames-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===jar-file?===
+<pre>
+Usage: *(_jar-file?_ file)*
+</pre>
 <pre> Returns true if file is a normal file with a .jar or .JAR extension.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=jar-file?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
