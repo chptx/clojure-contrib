@@ -25,8 +25,8 @@ Shortcuts:
 <pre> Returns a sequence of Strings naming the non-directory entries in
 the JAR file.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]filenames-in-jar([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=filenames-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_jar-file?_ file)===
 <pre> Returns true if file is a normal file with a .jar or .JAR extension.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]jar-file?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=jar-file?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

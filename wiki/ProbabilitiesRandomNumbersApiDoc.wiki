@@ -24,10 +24,10 @@ Shortcuts:
 ===(_lcg_ modulus multiplier increment seed)===
 <pre> Create a linear congruential generator</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random_numbers.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]lcg([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random_numbers.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lcg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_rand-stream_===
 <pre> A random number stream based on clojure.core/rand. Note that this
 generator uses an internal mutable state. The state is thus not stored
 in the stream object and cannot be restored.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random_numbers.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]rand-stream([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random_numbers.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rand-stream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

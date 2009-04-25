@@ -26,17 +26,17 @@ Shortcuts:
 / and \ with File/separatorChar.  Replaces ~ at the start of the
 path with the user.home system property.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]file([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_pwd_)===
 <pre> Returns current working directory as a String.  (Like UNIX 'pwd'.)
 Note: In Java, you cannot change the current working directory.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]pwd([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pwd+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_read-lines_ f)===
 <pre> Like clojure.core/line-seq but opens f with reader.  Automatically
 closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#169 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]read-lines([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#169 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-lines+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_reader_===
 <pre> Attempts to coerce its argument into an open
 java.io.BufferedReader.  Argument may be an instance of Reader,
@@ -49,31 +49,31 @@ local file names.  Uses `*`default-encoding`*` as the text encoding.
  Should be used inside with-open to ensure the Reader is properly
 closed.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]reader([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reader+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_slurp`*`_ f)===
 <pre> Like clojure.core/slurp but opens f with reader.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#180 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]slurp*([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#180 Source] [http://www.google.com/codesearch?hl=en&lr=&q=slurp*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_spit_ f content)===
 <pre> Opposite of slurp.  Opens f with writer, writes content, then
 closes f.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#191 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]spit([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#191 Source] [http://www.google.com/codesearch?hl=en&lr=&q=spit+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_with-in-reader_ f & body)===
 ====Macro====
 <pre> Opens a PushbackReader on f, binds it to `*`in`*`, and evaluates body.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#213 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]with-in-reader([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#213 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-in-reader+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_with-out-writer_ f & body)===
 ====Macro====
 <pre> Opens a writer on f, binds it to `*`out`*`, and evalutes body.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]with-out-writer([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-out-writer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_write-lines_ f lines)===
 <pre> Writes lines (a seq) to f, separated by newlines.  f is opened with
 writer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#158 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]write-lines([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#158 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-lines+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_writer_===
 <pre> Attempts to coerce its argument into an open java.io.PrintWriter
 wrapped around a java.io.BufferedWriter.  Argument may be an
@@ -87,4 +87,4 @@ local file names.
  Should be used inside with-open to ensure the Writer is properly
 closed.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]writer([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=writer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

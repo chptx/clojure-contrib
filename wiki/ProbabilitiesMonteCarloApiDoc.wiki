@@ -25,68 +25,68 @@ Shortcuts:
 <pre> A discrete distribution, defined by a map dist mapping values
 to probabilities. The sum of probabilities must be one.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#85 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]discrete([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#85 Source] [http://www.google.com/codesearch?hl=en&lr=&q=discrete+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_exponential_ lambda)===
 <pre> Transform a sequence of uniform random numbers in the interval `[`0, 1)
 into a sequence of exponential random numbers with parameter lambda.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]exponential([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=exponential+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_lognormal_ mu sigma)===
 <pre> Transform a sequence of uniform random numbesr in the interval `[`0, 1)
 into a sequence of lognormal random numbers with mean mu and standard
 deviation sigma.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#135 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]lognormal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#135 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lognormal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_n-sphere_ n r)===
 <pre> Return a uniform distribution of n-dimensional vectors inside an
 n-sphere of radius r.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#226 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]n-sphere([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#226 Source] [http://www.google.com/codesearch?hl=en&lr=&q=n-sphere+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_normal_ mu sigma)===
 <pre> Transform a sequence urs of uniform random number in the interval `[`0, 1)
 into a sequence of normal random numbers with mean mu and standard
 deviation sigma.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#113 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]normal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#113 Source] [http://www.google.com/codesearch?hl=en&lr=&q=normal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_normal-box-muller_ mu sigma)===
 <pre> Transform a sequence of uniform random numbers in the interval `[`0, 1)
 into a sequence of normal random numbers with mean mu and standard
 deviation sigma.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#160 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]normal-box-muller([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#160 Source] [http://www.google.com/codesearch?hl=en&lr=&q=normal-box-muller+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_random-stream_ distribution random-stream-state)===
 <pre> Define a random stream by a distribution and the state of a
 random number stream with uniform distribution in `[`0, 1).</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]random-stream([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=random-stream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_reject_ p dist)===
 <pre> Return the distribution that results from rejecting the values from
 dist that do not satisfy predicate p.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]reject([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reject+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_sample_ n dist)===
 <pre> Return the distribution of samples of length n from the
 distribution dist</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#181 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]sample([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#181 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sample+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_sample-mean_ n dist)===
 <pre> Return the distribution of the mean over n samples from the
 distribution dist</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#208 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]sample-mean([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#208 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sample-mean+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_sample-mean-variance_ n dist)===
 <pre> Return the distribution of the mean-and-variance (a vector containing
 the mean and the variance) over n samples from the distribution dist</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#215 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]sample-mean-variance([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#215 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sample-mean-variance+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_sample-reduce_ f n dist)===
 ===(_sample-reduce_ f val n dist)===
 <pre> Returns the distribution of the reduction of f over n samples from the
 distribution dist.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#187 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]sample-reduce([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#187 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sample-reduce+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_sample-sum_ n dist)===
 <pre> Return the distribution of the sum over n samples from the
 distribution dist.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#202 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]sample-sum([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#202 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sample-sum+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

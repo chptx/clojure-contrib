@@ -28,53 +28,53 @@ Shortcuts:
 any) and similar metadata. The metadata of the alias is its initial
 metadata (as provided by def) merged into the metadata of the original.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defalias([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defalias+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_defhinted_ sym init)===
 ====Macro====
 <pre> Defines a var with a type hint matching the class of the given
 init.  Be careful about using any form of 'def' or 'binding' to a
 value of a different type.  See http://paste.lisp.org/display/73344</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#79 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defhinted([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#79 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defhinted+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_defmacro-_ name & decls)===
 ====Macro====
 <pre> Same as defmacro but yields a private definition</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defmacro-([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defmacro-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_defonce-_ name expr)===
 ===(_defonce-_ name expr doc)===
 ====Macro====
 <pre> Same as defonce but yields a private definition</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defonce-([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defonce-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_defstruct-_ name & decls)===
 ====Macro====
 <pre> Same as defstruct but yields a private definition</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defstruct-([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defstruct-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_defunbound_ name)===
 ===(_defunbound_ name doc)===
 ====Macro====
 <pre> Defines an unbound var with optional doc string</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defunbound([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defunbound+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_defunbound-_ name & decls)===
 ====Macro====
 <pre> Same as defunbound but yields a private definition</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#45 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defunbound-([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#45 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defunbound-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_defvar_ name)===
 ===(_defvar_ name init)===
 ===(_defvar_ name init doc)===
 ====Macro====
 <pre> Defines a var with an optional intializer and doc string</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defvar([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defvar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_defvar-_ name & decls)===
 ====Macro====
 <pre> Same as defvar but yields a private definition</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]defvar-([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defvar-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_name-with-attributes_ name macro-args)===
 <pre> To be used in macro definitions.
 Handles optional docstrings and attribute maps for a name to be defined
@@ -86,4 +86,4 @@ macro argument list. The return value is a vector containing the name
 with its extended metadata map and the list of unprocessed macro
 arguments.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]name-with-attributes([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=name-with-attributes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

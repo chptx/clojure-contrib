@@ -76,9 +76,6 @@ API Overview [CommandLineApiDoc here]
 Public Variables and Functions:
 [CommandLineApiDoc#(_with-command-line_args_desc_cmdspec_&_body) with-command-line] 
 
-===complex-numbers===
-API Overview [ComplexNumbersApiDoc here]
-
 ===cond===
 API Overview [CondApiDoc here]
 
@@ -169,18 +166,6 @@ API Overview [GenHtmlDocsApiDoc here]
 Public Variables and Functions:
 [GenHtmlDocsApiDoc#(_generate-documentation_libs) generate-documentation] [GenHtmlDocsApiDoc#(_generate-documentation-to-file_path_libs) generate-documentation-to-file] 
 
-===generic===
-API Overview [GenericApiDoc here]
-
-Variables and Functions in generic.collection:
-[GenericApiDoc#(_assoc_coll_&_key-val-pairs) assoc] [GenericApiDoc#(_dissoc_coll_&_keys) dissoc] [GenericApiDoc#(_empty_coll) empty] [GenericApiDoc#(_get_coll_key) get] [GenericApiDoc#(_into_to_from) into] [GenericApiDoc#(_seq_s) seq] 
-
-Variables and Functions in generic.functor:
-[GenericApiDoc#(_fmap_f_s) fmap] 
-
-Variables and Functions in generic.math-functions:
-[GenericApiDoc#(_approx=_x_y_eps) approx=] 
-
 ===graph===
 API Overview [GraphApiDoc here]
 
@@ -265,12 +250,6 @@ API Overview [MathApiDoc here]
 Public Variables and Functions:
 [MathApiDoc#(_abs_n) abs] [MathApiDoc#(_ceil_n) ceil] [MathApiDoc#(_exact-integer-sqrt_n) exact-integer-sqrt] [MathApiDoc#(_expt_base_pow) expt] [MathApiDoc#(_floor_n) floor] [MathApiDoc#(_gcd_a_b) gcd] [MathApiDoc#(_lcm_a_b) lcm] [MathApiDoc#(_round_n) round] [MathApiDoc#(_sqrt_n) sqrt] 
 
-===miglayout===
-API Overview [MiglayoutApiDoc here]
-
-Variables and Functions in miglayout.internal:
-[MiglayoutApiDoc#(_component?_x) component?] [MiglayoutApiDoc#(_constraint?_x) constraint?] [MiglayoutApiDoc#(_format-constraint_c) format-constraint] [MiglayoutApiDoc#(_format-constraints_&_constraints) format-constraints] [MiglayoutApiDoc#(_parse-item-constraints_&_args) parse-item-constraints] 
-
 ===mmap===
 API Overview [MmapApiDoc here]
 
@@ -304,9 +283,6 @@ clojure.contrib wiki RSN.
 Public Variables and Functions:
 [PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#(_cl-format_stream_format-in_&_args) cl-format] [PprintApiDoc#(_compile-format_format-str) compile-format] [PprintApiDoc#(_formatter_format-in) formatter] [PprintApiDoc#(_pp_) pp] [PprintApiDoc#(_pprint_object_&_more) pprint] [PprintApiDoc#(_pprint-indent_relative-to_n_&_more) pprint-indent] [PprintApiDoc#(_pprint-logical-block_base-stream_&_body) pprint-logical-block] [PprintApiDoc#(_pprint-newline_kind_&_more) pprint-newline] [PprintApiDoc#(_pprint-tab_kind_colnum_colinc_&_more) pprint-tab] [PprintApiDoc#(_set-pprint-dispatch_table) set-pprint-dispatch] [PprintApiDoc#(_with-pprint-dispatch_table_&_body) with-pprint-dispatch] [PprintApiDoc#(_write_object_&_kw-args) write] 
 
-===probabilities.examples-finite-distributions===
-API Overview [ProbabilitiesExamplesFiniteDistributionsApiDoc here]
-
 ===probabilities.finite-distributions===
 API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
 
@@ -324,9 +300,6 @@ API Overview [ProbabilitiesRandomNumbersApiDoc here]
 
 Public Variables and Functions:
 [ProbabilitiesRandomNumbersApiDoc#(_lcg_modulus_multiplier_increment_seed) lcg] [ProbabilitiesRandomNumbersApiDoc#rand-stream rand-stream] 
-
-===probabilities.random.examples-monte-carlo===
-API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
 
 ===prxml===
 API Overview [PrxmlApiDoc here]

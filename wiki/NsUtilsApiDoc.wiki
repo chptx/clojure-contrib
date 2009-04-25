@@ -25,33 +25,33 @@ Shortcuts:
 ====Macro====
 <pre> Prints a sorted directory of public vars in a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]dir([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_docs_ nsname)===
 ====Macro====
 <pre> Prints documentation for the public vars in a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]docs([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=docs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_get-ns_ ns-sym)===
 <pre> Returns the namespace named by ns-sym or throws if the
 namespace does not exist</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-ns([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_ns-vars_ ns)===
 <pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]ns-vars([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ns-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_print-dir_ ns)===
 <pre> Prints a sorted directory of public vars in a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]print-dir([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_print-docs_ ns)===
 <pre> Prints documentation for the public vars in a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]print-docs([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-docs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_vars_ nsname)===
 ====Macro====
 <pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#72 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]vars([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#72 Source] [http://www.google.com/codesearch?hl=en&lr=&q=vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

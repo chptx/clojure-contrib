@@ -26,7 +26,7 @@ Shortcuts:
 ===(_create-repl-server_ port)===
 <pre> create a repl on a socket</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]create-repl-server([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-repl-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_create-server_ port fun backlog bind-addr)===
 ===(_create-server_ port fun backlog)===
 ===(_create-server_ port fun)===
@@ -38,4 +38,4 @@ created which calls:
  Optional arguments support specifying a listen backlog and binding
 to a specific endpoint.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]create-server([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

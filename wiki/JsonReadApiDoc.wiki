@@ -27,4 +27,4 @@ Shortcuts:
 <pre> Read the next JSON record from stream, which must be an instance of
 java.io.PushbackReader.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#121 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]read-json([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#121 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

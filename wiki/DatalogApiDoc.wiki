@@ -43,21 +43,21 @@ Variables and Functions in datalog.util:
 <pre> Given a list of rules and a query, build a work plan that can be
 used to execute the query.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]build-work-plan([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_run-work-plan_ work-plan database query-bindings)===
 <pre> Given a work plan, a database, and some query bindings, run the
 work plan and return the results.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]run-work-plan([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.database==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.database==
 ----
 ===(_add-index_ db name key)===
 <pre> Adds an index to an empty relation named name</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#85 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]add-index([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#85 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-index+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_add-relation_ db name keys)===
 <pre> Adds a relation to the database</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]add-relation([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-relation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_add-tuple_ db rel-name tuple)===
 ===(_add-tuple_ rel tuple)===
 <pre> Two forms:
@@ -67,42 +67,42 @@ the new database.
 
  `[`rel tuple`]` adds to the relation object.  Returns the new relation.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#171 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]add-tuple([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#171 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-tuple+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_add-tuples_ db & tupls)===
 <pre> Adds a collection of tuples to the db, as
 (add-tuples db
    `[`:rel-name :key-1 1 :key-2 2`]`
    `[`:rel-name :key-1 2 :key-2 3`]`)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]add-tuples([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-tuples+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_any-match?_ db rn pt)===
 <pre> Finds if there are any matching records for the partial tuple</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#252 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]any-match?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#252 Source] [http://www.google.com/codesearch?hl=en&lr=&q=any-match?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_database-counts_ db)===
 <pre> Returns a map with the count of elements in each relation.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#143 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]database-counts([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#143 Source] [http://www.google.com/codesearch?hl=en&lr=&q=database-counts+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_database-merge_ dbs)===
 <pre> Merges databases together</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#276 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]database-merge([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#276 Source] [http://www.google.com/codesearch?hl=en&lr=&q=database-merge+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_database-merge-parallel_ dbs)===
 <pre> Merges databases together in parallel</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#281 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]database-merge-parallel([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#281 Source] [http://www.google.com/codesearch?hl=en&lr=&q=database-merge-parallel+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_datalog-relation_ schema data indexes)===
 <pre> Creates a relation</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#75 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]datalog-relation([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#75 Source] [http://www.google.com/codesearch?hl=en&lr=&q=datalog-relation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_ensure-relation_ db name keys indexes)===
 <pre> If the database lacks the named relation, add it</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#95 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]ensure-relation([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#95 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ensure-relation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_get-relation_ db rel-name)===
 <pre> Get a relation object by name</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#129 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-relation([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#129 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-relation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_make-database_ & commands)===
 ====Macro====
 <pre> Makes a database, like this
@@ -113,11 +113,11 @@ the new database.
   (index :sally :jen)
   (index :sally :becky))</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#108 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]make-database([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#108 Source] [http://www.google.com/codesearch?hl=en&lr=&q=make-database+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_merge-relations_ r1 r2)===
 <pre> Merges two relations</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#266 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]merge-relations([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#266 Source] [http://www.google.com/codesearch?hl=en&lr=&q=merge-relations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_remove-tuple_ db rel-name tuple)===
 ===(_remove-tuple_ rel tuple)===
 <pre> Two forms:
@@ -128,154 +128,154 @@ returns a new database.
  `[`rel tuple`]` removes the tuple from the relation.  Returns the new
 relation.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#189 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]remove-tuple([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#189 Source] [http://www.google.com/codesearch?hl=en&lr=&q=remove-tuple+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_replace-relation_ db rel-name rel)===
 <pre> Add or replace a fully constructed relation object to the database.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#134 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]replace-relation([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#134 Source] [http://www.google.com/codesearch?hl=en&lr=&q=replace-relation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_select_ db rn pt)===
 <pre> finds all matching tuples to the partial tuple (pt) in the relation named (rn)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#247 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]select([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.literals==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database.clj#247 Source] [http://www.google.com/codesearch?hl=en&lr=&q=select+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.literals==
 ----
 ===_adorned-literal_===
 <pre> When passed a set of bound columns, returns the adorned literal</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#254 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]adorned-literal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#254 Source] [http://www.google.com/codesearch?hl=en&lr=&q=adorned-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_build-atom_ f type)===
 <pre> Returns an unevaluated expression (to be used in a macro) of an
 atom.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]build-atom([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-atom+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_build-literal_===
 <pre> (Returns an unevaluated expression (to be used in macros) of a
 literal.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]build-literal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_build-seed-bindings_ s)===
 <pre> Given a seed literal, already adorned and in magic form, convert
 its bound constants to new variables.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#303 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]build-seed-bindings([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#303 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-seed-bindings+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_delta-literal_ l)===
 <pre> Given a literal l, return a delta version</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#320 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]delta-literal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#320 Source] [http://www.google.com/codesearch?hl=en&lr=&q=delta-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_display-literal_===
 <pre> Converts a struct representing a literal to a normal list</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#164 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]display-literal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#164 Source] [http://www.google.com/codesearch?hl=en&lr=&q=display-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_get-adorned-bindings_ pred)===
 <pre> Get the bindings from this adorned literal.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#271 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-adorned-bindings([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#271 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-adorned-bindings+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_get-base-predicate_ pred)===
 <pre> Get the base predicate from this predicate.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#276 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-base-predicate([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#276 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-base-predicate+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_get-cs-from-vs_===
 <pre> From a set of vars, get the columns</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#202 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-cs-from-vs([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#202 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-cs-from-vs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_get-self-bound-cs_===
 <pre> Get the columns that are bound withing the literal.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#219 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-self-bound-cs([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#219 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-self-bound-cs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_get-vs-from-cs_===
 <pre> From a set of columns, return the vars</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#187 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-vs-from-cs([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#187 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-vs-from-cs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_join-literal_===
 <pre> Given a database (db), a literal (lit) and a seq of bindings (bs),
 return a new seq of bindings by joining this literal.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#361 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]join-literal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#361 Source] [http://www.google.com/codesearch?hl=en&lr=&q=join-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_literal-appropriate?_===
 <pre> When passed a set of bound vars, determines if this literal can be
 used during this point of a SIP computation.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#236 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]literal-appropriate?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#236 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-appropriate?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_literal-columns_===
 <pre> Return the column names this applies to</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#48 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]literal-columns([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#48 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-columns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_literal-magic?_ lit)===
 <pre> Is this literal magic?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#296 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]literal-magic?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#296 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-magic?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_literal-predicate_===
 <pre> Return the predicate/relation this conditional operates over</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]literal-predicate([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-predicate+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_literal-vars_===
 <pre> Returns the logic vars used by this literal</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]literal-vars([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_magic-literal_ l)===
 <pre> Create a magic version of this adorned predicate.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#286 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]magic-literal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#286 Source] [http://www.google.com/codesearch?hl=en&lr=&q=magic-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_negated-literal_ l)===
 <pre> Given a literal l, return a negated version</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#314 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]negated-literal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#314 Source] [http://www.google.com/codesearch?hl=en&lr=&q=negated-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_negated?_ l)===
 <pre> Is this literal a negated literal?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#112 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]negated?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#112 Source] [http://www.google.com/codesearch?hl=en&lr=&q=negated?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_negative-vars_===
 <pre> Returns the logic vars used in a negative position</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]negative-vars([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=negative-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===_positive-vars_===
 <pre> Returns the logic vars used in a positive position</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]positive-vars([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=positive-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_positive?_ l)===
 <pre> Is this a positive literal?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#117 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]positive?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#117 Source] [http://www.google.com/codesearch?hl=en&lr=&q=positive?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_project-literal_ db lit bs)===
 ===(_project-literal_ db lit bs var?)===
 <pre> Project a stream of bindings onto a literal/relation. Returns a new
 db.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#393 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]project-literal([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.magic==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#393 Source] [http://www.google.com/codesearch?hl=en&lr=&q=project-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.magic==
 ----
 ===(_adorn-query_ q)===
 <pre> Adorn a query</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]adorn-query([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=adorn-query+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_adorn-rules-set_ rs q)===
 <pre> Adorns the given rules-set for the given query.  (rs) is a
 rules-set, (q) is an adorned query.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#31 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]adorn-rules-set([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#31 Source] [http://www.google.com/codesearch?hl=en&lr=&q=adorn-rules-set+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_build-partial-tuple_ q bindings)===
 <pre> Given a query and a set of bindings, build a partial tuple needed
 to extract the relation from the database.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]build-partial-tuple([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-partial-tuple+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_magic-transform_ rs)===
 ===(_magic-transform_ rs i-preds)===
 <pre> Return a magic transformation of an adorned rules-set (rs).  The
 (i-preds) are the predicates of the intension database.  These
 default to the predicates within the rules-set.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#98 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]magic-transform([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#98 Source] [http://www.google.com/codesearch?hl=en&lr=&q=magic-transform+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_seed-predicate-for-insertion_ q)===
 <pre> Given a query, return the predicate to use for database insertion.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]seed-predicate-for-insertion([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seed-predicate-for-insertion+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_seed-relation_ q)===
 <pre> Given a magic form of a query, give back the literal form of its seed
 relation</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]seed-relation([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seed-relation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_seed-rule_ q)===
 <pre> Given an adorned query, give back its seed rule</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]seed-rule([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.rules==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seed-rule+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.rules==
 ----
 ===(_<-_ hd & body)===
 ====Macro====
@@ -283,88 +283,88 @@ relation</pre>
 
  (<- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if > ?y ?z))</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#66 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]<-([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#66 Source] [http://www.google.com/codesearch?hl=en&lr=&q=<-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_?-_ & q)===
 ====Macro====
 <pre> Define a datalog query</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]?-([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=?-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_all-predicates_ rs)===
 <pre> Given a rules-set, return all defined predicates</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#161 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]all-predicates([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#161 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-predicates+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_apply-rule_ db rule)===
 ===(_apply-rule_ db-1 db-2 rule)===
 <pre> Apply the rule against db-1, adding the results to the appropriate
 relation in db-2.  The relation will be created if needed.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#182 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]apply-rule([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#182 Source] [http://www.google.com/codesearch?hl=en&lr=&q=apply-rule+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_compute-sip_ bindings i-preds rule)===
 <pre> Given a set of bound column names, return an adorned sip for this
 rule.  A set of intensional predicates should be provided to
 determine what should be adorned.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#98 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]compute-sip([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#98 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compute-sip+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_display-query_ query)===
 <pre> Return a query in a readable format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]display-query([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=display-query+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_display-rule_ rule)===
 <pre> Return the rule in a readable format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#30 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]display-rule([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#30 Source] [http://www.google.com/codesearch?hl=en&lr=&q=display-rule+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_is-safe?_ rule)===
 <pre> Is the rule safe according to the datalog protocol?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#45 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]is-safe?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#45 Source] [http://www.google.com/codesearch?hl=en&lr=&q=is-safe?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_make-rules-set_ rs)===
 <pre> Given an existing set of rules, make it a 'rules-set' for
 printing.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#127 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]make-rules-set([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#127 Source] [http://www.google.com/codesearch?hl=en&lr=&q=make-rules-set+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_non-base-rules_ rs)===
 <pre> Return a collection of rules that depend, somehow, on other rules</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#166 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]non-base-rules([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#166 Source] [http://www.google.com/codesearch?hl=en&lr=&q=non-base-rules+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_predicate-map_ rs)===
 <pre> Given a rules-set, return a map of rules keyed by their predicates.
 Each value will be a set of rules.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#151 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]predicate-map([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#151 Source] [http://www.google.com/codesearch?hl=en&lr=&q=predicate-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_return-rule-data_ rule)===
 <pre> Returns an untypted rule that will be fully printed</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#79 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]return-rule-data([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#79 Source] [http://www.google.com/codesearch?hl=en&lr=&q=return-rule-data+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_rules-set_ & rules)===
 <pre> Given a collection of rules return a rules set</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#135 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]rules-set([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.softstrat==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules.clj#135 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rules-set+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.softstrat==
 ----
 ===(_build-soft-strat-work-plan_ rs q)===
 <pre> Return a work plan for the given rules-set and query</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/softstrat.clj#115 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]build-soft-strat-work-plan([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/softstrat.clj#115 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-soft-strat-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_get-all-relations_ ws)===
 <pre> Return a set of all relation names defined in this workplan</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/softstrat.clj#121 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]get-all-relations([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.util==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/softstrat.clj#121 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-all-relations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.datalog.util==
 ----
 ===(_is-query-var?_ sym)===
 <pre> Is this a query variable: e.g. a symbol prefixed with ??</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#33 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]is-query-var?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#33 Source] [http://www.google.com/codesearch?hl=en&lr=&q=is-query-var?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_is-var?_ sym)===
 <pre> Is this a logic variable: e.g. a symbol prefixed with a ?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]is-var?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=is-var?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_keys-to-vals_ m ks)===
 <pre> Given a map and a collection of keys, return the collection of vals</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]keys-to-vals([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=keys-to-vals+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_map-values_ f hash)===
 <pre> Like map, but works over the values of a hash map</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#41 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]map-values([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#41 Source] [http://www.google.com/codesearch?hl=en&lr=&q=map-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_preduce_ f data)===
 <pre> Similar to merge-with, but the contents of each key are merged in
 parallel using f.
@@ -372,13 +372,13 @@ parallel using f.
  f - a function of 2 arguments.
 data - a collection of hashes.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]preduce([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=preduce+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_reverse-map_ m)===
 <pre> Reverse the keys/values of a map</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]reverse-map([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reverse-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_trace-datalog_ & body)===
 ====Macro====
 <pre> If `*`test-datalog`*` is set to true, run the enclosed commands</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#82 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]trace-datalog([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util.clj#82 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace-datalog+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

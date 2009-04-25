@@ -24,13 +24,13 @@ Shortcuts:
 ===(_emit_ x & opts)===
 <pre> Prints an <?xml?> declaration line, and then calls emit-element</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]emit([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=emit+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_emit-element_ e & opts)===
 <pre> Recursively prints as XML text the element struct e.  To have it
 print extra whitespace like clojure.xml/emit, use the :pad true
 option.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#132 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]emit-element([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#132 Source] [http://www.google.com/codesearch?hl=en&lr=&q=emit-element+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_parse-seq_ s)===
 ===(_parse-seq_ s startparse)===
 ===(_parse-seq_ s startparse queue-size)===
@@ -44,7 +44,7 @@ ahead by queue-size items, which defaults to maxing.  If no parser
 is specified and org.xmlpull.v1.XmlPullParser is in the classpath,
 this superior pull parser will be used.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]parse-seq([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_parse-trim_ s)===
 ===(_parse-trim_ s startparse queue-size)===
 <pre> Parses the source s, which can be a File, InputStream or String
@@ -61,4 +61,4 @@ defaults to maxing.  If no parser is specified and
 org.xmlpull.v1.XmlPullParser is in the classpath, this superior pull
 parser will be used.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]parse-trim([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-trim+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

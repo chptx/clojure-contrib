@@ -29,69 +29,69 @@ Variables and Functions in zip-filter.xml:
 with loc and proceeding to loc's parent node and on through to the
 root of the tree.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]ancestors([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ancestors+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_children_ loc)===
 <pre> Returns a lazy sequence of all immediate children of location loc,
 left-to-right.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]children([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=children+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_children-auto_ loc)===
 <pre> Returns a lazy sequence of all immediate children of location loc,
 left-to-right, marked so that a following tag= predicate will auto-descend.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]children-auto([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=children-auto+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_descendants_ loc)===
 <pre> Returns a lazy sequence of all descendants of location loc, in
 depth-first order, left-to-right, starting with loc.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]descendants([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=descendants+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_left-locs_ loc)===
 <pre> Returns a lazy sequence of locations to the left of loc, starting with loc.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]left-locs([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=left-locs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_leftmost?_ loc)===
 <pre> Returns true if there are no more nodes to the left of location loc.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]leftmost?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=leftmost?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_right-locs_ loc)===
 <pre> Returns a lazy sequence of locations to the right of loc, starting with loc.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#24 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]right-locs([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#24 Source] [http://www.google.com/codesearch?hl=en&lr=&q=right-locs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_rightmost?_ loc)===
 <pre> Returns true if there are no more nodes to the right of location loc.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]rightmost?([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.zip-filter.xml==
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rightmost?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]==Namespace clojure.contrib.zip-filter.xml==
 ----
 ===(_attr_ attrname)===
 ===(_attr_ loc attrname)===
 <pre> Returns the xml attribute named attrname, of the xml node at location loc.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]attr([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=attr+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_attr=_ attrname attrval)===
 <pre> Returns a query predicate that matches a node when it has an
 attribute named attrname whose value is attrval.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]attr=([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=attr=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_seq-test_ preds)===
 <pre> Returns a query predicate that matches a node when its xml content
 matches the query expresions given.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]seq-test([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq-test+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_tag=_ tagname)===
 <pre> Returns a query predicate that matches a node when its is a tag
 named tagname.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]tag=([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=tag=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_text_ loc)===
 <pre> Returns the textual contents of the given location, similar to
 xpaths's value-of</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]text([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=text+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_text=_ s)===
 <pre> Returns a query predicate that matches a node when its textual
 content equals s.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]text=([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=text=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_xml->_ loc & preds)===
 <pre> The loc is passed to the first predicate.  If the predicate returns
 a collection, each value of the collection is passed to the next
@@ -110,9 +110,9 @@ they match.
 
  See the footer of zip-query.clj for examples.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]xml->([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=xml->+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_xml1->_ loc & preds)===
 <pre> Returns the first item from loc based on the query predicates
 given.  See xml-></pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]xml1->([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=xml1->+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

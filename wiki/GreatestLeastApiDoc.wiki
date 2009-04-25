@@ -24,32 +24,32 @@ Shortcuts:
 ===(_all-greatest_ & args)===
 <pre> Returns all the greatest elements.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]all-greatest([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-greatest+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_all-greatest-by_ f & args)===
 <pre> Return all the elements for which f yields the greatest value.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]all-greatest-by([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-greatest-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_all-least_ & args)===
 <pre> Returns all the least elements.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]all-least([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-least+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_all-least-by_ f & args)===
 <pre> Return all the elements for which f yields the least value.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]all-least-by([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-least-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_greatest_ & args)===
 <pre> Return the greatest argument.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#15 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]greatest([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#15 Source] [http://www.google.com/codesearch?hl=en&lr=&q=greatest+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_greatest-by_ f & args)===
 <pre> Return the argument for which f yields the greatest value.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#10 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]greatest-by([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#10 Source] [http://www.google.com/codesearch?hl=en&lr=&q=greatest-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_least_ & args)===
 <pre> Return the smallest element.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]least([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=least+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_least-by_ f & args)===
 <pre> Return the argument for which f yields the smallest value.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]least-by([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=least-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -38,4 +38,4 @@ as (private) symbols in the current namespace.
 been imported.  Static methods are defined as MACROS, not
 first-class fns.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/import_static.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]import-static([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/import_static.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=import-static+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

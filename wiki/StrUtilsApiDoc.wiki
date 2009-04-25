@@ -25,11 +25,11 @@ Shortcuts:
 <pre> Removes all trailing newline \n or return \r characters from
 string.  Note: String.trim() is similar and faster.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]chomp([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chomp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_chop_ s)===
 <pre> Removes the last character of string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]chop([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_re-gsub_ regex replacement string)===
 <pre> Replaces all instances of 'pattern' in 'string' with
 'replacement'.  Like Ruby's 'String#gsub'.
@@ -38,7 +38,7 @@ string.  Note: String.trim() is similar and faster.</pre>
 match.
 </pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]re-gsub([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-gsub+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_re-partition_ re string)===
 <pre> Splits the string into a lazy sequence of substrings, alternating
 between substrings that match the patthern and the substrings
@@ -50,14 +50,14 @@ string matches.
 
  Returns: ("" "abc" "123" "def")</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]re-partition([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-partition+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_re-split_ pattern string)===
 ===(_re-split_ pattern string limit)===
 <pre> Splits the string on instances of 'pattern'.  Returns a sequence of
 strings.  Optional 'limit' argument is the maximum number of
 splits.  Like Perl's 'split'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]re-split([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-split+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_re-sub_ regex replacement string)===
 <pre> Replaces the first instance of 'pattern' in 'string' with
 'replacement'.  Like Ruby's 'String#sub'.
@@ -66,9 +66,9 @@ splits.  Like Perl's 'split'.</pre>
 the match.
 </pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]re-sub([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-sub+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_str-join_ separator sequence)===
 <pre> Returns a string of all elements in 'sequence', separated by
 'separator'.  Like Perl's 'join'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]str-join([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=str-join+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

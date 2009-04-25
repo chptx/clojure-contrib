@@ -30,7 +30,7 @@ cache the value for all subsequent calls.
  Warning: global singletons are often unsafe in multi-threaded code.
 Consider per-thread-singleton instead.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]global-singleton([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=global-singleton+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_per-thread-singleton_ f)===
 <pre> Returns a per-thread singleton function.  f is a function of no
 arguments that creates and returns some object.  The singleton
@@ -43,4 +43,4 @@ per-thread-singleton in the initialization function for another
 per-thread-singleton.  See
 http://bugs.sun.com/bugdatabase/view`_`bug.do?bug`_`id=5025230</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]per-thread-singleton([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=per-thread-singleton+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

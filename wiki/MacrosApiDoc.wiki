@@ -25,7 +25,7 @@ Shortcuts:
 ====Macro====
 <pre> Evaluate the constant expression expr at compile time.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros.clj#15 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]const([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros.clj#15 Source] [http://www.google.com/codesearch?hl=en&lr=&q=const+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]----
 ===(_letfn-_ fn-bindings & exprs)===
 ====Macro====
 <pre> OBSOLETE: use clojure.core/letfn
@@ -33,4 +33,4 @@ A variant of let for local function definitions. fn-bindings consists
 of name/args/body triples, with (letfn `[`name args body`]` ...)
 being equivalent to (let `[`name (fn name args body)`]` ...).</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=[^-*a-zA-Z]letfn-([^-*a-zA-Z]|%24)+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=letfn-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
