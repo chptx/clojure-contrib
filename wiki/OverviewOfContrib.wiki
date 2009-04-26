@@ -224,7 +224,7 @@ Public Variables and Functions:
 API Overview [LazySeqsApiDoc here]
 
 Public Variables and Functions:
-[LazySeqsApiDoc#primes primes] 
+[LazySeqsApiDoc#fibs fibs] [LazySeqsApiDoc#powers-of-2 powers-of-2] [LazySeqsApiDoc#primes primes] 
 
 ===lazy-xml===
 API Overview [LazyXmlApiDoc here]
