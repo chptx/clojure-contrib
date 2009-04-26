@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===add-loops===
+====function====
 <pre>
 Usage: *(_add-loops_ g)*
 </pre>
@@ -30,6 +31,7 @@ Usage: *(_add-loops_ g)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-loops+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===component-graph===
+====function====
 <pre>
 Usage: *(_component-graph_ g)
        (_component-graph_ g sccs)*
@@ -42,6 +44,7 @@ be the union of the corresponding edges of the prior graph.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#130 Source] [http://www.google.com/codesearch?hl=en&lr=&q=component-graph+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===dependency-list===
+====function====
 <pre>
 Usage: *(_dependency-list_ g)*
 </pre>
@@ -54,6 +57,7 @@ much be acyclic) has an edge a->b when a depends on b.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#187 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dependency-list+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===fixed-point===
+====function====
 <pre>
 Usage: *(_fixed-point_ data fun max equal)*
 </pre>
@@ -64,6 +68,7 @@ exception.  Set max to nil for unlimited iterations.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#164 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fixed-point+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-neighbors===
+====function====
 <pre>
 Usage: *(_get-neighbors_ g n)*
 </pre>
@@ -72,6 +77,7 @@ Usage: *(_get-neighbors_ g n)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-neighbors+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===lazy-walk===
+====function====
 <pre>
 Usage: *(_lazy-walk_ g n)
        (_lazy-walk_ g ns v)*
@@ -83,6 +89,7 @@ visit (ns).</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#65 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lazy-walk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===post-ordered-nodes===
+====function====
 <pre>
 Usage: *(_post-ordered-nodes_ g)*
 </pre>
@@ -91,6 +98,7 @@ Usage: *(_post-ordered-nodes_ g)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#107 Source] [http://www.google.com/codesearch?hl=en&lr=&q=post-ordered-nodes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===recursive-component?===
+====function====
 <pre>
 Usage: *(_recursive-component?_ g ns)*
 </pre>
@@ -99,6 +107,7 @@ Usage: *(_recursive-component?_ g ns)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#148 Source] [http://www.google.com/codesearch?hl=en&lr=&q=recursive-component?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===remove-loops===
+====function====
 <pre>
 Usage: *(_remove-loops_ g)*
 </pre>
@@ -107,6 +116,7 @@ Usage: *(_remove-loops_ g)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=remove-loops+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===reverse-graph===
+====function====
 <pre>
 Usage: *(_reverse-graph_ g)*
 </pre>
@@ -116,6 +126,7 @@ order of the edges reversed.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reverse-graph+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===scc===
+====function====
 <pre>
 Usage: *(_scc_ g)*
 </pre>
@@ -125,6 +136,7 @@ of g.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#114 Source] [http://www.google.com/codesearch?hl=en&lr=&q=scc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===self-recursive-sets===
+====function====
 <pre>
 Usage: *(_self-recursive-sets_ g)*
 </pre>
@@ -134,6 +146,7 @@ self-recursive.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=self-recursive-sets+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stratification-list===
+====function====
 <pre>
 Usage: *(_stratification-list_ g1 g2)*
 </pre>
@@ -146,6 +159,7 @@ graph, node a must be equal or later in the sequence.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#204 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stratification-list+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===transitive-closure===
+====function====
 <pre>
 Usage: *(_transitive-closure_ g)*
 </pre>

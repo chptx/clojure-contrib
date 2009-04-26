@@ -1,0 +1,75 @@
+#summary miglayout API Reference
+#sidebar ApiDocSidebar
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for miglayout=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.miglayout))
+}}}
+
+
+==Public Variables and Functions==
+Variables and Functions in miglayout.internal:
+[MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
+
+==Namespace clojure.contrib.miglayout.internal==
+----
+===component?===
+====function====
+<pre>
+Usage: *(_component?_ x)*
+</pre>
+<pre> Returns true if x is a java.awt.Component</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=component?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===constraint?===
+====function====
+<pre>
+Usage: *(_constraint?_ x)*
+</pre>
+<pre> Returns true if x is not a keyword-item or component</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=constraint?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===format-constraint===
+====function====
+<pre>
+Usage: *(_format-constraint_ c)*
+</pre>
+<pre> Returns a vector of vectors representing one or more constraints
+separated by commas. Constraints may be specified in Clojure using
+strings, keywords, vectors, maps, and/or sets.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===format-constraints===
+====function====
+<pre>
+Usage: *(_format-constraints_ & constraints)*
+</pre>
+<pre> Returns a string representing all the constraints for one keyword-item
+or component formatted for miglayout.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===parse-item-constraints===
+====function====
+<pre>
+Usage: *(_parse-item-constraints_ & args)*
+</pre>
+<pre> Iterates over args and builds a map containing values associated with
+:keywords and :components. The value for :keywords is a map from keyword
+items to constraints strings. The value for :components is a vector of
+vectors each associating a component with its constraints string.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-item-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+==Namespace clojure.contrib.miglayout.test==

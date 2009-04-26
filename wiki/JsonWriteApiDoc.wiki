@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===json-str===
+====function====
 <pre>
 Usage: *(_json-str_ x)*
 </pre>
@@ -30,9 +31,7 @@ Usage: *(_json-str_ x)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=json-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-json===
-<pre>
-Usage: *_print-json_*
-</pre>
+====multimethod====
 <pre> Prints Clojure data types as JSON.  Nil becomes JSON null.
 Keywords become strings, without the leading colon.  Maps become
 JSON objects, all other collection types become JSON arrays.

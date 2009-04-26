@@ -21,16 +21,15 @@ Shortcuts:
 [#*logger* *logger*] [#add-log-file add-log-file] [#log log] [#log-level log-level] [#root-logger root-logger] [#set-console-log-level set-console-log-level] [#with-logger with-logger] 
 
 ----
-===*logger*===
-<pre>
-Usage: *_`*`logger`*`_*
-</pre>
+===`*`logger`*`===
+====var====
 <pre> The current java.util.logging.Logger.  By default, the
 global logger, modified by 'with-logger'.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*logger*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===add-log-file===
+====function====
 <pre>
 Usage: *(_add-log-file_ logger-name filename)
        (_add-log-file_ logger-name filename level)*
@@ -43,20 +42,20 @@ the names.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-log-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===log===
+====macro====
 <pre>
 Usage: *(_log_ level & strings)*
 </pre>
-====Macro====
 <pre> Logs a message to `*`logger`*`.  'level' is expanded with 'log-level'.
 Example: (log :severe "Bad argument: " object)</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#105 Source] [http://www.google.com/codesearch?hl=en&lr=&q=log+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===log-level===
+====macro====
 <pre>
 Usage: *(_log-level_ level)*
 </pre>
-====Macro====
 <pre> Translates 'level' (a lower-case keyword) into a static field of
 java.util.logging.Level, by name.  
 
@@ -68,6 +67,7 @@ instance of java.util.logging.Level and is returned unchanged.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#48 Source] [http://www.google.com/codesearch?hl=en&lr=&q=log-level+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===root-logger===
+====function====
 <pre>
 Usage: *(_root-logger_)
        (_root-logger_ logger)*
@@ -77,6 +77,7 @@ Usage: *(_root-logger_)
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=root-logger+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-console-log-level===
+====function====
 <pre>
 Usage: *(_set-console-log-level_ level)*
 </pre>
@@ -87,10 +88,10 @@ debugging at the REPL.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#70 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-console-log-level+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-logger===
+====macro====
 <pre>
 Usage: *(_with-logger_ logger-name level & body)*
 </pre>
-====Macro====
 <pre> Executes 'body' with `*`logger`*` bound to a logger with the given name
 and level.  'level' is expanded with 'log-level'.</pre>
 

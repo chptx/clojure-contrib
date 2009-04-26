@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===cartesian-product===
+====function====
 <pre>
 Usage: *(_cartesian-product_ & seqs)*
 </pre>
@@ -30,6 +31,7 @@ Usage: *(_cartesian-product_ & seqs)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics.clj#102 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cartesian-product+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===combinations===
+====function====
 <pre>
 Usage: *(_combinations_ items n)*
 </pre>
@@ -38,6 +40,7 @@ Usage: *(_combinations_ items n)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics.clj#85 Source] [http://www.google.com/codesearch?hl=en&lr=&q=combinations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===lex-permutations===
+====function====
 <pre>
 Usage: *(_lex-permutations_ c)*
 </pre>
@@ -46,6 +49,7 @@ Usage: *(_lex-permutations_ c)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics.clj#146 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lex-permutations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===permutations===
+====function====
 <pre>
 Usage: *(_permutations_ items)*
 </pre>
@@ -54,6 +58,7 @@ Usage: *(_permutations_ items)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=permutations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===selections===
+====function====
 <pre>
 Usage: *(_selections_ items n)*
 </pre>
@@ -62,6 +67,7 @@ Usage: *(_selections_ items n)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics.clj#122 Source] [http://www.google.com/codesearch?hl=en&lr=&q=selections+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===subsets===
+====function====
 <pre>
 Usage: *(_subsets_ items)*
 </pre>

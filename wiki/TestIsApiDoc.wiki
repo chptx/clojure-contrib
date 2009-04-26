@@ -24,20 +24,16 @@ Variables and Functions in test-is.tap:
 [TestIsApiDoc#print-tap-diagnostic print-tap-diagnostic] [TestIsApiDoc#print-tap-fail print-tap-fail] [TestIsApiDoc#print-tap-pass print-tap-pass] [TestIsApiDoc#print-tap-plan print-tap-plan] [TestIsApiDoc#with-tap-output with-tap-output] 
 
 ----
-===*load-tests*===
-<pre>
-Usage: *_`*`load-tests`*`_*
-</pre>
+===`*`load-tests`*`===
+====var====
 <pre> True by default.  If set to false, no test functions will
 be created by deftest, set-test, or with-test.  Use this to omit
 tests when compiling or loading production code.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#238 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*load-tests*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
-===*stack-trace-depth*===
-<pre>
-Usage: *_`*`stack-trace-depth`*`_*
-</pre>
+===`*`stack-trace-depth`*`===
+====var====
 <pre> The maximum depth of stack traces to print when an Exception
 is thrown during a test.  Defaults to nil, which means print the 
 complete stack trace.</pre>
@@ -45,10 +41,10 @@ complete stack trace.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#244 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*stack-trace-depth*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===are===
+====macro====
 <pre>
 Usage: *(_are_ expr & args)*
 </pre>
-====Macro====
 <pre> Checks multiple assertions with a template expression.
 See clojure.contrib.template/do-template for an explanation of
 templates.
@@ -65,6 +61,7 @@ Expands to:
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#485 Source] [http://www.google.com/codesearch?hl=en&lr=&q=are+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===assert-any===
+====function====
 <pre>
 Usage: *(_assert-any_ msg form)*
 </pre>
@@ -74,6 +71,7 @@ method calls, or isolated symbols.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#380 Source] [http://www.google.com/codesearch?hl=en&lr=&q=assert-any+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===assert-predicate===
+====function====
 <pre>
 Usage: *(_assert-predicate_ msg form)*
 </pre>
@@ -86,6 +84,7 @@ be wrapped in (not...).</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#364 Source] [http://www.google.com/codesearch?hl=en&lr=&q=assert-predicate+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===compose-fixtures===
+====function====
 <pre>
 Usage: *(_compose-fixtures_ f1 f2)*
 </pre>
@@ -95,10 +94,10 @@ that combines their behavior.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#581 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compose-fixtures+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===deftest===
+====macro====
 <pre>
 Usage: *(_deftest_ name & body)*
 </pre>
-====Macro====
 <pre> Defines a test function with no arguments.  Test functions may call
 other tests, so tests may be composed.  If you compose tests, you
 should also define a function named test-ns-hook; run-tests will
@@ -113,15 +112,16 @@ itself.
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#524 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftest+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===deftest-===
+====macro====
 <pre>
 Usage: *(_deftest-_ name & body)*
 </pre>
-====Macro====
 <pre> Like deftest but creates a private var.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#540 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftest-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===file-position===
+====function====
 <pre>
 Usage: *(_file-position_ n)*
 </pre>
@@ -131,6 +131,7 @@ stack.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#266 Source] [http://www.google.com/codesearch?hl=en&lr=&q=file-position+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===function?===
+====function====
 <pre>
 Usage: *(_function?_ x)*
 </pre>
@@ -140,6 +141,7 @@ a function (not a macro).</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#353 Source] [http://www.google.com/codesearch?hl=en&lr=&q=function?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-possibly-unbound-var===
+====function====
 <pre>
 Usage: *(_get-possibly-unbound-var_ v)*
 </pre>
@@ -148,6 +150,7 @@ Usage: *(_get-possibly-unbound-var_ v)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#346 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-possibly-unbound-var+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===inc-report-counter===
+====function====
 <pre>
 Usage: *(_inc-report-counter_ name)*
 </pre>
@@ -157,11 +160,11 @@ Does nothing if `*`report-counters`*` is nil.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#291 Source] [http://www.google.com/codesearch?hl=en&lr=&q=inc-report-counter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===is===
+====macro====
 <pre>
 Usage: *(_is_ form)
        (_is_ form msg)*
 </pre>
-====Macro====
 <pre> Generic assertion macro.  'form' is any predicate test.
 'msg' is an optional message to attach to the assertion.
 
@@ -179,6 +182,7 @@ re-matches) the regular expression re.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#468 Source] [http://www.google.com/codesearch?hl=en&lr=&q=is+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===join-fixtures===
+====function====
 <pre>
 Usage: *(_join-fixtures_ fixtures)*
 </pre>
@@ -188,6 +192,7 @@ fixture function, even if the collection is empty.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#587 Source] [http://www.google.com/codesearch?hl=en&lr=&q=join-fixtures+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-results===
+====function====
 <pre>
 Usage: *(_print-results_ r)*
 </pre>
@@ -197,9 +202,7 @@ returned by test-ns.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#640 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-results+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===report===
-<pre>
-Usage: *_report_*
-</pre>
+====multimethod====
 <pre> Handles the result of a single assertion.  'event' is one
 of :pass, :fail, or :error.  'msg' is a comment string associated
 with the assertion.  'expected' and 'actual' are quoted forms,
@@ -214,6 +217,7 @@ test-reporting framework.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#303 Source] [http://www.google.com/codesearch?hl=en&lr=&q=report+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===run-all-tests===
+====function====
 <pre>
 Usage: *(_run-all-tests_)*
 </pre>
@@ -222,6 +226,7 @@ Usage: *(_run-all-tests_)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#659 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-all-tests+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===run-tests===
+====function====
 <pre>
 Usage: *(_run-tests_)
        (_run-tests_ & namespaces)*
@@ -232,10 +237,10 @@ Defaults to current namespace if none given.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#652 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-tests+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-test===
+====macro====
 <pre>
 Usage: *(_set-test_ name & body)*
 </pre>
-====Macro====
 <pre> Experimental.
 Sets :test metadata of the named var to a fn with the given body.
 The var must already exist.  Does not modify the value of the var.
@@ -245,6 +250,7 @@ The var must already exist.  Does not modify the value of the var.
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#548 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-test+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===test-all-vars===
+====function====
 <pre>
 Usage: *(_test-all-vars_ ns)*
 </pre>
@@ -253,6 +259,7 @@ Usage: *(_test-all-vars_ ns)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#610 Source] [http://www.google.com/codesearch?hl=en&lr=&q=test-all-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===test-ns===
+====function====
 <pre>
 Usage: *(_test-ns_ ns)*
 </pre>
@@ -267,6 +274,7 @@ namespace object or a symbol.
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#621 Source] [http://www.google.com/codesearch?hl=en&lr=&q=test-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===test-var===
+====function====
 <pre>
 Usage: *(_test-var_ v)*
 </pre>
@@ -276,16 +284,17 @@ with `*`testing-vars`*` bound to (conj `*`testing-vars`*` v).</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#598 Source] [http://www.google.com/codesearch?hl=en&lr=&q=test-var+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===testing===
+====macro====
 <pre>
 Usage: *(_testing_ string & body)*
 </pre>
-====Macro====
 <pre> Adds a new string to the list of testing contexts.  May be nested,
 but must occur inside a test function (deftest).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#501 Source] [http://www.google.com/codesearch?hl=en&lr=&q=testing+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===testing-contexts-str===
+====function====
 <pre>
 Usage: *(_testing-contexts-str_)*
 </pre>
@@ -295,6 +304,7 @@ strings in `*`testing-contexts`*` with spaces.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#285 Source] [http://www.google.com/codesearch?hl=en&lr=&q=testing-contexts-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===testing-vars-str===
+====function====
 <pre>
 Usage: *(_testing-vars-str_)*
 </pre>
@@ -305,20 +315,20 @@ current assertion.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#273 Source] [http://www.google.com/codesearch?hl=en&lr=&q=testing-vars-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===try-expr===
+====macro====
 <pre>
 Usage: *(_try-expr_ msg form)*
 </pre>
-====Macro====
 <pre> Used by the 'is' macro to catch unexpected exceptions.
 You don't call this.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#454 Source] [http://www.google.com/codesearch?hl=en&lr=&q=try-expr+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-test===
+====macro====
 <pre>
 Usage: *(_with-test_ definition & body)*
 </pre>
-====Macro====
 <pre> Takes any definition form (that returns a Var) as the first argument.
 Remaining body goes in the :test metadata function for that Var.
 
@@ -329,6 +339,7 @@ the tests.</pre>
 ==Namespace clojure.contrib.test-is.tap==
 ----
 ===print-tap-diagnostic===
+====function====
 <pre>
 Usage: *(_print-tap-diagnostic_ data)*
 </pre>
@@ -338,6 +349,7 @@ string.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is/tap.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-tap-diagnostic+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-tap-fail===
+====function====
 <pre>
 Usage: *(_print-tap-fail_ msg)*
 </pre>
@@ -346,6 +358,7 @@ Usage: *(_print-tap-fail_ msg)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is/tap.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-tap-fail+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-tap-pass===
+====function====
 <pre>
 Usage: *(_print-tap-pass_ msg)*
 </pre>
@@ -354,6 +367,7 @@ Usage: *(_print-tap-pass_ msg)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is/tap.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-tap-pass+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-tap-plan===
+====function====
 <pre>
 Usage: *(_print-tap-plan_ n)*
 </pre>
@@ -362,11 +376,13 @@ Usage: *(_print-tap-plan_ n)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is/tap.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-tap-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-tap-output===
+====macro====
 <pre>
 Usage: *(_with-tap-output_ & body)*
 </pre>
-====Macro====
 <pre> Execute body with modified test-is reporting functions that produce
 TAP output</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is/tap.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-tap-output+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+==Namespace clojure.contrib.test-is.test-fixtures==
+==Namespace clojure.contrib.test-is.tests==

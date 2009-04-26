@@ -22,10 +22,10 @@ Shortcuts:
 
 ----
 ===cond-let===
+====macro====
 <pre>
 Usage: *(_cond-let_ bindings & clauses)*
 </pre>
-====Macro====
 <pre> Takes a binding-form and a set of test/expr pairs. Evaluates each test
 one at a time. If a test returns logical true, cond-let evaluates and
 returns expr with binding-form bound to the value of test and doesn't

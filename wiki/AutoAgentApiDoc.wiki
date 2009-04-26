@@ -22,10 +22,10 @@ Shortcuts:
 
 ----
 ===auto-agent===
+====macro====
 <pre>
 Usage: *(_auto-agent_ expr)*
 </pre>
-====Macro====
 <pre> Creates an agent whose value is the result of evaluating expr.
 Whenever one of the agents/atoms/refs dererenced within expr
 changes, expr is reevaluated and this agent's state is set to its

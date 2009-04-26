@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===fibs===
+====function====
 <pre>
 Usage: *(_fibs_)*
 </pre>
@@ -30,6 +31,7 @@ Usage: *(_fibs_)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fibs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===powers-of-2===
+====function====
 <pre>
 Usage: *(_powers-of-2_)*
 </pre>
@@ -38,9 +40,7 @@ Usage: *(_powers-of-2_)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs.clj#61 Source] [http://www.google.com/codesearch?hl=en&lr=&q=powers-of-2+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===primes===
-<pre>
-Usage: *_primes_*
-</pre>
+====var====
 <pre> Lazy sequence of all the prime numbers.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=primes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

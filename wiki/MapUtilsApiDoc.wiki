@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===deep-merge-with===
+====function====
 <pre>
 Usage: *(_deep-merge-with_ f & maps)*
 </pre>
@@ -35,15 +36,16 @@ only when there's a non-map at a particular level.
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deep-merge-with+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===lazy-get===
+====macro====
 <pre>
 Usage: *(_lazy-get_ map key not-found)*
 </pre>
-====Macro====
 <pre> Like get, but doesn't evaluate not-found unless it is needed.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lazy-get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===safe-get===
+====function====
 <pre>
 Usage: *(_safe-get_ map key)*
 </pre>
@@ -52,6 +54,7 @@ Usage: *(_safe-get_ map key)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=safe-get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===safe-get-in===
+====function====
 <pre>
 Usage: *(_safe-get-in_ map ks)*
 </pre>

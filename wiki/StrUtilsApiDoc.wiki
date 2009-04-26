@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===chomp===
+====function====
 <pre>
 Usage: *(_chomp_ s)*
 </pre>
@@ -31,6 +32,7 @@ string.  Note: String.trim() is similar and faster.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chomp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===chop===
+====function====
 <pre>
 Usage: *(_chop_ s)*
 </pre>
@@ -39,6 +41,7 @@ Usage: *(_chop_ s)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===re-gsub===
+====function====
 <pre>
 Usage: *(_re-gsub_ regex replacement string)*
 </pre>
@@ -52,6 +55,7 @@ match.
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-gsub+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===re-partition===
+====function====
 <pre>
 Usage: *(_re-partition_ re string)*
 </pre>
@@ -68,6 +72,7 @@ string matches.
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-partition+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===re-split===
+====function====
 <pre>
 Usage: *(_re-split_ pattern string)
        (_re-split_ pattern string limit)*
@@ -79,6 +84,7 @@ splits.  Like Perl's 'split'.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-split+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===re-sub===
+====function====
 <pre>
 Usage: *(_re-sub_ regex replacement string)*
 </pre>
@@ -92,6 +98,7 @@ the match.
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-sub+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===str-join===
+====function====
 <pre>
 Usage: *(_str-join_ separator sequence)*
 </pre>

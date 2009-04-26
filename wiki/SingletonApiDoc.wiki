@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===global-singleton===
+====function====
 <pre>
 Usage: *(_global-singleton_ f)*
 </pre>
@@ -36,6 +37,7 @@ Consider per-thread-singleton instead.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=global-singleton+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===per-thread-singleton===
+====function====
 <pre>
 Usage: *(_per-thread-singleton_ f)*
 </pre>

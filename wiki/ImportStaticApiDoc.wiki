@@ -22,10 +22,10 @@ Shortcuts:
 
 ----
 ===import-static===
+====macro====
 <pre>
 Usage: *(_import-static_ class & fields-and-methods)*
 </pre>
-====Macro====
 <pre> Imports the named static fields and/or static methods of the class
 as (private) symbols in the current namespace.
 

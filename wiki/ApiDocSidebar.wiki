@@ -16,6 +16,7 @@ namespace.
 [ClasspathApiDoc classpath]<br/>
 [CombinatoricsApiDoc combinatorics]<br/>
 [CommandLineApiDoc command-line]<br/>
+[ComplexNumbersApiDoc complex-numbers]<br/>
 [CondApiDoc cond]<br/>
 [CondtApiDoc condt]<br/>
 [CoreApiDoc core]<br/>
@@ -28,6 +29,7 @@ namespace.
 [FcaseApiDoc fcase]<br/>
 [FindNamespacesApiDoc find-namespaces]<br/>
 [GenHtmlDocsApiDoc gen-html-docs]<br/>
+[GenericApiDoc generic]<br/>
 [GraphApiDoc graph]<br/>
 [GreatestLeastApiDoc greatest-least]<br/>
 [ImportStaticApiDoc import-static]<br/>
@@ -42,13 +44,16 @@ namespace.
 [MacrosApiDoc macros]<br/>
 [MapUtilsApiDoc map-utils]<br/>
 [MathApiDoc math]<br/>
+[MiglayoutApiDoc miglayout]<br/>
 [MmapApiDoc mmap]<br/>
 [MonadsApiDoc monads]<br/>
 [NsUtilsApiDoc ns-utils]<br/>
 [PprintApiDoc pprint]<br/>
+[ProbabilitiesExamplesFiniteDistributionsApiDoc probabilities.examples-finite-distributions]<br/>
 [ProbabilitiesFiniteDistributionsApiDoc probabilities.finite-distributions]<br/>
 [ProbabilitiesMonteCarloApiDoc probabilities.monte-carlo]<br/>
 [ProbabilitiesRandomNumbersApiDoc probabilities.random-numbers]<br/>
+[ProbabilitiesRandomExamplesMonteCarloApiDoc probabilities.random.examples-monte-carlo]<br/>
 [PrxmlApiDoc prxml]<br/>
 [ReplLnApiDoc repl-ln]<br/>
 [ReplUtilsApiDoc repl-utils]<br/>

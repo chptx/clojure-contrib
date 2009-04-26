@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===buffer-stream===
+====function====
 <pre>
 Usage: *(_buffer-stream_ buf)*
 </pre>
@@ -30,6 +31,7 @@ Usage: *(_buffer-stream_ buf)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=buffer-stream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===mmap===
+====function====
 <pre>
 Usage: *(_mmap_ f)*
 </pre>
@@ -38,6 +40,7 @@ Usage: *(_mmap_ f)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===slurp===
+====function====
 <pre>
 Usage: *(_slurp_ f)*
 </pre>

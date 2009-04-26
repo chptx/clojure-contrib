@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===print-repl-info===
+====function====
 <pre>
 Usage: *(_print-repl-info_)*
 </pre>
@@ -30,6 +31,7 @@ Usage: *(_print-repl-info_)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#204 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-repl-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===repl===
+====function====
 <pre>
 Usage: *(_repl_ & options)*
 </pre>
@@ -51,6 +53,7 @@ for clojure.main/repl with the following change and additions:
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#213 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===repl-info===
+====function====
 <pre>
 Usage: *(_repl-info_)*
 </pre>
@@ -59,6 +62,7 @@ Usage: *(_repl-info_)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===repl-prompt===
+====function====
 <pre>
 Usage: *(_repl-prompt_)*
 </pre>
@@ -67,6 +71,7 @@ Usage: *(_repl-prompt_)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-repl-name===
+====function====
 <pre>
 Usage: *(_set-repl-name_)
        (_set-repl-name_ name-fmt)*
@@ -83,6 +88,7 @@ codes in the name to make the corresponding dynamic values part of it:
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#153 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-name+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-repl-prompt===
+====function====
 <pre>
 Usage: *(_set-repl-prompt_)
        (_set-repl-prompt_ prompt-fmt)*
@@ -101,6 +107,7 @@ the corresponding dynamic values part of it:
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#176 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-repl===
+====function====
 <pre>
 Usage: *(_stream-repl_ & options)*
 </pre>

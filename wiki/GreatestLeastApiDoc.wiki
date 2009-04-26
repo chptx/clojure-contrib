@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===all-greatest===
+====function====
 <pre>
 Usage: *(_all-greatest_ & args)*
 </pre>
@@ -30,6 +31,7 @@ Usage: *(_all-greatest_ & args)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-greatest+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===all-greatest-by===
+====function====
 <pre>
 Usage: *(_all-greatest-by_ f & args)*
 </pre>
@@ -38,6 +40,7 @@ Usage: *(_all-greatest-by_ f & args)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-greatest-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===all-least===
+====function====
 <pre>
 Usage: *(_all-least_ & args)*
 </pre>
@@ -46,6 +49,7 @@ Usage: *(_all-least_ & args)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-least+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===all-least-by===
+====function====
 <pre>
 Usage: *(_all-least-by_ f & args)*
 </pre>
@@ -54,6 +58,7 @@ Usage: *(_all-least-by_ f & args)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-least-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===greatest===
+====function====
 <pre>
 Usage: *(_greatest_ & args)*
 </pre>
@@ -62,6 +67,7 @@ Usage: *(_greatest_ & args)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#15 Source] [http://www.google.com/codesearch?hl=en&lr=&q=greatest+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===greatest-by===
+====function====
 <pre>
 Usage: *(_greatest-by_ f & args)*
 </pre>
@@ -70,6 +76,7 @@ Usage: *(_greatest-by_ f & args)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#10 Source] [http://www.google.com/codesearch?hl=en&lr=&q=greatest-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===least===
+====function====
 <pre>
 Usage: *(_least_ & args)*
 </pre>
@@ -78,6 +85,7 @@ Usage: *(_least_ & args)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=least+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===least-by===
+====function====
 <pre>
 Usage: *(_least-by_ f & args)*
 </pre>

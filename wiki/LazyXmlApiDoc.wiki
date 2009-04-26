@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===emit===
+====function====
 <pre>
 Usage: *(_emit_ x & opts)*
 </pre>
@@ -30,6 +31,7 @@ Usage: *(_emit_ x & opts)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=emit+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===emit-element===
+====function====
 <pre>
 Usage: *(_emit-element_ e & opts)*
 </pre>
@@ -40,6 +42,7 @@ option.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#132 Source] [http://www.google.com/codesearch?hl=en&lr=&q=emit-element+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===parse-seq===
+====function====
 <pre>
 Usage: *(_parse-seq_ s)
        (_parse-seq_ s startparse)
@@ -58,6 +61,7 @@ this superior pull parser will be used.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===parse-trim===
+====function====
 <pre>
 Usage: *(_parse-trim_ s)
        (_parse-trim_ s startparse queue-size)*

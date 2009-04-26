@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===sh===
+====function====
 <pre>
 Usage: *(_sh_ & args)*
 </pre>

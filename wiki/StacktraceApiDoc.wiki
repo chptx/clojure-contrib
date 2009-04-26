@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===e===
+====function====
 <pre>
 Usage: *(_e_)*
 </pre>
@@ -31,6 +32,7 @@ most recent exception.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stacktrace.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=e+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-cause-trace===
+====function====
 <pre>
 Usage: *(_print-cause-trace_ tr)
        (_print-cause-trace_ tr n)*
@@ -40,6 +42,7 @@ Usage: *(_print-cause-trace_ tr)
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stacktrace.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-cause-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-stack-trace===
+====function====
 <pre>
 Usage: *(_print-stack-trace_ tr)
        (_print-stack-trace_ tr n)*
@@ -51,6 +54,7 @@ Does not print chained exceptions (causes).</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stacktrace.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-throwable===
+====function====
 <pre>
 Usage: *(_print-throwable_ tr)*
 </pre>
@@ -59,6 +63,7 @@ Usage: *(_print-throwable_ tr)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stacktrace.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-throwable+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-trace-element===
+====function====
 <pre>
 Usage: *(_print-trace-element_ e)*
 </pre>
@@ -67,6 +72,7 @@ Usage: *(_print-trace-element_ e)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stacktrace.clj#24 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-trace-element+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===root-cause===
+====function====
 <pre>
 Usage: *(_root-cause_ tr)*
 </pre>

@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===open-url-in-browser===
+====function====
 <pre>
 Usage: *(_open-url-in-browser_ url)*
 </pre>
@@ -32,6 +33,7 @@ supported.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javadoc/browse.clj#22 Source] [http://www.google.com/codesearch?hl=en&lr=&q=open-url-in-browser+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===open-url-in-swing===
+====function====
 <pre>
 Usage: *(_open-url-in-swing_ url)*
 </pre>

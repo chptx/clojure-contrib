@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===throw-arg===
+====function====
 <pre>
 Usage: *(_throw-arg_ & args)*
 </pre>
@@ -36,6 +37,7 @@ Usage: *(_throw-arg_ & args)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-arg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throw-if===
+====function====
 <pre>
 Usage: *(_throw-if_ test & args)*
 </pre>
@@ -45,6 +47,7 @@ for throwf.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throw-if-not===
+====function====
 <pre>
 Usage: *(_throw-if-not_ test & args)*
 </pre>
@@ -54,6 +57,7 @@ for throwf.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if-not+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throwf===
+====function====
 <pre>
 Usage: *(_throwf_ & args)*
 </pre>

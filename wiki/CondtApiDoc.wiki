@@ -22,10 +22,10 @@ Shortcuts:
 
 ----
 ===condt===
+====macro====
 <pre>
 Usage: *(_condt_ expr & clauses)*
 </pre>
-====Macro====
 <pre> expr is a template expression (see template), clauses are test/expr
 pairs like cond.  Evalautes the template on each test value, one at
 a time.  If a test returns logical true, condt evaluates the
@@ -36,10 +36,10 @@ evaluated, otherwise returns nil.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condt.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=condt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===econdt===
+====macro====
 <pre>
 Usage: *(_econdt_ expr & clauses)*
 </pre>
-====Macro====
 <pre> Like condt but throws Exception if no tests match.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condt.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=econdt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -22,24 +22,25 @@ Shortcuts:
 
 ----
 ===dir===
+====macro====
 <pre>
 Usage: *(_dir_ nsname)*
 </pre>
-====Macro====
 <pre> Prints a sorted directory of public vars in a namespace</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===docs===
+====macro====
 <pre>
 Usage: *(_docs_ nsname)*
 </pre>
-====Macro====
 <pre> Prints documentation for the public vars in a namespace</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=docs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-ns===
+====function====
 <pre>
 Usage: *(_get-ns_ ns-sym)*
 </pre>
@@ -49,6 +50,7 @@ namespace does not exist</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===ns-vars===
+====function====
 <pre>
 Usage: *(_ns-vars_ ns)*
 </pre>
@@ -58,6 +60,7 @@ a namespace</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ns-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-dir===
+====function====
 <pre>
 Usage: *(_print-dir_ ns)*
 </pre>
@@ -66,6 +69,7 @@ Usage: *(_print-dir_ ns)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-docs===
+====function====
 <pre>
 Usage: *(_print-docs_ ns)*
 </pre>
@@ -74,10 +78,10 @@ Usage: *(_print-docs_ ns)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-docs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===vars===
+====macro====
 <pre>
 Usage: *(_vars_ nsname)*
 </pre>
-====Macro====
 <pre> Returns a sorted seq of symbols naming public vars in
 a namespace</pre>
 

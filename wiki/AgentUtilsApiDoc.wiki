@@ -22,10 +22,10 @@ Shortcuts:
 
 ----
 ===capture-and-send===
+====macro====
 <pre>
 Usage: *(_capture-and-send_ vars agent action & args)*
 </pre>
-====Macro====
 <pre> Capture the current value of the specified vars and rebind 
 them on the agent thread before executing the action.
 

@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===generate-documentation===
+====function====
 <pre>
 Usage: *(_generate-documentation_ libs)*
 </pre>
@@ -32,6 +33,7 @@ libraries.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs.clj#426 Source] [http://www.google.com/codesearch?hl=en&lr=&q=generate-documentation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===generate-documentation-to-file===
+====function====
 <pre>
 Usage: *(_generate-documentation-to-file_ path libs)*
 </pre>

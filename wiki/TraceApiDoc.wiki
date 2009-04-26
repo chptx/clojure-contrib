@@ -21,19 +21,17 @@ Shortcuts:
 [#*trace-depth* *trace-depth*] [#deftrace deftrace] [#trace trace] [#trace-fn-call trace-fn-call] [#trace-indent trace-indent] [#tracer tracer] 
 
 ----
-===*trace-depth*===
-<pre>
-Usage: *_`*`trace-depth`*`_*
-</pre>
+===`*`trace-depth`*`===
+====var====
 <pre> Current stack depth of traced function calls.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*trace-depth*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===deftrace===
+====macro====
 <pre>
 Usage: *(_deftrace_ name & definition)*
 </pre>
-====Macro====
 <pre> Use in place of defn; traces each call/return of this fn, including
 arguments.  Nested calls to deftrace'd functions will print a
 tree-like structure.</pre>
@@ -41,6 +39,7 @@ tree-like structure.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftrace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===trace===
+====function====
 <pre>
 Usage: *(_trace_ value)
        (_trace_ name value)*
@@ -52,6 +51,7 @@ affecting the result.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===trace-fn-call===
+====function====
 <pre>
 Usage: *(_trace-fn-call_ name f args)*
 </pre>
@@ -61,6 +61,7 @@ symbol name of the function.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace-fn-call+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===trace-indent===
+====function====
 <pre>
 Usage: *(_trace-indent_)*
 </pre>
@@ -69,6 +70,7 @@ Usage: *(_trace-indent_)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace-indent+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===tracer===
+====function====
 <pre>
 Usage: *(_tracer_ name value)*
 </pre>

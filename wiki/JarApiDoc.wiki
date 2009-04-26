@@ -22,6 +22,7 @@ Shortcuts:
 
 ----
 ===filenames-in-jar===
+====function====
 <pre>
 Usage: *(_filenames-in-jar_ jar-file)*
 </pre>
@@ -31,6 +32,7 @@ the JAR file.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=filenames-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===jar-file?===
+====function====
 <pre>
 Usage: *(_jar-file?_ file)*
 </pre>
