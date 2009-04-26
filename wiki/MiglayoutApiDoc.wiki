@@ -72,4 +72,3 @@ items to constraints strings. The value for :components is a vector of
 vectors each associating a component with its constraints string.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-item-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
-==Namespace clojure.contrib.miglayout.test==

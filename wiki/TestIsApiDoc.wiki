@@ -384,5 +384,3 @@ Usage: *(_with-tap-output_ & body)*
 TAP output</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is/tap.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-tap-output+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
-==Namespace clojure.contrib.test-is.test-fixtures==
-==Namespace clojure.contrib.test-is.tests==

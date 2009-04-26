@@ -48,4 +48,3 @@ Examples :
 </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=.?.+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
-==Namespace clojure.contrib.core.tests==

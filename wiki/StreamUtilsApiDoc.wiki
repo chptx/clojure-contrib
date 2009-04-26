@@ -140,4 +140,3 @@ clojure.contrib.generic.collection/seq for streams.</pre>
 add a derivation from this type.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#66 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-type+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
-==Namespace clojure.contrib.stream-utils.examples==

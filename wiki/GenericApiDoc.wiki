@@ -26,7 +26,6 @@ Variables and Functions in generic.functor:
 Variables and Functions in generic.math-functions:
 [GenericApiDoc#approx= approx=] 
 
-==Namespace clojure.contrib.generic.arithmetic==
 ==Namespace clojure.contrib.generic.collection==
 ----
 ===assoc===
@@ -89,7 +88,6 @@ Usage: *(_seq_ s)*
 <pre> Returns a seq on the object s.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#107 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
-==Namespace clojure.contrib.generic.comparison==
 ==Namespace clojure.contrib.generic.functor==
 ----
 ===fmap===

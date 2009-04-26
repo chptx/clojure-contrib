@@ -106,4 +106,3 @@ Usage: *(_sqrt_ n)*
 <pre> Square root, but returns exact number if possible.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#171 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sqrt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
-==Namespace clojure.contrib.math.tests==
