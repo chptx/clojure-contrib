@@ -18,7 +18,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#*load-tests* *load-tests*] [#*stack-trace-depth* *stack-trace-depth*] [#are are] [#assert-any assert-any] [#assert-predicate assert-predicate] [#compose-fixtures compose-fixtures] [#deftest deftest] [#deftest- deftest-] [#file-position file-position] [#function? function?] [#get-possibly-unbound-var get-possibly-unbound-var] [#inc-report-counter inc-report-counter] [#is is] [#join-fixtures join-fixtures] [#print-results print-results] [#report report] [#run-all-tests run-all-tests] [#run-tests run-tests] [#set-test set-test] [#test-all-vars test-all-vars] [#test-ns test-ns] [#test-var test-var] [#testing testing] [#testing-contexts-str testing-contexts-str] [#testing-vars-str testing-vars-str] [#try-expr try-expr] [#with-test with-test] [#with-test-out with-test-out] 
+[#*load-tests* *load-tests*] [#*stack-trace-depth* *stack-trace-depth*] [#are are] [#assert-any assert-any] [#assert-predicate assert-predicate] [#compose-fixtures compose-fixtures] [#deftest deftest] [#deftest- deftest-] [#file-position file-position] [#function? function?] [#get-possibly-unbound-var get-possibly-unbound-var] [#inc-report-counter inc-report-counter] [#is is] [#join-fixtures join-fixtures] [#report report] [#run-all-tests run-all-tests] [#run-tests run-tests] [#set-test set-test] [#test-all-vars test-all-vars] [#test-ns test-ns] [#test-var test-var] [#testing testing] [#testing-contexts-str testing-contexts-str] [#testing-vars-str testing-vars-str] [#try-expr try-expr] [#with-test with-test] [#with-test-out with-test-out] 
 
 Variables and Functions in test-is.tap:
 [TestIsApiDoc#print-tap-diagnostic print-tap-diagnostic] [TestIsApiDoc#print-tap-fail print-tap-fail] [TestIsApiDoc#print-tap-pass print-tap-pass] [TestIsApiDoc#print-tap-plan print-tap-plan] [TestIsApiDoc#with-tap-output with-tap-output] 
@@ -190,16 +190,6 @@ Usage: *(_join-fixtures_ fixtures)*
 fixture function, even if the collection is empty.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#636 Source] [http://www.google.com/codesearch?hl=en&lr=&q=join-fixtures+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
-----
-===print-results===
-====function====
-<pre>
-Usage: *(_print-results_ r)*
-</pre>
-<pre> Prints formatted results message based on the reported counts
-returned by test-ns.</pre>
-
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#640 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-results+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===report===
 ====multimethod====
