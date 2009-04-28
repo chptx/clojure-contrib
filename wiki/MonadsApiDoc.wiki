@@ -18,7 +18,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#call-cc call-cc] [#cont-m cont-m] [#defmonad defmonad] [#defmonadfn defmonadfn] [#domonad domonad] [#identity-m identity-m] [#m-chain m-chain] [#m-fmap m-fmap] [#m-join m-join] [#m-lift m-lift] [#m-map m-map] [#m-reduce m-reduce] [#m-seq m-seq] [#m-when m-when] [#m-when-not m-when-not] [#maybe-m maybe-m] [#maybe-t maybe-t] [#monad monad] [#run-cont run-cont] [#sequence-m sequence-m] [#sequence-t sequence-t] [#set-m set-m] [#state-m state-m] [#state-t state-t] [#with-monad with-monad] [#writer-m writer-m] 
+[#call-cc call-cc] [#cont-m cont-m] [#defmonad defmonad] [#defmonadfn defmonadfn] [#domonad domonad] [#identity-m identity-m] [#m-chain m-chain] [#m-fmap m-fmap] [#m-join m-join] [#m-lift m-lift] [#m-map m-map] [#m-reduce m-reduce] [#m-seq m-seq] [#m-when m-when] [#m-when-not m-when-not] [#maybe-m maybe-m] [#maybe-t maybe-t] [#monad monad] [#monad-transformer monad-transformer] [#run-cont run-cont] [#sequence-m sequence-m] [#sequence-t sequence-t] [#set-m set-m] [#state-m state-m] [#state-t state-t] [#with-monad with-monad] [#writer-m writer-m] 
 
 ----
 ===call-cc===
@@ -202,11 +202,11 @@ Usage: *(_maybe-t_ m)
 the base values can be invalid (represented by nothing, which defaults
 to nil). The third argument chooses if m-zero and m-plus are inherited
 from the base monad (use :m-plus-from-base) or adopt maybe-like
-behaviour (use :m-plus-from-maybe). The default is :m-plus-from-base
-if the base monad m has a definition for m-plus, and :m-plus-from-maybe
-otherwise.</pre>
+behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
+if the base monad m has a definition for m-plus, and
+:m-plus-from-transformer otherwise.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#401 Source] [http://www.google.com/codesearch?hl=en&lr=&q=maybe-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#423 Source] [http://www.google.com/codesearch?hl=en&lr=&q=maybe-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===monad===
 ====macro====
@@ -218,6 +218,17 @@ are written like bindings to the monad operations m-bind and
 m-result (required) and m-zero and m-plus (optional).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#24 Source] [http://www.google.com/codesearch?hl=en&lr=&q=monad+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===monad-transformer===
+====macro====
+<pre>
+Usage: *(_monad-transformer_ base which-m-plus operations)*
+</pre>
+<pre> Define a monad transforer in terms of the monad operations and the base
+monad. The argument which-m-plus chooses if m-zero and m-plus are taken
+from the base monad or from the transformer.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#401 Source] [http://www.google.com/codesearch?hl=en&lr=&q=monad-transformer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===run-cont===
 ====function====
@@ -239,12 +250,18 @@ protocol can be used as a monadic value.</pre>
 ===sequence-t===
 ====function====
 <pre>
-Usage: *(_sequence-t_ m)*
+Usage: *(_sequence-t_ m)
+       (_sequence-t_ m which-m-plus)*
 </pre>
 <pre> Monad transformer that transforms a monad m into a monad in which
-the base values are sequences.</pre>
+the base values are sequences. The argument which-m-plus chooses
+if m-zero and m-plus are inherited from the base monad
+(use :m-plus-from-base) or adopt sequence-like
+behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
+if the base monad m has a definition for m-plus, and
+:m-plus-from-transformer otherwise.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#448 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sequence-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#455 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sequence-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-m===
 ====var====
@@ -268,7 +285,7 @@ Usage: *(_state-t_ m)*
 <pre> Monad transformer that transforms a monad m into a monad of stateful
 computations that have the base monad type as their result.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#463 Source] [http://www.google.com/codesearch?hl=en&lr=&q=state-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#482 Source] [http://www.google.com/codesearch?hl=en&lr=&q=state-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-monad===
 ====macro====

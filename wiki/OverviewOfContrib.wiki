@@ -278,7 +278,7 @@ Public Variables and Functions:
 API Overview [MonadsApiDoc here]
 
 Public Variables and Functions:
-[MonadsApiDoc#call-cc call-cc] [MonadsApiDoc#cont-m cont-m] [MonadsApiDoc#defmonad defmonad] [MonadsApiDoc#defmonadfn defmonadfn] [MonadsApiDoc#domonad domonad] [MonadsApiDoc#identity-m identity-m] [MonadsApiDoc#m-chain m-chain] [MonadsApiDoc#m-fmap m-fmap] [MonadsApiDoc#m-join m-join] [MonadsApiDoc#m-lift m-lift] [MonadsApiDoc#m-map m-map] [MonadsApiDoc#m-reduce m-reduce] [MonadsApiDoc#m-seq m-seq] [MonadsApiDoc#m-when m-when] [MonadsApiDoc#m-when-not m-when-not] [MonadsApiDoc#maybe-m maybe-m] [MonadsApiDoc#maybe-t maybe-t] [MonadsApiDoc#monad monad] [MonadsApiDoc#run-cont run-cont] [MonadsApiDoc#sequence-m sequence-m] [MonadsApiDoc#sequence-t sequence-t] [MonadsApiDoc#set-m set-m] [MonadsApiDoc#state-m state-m] [MonadsApiDoc#state-t state-t] [MonadsApiDoc#with-monad with-monad] [MonadsApiDoc#writer-m writer-m] 
+[MonadsApiDoc#call-cc call-cc] [MonadsApiDoc#cont-m cont-m] [MonadsApiDoc#defmonad defmonad] [MonadsApiDoc#defmonadfn defmonadfn] [MonadsApiDoc#domonad domonad] [MonadsApiDoc#identity-m identity-m] [MonadsApiDoc#m-chain m-chain] [MonadsApiDoc#m-fmap m-fmap] [MonadsApiDoc#m-join m-join] [MonadsApiDoc#m-lift m-lift] [MonadsApiDoc#m-map m-map] [MonadsApiDoc#m-reduce m-reduce] [MonadsApiDoc#m-seq m-seq] [MonadsApiDoc#m-when m-when] [MonadsApiDoc#m-when-not m-when-not] [MonadsApiDoc#maybe-m maybe-m] [MonadsApiDoc#maybe-t maybe-t] [MonadsApiDoc#monad monad] [MonadsApiDoc#monad-transformer monad-transformer] [MonadsApiDoc#run-cont run-cont] [MonadsApiDoc#sequence-m sequence-m] [MonadsApiDoc#sequence-t sequence-t] [MonadsApiDoc#set-m set-m] [MonadsApiDoc#state-m state-m] [MonadsApiDoc#state-t state-t] [MonadsApiDoc#with-monad with-monad] [MonadsApiDoc#writer-m writer-m] 
 
 ===ns-utils===
 API Overview [NsUtilsApiDoc here]
@@ -329,7 +329,7 @@ Public Variables and Functions:
 API Overview [ReplLnApiDoc here]
 
 Public Variables and Functions:
-[ReplLnApiDoc#print-repl-info print-repl-info] [ReplLnApiDoc#repl repl] [ReplLnApiDoc#repl-info repl-info] [ReplLnApiDoc#repl-prompt repl-prompt] [ReplLnApiDoc#set-repl-name set-repl-name] [ReplLnApiDoc#set-repl-prompt set-repl-prompt] [ReplLnApiDoc#stream-repl stream-repl] 
+[ReplLnApiDoc#stream-repl stream-repl] 
 
 ===repl-utils===
 API Overview [ReplUtilsApiDoc here]
