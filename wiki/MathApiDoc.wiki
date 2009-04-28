@@ -31,7 +31,7 @@ Usage: *(_abs_ n)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=abs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===ceil===
-====function====
+====multimethod====
 <pre>
 Usage: *(_ceil_ n)*
 </pre>
@@ -51,7 +51,7 @@ For example, (exact-integer-sqrt 15) is `[`3 6`]` because 15 = 3^2+6.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#162 Source] [http://www.google.com/codesearch?hl=en&lr=&q=exact-integer-sqrt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===expt===
-====function====
+====multimethod====
 <pre>
 Usage: *(_expt_ base pow)*
 </pre>
@@ -61,7 +61,7 @@ Returns an exact number if the base is an exact number and the power is an integ
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=expt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===floor===
-====function====
+====multimethod====
 <pre>
 Usage: *(_floor_ n)*
 </pre>
@@ -89,7 +89,7 @@ Usage: *(_lcm_ a b)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#125 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lcm+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===round===
-====function====
+====multimethod====
 <pre>
 Usage: *(_round_ n)*
 </pre>
@@ -99,7 +99,7 @@ round always returns an integer.  Rounds up for values exactly in between two in
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=round+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===sqrt===
-====function====
+====multimethod====
 <pre>
 Usage: *(_sqrt_ n)*
 </pre>

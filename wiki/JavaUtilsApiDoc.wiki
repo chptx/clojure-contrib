@@ -23,6 +23,7 @@ Shortcuts:
 ----
 ===as-file===
 ====multimethod====
+_No usage documentation available_
 <pre> Interpret a String or a java.io.File as a File. Building block
 for clojure.contrib.java-utils/file, which you should prefer
 in most cases.</pre>
@@ -80,6 +81,7 @@ Usage: *(_read-properties_ file-able)*
 ----
 ===relative-path-string===
 ====multimethod====
+_No usage documentation available_
 <pre> Interpret a String or java.io.File as a relative path string. 
 Building block for clojure.contrib.java-utils/file.</pre>
 

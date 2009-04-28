@@ -29,7 +29,7 @@ Variables and Functions in generic.math-functions:
 ==Namespace clojure.contrib.generic.collection==
 ----
 ===assoc===
-====function====
+====multimethod====
 <pre>
 Usage: *(_assoc_ coll & key-val-pairs)*
 </pre>
@@ -40,7 +40,7 @@ can have specific restrictions on the possible keys.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#27 Source] [http://www.google.com/codesearch?hl=en&lr=&q=assoc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===dissoc===
-====function====
+====multimethod====
 <pre>
 Usage: *(_dissoc_ coll & keys)*
 </pre>
@@ -51,7 +51,7 @@ restrictions on the possible keys.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dissoc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty===
-====function====
+====multimethod====
 <pre>
 Usage: *(_empty_ coll)*
 </pre>
@@ -60,7 +60,7 @@ Usage: *(_empty_ coll)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#66 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get===
-====function====
+====multimethod====
 <pre>
 Usage: *(_get_ coll key)
        (_get_ coll key not-found)*
@@ -71,7 +71,7 @@ can have specific restrictions on the possible keys.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===into===
-====function====
+====multimethod====
 <pre>
 Usage: *(_into_ to from)*
 </pre>
@@ -81,7 +81,7 @@ from-coll conjoined.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=into+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===seq===
-====function====
+====multimethod====
 <pre>
 Usage: *(_seq_ s)*
 </pre>
@@ -91,7 +91,7 @@ Usage: *(_seq_ s)*
 ==Namespace clojure.contrib.generic.functor==
 ----
 ===fmap===
-====function====
+====multimethod====
 <pre>
 Usage: *(_fmap_ f s)*
 </pre>

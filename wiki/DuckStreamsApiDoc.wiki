@@ -54,6 +54,7 @@ closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.</pre>
 ----
 ===reader===
 ====multimethod====
+_No usage documentation available_
 <pre> Attempts to coerce its argument into an open
 java.io.BufferedReader.  Argument may be an instance of Reader,
 BufferedReader, InputStream, File, URI, URL, or String.
@@ -116,6 +117,7 @@ writer.</pre>
 ----
 ===writer===
 ====multimethod====
+_No usage documentation available_
 <pre> Attempts to coerce its argument into an open java.io.PrintWriter
 wrapped around a java.io.BufferedWriter.  Argument may be an
 instance of Writer, PrintWriter, BufferedWriter, OutputStream, File,

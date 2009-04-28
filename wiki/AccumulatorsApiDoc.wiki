@@ -22,7 +22,7 @@ Shortcuts:
 
 ----
 ===add===
-====function====
+====multimethod====
 <pre>
 Usage: *(_add_ acc item)*
 </pre>
@@ -41,7 +41,7 @@ Usage: *(_add-items_ acc items)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-items+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===combine===
-====function====
+====multimethod====
 <pre>
 Usage: *(_combine_ & accs)*
 </pre>

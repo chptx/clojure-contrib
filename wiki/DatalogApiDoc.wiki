@@ -229,6 +229,7 @@ Usage: *(_select_ db rn pt)*
 ----
 ===adorned-literal===
 ====multimethod====
+_No usage documentation available_
 <pre> When passed a set of bound columns, returns the adorned literal</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#254 Source] [http://www.google.com/codesearch?hl=en&lr=&q=adorned-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -245,6 +246,7 @@ atom.</pre>
 ----
 ===build-literal===
 ====multimethod====
+_No usage documentation available_
 <pre> (Returns an unevaluated expression (to be used in macros) of a
 literal.</pre>
 
@@ -271,6 +273,7 @@ Usage: *(_delta-literal_ l)*
 ----
 ===display-literal===
 ====multimethod====
+_No usage documentation available_
 <pre> Converts a struct representing a literal to a normal list</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#164 Source] [http://www.google.com/codesearch?hl=en&lr=&q=display-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -295,24 +298,28 @@ Usage: *(_get-base-predicate_ pred)*
 ----
 ===get-cs-from-vs===
 ====multimethod====
+_No usage documentation available_
 <pre> From a set of vars, get the columns</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#202 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-cs-from-vs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-self-bound-cs===
 ====multimethod====
+_No usage documentation available_
 <pre> Get the columns that are bound withing the literal.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#219 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-self-bound-cs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-vs-from-cs===
 ====multimethod====
+_No usage documentation available_
 <pre> From a set of columns, return the vars</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#187 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-vs-from-cs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===join-literal===
 ====multimethod====
+_No usage documentation available_
 <pre> Given a database (db), a literal (lit) and a seq of bindings (bs),
 return a new seq of bindings by joining this literal.</pre>
 
@@ -320,6 +327,7 @@ return a new seq of bindings by joining this literal.</pre>
 ----
 ===literal-appropriate?===
 ====multimethod====
+_No usage documentation available_
 <pre> When passed a set of bound vars, determines if this literal can be
 used during this point of a SIP computation.</pre>
 
@@ -327,6 +335,7 @@ used during this point of a SIP computation.</pre>
 ----
 ===literal-columns===
 ====multimethod====
+_No usage documentation available_
 <pre> Return the column names this applies to</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#48 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-columns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -342,12 +351,14 @@ Usage: *(_literal-magic?_ lit)*
 ----
 ===literal-predicate===
 ====multimethod====
+_No usage documentation available_
 <pre> Return the predicate/relation this conditional operates over</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-predicate+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===literal-vars===
 ====multimethod====
+_No usage documentation available_
 <pre> Returns the logic vars used by this literal</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -381,12 +392,14 @@ Usage: *(_negated?_ l)*
 ----
 ===negative-vars===
 ====multimethod====
+_No usage documentation available_
 <pre> Returns the logic vars used in a negative position</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=negative-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===positive-vars===
 ====multimethod====
+_No usage documentation available_
 <pre> Returns the logic vars used in a positive position</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=positive-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

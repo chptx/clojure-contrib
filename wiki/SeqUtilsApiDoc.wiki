@@ -167,7 +167,7 @@ Usage: *(_separate_ f s)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=separate+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===seq-on===
-====function====
+====multimethod====
 <pre>
 Usage: *(_seq-on_ s)*
 </pre>

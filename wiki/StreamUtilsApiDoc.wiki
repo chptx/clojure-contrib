@@ -75,7 +75,7 @@ Usage: *(_stream-drop_ n stream)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-drop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-filter===
-====function====
+====multimethod====
 <pre>
 Usage: *(_stream-filter_ p stream)*
 </pre>
@@ -103,7 +103,7 @@ of any type handled by stream-next.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#132 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-map===
-====function====
+====multimethod====
 <pre>
 Usage: *(_stream-map_ f stream)*
 </pre>
@@ -112,7 +112,7 @@ Usage: *(_stream-map_ f stream)*
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#216 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-next===
-====function====
+====multimethod====
 <pre>
 Usage: *(_stream-next_ stream-state)*
 </pre>
