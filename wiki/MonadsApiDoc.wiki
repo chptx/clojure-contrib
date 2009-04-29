@@ -31,7 +31,7 @@ argument representing the current continuation. The function f should
 return a continuation (which becomes the return value of call-cc),
 or call the passed-in current continuation to terminate.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#383 Source] [http://www.google.com/codesearch?hl=en&lr=&q=call-cc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#397 Source] [http://www.google.com/codesearch?hl=en&lr=&q=call-cc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===cont-m===
 ====var====
@@ -39,7 +39,7 @@ or call the passed-in current continuation to terminate.</pre>
 values are functions that are called with a single argument representing
 the continuation of the computation, to which they pass their result.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#367 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cont-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#381 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cont-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===defmonad===
 ====macro====
@@ -89,7 +89,7 @@ bindings that can be used in the following steps.</pre>
 at all. It is useful for testing, for combination with monad
 transformers, and for code that is parameterized with a monad.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#242 Source] [http://www.google.com/codesearch?hl=en&lr=&q=identity-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#256 Source] [http://www.google.com/codesearch?hl=en&lr=&q=identity-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===m-chain===
 ====macro====
@@ -189,7 +189,7 @@ Usage: *(_m-when-not_ test m-expr)*
 represented by nil, any other value is considered valid. As soon as
 a step returns nil, the whole computation will yield nil as well.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#252 Source] [http://www.google.com/codesearch?hl=en&lr=&q=maybe-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#266 Source] [http://www.google.com/codesearch?hl=en&lr=&q=maybe-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===maybe-t===
 ====function====
@@ -206,7 +206,7 @@ behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
 if the base monad m has a definition for m-plus, and
 :m-plus-from-transformer otherwise.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#423 Source] [http://www.google.com/codesearch?hl=en&lr=&q=maybe-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#437 Source] [http://www.google.com/codesearch?hl=en&lr=&q=maybe-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===monad===
 ====macro====
@@ -228,7 +228,7 @@ Usage: *(_monad-transformer_ base which-m-plus operations)*
 monad. The argument which-m-plus chooses if m-zero and m-plus are taken
 from the base monad or from the transformer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#401 Source] [http://www.google.com/codesearch?hl=en&lr=&q=monad-transformer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#415 Source] [http://www.google.com/codesearch?hl=en&lr=&q=monad-transformer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===run-cont===
 ====function====
@@ -237,7 +237,7 @@ Usage: *(_run-cont_ c)*
 </pre>
 <pre> Execute the computation c in the cont monad and return its result.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#378 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-cont+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#392 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-cont+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===sequence-m===
 ====var====
@@ -245,7 +245,7 @@ Usage: *(_run-cont_ c)*
 that can yield multiple values. Any object implementing the seq
 protocol can be used as a monadic value.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#265 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sequence-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#279 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sequence-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===sequence-t===
 ====function====
@@ -261,21 +261,21 @@ behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
 if the base monad m has a definition for m-plus, and
 :m-plus-from-transformer otherwise.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#455 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sequence-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#469 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sequence-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-m===
 ====var====
 <pre> Monad describing multi-valued computations, like sequence-m,
 but returning sets of results instead of sequences of results.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#279 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#293 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===state-m===
 ====var====
 <pre> Monad describing stateful computations. The monadic values have the
 structure (fn `[`old-state`]` (list result new-state)).</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#292 Source] [http://www.google.com/codesearch?hl=en&lr=&q=state-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#306 Source] [http://www.google.com/codesearch?hl=en&lr=&q=state-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===state-t===
 ====function====
@@ -285,7 +285,7 @@ Usage: *(_state-t_ m)*
 <pre> Monad transformer that transforms a monad m into a monad of stateful
 computations that have the base monad type as their result.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#482 Source] [http://www.google.com/codesearch?hl=en&lr=&q=state-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#496 Source] [http://www.google.com/codesearch?hl=en&lr=&q=state-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-monad===
 ====macro====
@@ -308,4 +308,4 @@ logging. The monadic values have the structure `[`value log`]`. Any of the
 accumulators from clojure.contrib.accumulators can be used for storing the
 log data. Its empty value is passed as a parameter.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#340 Source] [http://www.google.com/codesearch?hl=en&lr=&q=writer-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#354 Source] [http://www.google.com/codesearch?hl=en&lr=&q=writer-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
