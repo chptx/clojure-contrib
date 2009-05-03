@@ -9,7 +9,7 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for agent-utils=
-<br>by Cheistophe Grande
+<br>by Christophe Grande
 
 Usage: 
 {{{

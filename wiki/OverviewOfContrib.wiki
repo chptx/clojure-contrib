@@ -48,7 +48,7 @@ Public Variables and Functions:
 
 ===agent-utils===
 API Overview [AgentUtilsApiDoc here]
-<br>by Cheistophe Grande
+<br>by Christophe Grande
 
 <pre> Miscellaneous agent utilities 
 (note to other contrib members: feel free to add to this lib)</pre>
@@ -85,7 +85,8 @@ API Overview [CombinatoricsApiDoc here]
 <br>by Mark Engelberg
 
 <pre> Efficient, functional algorithms for generating lazy 
-sequences for common combinatorial functions. (See the source code for a longer description.)</pre>
+sequences for common combinatorial functions. (See the source code  
+for a longer description.)</pre>
 Public Variables and Functions:
 [CombinatoricsApiDoc#cartesian-product cartesian-product] [CombinatoricsApiDoc#combinations combinations] [CombinatoricsApiDoc#lex-permutations lex-permutations] [CombinatoricsApiDoc#permutations permutations] [CombinatoricsApiDoc#selections selections] [CombinatoricsApiDoc#subsets subsets] 
 
