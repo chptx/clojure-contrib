@@ -26,9 +26,9 @@ Shortcuts:
 <pre>
 Usage: *(_file_ & args)*
 </pre>
-<pre> Concatenates args as strings returns a java.io.File.  Replaces all
+<pre>  Concatenates args as strings returns a java.io.File.  Replaces all
 / and \ with File/separatorChar.  Replaces ~ at the start of the
-path with the user.home system property.</pre>
+path with the user.home system property. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -37,8 +37,8 @@ path with the user.home system property.</pre>
 <pre>
 Usage: *(_pwd_)*
 </pre>
-<pre> Returns current working directory as a String.  (Like UNIX 'pwd'.)
-Note: In Java, you cannot change the current working directory.</pre>
+<pre>  Returns current working directory as a String.  (Like UNIX 'pwd'.)
+Note: In Java, you cannot change the current working directory. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pwd+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -47,15 +47,15 @@ Note: In Java, you cannot change the current working directory.</pre>
 <pre>
 Usage: *(_read-lines_ f)*
 </pre>
-<pre> Like clojure.core/line-seq but opens f with reader.  Automatically
-closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.</pre>
+<pre>  Like clojure.core/line-seq but opens f with reader.  Automatically
+closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#169 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-lines+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===reader===
 ====multimethod====
 _No usage documentation available_
-<pre> Attempts to coerce its argument into an open
+<pre>  Attempts to coerce its argument into an open
 java.io.BufferedReader.  Argument may be an instance of Reader,
 BufferedReader, InputStream, File, URI, URL, or String.
 
@@ -64,7 +64,7 @@ as a local file name.  URIs with a 'file' protocol are converted to
 local file names.  Uses `*`default-encoding`*` as the text encoding.
 
  Should be used inside with-open to ensure the Reader is properly
-closed.</pre>
+closed. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reader+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -73,7 +73,7 @@ closed.</pre>
 <pre>
 Usage: *(_slurp`*`_ f)*
 </pre>
-<pre> Like clojure.core/slurp but opens f with reader.</pre>
+<pre>  Like clojure.core/slurp but opens f with reader. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#180 Source] [http://www.google.com/codesearch?hl=en&lr=&q=slurp*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -82,8 +82,8 @@ Usage: *(_slurp`*`_ f)*
 <pre>
 Usage: *(_spit_ f content)*
 </pre>
-<pre> Opposite of slurp.  Opens f with writer, writes content, then
-closes f.</pre>
+<pre>  Opposite of slurp.  Opens f with writer, writes content, then
+closes f. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#191 Source] [http://www.google.com/codesearch?hl=en&lr=&q=spit+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -92,7 +92,7 @@ closes f.</pre>
 <pre>
 Usage: *(_with-in-reader_ f & body)*
 </pre>
-<pre> Opens a PushbackReader on f, binds it to `*`in`*`, and evaluates body.</pre>
+<pre>  Opens a PushbackReader on f, binds it to `*`in`*`, and evaluates body. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#213 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-in-reader+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -101,7 +101,7 @@ Usage: *(_with-in-reader_ f & body)*
 <pre>
 Usage: *(_with-out-writer_ f & body)*
 </pre>
-<pre> Opens a writer on f, binds it to `*`out`*`, and evalutes body.</pre>
+<pre>  Opens a writer on f, binds it to `*`out`*`, and evalutes body. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-out-writer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -110,15 +110,15 @@ Usage: *(_with-out-writer_ f & body)*
 <pre>
 Usage: *(_write-lines_ f lines)*
 </pre>
-<pre> Writes lines (a seq) to f, separated by newlines.  f is opened with
-writer.</pre>
+<pre>  Writes lines (a seq) to f, separated by newlines.  f is opened with
+writer. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#158 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-lines+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===writer===
 ====multimethod====
 _No usage documentation available_
-<pre> Attempts to coerce its argument into an open java.io.PrintWriter
+<pre>  Attempts to coerce its argument into an open java.io.PrintWriter
 wrapped around a java.io.BufferedWriter.  Argument may be an
 instance of Writer, PrintWriter, BufferedWriter, OutputStream, File,
 URI, URL, or String.
@@ -128,6 +128,6 @@ as a local file name.  URIs with a 'file' protocol are converted to
 local file names.
 
  Should be used inside with-open to ensure the Writer is properly
-closed.</pre>
+closed. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=writer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_print-repl-info_)*
 </pre>
-<pre> Prints info about the current repl</pre>
+<pre>  Prints info about the current repl </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#204 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-repl-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -35,7 +35,7 @@ Usage: *(_print-repl-info_)*
 <pre>
 Usage: *(_repl_ & options)*
 </pre>
-<pre> A repl that supports line numbers. For definitions and evaluations made
+<pre>  A repl that supports line numbers. For definitions and evaluations made
 at the repl, the repl-name and line number will be reported as the
 origin. Use set-repl-name and set-repl-prompt to customize the repl name
 and prompt. This repl supports all of the keyword arguments documented
@@ -48,7 +48,7 @@ for clojure.main/repl with the following change and additions:
        default: the name-fmt of the parent repl, or "repl-%S"
 
       - :prompt-fmt, Prompt format string
-       default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
+       default: the prompt-fmt of the parent repl, or "%S:%L %N=> " </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#213 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -57,7 +57,7 @@ for clojure.main/repl with the following change and additions:
 <pre>
 Usage: *(_repl-info_)*
 </pre>
-<pre> Returns a map of info about the current repl</pre>
+<pre>  Returns a map of info about the current repl </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -66,7 +66,7 @@ Usage: *(_repl-info_)*
 <pre>
 Usage: *(_repl-prompt_)*
 </pre>
-<pre> Returns the current repl prompt based on this repl's prompt-fmt</pre>
+<pre>  Returns the current repl prompt based on this repl's prompt-fmt </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -76,14 +76,14 @@ Usage: *(_repl-prompt_)*
 Usage: *(_set-repl-name_)
        (_set-repl-name_ name-fmt)*
 </pre>
-<pre> Sets the repl name format to the string name-fmt. Include the following
+<pre>  Sets the repl name format to the string name-fmt. Include the following
 codes in the name to make the corresponding dynamic values part of it:
 
    %S - repl serial number
   %T - thread id
   %D - nesting depth in this thread
 
- With no arguments, resets the repl name to its default: "repl-%S"</pre>
+ With no arguments, resets the repl name to its default: "repl-%S" </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#153 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-name+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -93,7 +93,7 @@ codes in the name to make the corresponding dynamic values part of it:
 Usage: *(_set-repl-prompt_)
        (_set-repl-prompt_ prompt-fmt)*
 </pre>
-<pre> Sets the repl prompt. Include the following codes in the prompt to make
+<pre>  Sets the repl prompt. Include the following codes in the prompt to make
 the corresponding dynamic values part of it:
 
    %S - repl serial number
@@ -102,7 +102,7 @@ the corresponding dynamic values part of it:
   %L - input line number
   %N - namespace name
 
- With no arguments, resets the repl pompt to its default: "%S:%L %N=> "</pre>
+ With no arguments, resets the repl pompt to its default: "%S:%L %N=> " </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#176 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -111,10 +111,10 @@ the corresponding dynamic values part of it:
 <pre>
 Usage: *(_stream-repl_ & options)*
 </pre>
-<pre> Repl entry point that provides convenient overriding of input, output,
+<pre>  Repl entry point that provides convenient overriding of input, output,
 and err streams via sequential keyword-value pairs. Default values
 for :in, :out, and :err are streams associated with System/in,
 System/out, and System/err using UTF-8 encoding. Also supports all the
-options provided by clojure.contrib.repl-ln/repl.</pre>
+options provided by clojure.contrib.repl-ln/repl. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#115 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-repl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

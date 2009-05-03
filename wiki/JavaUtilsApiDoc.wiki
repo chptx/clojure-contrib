@@ -24,9 +24,9 @@ Shortcuts:
 ===as-file===
 ====multimethod====
 _No usage documentation available_
-<pre> Interpret a String or a java.io.File as a File. Building block
+<pre>  Interpret a String or a java.io.File as a File. Building block
 for clojure.contrib.java-utils/file, which you should prefer
-in most cases.</pre>
+in most cases. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -35,8 +35,8 @@ in most cases.</pre>
 <pre>
 Usage: *(_as-properties_ m)*
 </pre>
-<pre> Convert any seq of pairs to a java.utils.Properties instance.
-Uses as-str to convert both keys and values into strings.</pre>
+<pre>  Convert any seq of pairs to a java.utils.Properties instance.
+Uses as-str to convert both keys and values into strings. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -45,7 +45,7 @@ Uses as-str to convert both keys and values into strings.</pre>
 <pre>
 Usage: *(_as-str_ x)*
 </pre>
-<pre> Returns the name or string representation of x</pre>
+<pre>  Returns the name or string representation of x </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -56,7 +56,7 @@ Usage: *(_file_ arg)
        (_file_ parent child)
        (_file_ parent child & more)*
 </pre>
-<pre> Returns a java.io.File from string or file args.</pre>
+<pre>  Returns a java.io.File from string or file args. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -66,7 +66,7 @@ Usage: *(_file_ arg)
 Usage: *(_get-system-property_ stringable)
        (_get-system-property_ stringable default)*
 </pre>
-<pre> Get a system property.</pre>
+<pre>  Get a system property. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#75 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-system-property+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -75,15 +75,15 @@ Usage: *(_get-system-property_ stringable)
 <pre>
 Usage: *(_read-properties_ file-able)*
 </pre>
-<pre> Read properties from file-able.</pre>
+<pre>  Read properties from file-able. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#120 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===relative-path-string===
 ====multimethod====
 _No usage documentation available_
-<pre> Interpret a String or java.io.File as a relative path string. 
-Building block for clojure.contrib.java-utils/file.</pre>
+<pre>  Interpret a String or java.io.File as a relative path string. 
+Building block for clojure.contrib.java-utils/file. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=relative-path-string+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -92,7 +92,7 @@ Building block for clojure.contrib.java-utils/file.</pre>
 <pre>
 Usage: *(_set-system-properties_ settings)*
 </pre>
-<pre> Set some system properties. Nil clears a property.</pre>
+<pre>  Set some system properties. Nil clears a property. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#82 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-system-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -101,11 +101,11 @@ Usage: *(_set-system-properties_ settings)*
 <pre>
 Usage: *(_with-system-properties_ settings & body)*
 </pre>
-<pre> setting => property-name value
+<pre>  setting => property-name value
 
  Sets the system properties to the supplied values, executes the body, and
 sets the properties back to their original values. Values of nil are
-translated to a clearing of the property.</pre>
+translated to a clearing of the property. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-system-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -115,6 +115,6 @@ translated to a clearing of the property.</pre>
 Usage: *(_write-properties_ m file-able)
        (_write-properties_ m file-able comments)*
 </pre>
-<pre> Write properties to file-able.</pre>
+<pre>  Write properties to file-able. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#127 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
