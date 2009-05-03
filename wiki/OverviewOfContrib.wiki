@@ -148,7 +148,7 @@ Public Variables and Functions:
 API Overview [DuckStreamsApiDoc here]
 
 Public Variables and Functions:
-[DuckStreamsApiDoc#file file] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
+[DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
 
 ===error-kit===
 API Overview [ErrorKitApiDoc here]
@@ -315,6 +315,11 @@ clojure.contrib wiki RSN.</pre>
 Public Variables and Functions:
 [PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] 
 
+===probabilities.examples-finite-distributions===
+API Overview [ProbabilitiesExamplesFiniteDistributionsApiDoc here]
+<br>by Konrad Hinsen
+
+<pre> Examples for finite probability distribution</pre>
 ===probabilities.finite-distributions===
 API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
 
@@ -333,6 +338,11 @@ API Overview [ProbabilitiesRandomNumbersApiDoc here]
 Public Variables and Functions:
 [ProbabilitiesRandomNumbersApiDoc#lcg lcg] [ProbabilitiesRandomNumbersApiDoc#rand-stream rand-stream] 
 
+===probabilities.random.examples-monte-carlo===
+API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
+<br>by Konrad Hinsen
+
+<pre> Examples for monte carlo methods</pre>
 ===prxml===
 API Overview [PrxmlApiDoc here]
 
