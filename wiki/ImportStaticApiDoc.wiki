@@ -26,19 +26,19 @@ Shortcuts:
 <pre>
 Usage: *(_import-static_ class & fields-and-methods)*
 </pre>
-<pre>  Imports the named static fields and/or static methods of the class
-as (private) symbols in the current namespace.
-
- Example: 
-    user=> (import-static java.lang.Math PI sqrt)
-    nil
-    user=> PI
-    3.141592653589793
-    user=> (sqrt 16)
-    4.0
-
- Note: The class name must be fully qualified, even if it has already
-been imported.  Static methods are defined as MACROS, not
-first-class fns. </pre>
+<pre> Imports the named static fields and/or static methods of the class
+ as (private) symbols in the current namespace.
+ 
+  Example: 
+     user=> (import-static java.lang.Math PI sqrt)
+     nil
+     user=> PI
+     3.141592653589793
+     user=> (sqrt 16)
+     4.0
+ 
+  Note: The class name must be fully qualified, even if it has already
+ been imported.  Static methods are defined as MACROS, not
+ first-class fns.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/import_static/clojure/contrib/import_static.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=import-static+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

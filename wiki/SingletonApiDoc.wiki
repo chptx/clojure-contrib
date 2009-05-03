@@ -26,13 +26,13 @@ Shortcuts:
 <pre>
 Usage: *(_global-singleton_ f)*
 </pre>
-<pre>  Returns a global singleton function.  f is a function of no
-arguments that creates and returns some object.  The singleton
-function will call f just once, the first time it is needed, and
-cache the value for all subsequent calls.
-
- Warning: global singletons are often unsafe in multi-threaded code.
-Consider per-thread-singleton instead. </pre>
+<pre> Returns a global singleton function.  f is a function of no
+ arguments that creates and returns some object.  The singleton
+ function will call f just once, the first time it is needed, and
+ cache the value for all subsequent calls.
+ 
+  Warning: global singletons are often unsafe in multi-threaded code.
+ Consider per-thread-singleton instead.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton/clojure/contrib/singleton.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=global-singleton+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -41,15 +41,15 @@ Consider per-thread-singleton instead. </pre>
 <pre>
 Usage: *(_per-thread-singleton_ f)*
 </pre>
-<pre>  Returns a per-thread singleton function.  f is a function of no
-arguments that creates and returns some object.  The singleton
-function will call f only once for each thread, and cache its value
-for subsequent calls from the same thread.  This allows you to
-safely and lazily initialize shared objects on a per-thread basis.
-
- Warning: due to a bug in JDK 5, it may not be safe to use a
-per-thread-singleton in the initialization function for another
-per-thread-singleton.  See
-http://bugs.sun.com/bugdatabase/view`_`bug.do?bug`_`id=5025230 </pre>
+<pre> Returns a per-thread singleton function.  f is a function of no
+ arguments that creates and returns some object.  The singleton
+ function will call f only once for each thread, and cache its value
+ for subsequent calls from the same thread.  This allows you to
+ safely and lazily initialize shared objects on a per-thread basis.
+ 
+  Warning: due to a bug in JDK 5, it may not be safe to use a
+ per-thread-singleton in the initialization function for another
+ per-thread-singleton.  See
+ http://bugs.sun.com/bugdatabase/view`_`bug.do?bug`_`id=5025230</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton/clojure/contrib/singleton.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=per-thread-singleton+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

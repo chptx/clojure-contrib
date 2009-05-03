@@ -26,18 +26,18 @@ Shortcuts:
 <pre>
 Usage: *(_call-cc_ f)*
 </pre>
-<pre>  A computation in the cont monad that calls function f with a single
-argument representing the current continuation. The function f should
-return a continuation (which becomes the return value of call-cc),
-or call the passed-in current continuation to terminate. </pre>
+<pre> A computation in the cont monad that calls function f with a single
+ argument representing the current continuation. The function f should
+ return a continuation (which becomes the return value of call-cc),
+ or call the passed-in current continuation to terminate.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#397 Source] [http://www.google.com/codesearch?hl=en&lr=&q=call-cc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===cont-m===
 ====var====
-<pre>  Monad describing computations in continuation-passing style. The monadic
-values are functions that are called with a single argument representing
-the continuation of the computation, to which they pass their result. </pre>
+<pre> Monad describing computations in continuation-passing style. The monadic
+ values are functions that are called with a single argument representing
+ the continuation of the computation, to which they pass their result.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#381 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cont-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -47,9 +47,9 @@ the continuation of the computation, to which they pass their result. </pre>
 Usage: *(_defmonad_ name doc-string operations)
        (_defmonad_ name operations)*
 </pre>
-<pre>  Define a named monad by defining the monad operations. The definitions
-are written like bindings to the monad operations m-bind and
-m-result (required) and m-zero and m-plus (optional). </pre>
+<pre> Define a named monad by defining the monad operations. The definitions
+ are written like bindings to the monad operations m-bind and
+ m-result (required) and m-zero and m-plus (optional).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defmonad+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -59,8 +59,8 @@ m-result (required) and m-zero and m-plus (optional). </pre>
 Usage: *(_defmonadfn_ name docstring? attr-map? args expr)
        (_defmonadfn_ name docstring? attr-map? (args expr) ...)*
 </pre>
-<pre>  Like defn, but for functions that use monad operations and are used inside
-a with-monad block. </pre>
+<pre> Like defn, but for functions that use monad operations and are used inside
+ a with-monad block.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#124 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defmonadfn+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -70,24 +70,24 @@ a with-monad block. </pre>
 Usage: *(_domonad_ steps expr)
        (_domonad_ name steps expr)*
 </pre>
-<pre>  Monad comprehension. Takes the name of a monad, a vector of steps
-given as binding-form/monadic-expression pairs, and a result value
-specified by expr. The monadic-expression terms can use the binding
-variables of the previous steps.
-If the monad contains a definition of m-zero, the step list can also
-contain conditions of the form :when p, where the predicate p can
-contain the binding variables from all previous steps.
-A clause of the form :let `[`binding-form expr ...`]`, where the bindings
-are given as a vector as for the use in let, establishes additional
-bindings that can be used in the following steps. </pre>
+<pre> Monad comprehension. Takes the name of a monad, a vector of steps
+ given as binding-form/monadic-expression pairs, and a result value
+ specified by expr. The monadic-expression terms can use the binding
+ variables of the previous steps.
+ If the monad contains a definition of m-zero, the step list can also
+ contain conditions of the form :when p, where the predicate p can
+ contain the binding variables from all previous steps.
+ A clause of the form :let `[`binding-form expr ...`]`, where the bindings
+ are given as a vector as for the use in let, establishes additional
+ bindings that can be used in the following steps.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#101 Source] [http://www.google.com/codesearch?hl=en&lr=&q=domonad+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===identity-m===
 ====var====
-<pre>  Monad describing plain computations. This monad does in fact nothing
-at all. It is useful for testing, for combination with monad
-transformers, and for code that is parameterized with a monad. </pre>
+<pre> Monad describing plain computations. This monad does in fact nothing
+ at all. It is useful for testing, for combination with monad
+ transformers, and for code that is parameterized with a monad.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#256 Source] [http://www.google.com/codesearch?hl=en&lr=&q=identity-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -96,10 +96,10 @@ transformers, and for code that is parameterized with a monad. </pre>
 <pre>
 Usage: *(_m-chain_ steps)*
 </pre>
-<pre>  Chains together monadic computation steps that are each functions
-of one parameter. Each step is called with the result of the previous
-step as its argument. (m-chain (step1 step2)) is equivalent to
-(fn `[`x`]` (domonad `[`r1 (step1 x) r2 (step2 r1)`]` r2)). </pre>
+<pre> Chains together monadic computation steps that are each functions
+ of one parameter. Each step is called with the result of the previous
+ step as its argument. (m-chain (step1 step2)) is equivalent to
+ (fn `[`x`]` (domonad `[`r1 (step1 x) r2 (step2 r1)`]` r2)).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#199 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-chain+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -108,7 +108,7 @@ step as its argument. (m-chain (step1 step2)) is equivalent to
 <pre>
 Usage: *(_m-fmap_ f m)*
 </pre>
-<pre>  Bind the monadic value m to the function returning (f x) for argument x </pre>
+<pre> Bind the monadic value m to the function returning (f x) for argument x</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#177 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-fmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -117,8 +117,8 @@ Usage: *(_m-fmap_ f m)*
 <pre>
 Usage: *(_m-join_ m)*
 </pre>
-<pre>  Converts a monadic value containing a monadic value into a 'simple'
-monadic value. </pre>
+<pre> Converts a monadic value containing a monadic value into a 'simple'
+ monadic value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#171 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-join+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -127,8 +127,8 @@ monadic value. </pre>
 <pre>
 Usage: *(_m-lift_ n f)*
 </pre>
-<pre>  Converts a function f of n arguments into a function of n
-monadic arguments returning a monadic value. </pre>
+<pre> Converts a function f of n arguments into a function of n
+ monadic arguments returning a monadic value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#162 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-lift+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -137,8 +137,8 @@ monadic arguments returning a monadic value. </pre>
 <pre>
 Usage: *(_m-map_ f xs)*
 </pre>
-<pre>  'Executes' the sequence of monadic values resulting from mapping
-f onto the values xs. f must return a monadic value. </pre>
+<pre> 'Executes' the sequence of monadic values resulting from mapping
+ f onto the values xs. f must return a monadic value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#193 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -148,8 +148,8 @@ f onto the values xs. f must return a monadic value. </pre>
 Usage: *(_m-reduce_ f mvs)
        (_m-reduce_ f val mvs)*
 </pre>
-<pre>  Return the reduction of (m-lift 2 f) over the list of monadic values mvs
-with initial value (m-result val). </pre>
+<pre> Return the reduction of (m-lift 2 f) over the list of monadic values mvs
+ with initial value (m-result val).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#210 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-reduce+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -158,8 +158,8 @@ with initial value (m-result val). </pre>
 <pre>
 Usage: *(_m-seq_ ms)*
 </pre>
-<pre>  'Executes' the monadic values in ms and returns a sequence of the
-basic values contained in them. </pre>
+<pre> 'Executes' the monadic values in ms and returns a sequence of the
+ basic values contained in them.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#182 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -168,8 +168,8 @@ basic values contained in them. </pre>
 <pre>
 Usage: *(_m-when_ test m-expr)*
 </pre>
-<pre>  If test if logical true, return monadic value m-expr, else return
-(m-result nil). </pre>
+<pre> If test if logical true, return monadic value m-expr, else return
+ (m-result nil).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#223 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-when+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -178,16 +178,16 @@ Usage: *(_m-when_ test m-expr)*
 <pre>
 Usage: *(_m-when-not_ test m-expr)*
 </pre>
-<pre>  If test if logical false, return monadic value m-expr, else return
-(m-result nil). </pre>
+<pre> If test if logical false, return monadic value m-expr, else return
+ (m-result nil).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#229 Source] [http://www.google.com/codesearch?hl=en&lr=&q=m-when-not+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===maybe-m===
 ====var====
-<pre>  Monad describing computations with possible failures. Failure is
-represented by nil, any other value is considered valid. As soon as
-a step returns nil, the whole computation will yield nil as well. </pre>
+<pre> Monad describing computations with possible failures. Failure is
+ represented by nil, any other value is considered valid. As soon as
+ a step returns nil, the whole computation will yield nil as well.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#266 Source] [http://www.google.com/codesearch?hl=en&lr=&q=maybe-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -198,13 +198,13 @@ Usage: *(_maybe-t_ m)
        (_maybe-t_ m nothing)
        (_maybe-t_ m nothing which-m-plus)*
 </pre>
-<pre>  Monad transformer that transforms a monad m into a monad in which
-the base values can be invalid (represented by nothing, which defaults
-to nil). The third argument chooses if m-zero and m-plus are inherited
-from the base monad (use :m-plus-from-base) or adopt maybe-like
-behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
-if the base monad m has a definition for m-plus, and
-:m-plus-from-transformer otherwise. </pre>
+<pre> Monad transformer that transforms a monad m into a monad in which
+ the base values can be invalid (represented by nothing, which defaults
+ to nil). The third argument chooses if m-zero and m-plus are inherited
+ from the base monad (use :m-plus-from-base) or adopt maybe-like
+ behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
+ if the base monad m has a definition for m-plus, and
+ :m-plus-from-transformer otherwise.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#437 Source] [http://www.google.com/codesearch?hl=en&lr=&q=maybe-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -213,9 +213,9 @@ if the base monad m has a definition for m-plus, and
 <pre>
 Usage: *(_monad_ operations)*
 </pre>
-<pre>  Define a monad by defining the monad operations. The definitions
-are written like bindings to the monad operations m-bind and
-m-result (required) and m-zero and m-plus (optional). </pre>
+<pre> Define a monad by defining the monad operations. The definitions
+ are written like bindings to the monad operations m-bind and
+ m-result (required) and m-zero and m-plus (optional).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#24 Source] [http://www.google.com/codesearch?hl=en&lr=&q=monad+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -224,9 +224,9 @@ m-result (required) and m-zero and m-plus (optional). </pre>
 <pre>
 Usage: *(_monad-transformer_ base which-m-plus operations)*
 </pre>
-<pre>  Define a monad transforer in terms of the monad operations and the base
-monad. The argument which-m-plus chooses if m-zero and m-plus are taken
-from the base monad or from the transformer. </pre>
+<pre> Define a monad transforer in terms of the monad operations and the base
+ monad. The argument which-m-plus chooses if m-zero and m-plus are taken
+ from the base monad or from the transformer.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#415 Source] [http://www.google.com/codesearch?hl=en&lr=&q=monad-transformer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -235,15 +235,15 @@ from the base monad or from the transformer. </pre>
 <pre>
 Usage: *(_run-cont_ c)*
 </pre>
-<pre>  Execute the computation c in the cont monad and return its result. </pre>
+<pre> Execute the computation c in the cont monad and return its result.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#392 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-cont+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===sequence-m===
 ====var====
-<pre>  Monad describing multi-valued computations, i.e. computations
-that can yield multiple values. Any object implementing the seq
-protocol can be used as a monadic value. </pre>
+<pre> Monad describing multi-valued computations, i.e. computations
+ that can yield multiple values. Any object implementing the seq
+ protocol can be used as a monadic value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#279 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sequence-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -253,27 +253,27 @@ protocol can be used as a monadic value. </pre>
 Usage: *(_sequence-t_ m)
        (_sequence-t_ m which-m-plus)*
 </pre>
-<pre>  Monad transformer that transforms a monad m into a monad in which
-the base values are sequences. The argument which-m-plus chooses
-if m-zero and m-plus are inherited from the base monad
-(use :m-plus-from-base) or adopt sequence-like
-behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
-if the base monad m has a definition for m-plus, and
-:m-plus-from-transformer otherwise. </pre>
+<pre> Monad transformer that transforms a monad m into a monad in which
+ the base values are sequences. The argument which-m-plus chooses
+ if m-zero and m-plus are inherited from the base monad
+ (use :m-plus-from-base) or adopt sequence-like
+ behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base
+ if the base monad m has a definition for m-plus, and
+ :m-plus-from-transformer otherwise.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#469 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sequence-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-m===
 ====var====
-<pre>  Monad describing multi-valued computations, like sequence-m,
-but returning sets of results instead of sequences of results. </pre>
+<pre> Monad describing multi-valued computations, like sequence-m,
+ but returning sets of results instead of sequences of results.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#293 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===state-m===
 ====var====
-<pre>  Monad describing stateful computations. The monadic values have the
-structure (fn `[`old-state`]` (list result new-state)). </pre>
+<pre> Monad describing stateful computations. The monadic values have the
+ structure (fn `[`old-state`]` (list result new-state)).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#306 Source] [http://www.google.com/codesearch?hl=en&lr=&q=state-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -282,8 +282,8 @@ structure (fn `[`old-state`]` (list result new-state)). </pre>
 <pre>
 Usage: *(_state-t_ m)*
 </pre>
-<pre>  Monad transformer that transforms a monad m into a monad of stateful
-computations that have the base monad type as their result. </pre>
+<pre> Monad transformer that transforms a monad m into a monad of stateful
+ computations that have the base monad type as their result.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#496 Source] [http://www.google.com/codesearch?hl=en&lr=&q=state-t+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -292,9 +292,9 @@ computations that have the base monad type as their result. </pre>
 <pre>
 Usage: *(_with-monad_ name & exprs)*
 </pre>
-<pre>  Evaluates an expression after replacing the keywords defining the
-monad operations by the functions associated with these keywords
-in the monad definition given by name. </pre>
+<pre> Evaluates an expression after replacing the keywords defining the
+ monad operations by the functions associated with these keywords
+ in the monad definition given by name.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-monad+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -303,9 +303,9 @@ in the monad definition given by name. </pre>
 <pre>
 Usage: *(_writer-m_ empty-accumulator)*
 </pre>
-<pre>  Monad describing computations that accumulate data on the side, e.g. for
-logging. The monadic values have the structure `[`value log`]`. Any of the
-accumulators from clojure.contrib.accumulators can be used for storing the
-log data. Its empty value is passed as a parameter. </pre>
+<pre> Monad describing computations that accumulate data on the side, e.g. for
+ logging. The monadic values have the structure `[`value log`]`. Any of the
+ accumulators from clojure.contrib.accumulators can be used for storing the
+ log data. Its empty value is passed as a parameter.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/clojure/contrib/monads.clj#354 Source] [http://www.google.com/codesearch?hl=en&lr=&q=writer-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

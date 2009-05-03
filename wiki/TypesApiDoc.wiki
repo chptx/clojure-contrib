@@ -29,10 +29,10 @@ Variables and Functions in types.examples:
 <pre>
 Usage: *(_defadt_ type-tag & constructors)*
 </pre>
-<pre>  Define an algebraic data type name by an exhaustive list of constructors.
-Each constructor can be a symbol (argument-free constructor) or a
-list consisting of a tag symbol followed by the argument symbols.
-The data type tag must be a keyword. </pre>
+<pre> Define an algebraic data type name by an exhaustive list of constructors.
+ Each constructor can be a symbol (argument-free constructor) or a
+ list consisting of a tag symbol followed by the argument symbols.
+ The data type tag must be a keyword.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/clojure/contrib/types.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defadt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -43,15 +43,15 @@ Usage: *(_deftype_ type-tag constructor-name docstring? attr-map?)
        (_deftype_ type-tag constructor-name docstring? attr-map? constructor)
        (_deftype_ type-tag constructor-name docstring? attr-map? constructor deconstructor)*
 </pre>
-<pre>  Define a data type by a type tag (a namespace-qualified keyword)
-and a symbol naming the constructor function. Optionally, a
-constructor and a deconstructor function can be given as well,
-the defaults being clojure.core/identity and clojure.core/list.
-The full constructor associated with constructor-name calls the
-constructor function and attaches the type tag to its result
-as metadata. The deconstructor function must return the arguments
-to be passed to the constructor in order to create an equivalent
-object. It is used for printing and matching. </pre>
+<pre> Define a data type by a type tag (a namespace-qualified keyword)
+ and a symbol naming the constructor function. Optionally, a
+ constructor and a deconstructor function can be given as well,
+ the defaults being clojure.core/identity and clojure.core/list.
+ The full constructor associated with constructor-name calls the
+ constructor function and attaches the type tag to its result
+ as metadata. The deconstructor function must return the arguments
+ to be passed to the constructor in order to create an equivalent
+ object. It is used for printing and matching.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/clojure/contrib/types.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftype+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -60,7 +60,7 @@ object. It is used for printing and matching. </pre>
 <pre>
 Usage: *(_deftype-_ type-tag constructor-name & optional)*
 </pre>
-<pre>  Same as deftype but the constructor is private. </pre>
+<pre> Same as deftype but the constructor is private.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/clojure/contrib/types.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftype-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -69,28 +69,28 @@ Usage: *(_deftype-_ type-tag constructor-name & optional)*
 <pre>
 Usage: *(_match_ value & clauses)*
 </pre>
-<pre>  Given a value and a list of template-expr clauses, evaluate the first
-expr whose template matches the value. There are four kinds of templates:
-1) Lists of the form (tag x1 x2 ...) match instances of types
-   whose constructor has the same form as the list.
-2) Quoted lists of the form '(x1 x2 ...) match lists of the same
-   length.
-3) Vectors of the form `[`x1 x2 ...`]` match vectors of the same length.
-4) Maps of the form {:key1 x1 :key2 x2 ...} match maps that have
-   the same keys as the template, but which can have additional keys
-   that are not part of the template.
-The values x1, x2, ... can be symbols or non-symbol values. Non-symbols
-must be equal to the corresponding values in the object to be matched.
-Symbols will be bound to the corresponding value in the object in the
-evaluation of expr. If the same symbol occurs more than once in a,
-template the corresponding elements of the object must be equal
-for the template to match. </pre>
+<pre> Given a value and a list of template-expr clauses, evaluate the first
+ expr whose template matches the value. There are four kinds of templates:
+ 1) Lists of the form (tag x1 x2 ...) match instances of types
+    whose constructor has the same form as the list.
+ 2) Quoted lists of the form '(x1 x2 ...) match lists of the same
+    length.
+ 3) Vectors of the form `[`x1 x2 ...`]` match vectors of the same length.
+ 4) Maps of the form {:key1 x1 :key2 x2 ...} match maps that have
+    the same keys as the template, but which can have additional keys
+    that are not part of the template.
+ The values x1, x2, ... can be symbols or non-symbol values. Non-symbols
+ must be equal to the corresponding values in the object to be matched.
+ Symbols will be bound to the corresponding value in the object in the
+ evaluation of expr. If the same symbol occurs more than once in a,
+ template the corresponding elements of the object must be equal
+ for the template to match.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/clojure/contrib/types.clj#241 Source] [http://www.google.com/codesearch?hl=en&lr=&q=match+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.types.examples==
 ----
 ===multiset===
 ====var====
-<pre>  Multiset (demo implementation) </pre>
+<pre> Multiset (demo implementation)</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/examples/clojure/contrib/types/examples.clj#21 Source] [http://www.google.com/codesearch?hl=en&lr=&q=multiset+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

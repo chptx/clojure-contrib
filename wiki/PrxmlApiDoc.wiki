@@ -23,14 +23,14 @@ Shortcuts:
 ----
 ===`*`html-compatible`*`===
 ====var====
-<pre>  If true, empty tags will have a space before the closing /> </pre>
+<pre> If true, empty tags will have a space before the closing /></pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml/clojure/contrib/prxml.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*html-compatible*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`prxml-indent`*`===
 ====var====
-<pre>  The number of spaces to indent sub-tags.  nil for no indent
-and no extra line-breaks. </pre>
+<pre> The number of spaces to indent sub-tags.  nil for no indent
+ and no extra line-breaks.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml/clojure/contrib/prxml.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*prxml-indent*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -39,27 +39,27 @@ and no extra line-breaks. </pre>
 <pre>
 Usage: *(_prxml_ & args)*
 </pre>
-<pre>  Print XML to `*`out`*`.  Vectors become XML tags: the first item is the
-tag name; optional second item is a map of attributes.
-
- Sequences are processed recursively, so you can use map and other
-sequence functions inside prxml.
-
-   (prxml `[`:p {:class "greet"} `[`:i "Ladies & gentlemen"`]``]`)
-  ; => <p class="greet"><i>Ladies &amp; gentlemen</i></p>
-
- PSEUDO-TAGS: some keywords have special meaning:
-
-   :raw!      do not XML-escape contents
-  :comment!  create an XML comment
-  :decl!     create an XML declaration, with attributes
-  :cdata!    create a CDATA section
-  :doctype!  create a DOCTYPE!
-
-   (prxml `[`:p `[`:raw! "<i>here & gone</i>"`]``]`)
-  ; => <p><i>here & gone</i></p>
-
-   (prxml `[`:decl! {:version "1.1"}`]`)
-  ; => <?xml version="1.1" encoding="UTF-8"?> </pre>
+<pre> Print XML to `*`out`*`.  Vectors become XML tags: the first item is the
+ tag name; optional second item is a map of attributes.
+ 
+  Sequences are processed recursively, so you can use map and other
+ sequence functions inside prxml.
+ 
+    (prxml `[`:p {:class "greet"} `[`:i "Ladies & gentlemen"`]``]`)
+   ; => <p class="greet"><i>Ladies &amp; gentlemen</i></p>
+ 
+  PSEUDO-TAGS: some keywords have special meaning:
+ 
+    :raw!      do not XML-escape contents
+   :comment!  create an XML comment
+   :decl!     create an XML declaration, with attributes
+   :cdata!    create a CDATA section
+   :doctype!  create a DOCTYPE!
+ 
+    (prxml `[`:p `[`:raw! "<i>here & gone</i>"`]``]`)
+   ; => <p><i>here & gone</i></p>
+ 
+    (prxml `[`:decl! {:version "1.1"}`]`)
+   ; => <?xml version="1.1" encoding="UTF-8"?></pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml/clojure/contrib/prxml.clj#138 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prxml+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
