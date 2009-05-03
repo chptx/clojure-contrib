@@ -17,7 +17,6 @@ namespace.
 [CombinatoricsApiDoc combinatorics]<br/>
 [CommandLineApiDoc command-line]<br/>
 [CondApiDoc cond]<br/>
-[CondtApiDoc condt]<br/>
 [CoreApiDoc core]<br/>
 [DataflowApiDoc dataflow]<br/>
 [DatalogApiDoc datalog]<br/>

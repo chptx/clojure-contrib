@@ -48,25 +48,44 @@ Public Variables and Functions:
 
 ===agent-utils===
 API Overview [AgentUtilsApiDoc here]
+<br>by Cheistophe Grande
 
+<pre> Miscellaneous agent utilities 
+(note to other contrib members: feel free to add to this lib)</pre>
 Public Variables and Functions:
 [AgentUtilsApiDoc#capture-and-send capture-and-send] 
 
 ===auto-agent===
 API Overview [AutoAgentApiDoc here]
+<br>by Stuart Sierra
 
+<pre> This is superficially similar to Ken Tilton's "Cells" library for 
+Common Lisp.  But Cells is single-threaded and synchronous.  This 
+version is built on Clojure agents, so it is multi-threaded and 
+asynchronous. 
+ 
+ An auto-agent is an agent whose value is the result of an 
+expression.  That expression can include other mutable Clojure 
+types -- agents, atoms, and refs -- dereferenced with "deref" or 
+"@".  Whenever one of those derefernced things changes, the 
+auto-agent will be automatically updated to reflect the new value.</pre>
 Public Variables and Functions:
 [AutoAgentApiDoc#auto-agent auto-agent] 
 
 ===classpath===
 API Overview [ClasspathApiDoc here]
+<br>by Stuart Sierra
 
+<pre> Utilities for dealing with the JVM's classpath</pre>
 Public Variables and Functions:
 [ClasspathApiDoc#classpath classpath] [ClasspathApiDoc#classpath-directories classpath-directories] [ClasspathApiDoc#classpath-jarfiles classpath-jarfiles] 
 
 ===combinatorics===
 API Overview [CombinatoricsApiDoc here]
+<br>by Mark Engelberg
 
+<pre> Efficient, functional algorithms for generating lazy 
+sequences for common combinatorial functions. (See the source code for a longer description.)</pre>
 Public Variables and Functions:
 [CombinatoricsApiDoc#cartesian-product cartesian-product] [CombinatoricsApiDoc#combinations combinations] [CombinatoricsApiDoc#lex-permutations lex-permutations] [CombinatoricsApiDoc#permutations permutations] [CombinatoricsApiDoc#selections selections] [CombinatoricsApiDoc#subsets subsets] 
 
@@ -81,12 +100,6 @@ API Overview [CondApiDoc here]
 
 Public Variables and Functions:
 [CondApiDoc#cond-let cond-let] 
-
-===condt===
-API Overview [CondtApiDoc here]
-
-Public Variables and Functions:
-[CondtApiDoc#condt condt] [CondtApiDoc#econdt econdt] 
 
 ===core===
 API Overview [CoreApiDoc here]

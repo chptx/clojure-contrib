@@ -9,11 +9,16 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for combinatorics=
+<br>by Mark Engelberg
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.combinatorics))
 }}}
+==Overview==
+<pre> Efficient, functional algorithms for generating lazy 
+sequences for common combinatorial functions. (See the source code for a longer description.)</pre>
 
 
 ==Public Variables and Functions==
@@ -28,7 +33,7 @@ Usage: *(_cartesian-product_ & seqs)*
 </pre>
 <pre> All the ways to take one item from each sequence</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#102 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cartesian-product+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#106 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cartesian-product+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===combinations===
 ====function====
@@ -37,7 +42,7 @@ Usage: *(_combinations_ items n)*
 </pre>
 <pre> All the unique ways of taking n different elements from items</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#85 Source] [http://www.google.com/codesearch?hl=en&lr=&q=combinations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#89 Source] [http://www.google.com/codesearch?hl=en&lr=&q=combinations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===lex-permutations===
 ====function====
@@ -46,7 +51,7 @@ Usage: *(_lex-permutations_ c)*
 </pre>
 <pre> Fast lexicographic permutation generator for a sequence of numbers</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#146 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lex-permutations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#150 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lex-permutations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===permutations===
 ====function====
@@ -55,7 +60,7 @@ Usage: *(_permutations_ items)*
 </pre>
 <pre> All the permutations of items, lexicographic by index</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=permutations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#159 Source] [http://www.google.com/codesearch?hl=en&lr=&q=permutations+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===selections===
 ====function====
@@ -64,7 +69,7 @@ Usage: *(_selections_ items n)*
 </pre>
 <pre> All the ways of taking n (possibly the same) elements from the sequence of items</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#122 Source] [http://www.google.com/codesearch?hl=en&lr=&q=selections+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#126 Source] [http://www.google.com/codesearch?hl=en&lr=&q=selections+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===subsets===
 ====function====
@@ -73,4 +78,4 @@ Usage: *(_subsets_ items)*
 </pre>
 <pre> All the subsets of items</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#96 Source] [http://www.google.com/codesearch?hl=en&lr=&q=subsets+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/combinatorics/clojure/contrib/combinatorics.clj#100 Source] [http://www.google.com/codesearch?hl=en&lr=&q=subsets+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

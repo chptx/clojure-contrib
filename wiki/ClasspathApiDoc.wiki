@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for classpath=
+<br>by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.classpath))
 }}}
+==Overview==
+<pre> Utilities for dealing with the JVM's classpath</pre>
 
 
 ==Public Variables and Functions==
@@ -28,7 +32,7 @@ Usage: *(_classpath_)*
 </pre>
 <pre> Returns a sequence of File objects of the elements on CLASSPATH.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===classpath-directories===
 ====function====
@@ -37,7 +41,7 @@ Usage: *(_classpath-directories_)*
 </pre>
 <pre> Returns a sequence of File objects for the directories on classpath.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#27 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath-directories+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#30 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath-directories+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===classpath-jarfiles===
 ====function====
@@ -46,4 +50,4 @@ Usage: *(_classpath-jarfiles_)*
 </pre>
 <pre> Returns a sequence of JarFile objects for the JAR files on classpath.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath-jarfiles+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath-jarfiles+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
