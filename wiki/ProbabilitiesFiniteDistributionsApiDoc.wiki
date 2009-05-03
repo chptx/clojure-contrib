@@ -28,7 +28,7 @@ Usage: *(_certainly_ v)*
 </pre>
 <pre> Returns a distribution in which the single value v has probability 1.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#105 Source] [http://www.google.com/codesearch?hl=en&lr=&q=certainly+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#105 Source] [http://www.google.com/codesearch?hl=en&lr=&q=certainly+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===choose===
 ====function====
@@ -40,13 +40,13 @@ and values. They are given in the form of a vector of probability-value
 pairs. In the last pair, the probability can be given by the keyword
 :else, which stands for 1 minus the total of the other probabilities.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#89 Source] [http://www.google.com/codesearch?hl=en&lr=&q=choose+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#89 Source] [http://www.google.com/codesearch?hl=en&lr=&q=choose+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===cond-dist-m===
 ====var====
 <pre> Variant of the dist monad that can handle undefined values.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cond-dist-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cond-dist-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===cond-prob===
 ====function====
@@ -56,7 +56,7 @@ Usage: *(_cond-prob_ pred dist)*
 <pre> Returns the conditional probability for the values in dist that satisfy
 the predicate pred.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cond-prob+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cond-prob+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===dist-m===
 ====var====
@@ -64,7 +64,7 @@ the predicate pred.</pre>
 probability distribution for the possible values. A distribution is
 represented by a map from values to probabilities.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dist-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dist-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===join-with===
 ====function====
@@ -73,7 +73,7 @@ Usage: *(_join-with_ f dist1 dist2)*
 </pre>
 <pre> Returns the distribution of (f x y) with x from dist1 and y from dist2.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=join-with+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=join-with+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===normalize===
 ====function====
@@ -86,7 +86,7 @@ by multiplying with a normalization factor. If the map has a key
 it is used for normalization. Otherwise, the sum is calculated
 explicitly. The :total key is removed from the resulting distribution.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#67 Source] [http://www.google.com/codesearch?hl=en&lr=&q=normalize+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#67 Source] [http://www.google.com/codesearch?hl=en&lr=&q=normalize+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===prob===
 ====function====
@@ -97,7 +97,7 @@ Usage: *(_prob_ pred dist)*
 distribution dist, i.e. the sum of the probabilities of the values
 that satisfy pred.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#154 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prob+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#154 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prob+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===uniform===
 ====function====
@@ -107,4 +107,4 @@ Usage: *(_uniform_ coll)*
 <pre> Return a distribution in which each of the elements of coll
 has the same probability.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=uniform+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions/clojure/contrib/probabilities/finite_distributions.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=uniform+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

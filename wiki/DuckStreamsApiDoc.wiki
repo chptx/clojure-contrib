@@ -30,7 +30,7 @@ Usage: *(_file_ & args)*
 / and \ with File/separatorChar.  Replaces ~ at the start of the
 path with the user.home system property.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pwd===
 ====function====
@@ -40,7 +40,7 @@ Usage: *(_pwd_)*
 <pre> Returns current working directory as a String.  (Like UNIX 'pwd'.)
 Note: In Java, you cannot change the current working directory.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pwd+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pwd+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===read-lines===
 ====function====
@@ -50,7 +50,7 @@ Usage: *(_read-lines_ f)*
 <pre> Like clojure.core/line-seq but opens f with reader.  Automatically
 closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#169 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-lines+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#169 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-lines+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===reader===
 ====multimethod====
@@ -66,7 +66,7 @@ local file names.  Uses `*`default-encoding`*` as the text encoding.
  Should be used inside with-open to ensure the Reader is properly
 closed.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reader+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reader+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===slurp`*`===
 ====function====
@@ -75,7 +75,7 @@ Usage: *(_slurp`*`_ f)*
 </pre>
 <pre> Like clojure.core/slurp but opens f with reader.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#180 Source] [http://www.google.com/codesearch?hl=en&lr=&q=slurp*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#180 Source] [http://www.google.com/codesearch?hl=en&lr=&q=slurp*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===spit===
 ====function====
@@ -85,7 +85,7 @@ Usage: *(_spit_ f content)*
 <pre> Opposite of slurp.  Opens f with writer, writes content, then
 closes f.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#191 Source] [http://www.google.com/codesearch?hl=en&lr=&q=spit+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#191 Source] [http://www.google.com/codesearch?hl=en&lr=&q=spit+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-in-reader===
 ====macro====
@@ -94,7 +94,7 @@ Usage: *(_with-in-reader_ f & body)*
 </pre>
 <pre> Opens a PushbackReader on f, binds it to `*`in`*`, and evaluates body.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#213 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-in-reader+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#213 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-in-reader+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-out-writer===
 ====macro====
@@ -103,7 +103,7 @@ Usage: *(_with-out-writer_ f & body)*
 </pre>
 <pre> Opens a writer on f, binds it to `*`out`*`, and evalutes body.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-out-writer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-out-writer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===write-lines===
 ====function====
@@ -113,7 +113,7 @@ Usage: *(_write-lines_ f lines)*
 <pre> Writes lines (a seq) to f, separated by newlines.  f is opened with
 writer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#158 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-lines+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#158 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-lines+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===writer===
 ====multimethod====
@@ -130,4 +130,4 @@ local file names.
  Should be used inside with-open to ensure the Writer is properly
 closed.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=writer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams/clojure/contrib/duck_streams.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=writer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

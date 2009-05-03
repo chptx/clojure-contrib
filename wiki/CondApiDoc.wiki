@@ -35,4 +35,4 @@ binding-compatible with binding-form, or use :else as the test and don't
 refer to any parts of binding-form in the expr. (cond-let binding-form)
 returns nil.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/cond.clj#16 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cond-let+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/cond/clojure/contrib/cond.clj#16 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cond-let+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

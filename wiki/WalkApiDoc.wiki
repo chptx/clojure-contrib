@@ -28,7 +28,7 @@ Usage: *(_keywordize-keys_ m)*
 </pre>
 <pre> Recursively transforms all map keys from strings to keywords.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=keywordize-keys+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=keywordize-keys+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===macroexpand-all===
 ====function====
@@ -37,7 +37,7 @@ Usage: *(_macroexpand-all_ form)*
 </pre>
 <pre> Recursively performs all possible macroexpansions in form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=macroexpand-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=macroexpand-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===postwalk===
 ====function====
@@ -49,7 +49,7 @@ each sub-form, uses f's return value in place of the original.
 Recognizes all Clojure data structures except sorted-map-by.
 Consumes seqs as with doall.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===postwalk-demo===
 ====function====
@@ -59,7 +59,7 @@ Usage: *(_postwalk-demo_ form)*
 <pre> Demonstrates the behavior of postwalk by printing each form as it is
 walked.  Returns form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===postwalk-replace===
 ====function====
@@ -70,7 +70,7 @@ Usage: *(_postwalk-replace_ smap form)*
 values.  Like clojure/replace but works on any data structure.  Does
 replacement at the leaves of the tree first.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#111 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#111 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===prewalk===
 ====function====
@@ -79,7 +79,7 @@ Usage: *(_prewalk_ f form)*
 </pre>
 <pre> Like postwalk, but does pre-order traversal.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===prewalk-demo===
 ====function====
@@ -89,7 +89,7 @@ Usage: *(_prewalk-demo_ form)*
 <pre> Demonstrates the behavior of prewalk by printing each form as it is
 walked.  Returns form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===prewalk-replace===
 ====function====
@@ -100,7 +100,7 @@ Usage: *(_prewalk-replace_ smap form)*
 values.  Like clojure/replace but works on any data structure.  Does
 replacement at the root of the tree first.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stringify-keys===
 ====function====
@@ -109,7 +109,7 @@ Usage: *(_stringify-keys_ m)*
 </pre>
 <pre> Recursively transforms all map keys from keywords to strings.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stringify-keys+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stringify-keys+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===walk===
 ====function====
@@ -122,4 +122,4 @@ data structure of the same type, then applies outer to the result.
 Recognizes all Clojure data structures except sorted-map-by.
 Consumes seqs as with doall.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=walk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=walk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

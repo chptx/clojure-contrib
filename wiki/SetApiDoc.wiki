@@ -28,7 +28,7 @@ Usage: *(_proper-subset?_ set1 set2)*
 </pre>
 <pre> Is s1 a proper subset of s2?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=proper-subset?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set/clojure/contrib/set.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=proper-subset?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===proper-superset?===
 ====function====
@@ -37,7 +37,7 @@ Usage: *(_proper-superset?_ set1 set2)*
 </pre>
 <pre> Is s1 a proper superset of s2?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=proper-superset?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set/clojure/contrib/set.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=proper-superset?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===subset?===
 ====function====
@@ -46,7 +46,7 @@ Usage: *(_subset?_ set1 set2)*
 </pre>
 <pre> Is set1 a subset of set2?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=subset?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set/clojure/contrib/set.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=subset?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===superset?===
 ====function====
@@ -55,4 +55,4 @@ Usage: *(_superset?_ set1 set2)*
 </pre>
 <pre> Is set1 a superset of set2?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=superset?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/set/clojure/contrib/set.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=superset?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -28,7 +28,7 @@ Usage: *(_buffer-stream_ buf)*
 </pre>
 <pre> Returns an InputStream for a ByteBuffer, such as returned by mmap.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=buffer-stream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap/clojure/contrib/mmap.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=buffer-stream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===mmap===
 ====function====
@@ -37,7 +37,7 @@ Usage: *(_mmap_ f)*
 </pre>
 <pre> Memory-map the file named f.  Returns a ByteBuffer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap/clojure/contrib/mmap.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===slurp===
 ====function====
@@ -46,4 +46,4 @@ Usage: *(_slurp_ f)*
 </pre>
 <pre> Reads the file named by f and returns it as a string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=slurp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/mmap/clojure/contrib/mmap.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=slurp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -290,16 +290,16 @@ Public Variables and Functions:
 API Overview [PprintApiDoc here]
 <br>by Tom Faulhaber
 
-This module comprises two elements:
- # A pretty printer for Clojure data structures, implemented in the function "pprint"
- # A Common Lisp compatible format function, implemented as "cl-format" because Clojure is using the name "format" for its own format.
+<pre> This module comprises two elements:
+1) A pretty printer for Clojure data structures, implemented in the function "pprint"
+2) A Common Lisp compatible format function, implemented as "cl-format" because
+   Clojure is using the name "format" for its own format.
 
-The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format
-where the markdown README is currently displayed. I will be moving it into the 
-clojure.contrib wiki RSN.
-
+ The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format
+where the markdown README is currently displayed. I will be moving it into the
+clojure.contrib wiki RSN.</pre>
 Public Variables and Functions:
-[PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] 
+[PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#execute-format execute-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#init-navigator init-navigator] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] 
 
 ===probabilities.finite-distributions===
 API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
@@ -329,7 +329,7 @@ Public Variables and Functions:
 API Overview [ReplLnApiDoc here]
 
 Public Variables and Functions:
-[ReplLnApiDoc#stream-repl stream-repl] 
+[ReplLnApiDoc#print-repl-info print-repl-info] [ReplLnApiDoc#repl repl] [ReplLnApiDoc#repl-info repl-info] [ReplLnApiDoc#repl-prompt repl-prompt] [ReplLnApiDoc#set-repl-name set-repl-name] [ReplLnApiDoc#set-repl-prompt set-repl-prompt] [ReplLnApiDoc#stream-repl stream-repl] 
 
 ===repl-utils===
 API Overview [ReplUtilsApiDoc here]

@@ -29,7 +29,7 @@ Usage: *(_chomp_ s)*
 <pre> Removes all trailing newline \n or return \r characters from
 string.  Note: String.trim() is similar and faster.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chomp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chomp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===chop===
 ====function====
@@ -38,7 +38,7 @@ Usage: *(_chop_ s)*
 </pre>
 <pre> Removes the last character of string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===re-gsub===
 ====function====
@@ -52,7 +52,7 @@ Usage: *(_re-gsub_ regex replacement string)*
 match.
 </pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-gsub+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-gsub+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===re-partition===
 ====function====
@@ -69,7 +69,7 @@ string matches.
 
  Returns: ("" "abc" "123" "def")</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-partition+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-partition+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===re-split===
 ====function====
@@ -81,7 +81,7 @@ Usage: *(_re-split_ pattern string)
 strings.  Optional 'limit' argument is the maximum number of
 splits.  Like Perl's 'split'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-split+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-split+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===re-sub===
 ====function====
@@ -95,7 +95,7 @@ Usage: *(_re-sub_ regex replacement string)*
 the match.
 </pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-sub+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-sub+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===str-join===
 ====function====
@@ -105,4 +105,4 @@ Usage: *(_str-join_ separator sequence)*
 <pre> Returns a string of all elements in 'sequence', separated by
 'separator'.  Like Perl's 'join'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=str-join+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=str-join+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -29,7 +29,7 @@ Usage: *(_component?_ x)*
 </pre>
 <pre> Returns true if x is a java.awt.Component</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=component?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=component?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===constraint?===
 ====function====
@@ -38,7 +38,7 @@ Usage: *(_constraint?_ x)*
 </pre>
 <pre> Returns true if x is not a keyword-item or component</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=constraint?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=constraint?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===format-constraint===
 ====function====
@@ -49,7 +49,7 @@ Usage: *(_format-constraint_ c)*
 separated by commas. Constraints may be specified in Clojure using
 strings, keywords, vectors, maps, and/or sets.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===format-constraints===
 ====function====
@@ -59,7 +59,7 @@ Usage: *(_format-constraints_ & constraints)*
 <pre> Returns a string representing all the constraints for one keyword-item
 or component formatted for miglayout.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===parse-item-constraints===
 ====function====
@@ -71,4 +71,4 @@ Usage: *(_parse-item-constraints_ & args)*
 items to constraints strings. The value for :components is a vector of
 vectors each associating a component with its constraints string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-item-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-item-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

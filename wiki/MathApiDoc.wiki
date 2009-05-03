@@ -28,7 +28,7 @@ Usage: *(_abs_ n)*
 </pre>
 <pre> (abs n) is the absolute value of n</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=abs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=abs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===ceil===
 ====multimethod====
@@ -38,7 +38,7 @@ Usage: *(_ceil_ n)*
 <pre> (ceil n) returns the least integer greater than or equal to n.
 If n is an exact number, ceil returns an integer, otherwise a double.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ceil+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ceil+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===exact-integer-sqrt===
 ====function====
@@ -48,7 +48,7 @@ Usage: *(_exact-integer-sqrt_ n)*
 <pre> (exact-integer-sqrt n) expects a non-negative integer n, and returns `[`s r`]` where n = s^2+r and n < (s+1)^2.  In other words, it returns the floor of the square root and the 'remainder'.
 For example, (exact-integer-sqrt 15) is `[`3 6`]` because 15 = 3^2+6.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#162 Source] [http://www.google.com/codesearch?hl=en&lr=&q=exact-integer-sqrt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#162 Source] [http://www.google.com/codesearch?hl=en&lr=&q=exact-integer-sqrt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===expt===
 ====multimethod====
@@ -58,7 +58,7 @@ Usage: *(_expt_ base pow)*
 <pre> (expt base pow) is base to the pow power.
 Returns an exact number if the base is an exact number and the power is an integer, otherwise returns a double.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=expt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=expt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===floor===
 ====multimethod====
@@ -68,7 +68,7 @@ Usage: *(_floor_ n)*
 <pre> (floor n) returns the greatest integer less than or equal to n.
 If n is an exact number, floor returns an integer, otherwise a double.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#85 Source] [http://www.google.com/codesearch?hl=en&lr=&q=floor+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#85 Source] [http://www.google.com/codesearch?hl=en&lr=&q=floor+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===gcd===
 ====function====
@@ -77,7 +77,7 @@ Usage: *(_gcd_ a b)*
 </pre>
 <pre> (gcd a b) returns the greatest common divisor of a and b</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=gcd+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=gcd+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===lcm===
 ====function====
@@ -86,7 +86,7 @@ Usage: *(_lcm_ a b)*
 </pre>
 <pre> (lcm a b) returns the least common multiple of a and b</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#125 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lcm+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#125 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lcm+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===round===
 ====multimethod====
@@ -96,7 +96,7 @@ Usage: *(_round_ n)*
 <pre> (round n) rounds to the nearest integer.
 round always returns an integer.  Rounds up for values exactly in between two integers.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=round+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=round+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===sqrt===
 ====multimethod====
@@ -105,4 +105,4 @@ Usage: *(_sqrt_ n)*
 </pre>
 <pre> Square root, but returns exact number if possible.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#171 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sqrt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math/clojure/contrib/math.clj#171 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sqrt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
