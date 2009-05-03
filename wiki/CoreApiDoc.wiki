@@ -9,11 +9,16 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for core=
+<br>by Laurent Petit (and others)
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.core))
 }}}
+==Overview==
+<pre> Functions/macros variants of the ones that can be found in clojure.core  
+(note to other contrib members: feel free to add to this lib)</pre>
 
 
 ==Public Variables and Functions==

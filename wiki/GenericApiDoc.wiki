@@ -9,11 +9,17 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for generic=
+<br>by Konrad Hinsen
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.generic))
 }}}
+==Overview==
+<pre> Generic interface support code 
+NOTE: This library is VERY experimental. It WILL change 
+      significantly with future release.</pre>
 
 
 ==Public Variables and Functions==
@@ -26,7 +32,19 @@ Variables and Functions in generic.functor:
 Variables and Functions in generic.math-functions:
 [GenericApiDoc#approx= approx=] 
 
+==Namespace clojure.contrib.generic.arithmetic==
+<pre> Generic arithmetic interface 
+This library defines generic versions of + - `*` / as multimethods 
+that can be defined for any type. The minimal required  
+implementations for a type are binary + and `*` plus unary - and /. 
+Everything else is derived from these automatically. Explicit 
+binary definitions for - and / can be provided for 
+efficiency reasons.</pre>
 ==Namespace clojure.contrib.generic.collection==
+<pre> Generic arithmetic interface 
+This library defines generic versions of common 
+collection-related functions as multimethods that can be 
+defined for any type.</pre>
 ----
 ===assoc===
 ====multimethod====
@@ -88,7 +106,13 @@ Usage: *(_seq_ s)*
 <pre> Returns a seq on the object s.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#106 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+==Namespace clojure.contrib.generic.comparison==
+<pre> Generic comparison interface 
+This library defines generic versions of = < > <= >= zero? 
+as multimethods that can be defined for any type. Of the 
+greater/less-than relations, types must minimally implement >.</pre>
 ==Namespace clojure.contrib.generic.functor==
+<pre> Generic functor interface (fmap)</pre>
 ----
 ===fmap===
 ====multimethod====
@@ -100,6 +124,10 @@ a structure of the same kind.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/functor/clojure/contrib/generic/functor.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.generic.math-functions==
+<pre> Generic math function interface 
+This library defines generic versions of common mathematical 
+functions such as sqrt or sin as multimethods that can be 
+defined for any type.</pre>
 ----
 ===approx====
 ====function====

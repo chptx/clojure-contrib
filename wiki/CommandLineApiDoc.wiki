@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for command-line=
+<br>by Chris Houser
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.command-line))
 }}}
+==Overview==
+<pre> Process command-line arguments according to a given cmdspec</pre>
 
 
 ==Public Variables and Functions==

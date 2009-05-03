@@ -9,11 +9,17 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for probabilities.finite-distributions=
+<br>by Konrad Hinsen
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.probabilities.finite-distributions))
 }}}
+==Overview==
+<pre> Finite probability distributions 
+This library defines a monad for combining finite probability 
+distributions.</pre>
 
 
 ==Public Variables and Functions==

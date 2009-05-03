@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for cond=
+<br>by Stephen C. Gilardi
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.cond))
 }}}
+==Overview==
+<pre> Extensions to the basic cond function.</pre>
 
 
 ==Public Variables and Functions==

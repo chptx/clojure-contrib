@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for types=
+<br>by Konrad Hinsen
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.types))
 }}}
+==Overview==
+<pre> General and algebraic data types</pre>
 
 
 ==Public Variables and Functions==

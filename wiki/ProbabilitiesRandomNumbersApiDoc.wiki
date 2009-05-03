@@ -9,11 +9,24 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for probabilities.random-numbers=
+<br>by Konrad Hinsen
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.probabilities.random-numbers))
 }}}
+==Overview==
+<pre> Random number streams 
+ 
+ This library provides random number generators with a common 
+stream interface. They all produce pseudo-random numbers that are 
+uniformly distributed in the interval `[`0, 1), i.e. 0 is a 
+possible value but 1 isn't. For transformations to other 
+distributions, see clojure.contrib.probabilities.monte-carlo. 
+ 
+ At the moment, the only generator provided is a rather simple 
+linear congruential generator.</pre>
 
 
 ==Public Variables and Functions==

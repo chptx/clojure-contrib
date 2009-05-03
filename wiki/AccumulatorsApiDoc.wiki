@@ -9,11 +9,16 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for accumulators=
+<br>by Konrad Hinsen
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.accumulators))
 }}}
+==Overview==
+<pre> A generic accumulator interface and implementations of various 
+accumulators.</pre>
 
 
 ==Public Variables and Functions==

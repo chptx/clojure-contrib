@@ -16,6 +16,7 @@ namespace.
 [ClasspathApiDoc classpath]<br/>
 [CombinatoricsApiDoc combinatorics]<br/>
 [CommandLineApiDoc command-line]<br/>
+[ComplexNumbersApiDoc complex-numbers]<br/>
 [CondApiDoc cond]<br/>
 [CoreApiDoc core]<br/>
 [DataflowApiDoc dataflow]<br/>
