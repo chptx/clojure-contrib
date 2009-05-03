@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.generic))
 }}}
 ==Overview==
-<pre> Generic interface support code 
+<pre>Generic interface support code 
 NOTE: This library is VERY experimental. It WILL change 
       significantly with future release.</pre>
 
@@ -33,7 +33,7 @@ Variables and Functions in generic.math-functions:
 [GenericApiDoc#approx= approx=] 
 
 ==Namespace clojure.contrib.generic.arithmetic==
-<pre> Generic arithmetic interface 
+<pre>Generic arithmetic interface 
 This library defines generic versions of + - `*` / as multimethods 
 that can be defined for any type. The minimal required  
 implementations for a type are binary + and `*` plus unary - and /. 
@@ -41,7 +41,7 @@ Everything else is derived from these automatically. Explicit
 binary definitions for - and / can be provided for 
 efficiency reasons.</pre>
 ==Namespace clojure.contrib.generic.collection==
-<pre> Generic arithmetic interface 
+<pre>Generic arithmetic interface 
 This library defines generic versions of common 
 collection-related functions as multimethods that can be 
 defined for any type.</pre>
@@ -51,7 +51,7 @@ defined for any type.</pre>
 <pre>
 Usage: *(_assoc_ coll & key-val-pairs)*
 </pre>
-<pre> Returns a new collection in which the values corresponding to the 
+<pre>Returns a new collection in which the values corresponding to the 
 given keys are updated by the given values. Each type of collection 
 can have specific restrictions on the possible keys.</pre>
 
@@ -62,7 +62,7 @@ can have specific restrictions on the possible keys.</pre>
 <pre>
 Usage: *(_dissoc_ coll & keys)*
 </pre>
-<pre> Returns a new collection in which the entries corresponding to the 
+<pre>Returns a new collection in which the entries corresponding to the 
 given keys are removed. Each type of collection can have specific 
 restrictions on the possible keys.</pre>
 
@@ -73,7 +73,7 @@ restrictions on the possible keys.</pre>
 <pre>
 Usage: *(_empty_ coll)*
 </pre>
-<pre> Returns an empty collection of the same kind as the argument</pre>
+<pre>Returns an empty collection of the same kind as the argument</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#65 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -83,7 +83,7 @@ Usage: *(_empty_ coll)*
 Usage: *(_get_ coll key)
        (_get_ coll key not-found)*
 </pre>
-<pre> Returns the element of coll referred to by key. Each type of collection 
+<pre>Returns the element of coll referred to by key. Each type of collection 
 can have specific restrictions on the possible keys.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#77 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -93,7 +93,7 @@ can have specific restrictions on the possible keys.</pre>
 <pre>
 Usage: *(_into_ to from)*
 </pre>
-<pre> Returns a new coll consisting of to-coll with all of the items of 
+<pre>Returns a new coll consisting of to-coll with all of the items of 
 from-coll conjoined.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#92 Source] [http://www.google.com/codesearch?hl=en&lr=&q=into+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -103,28 +103,28 @@ from-coll conjoined.</pre>
 <pre>
 Usage: *(_seq_ s)*
 </pre>
-<pre> Returns a seq on the object s.</pre>
+<pre>Returns a seq on the object s.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#106 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.generic.comparison==
-<pre> Generic comparison interface 
+<pre>Generic comparison interface 
 This library defines generic versions of = < > <= >= zero? 
 as multimethods that can be defined for any type. Of the 
 greater/less-than relations, types must minimally implement >.</pre>
 ==Namespace clojure.contrib.generic.functor==
-<pre> Generic functor interface (fmap)</pre>
+<pre>Generic functor interface (fmap)</pre>
 ----
 ===fmap===
 ====multimethod====
 <pre>
 Usage: *(_fmap_ f s)*
 </pre>
-<pre> Applies function f to each item in the data structure s and returns 
+<pre>Applies function f to each item in the data structure s and returns 
 a structure of the same kind.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/functor/clojure/contrib/generic/functor.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.generic.math-functions==
-<pre> Generic math function interface 
+<pre>Generic math function interface 
 This library defines generic versions of common mathematical 
 functions such as sqrt or sin as multimethods that can be 
 defined for any type.</pre>
@@ -134,7 +134,7 @@ defined for any type.</pre>
 <pre>
 Usage: *(_approx=_ x y eps)*
 </pre>
-<pre> Return true if the absolute value of the difference between x and y 
+<pre>Return true if the absolute value of the difference between x and y 
 is less than eps</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions/clojure/contrib/generic/math_functions.clj#94 Source] [http://www.google.com/codesearch?hl=en&lr=&q=approx=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

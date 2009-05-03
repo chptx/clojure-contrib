@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.core))
 }}}
 ==Overview==
-<pre> Functions/macros variants of the ones that can be found in clojure.core  
+<pre>Functions/macros variants of the ones that can be found in clojure.core  
 (note to other contrib members: feel free to add to this lib)</pre>
 
 
@@ -32,7 +32,7 @@ Shortcuts:
 Usage: *(_-?>_ x form)
        (_-?>_ x form & forms)*
 </pre>
-<pre> Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation). 
+<pre>Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation). 
 Examples : 
 (-?> "foo" .toUpperCase (.substring 1)) returns "OO" 
 (-?> nil .toUpperCase (.substring 1)) returns nil 
@@ -46,7 +46,7 @@ Examples :
 Usage: *(_.?._ x form)
        (_.?._ x form & forms)*
 </pre>
-<pre> Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation). 
+<pre>Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation). 
 Examples : 
 (.?. "foo" .toUpperCase (.substring 1)) returns "OO" 
 (.?. nil .toUpperCase (.substring 1)) returns nil 

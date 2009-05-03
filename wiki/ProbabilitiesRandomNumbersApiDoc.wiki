@@ -17,15 +17,15 @@ Usage:
   (:use clojure.contrib.probabilities.random-numbers))
 }}}
 ==Overview==
-<pre> Random number streams 
+<pre>Random number streams 
  
- This library provides random number generators with a common 
+This library provides random number generators with a common 
 stream interface. They all produce pseudo-random numbers that are 
 uniformly distributed in the interval `[`0, 1), i.e. 0 is a 
 possible value but 1 isn't. For transformations to other 
 distributions, see clojure.contrib.probabilities.monte-carlo. 
  
- At the moment, the only generator provided is a rather simple 
+At the moment, the only generator provided is a rather simple 
 linear congruential generator.</pre>
 
 
@@ -39,13 +39,13 @@ Shortcuts:
 <pre>
 Usage: *(_lcg_ modulus multiplier increment seed)*
 </pre>
-<pre> Create a linear congruential generator</pre>
+<pre>Create a linear congruential generator</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random_numbers/clojure/contrib/probabilities/random_numbers.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lcg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===rand-stream===
 ====var====
-<pre> A random number stream based on clojure.core/rand. Note that this 
+<pre>A random number stream based on clojure.core/rand. Note that this 
 generator uses an internal mutable state. The state is thus not stored 
 in the stream object and cannot be restored.</pre>
 

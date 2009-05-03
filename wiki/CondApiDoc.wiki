@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.cond))
 }}}
 ==Overview==
-<pre> Extensions to the basic cond function.</pre>
+<pre>Extensions to the basic cond function.</pre>
 
 
 ==Public Variables and Functions==
@@ -30,7 +30,7 @@ Shortcuts:
 <pre>
 Usage: *(_cond-let_ bindings & clauses)*
 </pre>
-<pre> Takes a binding-form and a set of test/expr pairs. Evaluates each test 
+<pre>Takes a binding-form and a set of test/expr pairs. Evaluates each test 
 one at a time. If a test returns logical true, cond-let evaluates and 
 returns expr with binding-form bound to the value of test and doesn't 
 evaluate any of the other tests or exprs. To provide a default value 

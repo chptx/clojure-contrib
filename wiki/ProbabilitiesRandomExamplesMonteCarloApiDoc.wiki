@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.probabilities.random.examples-monte-carlo))
 }}}
 ==Overview==
-<pre> Examples for monte carlo methods</pre>
+<pre>Examples for monte carlo methods</pre>
 
 
 ==Public Variables and Functions==

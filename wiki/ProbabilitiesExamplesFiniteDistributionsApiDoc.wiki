@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.probabilities.examples-finite-distributions))
 }}}
 ==Overview==
-<pre> Examples for finite probability distribution</pre>
+<pre>Examples for finite probability distribution</pre>
 
 
 ==Public Variables and Functions==

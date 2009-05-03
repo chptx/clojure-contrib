@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_all-greatest_ & args)*
 </pre>
-<pre> Returns all the greatest elements.</pre>
+<pre>Returns all the greatest elements.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least/clojure/contrib/greatest_least.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-greatest+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -35,7 +35,7 @@ Usage: *(_all-greatest_ & args)*
 <pre>
 Usage: *(_all-greatest-by_ f & args)*
 </pre>
-<pre> Return all the elements for which f yields the greatest value.</pre>
+<pre>Return all the elements for which f yields the greatest value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least/clojure/contrib/greatest_least.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-greatest-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -44,7 +44,7 @@ Usage: *(_all-greatest-by_ f & args)*
 <pre>
 Usage: *(_all-least_ & args)*
 </pre>
-<pre> Returns all the least elements.</pre>
+<pre>Returns all the least elements.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least/clojure/contrib/greatest_least.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-least+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -53,7 +53,7 @@ Usage: *(_all-least_ & args)*
 <pre>
 Usage: *(_all-least-by_ f & args)*
 </pre>
-<pre> Return all the elements for which f yields the least value.</pre>
+<pre>Return all the elements for which f yields the least value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least/clojure/contrib/greatest_least.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=all-least-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -62,7 +62,7 @@ Usage: *(_all-least-by_ f & args)*
 <pre>
 Usage: *(_greatest_ & args)*
 </pre>
-<pre> Return the greatest argument.</pre>
+<pre>Return the greatest argument.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least/clojure/contrib/greatest_least.clj#15 Source] [http://www.google.com/codesearch?hl=en&lr=&q=greatest+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -71,7 +71,7 @@ Usage: *(_greatest_ & args)*
 <pre>
 Usage: *(_greatest-by_ f & args)*
 </pre>
-<pre> Return the argument for which f yields the greatest value.</pre>
+<pre>Return the argument for which f yields the greatest value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least/clojure/contrib/greatest_least.clj#10 Source] [http://www.google.com/codesearch?hl=en&lr=&q=greatest-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -80,7 +80,7 @@ Usage: *(_greatest-by_ f & args)*
 <pre>
 Usage: *(_least_ & args)*
 </pre>
-<pre> Return the smallest element.</pre>
+<pre>Return the smallest element.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least/clojure/contrib/greatest_least.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=least+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -89,6 +89,6 @@ Usage: *(_least_ & args)*
 <pre>
 Usage: *(_least-by_ f & args)*
 </pre>
-<pre> Return the argument for which f yields the smallest value.</pre>
+<pre>Return the argument for which f yields the smallest value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/greatest_least/clojure/contrib/greatest_least.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=least-by+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

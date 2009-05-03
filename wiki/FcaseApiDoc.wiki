@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_case_ test-value & clauses)*
 </pre>
-<pre> Like cond, but test-value is compared against the value of each 
+<pre>Like cond, but test-value is compared against the value of each 
 test expression with =.  If they are equal, executes the "body" 
 expression.  Optional last expression is executed if none of the 
 test expressions match.</pre>
@@ -38,28 +38,28 @@ test expressions match.</pre>
 <pre>
 Usage: *(_fcase_ compare-fn case-value & test-expr-clauses)*
 </pre>
-<pre> Generic switch/case macro.  'fcase' is short for 'function case'. 
+<pre>Generic switch/case macro.  'fcase' is short for 'function case'. 
  
- The 'compare-fn' is a fn of two arguments. 
+The 'compare-fn' is a fn of two arguments. 
  
- The 'test-expr-clauses' are value-expression pairs without 
+The 'test-expr-clauses' are value-expression pairs without 
 surrounding parentheses, like in Clojure's 'cond'. 
  
- The 'case-value' is evaluated once and cached.  Then, 'compare-fn' 
+The 'case-value' is evaluated once and cached.  Then, 'compare-fn' 
 is called once for each clause, with the clause's test value as its 
 first argument and 'case-value' as its second argument.  If 
 'compare-fn' returns logical true, the clause's expression is 
 evaluated and returned.  If 'compare-fn' returns false/nil, we go to 
 the next test value. 
  
- If 'test-expr-clauses' contains an odd number of items, the last 
+If 'test-expr-clauses' contains an odd number of items, the last 
 item is the default expression evaluated if no case-value matches. 
 If there is no default expression and no case-value matches, fcase 
 returns nil. 
  
- See specific forms of this macro in 'case' and 're-case'. 
+See specific forms of this macro in 'case' and 're-case'. 
  
- The test expressions in 'fcase' are always evaluated linearly, in 
+The test expressions in 'fcase' are always evaluated linearly, in 
 order.  For a large number of case expressions it may be more 
 efficient to use a hash lookup.</pre>
 
@@ -70,7 +70,7 @@ efficient to use a hash lookup.</pre>
 <pre>
 Usage: *(_in-case_ test-value & clauses)*
 </pre>
-<pre> Like case, but test expressions are sequences.  The test expression 
+<pre>Like case, but test expressions are sequences.  The test expression 
 is true if any item in the sequence is equal (tested with '=') to 
 the test value.</pre>
 
@@ -81,7 +81,7 @@ the test value.</pre>
 <pre>
 Usage: *(_instance-case_ test-value & clauses)*
 </pre>
-<pre> Like case, but the test expressions are Java class names, tested with 
+<pre>Like case, but the test expressions are Java class names, tested with 
 'instance?'.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase/clojure/contrib/fcase.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=instance-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -91,7 +91,7 @@ Usage: *(_instance-case_ test-value & clauses)*
 <pre>
 Usage: *(_re-case_ test-value & clauses)*
 </pre>
-<pre> Like case, but the test expressions are regular expressions, tested 
+<pre>Like case, but the test expressions are regular expressions, tested 
 with re-find.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase/clojure/contrib/fcase.clj#75 Source] [http://www.google.com/codesearch?hl=en&lr=&q=re-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

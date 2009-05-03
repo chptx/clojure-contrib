@@ -28,7 +28,7 @@ Usage: *(_create-repl-server_ port backlog bind-addr)
        (_create-repl-server_ port backlog)
        (_create-repl-server_ port)*
 </pre>
-<pre> create a repl on a socket</pre>
+<pre>create a repl on a socket</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket/clojure/contrib/server_socket.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-repl-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -39,12 +39,12 @@ Usage: *(_create-server_ port fun backlog bind-addr)
        (_create-server_ port fun backlog)
        (_create-server_ port fun)*
 </pre>
-<pre> Creates a server socket on port. Upon accept, a new thread is 
+<pre>Creates a server socket on port. Upon accept, a new thread is 
 created which calls: 
  
- (fun input-stream output-stream) 
+(fun input-stream output-stream) 
  
- Optional arguments support specifying a listen backlog and binding 
+Optional arguments support specifying a listen backlog and binding 
 to a specific endpoint.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket/clojure/contrib/server_socket.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

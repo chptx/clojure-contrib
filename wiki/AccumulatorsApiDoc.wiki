@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.accumulators))
 }}}
 ==Overview==
-<pre> A generic accumulator interface and implementations of various 
+<pre>A generic accumulator interface and implementations of various 
 accumulators.</pre>
 
 
@@ -31,7 +31,7 @@ Shortcuts:
 <pre>
 Usage: *(_add_ acc item)*
 </pre>
-<pre> Add item to the accumulator acc. The exact meaning of adding an 
+<pre>Add item to the accumulator acc. The exact meaning of adding an 
 an item depends on the type of the accumulator.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#30 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -41,7 +41,7 @@ an item depends on the type of the accumulator.</pre>
 <pre>
 Usage: *(_add-items_ acc items)*
 </pre>
-<pre> Add all elements of a collection coll to the accumulator acc.</pre>
+<pre>Add all elements of a collection coll to the accumulator acc.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-items+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -50,21 +50,21 @@ Usage: *(_add-items_ acc items)*
 <pre>
 Usage: *(_combine_ & accs)*
 </pre>
-<pre> Combine the values of the accumulators acc1 and acc2 into a 
+<pre>Combine the values of the accumulators acc1 and acc2 into a 
 single accumulator of the same type.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#41 Source] [http://www.google.com/codesearch?hl=en&lr=&q=combine+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-counter===
 ====var====
-<pre> An empty counter accumulator. Its value is a map that stores for 
+<pre>An empty counter accumulator. Its value is a map that stores for 
 every item the number of times it was added.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#270 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-counter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-counter-with-total===
 ====var====
-<pre> An empty counter-with-total accumulator. It works like the counter 
+<pre>An empty counter-with-total accumulator. It works like the counter 
 accumulator, except that the total number of items added is stored as the 
 value of the key :total.</pre>
 
@@ -72,70 +72,70 @@ value of the key :total.</pre>
 ----
 ===empty-list===
 ====var====
-<pre> An empty list accumulator. Adding an item appends it at the beginning.</pre>
+<pre>An empty list accumulator. Adding an item appends it at the beginning.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#87 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-list+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-map===
 ====var====
-<pre> An empty map accumulator. Items to be added must be `[`key value`]` pairs.</pre>
+<pre>An empty map accumulator. Items to be added must be `[`key value`]` pairs.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-maximum===
 ====var====
-<pre> An empty maximum accumulator. Only numbers can be added.</pre>
+<pre>An empty maximum accumulator. Only numbers can be added.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#184 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-maximum+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-mean-variance===
 ====var====
-<pre> An empty mean-variance accumulator, combining sample mean and 
+<pre>An empty mean-variance accumulator, combining sample mean and 
 sample variance. Only numbers can be added.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#231 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-mean-variance+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-min-max===
 ====var====
-<pre> An empty min-max accumulator, combining minimum and maximum. 
+<pre>An empty min-max accumulator, combining minimum and maximum. 
 Only numbers can be added.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-min-max+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-minimum===
 ====var====
-<pre> An empty minimum accumulator. Only numbers can be added.</pre>
+<pre>An empty minimum accumulator. Only numbers can be added.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#190 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-minimum+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-product===
 ====var====
-<pre> An empty sum accumulator. Only numbers can be added.</pre>
+<pre>An empty sum accumulator. Only numbers can be added.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#176 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-product+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-queue===
 ====var====
-<pre> An empty queue accumulator. Adding an item appends it at the end.</pre>
+<pre>An empty queue accumulator. Adding an item appends it at the end.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#101 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-queue+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-set===
 ====var====
-<pre> An empty set accumulator.</pre>
+<pre>An empty set accumulator.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#115 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-set+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-string===
 ====var====
-<pre> An empty string accumulator. Adding an item (string or character) 
+<pre>An empty string accumulator. Adding an item (string or character) 
 appends it at the end.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#129 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-string+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty-sum===
 ====var====
-<pre> An empty sum accumulator. Only numbers can be added.</pre>
+<pre>An empty sum accumulator. Only numbers can be added.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#173 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-sum+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -144,7 +144,7 @@ appends it at the end.</pre>
 <pre>
 Usage: *(_empty-tuple_ empty-accumulators)*
 </pre>
-<pre> Returns an accumulator tuple with the supplied empty-accumulators 
+<pre>Returns an accumulator tuple with the supplied empty-accumulators 
 as its value. Accumulator tuples consist of several accumulators that 
 work in parallel. Added items must be sequences whose number of elements 
 matches the number of sub-accumulators.</pre>
@@ -153,8 +153,8 @@ matches the number of sub-accumulators.</pre>
 ----
 ===empty-vector===
 ====var====
-<pre> An empty vector accumulator. Adding an item appends it at the end.</pre>
+<pre>An empty vector accumulator. Adding an item appends it at the end.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/clojure/contrib/accumulators.clj#73 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty-vector+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.accumulators.examples==
-<pre> Examples for using accumulators</pre>
+<pre>Examples for using accumulators</pre>

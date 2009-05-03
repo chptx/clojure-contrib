@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_generate-documentation_ libs)*
 </pre>
-<pre> Returns a string which is the HTML documentation for the libraries 
+<pre>Returns a string which is the HTML documentation for the libraries 
 named by libs. Libs is a vector of symbols identifying Clojure 
 libraries.</pre>
 
@@ -37,7 +37,7 @@ libraries.</pre>
 <pre>
 Usage: *(_generate-documentation-to-file_ path libs)*
 </pre>
-<pre> Calls generate-documentation on the libraries named by libs and 
+<pre>Calls generate-documentation on the libraries named by libs and 
 emits the generated HTML to the path named by path.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs/clojure/contrib/gen_html_docs.clj#452 Source] [http://www.google.com/codesearch?hl=en&lr=&q=generate-documentation-to-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

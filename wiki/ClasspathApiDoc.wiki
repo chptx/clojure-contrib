@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.classpath))
 }}}
 ==Overview==
-<pre> Utilities for dealing with the JVM's classpath</pre>
+<pre>Utilities for dealing with the JVM's classpath</pre>
 
 
 ==Public Variables and Functions==
@@ -30,7 +30,7 @@ Shortcuts:
 <pre>
 Usage: *(_classpath_)*
 </pre>
-<pre> Returns a sequence of File objects of the elements on CLASSPATH.</pre>
+<pre>Returns a sequence of File objects of the elements on CLASSPATH.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -39,7 +39,7 @@ Usage: *(_classpath_)*
 <pre>
 Usage: *(_classpath-directories_)*
 </pre>
-<pre> Returns a sequence of File objects for the directories on classpath.</pre>
+<pre>Returns a sequence of File objects for the directories on classpath.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#30 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath-directories+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -48,6 +48,6 @@ Usage: *(_classpath-directories_)*
 <pre>
 Usage: *(_classpath-jarfiles_)*
 </pre>
-<pre> Returns a sequence of JarFile objects for the JAR files on classpath.</pre>
+<pre>Returns a sequence of JarFile objects for the JAR files on classpath.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/classpath/clojure/contrib/classpath.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=classpath-jarfiles+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

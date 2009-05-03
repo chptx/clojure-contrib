@@ -17,12 +17,12 @@ Usage:
   (:use clojure.contrib.auto-agent))
 }}}
 ==Overview==
-<pre> This is superficially similar to Ken Tilton's "Cells" library for 
+<pre>This is superficially similar to Ken Tilton's "Cells" library for 
 Common Lisp.  But Cells is single-threaded and synchronous.  This 
 version is built on Clojure agents, so it is multi-threaded and 
 asynchronous. 
  
- An auto-agent is an agent whose value is the result of an 
+An auto-agent is an agent whose value is the result of an 
 expression.  That expression can include other mutable Clojure 
 types -- agents, atoms, and refs -- dereferenced with "deref" or 
 "@".  Whenever one of those derefernced things changes, the 
@@ -39,7 +39,7 @@ Shortcuts:
 <pre>
 Usage: *(_auto-agent_ expr)*
 </pre>
-<pre> Creates an agent whose value is the result of evaluating expr. 
+<pre>Creates an agent whose value is the result of evaluating expr. 
 Whenever one of the agents/atoms/refs dererenced within expr 
 changes, expr is reevaluated and this agent's state is set to its 
 new value.</pre>

@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_emit_ x & opts)*
 </pre>
-<pre> Prints an <?xml?> declaration line, and then calls emit-element</pre>
+<pre>Prints an <?xml?> declaration line, and then calls emit-element</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml/clojure/contrib/lazy_xml.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=emit+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -35,7 +35,7 @@ Usage: *(_emit_ x & opts)*
 <pre>
 Usage: *(_emit-element_ e & opts)*
 </pre>
-<pre> Recursively prints as XML text the element struct e.  To have it 
+<pre>Recursively prints as XML text the element struct e.  To have it 
 print extra whitespace like clojure.xml/emit, use the :pad true 
 option.</pre>
 
@@ -48,7 +48,7 @@ Usage: *(_parse-seq_ s)
        (_parse-seq_ s startparse)
        (_parse-seq_ s startparse queue-size)*
 </pre>
-<pre> Parses the source s, which can be a File, InputStream or String 
+<pre>Parses the source s, which can be a File, InputStream or String 
 naming a URI. Returns a lazy sequence of maps with two or more of 
 the keys :type, :name, :attrs, and :str. Other SAX-compatible 
 parsers can be supplied by passing startparse, a fn taking a source 
@@ -66,7 +66,7 @@ this superior pull parser will be used.</pre>
 Usage: *(_parse-trim_ s)
        (_parse-trim_ s startparse queue-size)*
 </pre>
-<pre> Parses the source s, which can be a File, InputStream or String 
+<pre>Parses the source s, which can be a File, InputStream or String 
 naming a URI. Returns a lazy tree of the clojure.xml/element 
 struct-map, which has the keys :tag, :attrs, and :content and 
 accessor fns tag, attrs, and content, with the whitespace trimmed 

@@ -44,7 +44,7 @@ clojure.contrib is copyright 2008-2009 Rich Hickey and the various contributers.
 API Overview [AccumulatorsApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> A generic accumulator interface and implementations of various 
+<pre>A generic accumulator interface and implementations of various 
 accumulators.</pre>
 Public Variables and Functions:
 [AccumulatorsApiDoc#add add] [AccumulatorsApiDoc#add-items add-items] [AccumulatorsApiDoc#combine combine] [AccumulatorsApiDoc#empty-counter empty-counter] [AccumulatorsApiDoc#empty-counter-with-total empty-counter-with-total] [AccumulatorsApiDoc#empty-list empty-list] [AccumulatorsApiDoc#empty-map empty-map] [AccumulatorsApiDoc#empty-maximum empty-maximum] [AccumulatorsApiDoc#empty-mean-variance empty-mean-variance] [AccumulatorsApiDoc#empty-min-max empty-min-max] [AccumulatorsApiDoc#empty-minimum empty-minimum] [AccumulatorsApiDoc#empty-product empty-product] [AccumulatorsApiDoc#empty-queue empty-queue] [AccumulatorsApiDoc#empty-set empty-set] [AccumulatorsApiDoc#empty-string empty-string] [AccumulatorsApiDoc#empty-sum empty-sum] [AccumulatorsApiDoc#empty-tuple empty-tuple] [AccumulatorsApiDoc#empty-vector empty-vector] 
@@ -53,7 +53,7 @@ Public Variables and Functions:
 API Overview [AgentUtilsApiDoc here]
 <br>by Christophe Grande
 
-<pre> Miscellaneous agent utilities 
+<pre>Miscellaneous agent utilities 
 (note to other contrib members: feel free to add to this lib)</pre>
 Public Variables and Functions:
 [AgentUtilsApiDoc#capture-and-send capture-and-send] 
@@ -62,12 +62,12 @@ Public Variables and Functions:
 API Overview [AutoAgentApiDoc here]
 <br>by Stuart Sierra
 
-<pre> This is superficially similar to Ken Tilton's "Cells" library for 
+<pre>This is superficially similar to Ken Tilton's "Cells" library for 
 Common Lisp.  But Cells is single-threaded and synchronous.  This 
 version is built on Clojure agents, so it is multi-threaded and 
 asynchronous. 
  
- An auto-agent is an agent whose value is the result of an 
+An auto-agent is an agent whose value is the result of an 
 expression.  That expression can include other mutable Clojure 
 types -- agents, atoms, and refs -- dereferenced with "deref" or 
 "@".  Whenever one of those derefernced things changes, the 
@@ -79,7 +79,7 @@ Public Variables and Functions:
 API Overview [ClasspathApiDoc here]
 <br>by Stuart Sierra
 
-<pre> Utilities for dealing with the JVM's classpath</pre>
+<pre>Utilities for dealing with the JVM's classpath</pre>
 Public Variables and Functions:
 [ClasspathApiDoc#classpath classpath] [ClasspathApiDoc#classpath-directories classpath-directories] [ClasspathApiDoc#classpath-jarfiles classpath-jarfiles] 
 
@@ -87,7 +87,7 @@ Public Variables and Functions:
 API Overview [CombinatoricsApiDoc here]
 <br>by Mark Engelberg
 
-<pre> Efficient, functional algorithms for generating lazy 
+<pre>Efficient, functional algorithms for generating lazy 
 sequences for common combinatorial functions. (See the source code  
 for a longer description.)</pre>
 Public Variables and Functions:
@@ -97,7 +97,7 @@ Public Variables and Functions:
 API Overview [CommandLineApiDoc here]
 <br>by Chris Houser
 
-<pre> Process command-line arguments according to a given cmdspec</pre>
+<pre>Process command-line arguments according to a given cmdspec</pre>
 Public Variables and Functions:
 [CommandLineApiDoc#with-command-line with-command-line] 
 
@@ -105,14 +105,14 @@ Public Variables and Functions:
 API Overview [ComplexNumbersApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Complex numbers 
+<pre>Complex numbers 
 NOTE: This library is in evolution. 
       It may change with future releases.</pre>
 ===cond===
 API Overview [CondApiDoc here]
 <br>by Stephen C. Gilardi
 
-<pre> Extensions to the basic cond function.</pre>
+<pre>Extensions to the basic cond function.</pre>
 Public Variables and Functions:
 [CondApiDoc#cond-let cond-let] 
 
@@ -120,7 +120,7 @@ Public Variables and Functions:
 API Overview [CoreApiDoc here]
 <br>by Laurent Petit (and others)
 
-<pre> Functions/macros variants of the ones that can be found in clojure.core  
+<pre>Functions/macros variants of the ones that can be found in clojure.core  
 (note to other contrib members: feel free to add to this lib)</pre>
 Public Variables and Functions:
 [CoreApiDoc#-?> -?>] [CoreApiDoc#.?. .?.] 
@@ -201,7 +201,7 @@ Public Variables and Functions:
 API Overview [GenericApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Generic interface support code 
+<pre>Generic interface support code 
 NOTE: This library is VERY experimental. It WILL change 
       significantly with future release.</pre>
 Variables and Functions in generic.collection:
@@ -283,7 +283,7 @@ Public Variables and Functions:
 API Overview [MacrosApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Various small macros</pre>
+<pre>Various small macros</pre>
 Public Variables and Functions:
 [MacrosApiDoc#const const] [MacrosApiDoc#letfn- letfn-] 
 
@@ -315,7 +315,7 @@ Public Variables and Functions:
 API Overview [MonadsApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> This library contains the most commonly used monads as well 
+<pre>This library contains the most commonly used monads as well 
 as macros for defining and using monads and useful monadic 
 functions.</pre>
 See also: [http://onclojure.com/2009/03/05/a-monad-tutorial-for-clojure-programmers-part-1/ Monad tutorial part 1], [http://onclojure.com/2009/03/06/a-monad-tutorial-for-clojure-programmers-part-2/ Monad tutorial part 2], [http://onclojure.com/2009/03/23/a-monad-tutorial-for-clojure-programmers-part-3/ Monad tutorial part 3], [http://onclojure.com/2009/04/24/a-monad-tutorial-for-clojure-programmers-part-4/ Monad tutorial part 4]
@@ -333,12 +333,12 @@ Public Variables and Functions:
 API Overview [PprintApiDoc here]
 <br>by Tom Faulhaber
 
-<pre> This module comprises two elements: 
+<pre>This module comprises two elements: 
 1) A pretty printer for Clojure data structures, implemented in the function "pprint" 
 2) A Common Lisp compatible format function, implemented as "cl-format" because 
    Clojure is using the name "format" for its own format. 
  
- The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format 
+The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format 
 where the markdown README is currently displayed. I will be moving it into the 
 clojure.contrib wiki RSN.</pre>
 Public Variables and Functions:
@@ -348,12 +348,12 @@ Public Variables and Functions:
 API Overview [ProbabilitiesExamplesFiniteDistributionsApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Examples for finite probability distribution</pre>
+<pre>Examples for finite probability distribution</pre>
 ===probabilities.finite-distributions===
 API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Finite probability distributions 
+<pre>Finite probability distributions 
 This library defines a monad for combining finite probability 
 distributions.</pre>
 Public Variables and Functions:
@@ -363,16 +363,16 @@ Public Variables and Functions:
 API Overview [ProbabilitiesMonteCarloApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Monte-Carlo method support 
+<pre>Monte-Carlo method support 
  
- Monte-Carlo methods transform an input random number stream 
+Monte-Carlo methods transform an input random number stream 
 (usually having a continuous uniform distribution in the 
 interval `[`0, 1)) into a random number stream whose distribution 
 satisfies certain conditions (usually the expectation value 
 is equal to some desired quantity). They are thus 
 transformations from one probability distribution to another one. 
  
- This library represents a Monte-Carlo method by a function that 
+This library represents a Monte-Carlo method by a function that 
 takes as input the state of a random number stream with 
 uniform distribution (see 
 clojure.contrib.probabilities.random-numbers) and returns a 
@@ -387,15 +387,15 @@ Public Variables and Functions:
 API Overview [ProbabilitiesRandomNumbersApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Random number streams 
+<pre>Random number streams 
  
- This library provides random number generators with a common 
+This library provides random number generators with a common 
 stream interface. They all produce pseudo-random numbers that are 
 uniformly distributed in the interval `[`0, 1), i.e. 0 is a 
 possible value but 1 isn't. For transformations to other 
 distributions, see clojure.contrib.probabilities.monte-carlo. 
  
- At the moment, the only generator provided is a rather simple 
+At the moment, the only generator provided is a rather simple 
 linear congruential generator.</pre>
 Public Variables and Functions:
 [ProbabilitiesRandomNumbersApiDoc#lcg lcg] [ProbabilitiesRandomNumbersApiDoc#rand-stream rand-stream] 
@@ -404,7 +404,7 @@ Public Variables and Functions:
 API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Examples for monte carlo methods</pre>
+<pre>Examples for monte carlo methods</pre>
 ===prxml===
 API Overview [PrxmlApiDoc here]
 
@@ -481,12 +481,12 @@ Public Variables and Functions:
 API Overview [StreamUtilsApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> Functions for setting up computational pipelines via data streams. 
+<pre>Functions for setting up computational pipelines via data streams. 
  
- NOTE: This library is experimental. It may change significantly 
+NOTE: This library is experimental. It may change significantly 
       with future release. 
  
- This library defines: 
+This library defines: 
 - an abstract stream type, whose interface consists of the 
   multimethod stream-next 
 - a macro for implementing streams 
@@ -497,7 +497,7 @@ API Overview [StreamUtilsApiDoc here]
   monad stream-m 
 - various utility functions for working with streams 
  
- Streams are building blocks in the construction of computational 
+Streams are building blocks in the construction of computational 
 pipelines. A stream is represented by its current state plus 
 a function that takes a stream state and obtains the next item 
 in the stream as well as the new stream state. The state is 
@@ -505,7 +505,7 @@ implemented as a Java class or a Clojure type (as defined by the
 function clojure.core/type), and the function is provided as an 
 implementation of the multimethod stream-next for this class or type. 
  
- While setting up pipelines using this mechanism is somewhat more 
+While setting up pipelines using this mechanism is somewhat more 
 cumbersome than using Clojure's lazy seq mechanisms, there are a 
 few advantages: 
 - The state of a stream can be stored in any Clojure data structure, 
@@ -514,10 +514,10 @@ few advantages:
 - The elements of the stream are never cached, so keeping a reference 
   to a stream state does not incur an uncontrollable memory penalty. 
  
- Note that the stream mechanism is thread-safe as long as the 
+Note that the stream mechanism is thread-safe as long as the 
 concrete stream implementations do not use any mutable state. 
  
- Stream transformers take any number of input streams and produce one 
+Stream transformers take any number of input streams and produce one 
 output stream. They are typically written using the stream-m 
 monad. In the definition of a stream transformer, (pick s) returns 
 the next value of stream argument s, whereas pick-all returns the 
@@ -550,7 +550,7 @@ Public Variables and Functions:
 API Overview [TypesApiDoc here]
 <br>by Konrad Hinsen
 
-<pre> General and algebraic data types</pre>
+<pre>General and algebraic data types</pre>
 Public Variables and Functions:
 [TypesApiDoc#defadt defadt] [TypesApiDoc#deftype deftype] [TypesApiDoc#deftype- deftype-] [TypesApiDoc#match match] 
 
