@@ -24,9 +24,9 @@ Shortcuts:
 ===as-file===
 ====multimethod====
 _No usage documentation available_
-<pre> Interpret a String or a java.io.File as a File. Building block
- for clojure.contrib.java-utils/file, which you should prefer
- in most cases.</pre>
+<pre> Interpret a String or a java.io.File as a File. Building block 
+for clojure.contrib.java-utils/file, which you should prefer 
+in most cases.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -35,8 +35,8 @@ _No usage documentation available_
 <pre>
 Usage: *(_as-properties_ m)*
 </pre>
-<pre> Convert any seq of pairs to a java.utils.Properties instance.
- Uses as-str to convert both keys and values into strings.</pre>
+<pre> Convert any seq of pairs to a java.utils.Properties instance. 
+Uses as-str to convert both keys and values into strings.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -82,8 +82,8 @@ Usage: *(_read-properties_ file-able)*
 ===relative-path-string===
 ====multimethod====
 _No usage documentation available_
-<pre> Interpret a String or java.io.File as a relative path string. 
- Building block for clojure.contrib.java-utils/file.</pre>
+<pre> Interpret a String or java.io.File as a relative path string.  
+Building block for clojure.contrib.java-utils/file.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=relative-path-string+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -101,11 +101,11 @@ Usage: *(_set-system-properties_ settings)*
 <pre>
 Usage: *(_with-system-properties_ settings & body)*
 </pre>
-<pre> setting => property-name value
+<pre> setting => property-name value 
  
-  Sets the system properties to the supplied values, executes the body, and
- sets the properties back to their original values. Values of nil are
- translated to a clearing of the property.</pre>
+ Sets the system properties to the supplied values, executes the body, and 
+sets the properties back to their original values. Values of nil are 
+translated to a clearing of the property.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-system-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----

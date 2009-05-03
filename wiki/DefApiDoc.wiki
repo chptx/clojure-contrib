@@ -27,9 +27,9 @@ Shortcuts:
 Usage: *(_defalias_ name orig)
        (_defalias_ name orig doc)*
 </pre>
-<pre> Defines an alias for a var: a new var with the same root binding (if
- any) and similar metadata. The metadata of the alias is its initial
- metadata (as provided by def) merged into the metadata of the original.</pre>
+<pre> Defines an alias for a var: a new var with the same root binding (if 
+any) and similar metadata. The metadata of the alias is its initial 
+metadata (as provided by def) merged into the metadata of the original.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defalias+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -38,9 +38,9 @@ Usage: *(_defalias_ name orig)
 <pre>
 Usage: *(_defhinted_ sym init)*
 </pre>
-<pre> Defines a var with a type hint matching the class of the given
- init.  Be careful about using any form of 'def' or 'binding' to a
- value of a different type.  See http://paste.lisp.org/display/73344</pre>
+<pre> Defines a var with a type hint matching the class of the given 
+init.  Be careful about using any form of 'def' or 'binding' to a 
+value of a different type.  See http://paste.lisp.org/display/73344</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#79 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defhinted+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -116,14 +116,14 @@ Usage: *(_defvar-_ name & decls)*
 <pre>
 Usage: *(_name-with-attributes_ name macro-args)*
 </pre>
-<pre> To be used in macro definitions.
- Handles optional docstrings and attribute maps for a name to be defined
- in a list of macro arguments. If the first macro argument is a string,
- it is added as a docstring to name and removed from the macro argument
- list. If afterwards the first macro argument is a map, its entries are
- added to the name's metadata map and the map is removed from the
- macro argument list. The return value is a vector containing the name
- with its extended metadata map and the list of unprocessed macro
- arguments.</pre>
+<pre> To be used in macro definitions. 
+Handles optional docstrings and attribute maps for a name to be defined 
+in a list of macro arguments. If the first macro argument is a string, 
+it is added as a docstring to name and removed from the macro argument 
+list. If afterwards the first macro argument is a map, its entries are 
+added to the name's metadata map and the map is removed from the 
+macro argument list. The return value is a vector containing the name 
+with its extended metadata map and the list of unprocessed macro 
+arguments.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=name-with-attributes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

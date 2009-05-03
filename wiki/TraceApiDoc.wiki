@@ -32,9 +32,9 @@ Shortcuts:
 <pre>
 Usage: *(_deftrace_ name & definition)*
 </pre>
-<pre> Use in place of defn; traces each call/return of this fn, including
- arguments.  Nested calls to deftrace'd functions will print a
- tree-like structure.</pre>
+<pre> Use in place of defn; traces each call/return of this fn, including 
+arguments.  Nested calls to deftrace'd functions will print a 
+tree-like structure.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace/clojure/contrib/trace.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftrace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -44,9 +44,9 @@ Usage: *(_deftrace_ name & definition)*
 Usage: *(_trace_ value)
        (_trace_ name value)*
 </pre>
-<pre> Sends name (optional) and value to the tracer function, then
- returns value.  May be wrapped around any expression without
- affecting the result.</pre>
+<pre> Sends name (optional) and value to the tracer function, then 
+returns value.  May be wrapped around any expression without 
+affecting the result.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace/clojure/contrib/trace.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -55,8 +55,8 @@ Usage: *(_trace_ value)
 <pre>
 Usage: *(_trace-fn-call_ name f args)*
 </pre>
-<pre> Traces a single call to a function f with args.  'name' is the
- symbol name of the function.</pre>
+<pre> Traces a single call to a function f with args.  'name' is the 
+symbol name of the function.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace/clojure/contrib/trace.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=trace-fn-call+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -74,7 +74,7 @@ Usage: *(_trace-indent_)*
 <pre>
 Usage: *(_tracer_ name value)*
 </pre>
-<pre> This function is called by trace.  Prints to standard output, but
- may be rebound to do anything you like.  'name' is optional.</pre>
+<pre> This function is called by trace.  Prints to standard output, but 
+may be rebound to do anything you like.  'name' is optional.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace/clojure/contrib/trace.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=tracer+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

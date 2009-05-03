@@ -44,8 +44,8 @@ Usage: *(_docs_ nsname)*
 <pre>
 Usage: *(_get-ns_ ns-sym)*
 </pre>
-<pre> Returns the namespace named by ns-sym or throws if the
- namespace does not exist</pre>
+<pre> Returns the namespace named by ns-sym or throws if the 
+namespace does not exist</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils/clojure/contrib/ns_utils.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -54,8 +54,8 @@ Usage: *(_get-ns_ ns-sym)*
 <pre>
 Usage: *(_ns-vars_ ns)*
 </pre>
-<pre> Returns a sorted seq of symbols naming public vars in
- a namespace</pre>
+<pre> Returns a sorted seq of symbols naming public vars in 
+a namespace</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils/clojure/contrib/ns_utils.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ns-vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -82,7 +82,7 @@ Usage: *(_print-docs_ ns)*
 <pre>
 Usage: *(_vars_ nsname)*
 </pre>
-<pre> Returns a sorted seq of symbols naming public vars in
- a namespace</pre>
+<pre> Returns a sorted seq of symbols naming public vars in 
+a namespace</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils/clojure/contrib/ns_utils.clj#72 Source] [http://www.google.com/codesearch?hl=en&lr=&q=vars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

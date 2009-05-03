@@ -41,11 +41,11 @@ Usage: *(_connection_)*
 <pre>
 Usage: *(_create-table_ name & specs)*
 </pre>
-<pre> Creates a table on the open database connection given a table name and
- specs. Each spec is either a column spec: a vector containing a column
- name and optionally a type and other constraints, or a table-level
- constraint: a vector containing words that express the constraint. All
- words used to describe the table may be supplied as strings or keywords.</pre>
+<pre> Creates a table on the open database connection given a table name and 
+specs. Each spec is either a column spec: a vector containing a column 
+name and optionally a type and other constraints, or a table-level 
+constraint: a vector containing words that express the constraint. All 
+words used to describe the table may be supplied as strings or keywords.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-table+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -54,9 +54,9 @@ Usage: *(_create-table_ name & specs)*
 <pre>
 Usage: *(_delete-rows_ table where-params)*
 </pre>
-<pre> Deletes rows from a table. where-params is a vector containing a string
- providing the (optionally parameterized) selection criteria followed by
- values for any parameters.</pre>
+<pre> Deletes rows from a table. where-params is a vector containing a string 
+providing the (optionally parameterized) selection criteria followed by 
+values for any parameters.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=delete-rows+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -74,9 +74,9 @@ Usage: *(_do-commands_ & commands)*
 <pre>
 Usage: *(_do-prepared_ sql & param-groups)*
 </pre>
-<pre> Executes an (optionally parameterized) SQL prepared statement on the
- open database connection. Each param-group is a seq of values for all of
- the parameters.</pre>
+<pre> Executes an (optionally parameterized) SQL prepared statement on the 
+open database connection. Each param-group is a seq of values for all of 
+the parameters.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#77 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-prepared+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -85,8 +85,8 @@ Usage: *(_do-prepared_ sql & param-groups)*
 <pre>
 Usage: *(_drop-table_ name)*
 </pre>
-<pre> Drops a table on the open database connection given its name, a string
- or keyword</pre>
+<pre> Drops a table on the open database connection given its name, a string 
+or keyword</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#106 Source] [http://www.google.com/codesearch?hl=en&lr=&q=drop-table+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -104,8 +104,8 @@ Usage: *(_find-connection_)*
 <pre>
 Usage: *(_insert-records_ table & records)*
 </pre>
-<pre> Inserts records into a table. records are maps from strings or
- keywords (identifying columns) to values.</pre>
+<pre> Inserts records into a table. records are maps from strings or 
+keywords (identifying columns) to values.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#137 Source] [http://www.google.com/codesearch?hl=en&lr=&q=insert-records+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -114,8 +114,8 @@ Usage: *(_insert-records_ table & records)*
 <pre>
 Usage: *(_insert-rows_ table & rows)*
 </pre>
-<pre> Inserts complete rows into a table. Each row is a vector of values for
- each of the table's columns in order.</pre>
+<pre> Inserts complete rows into a table. Each row is a vector of values for 
+each of the table's columns in order.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#131 Source] [http://www.google.com/codesearch?hl=en&lr=&q=insert-rows+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -124,11 +124,11 @@ Usage: *(_insert-rows_ table & rows)*
 <pre>
 Usage: *(_insert-values_ table column-names & value-groups)*
 </pre>
-<pre> Inserts rows into a table with values for specified columns only.
- column-names is a vector of strings or keywords identifying columns. Each
- value-group is a vector containing a values for each column in
- order. When inserting complete rows (all columns), consider using
- insert-rows instead.</pre>
+<pre> Inserts rows into a table with values for specified columns only. 
+column-names is a vector of strings or keywords identifying columns. Each 
+value-group is a vector containing a values for each column in 
+order. When inserting complete rows (all columns), consider using 
+insert-rows instead.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#113 Source] [http://www.google.com/codesearch?hl=en&lr=&q=insert-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -137,8 +137,8 @@ Usage: *(_insert-values_ table column-names & value-groups)*
 <pre>
 Usage: *(_is-rollback-only_)*
 </pre>
-<pre> Returns true if the outermost transaction will rollback rather than
- commit when complete</pre>
+<pre> Returns true if the outermost transaction will rollback rather than 
+commit when complete</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=is-rollback-only+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -147,8 +147,8 @@ Usage: *(_is-rollback-only_)*
 <pre>
 Usage: *(_set-rollback-only_)*
 </pre>
-<pre> Marks the outermost transaction such that it will rollback rather than
- commit when complete</pre>
+<pre> Marks the outermost transaction such that it will rollback rather than 
+commit when complete</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-rollback-only+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -157,13 +157,13 @@ Usage: *(_set-rollback-only_)*
 <pre>
 Usage: *(_transaction_ & body)*
 </pre>
-<pre> Evaluates body as a transaction on the open database connection. Any
- nested transactions are absorbed into the outermost transaction. By
- default, all database updates are committed together as a group after
- evaluating the outermost body, or rolled back on any uncaught
- exception. If set-rollback-only is called within scope of the outermost
- transaction, the entire transaction will be rolled back rather than
- committed when complete.</pre>
+<pre> Evaluates body as a transaction on the open database connection. Any 
+nested transactions are absorbed into the outermost transaction. By 
+default, all database updates are committed together as a group after 
+evaluating the outermost body, or rolled back on any uncaught 
+exception. If set-rollback-only is called within scope of the outermost 
+transaction, the entire transaction will be rolled back rather than 
+committed when complete.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#45 Source] [http://www.google.com/codesearch?hl=en&lr=&q=transaction+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -172,11 +172,11 @@ Usage: *(_transaction_ & body)*
 <pre>
 Usage: *(_update-or-insert-values_ table where-params record)*
 </pre>
-<pre> Updates values on selected rows in a table, or inserts a new row when no
- existing row matches the selection criteria. where-params is a vector
- containing a string providing the (optionally parameterized) selection
- criteria followed by values for any parameters. record is a map from
- strings or keywords (identifying columns) to updated values.</pre>
+<pre> Updates values on selected rows in a table, or inserts a new row when no 
+existing row matches the selection criteria. where-params is a vector 
+containing a string providing the (optionally parameterized) selection 
+criteria followed by values for any parameters. record is a map from 
+strings or keywords (identifying columns) to updated values.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#169 Source] [http://www.google.com/codesearch?hl=en&lr=&q=update-or-insert-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -185,10 +185,10 @@ Usage: *(_update-or-insert-values_ table where-params record)*
 <pre>
 Usage: *(_update-values_ table where-params record)*
 </pre>
-<pre> Updates values on selected rows in a table. where-params is a vector
- containing a string providing the (optionally parameterized) selection
- criteria followed by values for any parameters. record is a map from
- strings or keywords (identifying columns) to updated values.</pre>
+<pre> Updates values on selected rows in a table. where-params is a vector 
+containing a string providing the (optionally parameterized) selection 
+criteria followed by values for any parameters. record is a map from 
+strings or keywords (identifying columns) to updated values.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=update-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -197,20 +197,20 @@ Usage: *(_update-values_ table where-params record)*
 <pre>
 Usage: *(_with-connection_ db-spec & body)*
 </pre>
-<pre> Evaluates body in the context of a new connection to a database then
- closes the connection. db-spec is a map containing values for one of the
- following parameter sets:
+<pre> Evaluates body in the context of a new connection to a database then 
+closes the connection. db-spec is a map containing values for one of the 
+following parameter sets: 
  
-  DataSource:
-   :datasource  (required) a javax.sql.DataSource
-   :username    (optional) a String
-   :password    (optional) a String
+ DataSource: 
+  :datasource  (required) a javax.sql.DataSource 
+  :username    (optional) a String 
+  :password    (optional) a String 
  
-  DriverManager:
-   :classname   (required) a String, the jdbc driver class name
-   :subprotocol (required) a String, the jdbc subprotocol
-   :subname     (required) a String, the jdbc subname
-   (others)     (optional) passed to the driver as properties.</pre>
+ DriverManager: 
+  :classname   (required) a String, the jdbc driver class name 
+  :subprotocol (required) a String, the jdbc subprotocol 
+  :subname     (required) a String, the jdbc subname 
+  (others)     (optional) passed to the driver as properties.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#27 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-connection+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -219,10 +219,10 @@ Usage: *(_with-connection_ db-spec & body)*
 <pre>
 Usage: *(_with-query-results_ results sql-params & body)*
 </pre>
-<pre> Executes a query, then evaluates body with results bound to a seq of the
- results. sql-params is a vector containing a string providing
- the (optionally parameterized) SQL query followed by values for any
- parameters.</pre>
+<pre> Executes a query, then evaluates body with results bound to a seq of the 
+results. sql-params is a vector containing a string providing 
+the (optionally parameterized) SQL query followed by values for any 
+parameters.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/clojure/contrib/sql.clj#182 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-query-results+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.sql.internal==
@@ -250,19 +250,19 @@ Usage: *(_find-connection`*`_)*
 <pre>
 Usage: *(_get-connection_ {:keys `[`datasource username password classname subprotocol subname`]`, :as db-spec})*
 </pre>
-<pre> Creates a connection to a database. db-spec is a map containing values
- for one of the following parameter sets:
+<pre> Creates a connection to a database. db-spec is a map containing values 
+for one of the following parameter sets: 
  
-  DataSource:
-   :datasource  (required) a javax.sql.DataSource
-   :username    (optional) a String
-   :password    (optional) a String
+ DataSource: 
+  :datasource  (required) a javax.sql.DataSource 
+  :username    (optional) a String 
+  :password    (optional) a String 
  
-  DriverManager:
-   :classname   (required) a String, the jdbc driver class name
-   :subprotocol (required) a String, the jdbc subprotocol
-   :subname     (required) a String, the jdbc subname
-   (others)     (optional) passed to the driver as properties.</pre>
+ DriverManager: 
+  :classname   (required) a String, the jdbc driver class name 
+  :subprotocol (required) a String, the jdbc subprotocol 
+  :subname     (required) a String, the jdbc subname 
+  (others)     (optional) passed to the driver as properties.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal/clojure/contrib/sql/internal.clj#45 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-connection+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -317,13 +317,13 @@ Usage: *(_throw-rollback_ e)*
 <pre>
 Usage: *(_transaction`*`_ func)*
 </pre>
-<pre> Evaluates func as a transaction on the open database connection. Any
- nested transactions are absorbed into the outermost transaction. By
- default, all database updates are committed together as a group after
- evaluating the outermost body, or rolled back on any uncaught
- exception. If rollback is set within scope of the outermost transaction,
- the entire transaction will be rolled back rather than committed when
- complete.</pre>
+<pre> Evaluates func as a transaction on the open database connection. Any 
+nested transactions are absorbed into the outermost transaction. By 
+default, all database updates are committed together as a group after 
+evaluating the outermost body, or rolled back on any uncaught 
+exception. If rollback is set within scope of the outermost transaction, 
+the entire transaction will be rolled back rather than committed when 
+complete.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal/clojure/contrib/sql/internal.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=transaction*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -332,8 +332,8 @@ Usage: *(_transaction`*`_ func)*
 <pre>
 Usage: *(_with-connection`*`_ db-spec func)*
 </pre>
-<pre> Evaluates func in the context of a new connection to a database then
- closes the connection.</pre>
+<pre> Evaluates func in the context of a new connection to a database then 
+closes the connection.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal/clojure/contrib/sql/internal.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-connection*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -342,9 +342,9 @@ Usage: *(_with-connection`*`_ db-spec func)*
 <pre>
 Usage: *(_with-query-results`*`_ `[`sql & params :as sql-params`]` func)*
 </pre>
-<pre> Executes a query, then evaluates func passing in a seq of the results as
- an argument. The first argument is a vector containing the (optionally
- parameterized) sql query string followed by values for any parameters.</pre>
+<pre> Executes a query, then evaluates func passing in a seq of the results as 
+an argument. The first argument is a vector containing the (optionally 
+parameterized) sql query string followed by values for any parameters.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal/clojure/contrib/sql/internal.clj#152 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-query-results*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.sql.test==

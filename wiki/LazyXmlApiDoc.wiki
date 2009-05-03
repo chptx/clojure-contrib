@@ -35,9 +35,9 @@ Usage: *(_emit_ x & opts)*
 <pre>
 Usage: *(_emit-element_ e & opts)*
 </pre>
-<pre> Recursively prints as XML text the element struct e.  To have it
- print extra whitespace like clojure.xml/emit, use the :pad true
- option.</pre>
+<pre> Recursively prints as XML text the element struct e.  To have it 
+print extra whitespace like clojure.xml/emit, use the :pad true 
+option.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml/clojure/contrib/lazy_xml.clj#132 Source] [http://www.google.com/codesearch?hl=en&lr=&q=emit-element+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -48,15 +48,15 @@ Usage: *(_parse-seq_ s)
        (_parse-seq_ s startparse)
        (_parse-seq_ s startparse queue-size)*
 </pre>
-<pre> Parses the source s, which can be a File, InputStream or String
- naming a URI. Returns a lazy sequence of maps with two or more of
- the keys :type, :name, :attrs, and :str. Other SAX-compatible
- parsers can be supplied by passing startparse, a fn taking a source
- and a ContentHandler and returning a parser. If a parser is
- specified, it will be run in a separate thread and be allowed to get
- ahead by queue-size items, which defaults to maxing.  If no parser
- is specified and org.xmlpull.v1.XmlPullParser is in the classpath,
- this superior pull parser will be used.</pre>
+<pre> Parses the source s, which can be a File, InputStream or String 
+naming a URI. Returns a lazy sequence of maps with two or more of 
+the keys :type, :name, :attrs, and :str. Other SAX-compatible 
+parsers can be supplied by passing startparse, a fn taking a source 
+and a ContentHandler and returning a parser. If a parser is 
+specified, it will be run in a separate thread and be allowed to get 
+ahead by queue-size items, which defaults to maxing.  If no parser 
+is specified and org.xmlpull.v1.XmlPullParser is in the classpath, 
+this superior pull parser will be used.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml/clojure/contrib/lazy_xml.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -66,18 +66,18 @@ Usage: *(_parse-seq_ s)
 Usage: *(_parse-trim_ s)
        (_parse-trim_ s startparse queue-size)*
 </pre>
-<pre> Parses the source s, which can be a File, InputStream or String
- naming a URI. Returns a lazy tree of the clojure.xml/element
- struct-map, which has the keys :tag, :attrs, and :content and
- accessor fns tag, attrs, and content, with the whitespace trimmed
- from around each content string. This format is compatible with what
- clojure.xml/parse produces, except :content is a lazy seq instead of
- a vector.  Other SAX-compatible parsers can be supplied by passing
- startparse, a fn taking a source and a ContentHandler and returning
- a parser. If a parser is specified, it will be run in a separate
- thread and be allowed to get ahead by queue-size items, which
- defaults to maxing.  If no parser is specified and
- org.xmlpull.v1.XmlPullParser is in the classpath, this superior pull
- parser will be used.</pre>
+<pre> Parses the source s, which can be a File, InputStream or String 
+naming a URI. Returns a lazy tree of the clojure.xml/element 
+struct-map, which has the keys :tag, :attrs, and :content and 
+accessor fns tag, attrs, and content, with the whitespace trimmed 
+from around each content string. This format is compatible with what 
+clojure.xml/parse produces, except :content is a lazy seq instead of 
+a vector.  Other SAX-compatible parsers can be supplied by passing 
+startparse, a fn taking a source and a ContentHandler and returning 
+a parser. If a parser is specified, it will be run in a separate 
+thread and be allowed to get ahead by queue-size items, which 
+defaults to maxing.  If no parser is specified and 
+org.xmlpull.v1.XmlPullParser is in the classpath, this superior pull 
+parser will be used.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_xml/clojure/contrib/lazy_xml.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-trim+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -29,9 +29,9 @@ Variables and Functions in zip-filter.xml:
 <pre>
 Usage: *(_ancestors_ loc)*
 </pre>
-<pre> Returns a lazy sequence of all ancestors of location loc, starting
- with loc and proceeding to loc's parent node and on through to the
- root of the tree.</pre>
+<pre> Returns a lazy sequence of all ancestors of location loc, starting 
+with loc and proceeding to loc's parent node and on through to the 
+root of the tree.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/clojure/contrib/zip_filter.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=ancestors+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -40,8 +40,8 @@ Usage: *(_ancestors_ loc)*
 <pre>
 Usage: *(_children_ loc)*
 </pre>
-<pre> Returns a lazy sequence of all immediate children of location loc,
- left-to-right.</pre>
+<pre> Returns a lazy sequence of all immediate children of location loc, 
+left-to-right.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/clojure/contrib/zip_filter.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=children+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -50,8 +50,8 @@ Usage: *(_children_ loc)*
 <pre>
 Usage: *(_children-auto_ loc)*
 </pre>
-<pre> Returns a lazy sequence of all immediate children of location loc,
- left-to-right, marked so that a following tag= predicate will auto-descend.</pre>
+<pre> Returns a lazy sequence of all immediate children of location loc, 
+left-to-right, marked so that a following tag= predicate will auto-descend.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/clojure/contrib/zip_filter.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=children-auto+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -60,8 +60,8 @@ Usage: *(_children-auto_ loc)*
 <pre>
 Usage: *(_descendants_ loc)*
 </pre>
-<pre> Returns a lazy sequence of all descendants of location loc, in
- depth-first order, left-to-right, starting with loc.</pre>
+<pre> Returns a lazy sequence of all descendants of location loc, in 
+depth-first order, left-to-right, starting with loc.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/clojure/contrib/zip_filter.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=descendants+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -117,8 +117,8 @@ Usage: *(_attr_ attrname)
 <pre>
 Usage: *(_attr=_ attrname attrval)*
 </pre>
-<pre> Returns a query predicate that matches a node when it has an
- attribute named attrname whose value is attrval.</pre>
+<pre> Returns a query predicate that matches a node when it has an 
+attribute named attrname whose value is attrval.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml/clojure/contrib/zip_filter/xml.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=attr=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -127,8 +127,8 @@ Usage: *(_attr=_ attrname attrval)*
 <pre>
 Usage: *(_seq-test_ preds)*
 </pre>
-<pre> Returns a query predicate that matches a node when its xml content
- matches the query expresions given.</pre>
+<pre> Returns a query predicate that matches a node when its xml content 
+matches the query expresions given.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml/clojure/contrib/zip_filter/xml.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq-test+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -137,8 +137,8 @@ Usage: *(_seq-test_ preds)*
 <pre>
 Usage: *(_tag=_ tagname)*
 </pre>
-<pre> Returns a query predicate that matches a node when its is a tag
- named tagname.</pre>
+<pre> Returns a query predicate that matches a node when its is a tag 
+named tagname.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml/clojure/contrib/zip_filter/xml.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=tag=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -147,8 +147,8 @@ Usage: *(_tag=_ tagname)*
 <pre>
 Usage: *(_text_ loc)*
 </pre>
-<pre> Returns the textual contents of the given location, similar to
- xpaths's value-of</pre>
+<pre> Returns the textual contents of the given location, similar to 
+xpaths's value-of</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml/clojure/contrib/zip_filter/xml.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=text+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -157,8 +157,8 @@ Usage: *(_text_ loc)*
 <pre>
 Usage: *(_text=_ s)*
 </pre>
-<pre> Returns a query predicate that matches a node when its textual
- content equals s.</pre>
+<pre> Returns a query predicate that matches a node when its textual 
+content equals s.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml/clojure/contrib/zip_filter/xml.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=text=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -167,22 +167,22 @@ Usage: *(_text=_ s)*
 <pre>
 Usage: *(_xml->_ loc & preds)*
 </pre>
-<pre> The loc is passed to the first predicate.  If the predicate returns
- a collection, each value of the collection is passed to the next
- predicate.  If it returns a location, the location is passed to the
- next predicate.  If it returns true, the input location is passed to
- the next predicate.  If it returns false or nil, the next predicate
- is not called.
+<pre> The loc is passed to the first predicate.  If the predicate returns 
+a collection, each value of the collection is passed to the next 
+predicate.  If it returns a location, the location is passed to the 
+next predicate.  If it returns true, the input location is passed to 
+the next predicate.  If it returns false or nil, the next predicate 
+is not called. 
  
-  This process is repeated, passing the processed results of each
- predicate to the next predicate.  xml-> returns the final sequence.
- The entire chain is evaluated lazily.
+ This process is repeated, passing the processed results of each 
+predicate to the next predicate.  xml-> returns the final sequence. 
+The entire chain is evaluated lazily. 
  
-  There are also special predicates: keywords are converted to tag=,
- strings to text=, and vectors to sub-queries that return true if
- they match.
+ There are also special predicates: keywords are converted to tag=, 
+strings to text=, and vectors to sub-queries that return true if 
+they match. 
  
-  See the footer of zip-query.clj for examples.</pre>
+ See the footer of zip-query.clj for examples.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml/clojure/contrib/zip_filter/xml.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=xml->+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -191,7 +191,7 @@ Usage: *(_xml->_ loc & preds)*
 <pre>
 Usage: *(_xml1->_ loc & preds)*
 </pre>
-<pre> Returns the first item from loc based on the query predicates
- given.  See xml-></pre>
+<pre> Returns the first item from loc based on the query predicates 
+given.  See xml-></pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml/clojure/contrib/zip_filter/xml.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=xml1->+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

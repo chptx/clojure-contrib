@@ -44,8 +44,8 @@ Variables and Functions in datalog.util:
 <pre>
 Usage: *(_build-work-plan_ rules query)*
 </pre>
-<pre> Given a list of rules and a query, build a work plan that can be
- used to execute the query.</pre>
+<pre> Given a list of rules and a query, build a work plan that can be 
+used to execute the query.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/clojure/contrib/datalog.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -54,8 +54,8 @@ Usage: *(_build-work-plan_ rules query)*
 <pre>
 Usage: *(_run-work-plan_ work-plan database query-bindings)*
 </pre>
-<pre> Given a work plan, a database, and some query bindings, run the
- work plan and return the results.</pre>
+<pre> Given a work plan, a database, and some query bindings, run the 
+work plan and return the results.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/clojure/contrib/datalog.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.datalog.database==
@@ -84,12 +84,12 @@ Usage: *(_add-relation_ db name keys)*
 Usage: *(_add-tuple_ db rel-name tuple)
        (_add-tuple_ rel tuple)*
 </pre>
-<pre> Two forms:
+<pre> Two forms: 
  
-  `[`db relation-name tuple`]` adds tuple to the named relation.  Returns
- the new database.
+ `[`db relation-name tuple`]` adds tuple to the named relation.  Returns 
+the new database. 
  
-  `[`rel tuple`]` adds to the relation object.  Returns the new relation.</pre>
+ `[`rel tuple`]` adds to the relation object.  Returns the new relation.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database/clojure/contrib/datalog/database.clj#171 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-tuple+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -98,10 +98,10 @@ Usage: *(_add-tuple_ db rel-name tuple)
 <pre>
 Usage: *(_add-tuples_ db & tupls)*
 </pre>
-<pre> Adds a collection of tuples to the db, as
- (add-tuples db
-    `[`:rel-name :key-1 1 :key-2 2`]`
-    `[`:rel-name :key-1 2 :key-2 3`]`)</pre>
+<pre> Adds a collection of tuples to the db, as 
+(add-tuples db 
+   `[`:rel-name :key-1 1 :key-2 2`]` 
+   `[`:rel-name :key-1 2 :key-2 3`]`)</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database/clojure/contrib/datalog/database.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-tuples+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -173,13 +173,13 @@ Usage: *(_get-relation_ db rel-name)*
 <pre>
 Usage: *(_make-database_ & commands)*
 </pre>
-<pre> Makes a database, like this
- (make-database
-   (relation :fred `[`:mary :sue`]`)
-   (index :fred :mary)
-   (relation :sally `[`:jen :becky`]`)
-   (index :sally :jen)
-   (index :sally :becky))</pre>
+<pre> Makes a database, like this 
+(make-database 
+  (relation :fred `[`:mary :sue`]`) 
+  (index :fred :mary) 
+  (relation :sally `[`:jen :becky`]`) 
+  (index :sally :jen) 
+  (index :sally :becky))</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database/clojure/contrib/datalog/database.clj#108 Source] [http://www.google.com/codesearch?hl=en&lr=&q=make-database+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -198,13 +198,13 @@ Usage: *(_merge-relations_ r1 r2)*
 Usage: *(_remove-tuple_ db rel-name tuple)
        (_remove-tuple_ rel tuple)*
 </pre>
-<pre> Two forms:
+<pre> Two forms: 
  
-  `[`db relation-name tuple`]` removes the tuple from the named relation,
- returns a new database.
+ `[`db relation-name tuple`]` removes the tuple from the named relation, 
+returns a new database. 
  
-  `[`rel tuple`]` removes the tuple from the relation.  Returns the new
- relation.</pre>
+ `[`rel tuple`]` removes the tuple from the relation.  Returns the new 
+relation.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/database/clojure/contrib/datalog/database.clj#189 Source] [http://www.google.com/codesearch?hl=en&lr=&q=remove-tuple+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -239,16 +239,16 @@ _No usage documentation available_
 <pre>
 Usage: *(_build-atom_ f type)*
 </pre>
-<pre> Returns an unevaluated expression (to be used in a macro) of an
- atom.</pre>
+<pre> Returns an unevaluated expression (to be used in a macro) of an 
+atom.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals/clojure/contrib/datalog/literals.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-atom+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===build-literal===
 ====multimethod====
 _No usage documentation available_
-<pre> (Returns an unevaluated expression (to be used in macros) of a
- literal.</pre>
+<pre> (Returns an unevaluated expression (to be used in macros) of a 
+literal.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals/clojure/contrib/datalog/literals.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -257,8 +257,8 @@ _No usage documentation available_
 <pre>
 Usage: *(_build-seed-bindings_ s)*
 </pre>
-<pre> Given a seed literal, already adorned and in magic form, convert
- its bound constants to new variables.</pre>
+<pre> Given a seed literal, already adorned and in magic form, convert 
+its bound constants to new variables.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals/clojure/contrib/datalog/literals.clj#303 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-seed-bindings+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -320,16 +320,16 @@ _No usage documentation available_
 ===join-literal===
 ====multimethod====
 _No usage documentation available_
-<pre> Given a database (db), a literal (lit) and a seq of bindings (bs),
- return a new seq of bindings by joining this literal.</pre>
+<pre> Given a database (db), a literal (lit) and a seq of bindings (bs), 
+return a new seq of bindings by joining this literal.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals/clojure/contrib/datalog/literals.clj#361 Source] [http://www.google.com/codesearch?hl=en&lr=&q=join-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===literal-appropriate?===
 ====multimethod====
 _No usage documentation available_
-<pre> When passed a set of bound vars, determines if this literal can be
- used during this point of a SIP computation.</pre>
+<pre> When passed a set of bound vars, determines if this literal can be 
+used during this point of a SIP computation.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals/clojure/contrib/datalog/literals.clj#236 Source] [http://www.google.com/codesearch?hl=en&lr=&q=literal-appropriate?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -419,8 +419,8 @@ Usage: *(_positive?_ l)*
 Usage: *(_project-literal_ db lit bs)
        (_project-literal_ db lit bs var?)*
 </pre>
-<pre> Project a stream of bindings onto a literal/relation. Returns a new
- db.</pre>
+<pre> Project a stream of bindings onto a literal/relation. Returns a new 
+db.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/literals/clojure/contrib/datalog/literals.clj#393 Source] [http://www.google.com/codesearch?hl=en&lr=&q=project-literal+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.datalog.magic==
@@ -439,8 +439,8 @@ Usage: *(_adorn-query_ q)*
 <pre>
 Usage: *(_adorn-rules-set_ rs q)*
 </pre>
-<pre> Adorns the given rules-set for the given query.  (rs) is a
- rules-set, (q) is an adorned query.</pre>
+<pre> Adorns the given rules-set for the given query.  (rs) is a 
+rules-set, (q) is an adorned query.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic/clojure/contrib/datalog/magic.clj#31 Source] [http://www.google.com/codesearch?hl=en&lr=&q=adorn-rules-set+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -449,8 +449,8 @@ Usage: *(_adorn-rules-set_ rs q)*
 <pre>
 Usage: *(_build-partial-tuple_ q bindings)*
 </pre>
-<pre> Given a query and a set of bindings, build a partial tuple needed
- to extract the relation from the database.</pre>
+<pre> Given a query and a set of bindings, build a partial tuple needed 
+to extract the relation from the database.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic/clojure/contrib/datalog/magic.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-partial-tuple+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -460,9 +460,9 @@ Usage: *(_build-partial-tuple_ q bindings)*
 Usage: *(_magic-transform_ rs)
        (_magic-transform_ rs i-preds)*
 </pre>
-<pre> Return a magic transformation of an adorned rules-set (rs).  The
- (i-preds) are the predicates of the intension database.  These
- default to the predicates within the rules-set.</pre>
+<pre> Return a magic transformation of an adorned rules-set (rs).  The 
+(i-preds) are the predicates of the intension database.  These 
+default to the predicates within the rules-set.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic/clojure/contrib/datalog/magic.clj#98 Source] [http://www.google.com/codesearch?hl=en&lr=&q=magic-transform+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -480,8 +480,8 @@ Usage: *(_seed-predicate-for-insertion_ q)*
 <pre>
 Usage: *(_seed-relation_ q)*
 </pre>
-<pre> Given a magic form of a query, give back the literal form of its seed
- relation</pre>
+<pre> Given a magic form of a query, give back the literal form of its seed 
+relation</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/magic/clojure/contrib/datalog/magic.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seed-relation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -500,9 +500,9 @@ Usage: *(_seed-rule_ q)*
 <pre>
 Usage: *(_<-_ hd & body)*
 </pre>
-<pre> Build a datalog rule.  Like this:
+<pre> Build a datalog rule.  Like this: 
  
-  (<- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if > ?y ?z))</pre>
+ (<- (:head :x ?x :y ?y) (:body-1 :x ?x :y ?y) (:body-2 :z ?z) (not! :body-3 :x ?x) (if > ?y ?z))</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules/clojure/contrib/datalog/rules.clj#66 Source] [http://www.google.com/codesearch?hl=en&lr=&q=<-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -530,8 +530,8 @@ Usage: *(_all-predicates_ rs)*
 Usage: *(_apply-rule_ db rule)
        (_apply-rule_ db-1 db-2 rule)*
 </pre>
-<pre> Apply the rule against db-1, adding the results to the appropriate
- relation in db-2.  The relation will be created if needed.</pre>
+<pre> Apply the rule against db-1, adding the results to the appropriate 
+relation in db-2.  The relation will be created if needed.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules/clojure/contrib/datalog/rules.clj#182 Source] [http://www.google.com/codesearch?hl=en&lr=&q=apply-rule+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -540,9 +540,9 @@ Usage: *(_apply-rule_ db rule)
 <pre>
 Usage: *(_compute-sip_ bindings i-preds rule)*
 </pre>
-<pre> Given a set of bound column names, return an adorned sip for this
- rule.  A set of intensional predicates should be provided to
- determine what should be adorned.</pre>
+<pre> Given a set of bound column names, return an adorned sip for this 
+rule.  A set of intensional predicates should be provided to 
+determine what should be adorned.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules/clojure/contrib/datalog/rules.clj#98 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compute-sip+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -578,8 +578,8 @@ Usage: *(_is-safe?_ rule)*
 <pre>
 Usage: *(_make-rules-set_ rs)*
 </pre>
-<pre> Given an existing set of rules, make it a 'rules-set' for
- printing.</pre>
+<pre> Given an existing set of rules, make it a 'rules-set' for 
+printing.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules/clojure/contrib/datalog/rules.clj#127 Source] [http://www.google.com/codesearch?hl=en&lr=&q=make-rules-set+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -597,8 +597,8 @@ Usage: *(_non-base-rules_ rs)*
 <pre>
 Usage: *(_predicate-map_ rs)*
 </pre>
-<pre> Given a rules-set, return a map of rules keyed by their predicates.
- Each value will be a set of rules.</pre>
+<pre> Given a rules-set, return a map of rules keyed by their predicates. 
+Each value will be a set of rules.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/rules/clojure/contrib/datalog/rules.clj#151 Source] [http://www.google.com/codesearch?hl=en&lr=&q=predicate-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -681,11 +681,11 @@ Usage: *(_map-values_ f hash)*
 <pre>
 Usage: *(_preduce_ f data)*
 </pre>
-<pre> Similar to merge-with, but the contents of each key are merged in
- parallel using f.
+<pre> Similar to merge-with, but the contents of each key are merged in 
+parallel using f. 
  
-  f - a function of 2 arguments.
- data - a collection of hashes.</pre>
+ f - a function of 2 arguments. 
+data - a collection of hashes.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/util/clojure/contrib/datalog/util.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=preduce+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----

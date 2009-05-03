@@ -33,9 +33,9 @@ Variables and Functions in generic.math-functions:
 <pre>
 Usage: *(_assoc_ coll & key-val-pairs)*
 </pre>
-<pre> Returns a new collection in which the values corresponding to the
- given keys are updated by the given values. Each type of collection
- can have specific restrictions on the possible keys.</pre>
+<pre> Returns a new collection in which the values corresponding to the 
+given keys are updated by the given values. Each type of collection 
+can have specific restrictions on the possible keys.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#27 Source] [http://www.google.com/codesearch?hl=en&lr=&q=assoc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -44,9 +44,9 @@ Usage: *(_assoc_ coll & key-val-pairs)*
 <pre>
 Usage: *(_dissoc_ coll & keys)*
 </pre>
-<pre> Returns a new collection in which the entries corresponding to the
- given keys are removed. Each type of collection can have specific
- restrictions on the possible keys.</pre>
+<pre> Returns a new collection in which the entries corresponding to the 
+given keys are removed. Each type of collection can have specific 
+restrictions on the possible keys.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dissoc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -65,8 +65,8 @@ Usage: *(_empty_ coll)*
 Usage: *(_get_ coll key)
        (_get_ coll key not-found)*
 </pre>
-<pre> Returns the element of coll referred to by key. Each type of collection
- can have specific restrictions on the possible keys.</pre>
+<pre> Returns the element of coll referred to by key. Each type of collection 
+can have specific restrictions on the possible keys.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -75,8 +75,8 @@ Usage: *(_get_ coll key)
 <pre>
 Usage: *(_into_ to from)*
 </pre>
-<pre> Returns a new coll consisting of to-coll with all of the items of
- from-coll conjoined.</pre>
+<pre> Returns a new coll consisting of to-coll with all of the items of 
+from-coll conjoined.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection/clojure/contrib/generic/collection.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=into+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -95,8 +95,8 @@ Usage: *(_seq_ s)*
 <pre>
 Usage: *(_fmap_ f s)*
 </pre>
-<pre> Applies function f to each item in the data structure s and returns
- a structure of the same kind.</pre>
+<pre> Applies function f to each item in the data structure s and returns 
+a structure of the same kind.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/functor/clojure/contrib/generic/functor.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.generic.math-functions==
@@ -106,7 +106,7 @@ Usage: *(_fmap_ f s)*
 <pre>
 Usage: *(_approx=_ x y eps)*
 </pre>
-<pre> Return true if the absolute value of the difference between x and y
- is less than eps</pre>
+<pre> Return true if the absolute value of the difference between x and y 
+is less than eps</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions/clojure/contrib/generic/math_functions.clj#95 Source] [http://www.google.com/codesearch?hl=en&lr=&q=approx=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

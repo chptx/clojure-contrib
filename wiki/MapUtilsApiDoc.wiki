@@ -26,12 +26,12 @@ Shortcuts:
 <pre>
 Usage: *(_deep-merge-with_ f & maps)*
 </pre>
-<pre> Like merge-with, but merges maps recursively, appling the given fn
- only when there's a non-map at a particular level.
+<pre> Like merge-with, but merges maps recursively, appling the given fn 
+only when there's a non-map at a particular level. 
  
-  (deepmerge + {:a {:b {:c 1 :d {:x 1 :y 2}} :e 3} :f 4}
-              {:a {:b {:c 2 :d {:z 9} :z 3} :e 100}})
- -> {:a {:b {:z 3, :c 3, :d {:z 9, :x 1, :y 2}}, :e 103}, :f 4}</pre>
+ (deepmerge + {:a {:b {:c 1 :d {:x 1 :y 2}} :e 3} :f 4} 
+             {:a {:b {:c 2 :d {:z 9} :z 3} :e 100}}) 
+-> {:a {:b {:z 3, :c 3, :d {:z 9, :x 1, :y 2}}, :e 103}, :f 4}</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/map_utils/clojure/contrib/map_utils.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deep-merge-with+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----

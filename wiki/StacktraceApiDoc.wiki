@@ -26,8 +26,8 @@ Shortcuts:
 <pre>
 Usage: *(_e_)*
 </pre>
-<pre> REPL utility.  Prints a brief stack trace for the root cause of the
- most recent exception.</pre>
+<pre> REPL utility.  Prints a brief stack trace for the root cause of the 
+most recent exception.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stacktrace/clojure/contrib/stacktrace.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=e+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -47,9 +47,9 @@ Usage: *(_print-cause-trace_ tr)
 Usage: *(_print-stack-trace_ tr)
        (_print-stack-trace_ tr n)*
 </pre>
-<pre> Prints a Clojure-oriented stack trace of tr, a Throwable.
- Prints a maximum of n stack frames (default: unlimited).
- Does not print chained exceptions (causes).</pre>
+<pre> Prints a Clojure-oriented stack trace of tr, a Throwable. 
+Prints a maximum of n stack frames (default: unlimited). 
+Does not print chained exceptions (causes).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stacktrace/clojure/contrib/stacktrace.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----

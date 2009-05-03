@@ -36,10 +36,10 @@ Usage: *(_add-loops_ g)*
 Usage: *(_component-graph_ g)
        (_component-graph_ g sccs)*
 </pre>
-<pre> Given a graph, perhaps with cycles, return a reduced graph that is acyclic.
- Each node in the new graph will be a set of nodes from the old.
- These sets are the strongly connected components.  Each edge will
- be the union of the corresponding edges of the prior graph.</pre>
+<pre> Given a graph, perhaps with cycles, return a reduced graph that is acyclic. 
+Each node in the new graph will be a set of nodes from the old. 
+These sets are the strongly connected components.  Each edge will 
+be the union of the corresponding edges of the prior graph.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#130 Source] [http://www.google.com/codesearch?hl=en&lr=&q=component-graph+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -48,11 +48,11 @@ Usage: *(_component-graph_ g)
 <pre>
 Usage: *(_dependency-list_ g)*
 </pre>
-<pre> Similar to a topological sort, this returns a vector of sets. The
- set of nodes at index 0 are independent.  The set at index 1 depend
- on index 0; those at 2 depend on 0 and 1, and so on.  Those withing
- a set have no mutual dependencies.  Assume the input graph (which
- much be acyclic) has an edge a->b when a depends on b.</pre>
+<pre> Similar to a topological sort, this returns a vector of sets. The 
+set of nodes at index 0 are independent.  The set at index 1 depend 
+on index 0; those at 2 depend on 0 and 1, and so on.  Those withing 
+a set have no mutual dependencies.  Assume the input graph (which 
+much be acyclic) has an edge a->b when a depends on b.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#187 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dependency-list+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -61,9 +61,9 @@ Usage: *(_dependency-list_ g)*
 <pre>
 Usage: *(_fixed-point_ data fun max equal)*
 </pre>
-<pre> Repeatedly apply fun to data until (equal old-data new-data)
- returns true.  If max iterations occur, it will throw an
- exception.  Set max to nil for unlimited iterations.</pre>
+<pre> Repeatedly apply fun to data until (equal old-data new-data) 
+returns true.  If max iterations occur, it will throw an 
+exception.  Set max to nil for unlimited iterations.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#164 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fixed-point+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -82,9 +82,9 @@ Usage: *(_get-neighbors_ g n)*
 Usage: *(_lazy-walk_ g n)
        (_lazy-walk_ g ns v)*
 </pre>
-<pre> Return a lazy sequence of the nodes of a graph starting a node n.  Optionally,
- provide a set of visited notes (v) and a collection of nodes to
- visit (ns).</pre>
+<pre> Return a lazy sequence of the nodes of a graph starting a node n.  Optionally, 
+provide a set of visited notes (v) and a collection of nodes to 
+visit (ns).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#65 Source] [http://www.google.com/codesearch?hl=en&lr=&q=lazy-walk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -120,8 +120,8 @@ Usage: *(_remove-loops_ g)*
 <pre>
 Usage: *(_reverse-graph_ g)*
 </pre>
-<pre> Given a directed graph, return another directed graph with the
- order of the edges reversed.</pre>
+<pre> Given a directed graph, return another directed graph with the 
+order of the edges reversed.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=reverse-graph+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -130,8 +130,8 @@ Usage: *(_reverse-graph_ g)*
 <pre>
 Usage: *(_scc_ g)*
 </pre>
-<pre> Returns, as a sequence of sets, the strongly connected components
- of g.</pre>
+<pre> Returns, as a sequence of sets, the strongly connected components 
+of g.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#114 Source] [http://www.google.com/codesearch?hl=en&lr=&q=scc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -140,8 +140,8 @@ Usage: *(_scc_ g)*
 <pre>
 Usage: *(_self-recursive-sets_ g)*
 </pre>
-<pre> Returns, as a sequence of sets, the components of a graph that are
- self-recursive.</pre>
+<pre> Returns, as a sequence of sets, the components of a graph that are 
+self-recursive.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=self-recursive-sets+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -150,11 +150,11 @@ Usage: *(_self-recursive-sets_ g)*
 <pre>
 Usage: *(_stratification-list_ g1 g2)*
 </pre>
-<pre> Similar to dependency-list (see doc), except two graphs are
- provided.  The first is as dependency-list.  The second (which may
- have cycles) provides a partial-dependency relation.  If node a
- depends on node b (meaning an edge a->b exists) in the second
- graph, node a must be equal or later in the sequence.</pre>
+<pre> Similar to dependency-list (see doc), except two graphs are 
+provided.  The first is as dependency-list.  The second (which may 
+have cycles) provides a partial-dependency relation.  If node a 
+depends on node b (meaning an edge a->b exists) in the second 
+graph, node a must be equal or later in the sequence.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#204 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stratification-list+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -163,12 +163,12 @@ Usage: *(_stratification-list_ g1 g2)*
 <pre>
 Usage: *(_transitive-closure_ g)*
 </pre>
-<pre> Returns the transitive closure of a graph.  The neighbors are lazily computed.
+<pre> Returns the transitive closure of a graph.  The neighbors are lazily computed. 
  
-  Note: some version of this algorithm return all edges a->a
- regardless of whether such loops exist in the original graph.  This
- version does not.  Loops will be included only if produced by
- cycles in the graph.  If you have code that depends on such
- behavior, call (-> g transitive-closure add-loops)</pre>
+ Note: some version of this algorithm return all edges a->a 
+regardless of whether such loops exist in the original graph.  This 
+version does not.  Loops will be included only if produced by 
+cycles in the graph.  If you have code that depends on such 
+behavior, call (-> g transitive-closure add-loops)</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph/clojure/contrib/graph.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=transitive-closure+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

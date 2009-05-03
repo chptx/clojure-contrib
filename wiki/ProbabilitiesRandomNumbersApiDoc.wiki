@@ -32,8 +32,8 @@ Usage: *(_lcg_ modulus multiplier increment seed)*
 ----
 ===rand-stream===
 ====var====
-<pre> A random number stream based on clojure.core/rand. Note that this
- generator uses an internal mutable state. The state is thus not stored
- in the stream object and cannot be restored.</pre>
+<pre> A random number stream based on clojure.core/rand. Note that this 
+generator uses an internal mutable state. The state is thus not stored 
+in the stream object and cannot be restored.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random_numbers/clojure/contrib/probabilities/random_numbers.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=rand-stream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

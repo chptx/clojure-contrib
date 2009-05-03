@@ -26,10 +26,10 @@ Shortcuts:
 <pre>
 Usage: *(_add-cell-watcher_ cell key fun)*
 </pre>
-<pre> Adds a watcher to a cell to respond to changes of value.  The is a
- function of 4 values: a key, the cell, its old value, its new
- value.  This is implemented using Clojure's add-watch to the
- underlying ref, and shared its sematics</pre>
+<pre> Adds a watcher to a cell to respond to changes of value.  The is a 
+function of 4 values: a key, the cell, its old value, its new 
+value.  This is implemented using Clojure's add-watch to the 
+underlying ref, and shared its sematics</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#457 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-cell-watcher+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -83,32 +83,32 @@ Usage: *(_build-validator-cell_ deps fun expr)*
 <pre>
 Usage: *(_cell_ type & data)*
 </pre>
-<pre> Build a standard cell, like this:
+<pre> Build a standard cell, like this: 
  
-   (cell fred
-     (`*` ?mary ?joe))
+  (cell fred 
+    (`*` ?mary ?joe)) 
  
-  Which creates a cell named fred that is the product of a cell mary and cell joe
+ Which creates a cell named fred that is the product of a cell mary and cell joe 
  
-  Or:
+ Or: 
  
-   (cell joe
-    (apply `*` ?`*`sally))
+  (cell joe 
+   (apply `*` ?`*`sally)) 
  
-  Which creates a cell that applies `*` to the collection of all cells named sally
+ Which creates a cell that applies `*` to the collection of all cells named sally 
  
-  Or:
+ Or: 
  
-   (cell :source fred 0)
+  (cell :source fred 0) 
  
-  Which builds a source cell fred with initial value 0
+ Which builds a source cell fred with initial value 0 
  
-  Or:
+ Or: 
  
-    (cell :validator (when (< ?fred ?sally)
-                        (throwf "%s must be greater than %s" ?fred ?sally))
+   (cell :validator (when (< ?fred ?sally) 
+                       (throwf "%s must be greater than %s" ?fred ?sally)) 
  
-  Which will perform the validation</pre>
+ Which will perform the validation</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#301 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -167,9 +167,9 @@ Usage: *(_get-source-cells_ df)*
 <pre>
 Usage: *(_get-value_ df name)*
 </pre>
-<pre> Gets a value from the df matching the passed symbol.
- Signals an error if the name is not present, or if it not a single
- value.</pre>
+<pre> Gets a value from the df matching the passed symbol. 
+Signals an error if the name is not present, or if it not a single 
+value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#112 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-value+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -223,8 +223,8 @@ Usage: *(_source-cell?_ cell)*
 <pre>
 Usage: *(_update-values_ df data)*
 </pre>
-<pre> Given a dataflow, and a map of name-value pairs, update the
- dataflow by binding the new values.  Each name must be of a source
- cell</pre>
+<pre> Given a dataflow, and a map of name-value pairs, update the 
+dataflow by binding the new values.  Each name must be of a source 
+cell</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#435 Source] [http://www.google.com/codesearch?hl=en&lr=&q=update-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

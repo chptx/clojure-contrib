@@ -44,10 +44,10 @@ Usage: *(_macroexpand-all_ form)*
 <pre>
 Usage: *(_postwalk_ f form)*
 </pre>
-<pre> Performs a depth-first, post-order traversal of form.  Calls f on
- each sub-form, uses f's return value in place of the original.
- Recognizes all Clojure data structures except sorted-map-by.
- Consumes seqs as with doall.</pre>
+<pre> Performs a depth-first, post-order traversal of form.  Calls f on 
+each sub-form, uses f's return value in place of the original. 
+Recognizes all Clojure data structures except sorted-map-by. 
+Consumes seqs as with doall.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -56,8 +56,8 @@ Usage: *(_postwalk_ f form)*
 <pre>
 Usage: *(_postwalk-demo_ form)*
 </pre>
-<pre> Demonstrates the behavior of postwalk by printing each form as it is
- walked.  Returns form.</pre>
+<pre> Demonstrates the behavior of postwalk by printing each form as it is 
+walked.  Returns form.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#78 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -66,9 +66,9 @@ Usage: *(_postwalk-demo_ form)*
 <pre>
 Usage: *(_postwalk-replace_ smap form)*
 </pre>
-<pre> Recursively transforms form by replacing keys in smap with their
- values.  Like clojure/replace but works on any data structure.  Does
- replacement at the leaves of the tree first.</pre>
+<pre> Recursively transforms form by replacing keys in smap with their 
+values.  Like clojure/replace but works on any data structure.  Does 
+replacement at the leaves of the tree first.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#111 Source] [http://www.google.com/codesearch?hl=en&lr=&q=postwalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -86,8 +86,8 @@ Usage: *(_prewalk_ f form)*
 <pre>
 Usage: *(_prewalk-demo_ form)*
 </pre>
-<pre> Demonstrates the behavior of prewalk by printing each form as it is
- walked.  Returns form.</pre>
+<pre> Demonstrates the behavior of prewalk by printing each form as it is 
+walked.  Returns form.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-demo+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -96,9 +96,9 @@ Usage: *(_prewalk-demo_ form)*
 <pre>
 Usage: *(_prewalk-replace_ smap form)*
 </pre>
-<pre> Recursively transforms form by replacing keys in smap with their
- values.  Like clojure/replace but works on any data structure.  Does
- replacement at the root of the tree first.</pre>
+<pre> Recursively transforms form by replacing keys in smap with their 
+values.  Like clojure/replace but works on any data structure.  Does 
+replacement at the root of the tree first.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prewalk-replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -116,10 +116,10 @@ Usage: *(_stringify-keys_ m)*
 <pre>
 Usage: *(_walk_ inner outer form)*
 </pre>
-<pre> Traverses form, an arbitrary data structure.  inner and outer are
- functions.  Applies inner to each element of form, building up a
- data structure of the same type, then applies outer to the result.
- Recognizes all Clojure data structures except sorted-map-by.
- Consumes seqs as with doall.</pre>
+<pre> Traverses form, an arbitrary data structure.  inner and outer are 
+functions.  Applies inner to each element of form, building up a 
+data structure of the same type, then applies outer to the result. 
+Recognizes all Clojure data structures except sorted-map-by. 
+Consumes seqs as with doall.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk/clojure/contrib/walk.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=walk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

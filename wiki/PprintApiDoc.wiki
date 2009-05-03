@@ -17,14 +17,14 @@ Usage:
   (:use clojure.contrib.pprint))
 }}}
 ==Overview==
-<pre> This module comprises two elements:
- 1) A pretty printer for Clojure data structures, implemented in the function "pprint"
- 2) A Common Lisp compatible format function, implemented as "cl-format" because
-    Clojure is using the name "format" for its own format.
+<pre> This module comprises two elements: 
+1) A pretty printer for Clojure data structures, implemented in the function "pprint" 
+2) A Common Lisp compatible format function, implemented as "cl-format" because 
+   Clojure is using the name "format" for its own format. 
  
-  The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format
- where the markdown README is currently displayed. I will be moving it into the
- clojure.contrib wiki RSN.</pre>
+ The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format 
+where the markdown README is currently displayed. I will be moving it into the 
+clojure.contrib wiki RSN.</pre>
 
 
 ==Public Variables and Functions==
@@ -46,9 +46,9 @@ Shortcuts:
 ----
 ===`*`print-miser-width`*`===
 ====var====
-<pre> The column at which to enter miser style. Depending on the dispatch table, 
- miser style add newlines in more places to try to keep lines short allowing for further 
- levels of nesting.</pre>
+<pre> The column at which to enter miser style. Depending on the dispatch table,  
+miser style add newlines in more places to try to keep lines short allowing for further  
+levels of nesting.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-miser-width*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -78,8 +78,8 @@ Shortcuts:
 ----
 ===`*`print-suppress-namespaces`*`===
 ====var====
-<pre> Don't print namespaces with symbols. This is particularly useful when 
- pretty printing the results of macro expansions</pre>
+<pre> Don't print namespaces with symbols. This is particularly useful when  
+pretty printing the results of macro expansions</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-suppress-namespaces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -88,31 +88,33 @@ Shortcuts:
 <pre>
 Usage: *(_cl-format_ writer format-in & args)*
 </pre>
-<pre> An implementation of a Common Lisp compatible format function. cl-format formats its
- arguments to an output stream or string based on the format control string given. It 
- supports sophisticated formatting of structured data.
+<pre> An implementation of a Common Lisp compatible format function. cl-format formats its 
+arguments to an output stream or string based on the format control string given. It  
+supports sophisticated formatting of structured data. 
  
-  Writer is an instance of java.io.Writer, true to output to `*`out`*` or nil to output 
- to a string, format-in is the format control string and the remaining arguments 
- are the data to be formatted.
+ Writer is an instance of java.io.Writer, true to output to `*`out`*` or nil to output  
+to a string, format-in is the format control string and the remaining arguments  
+are the data to be formatted. 
  
-  The format control string is a string to be output with embedded 'format directives' 
- describing how to format the various arguments passed in.
+ The format control string is a string to be output with embedded 'format directives'  
+describing how to format the various arguments passed in. 
  
-  If writer is nil, cl-format returns the formatted result string. Otherwise, cl-format 
- returns nil.
+ If writer is nil, cl-format returns the formatted result string. Otherwise, cl-format  
+returns nil. 
  
-  For example:
-  (let `[`results `[`46 38 22`]``]`
-         (cl-format true "There ~`[`are~;is~:;are~`]`~:`*` ~d result~:p: ~{~d~^, ~}~%" 
-                    (count results) results))
+ For example: 
+ (let `[`results `[`46 38 22`]``]` 
+        (cl-format true "There ~`[`are~;is~:;are~`]`~:`*` ~d result~:p: ~{~d~^, ~}~%"  
+                   (count results) results)) 
  
-  Prints to `*`out`*`:
-  There are 3 results: 46, 38, 22
+ Prints to `*`out`*`: 
+ There are 3 results: 46, 38, 22 
  
-  Detailed documentation on format control strings is available in the "Common Lisp the Language, 2nd edition", Chapter 22 (available online at:
- http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000) 
- and in the Common Lisp HyperSpec at http://www.lispworks.com/documentation/HyperSpec/Body/22`_`c.htm</pre>
+ Detailed documentation on format control strings is available in the "Common Lisp the  
+Language, 2nd edition", Chapter 22 (available online at: 
+http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000)  
+and in the Common Lisp HyperSpec at  
+http://www.lispworks.com/documentation/HyperSpec/Body/22`_`c.htm</pre>
 
 See also: [http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000 Common Lisp the Language], [http://www.lispworks.com/documentation/HyperSpec/Body/22_c.htm Common Lisp HyperSpec]
 
@@ -123,42 +125,42 @@ See also: [http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cl
 <pre>
 Usage: *(_compile-format_ format-str)*
 </pre>
-<pre> Compiles format-str into a compiled format which can be used as an argument
- to cl-format just like a plain format string. Use this function for improved 
- performance when you're using the same format string repeatedly</pre>
+<pre> Compiles format-str into a compiled format which can be used as an argument 
+to cl-format just like a plain format string. Use this function for improved  
+performance when you're using the same format string repeatedly</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1716 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compile-format+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1718 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compile-format+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===formatter===
 ====macro====
 <pre>
 Usage: *(_formatter_ format-in)*
 </pre>
-<pre> Makes a function which can directly run format-in. The function is
- fn `[`stream & args`]` ... and returns nil unless the stream is nil (meaning 
- output to a string) in which case it returns the resulting string.
+<pre> Makes a function which can directly run format-in. The function is 
+fn `[`stream & args`]` ... and returns nil unless the stream is nil (meaning  
+output to a string) in which case it returns the resulting string. 
  
-  format-in can be either a control string or a previously compiled format.</pre>
+ format-in can be either a control string or a previously compiled format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1782 Source] [http://www.google.com/codesearch?hl=en&lr=&q=formatter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1784 Source] [http://www.google.com/codesearch?hl=en&lr=&q=formatter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===fresh-line===
 ====function====
 <pre>
 Usage: *(_fresh-line_)*
 </pre>
-<pre> Make a newline if the Writer is not already at the beginning of the line.
- N.B. Only works on ColumnWriters right now.</pre>
+<pre> Make a newline if the Writer is not already at the beginning of the line. 
+N.B. Only works on ColumnWriters right now.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1126 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fresh-line+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fresh-line+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pp===
 ====macro====
 <pre>
 Usage: *(_pp_)*
 </pre>
-<pre> A convenience macro that pretty prints the last thing output. This is
- exactly equivalent to (pprint `*`1).</pre>
+<pre> A convenience macro that pretty prints the last thing output. This is 
+exactly equivalent to (pprint `*`1).</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -167,8 +169,8 @@ Usage: *(_pp_)*
 <pre>
 Usage: *(_pprint_ object & more)*
 </pre>
-<pre> Pretty print object to the optional output writer. If the writer is not provided, 
- print the object to the currently bound value of `*`out`*`.</pre>
+<pre> Pretty print object to the optional output writer. If the writer is not provided,  
+print the object to the currently bound value of `*`out`*`.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#186 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -177,15 +179,15 @@ Usage: *(_pprint_ object & more)*
 <pre>
 Usage: *(_pprint-indent_ relative-to n & more)*
 </pre>
-<pre> Create an indent at this point in the pretty printing stream. This defines how 
- following lines are indented. relative-to can be either :block or :current depending 
- whether the indent should be computed relative to the start of the logical block or
- the current column position. n is an offset. 
+<pre> Create an indent at this point in the pretty printing stream. This defines how  
+following lines are indented. relative-to can be either :block or :current depending  
+whether the indent should be computed relative to the start of the logical block or 
+the current column position. n is an offset.  
  
-  Optionally, a third argument which is a stream may be used. If supplied, that is 
- the writer indented, otherwise `*`out`*` is used.
+ Optionally, a third argument which is a stream may be used. If supplied, that is  
+the writer indented, otherwise `*`out`*` is used. 
  
-  If the requested stream is not a PrettyWriter, this function does nothing.</pre>
+ If the requested stream is not a PrettyWriter, this function does nothing.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#270 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-indent+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -194,12 +196,12 @@ Usage: *(_pprint-indent_ relative-to n & more)*
 <pre>
 Usage: *(_pprint-logical-block_ base-stream & body)*
 </pre>
-<pre> Execute the body as a pretty printing logical block with output to `*`out`*` which 
- is a pretty printing writer wrapping base-stream (unless base-stream is already a pretty 
- printing writer in which case `*`out`*` is just bound to base-stream). 
+<pre> Execute the body as a pretty printing logical block with output to `*`out`*` which  
+is a pretty printing writer wrapping base-stream (unless base-stream is already a pretty  
+printing writer in which case `*`out`*` is just bound to base-stream).  
  
-  After the writer, the caller can optionally specify :prefix, :per-line-prefix, and
- :suffix.</pre>
+ After the writer, the caller can optionally specify :prefix, :per-line-prefix, and 
+:suffix.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#234 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-logical-block+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -208,13 +210,13 @@ Usage: *(_pprint-logical-block_ base-stream & body)*
 <pre>
 Usage: *(_pprint-newline_ kind & more)*
 </pre>
-<pre> Print a conditional newline to a pretty printing stream. kind specifies if the 
- newline is :linear, :miser, :fill, or :mandatory. 
+<pre> Print a conditional newline to a pretty printing stream. kind specifies if the  
+newline is :linear, :miser, :fill, or :mandatory.  
  
-  Optionally, a second argument which is a stream may be used. If supplied, that is 
- the writer to which the newline is sent, otherwise `*`out`*` is used.
+ Optionally, a second argument which is a stream may be used. If supplied, that is  
+the writer to which the newline is sent, otherwise `*`out`*` is used. 
  
-  If the requested stream is not a PrettyWriter, this function does nothing.</pre>
+ If the requested stream is not a PrettyWriter, this function does nothing.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#254 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-newline+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -223,18 +225,18 @@ Usage: *(_pprint-newline_ kind & more)*
 <pre>
 Usage: *(_pprint-tab_ kind colnum colinc & more)*
 </pre>
-<pre> Tab at this point in the pretty printing stream. kind specifies whether the tab
- is :line, :section, :line-relative, or :section-relative. 
+<pre> Tab at this point in the pretty printing stream. kind specifies whether the tab 
+is :line, :section, :line-relative, or :section-relative.  
  
-  Colnum and colinc specify the target column and the increment to move the target
- forward if the output is already past the original target.
+ Colnum and colinc specify the target column and the increment to move the target 
+forward if the output is already past the original target. 
  
-  Optionally, a fourth argument which is a stream may be used. If supplied, that is 
- the writer indented, otherwise `*`out`*` is used.
+ Optionally, a fourth argument which is a stream may be used. If supplied, that is  
+the writer indented, otherwise `*`out`*` is used. 
  
-  If the requested stream is not a PrettyWriter, this function does nothing.
+ If the requested stream is not a PrettyWriter, this function does nothing. 
  
-  THIS FUNCTION IS NOT YET IMPLEMENTED.</pre>
+ THIS FUNCTION IS NOT YET IMPLEMENTED.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#289 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-tab+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -243,8 +245,8 @@ Usage: *(_pprint-tab_ kind colnum colinc & more)*
 <pre>
 Usage: *(_set-pprint-dispatch_ table)*
 </pre>
-<pre> Set the pretty print dispatch table to TABLE. Currently the supported values are
- `*`simple-dispatch`*` or `*`code-dispatch`*`. In the future, this will support custom tables.</pre>
+<pre> Set the pretty print dispatch table to TABLE. Currently the supported values are 
+`*`simple-dispatch`*` or `*`code-dispatch`*`. In the future, this will support custom tables.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#203 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -262,24 +264,24 @@ Usage: *(_with-pprint-dispatch_ table & body)*
 <pre>
 Usage: *(_write_ object & kw-args)*
 </pre>
-<pre> Write an object subject to the current bindings of the printer control variables.
- Use the kw-args argument to override individual variables for this call (and any 
- recursive calls). Returns the string result if :stream is nil or nil otherwise.
+<pre> Write an object subject to the current bindings of the printer control variables. 
+Use the kw-args argument to override individual variables for this call (and any  
+recursive calls). Returns the string result if :stream is nil or nil otherwise. 
  
-  The following keyword arguments can be passed with values:
-   Keyword              Meaning                              Default value
-   :stream              Writer for output or nil             true (indicates `*`out`*`)
-   :circle`*`             If true, mark circular structures    Current value of `*`print-circle`*`
-   :length              Maximum elements to show in sublists Current value of `*`print-length`*`
-   :level               Maximum depth                        Current value of `*`print-level`*`
-   :lines`*`              Maximum lines of output              Current value of `*`print-lines`*`
-   :miser-width         Width to enter miser mode            Current value of `*`print-miser-width`*`
-   :dispatch            The pretty print dispatch function   Current value of `*`print-pprint-dispatch`*`
-   :pretty              If true, do pretty printing          Current value of `*`print-pretty`*`
-   :readably`*`           If true, print readably              Current value of `*`print-readably`*`
-   :right-margin        The column for the right margin      Current value of `*`print-right-margin`*`
-   :suppress-namespaces If true, no namespaces in symbols    Current value of `*`print-suppress-namespaces`*`
+ The following keyword arguments can be passed with values: 
+  Keyword              Meaning                              Default value 
+  :stream              Writer for output or nil             true (indicates `*`out`*`) 
+  :circle`*`             If true, mark circular structures    Current value of `*`print-circle`*` 
+  :length              Maximum elements to show in sublists Current value of `*`print-length`*` 
+  :level               Maximum depth                        Current value of `*`print-level`*` 
+  :lines`*`              Maximum lines of output              Current value of `*`print-lines`*` 
+  :miser-width         Width to enter miser mode            Current value of `*`print-miser-width`*` 
+  :dispatch            The pretty print dispatch function   Current value of `*`print-pprint-dispatch`*` 
+  :pretty              If true, do pretty printing          Current value of `*`print-pretty`*` 
+  :readably`*`           If true, print readably              Current value of `*`print-readably`*` 
+  :right-margin        The column for the right margin      Current value of `*`print-right-margin`*` 
+  :suppress-namespaces If true, no namespaces in symbols    Current value of `*`print-suppress-namespaces`*` 
  
-    `*` = not yet supported</pre>
+   `*` = not yet supported</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
