@@ -32,4 +32,4 @@ Usage: *(_with-command-line_ args desc cmdspec & body)*
 </pre>
 <pre> Bind locals to command-line args.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/command_line/clojure/contrib/command_line.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-command-line+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/command_line.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-command-line+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

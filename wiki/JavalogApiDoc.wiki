@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for javalog=
+by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.javalog))
 }}}
+==Overview==
+<pre> Convenient access to java.util.logging in Clojure</pre>
 
 
 ==Public Variables and Functions==
@@ -26,7 +30,7 @@ Shortcuts:
 <pre> The current java.util.logging.Logger.  By default, the 
 global logger, modified by 'with-logger'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog/clojure/contrib/javalog.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*logger*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*logger*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===add-log-file===
 ====function====
@@ -39,7 +43,7 @@ to the named logger.  'level' defaults to ALL.  Note: multiple
 invocations will create multiple log files, with numbers appended to 
 the names.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog/clojure/contrib/javalog.clj#83 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-log-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#86 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-log-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===log===
 ====macro====
@@ -49,7 +53,7 @@ Usage: *(_log_ level & strings)*
 <pre> Logs a message to `*`logger`*`.  'level' is expanded with 'log-level'. 
 Example: (log :severe "Bad argument: " object)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog/clojure/contrib/javalog.clj#105 Source] [http://www.google.com/codesearch?hl=en&lr=&q=log+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#108 Source] [http://www.google.com/codesearch?hl=en&lr=&q=log+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===log-level===
 ====macro====
@@ -64,7 +68,7 @@ Example: (log-level :severe)  =>  java.util.logging.Level.SEVERE
 If 'level' is not a keyword, it is assumed to be a user-defined 
 instance of java.util.logging.Level and is returned unchanged.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog/clojure/contrib/javalog.clj#48 Source] [http://www.google.com/codesearch?hl=en&lr=&q=log-level+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=log-level+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===root-logger===
 ====function====
@@ -74,7 +78,7 @@ Usage: *(_root-logger_)
 </pre>
 <pre> Returns the root Logger instance.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog/clojure/contrib/javalog.clj#62 Source] [http://www.google.com/codesearch?hl=en&lr=&q=root-logger+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#65 Source] [http://www.google.com/codesearch?hl=en&lr=&q=root-logger+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-console-log-level===
 ====function====
@@ -85,7 +89,7 @@ Usage: *(_set-console-log-level_ level)*
 ConsoleHandler to 'level' (a java.util.logging.Level).  Useful for 
 debugging at the REPL.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog/clojure/contrib/javalog.clj#70 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-console-log-level+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#73 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-console-log-level+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-logger===
 ====macro====
@@ -95,4 +99,4 @@ Usage: *(_with-logger_ logger-name level & body)*
 <pre> Executes 'body' with `*`logger`*` bound to a logger with the given name 
 and level.  'level' is expanded with 'log-level'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog/clojure/contrib/javalog.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-logger+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#100 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-logger+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -9,11 +9,32 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for lazy-seqs=
+by Stephen C. Gilardi
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.lazy-seqs))
 }}}
+==Overview==
+<pre> ==== Lazy sequences ==== 
+ 
+primes - based on the "naive" implemention described in `[`1`]` plus a 
+         small "wheel" which eliminates multiples of 2, 3, 5, and 
+         7 from consideration by incrementing past them. Also inspired 
+         by code from Christophe Grand in `[`2`]`. 
+ 
+fibs   - all the Fibonacci numbers 
+ 
+powers-of-2 - all the powers of 2 
+ 
+==== Lazy sequence functions ==== 
+ 
+(rotations, partition-all, shuffle, rand-elt  moved to seq`_`utils.clj) 
+(permutations and combinations moved to combinatorics.clj) 
+ 
+`[`1`]` http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf 
+`[`2`]` http://clj-me.blogspot.com/2008/06/primes.html</pre>
 
 
 ==Public Variables and Functions==
@@ -28,7 +49,7 @@ Usage: *(_fibs_)*
 </pre>
 <pre> Returns a lazy sequence of all the Fibonacci numbers.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs/clojure/contrib/lazy_seqs.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fibs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs.clj#77 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fibs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===powers-of-2===
 ====function====
@@ -37,10 +58,10 @@ Usage: *(_powers-of-2_)*
 </pre>
 <pre> Returns a lazy sequence of all the powers of 2</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs/clojure/contrib/lazy_seqs.clj#61 Source] [http://www.google.com/codesearch?hl=en&lr=&q=powers-of-2+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs.clj#82 Source] [http://www.google.com/codesearch?hl=en&lr=&q=powers-of-2+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===primes===
 ====var====
 <pre> Lazy sequence of all the prime numbers.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs/clojure/contrib/lazy_seqs.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=primes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/lazy_seqs.clj#61 Source] [http://www.google.com/codesearch?hl=en&lr=&q=primes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

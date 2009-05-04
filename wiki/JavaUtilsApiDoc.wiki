@@ -9,11 +9,33 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for java-utils=
+by Stuart Halloway, Stephen C. Gilardi, Shawn Hoover, Perry Trolard
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.java-utils))
 }}}
+==Overview==
+<pre> A set of utilties for dealing with Java stuff like files and properties. 
+ 
+Design goals: 
+ 
+(1) Ease-of-use. These APIs should be convenient. Performance is secondary. 
+ 
+(2) Duck typing. I hate having to think about the difference between 
+    a string that names a file, and a File. Ditto for a ton of other  
+    wrapper classes in the Java world (URL, InternetAddress). With these 
+    APIs you should be able to think about domain equivalence, not type 
+    equivalence. 
+ 
+(3) No bossiness. I am not marking any of these functions as private 
+    the docstrings will tell you the intended usage but do what works for you. 					 
+ 
+Feedback welcome! 
+ 
+If something in this module violates the principle of least surprise, please  
+let me (Stu) and the Clojure community know via the mailing list.</pre>
 
 
 ==Public Variables and Functions==
@@ -28,7 +50,7 @@ _No usage documentation available_
 for clojure.contrib.java-utils/file, which you should prefer 
 in most cases.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#73 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===as-properties===
 ====function====
@@ -38,7 +60,7 @@ Usage: *(_as-properties_ m)*
 <pre> Convert any seq of pairs to a java.utils.Properties instance. 
 Uses as-str to convert both keys and values into strings.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#132 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===as-str===
 ====function====
@@ -47,7 +69,7 @@ Usage: *(_as-str_ x)*
 </pre>
 <pre> Returns the name or string representation of x</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=as-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===file===
 ====function====
@@ -58,7 +80,7 @@ Usage: *(_file_ arg)
 </pre>
 <pre> Returns a java.io.File from string or file args.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-system-property===
 ====function====
@@ -68,7 +90,7 @@ Usage: *(_get-system-property_ stringable)
 </pre>
 <pre> Get a system property.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#75 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-system-property+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-system-property+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===read-properties===
 ====function====
@@ -77,7 +99,7 @@ Usage: *(_read-properties_ file-able)*
 </pre>
 <pre> Read properties from file-able.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#120 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#142 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===relative-path-string===
 ====multimethod====
@@ -85,7 +107,7 @@ _No usage documentation available_
 <pre> Interpret a String or java.io.File as a relative path string.  
 Building block for clojure.contrib.java-utils/file.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=relative-path-string+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=relative-path-string+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-system-properties===
 ====function====
@@ -94,7 +116,7 @@ Usage: *(_set-system-properties_ settings)*
 </pre>
 <pre> Set some system properties. Nil clears a property.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#82 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-system-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-system-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-system-properties===
 ====macro====
@@ -107,7 +129,7 @@ Sets the system properties to the supplied values, executes the body, and
 sets the properties back to their original values. Values of nil are 
 translated to a clearing of the property.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-system-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#112 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-system-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===write-properties===
 ====function====
@@ -117,4 +139,4 @@ Usage: *(_write-properties_ m file-able)
 </pre>
 <pre> Write properties to file-able.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils/clojure/contrib/java_utils.clj#127 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#149 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-properties+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

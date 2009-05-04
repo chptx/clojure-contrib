@@ -32,7 +32,7 @@ Usage: *(_const_ expr)*
 </pre>
 <pre> Evaluate the constant expression expr at compile time.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros/clojure/contrib/macros.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=const+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=const+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===letfn-===
 ====macro====
@@ -44,4 +44,4 @@ A variant of let for local function definitions. fn-bindings consists
 of name/args/body triples, with (letfn `[`name args body`]` ...) 
 being equivalent to (let `[`name (fn name args body)`]` ...).</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros/clojure/contrib/macros.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=letfn-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=letfn-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

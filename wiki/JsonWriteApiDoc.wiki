@@ -9,11 +9,17 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for json.write=
+by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.json.write))
 }}}
+==Overview==
+<pre> JavaScript Object Notation (JSON) generator</pre>
+See also: [http://www.json.org], [JSON Home Page]
+
 
 
 ==Public Variables and Functions==
@@ -28,14 +34,16 @@ Usage: *(_json-str_ x)*
 </pre>
 <pre> Converts Clojure data structures to a JSON-formatted string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write/clojure/contrib/json/write.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=json-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#69 Source] [http://www.google.com/codesearch?hl=en&lr=&q=json-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-json===
 ====multimethod====
-_No usage documentation available_
+<pre>
+Usage: *(_print-json_ x)*
+</pre>
 <pre> Prints Clojure data types as JSON.  Nil becomes JSON null. 
 Keywords become strings, without the leading colon.  Maps become 
 JSON objects, all other collection types become JSON arrays. 
 Strings and numbers print as with pr.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write/clojure/contrib/json/write.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#27 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

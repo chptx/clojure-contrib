@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for server-socket=
+by Craig McDaniel
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.server-socket))
 }}}
+==Overview==
+<pre> Server socket library - includes REPL on socket</pre>
 
 
 ==Public Variables and Functions==
@@ -30,7 +34,7 @@ Usage: *(_create-repl-server_ port backlog bind-addr)
 </pre>
 <pre> create a repl on a socket</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket/clojure/contrib/server_socket.clj#84 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-repl-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#87 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-repl-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===create-server===
 ====function====
@@ -47,4 +51,4 @@ created which calls:
 Optional arguments support specifying a listen backlog and binding 
 to a specific endpoint.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket/clojure/contrib/server_socket.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/server_socket.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=create-server+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

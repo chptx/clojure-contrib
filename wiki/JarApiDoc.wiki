@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for jar=
+by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.jar))
 }}}
+==Overview==
+<pre> Utilities for working with Java JAR files</pre>
 
 
 ==Public Variables and Functions==
@@ -29,7 +33,7 @@ Usage: *(_filenames-in-jar_ jar-file)*
 <pre> Returns a sequence of Strings naming the non-directory entries in 
 the JAR file.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar/clojure/contrib/jar.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=filenames-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=filenames-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===jar-file?===
 ====function====
@@ -38,4 +42,4 @@ Usage: *(_jar-file?_ file)*
 </pre>
 <pre> Returns true if file is a normal file with a .jar or .JAR extension.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar/clojure/contrib/jar.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=jar-file?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar.clj#22 Source] [http://www.google.com/codesearch?hl=en&lr=&q=jar-file?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

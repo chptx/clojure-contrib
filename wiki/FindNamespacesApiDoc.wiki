@@ -32,7 +32,7 @@ Usage: *(_clojure-source-file?_ file)*
 </pre>
 <pre> Returns true if file is a normal file with a .clj extension.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=clojure-source-file?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=clojure-source-file?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===clojure-sources-in-jar===
 ====function====
@@ -41,7 +41,7 @@ Usage: *(_clojure-sources-in-jar_ jar-file)*
 </pre>
 <pre> Returns a sequence of filenames ending in .clj found in the JAR file.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#75 Source] [http://www.google.com/codesearch?hl=en&lr=&q=clojure-sources-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#75 Source] [http://www.google.com/codesearch?hl=en&lr=&q=clojure-sources-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-clojure-sources-in-dir===
 ====function====
@@ -51,7 +51,7 @@ Usage: *(_find-clojure-sources-in-dir_ dir)*
 <pre> Searches recursively under dir for Clojure source files (.clj). 
 Returns a sequence of File objects, in breadth-first sort order.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-clojure-sources-in-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-clojure-sources-in-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-namespaces-in-dir===
 ====function====
@@ -61,7 +61,7 @@ Usage: *(_find-namespaces-in-dir_ dir)*
 <pre> Searches dir recursively for (ns ...) declarations in Clojure 
 source files; returns the symbol names of the declared namespaces.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#66 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-namespaces-in-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#66 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-namespaces-in-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-namespaces-in-jarfile===
 ====function====
@@ -72,7 +72,7 @@ Usage: *(_find-namespaces-in-jarfile_ jarfile)*
 declarations.  Returns a sequence of the symbol names of the 
 declared namespaces.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#99 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-namespaces-in-jarfile+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#99 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-namespaces-in-jarfile+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-namespaces-on-classpath===
 ====function====
@@ -83,7 +83,7 @@ Usage: *(_find-namespaces-on-classpath_)*
 source files containing (ns ...) declarations.  Returns a sequence 
 of the symbol names of the declared namespaces.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-namespaces-on-classpath+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#118 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-namespaces-on-classpath+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-ns-decls-in-dir===
 ====function====
@@ -93,7 +93,7 @@ Usage: *(_find-ns-decls-in-dir_ dir)*
 <pre> Searches dir recursively for (ns ...) declarations in Clojure 
 source files; returns the unevaluated ns declarations.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-ns-decls-in-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-ns-decls-in-dir+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-ns-decls-in-jarfile===
 ====function====
@@ -103,7 +103,7 @@ Usage: *(_find-ns-decls-in-jarfile_ jarfile)*
 <pre> Searches the JAR file for Clojure source files containing (ns ...) 
 declarations; returns the unevaluated ns declarations.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#91 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-ns-decls-in-jarfile+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#91 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-ns-decls-in-jarfile+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-ns-decls-on-classpath===
 ====function====
@@ -114,7 +114,7 @@ Usage: *(_find-ns-decls-on-classpath_)*
 source files containing (ns ...) declarations.  Returns a sequence 
 of the unevaluated ns declaration forms.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-ns-decls-on-classpath+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-ns-decls-on-classpath+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===read-file-ns-decl===
 ====function====
@@ -125,7 +125,7 @@ Usage: *(_read-file-ns-decl_ file)*
 unevaluated form.  Returns nil if read fails, or if the first form 
 is not a ns declaration.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-file-ns-decl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-file-ns-decl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===read-ns-decl===
 ====function====
@@ -136,7 +136,7 @@ Usage: *(_read-ns-decl_ rdr)*
 unevaluated form.  Returns nil if read fails, or if the first form 
 is not a ns declaration.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-ns-decl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-ns-decl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===read-ns-decl-from-jarfile-entry===
 ====function====
@@ -147,4 +147,4 @@ Usage: *(_read-ns-decl-from-jarfile-entry_ jarfile entry-name)*
 JAR file, and returns the unevaluated form.  Returns nil if the read 
 fails, or if the first form is not a ns declaration.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces/clojure/contrib/find_namespaces.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-ns-decl-from-jarfile-entry+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/find_namespaces.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-ns-decl-from-jarfile-entry+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

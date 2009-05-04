@@ -9,11 +9,16 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for repl-ln=
+by Stephen C. Gilardi
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.repl-ln))
 }}}
+==Overview==
+<pre> A repl with that provides support for lines and line numbers in the 
+input stream.</pre>
 
 
 ==Public Variables and Functions==
@@ -28,7 +33,7 @@ Usage: *(_print-repl-info_)*
 </pre>
 <pre> Prints info about the current repl</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#204 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-repl-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#208 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-repl-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===repl===
 ====function====
@@ -50,7 +55,7 @@ for clojure.main/repl with the following change and additions:
      - :prompt-fmt, Prompt format string 
        default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#213 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#217 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===repl-info===
 ====function====
@@ -59,7 +64,7 @@ Usage: *(_repl-info_)*
 </pre>
 <pre> Returns a map of info about the current repl</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#202 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===repl-prompt===
 ====function====
@@ -68,7 +73,7 @@ Usage: *(_repl-prompt_)*
 </pre>
 <pre> Returns the current repl prompt based on this repl's prompt-fmt</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#144 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#148 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-repl-name===
 ====function====
@@ -85,7 +90,7 @@ codes in the name to make the corresponding dynamic values part of it:
  
 With no arguments, resets the repl name to its default: "repl-%S"</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#153 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-name+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#157 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-name+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-repl-prompt===
 ====function====
@@ -104,7 +109,7 @@ the corresponding dynamic values part of it:
  
 With no arguments, resets the repl pompt to its default: "%S:%L %N=> "</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#176 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#180 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-repl===
 ====function====
@@ -117,4 +122,4 @@ for :in, :out, and :err are streams associated with System/in,
 System/out, and System/err using UTF-8 encoding. Also supports all the 
 options provided by clojure.contrib.repl-ln/repl.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln/clojure/contrib/repl_ln.clj#115 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-repl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#119 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-repl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

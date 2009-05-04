@@ -36,13 +36,13 @@ Shortcuts:
 ====var====
 <pre> Mark circular structures (N.B. This is not yet used)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-circle*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-circle*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-lines`*`===
 ====var====
 <pre> Maximum number of lines to print in a pretty print instance (N.B. This is not yet used)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-lines*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-lines*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-miser-width`*`===
 ====var====
@@ -50,38 +50,38 @@ Shortcuts:
 miser style add newlines in more places to try to keep lines short allowing for further  
 levels of nesting.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-miser-width*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-miser-width*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-pprint-dispatch`*`===
 ====var====
 <pre> The pretty print dispatch table</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-pprint-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-pprint-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-pretty`*`===
 ====var====
 <pre> Bind to true if you want write to use pretty printing</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-pretty*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-pretty*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-right-margin`*`===
 ====var====
 <pre> Pretty printing will try to avoid anything going beyond this column.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-right-margin*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-right-margin*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-shared`*`===
 ====var====
 <pre> Mark repeated structures rather than repeat them (N.B. This is not yet used)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-shared*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-shared*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-suppress-namespaces`*`===
 ====var====
 <pre> Don't print namespaces with symbols. This is particularly useful when  
 pretty printing the results of macro expansions</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-suppress-namespaces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-suppress-namespaces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===cl-format===
 ====function====
@@ -118,7 +118,7 @@ http://www.lispworks.com/documentation/HyperSpec/Body/22`_`c.htm</pre>
 
 See also: [http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000 Common Lisp the Language], [http://www.lispworks.com/documentation/HyperSpec/Body/22_c.htm Common Lisp HyperSpec]
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cl-format+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cl-format+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===compile-format===
 ====function====
@@ -129,7 +129,7 @@ Usage: *(_compile-format_ format-str)*
 to cl-format just like a plain format string. Use this function for improved  
 performance when you're using the same format string repeatedly</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1718 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compile-format+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1718 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compile-format+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===formatter===
 ====macro====
@@ -142,7 +142,7 @@ output to a string) in which case it returns the resulting string.
  
 format-in can be either a control string or a previously compiled format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1784 Source] [http://www.google.com/codesearch?hl=en&lr=&q=formatter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1784 Source] [http://www.google.com/codesearch?hl=en&lr=&q=formatter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===fresh-line===
 ====function====
@@ -152,7 +152,7 @@ Usage: *(_fresh-line_)*
 <pre> Make a newline if the Writer is not already at the beginning of the line. 
 N.B. Only works on ColumnWriters right now.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/cl-format.clj#1128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fresh-line+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fresh-line+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pp===
 ====macro====
@@ -162,7 +162,7 @@ Usage: *(_pp_)*
 <pre> A convenience macro that pretty prints the last thing output. This is 
 exactly equivalent to (pprint `*`1).</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint===
 ====function====
@@ -172,7 +172,7 @@ Usage: *(_pprint_ object & more)*
 <pre> Pretty print object to the optional output writer. If the writer is not provided,  
 print the object to the currently bound value of `*`out`*`.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#186 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#186 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint-indent===
 ====function====
@@ -189,7 +189,7 @@ the writer indented, otherwise `*`out`*` is used.
  
 If the requested stream is not a PrettyWriter, this function does nothing.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#270 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-indent+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#270 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-indent+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint-logical-block===
 ====macro====
@@ -203,7 +203,7 @@ printing writer in which case `*`out`*` is just bound to base-stream).
 After the writer, the caller can optionally specify :prefix, :per-line-prefix, and 
 :suffix.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#234 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-logical-block+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#234 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-logical-block+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint-newline===
 ====function====
@@ -218,7 +218,7 @@ the writer to which the newline is sent, otherwise `*`out`*` is used.
  
 If the requested stream is not a PrettyWriter, this function does nothing.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#254 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-newline+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#254 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-newline+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint-tab===
 ====function====
@@ -238,7 +238,7 @@ If the requested stream is not a PrettyWriter, this function does nothing.
  
 THIS FUNCTION IS NOT YET IMPLEMENTED.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#289 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-tab+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#289 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-tab+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-pprint-dispatch===
 ====function====
@@ -248,7 +248,7 @@ Usage: *(_set-pprint-dispatch_ table)*
 <pre> Set the pretty print dispatch table to TABLE. Currently the supported values are 
 `*`simple-dispatch`*` or `*`code-dispatch`*`. In the future, this will support custom tables.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#203 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#203 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-pprint-dispatch===
 ====macro====
@@ -257,7 +257,7 @@ Usage: *(_with-pprint-dispatch_ table & body)*
 </pre>
 <pre> Execute body with the pretty print dispatch table bound to table.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#210 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#210 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===write===
 ====function====
@@ -284,4 +284,4 @@ The following keyword arguments can be passed with values:
  
   `*` = not yet supported</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/clojure/contrib/pprint/pprint_base.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

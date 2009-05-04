@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for with-ns=
+by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.with-ns))
 }}}
+==Overview==
+<pre> Temporary namespace macro</pre>
 
 
 ==Public Variables and Functions==
@@ -30,7 +34,7 @@ Usage: *(_with-ns_ ns & body)*
 object or a symbol.  This makes it possible to define functions in 
 namespaces other than the current one.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/with_ns/clojure/contrib/with_ns.clj#17 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/with_ns.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-temp-ns===
 ====macro====
@@ -40,4 +44,4 @@ Usage: *(_with-temp-ns_ & body)*
 <pre> Evaluates body in an anonymous namespace, which is then immediately 
 removed.  The temporary namespace will 'refer' clojure.core.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/with_ns/clojure/contrib/with_ns.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-temp-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/with_ns.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-temp-ns+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

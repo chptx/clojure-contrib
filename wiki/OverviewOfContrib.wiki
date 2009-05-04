@@ -125,6 +125,15 @@ Public Variables and Functions:
 [CondApiDoc#cond-let cond-let] 
 
 ----
+===condt===
+by Stuart Sierra<br>
+API Overview [CondtApiDoc here]
+
+<pre> Generic case-like macro using template expressions</pre>
+Public Variables and Functions:
+[CondtApiDoc#condt condt] [CondtApiDoc#econdt econdt] 
+
+----
 ===core===
 by Laurent Petit (and others)<br>
 API Overview [CoreApiDoc here]
@@ -277,78 +286,147 @@ Variables and Functions in generic.math-functions:
 
 ----
 ===graph===
+by Jeffrey Straszheim<br>
 API Overview [GraphApiDoc here]
 
+<pre> Basic graph theory algorithms</pre>
 Public Variables and Functions:
 [GraphApiDoc#add-loops add-loops] [GraphApiDoc#component-graph component-graph] [GraphApiDoc#dependency-list dependency-list] [GraphApiDoc#fixed-point fixed-point] [GraphApiDoc#get-neighbors get-neighbors] [GraphApiDoc#lazy-walk lazy-walk] [GraphApiDoc#post-ordered-nodes post-ordered-nodes] [GraphApiDoc#recursive-component? recursive-component?] [GraphApiDoc#remove-loops remove-loops] [GraphApiDoc#reverse-graph reverse-graph] [GraphApiDoc#scc scc] [GraphApiDoc#self-recursive-sets self-recursive-sets] [GraphApiDoc#stratification-list stratification-list] [GraphApiDoc#transitive-closure transitive-closure] 
 
 ----
 ===greatest-least===
+by Vincent Foley<br>
 API Overview [GreatestLeastApiDoc here]
 
+<pre> Various functions for finding greatest and least values in a collection</pre>
 Public Variables and Functions:
 [GreatestLeastApiDoc#all-greatest all-greatest] [GreatestLeastApiDoc#all-greatest-by all-greatest-by] [GreatestLeastApiDoc#all-least all-least] [GreatestLeastApiDoc#all-least-by all-least-by] [GreatestLeastApiDoc#greatest greatest] [GreatestLeastApiDoc#greatest-by greatest-by] [GreatestLeastApiDoc#least least] [GreatestLeastApiDoc#least-by least-by] 
 
 ----
 ===import-static===
+by Stuart Sierra<br>
 API Overview [ImportStaticApiDoc here]
 
+<pre> Import static Java methods/fields into Clojure</pre>
 Public Variables and Functions:
 [ImportStaticApiDoc#import-static import-static] 
 
 ----
 ===jar===
+by Stuart Sierra<br>
 API Overview [JarApiDoc here]
 
+<pre> Utilities for working with Java JAR files</pre>
 Public Variables and Functions:
 [JarApiDoc#filenames-in-jar filenames-in-jar] [JarApiDoc#jar-file? jar-file?] 
 
 ----
 ===java-utils===
+by Stuart Halloway, Stephen C. Gilardi, Shawn Hoover, Perry Trolard<br>
 API Overview [JavaUtilsApiDoc here]
 
+<pre> A set of utilties for dealing with Java stuff like files and properties. 
+ 
+Design goals: 
+ 
+(1) Ease-of-use. These APIs should be convenient. Performance is secondary. 
+ 
+(2) Duck typing. I hate having to think about the difference between 
+    a string that names a file, and a File. Ditto for a ton of other  
+    wrapper classes in the Java world (URL, InternetAddress). With these 
+    APIs you should be able to think about domain equivalence, not type 
+    equivalence. 
+ 
+(3) No bossiness. I am not marking any of these functions as private 
+    the docstrings will tell you the intended usage but do what works for you. 					 
+ 
+Feedback welcome! 
+ 
+If something in this module violates the principle of least surprise, please  
+let me (Stu) and the Clojure community know via the mailing list.</pre>
 Public Variables and Functions:
 [JavaUtilsApiDoc#as-file as-file] [JavaUtilsApiDoc#as-properties as-properties] [JavaUtilsApiDoc#as-str as-str] [JavaUtilsApiDoc#file file] [JavaUtilsApiDoc#get-system-property get-system-property] [JavaUtilsApiDoc#read-properties read-properties] [JavaUtilsApiDoc#relative-path-string relative-path-string] [JavaUtilsApiDoc#set-system-properties set-system-properties] [JavaUtilsApiDoc#with-system-properties with-system-properties] [JavaUtilsApiDoc#write-properties write-properties] 
 
 ----
 ===javadoc.browse===
+by Start a web browser from Clojure<br>
 API Overview [JavadocBrowseApiDoc here]
 
+<pre> Christophe Grand</pre>
 Public Variables and Functions:
 [JavadocBrowseApiDoc#open-url-in-browser open-url-in-browser] [JavadocBrowseApiDoc#open-url-in-swing open-url-in-swing] 
 
 ----
 ===javalog===
+by Stuart Sierra<br>
 API Overview [JavalogApiDoc here]
 
+<pre> Convenient access to java.util.logging in Clojure</pre>
 Public Variables and Functions:
 [JavalogApiDoc#*logger* *logger*] [JavalogApiDoc#add-log-file add-log-file] [JavalogApiDoc#log log] [JavalogApiDoc#log-level log-level] [JavalogApiDoc#root-logger root-logger] [JavalogApiDoc#set-console-log-level set-console-log-level] [JavalogApiDoc#with-logger with-logger] 
 
 ----
 ===json.read===
+by Stuart Sierra<br>
 API Overview [JsonReadApiDoc here]
+
+<pre> JavaScript Object Notation (JSON) parser 
+ 
+For more information on JSON, see http://www.json.org/ 
+ 
+This library parses data in JSON format.  This is a fairly strict 
+implementation of JSON as described at json.org, not a full-fledged 
+JavaScript parser.  JavaScript functions and object constructors 
+are not supported.  Object field names must be quoted strings; they 
+may not be bare symbols.</pre>
+See also: [http://www.json.org], [JSON Home Page]
 
 Public Variables and Functions:
 [JsonReadApiDoc#read-json read-json] 
 
 ----
 ===json.write===
+by Stuart Sierra<br>
 API Overview [JsonWriteApiDoc here]
+
+<pre> JavaScript Object Notation (JSON) generator</pre>
+See also: [http://www.json.org], [JSON Home Page]
 
 Public Variables and Functions:
 [JsonWriteApiDoc#json-str json-str] [JsonWriteApiDoc#print-json print-json] 
 
 ----
 ===lazy-seqs===
+by Stephen C. Gilardi<br>
 API Overview [LazySeqsApiDoc here]
 
+<pre> ==== Lazy sequences ==== 
+ 
+primes - based on the "naive" implemention described in `[`1`]` plus a 
+         small "wheel" which eliminates multiples of 2, 3, 5, and 
+         7 from consideration by incrementing past them. Also inspired 
+         by code from Christophe Grand in `[`2`]`. 
+ 
+fibs   - all the Fibonacci numbers 
+ 
+powers-of-2 - all the powers of 2 
+ 
+==== Lazy sequence functions ==== 
+ 
+(rotations, partition-all, shuffle, rand-elt  moved to seq`_`utils.clj) 
+(permutations and combinations moved to combinatorics.clj) 
+ 
+`[`1`]` http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf 
+`[`2`]` http://clj-me.blogspot.com/2008/06/primes.html</pre>
 Public Variables and Functions:
 [LazySeqsApiDoc#fibs fibs] [LazySeqsApiDoc#powers-of-2 powers-of-2] [LazySeqsApiDoc#primes primes] 
 
 ----
 ===lazy-xml===
+by Chris Houser<br>
 API Overview [LazyXmlApiDoc here]
 
+<pre> Functions to parse xml lazily and emit back to text.</pre>
 Public Variables and Functions:
 [LazyXmlApiDoc#emit emit] [LazyXmlApiDoc#emit-element emit-element] [LazyXmlApiDoc#parse-seq parse-seq] [LazyXmlApiDoc#parse-trim parse-trim] 
 
@@ -363,29 +441,90 @@ Public Variables and Functions:
 
 ----
 ===map-utils===
+by Jason Wolfe, Chris Houser<br>
 API Overview [MapUtilsApiDoc here]
 
+<pre> Utilities for operating on Clojure maps.</pre>
 Public Variables and Functions:
 [MapUtilsApiDoc#deep-merge-with deep-merge-with] [MapUtilsApiDoc#lazy-get lazy-get] [MapUtilsApiDoc#safe-get safe-get] [MapUtilsApiDoc#safe-get-in safe-get-in] 
 
 ----
 ===math===
+by Mark Engelberg<br>
 API Overview [MathApiDoc here]
 
+<pre> Math functions that deal intelligently with the various 
+types in Clojure's numeric tower, as well as math functions 
+commonly found in Scheme implementations. 
+ 
+expt - (expt x y) is x to the yth power, returns an exact number 
+  if the base is an exact number, and the power is an integer, 
+  otherwise returns a double. 
+abs - (abs n) is the absolute value of n 
+gcd - (gcd m n) returns the greatest common divisor of m and n 
+lcm - (lcm m n) returns the least common multiple of m and n 
+ 
+The behavior of the next three functions on doubles is consistent 
+with the behavior of the corresponding functions 
+in Java's Math library, but on exact numbers, returns an integer. 
+ 
+floor - (floor n) returns the greatest integer less than or equal to n. 
+  If n is an exact number, floor returns an integer, 
+  otherwise a double. 
+ceil - (ceil n) returns the least integer greater than or equal to n. 
+  If n is an exact number, ceil returns an integer, 
+  otherwise a double. 
+round - (round n) rounds to the nearest integer. 
+  round always returns an integer.  round rounds up for values 
+  exactly in between two integers. 
+ 
+ 
+sqrt - Implements the sqrt behavior I'm accustomed to from PLT Scheme, 
+  specifically, if the input is an exact number, and is a square 
+  of an exact number, the output will be exact.  The downside 
+  is that for the common case (inexact square root), some extra 
+  computation is done to look for an exact square root first. 
+  So if you need blazingly fast square root performance, and you 
+  know you're just going to need a double result, you're better 
+  off calling java's Math/sqrt, or alternatively, you could just 
+  convert your input to a double before calling this sqrt function. 
+  If Clojure ever gets complex numbers, then this function will 
+  need to be updated (so negative inputs yield complex outputs). 
+exact-integer-sqrt - Implements a math function from the R6RS Scheme 
+  standard.  (exact-integer-sqrt k) where k is a non-negative integer, 
+  returns `[`s r`]` where k = s^2+r and k < (s+1)^2.  In other words, it 
+  returns the floor of the square root and the </pre>
 Public Variables and Functions:
 [MathApiDoc#abs abs] [MathApiDoc#ceil ceil] [MathApiDoc#exact-integer-sqrt exact-integer-sqrt] [MathApiDoc#expt expt] [MathApiDoc#floor floor] [MathApiDoc#gcd gcd] [MathApiDoc#lcm lcm] [MathApiDoc#round round] [MathApiDoc#sqrt sqrt] 
 
 ----
 ===miglayout===
+by Stephen C. Gilardi<br>
 API Overview [MiglayoutApiDoc here]
+
+<pre> Clojure support for the MiGLayout layout manager 
+http://www.miglayout.com/ 
+ 
+Example: 
+ 
+  (use '`[`clojure.contrib.miglayout.test :as mlt :only ()`]`) 
+  (doseq `[`i (range 3)`]` (mlt/run-test i))</pre>
+Public Variables and Functions:
+[MiglayoutApiDoc#miglayout miglayout] 
 
 Variables and Functions in miglayout.internal:
 [MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
 
+Variables and Functions in miglayout.test:
+[MiglayoutApiDoc#label label] [MiglayoutApiDoc#sep sep] [MiglayoutApiDoc#text-field text-field] 
+
 ----
 ===mmap===
+by Chris Houser<br>
 API Overview [MmapApiDoc here]
 
+<pre> Functions for memory-mapping files, plus some functions that use a 
+mmaped file for "normal" activies -- slurp, load-file, etc.</pre>
 Public Variables and Functions:
 [MmapApiDoc#buffer-stream buffer-stream] [MmapApiDoc#mmap mmap] [MmapApiDoc#slurp slurp] 
 
@@ -404,8 +543,10 @@ Public Variables and Functions:
 
 ----
 ===ns-utils===
+by Stephen C. Gilardi<br>
 API Overview [NsUtilsApiDoc here]
 
+<pre> Namespace utilities</pre>
 Public Variables and Functions:
 [NsUtilsApiDoc#dir dir] [NsUtilsApiDoc#docs docs] [NsUtilsApiDoc#get-ns get-ns] [NsUtilsApiDoc#ns-vars ns-vars] [NsUtilsApiDoc#print-dir print-dir] [NsUtilsApiDoc#print-docs print-docs] [NsUtilsApiDoc#vars vars] 
 
@@ -493,63 +634,88 @@ API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
 <pre> Examples for monte carlo methods</pre>
 ----
 ===prxml===
+by Stuart Sierra<br>
 API Overview [PrxmlApiDoc here]
 
+<pre> Compact syntax for generating XML. See the documentation of "prxml"  
+for details.</pre>
 Public Variables and Functions:
 [PrxmlApiDoc#*html-compatible* *html-compatible*] [PrxmlApiDoc#*prxml-indent* *prxml-indent*] [PrxmlApiDoc#prxml prxml] 
 
 ----
 ===repl-ln===
+by Stephen C. Gilardi<br>
 API Overview [ReplLnApiDoc here]
 
+<pre> A repl with that provides support for lines and line numbers in the 
+input stream.</pre>
 Public Variables and Functions:
 [ReplLnApiDoc#print-repl-info print-repl-info] [ReplLnApiDoc#repl repl] [ReplLnApiDoc#repl-info repl-info] [ReplLnApiDoc#repl-prompt repl-prompt] [ReplLnApiDoc#set-repl-name set-repl-name] [ReplLnApiDoc#set-repl-prompt set-repl-prompt] [ReplLnApiDoc#stream-repl stream-repl] 
 
 ----
 ===repl-utils===
+by Chris Houser<br>
 API Overview [ReplUtilsApiDoc here]
 
+<pre> Utilities meant to be used interactively at the REPL</pre>
 Public Variables and Functions:
 [ReplUtilsApiDoc#*local-javadocs* *local-javadocs*] [ReplUtilsApiDoc#*remote-javadocs* *remote-javadocs*] [ReplUtilsApiDoc#add-break-thread! add-break-thread!] [ReplUtilsApiDoc#add-local-javadoc add-local-javadoc] [ReplUtilsApiDoc#add-remote-javadoc add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#find-javadoc-url find-javadoc-url] [ReplUtilsApiDoc#get-source get-source] [ReplUtilsApiDoc#javadoc javadoc] [ReplUtilsApiDoc#show show] [ReplUtilsApiDoc#source source] [ReplUtilsApiDoc#start-handling-break start-handling-break] 
 
 ----
 ===seq-utils===
+by Stuart Sierra (and others)<br>
 API Overview [SeqUtilsApiDoc here]
 
+<pre> Sequence utilities for Clojure</pre>
 Public Variables and Functions:
 [SeqUtilsApiDoc#find-first find-first] [SeqUtilsApiDoc#flatten flatten] [SeqUtilsApiDoc#frequencies frequencies] [SeqUtilsApiDoc#group-by group-by] [SeqUtilsApiDoc#includes? includes?] [SeqUtilsApiDoc#indexed indexed] [SeqUtilsApiDoc#partition-all partition-all] [SeqUtilsApiDoc#partition-by partition-by] [SeqUtilsApiDoc#rand-elt rand-elt] [SeqUtilsApiDoc#rec-cat rec-cat] [SeqUtilsApiDoc#rec-seq rec-seq] [SeqUtilsApiDoc#reductions reductions] [SeqUtilsApiDoc#rotations rotations] [SeqUtilsApiDoc#separate separate] [SeqUtilsApiDoc#seq-on seq-on] [SeqUtilsApiDoc#shuffle shuffle] 
 
 ----
 ===server-socket===
+by Craig McDaniel<br>
 API Overview [ServerSocketApiDoc here]
 
+<pre> Server socket library - includes REPL on socket</pre>
 Public Variables and Functions:
 [ServerSocketApiDoc#create-repl-server create-repl-server] [ServerSocketApiDoc#create-server create-server] 
 
 ----
 ===set===
+by Jason Wolfe<br>
 API Overview [SetApiDoc here]
 
+<pre> Clojure functions for operating on sets (supplemental to clojure.set)</pre>
 Public Variables and Functions:
 [SetApiDoc#proper-subset? proper-subset?] [SetApiDoc#proper-superset? proper-superset?] [SetApiDoc#subset? subset?] [SetApiDoc#superset? superset?] 
 
 ----
 ===shell-out===
+by Chris Houser<br>
 API Overview [ShellOutApiDoc here]
 
+<pre> Conveniently launch a sub-process providing to its stdin and 
+collecting its stdout</pre>
 Public Variables and Functions:
 [ShellOutApiDoc#sh sh] 
 
 ----
 ===singleton===
+by Stuart Sierra<br>
 API Overview [SingletonApiDoc here]
 
+<pre> Singleton functions</pre>
 Public Variables and Functions:
 [SingletonApiDoc#global-singleton global-singleton] [SingletonApiDoc#per-thread-singleton per-thread-singleton] 
 
 ----
 ===sql===
+by Stephen C. Gilardi<br>
 API Overview [SqlApiDoc here]
+
+<pre> A Clojure interface to sql databases via jdbc 
+ 
+See clojure.contrib.sql.test for an example</pre>
+See also: [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj Example code]
 
 Public Variables and Functions:
 [SqlApiDoc#connection connection] [SqlApiDoc#create-table create-table] [SqlApiDoc#delete-rows delete-rows] [SqlApiDoc#do-commands do-commands] [SqlApiDoc#do-prepared do-prepared] [SqlApiDoc#drop-table drop-table] [SqlApiDoc#find-connection find-connection] [SqlApiDoc#insert-records insert-records] [SqlApiDoc#insert-rows insert-rows] [SqlApiDoc#insert-values insert-values] [SqlApiDoc#is-rollback-only is-rollback-only] [SqlApiDoc#set-rollback-only set-rollback-only] [SqlApiDoc#transaction transaction] [SqlApiDoc#update-or-insert-values update-or-insert-values] [SqlApiDoc#update-values update-values] [SqlApiDoc#with-connection with-connection] [SqlApiDoc#with-query-results with-query-results] 
@@ -562,15 +728,19 @@ Variables and Functions in sql.test:
 
 ----
 ===stacktrace===
+by Stuart Sierra<br>
 API Overview [StacktraceApiDoc here]
 
+<pre> Print Clojure-centric stack traces</pre>
 Public Variables and Functions:
 [StacktraceApiDoc#e e] [StacktraceApiDoc#print-cause-trace print-cause-trace] [StacktraceApiDoc#print-stack-trace print-stack-trace] [StacktraceApiDoc#print-throwable print-throwable] [StacktraceApiDoc#print-trace-element print-trace-element] [StacktraceApiDoc#root-cause root-cause] 
 
 ----
 ===str-utils===
+by Stuart Sierra<br>
 API Overview [StrUtilsApiDoc here]
 
+<pre> String utilities for Clojure</pre>
 Public Variables and Functions:
 [StrUtilsApiDoc#chomp chomp] [StrUtilsApiDoc#chop chop] [StrUtilsApiDoc#re-gsub re-gsub] [StrUtilsApiDoc#re-partition re-partition] [StrUtilsApiDoc#re-split re-split] [StrUtilsApiDoc#re-sub re-sub] [StrUtilsApiDoc#str-join str-join] 
 
@@ -625,15 +795,274 @@ Public Variables and Functions:
 
 ----
 ===template===
+by Stuart Sierra<br>
 API Overview [TemplateApiDoc here]
 
+<pre> Anonymous functions that pre-evaluate sub-expressions 
+ 
+This file defines macros for using template expressions.  These are 
+useful for writing macros. 
+ 
+A template is an expression containing "holes" represented by the 
+symbols `_`1, `_`2, `_`3, and so on.  ("`_`" is a synonym for "`_`1".) 
+ 
+The "template" macro is similar to #().  It returns an anonymous 
+function containing the body of the template.  Unlike #() or "fn", 
+however, any expressions that do not have any holes will be 
+evaluated only once, at the time the function is created, not every 
+time the function is called. 
+ 
+Examples: 
+ 
+Assume we have some big, slow calculation. 
+  (defn think-hard `[``]` 
+    (Thread/sleep 1000) 
+    1000) 
+ 
+With #(), think-hard gets called every time. 
+  (time (doall (map #(+ % (think-hard)) 
+                    (range 5)))) 
+  => "Elapsed time: 5001.33455 msecs" 
+  => (1000 1001 1002 1003 1004) 
+ 
+With a template, think-hard only gets called once. 
+  (time (doall (map (template (+ `_` (think-hard))) 
+                    (range 5)))) 
+  => "Elapsed time: 1000.907326 msecs" 
+  => (1000 1001 1002 1003 1004) 
+ 
+There is also the do-template macro, which works differently.  It 
+calls the same template multiple times, filling in values, and puts 
+it all inside a "do" block.  It will split up the values based on 
+the number of holes in the template. 
+ 
+  (do-template (foo `_`1 `_`2) :a :b :c :d) 
+  expands to: (do (foo :a :b) (foo :c :d)) 
+ 
+  (do-template (foo `_`1 `_`2 `_`3) 10 11 12 13 14 15) 
+  expands to: (foo 10 11 12) (foo 13 14 15)</pre>
 Public Variables and Functions:
 [TemplateApiDoc#apply-template apply-template] [TemplateApiDoc#do-template do-template] [TemplateApiDoc#find-holes find-holes] [TemplateApiDoc#find-pure-exprs find-pure-exprs] [TemplateApiDoc#find-symbols find-symbols] [TemplateApiDoc#flatten-map flatten-map] [TemplateApiDoc#template template] [TemplateApiDoc#template? template?] 
 
 ----
 ===test-is===
+by Stuart Sierra, with contributions and suggestions by 
+Chas Emerick, Allen Rohner, and Stuart Halloway<br>
 API Overview [TestIsApiDoc here]
 
+<pre> Inspired by many Common Lisp test frameworks and clojure/test, 
+ this file is a Clojure test framework. 
+ 
+ ASSERTIONS 
+ 
+ The core of the library is the "is" macro, which lets you make 
+ assertions of any arbitrary expression: 
+ 
+ (is (= 4 (+ 2 2))) 
+ (is (instance? Integer 256)) 
+ (is (.startsWith "abcde" "ab")) 
+ 
+ You can type an "is" expression directly at the REPL, which will 
+ print a message if it fails. 
+ 
+     user> (is (= 5 (+ 2 2))) 
+ 
+     FAIL in  (:1) 
+     expected: (= 5 (+ 2 2)) 
+       actual: (not (= 5 4)) 
+     false 
+ 
+ The "expected:" line shows you the original expression, and the 
+ "actual:" shows you what actually happened.  In this case, it 
+ shows that (+ 2 2) returned 4, which is not = to 5.  Finally, the 
+ "false" on the last line is the value returned from the 
+ expression.  The "is" macro always returns the result of the 
+ inner expression. 
+ 
+ There are two special assertions for testing exceptions.  The 
+  "(is (thrown? c ...))" form tests if an exception of class c is 
+  thrown: 
+ 
+ (is (thrown? ArithmeticException (/ 1 0)))  
+ 
+ "(is (thrown-with-msg? c re ...))" does the same thing and also 
+ tests that the message on the exception matches the regular 
+ expression re: 
+ 
+ (is (thrown-with-msg? ArithmeticException #"Divide by zero" 
+                       (/ 1 0))) 
+ 
+ DOCUMENTING TESTS 
+ 
+ "is" takes an optional second argument, a string describing the 
+ assertion.  This message will be included in the error report. 
+ 
+ (is (= 5 (+ 2 2)) "Crazy arithmetic") 
+ 
+ In addition, you can document groups of assertions with the 
+ "testing" macro, which takes a string followed by any number of 
+ "is" assertions.  The string will be included in failure reports. 
+ Calls to "testing" may be nested, and all of the strings will be 
+ joined together with spaces in the final report, in a style 
+ similar to RSpec <http://rspec.info/> 
+ 
+ (testing "Arithmetic" 
+   (testing "with positive integers" 
+     (= 4 (+ 2 2)) 
+     (= 7 (+ 3 4))) 
+   (testing "with negative integers" 
+     (= -4 (+ -2 -2)) 
+     (= -1 (+ 3 -4)))) 
+ 
+ Note that, unlike RSpec, the "testing" macro may only be used 
+ INSIDE a "deftest" or "with-test" form (see below). 
+ 
+ 
+ 
+ DEFINING TESTS 
+ 
+ There are two ways to define tests.  The "with-test" macro takes 
+ a defn or def form as its first argument, followed by any number 
+ of assertions.  The tests will be stored as metadata on the 
+ definition. 
+ 
+ (with-test 
+     (defn my-function `[`x y`]` 
+       (+ x y)) 
+   (is (= 4 (my-function 2 2))) 
+   (is (= 7 (my-function 3 4)))) 
+ 
+ As of Clojure SVN rev. 1221, this does not work with defmacro. 
+ See http://code.google.com/p/clojure/issues/detail?id=51 
+ 
+ The other way lets you define tests separately from the rest of 
+ your code, even in a different namespace: 
+ 
+(deftest addition 
+  (is (= 4 (+ 2 2))) 
+  (is (= 7 (+ 3 4)))) 
+ 
+(deftest subtraction 
+  (is (= 1 (- 4 3))) 
+  (is (= 3 (- 7 4)))) 
+ 
+ This creates functions named "addition" and "subtraction", which 
+ can be called like any other function.  Therefore, tests can be 
+ grouped and composed, in a style similar to the test framework in 
+ Peter Seibel's "Practical Common Lisp" 
+ <http://www.gigamonkeys.com/book/practical-building-a-unit-test-framework.html> 
+ 
+ (deftest arithmetic 
+   (addition) 
+   (subtraction)) 
+ 
+ The names of the nested tests will be joined in a list, like 
+ "(arithmetic addition)", in failure reports.  You can use nested 
+ tests to set up a context shared by several tests. 
+ 
+ 
+ 
+ RUNNING TESTS 
+ 
+ Run tests with the function "(run-tests namespaces...)": 
+ 
+ (run-tests 'your.namespace 'some.other.namespace) 
+ 
+ If you don't specify any namespaces, the current namespace is 
+ used.  To run all tests in all namespaces, use "(run-all-tests)". 
+ 
+ By default, these functions will search for all tests defined in 
+ a namespace and run them in an undefined order.  However, if you 
+ are composing tests, as in the "arithmetic" example above, you 
+ probably do not want the "addition" and "subtraction" tests run 
+ separately.  In that case, you must define a special function 
+ named "test-ns-hook" that runs your tests in the correct order: 
+ 
+ (defn test-ns-hook `[``]` 
+   (arithmetic)) 
+ 
+ 
+ 
+ 
+ OMITTING TESTS FROM PRODUCTION CODE 
+ 
+ You can bind the variable "`*`load-tests`*`" to false when loading or 
+ compiling code in production.  This will prevent any tests from 
+ being created by "with-test" or "deftest". 
+ 
+ 
+ 
+ FIXTURES (new) 
+ 
+ Fixtures allow you to run code before and after tests, to set up 
+ the context in which tests should be run. 
+ 
+ A fixture is just a function that calls another function passed as 
+ an argument.  It looks like this: 
+ (defn my-fixture `[`f`]` 
+    Perform setup, establish bindings, whatever. 
+   (f)  Then call the function we were passed. 
+    Tear-down / clean-up code here. 
+  ) 
+ 
+ Fixtures are attached to namespaces in one of two ways.  "each" 
+ fixtures are run repeatedly, once for each test function created 
+ with "deftest" or "with-test".  "each" fixtures are useful for 
+ establishing a consistent before/after state for each test, like 
+ clearing out database tables. 
+ 
+ "each" fixtures can be attached to the current namespace like this: 
+ (use-fixtures :each fixture1 fixture2 ...) 
+ The fixture1, fixture2 are just functions like the example above. 
+ They can also be anonymous functions, like this: 
+ (use-fixtures :each (fn `[`f`]` setup... (f) cleanup...)) 
+ 
+ The other kind of fixture, a "once" fixture, is only run once, 
+ around ALL the tests in the namespace.  "once" fixtures are useful 
+ for tasks that only need to be performed once, like establishing 
+ database connections, or for time-consuming tasks. 
+ 
+ Attach "once" fixtures to the current namespace like this: 
+ (use-fixtures :once fixture1 fixture2 ...) 
+ 
+ 
+ SAVING TEST OUTPUT TO A FILE 
+ 
+ All the test reporting functions write to the var `*`test-out`*`.  By 
+ default, this is the same as `*`out`*`, but you can rebind it to any 
+ PrintWriter.  For example, it could be a file opened with 
+ clojure.contrib.duck-streams/writer. 
+ 
+ 
+ EXTENDING TEST-IS (ADVANCED) 
+ 
+ You can extend the behavior of the "is" macro by defining new 
+ methods for the "assert-expr" multimethod.  These methods are 
+ called during expansion of the "is" macro, so they should return 
+ quoted forms to be evaluated. 
+ 
+ You can plug in your own test-reporting framework by rebinding 
+ the "report" function: (report event) 
+ 
+ The 'event' argument is a map.  It will always have a :type key, 
+ whose value will be a keyword signaling the type of event being 
+ reported.  Standard events with :type value of :pass, :fail, and 
+ :error are called when an assertion passes, fails, and throws an 
+ exception, respectively.  In that case, the event will also have 
+ the following keys: 
+ 
+   :expected   The form that was expected to be true 
+   :actual     A form representing what actually occurred 
+   :message    The string message given as an argument to 'is' 
+ 
+ The "testing" strings will be a list in "`*`testing-contexts`*`", and 
+ the vars being tested will be a list in "`*`testing-vars`*`". 
+ 
+ Your "report" function should wrap any printing calls in the 
+ "with-test-out" macro, which rebinds `*`out`*` to the current value 
+ of `*`test-out`*`. 
+ 
+ For additional event types, see the examples in the code.</pre>
 Public Variables and Functions:
 [TestIsApiDoc#*load-tests* *load-tests*] [TestIsApiDoc#*stack-trace-depth* *stack-trace-depth*] [TestIsApiDoc#are are] [TestIsApiDoc#assert-any assert-any] [TestIsApiDoc#assert-predicate assert-predicate] [TestIsApiDoc#compose-fixtures compose-fixtures] [TestIsApiDoc#deftest deftest] [TestIsApiDoc#deftest- deftest-] [TestIsApiDoc#file-position file-position] [TestIsApiDoc#function? function?] [TestIsApiDoc#get-possibly-unbound-var get-possibly-unbound-var] [TestIsApiDoc#inc-report-counter inc-report-counter] [TestIsApiDoc#is is] [TestIsApiDoc#join-fixtures join-fixtures] [TestIsApiDoc#report report] [TestIsApiDoc#run-all-tests run-all-tests] [TestIsApiDoc#run-tests run-tests] [TestIsApiDoc#set-test set-test] [TestIsApiDoc#test-all-vars test-all-vars] [TestIsApiDoc#test-ns test-ns] [TestIsApiDoc#test-var test-var] [TestIsApiDoc#testing testing] [TestIsApiDoc#testing-contexts-str testing-contexts-str] [TestIsApiDoc#testing-vars-str testing-vars-str] [TestIsApiDoc#try-expr try-expr] [TestIsApiDoc#with-test with-test] [TestIsApiDoc#with-test-out with-test-out] 
 
@@ -642,8 +1071,11 @@ Variables and Functions in test-is.tap:
 
 ----
 ===trace===
+by Stuart Sierra<br>
 API Overview [TraceApiDoc here]
 
+<pre> This file defines simple "tracing" macros to help you see what your 
+code is doing.</pre>
 Public Variables and Functions:
 [TraceApiDoc#*trace-depth* *trace-depth*] [TraceApiDoc#deftrace deftrace] [TraceApiDoc#trace trace] [TraceApiDoc#trace-fn-call trace-fn-call] [TraceApiDoc#trace-indent trace-indent] [TraceApiDoc#tracer tracer] 
 
@@ -661,22 +1093,38 @@ Variables and Functions in types.examples:
 
 ----
 ===walk===
+by Stuart Sierra<br>
 API Overview [WalkApiDoc here]
 
+<pre> This file defines a generic tree walker for Clojure data 
+structures.  It takes any data structure (list, vector, map, set, 
+seq), calls a function on every element, and uses the return value 
+of the function in place of the original.  This makes it fairly 
+easy to write recursive search-and-replace functions, as shown in 
+the examples. 
+ 
+Note: "walk" supports all Clojure data structures EXCEPT maps 
+created with sorted-map-by.  There is no (obvious) way to retrieve 
+the sorting function.</pre>
 Public Variables and Functions:
 [WalkApiDoc#keywordize-keys keywordize-keys] [WalkApiDoc#macroexpand-all macroexpand-all] [WalkApiDoc#postwalk postwalk] [WalkApiDoc#postwalk-demo postwalk-demo] [WalkApiDoc#postwalk-replace postwalk-replace] [WalkApiDoc#prewalk prewalk] [WalkApiDoc#prewalk-demo prewalk-demo] [WalkApiDoc#prewalk-replace prewalk-replace] [WalkApiDoc#stringify-keys stringify-keys] [WalkApiDoc#walk walk] 
 
 ----
 ===with-ns===
+by Stuart Sierra<br>
 API Overview [WithNsApiDoc here]
 
+<pre> Temporary namespace macro</pre>
 Public Variables and Functions:
 [WithNsApiDoc#with-ns with-ns] [WithNsApiDoc#with-temp-ns with-temp-ns] 
 
 ----
 ===zip-filter===
+by Chris Houser<br>
 API Overview [ZipFilterApiDoc here]
 
+<pre> System for filtering trees and nodes generated by zip.clj in 
+general, and xml trees in particular.</pre>
 Public Variables and Functions:
 [ZipFilterApiDoc#ancestors ancestors] [ZipFilterApiDoc#children children] [ZipFilterApiDoc#children-auto children-auto] [ZipFilterApiDoc#descendants descendants] [ZipFilterApiDoc#left-locs left-locs] [ZipFilterApiDoc#leftmost? leftmost?] [ZipFilterApiDoc#right-locs right-locs] [ZipFilterApiDoc#rightmost? rightmost?] 
 

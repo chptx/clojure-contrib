@@ -38,7 +38,7 @@ Control can be passed to this 'continue' form from a 'raise' enclosed
 in this with-handler's dynamic scope, when this 'continue-name' is 
 given to a 'continue' form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#150 Source] [http://www.google.com/codesearch?hl=en&lr=&q=bind-continue+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#150 Source] [http://www.google.com/codesearch?hl=en&lr=&q=bind-continue+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===deferror===
 ====macro====
@@ -48,7 +48,7 @@ Usage: *(_deferror_ name `[`parent-error?`]` doc-string? `[`args`*``]` & body)
 </pre>
 <pre> Define a new error type</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deferror+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#59 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deferror+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===do-not-handle===
 ====macro====
@@ -60,7 +60,7 @@ not consider the error handled, but should continue searching for an
 appropriate 'handle' form.  Allows finer-grain control over catching 
 than just the error type.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#117 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-not-handle+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#117 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-not-handle+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===error===
 ====function====
@@ -69,7 +69,7 @@ Usage: *(_error_ details)*
 </pre>
 <pre> Base type for all error-kit errors</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=error+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=error+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===handle===
 ====function====
@@ -86,7 +86,7 @@ may return a value, in which case that will be the return value of
 the entire 'with-handler' form, or it may use any of the special 
 return forms, 'do-not-handle', 'continue-with', or 'continue'.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#138 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handle+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#138 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handle+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===raise===
 ====macro====
@@ -95,7 +95,7 @@ Usage: *(_raise_ err-name & args)*
 </pre>
 <pre> Raise an error of the type err-name, constructed with the given args</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===raise`*`===
 ====function====
@@ -105,7 +105,7 @@ Usage: *(_raise`*`_ err)*
 <pre> Raise the given error object, best if created by an error 
 constructor defined with deferror.  See also 'raise' macro.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#86 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#86 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throw-msg===
 ====macro====
@@ -116,7 +116,7 @@ Usage: *(_throw-msg_ class-name)*
 name.  Useful to associate a new error-kit error type with a 
 particular Java Exception class, via the :unhandled error key.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-msg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-msg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-handler===
 ====macro====
@@ -127,4 +127,4 @@ Usage: *(_with-handler_ & forms)*
 in a dynamic context that includes all of the following 'handle' and 
 'bind-continue' forms.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#163 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-handler+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#163 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-handler+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

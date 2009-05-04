@@ -9,11 +9,57 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for template=
+by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.template))
 }}}
+==Overview==
+<pre> Anonymous functions that pre-evaluate sub-expressions 
+ 
+This file defines macros for using template expressions.  These are 
+useful for writing macros. 
+ 
+A template is an expression containing "holes" represented by the 
+symbols `_`1, `_`2, `_`3, and so on.  ("`_`" is a synonym for "`_`1".) 
+ 
+The "template" macro is similar to #().  It returns an anonymous 
+function containing the body of the template.  Unlike #() or "fn", 
+however, any expressions that do not have any holes will be 
+evaluated only once, at the time the function is created, not every 
+time the function is called. 
+ 
+Examples: 
+ 
+Assume we have some big, slow calculation. 
+  (defn think-hard `[``]` 
+    (Thread/sleep 1000) 
+    1000) 
+ 
+With #(), think-hard gets called every time. 
+  (time (doall (map #(+ % (think-hard)) 
+                    (range 5)))) 
+  => "Elapsed time: 5001.33455 msecs" 
+  => (1000 1001 1002 1003 1004) 
+ 
+With a template, think-hard only gets called once. 
+  (time (doall (map (template (+ `_` (think-hard))) 
+                    (range 5)))) 
+  => "Elapsed time: 1000.907326 msecs" 
+  => (1000 1001 1002 1003 1004) 
+ 
+There is also the do-template macro, which works differently.  It 
+calls the same template multiple times, filling in values, and puts 
+it all inside a "do" block.  It will split up the values based on 
+the number of holes in the template. 
+ 
+  (do-template (foo `_`1 `_`2) :a :b :c :d) 
+  expands to: (do (foo :a :b) (foo :c :d)) 
+ 
+  (do-template (foo `_`1 `_`2 `_`3) 10 11 12 13 14 15) 
+  expands to: (foo 10 11 12) (foo 13 14 15)</pre>
 
 
 ==Public Variables and Functions==
@@ -29,7 +75,7 @@ Usage: *(_apply-template_ expr values)*
 <pre> Replaces `_`1, `_`2, `_`3, etc. in expr with corresponding elements of 
 values.  Returns the modified expression.  For use in macros.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=apply-template+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#173 Source] [http://www.google.com/codesearch?hl=en&lr=&q=apply-template+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===do-template===
 ====macro====
@@ -41,7 +87,7 @@ args.  args are grouped by the number of holes in the template.
 Example: (do-template (check `_`1 `_`2) :a :b :c :d) 
 expands to (do (check :a :b) (check :c :d))</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#139 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-template+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#184 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-template+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-holes===
 ====function====
@@ -50,7 +96,7 @@ Usage: *(_find-holes_ form)*
 </pre>
 <pre> Recursively finds all symbols starting with `_` in form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#82 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-holes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#127 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-holes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-pure-exprs===
 ====function====
@@ -60,7 +106,7 @@ Usage: *(_find-pure-exprs_ form)*
 <pre> Recursively finds all sub-expressions in form that do not contain 
 any symbols starting with `_`</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-pure-exprs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-pure-exprs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===find-symbols===
 ====function====
@@ -69,7 +115,7 @@ Usage: *(_find-symbols_ form)*
 </pre>
 <pre> Recursively finds all symbols in form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#77 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-symbols+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#122 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-symbols+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===flatten-map===
 ====function====
@@ -78,7 +124,7 @@ Usage: *(_flatten-map_ m)*
 </pre>
 <pre> Transforms a map into a vector like `[`key value key value`]`.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#96 Source] [http://www.google.com/codesearch?hl=en&lr=&q=flatten-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#141 Source] [http://www.google.com/codesearch?hl=en&lr=&q=flatten-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===template===
 ====macro====
@@ -89,7 +135,7 @@ Usage: *(_template_ & form)*
 as `_`1).  Any sub-expressions without any `_``*` variables are evaluated 
 when the fn is created, not when it is called.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#107 Source] [http://www.google.com/codesearch?hl=en&lr=&q=template+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#152 Source] [http://www.google.com/codesearch?hl=en&lr=&q=template+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===template?===
 ====function====
@@ -98,4 +144,4 @@ Usage: *(_template?_ form)*
 </pre>
 <pre> Returns true if form is a valid template expression.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#102 Source] [http://www.google.com/codesearch?hl=en&lr=&q=template?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#147 Source] [http://www.google.com/codesearch?hl=en&lr=&q=template?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

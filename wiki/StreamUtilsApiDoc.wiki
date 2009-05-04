@@ -74,7 +74,7 @@ Usage: *(_defst_ name args streams & body)*
 The non-stream arguments args and the stream arguments streams 
 are given separately, with args being possibly empty.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#182 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defst+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#182 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defst+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===defstream===
 ====macro====
@@ -86,7 +86,7 @@ of stream-next is defined by args and body. This macro adds
 a type-specific method for stream-next and derives type 
 from stream-type.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#72 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defstream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#72 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defstream+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pick===
 ====function====
@@ -97,7 +97,7 @@ Usage: *(_pick_ n)*
 transformer. When used inside of defst, the name of the stream 
 argument can be used instead of its index n.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#148 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pick+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#148 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pick+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pick-all===
 ====function====
@@ -107,7 +107,7 @@ Usage: *(_pick-all_ streams)*
 <pre> Return a vector containing the next value of each stream argument 
 inside a stream transformer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#159 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pick-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#159 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pick-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-drop===
 ====function====
@@ -116,7 +116,7 @@ Usage: *(_stream-drop_ n stream)*
 </pre>
 <pre> Return a stream containing all but the first n elements of stream.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#200 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-drop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#200 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-drop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-filter===
 ====multimethod====
@@ -126,7 +126,7 @@ Usage: *(_stream-filter_ p stream)*
 <pre> Return a new stream that contrains the elements of stream 
 that satisfy the predicate p.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#242 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-filter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#242 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-filter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-flatten===
 ====function====
@@ -137,14 +137,14 @@ Usage: *(_stream-flatten_ s)*
 sequences. Flattening is not recursive, only one level of nesting 
 will be removed.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#270 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-flatten+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#270 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-flatten+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-m===
 ====var====
 <pre> Monad describing stream computations. The monadic values can be 
 of any type handled by stream-next.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#134 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#134 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-m+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-map===
 ====multimethod====
@@ -153,7 +153,7 @@ Usage: *(_stream-map_ f stream)*
 </pre>
 <pre> Return a new stream by mapping the function f on the given stream.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#218 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#218 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-next===
 ====multimethod====
@@ -165,7 +165,7 @@ item in the data stream defined by stream-state and new-state
 is the new state of the stream. At the end of the stream, 
 next-value and new-state are nil.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-next+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#90 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-next+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-seq===
 ====function====
@@ -176,13 +176,13 @@ Usage: *(_stream-seq_ s)*
 clojure.contrib.seq-utils/seq-on and 
 clojure.contrib.generic.collection/seq for streams.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#112 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#112 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===stream-type===
 ====var====
 <pre> The root type for the stream hierarchy. For each stream type, 
 add a derivation from this type.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/clojure/contrib/stream_utils.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-type+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stream-type+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.stream-utils.examples==
 <pre> Examples for data streams</pre>

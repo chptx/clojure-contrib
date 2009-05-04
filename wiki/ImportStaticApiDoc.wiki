@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for import-static=
+by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.import-static))
 }}}
+==Overview==
+<pre> Import static Java methods/fields into Clojure</pre>
 
 
 ==Public Variables and Functions==
@@ -41,4 +45,4 @@ Note: The class name must be fully qualified, even if it has already
 been imported.  Static methods are defined as MACROS, not 
 first-class fns.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/import_static/clojure/contrib/import_static.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=import-static+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/import_static.clj#22 Source] [http://www.google.com/codesearch?hl=en&lr=&q=import-static+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

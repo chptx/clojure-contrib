@@ -9,11 +9,16 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for prxml=
+by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.prxml))
 }}}
+==Overview==
+<pre> Compact syntax for generating XML. See the documentation of "prxml"  
+for details.</pre>
 
 
 ==Public Variables and Functions==
@@ -25,14 +30,14 @@ Shortcuts:
 ====var====
 <pre> If true, empty tags will have a space before the closing /></pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml/clojure/contrib/prxml.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*html-compatible*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*html-compatible*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`prxml-indent`*`===
 ====var====
 <pre> The number of spaces to indent sub-tags.  nil for no indent 
 and no extra line-breaks.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml/clojure/contrib/prxml.clj#32 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*prxml-indent*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*prxml-indent*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===prxml===
 ====function====
@@ -62,4 +67,4 @@ PSEUDO-TAGS: some keywords have special meaning:
   (prxml `[`:decl! {:version "1.1"}`]`) 
   ; => <?xml version="1.1" encoding="UTF-8"?></pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml/clojure/contrib/prxml.clj#138 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prxml+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#142 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prxml+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

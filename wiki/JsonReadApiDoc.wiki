@@ -9,11 +9,25 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for json.read=
+by Stuart Sierra
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.json.read))
 }}}
+==Overview==
+<pre> JavaScript Object Notation (JSON) parser 
+ 
+For more information on JSON, see http://www.json.org/ 
+ 
+This library parses data in JSON format.  This is a fairly strict 
+implementation of JSON as described at json.org, not a full-fledged 
+JavaScript parser.  JavaScript functions and object constructors 
+are not supported.  Object field names must be quoted strings; they 
+may not be bare symbols.</pre>
+See also: [http://www.json.org], [JSON Home Page]
+
 
 
 ==Public Variables and Functions==
@@ -31,4 +45,4 @@ Usage: *(_read-json_)
 <pre> Read the next JSON record from stream, which must be an instance of 
 java.io.PushbackReader.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read/clojure/contrib/json/read.clj#121 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

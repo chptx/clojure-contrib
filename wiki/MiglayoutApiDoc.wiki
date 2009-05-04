@@ -9,17 +9,68 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for miglayout=
+by Stephen C. Gilardi
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.miglayout))
 }}}
+==Overview==
+<pre> Clojure support for the MiGLayout layout manager 
+http://www.miglayout.com/ 
+ 
+Example: 
+ 
+  (use '`[`clojure.contrib.miglayout.test :as mlt :only ()`]`) 
+  (doseq `[`i (range 3)`]` (mlt/run-test i))</pre>
 
 
 ==Public Variables and Functions==
+Shortcuts:
+[#miglayout miglayout] 
+
 Variables and Functions in miglayout.internal:
 [MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
 
+Variables and Functions in miglayout.test:
+[MiglayoutApiDoc#label label] [MiglayoutApiDoc#sep sep] [MiglayoutApiDoc#text-field text-field] 
+
+----
+===miglayout===
+====function====
+<pre>
+Usage: *(_miglayout_ container & args)*
+</pre>
+<pre> Adds java.awt.Components to a java.awt.Container with constraints 
+formatted for the MiGLayout layout manager. 
+ 
+Arguments: container `[`item constraint`*``]``*` 
+ 
+  - container: the container for the specified components, its layout 
+    manager will be set to a new instance of MigLayout 
+ 
+  - an inline series of items and constraints--each item may be followed 
+    by zero or more constraints. 
+ 
+Item: 
+ 
+  - An item is either a Component or one of the keywords :layout 
+   :column or :row. Constraints for a keyword item affect the entire 
+    layout. 
+ 
+Constraint: string, keyword, vector, map, or set 
+ 
+  - A string specifies one or more constraints each with zero or more 
+    arguments. 
+  - A keyword specifies a single constraint without arguments 
+  - A vector specifies a single constraint with one or more arguments 
+  - A map specifies one or more constraints as keys, each mapped to a 
+    single argument 
+  - A set groups two or more constraints, each a string, keyword, 
+    vector, map, or set</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=miglayout+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.miglayout.internal==
 ----
 ===component?===
@@ -29,7 +80,7 @@ Usage: *(_component?_ x)*
 </pre>
 <pre> Returns true if x is a java.awt.Component</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=component?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=component?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===constraint?===
 ====function====
@@ -38,7 +89,7 @@ Usage: *(_constraint?_ x)*
 </pre>
 <pre> Returns true if x is not a keyword-item or component</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=constraint?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=constraint?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===format-constraint===
 ====function====
@@ -49,7 +100,7 @@ Usage: *(_format-constraint_ c)*
 separated by commas. Constraints may be specified in Clojure using 
 strings, keywords, vectors, maps, and/or sets.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===format-constraints===
 ====function====
@@ -59,7 +110,7 @@ Usage: *(_format-constraints_ & constraints)*
 <pre> Returns a string representing all the constraints for one keyword-item 
 or component formatted for miglayout.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=format-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===parse-item-constraints===
 ====function====
@@ -71,4 +122,33 @@ Usage: *(_parse-item-constraints_ & args)*
 items to constraints strings. The value for :components is a vector of 
 vectors each associating a component with its constraints string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal/clojure/contrib/miglayout/internal.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-item-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=parse-item-constraints+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+==Namespace clojure.contrib.miglayout.test==
+----
+===label===
+====function====
+<pre>
+Usage: *(_label_ text)*
+</pre>
+<pre> Returns a swing label</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/test.clj#30 Source] [http://www.google.com/codesearch?hl=en&lr=&q=label+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===sep===
+====function====
+<pre>
+Usage: *(_sep_)*
+</pre>
+<pre> Returns a swing separator</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/test.clj#41 Source] [http://www.google.com/codesearch?hl=en&lr=&q=sep+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===text-field===
+====function====
+<pre>
+Usage: *(_text-field_)
+       (_text-field_ width)*
+</pre>
+<pre> Returns a swing text field</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/test.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=text-field+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
