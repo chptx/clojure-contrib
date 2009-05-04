@@ -9,11 +9,15 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for dataflow=
+by Jeffrey Straszheim
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.dataflow))
 }}}
+==Overview==
+<pre> A library to support a dataflow model of state</pre>
 
 
 ==Public Variables and Functions==
@@ -31,7 +35,7 @@ function of 4 values: a key, the cell, its old value, its new
 value.  This is implemented using Clojure's add-watch to the 
 underlying ref, and shared its sematics</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#457 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-cell-watcher+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#460 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-cell-watcher+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===add-cells===
 ====function====
@@ -40,7 +44,7 @@ Usage: *(_add-cells_ df cells)*
 </pre>
 <pre> Given a collection of cells, add them to the dataflow.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#207 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-cells+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#210 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-cells+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===build-dataflow===
 ====function====
@@ -49,7 +53,7 @@ Usage: *(_build-dataflow_ cs)*
 </pre>
 <pre> Given a collection of cells, build and return a dataflow object</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#185 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-dataflow+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#188 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-dataflow+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===build-source-cell===
 ====function====
@@ -58,7 +62,7 @@ Usage: *(_build-source-cell_ name init)*
 </pre>
 <pre> Builds a source cell</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#228 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-source-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#231 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-source-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===build-standard-cell===
 ====function====
@@ -67,7 +71,7 @@ Usage: *(_build-standard-cell_ name deps fun expr)*
 </pre>
 <pre> Builds a standard cell</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#289 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-standard-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#292 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-standard-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===build-validator-cell===
 ====function====
@@ -76,7 +80,7 @@ Usage: *(_build-validator-cell_ deps fun expr)*
 </pre>
 <pre> Builds a validator cell</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#295 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-validator-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#298 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-validator-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===cell===
 ====macro====
@@ -110,21 +114,21 @@ Or:
  
 Which will perform the validation</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#301 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#304 Source] [http://www.google.com/codesearch?hl=en&lr=&q=cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===display-cell===
 ====multimethod====
 _No usage documentation available_
 <pre> A 'readable' form of the cell</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#345 Source] [http://www.google.com/codesearch?hl=en&lr=&q=display-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#348 Source] [http://www.google.com/codesearch?hl=en&lr=&q=display-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===eval-cell===
 ====multimethod====
 _No usage documentation available_
 <pre> Evaluate a dataflow cell.  Return `[`changed, old val`]`</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#369 Source] [http://www.google.com/codesearch?hl=en&lr=&q=eval-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#372 Source] [http://www.google.com/codesearch?hl=en&lr=&q=eval-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-cell===
 ====function====
@@ -133,7 +137,7 @@ Usage: *(_get-cell_ df name)*
 </pre>
 <pre> Get the single cell named by name</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#91 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#94 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-cells===
 ====function====
@@ -142,7 +146,7 @@ Usage: *(_get-cells_ df name)*
 </pre>
 <pre> Get all the cells named by name</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#86 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-cells+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#89 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-cells+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-old-value===
 ====function====
@@ -151,7 +155,7 @@ Usage: *(_get-old-value_ df env name)*
 </pre>
 <pre> Looks up an old value</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-old-value+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#136 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-old-value+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-source-cells===
 ====function====
@@ -160,7 +164,7 @@ Usage: *(_get-source-cells_ df)*
 </pre>
 <pre> Returns a collection of source cells from the dataflow</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#105 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-source-cells+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#108 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-source-cells+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-value===
 ====function====
@@ -171,7 +175,7 @@ Usage: *(_get-value_ df name)*
 Signals an error if the name is not present, or if it not a single 
 value.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#112 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-value+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#115 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-value+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-value-from-cell===
 ====function====
@@ -180,7 +184,7 @@ Usage: *(_get-value-from-cell_ cell)*
 </pre>
 <pre> Given a cell, get its value</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#140 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-value-from-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#143 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-value-from-cell+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get-values===
 ====function====
@@ -189,7 +193,7 @@ Usage: *(_get-values_ df name)*
 </pre>
 <pre> Gets a collection of values from the df by name</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#123 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#126 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-dataflow===
 ====function====
@@ -198,7 +202,7 @@ Usage: *(_print-dataflow_ df)*
 </pre>
 <pre> Prints a dataflow, one cell per line</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#196 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-dataflow+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#199 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-dataflow+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===remove-cells===
 ====function====
@@ -207,7 +211,7 @@ Usage: *(_remove-cells_ df cells)*
 </pre>
 <pre> Given a collection of cells, remove them from the dataflow.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#215 Source] [http://www.google.com/codesearch?hl=en&lr=&q=remove-cells+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#218 Source] [http://www.google.com/codesearch?hl=en&lr=&q=remove-cells+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===source-cell?===
 ====function====
@@ -216,7 +220,7 @@ Usage: *(_source-cell?_ cell)*
 </pre>
 <pre> Is this cell a source cell?</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#100 Source] [http://www.google.com/codesearch?hl=en&lr=&q=source-cell?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#103 Source] [http://www.google.com/codesearch?hl=en&lr=&q=source-cell?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===update-values===
 ====function====
@@ -227,4 +231,4 @@ Usage: *(_update-values_ df data)*
 dataflow by binding the new values.  Each name must be of a source 
 cell</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#435 Source] [http://www.google.com/codesearch?hl=en&lr=&q=update-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/dataflow/clojure/contrib/dataflow.clj#438 Source] [http://www.google.com/codesearch?hl=en&lr=&q=update-values+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

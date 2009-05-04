@@ -9,7 +9,7 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for combinatorics=
-<br>by Mark Engelberg
+by Mark Engelberg
 
 Usage: 
 {{{

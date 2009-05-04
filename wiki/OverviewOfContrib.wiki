@@ -42,7 +42,7 @@ clojure.contrib is copyright 2008-2009 Rich Hickey and the various contributers.
 =Summary of the Namespaces in clojure.contrib=
 ----
 ===accumulators===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [AccumulatorsApiDoc here]
 
 <pre> A generic accumulator interface and implementations of various 
@@ -52,7 +52,7 @@ Public Variables and Functions:
 
 ----
 ===agent-utils===
-<br>by Christophe Grande
+by Christophe Grande<br>
 API Overview [AgentUtilsApiDoc here]
 
 <pre> Miscellaneous agent utilities 
@@ -62,7 +62,7 @@ Public Variables and Functions:
 
 ----
 ===auto-agent===
-<br>by Stuart Sierra
+by Stuart Sierra<br>
 API Overview [AutoAgentApiDoc here]
 
 <pre> This is superficially similar to Ken Tilton's "Cells" library for 
@@ -80,7 +80,7 @@ Public Variables and Functions:
 
 ----
 ===classpath===
-<br>by Stuart Sierra
+by Stuart Sierra<br>
 API Overview [ClasspathApiDoc here]
 
 <pre> Utilities for dealing with the JVM's classpath</pre>
@@ -89,7 +89,7 @@ Public Variables and Functions:
 
 ----
 ===combinatorics===
-<br>by Mark Engelberg
+by Mark Engelberg<br>
 API Overview [CombinatoricsApiDoc here]
 
 <pre> Efficient, functional algorithms for generating lazy 
@@ -100,7 +100,7 @@ Public Variables and Functions:
 
 ----
 ===command-line===
-<br>by Chris Houser
+by Chris Houser<br>
 API Overview [CommandLineApiDoc here]
 
 <pre> Process command-line arguments according to a given cmdspec</pre>
@@ -109,7 +109,7 @@ Public Variables and Functions:
 
 ----
 ===complex-numbers===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [ComplexNumbersApiDoc here]
 
 <pre> Complex numbers 
@@ -117,7 +117,7 @@ NOTE: This library is in evolution.
       It may change with future releases.</pre>
 ----
 ===cond===
-<br>by Stephen C. Gilardi
+by Stephen C. Gilardi<br>
 API Overview [CondApiDoc here]
 
 <pre> Extensions to the basic cond function.</pre>
@@ -126,7 +126,7 @@ Public Variables and Functions:
 
 ----
 ===core===
-<br>by Laurent Petit (and others)
+by Laurent Petit (and others)<br>
 API Overview [CoreApiDoc here]
 
 <pre> Functions/macros variants of the ones that can be found in clojure.core  
@@ -136,14 +136,20 @@ Public Variables and Functions:
 
 ----
 ===dataflow===
+by Jeffrey Straszheim<br>
 API Overview [DataflowApiDoc here]
 
+<pre> A library to support a dataflow model of state</pre>
 Public Variables and Functions:
 [DataflowApiDoc#add-cell-watcher add-cell-watcher] [DataflowApiDoc#add-cells add-cells] [DataflowApiDoc#build-dataflow build-dataflow] [DataflowApiDoc#build-source-cell build-source-cell] [DataflowApiDoc#build-standard-cell build-standard-cell] [DataflowApiDoc#build-validator-cell build-validator-cell] [DataflowApiDoc#cell cell] [DataflowApiDoc#display-cell display-cell] [DataflowApiDoc#eval-cell eval-cell] [DataflowApiDoc#get-cell get-cell] [DataflowApiDoc#get-cells get-cells] [DataflowApiDoc#get-old-value get-old-value] [DataflowApiDoc#get-source-cells get-source-cells] [DataflowApiDoc#get-value get-value] [DataflowApiDoc#get-value-from-cell get-value-from-cell] [DataflowApiDoc#get-values get-values] [DataflowApiDoc#print-dataflow print-dataflow] [DataflowApiDoc#remove-cells remove-cells] [DataflowApiDoc#source-cell? source-cell?] [DataflowApiDoc#update-values update-values] 
 
 ----
 ===datalog===
+by Jeffrey Straszheim<br>
 API Overview [DatalogApiDoc here]
+
+<pre> A Clojure implementation of Datalog</pre>
+See also: [DatalogOverview]
 
 Public Variables and Functions:
 [DatalogApiDoc#build-work-plan build-work-plan] [DatalogApiDoc#run-work-plan run-work-plan] 
@@ -168,56 +174,93 @@ Variables and Functions in datalog.util:
 
 ----
 ===def===
+by Stephen C. Gilardi<br>
 API Overview [DefApiDoc here]
 
+<pre> def.clj provides variants of def that make including doc strings and 
+making private definitions more succinct.</pre>
 Public Variables and Functions:
 [DefApiDoc#defalias defalias] [DefApiDoc#defhinted defhinted] [DefApiDoc#defmacro- defmacro-] [DefApiDoc#defonce- defonce-] [DefApiDoc#defstruct- defstruct-] [DefApiDoc#defunbound defunbound] [DefApiDoc#defunbound- defunbound-] [DefApiDoc#defvar defvar] [DefApiDoc#defvar- defvar-] [DefApiDoc#name-with-attributes name-with-attributes] 
 
 ----
 ===duck-streams===
+by Stuart Sierra<br>
 API Overview [DuckStreamsApiDoc here]
 
+<pre> This file defines "duck-typed" I/O utility functions for Clojure. 
+The 'reader' and 'writer' functions will open and return an 
+instance of java.io.BufferedReader and java.io.PrintWriter, 
+respectively, for a variety of argument types -- filenames as 
+strings, URLs, java.io.File's, etc.  'reader' even works on http 
+URLs. 
+ 
+Note: this is not really "duck typing" as implemented in languages 
+like Ruby.  A better name would have been "do-what-I-mean-streams" 
+or "just-give-me-a-stream", but ducks are funnier.</pre>
 Public Variables and Functions:
 [DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
 
 ----
 ===error-kit===
+by Chris Houser<br>
 API Overview [ErrorKitApiDoc here]
 
+<pre> EXPERIMENTAL 
+System for defining and using custom errors 
+Please contact Chouser if you have any suggestions for better names 
+or API adjustments.</pre>
 Public Variables and Functions:
 [ErrorKitApiDoc#bind-continue bind-continue] [ErrorKitApiDoc#deferror deferror] [ErrorKitApiDoc#do-not-handle do-not-handle] [ErrorKitApiDoc#error error] [ErrorKitApiDoc#handle handle] [ErrorKitApiDoc#raise raise] [ErrorKitApiDoc#raise* raise*] [ErrorKitApiDoc#throw-msg throw-msg] [ErrorKitApiDoc#with-handler with-handler] 
 
 ----
 ===except===
+by Stephen C. Gilardi<br>
 API Overview [ExceptApiDoc here]
 
+<pre> Provides functions that make it easy to specify the class and message 
+when throwing an Exception or Error. The optional message is formatted 
+using clojure/format.</pre>
 Public Variables and Functions:
 [ExceptApiDoc#throw-arg throw-arg] [ExceptApiDoc#throw-if throw-if] [ExceptApiDoc#throw-if-not throw-if-not] [ExceptApiDoc#throwf throwf] 
 
 ----
 ===fcase===
+by Stuart Sierra<br>
 API Overview [FcaseApiDoc here]
 
+<pre> This file defines a generic "case" macro called "fcase" which takes 
+the equality-testing function as an argument.  It also defines a 
+traditional "case" macro that tests using "=" and variants that 
+test for regular expressions and class membership. 
+ 
+ 
+Note (December 23, 2008): This library has been supplanted by the 
+inclusion of "condp" in clojure.core as of Clojure SVN rev. 1180.</pre>
 Public Variables and Functions:
 [FcaseApiDoc#case case] [FcaseApiDoc#fcase fcase] [FcaseApiDoc#in-case in-case] [FcaseApiDoc#instance-case instance-case] [FcaseApiDoc#re-case re-case] 
 
 ----
 ===find-namespaces===
+by Stuart Sierra<br>
 API Overview [FindNamespacesApiDoc here]
 
+<pre> Search for ns declarations in dirs, JARs, or CLASSPATH</pre>
 Public Variables and Functions:
 [FindNamespacesApiDoc#clojure-source-file? clojure-source-file?] [FindNamespacesApiDoc#clojure-sources-in-jar clojure-sources-in-jar] [FindNamespacesApiDoc#find-clojure-sources-in-dir find-clojure-sources-in-dir] [FindNamespacesApiDoc#find-namespaces-in-dir find-namespaces-in-dir] [FindNamespacesApiDoc#find-namespaces-in-jarfile find-namespaces-in-jarfile] [FindNamespacesApiDoc#find-namespaces-on-classpath find-namespaces-on-classpath] [FindNamespacesApiDoc#find-ns-decls-in-dir find-ns-decls-in-dir] [FindNamespacesApiDoc#find-ns-decls-in-jarfile find-ns-decls-in-jarfile] [FindNamespacesApiDoc#find-ns-decls-on-classpath find-ns-decls-on-classpath] [FindNamespacesApiDoc#read-file-ns-decl read-file-ns-decl] [FindNamespacesApiDoc#read-ns-decl read-ns-decl] [FindNamespacesApiDoc#read-ns-decl-from-jarfile-entry read-ns-decl-from-jarfile-entry] 
 
 ----
 ===gen-html-docs===
+by Craig Andera<br>
 API Overview [GenHtmlDocsApiDoc here]
 
+<pre> Generates a single HTML page that contains the documentation for 
+one or more Clojure libraries.</pre>
 Public Variables and Functions:
 [GenHtmlDocsApiDoc#generate-documentation generate-documentation] [GenHtmlDocsApiDoc#generate-documentation-to-file generate-documentation-to-file] 
 
 ----
 ===generic===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [GenericApiDoc here]
 
 <pre> Generic interface support code 
@@ -311,7 +354,7 @@ Public Variables and Functions:
 
 ----
 ===macros===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [MacrosApiDoc here]
 
 <pre> Various small macros</pre>
@@ -348,7 +391,7 @@ Public Variables and Functions:
 
 ----
 ===monads===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [MonadsApiDoc here]
 
 <pre> This library contains the most commonly used monads as well 
@@ -368,7 +411,7 @@ Public Variables and Functions:
 
 ----
 ===pprint===
-<br>by Tom Faulhaber
+by Tom Faulhaber<br>
 API Overview [PprintApiDoc here]
 
 <pre> This module comprises two elements: 
@@ -384,13 +427,13 @@ Public Variables and Functions:
 
 ----
 ===probabilities.examples-finite-distributions===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [ProbabilitiesExamplesFiniteDistributionsApiDoc here]
 
 <pre> Examples for finite probability distribution</pre>
 ----
 ===probabilities.finite-distributions===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
 
 <pre> Finite probability distributions 
@@ -401,7 +444,7 @@ Public Variables and Functions:
 
 ----
 ===probabilities.monte-carlo===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [ProbabilitiesMonteCarloApiDoc here]
 
 <pre> Monte-Carlo method support 
@@ -426,7 +469,7 @@ Public Variables and Functions:
 
 ----
 ===probabilities.random-numbers===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [ProbabilitiesRandomNumbersApiDoc here]
 
 <pre> Random number streams 
@@ -444,7 +487,7 @@ Public Variables and Functions:
 
 ----
 ===probabilities.random.examples-monte-carlo===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
 
 <pre> Examples for monte carlo methods</pre>
@@ -533,7 +576,7 @@ Public Variables and Functions:
 
 ----
 ===stream-utils===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [StreamUtilsApiDoc here]
 
 <pre> Functions for setting up computational pipelines via data streams. 
@@ -606,7 +649,7 @@ Public Variables and Functions:
 
 ----
 ===types===
-<br>by Konrad Hinsen
+by Konrad Hinsen<br>
 API Overview [TypesApiDoc here]
 
 <pre> General and algebraic data types</pre>

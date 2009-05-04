@@ -9,7 +9,7 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for stream-utils=
-<br>by Konrad Hinsen
+by Konrad Hinsen
 
 Usage: 
 {{{

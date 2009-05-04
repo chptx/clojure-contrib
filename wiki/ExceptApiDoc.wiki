@@ -9,11 +9,17 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for except=
+by Stephen C. Gilardi
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.except))
 }}}
+==Overview==
+<pre> Provides functions that make it easy to specify the class and message 
+when throwing an Exception or Error. The optional message is formatted 
+using clojure/format.</pre>
 
 
 ==Public Variables and Functions==
@@ -34,7 +40,7 @@ Usage: *(_throw-arg_ & args)*
 - format-args are objects that correspond to format specifiers in 
   format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except/clojure/contrib/except.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-arg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except/clojure/contrib/except.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-arg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throw-if===
 ====function====
@@ -44,7 +50,7 @@ Usage: *(_throw-if_ test & args)*
 <pre> Throws an Exception or Error if test is true. args are those documented 
 for throwf.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except/clojure/contrib/except.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except/clojure/contrib/except.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throw-if-not===
 ====function====
@@ -54,7 +60,7 @@ Usage: *(_throw-if-not_ test & args)*
 <pre> Throws an Exception or Error if test is false. args are those documented 
 for throwf.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except/clojure/contrib/except.clj#44 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if-not+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except/clojure/contrib/except.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if-not+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throwf===
 ====function====
@@ -72,4 +78,4 @@ clojure/format. All arguments are optional:
 - format-args are objects that correspond to format specifiers in 
   format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except/clojure/contrib/except.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throwf+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except/clojure/contrib/except.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throwf+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

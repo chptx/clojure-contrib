@@ -9,11 +9,17 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for datalog=
+by Jeffrey Straszheim
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.datalog))
 }}}
+==Overview==
+<pre> A Clojure implementation of Datalog</pre>
+See also: [DatalogOverview]
+
 
 
 ==Public Variables and Functions==
@@ -47,7 +53,7 @@ Usage: *(_build-work-plan_ rules query)*
 <pre> Given a list of rules and a query, build a work plan that can be 
 used to execute the query.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/clojure/contrib/datalog.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/clojure/contrib/datalog.clj#47 Source] [http://www.google.com/codesearch?hl=en&lr=&q=build-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===run-work-plan===
 ====function====
@@ -57,7 +63,7 @@ Usage: *(_run-work-plan_ work-plan database query-bindings)*
 <pre> Given a work plan, a database, and some query bindings, run the 
 work plan and return the results.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/clojure/contrib/datalog.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/datalog/clojure/contrib/datalog.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-work-plan+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.datalog.database==
 ----
 ===add-index===

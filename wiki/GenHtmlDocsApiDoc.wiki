@@ -9,11 +9,16 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for gen-html-docs=
+by Craig Andera
+
 Usage: 
 {{{
 (ns <your-namespace>
   (:use clojure.contrib.gen-html-docs))
 }}}
+==Overview==
+<pre> Generates a single HTML page that contains the documentation for 
+one or more Clojure libraries.</pre>
 
 
 ==Public Variables and Functions==
@@ -30,7 +35,7 @@ Usage: *(_generate-documentation_ libs)*
 named by libs. Libs is a vector of symbols identifying Clojure 
 libraries.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs/clojure/contrib/gen_html_docs.clj#426 Source] [http://www.google.com/codesearch?hl=en&lr=&q=generate-documentation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs/clojure/contrib/gen_html_docs.clj#430 Source] [http://www.google.com/codesearch?hl=en&lr=&q=generate-documentation+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===generate-documentation-to-file===
 ====function====
@@ -40,4 +45,4 @@ Usage: *(_generate-documentation-to-file_ path libs)*
 <pre> Calls generate-documentation on the libraries named by libs and 
 emits the generated HTML to the path named by path.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs/clojure/contrib/gen_html_docs.clj#452 Source] [http://www.google.com/codesearch?hl=en&lr=&q=generate-documentation-to-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs/clojure/contrib/gen_html_docs.clj#456 Source] [http://www.google.com/codesearch?hl=en&lr=&q=generate-documentation-to-file+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
