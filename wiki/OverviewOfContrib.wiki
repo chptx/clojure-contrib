@@ -40,29 +40,32 @@ discussion and help shape the ways Clojure is extended.
 Like Clojure itself, clojure.contrib is made available under the [http://opensource.org/licenses/eclipse-1.0.php Eclipse Public License (EPL)]. 
 clojure.contrib is copyright 2008-2009 Rich Hickey and the various contributers.
 =Summary of the Namespaces in clojure.contrib=
+----
 ===accumulators===
-API Overview [AccumulatorsApiDoc here]
 <br>by Konrad Hinsen
+API Overview [AccumulatorsApiDoc here]
 
-<pre>A generic accumulator interface and implementations of various 
+<pre> A generic accumulator interface and implementations of various 
 accumulators.</pre>
 Public Variables and Functions:
 [AccumulatorsApiDoc#add add] [AccumulatorsApiDoc#add-items add-items] [AccumulatorsApiDoc#combine combine] [AccumulatorsApiDoc#empty-counter empty-counter] [AccumulatorsApiDoc#empty-counter-with-total empty-counter-with-total] [AccumulatorsApiDoc#empty-list empty-list] [AccumulatorsApiDoc#empty-map empty-map] [AccumulatorsApiDoc#empty-maximum empty-maximum] [AccumulatorsApiDoc#empty-mean-variance empty-mean-variance] [AccumulatorsApiDoc#empty-min-max empty-min-max] [AccumulatorsApiDoc#empty-minimum empty-minimum] [AccumulatorsApiDoc#empty-product empty-product] [AccumulatorsApiDoc#empty-queue empty-queue] [AccumulatorsApiDoc#empty-set empty-set] [AccumulatorsApiDoc#empty-string empty-string] [AccumulatorsApiDoc#empty-sum empty-sum] [AccumulatorsApiDoc#empty-tuple empty-tuple] [AccumulatorsApiDoc#empty-vector empty-vector] 
 
+----
 ===agent-utils===
-API Overview [AgentUtilsApiDoc here]
 <br>by Christophe Grande
+API Overview [AgentUtilsApiDoc here]
 
-<pre>Miscellaneous agent utilities 
+<pre> Miscellaneous agent utilities 
 (note to other contrib members: feel free to add to this lib)</pre>
 Public Variables and Functions:
 [AgentUtilsApiDoc#capture-and-send capture-and-send] 
 
+----
 ===auto-agent===
-API Overview [AutoAgentApiDoc here]
 <br>by Stuart Sierra
+API Overview [AutoAgentApiDoc here]
 
-<pre>This is superficially similar to Ken Tilton's "Cells" library for 
+<pre> This is superficially similar to Ken Tilton's "Cells" library for 
 Common Lisp.  But Cells is single-threaded and synchronous.  This 
 version is built on Clojure agents, so it is multi-threaded and 
 asynchronous. 
@@ -75,62 +78,70 @@ auto-agent will be automatically updated to reflect the new value.</pre>
 Public Variables and Functions:
 [AutoAgentApiDoc#auto-agent auto-agent] 
 
+----
 ===classpath===
-API Overview [ClasspathApiDoc here]
 <br>by Stuart Sierra
+API Overview [ClasspathApiDoc here]
 
-<pre>Utilities for dealing with the JVM's classpath</pre>
+<pre> Utilities for dealing with the JVM's classpath</pre>
 Public Variables and Functions:
 [ClasspathApiDoc#classpath classpath] [ClasspathApiDoc#classpath-directories classpath-directories] [ClasspathApiDoc#classpath-jarfiles classpath-jarfiles] 
 
+----
 ===combinatorics===
-API Overview [CombinatoricsApiDoc here]
 <br>by Mark Engelberg
+API Overview [CombinatoricsApiDoc here]
 
-<pre>Efficient, functional algorithms for generating lazy 
+<pre> Efficient, functional algorithms for generating lazy 
 sequences for common combinatorial functions. (See the source code  
 for a longer description.)</pre>
 Public Variables and Functions:
 [CombinatoricsApiDoc#cartesian-product cartesian-product] [CombinatoricsApiDoc#combinations combinations] [CombinatoricsApiDoc#lex-permutations lex-permutations] [CombinatoricsApiDoc#permutations permutations] [CombinatoricsApiDoc#selections selections] [CombinatoricsApiDoc#subsets subsets] 
 
+----
 ===command-line===
-API Overview [CommandLineApiDoc here]
 <br>by Chris Houser
+API Overview [CommandLineApiDoc here]
 
-<pre>Process command-line arguments according to a given cmdspec</pre>
+<pre> Process command-line arguments according to a given cmdspec</pre>
 Public Variables and Functions:
 [CommandLineApiDoc#with-command-line with-command-line] 
 
+----
 ===complex-numbers===
-API Overview [ComplexNumbersApiDoc here]
 <br>by Konrad Hinsen
+API Overview [ComplexNumbersApiDoc here]
 
-<pre>Complex numbers 
+<pre> Complex numbers 
 NOTE: This library is in evolution. 
       It may change with future releases.</pre>
+----
 ===cond===
-API Overview [CondApiDoc here]
 <br>by Stephen C. Gilardi
+API Overview [CondApiDoc here]
 
-<pre>Extensions to the basic cond function.</pre>
+<pre> Extensions to the basic cond function.</pre>
 Public Variables and Functions:
 [CondApiDoc#cond-let cond-let] 
 
+----
 ===core===
-API Overview [CoreApiDoc here]
 <br>by Laurent Petit (and others)
+API Overview [CoreApiDoc here]
 
-<pre>Functions/macros variants of the ones that can be found in clojure.core  
+<pre> Functions/macros variants of the ones that can be found in clojure.core  
 (note to other contrib members: feel free to add to this lib)</pre>
 Public Variables and Functions:
 [CoreApiDoc#-?> -?>] [CoreApiDoc#.?. .?.] 
 
+----
 ===dataflow===
 API Overview [DataflowApiDoc here]
 
 Public Variables and Functions:
 [DataflowApiDoc#add-cell-watcher add-cell-watcher] [DataflowApiDoc#add-cells add-cells] [DataflowApiDoc#build-dataflow build-dataflow] [DataflowApiDoc#build-source-cell build-source-cell] [DataflowApiDoc#build-standard-cell build-standard-cell] [DataflowApiDoc#build-validator-cell build-validator-cell] [DataflowApiDoc#cell cell] [DataflowApiDoc#display-cell display-cell] [DataflowApiDoc#eval-cell eval-cell] [DataflowApiDoc#get-cell get-cell] [DataflowApiDoc#get-cells get-cells] [DataflowApiDoc#get-old-value get-old-value] [DataflowApiDoc#get-source-cells get-source-cells] [DataflowApiDoc#get-value get-value] [DataflowApiDoc#get-value-from-cell get-value-from-cell] [DataflowApiDoc#get-values get-values] [DataflowApiDoc#print-dataflow print-dataflow] [DataflowApiDoc#remove-cells remove-cells] [DataflowApiDoc#source-cell? source-cell?] [DataflowApiDoc#update-values update-values] 
 
+----
 ===datalog===
 API Overview [DatalogApiDoc here]
 
@@ -155,53 +166,61 @@ Variables and Functions in datalog.softstrat:
 Variables and Functions in datalog.util:
 [DatalogApiDoc#is-query-var? is-query-var?] [DatalogApiDoc#is-var? is-var?] [DatalogApiDoc#keys-to-vals keys-to-vals] [DatalogApiDoc#map-values map-values] [DatalogApiDoc#preduce preduce] [DatalogApiDoc#reverse-map reverse-map] [DatalogApiDoc#trace-datalog trace-datalog] 
 
+----
 ===def===
 API Overview [DefApiDoc here]
 
 Public Variables and Functions:
 [DefApiDoc#defalias defalias] [DefApiDoc#defhinted defhinted] [DefApiDoc#defmacro- defmacro-] [DefApiDoc#defonce- defonce-] [DefApiDoc#defstruct- defstruct-] [DefApiDoc#defunbound defunbound] [DefApiDoc#defunbound- defunbound-] [DefApiDoc#defvar defvar] [DefApiDoc#defvar- defvar-] [DefApiDoc#name-with-attributes name-with-attributes] 
 
+----
 ===duck-streams===
 API Overview [DuckStreamsApiDoc here]
 
 Public Variables and Functions:
 [DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
 
+----
 ===error-kit===
 API Overview [ErrorKitApiDoc here]
 
 Public Variables and Functions:
 [ErrorKitApiDoc#bind-continue bind-continue] [ErrorKitApiDoc#deferror deferror] [ErrorKitApiDoc#do-not-handle do-not-handle] [ErrorKitApiDoc#error error] [ErrorKitApiDoc#handle handle] [ErrorKitApiDoc#raise raise] [ErrorKitApiDoc#raise* raise*] [ErrorKitApiDoc#throw-msg throw-msg] [ErrorKitApiDoc#with-handler with-handler] 
 
+----
 ===except===
 API Overview [ExceptApiDoc here]
 
 Public Variables and Functions:
 [ExceptApiDoc#throw-arg throw-arg] [ExceptApiDoc#throw-if throw-if] [ExceptApiDoc#throw-if-not throw-if-not] [ExceptApiDoc#throwf throwf] 
 
+----
 ===fcase===
 API Overview [FcaseApiDoc here]
 
 Public Variables and Functions:
 [FcaseApiDoc#case case] [FcaseApiDoc#fcase fcase] [FcaseApiDoc#in-case in-case] [FcaseApiDoc#instance-case instance-case] [FcaseApiDoc#re-case re-case] 
 
+----
 ===find-namespaces===
 API Overview [FindNamespacesApiDoc here]
 
 Public Variables and Functions:
 [FindNamespacesApiDoc#clojure-source-file? clojure-source-file?] [FindNamespacesApiDoc#clojure-sources-in-jar clojure-sources-in-jar] [FindNamespacesApiDoc#find-clojure-sources-in-dir find-clojure-sources-in-dir] [FindNamespacesApiDoc#find-namespaces-in-dir find-namespaces-in-dir] [FindNamespacesApiDoc#find-namespaces-in-jarfile find-namespaces-in-jarfile] [FindNamespacesApiDoc#find-namespaces-on-classpath find-namespaces-on-classpath] [FindNamespacesApiDoc#find-ns-decls-in-dir find-ns-decls-in-dir] [FindNamespacesApiDoc#find-ns-decls-in-jarfile find-ns-decls-in-jarfile] [FindNamespacesApiDoc#find-ns-decls-on-classpath find-ns-decls-on-classpath] [FindNamespacesApiDoc#read-file-ns-decl read-file-ns-decl] [FindNamespacesApiDoc#read-ns-decl read-ns-decl] [FindNamespacesApiDoc#read-ns-decl-from-jarfile-entry read-ns-decl-from-jarfile-entry] 
 
+----
 ===gen-html-docs===
 API Overview [GenHtmlDocsApiDoc here]
 
 Public Variables and Functions:
 [GenHtmlDocsApiDoc#generate-documentation generate-documentation] [GenHtmlDocsApiDoc#generate-documentation-to-file generate-documentation-to-file] 
 
+----
 ===generic===
-API Overview [GenericApiDoc here]
 <br>by Konrad Hinsen
+API Overview [GenericApiDoc here]
 
-<pre>Generic interface support code 
+<pre> Generic interface support code 
 NOTE: This library is VERY experimental. It WILL change 
       significantly with future release.</pre>
 Variables and Functions in generic.collection:
@@ -213,109 +232,126 @@ Variables and Functions in generic.functor:
 Variables and Functions in generic.math-functions:
 [GenericApiDoc#approx= approx=] 
 
+----
 ===graph===
 API Overview [GraphApiDoc here]
 
 Public Variables and Functions:
 [GraphApiDoc#add-loops add-loops] [GraphApiDoc#component-graph component-graph] [GraphApiDoc#dependency-list dependency-list] [GraphApiDoc#fixed-point fixed-point] [GraphApiDoc#get-neighbors get-neighbors] [GraphApiDoc#lazy-walk lazy-walk] [GraphApiDoc#post-ordered-nodes post-ordered-nodes] [GraphApiDoc#recursive-component? recursive-component?] [GraphApiDoc#remove-loops remove-loops] [GraphApiDoc#reverse-graph reverse-graph] [GraphApiDoc#scc scc] [GraphApiDoc#self-recursive-sets self-recursive-sets] [GraphApiDoc#stratification-list stratification-list] [GraphApiDoc#transitive-closure transitive-closure] 
 
+----
 ===greatest-least===
 API Overview [GreatestLeastApiDoc here]
 
 Public Variables and Functions:
 [GreatestLeastApiDoc#all-greatest all-greatest] [GreatestLeastApiDoc#all-greatest-by all-greatest-by] [GreatestLeastApiDoc#all-least all-least] [GreatestLeastApiDoc#all-least-by all-least-by] [GreatestLeastApiDoc#greatest greatest] [GreatestLeastApiDoc#greatest-by greatest-by] [GreatestLeastApiDoc#least least] [GreatestLeastApiDoc#least-by least-by] 
 
+----
 ===import-static===
 API Overview [ImportStaticApiDoc here]
 
 Public Variables and Functions:
 [ImportStaticApiDoc#import-static import-static] 
 
+----
 ===jar===
 API Overview [JarApiDoc here]
 
 Public Variables and Functions:
 [JarApiDoc#filenames-in-jar filenames-in-jar] [JarApiDoc#jar-file? jar-file?] 
 
+----
 ===java-utils===
 API Overview [JavaUtilsApiDoc here]
 
 Public Variables and Functions:
 [JavaUtilsApiDoc#as-file as-file] [JavaUtilsApiDoc#as-properties as-properties] [JavaUtilsApiDoc#as-str as-str] [JavaUtilsApiDoc#file file] [JavaUtilsApiDoc#get-system-property get-system-property] [JavaUtilsApiDoc#read-properties read-properties] [JavaUtilsApiDoc#relative-path-string relative-path-string] [JavaUtilsApiDoc#set-system-properties set-system-properties] [JavaUtilsApiDoc#with-system-properties with-system-properties] [JavaUtilsApiDoc#write-properties write-properties] 
 
+----
 ===javadoc.browse===
 API Overview [JavadocBrowseApiDoc here]
 
 Public Variables and Functions:
 [JavadocBrowseApiDoc#open-url-in-browser open-url-in-browser] [JavadocBrowseApiDoc#open-url-in-swing open-url-in-swing] 
 
+----
 ===javalog===
 API Overview [JavalogApiDoc here]
 
 Public Variables and Functions:
 [JavalogApiDoc#*logger* *logger*] [JavalogApiDoc#add-log-file add-log-file] [JavalogApiDoc#log log] [JavalogApiDoc#log-level log-level] [JavalogApiDoc#root-logger root-logger] [JavalogApiDoc#set-console-log-level set-console-log-level] [JavalogApiDoc#with-logger with-logger] 
 
+----
 ===json.read===
 API Overview [JsonReadApiDoc here]
 
 Public Variables and Functions:
 [JsonReadApiDoc#read-json read-json] 
 
+----
 ===json.write===
 API Overview [JsonWriteApiDoc here]
 
 Public Variables and Functions:
 [JsonWriteApiDoc#json-str json-str] [JsonWriteApiDoc#print-json print-json] 
 
+----
 ===lazy-seqs===
 API Overview [LazySeqsApiDoc here]
 
 Public Variables and Functions:
 [LazySeqsApiDoc#fibs fibs] [LazySeqsApiDoc#powers-of-2 powers-of-2] [LazySeqsApiDoc#primes primes] 
 
+----
 ===lazy-xml===
 API Overview [LazyXmlApiDoc here]
 
 Public Variables and Functions:
 [LazyXmlApiDoc#emit emit] [LazyXmlApiDoc#emit-element emit-element] [LazyXmlApiDoc#parse-seq parse-seq] [LazyXmlApiDoc#parse-trim parse-trim] 
 
+----
 ===macros===
-API Overview [MacrosApiDoc here]
 <br>by Konrad Hinsen
+API Overview [MacrosApiDoc here]
 
-<pre>Various small macros</pre>
+<pre> Various small macros</pre>
 Public Variables and Functions:
 [MacrosApiDoc#const const] [MacrosApiDoc#letfn- letfn-] 
 
+----
 ===map-utils===
 API Overview [MapUtilsApiDoc here]
 
 Public Variables and Functions:
 [MapUtilsApiDoc#deep-merge-with deep-merge-with] [MapUtilsApiDoc#lazy-get lazy-get] [MapUtilsApiDoc#safe-get safe-get] [MapUtilsApiDoc#safe-get-in safe-get-in] 
 
+----
 ===math===
 API Overview [MathApiDoc here]
 
 Public Variables and Functions:
 [MathApiDoc#abs abs] [MathApiDoc#ceil ceil] [MathApiDoc#exact-integer-sqrt exact-integer-sqrt] [MathApiDoc#expt expt] [MathApiDoc#floor floor] [MathApiDoc#gcd gcd] [MathApiDoc#lcm lcm] [MathApiDoc#round round] [MathApiDoc#sqrt sqrt] 
 
+----
 ===miglayout===
 API Overview [MiglayoutApiDoc here]
 
 Variables and Functions in miglayout.internal:
 [MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
 
+----
 ===mmap===
 API Overview [MmapApiDoc here]
 
 Public Variables and Functions:
 [MmapApiDoc#buffer-stream buffer-stream] [MmapApiDoc#mmap mmap] [MmapApiDoc#slurp slurp] 
 
+----
 ===monads===
-API Overview [MonadsApiDoc here]
 <br>by Konrad Hinsen
+API Overview [MonadsApiDoc here]
 
-<pre>This library contains the most commonly used monads as well 
+<pre> This library contains the most commonly used monads as well 
 as macros for defining and using monads and useful monadic 
 functions.</pre>
 See also: [http://onclojure.com/2009/03/05/a-monad-tutorial-for-clojure-programmers-part-1/ Monad tutorial part 1], [http://onclojure.com/2009/03/06/a-monad-tutorial-for-clojure-programmers-part-2/ Monad tutorial part 2], [http://onclojure.com/2009/03/23/a-monad-tutorial-for-clojure-programmers-part-3/ Monad tutorial part 3], [http://onclojure.com/2009/04/24/a-monad-tutorial-for-clojure-programmers-part-4/ Monad tutorial part 4]
@@ -323,17 +359,19 @@ See also: [http://onclojure.com/2009/03/05/a-monad-tutorial-for-clojure-programm
 Public Variables and Functions:
 [MonadsApiDoc#call-cc call-cc] [MonadsApiDoc#cont-m cont-m] [MonadsApiDoc#defmonad defmonad] [MonadsApiDoc#defmonadfn defmonadfn] [MonadsApiDoc#domonad domonad] [MonadsApiDoc#identity-m identity-m] [MonadsApiDoc#m-chain m-chain] [MonadsApiDoc#m-fmap m-fmap] [MonadsApiDoc#m-join m-join] [MonadsApiDoc#m-lift m-lift] [MonadsApiDoc#m-map m-map] [MonadsApiDoc#m-reduce m-reduce] [MonadsApiDoc#m-seq m-seq] [MonadsApiDoc#m-when m-when] [MonadsApiDoc#m-when-not m-when-not] [MonadsApiDoc#maybe-m maybe-m] [MonadsApiDoc#maybe-t maybe-t] [MonadsApiDoc#monad monad] [MonadsApiDoc#monad-transformer monad-transformer] [MonadsApiDoc#run-cont run-cont] [MonadsApiDoc#sequence-m sequence-m] [MonadsApiDoc#sequence-t sequence-t] [MonadsApiDoc#set-m set-m] [MonadsApiDoc#state-m state-m] [MonadsApiDoc#state-t state-t] [MonadsApiDoc#with-monad with-monad] [MonadsApiDoc#writer-m writer-m] 
 
+----
 ===ns-utils===
 API Overview [NsUtilsApiDoc here]
 
 Public Variables and Functions:
 [NsUtilsApiDoc#dir dir] [NsUtilsApiDoc#docs docs] [NsUtilsApiDoc#get-ns get-ns] [NsUtilsApiDoc#ns-vars ns-vars] [NsUtilsApiDoc#print-dir print-dir] [NsUtilsApiDoc#print-docs print-docs] [NsUtilsApiDoc#vars vars] 
 
+----
 ===pprint===
-API Overview [PprintApiDoc here]
 <br>by Tom Faulhaber
+API Overview [PprintApiDoc here]
 
-<pre>This module comprises two elements: 
+<pre> This module comprises two elements: 
 1) A pretty printer for Clojure data structures, implemented in the function "pprint" 
 2) A Common Lisp compatible format function, implemented as "cl-format" because 
    Clojure is using the name "format" for its own format. 
@@ -344,26 +382,29 @@ clojure.contrib wiki RSN.</pre>
 Public Variables and Functions:
 [PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] 
 
+----
 ===probabilities.examples-finite-distributions===
+<br>by Konrad Hinsen
 API Overview [ProbabilitiesExamplesFiniteDistributionsApiDoc here]
-<br>by Konrad Hinsen
 
-<pre>Examples for finite probability distribution</pre>
+<pre> Examples for finite probability distribution</pre>
+----
 ===probabilities.finite-distributions===
-API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
 <br>by Konrad Hinsen
+API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
 
-<pre>Finite probability distributions 
+<pre> Finite probability distributions 
 This library defines a monad for combining finite probability 
 distributions.</pre>
 Public Variables and Functions:
 [ProbabilitiesFiniteDistributionsApiDoc#certainly certainly] [ProbabilitiesFiniteDistributionsApiDoc#choose choose] [ProbabilitiesFiniteDistributionsApiDoc#cond-dist-m cond-dist-m] [ProbabilitiesFiniteDistributionsApiDoc#cond-prob cond-prob] [ProbabilitiesFiniteDistributionsApiDoc#dist-m dist-m] [ProbabilitiesFiniteDistributionsApiDoc#join-with join-with] [ProbabilitiesFiniteDistributionsApiDoc#normalize normalize] [ProbabilitiesFiniteDistributionsApiDoc#prob prob] [ProbabilitiesFiniteDistributionsApiDoc#uniform uniform] 
 
+----
 ===probabilities.monte-carlo===
-API Overview [ProbabilitiesMonteCarloApiDoc here]
 <br>by Konrad Hinsen
+API Overview [ProbabilitiesMonteCarloApiDoc here]
 
-<pre>Monte-Carlo method support 
+<pre> Monte-Carlo method support 
  
 Monte-Carlo methods transform an input random number stream 
 (usually having a continuous uniform distribution in the 
@@ -383,11 +424,12 @@ composed using operations defined in clojure.contrib.monads.</pre>
 Public Variables and Functions:
 [ProbabilitiesMonteCarloApiDoc#discrete discrete] [ProbabilitiesMonteCarloApiDoc#exponential exponential] [ProbabilitiesMonteCarloApiDoc#lognormal lognormal] [ProbabilitiesMonteCarloApiDoc#n-sphere n-sphere] [ProbabilitiesMonteCarloApiDoc#normal normal] [ProbabilitiesMonteCarloApiDoc#normal-box-muller normal-box-muller] [ProbabilitiesMonteCarloApiDoc#random-stream random-stream] [ProbabilitiesMonteCarloApiDoc#reject reject] [ProbabilitiesMonteCarloApiDoc#sample sample] [ProbabilitiesMonteCarloApiDoc#sample-mean sample-mean] [ProbabilitiesMonteCarloApiDoc#sample-mean-variance sample-mean-variance] [ProbabilitiesMonteCarloApiDoc#sample-reduce sample-reduce] [ProbabilitiesMonteCarloApiDoc#sample-sum sample-sum] 
 
+----
 ===probabilities.random-numbers===
-API Overview [ProbabilitiesRandomNumbersApiDoc here]
 <br>by Konrad Hinsen
+API Overview [ProbabilitiesRandomNumbersApiDoc here]
 
-<pre>Random number streams 
+<pre> Random number streams 
  
 This library provides random number generators with a common 
 stream interface. They all produce pseudo-random numbers that are 
@@ -400,59 +442,69 @@ linear congruential generator.</pre>
 Public Variables and Functions:
 [ProbabilitiesRandomNumbersApiDoc#lcg lcg] [ProbabilitiesRandomNumbersApiDoc#rand-stream rand-stream] 
 
+----
 ===probabilities.random.examples-monte-carlo===
-API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
 <br>by Konrad Hinsen
+API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
 
-<pre>Examples for monte carlo methods</pre>
+<pre> Examples for monte carlo methods</pre>
+----
 ===prxml===
 API Overview [PrxmlApiDoc here]
 
 Public Variables and Functions:
 [PrxmlApiDoc#*html-compatible* *html-compatible*] [PrxmlApiDoc#*prxml-indent* *prxml-indent*] [PrxmlApiDoc#prxml prxml] 
 
+----
 ===repl-ln===
 API Overview [ReplLnApiDoc here]
 
 Public Variables and Functions:
 [ReplLnApiDoc#print-repl-info print-repl-info] [ReplLnApiDoc#repl repl] [ReplLnApiDoc#repl-info repl-info] [ReplLnApiDoc#repl-prompt repl-prompt] [ReplLnApiDoc#set-repl-name set-repl-name] [ReplLnApiDoc#set-repl-prompt set-repl-prompt] [ReplLnApiDoc#stream-repl stream-repl] 
 
+----
 ===repl-utils===
 API Overview [ReplUtilsApiDoc here]
 
 Public Variables and Functions:
 [ReplUtilsApiDoc#*local-javadocs* *local-javadocs*] [ReplUtilsApiDoc#*remote-javadocs* *remote-javadocs*] [ReplUtilsApiDoc#add-break-thread! add-break-thread!] [ReplUtilsApiDoc#add-local-javadoc add-local-javadoc] [ReplUtilsApiDoc#add-remote-javadoc add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#find-javadoc-url find-javadoc-url] [ReplUtilsApiDoc#get-source get-source] [ReplUtilsApiDoc#javadoc javadoc] [ReplUtilsApiDoc#show show] [ReplUtilsApiDoc#source source] [ReplUtilsApiDoc#start-handling-break start-handling-break] 
 
+----
 ===seq-utils===
 API Overview [SeqUtilsApiDoc here]
 
 Public Variables and Functions:
 [SeqUtilsApiDoc#find-first find-first] [SeqUtilsApiDoc#flatten flatten] [SeqUtilsApiDoc#frequencies frequencies] [SeqUtilsApiDoc#group-by group-by] [SeqUtilsApiDoc#includes? includes?] [SeqUtilsApiDoc#indexed indexed] [SeqUtilsApiDoc#partition-all partition-all] [SeqUtilsApiDoc#partition-by partition-by] [SeqUtilsApiDoc#rand-elt rand-elt] [SeqUtilsApiDoc#rec-cat rec-cat] [SeqUtilsApiDoc#rec-seq rec-seq] [SeqUtilsApiDoc#reductions reductions] [SeqUtilsApiDoc#rotations rotations] [SeqUtilsApiDoc#separate separate] [SeqUtilsApiDoc#seq-on seq-on] [SeqUtilsApiDoc#shuffle shuffle] 
 
+----
 ===server-socket===
 API Overview [ServerSocketApiDoc here]
 
 Public Variables and Functions:
 [ServerSocketApiDoc#create-repl-server create-repl-server] [ServerSocketApiDoc#create-server create-server] 
 
+----
 ===set===
 API Overview [SetApiDoc here]
 
 Public Variables and Functions:
 [SetApiDoc#proper-subset? proper-subset?] [SetApiDoc#proper-superset? proper-superset?] [SetApiDoc#subset? subset?] [SetApiDoc#superset? superset?] 
 
+----
 ===shell-out===
 API Overview [ShellOutApiDoc here]
 
 Public Variables and Functions:
 [ShellOutApiDoc#sh sh] 
 
+----
 ===singleton===
 API Overview [SingletonApiDoc here]
 
 Public Variables and Functions:
 [SingletonApiDoc#global-singleton global-singleton] [SingletonApiDoc#per-thread-singleton per-thread-singleton] 
 
+----
 ===sql===
 API Overview [SqlApiDoc here]
 
@@ -465,23 +517,26 @@ Variables and Functions in sql.internal:
 Variables and Functions in sql.test:
 [SqlApiDoc#create-fruit create-fruit] [SqlApiDoc#db-batchupdate-exception db-batchupdate-exception] [SqlApiDoc#db-exception db-exception] [SqlApiDoc#db-get-tables db-get-tables] [SqlApiDoc#db-grade-a db-grade-a] [SqlApiDoc#db-grade-range db-grade-range] [SqlApiDoc#db-read db-read] [SqlApiDoc#db-read-all db-read-all] [SqlApiDoc#db-rollback db-rollback] [SqlApiDoc#db-sql-exception db-sql-exception] [SqlApiDoc#db-update db-update] [SqlApiDoc#db-update-appearance-cost db-update-appearance-cost] [SqlApiDoc#db-update-or-insert db-update-or-insert] [SqlApiDoc#db-write db-write] [SqlApiDoc#drop-fruit drop-fruit] [SqlApiDoc#insert-records-fruit insert-records-fruit] [SqlApiDoc#insert-rows-fruit insert-rows-fruit] [SqlApiDoc#insert-values-fruit insert-values-fruit] 
 
+----
 ===stacktrace===
 API Overview [StacktraceApiDoc here]
 
 Public Variables and Functions:
 [StacktraceApiDoc#e e] [StacktraceApiDoc#print-cause-trace print-cause-trace] [StacktraceApiDoc#print-stack-trace print-stack-trace] [StacktraceApiDoc#print-throwable print-throwable] [StacktraceApiDoc#print-trace-element print-trace-element] [StacktraceApiDoc#root-cause root-cause] 
 
+----
 ===str-utils===
 API Overview [StrUtilsApiDoc here]
 
 Public Variables and Functions:
 [StrUtilsApiDoc#chomp chomp] [StrUtilsApiDoc#chop chop] [StrUtilsApiDoc#re-gsub re-gsub] [StrUtilsApiDoc#re-partition re-partition] [StrUtilsApiDoc#re-split re-split] [StrUtilsApiDoc#re-sub re-sub] [StrUtilsApiDoc#str-join str-join] 
 
+----
 ===stream-utils===
-API Overview [StreamUtilsApiDoc here]
 <br>by Konrad Hinsen
+API Overview [StreamUtilsApiDoc here]
 
-<pre>Functions for setting up computational pipelines via data streams. 
+<pre> Functions for setting up computational pipelines via data streams. 
  
 NOTE: This library is experimental. It may change significantly 
       with future release. 
@@ -525,12 +580,14 @@ next value of all stream arguments in the form of a vector.</pre>
 Public Variables and Functions:
 [StreamUtilsApiDoc#defst defst] [StreamUtilsApiDoc#defstream defstream] [StreamUtilsApiDoc#pick pick] [StreamUtilsApiDoc#pick-all pick-all] [StreamUtilsApiDoc#stream-drop stream-drop] [StreamUtilsApiDoc#stream-filter stream-filter] [StreamUtilsApiDoc#stream-flatten stream-flatten] [StreamUtilsApiDoc#stream-m stream-m] [StreamUtilsApiDoc#stream-map stream-map] [StreamUtilsApiDoc#stream-next stream-next] [StreamUtilsApiDoc#stream-seq stream-seq] [StreamUtilsApiDoc#stream-type stream-type] 
 
+----
 ===template===
 API Overview [TemplateApiDoc here]
 
 Public Variables and Functions:
 [TemplateApiDoc#apply-template apply-template] [TemplateApiDoc#do-template do-template] [TemplateApiDoc#find-holes find-holes] [TemplateApiDoc#find-pure-exprs find-pure-exprs] [TemplateApiDoc#find-symbols find-symbols] [TemplateApiDoc#flatten-map flatten-map] [TemplateApiDoc#template template] [TemplateApiDoc#template? template?] 
 
+----
 ===test-is===
 API Overview [TestIsApiDoc here]
 
@@ -540,35 +597,40 @@ Public Variables and Functions:
 Variables and Functions in test-is.tap:
 [TestIsApiDoc#print-tap-diagnostic print-tap-diagnostic] [TestIsApiDoc#print-tap-fail print-tap-fail] [TestIsApiDoc#print-tap-pass print-tap-pass] [TestIsApiDoc#print-tap-plan print-tap-plan] [TestIsApiDoc#with-tap-output with-tap-output] 
 
+----
 ===trace===
 API Overview [TraceApiDoc here]
 
 Public Variables and Functions:
 [TraceApiDoc#*trace-depth* *trace-depth*] [TraceApiDoc#deftrace deftrace] [TraceApiDoc#trace trace] [TraceApiDoc#trace-fn-call trace-fn-call] [TraceApiDoc#trace-indent trace-indent] [TraceApiDoc#tracer tracer] 
 
+----
 ===types===
-API Overview [TypesApiDoc here]
 <br>by Konrad Hinsen
+API Overview [TypesApiDoc here]
 
-<pre>General and algebraic data types</pre>
+<pre> General and algebraic data types</pre>
 Public Variables and Functions:
 [TypesApiDoc#defadt defadt] [TypesApiDoc#deftype deftype] [TypesApiDoc#deftype- deftype-] [TypesApiDoc#match match] 
 
 Variables and Functions in types.examples:
 [TypesApiDoc#multiset multiset] 
 
+----
 ===walk===
 API Overview [WalkApiDoc here]
 
 Public Variables and Functions:
 [WalkApiDoc#keywordize-keys keywordize-keys] [WalkApiDoc#macroexpand-all macroexpand-all] [WalkApiDoc#postwalk postwalk] [WalkApiDoc#postwalk-demo postwalk-demo] [WalkApiDoc#postwalk-replace postwalk-replace] [WalkApiDoc#prewalk prewalk] [WalkApiDoc#prewalk-demo prewalk-demo] [WalkApiDoc#prewalk-replace prewalk-replace] [WalkApiDoc#stringify-keys stringify-keys] [WalkApiDoc#walk walk] 
 
+----
 ===with-ns===
 API Overview [WithNsApiDoc here]
 
 Public Variables and Functions:
 [WithNsApiDoc#with-ns with-ns] [WithNsApiDoc#with-temp-ns with-temp-ns] 
 
+----
 ===zip-filter===
 API Overview [ZipFilterApiDoc here]
 

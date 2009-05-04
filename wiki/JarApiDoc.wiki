@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_filenames-in-jar_ jar-file)*
 </pre>
-<pre>Returns a sequence of Strings naming the non-directory entries in 
+<pre> Returns a sequence of Strings naming the non-directory entries in 
 the JAR file.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar/clojure/contrib/jar.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=filenames-in-jar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -36,6 +36,6 @@ the JAR file.</pre>
 <pre>
 Usage: *(_jar-file?_ file)*
 </pre>
-<pre>Returns true if file is a normal file with a .jar or .JAR extension.</pre>
+<pre> Returns true if file is a normal file with a .jar or .JAR extension.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/jar/clojure/contrib/jar.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=jar-file?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

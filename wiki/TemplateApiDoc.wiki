@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_apply-template_ expr values)*
 </pre>
-<pre>Replaces `_`1, `_`2, `_`3, etc. in expr with corresponding elements of 
+<pre> Replaces `_`1, `_`2, `_`3, etc. in expr with corresponding elements of 
 values.  Returns the modified expression.  For use in macros.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=apply-template+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -36,7 +36,7 @@ values.  Returns the modified expression.  For use in macros.</pre>
 <pre>
 Usage: *(_do-template_ expr & args)*
 </pre>
-<pre>Repeatedly evaluates template expr (in a do block) using values in 
+<pre> Repeatedly evaluates template expr (in a do block) using values in 
 args.  args are grouped by the number of holes in the template. 
 Example: (do-template (check `_`1 `_`2) :a :b :c :d) 
 expands to (do (check :a :b) (check :c :d))</pre>
@@ -48,7 +48,7 @@ expands to (do (check :a :b) (check :c :d))</pre>
 <pre>
 Usage: *(_find-holes_ form)*
 </pre>
-<pre>Recursively finds all symbols starting with `_` in form.</pre>
+<pre> Recursively finds all symbols starting with `_` in form.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#82 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-holes+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -57,7 +57,7 @@ Usage: *(_find-holes_ form)*
 <pre>
 Usage: *(_find-pure-exprs_ form)*
 </pre>
-<pre>Recursively finds all sub-expressions in form that do not contain 
+<pre> Recursively finds all sub-expressions in form that do not contain 
 any symbols starting with `_`</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-pure-exprs+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -67,7 +67,7 @@ any symbols starting with `_`</pre>
 <pre>
 Usage: *(_find-symbols_ form)*
 </pre>
-<pre>Recursively finds all symbols in form.</pre>
+<pre> Recursively finds all symbols in form.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#77 Source] [http://www.google.com/codesearch?hl=en&lr=&q=find-symbols+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -76,7 +76,7 @@ Usage: *(_find-symbols_ form)*
 <pre>
 Usage: *(_flatten-map_ m)*
 </pre>
-<pre>Transforms a map into a vector like `[`key value key value`]`.</pre>
+<pre> Transforms a map into a vector like `[`key value key value`]`.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#96 Source] [http://www.google.com/codesearch?hl=en&lr=&q=flatten-map+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -85,7 +85,7 @@ Usage: *(_flatten-map_ m)*
 <pre>
 Usage: *(_template_ & form)*
 </pre>
-<pre>Expands to a fn using `_`1, `_`2, `_`3, etc. as arguments (`_` is the same 
+<pre> Expands to a fn using `_`1, `_`2, `_`3, etc. as arguments (`_` is the same 
 as `_`1).  Any sub-expressions without any `_``*` variables are evaluated 
 when the fn is created, not when it is called.</pre>
 
@@ -96,6 +96,6 @@ when the fn is created, not when it is called.</pre>
 <pre>
 Usage: *(_template?_ form)*
 </pre>
-<pre>Returns true if form is a valid template expression.</pre>
+<pre> Returns true if form is a valid template expression.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template/clojure/contrib/template.clj#102 Source] [http://www.google.com/codesearch?hl=en&lr=&q=template?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

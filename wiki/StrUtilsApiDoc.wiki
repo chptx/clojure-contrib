@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_chomp_ s)*
 </pre>
-<pre>Removes all trailing newline \n or return \r characters from 
+<pre> Removes all trailing newline \n or return \r characters from 
 string.  Note: String.trim() is similar and faster.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#93 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chomp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -36,7 +36,7 @@ string.  Note: String.trim() is similar and faster.</pre>
 <pre>
 Usage: *(_chop_ s)*
 </pre>
-<pre>Removes the last character of string.</pre>
+<pre> Removes the last character of string.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -45,7 +45,7 @@ Usage: *(_chop_ s)*
 <pre>
 Usage: *(_re-gsub_ regex replacement string)*
 </pre>
-<pre>Replaces all instances of 'pattern' in 'string' with 
+<pre> Replaces all instances of 'pattern' in 'string' with 
 'replacement'.  Like Ruby's 'String#gsub'. 
  
 If (ifn? replacment) is true, the replacement is called with the 
@@ -59,7 +59,7 @@ match.
 <pre>
 Usage: *(_re-partition_ re string)*
 </pre>
-<pre>Splits the string into a lazy sequence of substrings, alternating 
+<pre> Splits the string into a lazy sequence of substrings, alternating 
 between substrings that match the patthern and the substrings 
 between the matches.  The sequence always starts with the substring 
 before the first match, or an empty string if the beginning of the 
@@ -77,7 +77,7 @@ Returns: ("" "abc" "123" "def")</pre>
 Usage: *(_re-split_ pattern string)
        (_re-split_ pattern string limit)*
 </pre>
-<pre>Splits the string on instances of 'pattern'.  Returns a sequence of 
+<pre> Splits the string on instances of 'pattern'.  Returns a sequence of 
 strings.  Optional 'limit' argument is the maximum number of 
 splits.  Like Perl's 'split'.</pre>
 
@@ -88,7 +88,7 @@ splits.  Like Perl's 'split'.</pre>
 <pre>
 Usage: *(_re-sub_ regex replacement string)*
 </pre>
-<pre>Replaces the first instance of 'pattern' in 'string' with 
+<pre> Replaces the first instance of 'pattern' in 'string' with 
 'replacement'.  Like Ruby's 'String#sub'. 
  
 If (ifn? replacement) is true, the replacement is called with 
@@ -102,7 +102,7 @@ the match.
 <pre>
 Usage: *(_str-join_ separator sequence)*
 </pre>
-<pre>Returns a string of all elements in 'sequence', separated by 
+<pre> Returns a string of all elements in 'sequence', separated by 
 'separator'.  Like Perl's 'join'.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils/clojure/contrib/str_utils.clj#81 Source] [http://www.google.com/codesearch?hl=en&lr=&q=str-join+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

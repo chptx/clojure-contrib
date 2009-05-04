@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.agent-utils))
 }}}
 ==Overview==
-<pre>Miscellaneous agent utilities 
+<pre> Miscellaneous agent utilities 
 (note to other contrib members: feel free to add to this lib)</pre>
 
 
@@ -31,7 +31,7 @@ Shortcuts:
 <pre>
 Usage: *(_capture-and-send_ vars agent action & args)*
 </pre>
-<pre>Capture the current value of the specified vars and rebind  
+<pre> Capture the current value of the specified vars and rebind  
 them on the agent thread before executing the action. 
  
 Example: 

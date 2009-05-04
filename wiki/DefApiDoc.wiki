@@ -27,7 +27,7 @@ Shortcuts:
 Usage: *(_defalias_ name orig)
        (_defalias_ name orig doc)*
 </pre>
-<pre>Defines an alias for a var: a new var with the same root binding (if 
+<pre> Defines an alias for a var: a new var with the same root binding (if 
 any) and similar metadata. The metadata of the alias is its initial 
 metadata (as provided by def) merged into the metadata of the original.</pre>
 
@@ -38,7 +38,7 @@ metadata (as provided by def) merged into the metadata of the original.</pre>
 <pre>
 Usage: *(_defhinted_ sym init)*
 </pre>
-<pre>Defines a var with a type hint matching the class of the given 
+<pre> Defines a var with a type hint matching the class of the given 
 init.  Be careful about using any form of 'def' or 'binding' to a 
 value of a different type.  See http://paste.lisp.org/display/73344</pre>
 
@@ -49,7 +49,7 @@ value of a different type.  See http://paste.lisp.org/display/73344</pre>
 <pre>
 Usage: *(_defmacro-_ name & decls)*
 </pre>
-<pre>Same as defmacro but yields a private definition</pre>
+<pre> Same as defmacro but yields a private definition</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defmacro-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -59,7 +59,7 @@ Usage: *(_defmacro-_ name & decls)*
 Usage: *(_defonce-_ name expr)
        (_defonce-_ name expr doc)*
 </pre>
-<pre>Same as defonce but yields a private definition</pre>
+<pre> Same as defonce but yields a private definition</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defonce-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -68,7 +68,7 @@ Usage: *(_defonce-_ name expr)
 <pre>
 Usage: *(_defstruct-_ name & decls)*
 </pre>
-<pre>Same as defstruct but yields a private definition</pre>
+<pre> Same as defstruct but yields a private definition</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defstruct-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -78,7 +78,7 @@ Usage: *(_defstruct-_ name & decls)*
 Usage: *(_defunbound_ name)
        (_defunbound_ name doc)*
 </pre>
-<pre>Defines an unbound var with optional doc string</pre>
+<pre> Defines an unbound var with optional doc string</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defunbound+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -87,7 +87,7 @@ Usage: *(_defunbound_ name)
 <pre>
 Usage: *(_defunbound-_ name & decls)*
 </pre>
-<pre>Same as defunbound but yields a private definition</pre>
+<pre> Same as defunbound but yields a private definition</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#45 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defunbound-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -98,7 +98,7 @@ Usage: *(_defvar_ name)
        (_defvar_ name init)
        (_defvar_ name init doc)*
 </pre>
-<pre>Defines a var with an optional intializer and doc string</pre>
+<pre> Defines a var with an optional intializer and doc string</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defvar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -107,7 +107,7 @@ Usage: *(_defvar_ name)
 <pre>
 Usage: *(_defvar-_ name & decls)*
 </pre>
-<pre>Same as defvar but yields a private definition</pre>
+<pre> Same as defvar but yields a private definition</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def/clojure/contrib/def.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defvar-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -116,7 +116,7 @@ Usage: *(_defvar-_ name & decls)*
 <pre>
 Usage: *(_name-with-attributes_ name macro-args)*
 </pre>
-<pre>To be used in macro definitions. 
+<pre> To be used in macro definitions. 
 Handles optional docstrings and attribute maps for a name to be defined 
 in a list of macro arguments. If the first macro argument is a string, 
 it is added as a docstring to name and removed from the macro argument 

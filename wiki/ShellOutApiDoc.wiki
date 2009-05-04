@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_sh_ & args)*
 </pre>
-<pre>Passes the given strings to Runtime.exec() to launch a sub-process. 
+<pre> Passes the given strings to Runtime.exec() to launch a sub-process. 
  
 Options are 
  

@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_import-static_ class & fields-and-methods)*
 </pre>
-<pre>Imports the named static fields and/or static methods of the class 
+<pre> Imports the named static fields and/or static methods of the class 
 as (private) symbols in the current namespace. 
  
 Example:  

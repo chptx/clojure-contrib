@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.complex-numbers))
 }}}
 ==Overview==
-<pre>Complex numbers 
+<pre> Complex numbers 
 NOTE: This library is in evolution. 
       It may change with future releases.</pre>
 

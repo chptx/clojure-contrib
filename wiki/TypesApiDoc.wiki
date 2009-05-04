@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.types))
 }}}
 ==Overview==
-<pre>General and algebraic data types</pre>
+<pre> General and algebraic data types</pre>
 
 
 ==Public Variables and Functions==
@@ -33,7 +33,7 @@ Variables and Functions in types.examples:
 <pre>
 Usage: *(_defadt_ type-tag & constructors)*
 </pre>
-<pre>Define an algebraic data type name by an exhaustive list of constructors. 
+<pre> Define an algebraic data type name by an exhaustive list of constructors. 
 Each constructor can be a symbol (argument-free constructor) or a 
 list consisting of a tag symbol followed by the argument symbols. 
 The data type tag must be a keyword.</pre>
@@ -47,7 +47,7 @@ Usage: *(_deftype_ type-tag constructor-name docstring? attr-map?)
        (_deftype_ type-tag constructor-name docstring? attr-map? constructor)
        (_deftype_ type-tag constructor-name docstring? attr-map? constructor deconstructor)*
 </pre>
-<pre>Define a data type by a type tag (a namespace-qualified keyword) 
+<pre> Define a data type by a type tag (a namespace-qualified keyword) 
 and a symbol naming the constructor function. Optionally, a 
 constructor and a deconstructor function can be given as well, 
 the defaults being clojure.core/identity and clojure.core/list. 
@@ -64,7 +64,7 @@ object. It is used for printing and matching.</pre>
 <pre>
 Usage: *(_deftype-_ type-tag constructor-name & optional)*
 </pre>
-<pre>Same as deftype but the constructor is private.</pre>
+<pre> Same as deftype but the constructor is private.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/clojure/contrib/types.clj#87 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftype-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -73,7 +73,7 @@ Usage: *(_deftype-_ type-tag constructor-name & optional)*
 <pre>
 Usage: *(_match_ value & clauses)*
 </pre>
-<pre>Given a value and a list of template-expr clauses, evaluate the first 
+<pre> Given a value and a list of template-expr clauses, evaluate the first 
 expr whose template matches the value. There are four kinds of templates: 
 1) Lists of the form (tag x1 x2 ...) match instances of types 
    whose constructor has the same form as the list. 
@@ -92,10 +92,10 @@ for the template to match.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/clojure/contrib/types.clj#240 Source] [http://www.google.com/codesearch?hl=en&lr=&q=match+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.types.examples==
-<pre>Examples for data type definitions</pre>
+<pre> Examples for data type definitions</pre>
 ----
 ===multiset===
 ====var====
-<pre>Multiset (demo implementation)</pre>
+<pre> Multiset (demo implementation)</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/examples/clojure/contrib/types/examples.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=multiset+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

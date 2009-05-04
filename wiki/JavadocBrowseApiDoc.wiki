@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_open-url-in-browser_ url)*
 </pre>
-<pre>Opens url (a string) in the default system web browser.  May not 
+<pre> Opens url (a string) in the default system web browser.  May not 
 work on all platforms.  Returns url on success, nil if not 
 supported.</pre>
 
@@ -37,6 +37,6 @@ supported.</pre>
 <pre>
 Usage: *(_open-url-in-swing_ url)*
 </pre>
-<pre>Opens url (a string) in a Swing window.</pre>
+<pre> Opens url (a string) in a Swing window.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javadoc/browse/clojure/contrib/javadoc/browse.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=open-url-in-swing+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -26,7 +26,7 @@ Shortcuts:
 <pre>
 Usage: *(_bind-continue_ continue-name `[`args`*``]` & body)*
 </pre>
-<pre>Special form to be used inside a 'with-handler'. 
+<pre> Special form to be used inside a 'with-handler'. 
 Control can be passed to this 'continue' form from a 'raise' enclosed 
 in this with-handler's dynamic scope, when this 'continue-name' is 
 given to a 'continue' form.</pre>
@@ -39,7 +39,7 @@ given to a 'continue' form.</pre>
 Usage: *(_deferror_ name `[`parent-error?`]` doc-string? `[`args`*``]` & body)
        (_deferror_ name `[`parent-error?`]` doc-string? args-destruct-map & body)*
 </pre>
-<pre>Define a new error type</pre>
+<pre> Define a new error type</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deferror+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -48,7 +48,7 @@ Usage: *(_deferror_ name `[`parent-error?`]` doc-string? `[`args`*``]` & body)
 <pre>
 Usage: *(_do-not-handle_)*
 </pre>
-<pre>Use in a tail position of a 'handle' form to indicate 'raise' should 
+<pre> Use in a tail position of a 'handle' form to indicate 'raise' should 
 not consider the error handled, but should continue searching for an 
 appropriate 'handle' form.  Allows finer-grain control over catching 
 than just the error type.</pre>
@@ -60,7 +60,7 @@ than just the error type.</pre>
 <pre>
 Usage: *(_error_ details)*
 </pre>
-<pre>Base type for all error-kit errors</pre>
+<pre> Base type for all error-kit errors</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=error+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -70,7 +70,7 @@ Usage: *(_error_ details)*
 Usage: *(_handle_ error-name? `[`args`*``]` & body)
        (_handle_ error-name? args-destruct-map-args & body)*
 </pre>
-<pre>Special form to be used inside a 'with-handler'.  When 
+<pre> Special form to be used inside a 'with-handler'.  When 
 any error is 'raised' from withing the dynamic scope of 'body' that 
 is of error-name's type or a derived type, the args will be bound 
 and the body executed.  If no 'error-name' is given, the body will 
@@ -86,7 +86,7 @@ return forms, 'do-not-handle', 'continue-with', or 'continue'.</pre>
 <pre>
 Usage: *(_raise_ err-name & args)*
 </pre>
-<pre>Raise an error of the type err-name, constructed with the given args</pre>
+<pre> Raise an error of the type err-name, constructed with the given args</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -95,7 +95,7 @@ Usage: *(_raise_ err-name & args)*
 <pre>
 Usage: *(_raise`*`_ err)*
 </pre>
-<pre>Raise the given error object, best if created by an error 
+<pre> Raise the given error object, best if created by an error 
 constructor defined with deferror.  See also 'raise' macro.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit/clojure/contrib/error_kit.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -105,7 +105,7 @@ constructor defined with deferror.  See also 'raise' macro.</pre>
 <pre>
 Usage: *(_throw-msg_ class-name)*
 </pre>
-<pre>Returns a function that throws a Java Exception with the given 
+<pre> Returns a function that throws a Java Exception with the given 
 name.  Useful to associate a new error-kit error type with a 
 particular Java Exception class, via the :unhandled error key.</pre>
 
@@ -116,7 +116,7 @@ particular Java Exception class, via the :unhandled error key.</pre>
 <pre>
 Usage: *(_with-handler_ & forms)*
 </pre>
-<pre>This is error-kit's dynamic scope form.  The body will be executed 
+<pre> This is error-kit's dynamic scope form.  The body will be executed 
 in a dynamic context that includes all of the following 'handle' and 
 'bind-continue' forms.</pre>
 
