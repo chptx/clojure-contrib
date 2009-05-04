@@ -18,8 +18,8 @@ Usage:
 }}}
 ==Overview==
 <pre> Complex numbers 
-NOTE: This library is in evolution. 
-      It may change with future releases.</pre>
+NOTE: This library is in evolution. Most math functions are 
+      not implemented yet.</pre>
 
 
 ==Public Variables and Functions==

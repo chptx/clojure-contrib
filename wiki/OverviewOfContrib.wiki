@@ -113,8 +113,8 @@ by Konrad Hinsen<br>
 API Overview [ComplexNumbersApiDoc here]
 
 <pre> Complex numbers 
-NOTE: This library is in evolution. 
-      It may change with future releases.</pre>
+NOTE: This library is in evolution. Most math functions are 
+      not implemented yet.</pre>
 ----
 ===cond===
 by Stephen C. Gilardi<br>
@@ -272,9 +272,14 @@ Public Variables and Functions:
 by Konrad Hinsen<br>
 API Overview [GenericApiDoc here]
 
-<pre> Generic interface support code 
-NOTE: This library is VERY experimental. It WILL change 
-      significantly with future release.</pre>
+<pre> Generic interfaces 
+This library provides generic interfaces in the form of 
+multimethods that can be implemented for any type. 
+The interfaces partly duplicate existing non-generic 
+functions in clojure.core (arithmetic, comparison, 
+collections) and partly provide additional functions that 
+can be defined for a wide variety of types (functors, math 
+functions). More functions will be added in the future.</pre>
 Variables and Functions in generic.collection:
 [GenericApiDoc#assoc assoc] [GenericApiDoc#dissoc dissoc] [GenericApiDoc#empty empty] [GenericApiDoc#get get] [GenericApiDoc#into into] [GenericApiDoc#seq seq] 
 
@@ -537,7 +542,7 @@ API Overview [MonadsApiDoc here]
 <pre> This library contains the most commonly used monads as well 
 as macros for defining and using monads and useful monadic 
 functions.</pre>
-See also: [http://onclojure.com/2009/03/05/a-monad-tutorial-for-clojure-programmers-part-1/ Monad tutorial part 1], [http://onclojure.com/2009/03/06/a-monad-tutorial-for-clojure-programmers-part-2/ Monad tutorial part 2], [http://onclojure.com/2009/03/23/a-monad-tutorial-for-clojure-programmers-part-3/ Monad tutorial part 3], [http://onclojure.com/2009/04/24/a-monad-tutorial-for-clojure-programmers-part-4/ Monad tutorial part 4]
+See also: [http://onclojure.com/2009/03/05/a-monad-tutorial-for-clojure-programmers-part-1/ Monad tutorial part 1], [http://onclojure.com/2009/03/06/a-monad-tutorial-for-clojure-programmers-part-2/ Monad tutorial part 2], [http://onclojure.com/2009/03/23/a-monad-tutorial-for-clojure-programmers-part-3/ Monad tutorial part 3], [http://onclojure.com/2009/04/24/a-monad-tutorial-for-clojure-programmers-part-4/ Monad tutorial part 4], [http://intensivesystems.net/tutorials/monads_101.html Monads in Clojure part 1], [http://intensivesystems.net/tutorials/monads_201.html Monads in Clojure part 2]
 
 Public Variables and Functions:
 [MonadsApiDoc#call-cc call-cc] [MonadsApiDoc#cont-m cont-m] [MonadsApiDoc#defmonad defmonad] [MonadsApiDoc#defmonadfn defmonadfn] [MonadsApiDoc#domonad domonad] [MonadsApiDoc#identity-m identity-m] [MonadsApiDoc#m-chain m-chain] [MonadsApiDoc#m-fmap m-fmap] [MonadsApiDoc#m-join m-join] [MonadsApiDoc#m-lift m-lift] [MonadsApiDoc#m-map m-map] [MonadsApiDoc#m-reduce m-reduce] [MonadsApiDoc#m-seq m-seq] [MonadsApiDoc#m-when m-when] [MonadsApiDoc#m-when-not m-when-not] [MonadsApiDoc#maybe-m maybe-m] [MonadsApiDoc#maybe-t maybe-t] [MonadsApiDoc#monad monad] [MonadsApiDoc#monad-transformer monad-transformer] [MonadsApiDoc#run-cont run-cont] [MonadsApiDoc#sequence-m sequence-m] [MonadsApiDoc#sequence-t sequence-t] [MonadsApiDoc#set-m set-m] [MonadsApiDoc#state-m state-m] [MonadsApiDoc#state-t state-t] [MonadsApiDoc#with-monad with-monad] [MonadsApiDoc#writer-m writer-m] 
