@@ -9,7 +9,7 @@ For errors in the documentation of a particular namespace, contact the author of
 namespace.
 </wiki:comment>
 =API for javadoc.browse=
-by Start a web browser from Clojure
+by Christophe Grand
 
 Usage: 
 {{{
@@ -17,7 +17,7 @@ Usage:
   (:use clojure.contrib.javadoc.browse))
 }}}
 ==Overview==
-<pre> Christophe Grand</pre>
+<pre> Start a web browser from Clojure</pre>
 
 
 ==Public Variables and Functions==
