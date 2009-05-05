@@ -63,7 +63,7 @@ Usage: *(_log-level_ level)*
 <pre> Translates 'level' (a lower-case keyword) into a static field of 
 java.util.logging.Level, by name.   
  
-Example: (log-level :severe)  =>  java.util.logging.Level.SEVERE 
+Example: (log-level :severe)  `=`>  java.util.logging.Level.SEVERE 
  
 If 'level' is not a keyword, it is assumed to be a user-defined 
 instance of java.util.logging.Level and is returned unchanged.</pre>

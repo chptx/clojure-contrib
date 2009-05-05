@@ -33,11 +33,15 @@ Shortcuts:
 ----
 ===`*`===
 ====multimethod====
-_No usage documentation available_
+<pre>
+Usage: *(_`*`_ x)
+       (_`*`_ x y)
+       (_`*`_ x y & more)*
+</pre>
 <pre> Return the product of all arguments. The minimal implementation for type 
 ::my-type is the binary form with dispatch value `[`::my-type ::my-type`]`.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#110 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#111 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===+===
 ====multimethod====
@@ -53,7 +57,11 @@ Usage: *(_+_ x)
 ----
 ===-===
 ====multimethod====
-_No usage documentation available_
+<pre>
+Usage: *(_-_ x)
+       (_-_ x y)
+       (_-_ x y & more)*
+</pre>
 <pre> Return the difference of the first argument and the sum of all other 
 arguments. The minimal implementation for type ::my-type is the binary 
 form with dispatch value `[`::my-type ::my-type`]`.</pre>
@@ -62,12 +70,16 @@ form with dispatch value `[`::my-type ::my-type`]`.</pre>
 ----
 ===/===
 ====multimethod====
-_No usage documentation available_
+<pre>
+Usage: *(_/_ x)
+       (_/_ x y)
+       (_/_ x y & more)*
+</pre>
 <pre> Return the quotient of the first argument and the product of all other 
 arguments. The minimal implementation for type ::my-type is the binary 
 form with dispatch value `[`::my-type ::my-type`]`.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#141 Source] [http://www.google.com/codesearch?hl=en&lr=&q=/+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#143 Source] [http://www.google.com/codesearch?hl=en&lr=&q=/+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===defmethod`*`===
 ====macro====
@@ -77,7 +89,7 @@ Usage: *(_defmethod`*`_ ns name & args)*
 <pre> Define a method implementation for the multimethod name in namespace ns. 
 Required for implementing the division function from another namespace.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#170 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defmethod*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#173 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defmethod*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===qsym===
 ====macro====
@@ -88,4 +100,4 @@ Usage: *(_qsym_ ns sym)*
 Required to access the division function from another namespace, 
 e.g. as (qsym clojure.contrib.generic.arithmetic /).</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#177 Source] [http://www.google.com/codesearch?hl=en&lr=&q=qsym+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#180 Source] [http://www.google.com/codesearch?hl=en&lr=&q=qsym+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

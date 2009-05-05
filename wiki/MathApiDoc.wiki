@@ -56,7 +56,7 @@ sqrt - Implements the sqrt behavior I'm accustomed to from PLT Scheme,
   need to be updated (so negative inputs yield complex outputs). 
 exact-integer-sqrt - Implements a math function from the R6RS Scheme 
   standard.  (exact-integer-sqrt k) where k is a non-negative integer, 
-  returns `[`s r`]` where k = s^2+r and k < (s+1)^2.  In other words, it 
+  returns `[`s r`]` where k `=` s^2+r and k < (s+1)^2.  In other words, it 
   returns the floor of the square root and the </pre>
 
 
@@ -89,8 +89,8 @@ If n is an exact number, ceil returns an integer, otherwise a double.</pre>
 <pre>
 Usage: *(_exact-integer-sqrt_ n)*
 </pre>
-<pre> (exact-integer-sqrt n) expects a non-negative integer n, and returns `[`s r`]` where n = s^2+r and n < (s+1)^2.  In other words, it returns the floor of the square root and the 'remainder'. 
-For example, (exact-integer-sqrt 15) is `[`3 6`]` because 15 = 3^2+6.</pre>
+<pre> (exact-integer-sqrt n) expects a non-negative integer n, and returns `[`s r`]` where n `=` s^2+r and n < (s+1)^2.  In other words, it returns the floor of the square root and the 'remainder'. 
+For example, (exact-integer-sqrt 15) is `[`3 6`]` because 15 `=` 3^2+6.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/math.clj#206 Source] [http://www.google.com/codesearch?hl=en&lr=&q=exact-integer-sqrt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----

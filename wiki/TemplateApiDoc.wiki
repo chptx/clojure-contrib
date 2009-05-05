@@ -41,14 +41,14 @@ Assume we have some big, slow calculation.
 With #(), think-hard gets called every time. 
   (time (doall (map #(+ % (think-hard)) 
                     (range 5)))) 
-  => "Elapsed time: 5001.33455 msecs" 
-  => (1000 1001 1002 1003 1004) 
+  `=`> "Elapsed time: 5001.33455 msecs" 
+  `=`> (1000 1001 1002 1003 1004) 
  
 With a template, think-hard only gets called once. 
   (time (doall (map (template (+ `_` (think-hard))) 
                     (range 5)))) 
-  => "Elapsed time: 1000.907326 msecs" 
-  => (1000 1001 1002 1003 1004) 
+  `=`> "Elapsed time: 1000.907326 msecs" 
+  `=`> (1000 1001 1002 1003 1004) 
  
 There is also the do-template macro, which works differently.  It 
 calls the same template multiple times, filling in values, and puts 

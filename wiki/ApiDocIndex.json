@@ -2612,9 +2612,24 @@
       "doc":"Calls generate-documentation on the libraries named by libs and\nemits the generated HTML to the path named by path."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#110",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#111",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#*",
       "name":"*",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
       "doc":"Return the product of all arguments. The minimal implementation for type\n   ::my-type is the binary form with dispatch value [::my-type ::my-type]."
     },
     {
@@ -2642,16 +2657,46 @@
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#77",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#-",
       "name":"-",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
       "doc":"Return the difference of the first argument and the sum of all other\n   arguments. The minimal implementation for type ::my-type is the binary\n   form with dispatch value [::my-type ::my-type]."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#141",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#143",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#/",
       "name":"/",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
       "doc":"Return the quotient of the first argument and the product of all other\n   arguments. The minimal implementation for type ::my-type is the binary\n   form with dispatch value [::my-type ::my-type]."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#170",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#173",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#defmethod*",
       "name":"defmethod*",
       "arglists":[
@@ -2665,7 +2710,7 @@
       "doc":"Define a method implementation for the multimethod name in namespace ns.\n   Required for implementing the division function from another namespace."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#177",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#180",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#qsym",
       "name":"qsym",
       "arglists":[
@@ -2693,10 +2738,17 @@
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#42",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#conj",
       "name":"conj",
+      "arglists":[
+        [
+"coll",
+"&",
+"xs"
+        ]
+      ],
       "doc":"Returns a new collection resulting from adding all xs to coll."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#53",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#54",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#dissoc",
       "name":"dissoc",
       "arglists":[
@@ -2709,7 +2761,7 @@
       "doc":"Returns a new collection in which the entries corresponding to the\n   given keys are removed. Each type of collection can have specific\n   restrictions on the possible keys."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#67",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#68",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#empty",
       "name":"empty",
       "arglists":[
@@ -2720,7 +2772,7 @@
       "doc":"Returns an empty collection of the same kind as the argument"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#79",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#80",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#get",
       "name":"get",
       "arglists":[
@@ -2737,7 +2789,7 @@
       "doc":"Returns the element of coll referred to by key. Each type of collection\n   can have specific restrictions on the possible keys."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#94",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#95",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#into",
       "name":"into",
       "arglists":[
@@ -2749,7 +2801,7 @@
       "doc":"Returns a new coll consisting of to-coll with all of the items of\n  from-coll conjoined."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#108",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#109",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#seq",
       "name":"seq",
       "arglists":[
@@ -2760,15 +2812,45 @@
       "doc":"Returns a seq on the object s."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#76",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#77",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#<",
       "name":"<",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
       "doc":"Return true if each argument is smaller than the following ones.\n   The minimal implementation for type ::my-type is the binary form\n   with dispatch value [::my-type ::my-type]. A default implementation\n   is provided in terms of >."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#126",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#129",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#<=",
       "name":"<=",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
       "doc":"Return true if each arguments is smaller than or equal to the following\n   ones. The minimal implementation for type ::my-type is the binary form\n   with dispatch value [::my-type ::my-type]. A default implementation\n   is provided in terms of >."
     },
     {
@@ -2796,12 +2878,42 @@
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#56",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#>",
       "name":">",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
       "doc":"Return true if each argument is larger than the following ones.\n   The minimal implementation for type ::my-type is the binary form\n   with dispatch value [::my-type ::my-type]."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#101",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#103",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#>=",
       "name":">=",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
       "doc":"Return true if each argument is larger than or equal to the following\n   ones. The minimal implementation for type ::my-type is the binary form\n   with dispatch value [::my-type ::my-type]. A default implementation\n   is provided in terms of <."
     },
     {

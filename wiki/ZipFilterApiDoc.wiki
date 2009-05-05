@@ -56,7 +56,7 @@ left-to-right.</pre>
 Usage: *(_children-auto_ loc)*
 </pre>
 <pre> Returns a lazy sequence of all immediate children of location loc, 
-left-to-right, marked so that a following tag= predicate will auto-descend.</pre>
+left-to-right, marked so that a following tag`=` predicate will auto-descend.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=children-auto+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -117,10 +117,10 @@ Usage: *(_attr_ attrname)
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#18 Source] [http://www.google.com/codesearch?hl=en&lr=&q=attr+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
-===attr====
+===attr`=`===
 ====function====
 <pre>
-Usage: *(_attr=_ attrname attrval)*
+Usage: *(_attr`=`_ attrname attrval)*
 </pre>
 <pre> Returns a query predicate that matches a node when it has an 
 attribute named attrname whose value is attrval.</pre>
@@ -137,10 +137,10 @@ matches the query expresions given.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#51 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq-test+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
-===tag====
+===tag`=`===
 ====function====
 <pre>
-Usage: *(_tag=_ tagname)*
+Usage: *(_tag`=`_ tagname)*
 </pre>
 <pre> Returns a query predicate that matches a node when its is a tag 
 named tagname.</pre>
@@ -157,10 +157,10 @@ xpaths's value-of</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=text+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
-===text====
+===text`=`===
 ====function====
 <pre>
-Usage: *(_text=_ s)*
+Usage: *(_text`=`_ s)*
 </pre>
 <pre> Returns a query predicate that matches a node when its textual 
 content equals s.</pre>
@@ -183,8 +183,8 @@ This process is repeated, passing the processed results of each
 predicate to the next predicate.  xml-> returns the final sequence. 
 The entire chain is evaluated lazily. 
  
-There are also special predicates: keywords are converted to tag=, 
-strings to text=, and vectors to sub-queries that return true if 
+There are also special predicates: keywords are converted to tag`=`, 
+strings to text`=`, and vectors to sub-queries that return true if 
 they match. 
  
 See the footer of zip-query.clj for examples.</pre>

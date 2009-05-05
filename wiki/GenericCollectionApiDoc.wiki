@@ -41,7 +41,9 @@ can have specific restrictions on the possible keys.</pre>
 ----
 ===conj===
 ====multimethod====
-_No usage documentation available_
+<pre>
+Usage: *(_conj_ coll & xs)*
+</pre>
 <pre> Returns a new collection resulting from adding all xs to coll.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=conj+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -55,7 +57,7 @@ Usage: *(_dissoc_ coll & keys)*
 given keys are removed. Each type of collection can have specific 
 restrictions on the possible keys.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dissoc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dissoc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===empty===
 ====multimethod====
@@ -64,7 +66,7 @@ Usage: *(_empty_ coll)*
 </pre>
 <pre> Returns an empty collection of the same kind as the argument</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#67 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=empty+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===get===
 ====multimethod====
@@ -75,7 +77,7 @@ Usage: *(_get_ coll key)
 <pre> Returns the element of coll referred to by key. Each type of collection 
 can have specific restrictions on the possible keys.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#79 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=get+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===into===
 ====multimethod====
@@ -85,7 +87,7 @@ Usage: *(_into_ to from)*
 <pre> Returns a new coll consisting of to-coll with all of the items of 
 from-coll conjoined.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#94 Source] [http://www.google.com/codesearch?hl=en&lr=&q=into+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#95 Source] [http://www.google.com/codesearch?hl=en&lr=&q=into+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===seq===
 ====multimethod====
@@ -94,4 +96,4 @@ Usage: *(_seq_ s)*
 </pre>
 <pre> Returns a seq on the object s.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#108 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#109 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seq+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

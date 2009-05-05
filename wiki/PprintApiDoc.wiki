@@ -282,6 +282,6 @@ The following keyword arguments can be passed with values:
   :right-margin        The column for the right margin      Current value of `*`print-right-margin`*` 
   :suppress-namespaces If true, no namespaces in symbols    Current value of `*`print-suppress-namespaces`*` 
  
-  `*` = not yet supported</pre>
+  `*` `=` not yet supported</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

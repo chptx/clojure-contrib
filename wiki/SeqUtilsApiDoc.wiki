@@ -73,7 +73,7 @@ corresponding elements, in the order they appeared in coll.</pre>
 <pre>
 Usage: *(_includes?_ coll x)*
 </pre>
-<pre> Returns true if coll contains something equal (with =) to x, 
+<pre> Returns true if coll contains something equal (with `=`) to x, 
 in linear time.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=includes?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
@@ -86,7 +86,7 @@ Usage: *(_indexed_ s)*
 <pre> Returns a lazy sequence of `[`index, item`]` pairs, where items come 
 from 's' and indexes count up from zero. 
  
-(indexed '(a b c d))  =>  (`[`0 a`]` `[`1 b`]` `[`2 c`]` `[`3 d`]`)</pre>
+(indexed '(a b c d))  `=`>  (`[`0 a`]` `[`1 b`]` `[`2 c`]` `[`3 d`]`)</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/seq_utils.clj#53 Source] [http://www.google.com/codesearch?hl=en&lr=&q=indexed+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----

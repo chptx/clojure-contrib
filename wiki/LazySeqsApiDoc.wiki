@@ -18,7 +18,7 @@ Usage:
 }}}
 ==Overview==
 <pre>  
-==== Lazy sequences ==== 
+`=``=``=``=` Lazy sequences `=``=``=``=` 
  
  primes - based on the "naive" implemention described in `[`1`]` plus a 
           small "wheel" which eliminates multiples of 2, 3, 5, and 
@@ -29,7 +29,7 @@ Usage:
  
  powers-of-2 - all the powers of 2 
  
- ==== Lazy sequence functions ==== 
+ `=``=``=``=` Lazy sequence functions `=``=``=``=` 
  
  (rotations, partition-all, shuffle, rand-elt  moved to seq`_`utils.clj) 
  (permutations and combinations moved to combinatorics.clj) 

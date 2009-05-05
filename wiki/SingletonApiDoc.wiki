@@ -54,6 +54,6 @@ safely and lazily initialize shared objects on a per-thread basis.
 Warning: due to a bug in JDK 5, it may not be safe to use a 
 per-thread-singleton in the initialization function for another 
 per-thread-singleton.  See 
-http://bugs.sun.com/bugdatabase/view`_`bug.do?bug`_`id=5025230</pre>
+http://bugs.sun.com/bugdatabase/view`_`bug.do?bug`_`id`=`5025230</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/singleton.clj#41 Source] [http://www.google.com/codesearch?hl=en&lr=&q=per-thread-singleton+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

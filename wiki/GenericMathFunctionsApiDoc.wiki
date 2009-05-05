@@ -46,10 +46,10 @@ Usage: *(_acos_ x)*
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=acos+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
-===approx====
+===approx`=`===
 ====function====
 <pre>
-Usage: *(_approx=_ x y eps)*
+Usage: *(_approx`=`_ x y eps)*
 </pre>
 <pre> Return true if the absolute value of the difference between x and y 
 is less than eps.</pre>

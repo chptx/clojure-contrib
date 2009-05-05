@@ -19,7 +19,7 @@ Usage:
 ==Overview==
 <pre> This file defines a generic "case" macro called "fcase" which takes 
 the equality-testing function as an argument.  It also defines a 
-traditional "case" macro that tests using "=" and variants that 
+traditional "case" macro that tests using "`=`" and variants that 
 test for regular expressions and class membership. 
  
  
@@ -38,7 +38,7 @@ Shortcuts:
 Usage: *(_case_ test-value & clauses)*
 </pre>
 <pre> Like cond, but test-value is compared against the value of each 
-test expression with =.  If they are equal, executes the "body" 
+test expression with `=`.  If they are equal, executes the "body" 
 expression.  Optional last expression is executed if none of the 
 test expressions match.</pre>
 
@@ -82,7 +82,7 @@ efficient to use a hash lookup.</pre>
 Usage: *(_in-case_ test-value & clauses)*
 </pre>
 <pre> Like case, but test expressions are sequences.  The test expression 
-is true if any item in the sequence is equal (tested with '=') to 
+is true if any item in the sequence is equal (tested with '`=`') to 
 the test value.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fcase.clj#101 Source] [http://www.google.com/codesearch?hl=en&lr=&q=in-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

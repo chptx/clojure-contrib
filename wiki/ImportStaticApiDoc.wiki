@@ -34,11 +34,11 @@ Usage: *(_import-static_ class & fields-and-methods)*
 as (private) symbols in the current namespace. 
  
 Example:  
-    user=> (import-static java.lang.Math PI sqrt) 
+    user`=`> (import-static java.lang.Math PI sqrt) 
     nil 
-    user=> PI 
+    user`=`> PI 
     3.141592653589793 
-    user=> (sqrt 16) 
+    user`=`> (sqrt 16) 
     4.0 
  
 Note: The class name must be fully qualified, even if it has already 

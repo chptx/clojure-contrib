@@ -123,7 +123,7 @@ Usage: *(_set-system-properties_ settings)*
 <pre>
 Usage: *(_with-system-properties_ settings & body)*
 </pre>
-<pre> setting => property-name value 
+<pre> setting `=`> property-name value 
  
 Sets the system properties to the supplied values, executes the body, and 
 sets the properties back to their original values. Values of nil are 

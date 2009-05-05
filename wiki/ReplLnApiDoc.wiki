@@ -53,7 +53,7 @@ for clojure.main/repl with the following change and additions:
        default: the name-fmt of the parent repl, or "repl-%S" 
  
      - :prompt-fmt, Prompt format string 
-       default: the prompt-fmt of the parent repl, or "%S:%L %N=> "</pre>
+       default: the prompt-fmt of the parent repl, or "%S:%L %N`=`> "</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#217 Source] [http://www.google.com/codesearch?hl=en&lr=&q=repl+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -107,7 +107,7 @@ the corresponding dynamic values part of it:
   %L - input line number 
   %N - namespace name 
  
-With no arguments, resets the repl pompt to its default: "%S:%L %N=> "</pre>
+With no arguments, resets the repl pompt to its default: "%S:%L %N`=`> "</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_ln.clj#180 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-repl-prompt+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
