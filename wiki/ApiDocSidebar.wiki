@@ -29,6 +29,11 @@ namespace.
 [FcaseApiDoc fcase]<br/>
 [FindNamespacesApiDoc find-namespaces]<br/>
 [GenHtmlDocsApiDoc gen-html-docs]<br/>
+[GenericArithmeticApiDoc generic.arithmetic]<br/>
+[GenericCollectionApiDoc generic.collection]<br/>
+[GenericComparisonApiDoc generic.comparison]<br/>
+[GenericFunctorApiDoc generic.functor]<br/>
+[GenericMathFunctionsApiDoc generic.math-functions]<br/>
 [GraphApiDoc graph]<br/>
 [GreatestLeastApiDoc greatest-least]<br/>
 [ImportStaticApiDoc import-static]<br/>

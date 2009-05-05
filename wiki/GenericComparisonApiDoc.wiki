@@ -1,0 +1,89 @@
+#summary generic.comparison API Reference
+#sidebar ApiDocSidebar
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for generic.comparison=
+by Konrad Hinsen
+
+Usage: 
+{{{
+(ns <your-namespace>
+  (:use clojure.contrib.generic.comparison))
+}}}
+==Overview==
+<pre> Generic comparison interface 
+This library defines generic versions of = < > <= >= zero? 
+as multimethods that can be defined for any type. Of the 
+greater/less-than relations, types must minimally implement >.</pre>
+
+
+==Public Variables and Functions==
+Shortcuts:
+[#< <] [#<= <=] [#= =] [#> >] [#>= >=] [#zero? zero?] 
+
+----
+===<===
+====multimethod====
+_No usage documentation available_
+<pre> Return true if each argument is smaller than the following ones. 
+The minimal implementation for type ::my-type is the binary form 
+with dispatch value `[`::my-type ::my-type`]`. A default implementation 
+is provided in terms of >.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#76 Source] [http://www.google.com/codesearch?hl=en&lr=&q=<+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===<====
+====multimethod====
+_No usage documentation available_
+<pre> Return true if each arguments is smaller than or equal to the following 
+ones. The minimal implementation for type ::my-type is the binary form 
+with dispatch value `[`::my-type ::my-type`]`. A default implementation 
+is provided in terms of >.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#126 Source] [http://www.google.com/codesearch?hl=en&lr=&q=<=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+=======
+====multimethod====
+<pre>
+Usage: *(_=_ x)
+       (_=_ x y)
+       (_=_ x y & more)*
+</pre>
+<pre> Return true if all arguments are equal. The minimal implementation for type 
+::my-type is the binary form with dispatch value `[`::my-type ::my-type`]`.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q==+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===>===
+====multimethod====
+_No usage documentation available_
+<pre> Return true if each argument is larger than the following ones. 
+The minimal implementation for type ::my-type is the binary form 
+with dispatch value `[`::my-type ::my-type`]`.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=>+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===>====
+====multimethod====
+_No usage documentation available_
+<pre> Return true if each argument is larger than or equal to the following 
+ones. The minimal implementation for type ::my-type is the binary form 
+with dispatch value `[`::my-type ::my-type`]`. A default implementation 
+is provided in terms of <.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#101 Source] [http://www.google.com/codesearch?hl=en&lr=&q=>=+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===zero?===
+====multimethod====
+<pre>
+Usage: *(_zero?_ x)*
+</pre>
+<pre> Return true of x is zero.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=zero?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

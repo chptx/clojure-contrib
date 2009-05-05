@@ -3718,7 +3718,7 @@
       "doc":"Parses the source s, which can be a File, InputStream or String\n  naming a URI. Returns a lazy tree of the clojure.xml/element\n  struct-map, which has the keys :tag, :attrs, and :content and\n  accessor fns tag, attrs, and content, with the whitespace trimmed\n  from around each content string. This format is compatible with what\n  clojure.xml/parse produces, except :content is a lazy seq instead of\n  a vector.  Other SAX-compatible parsers can be supplied by passing\n  startparse, a fn taking a source and a ContentHandler and returning\n  a parser. If a parser is specified, it will be run in a separate\n  thread and be allowed to get ahead by queue-size items, which\n  defaults to maxing.  If no parser is specified and\n  org.xmlpull.v1.XmlPullParser is in the classpath, this superior pull\n  parser will be used."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#191",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#200",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#defsymbolmacro",
       "name":"defsymbolmacro",
       "arglists":[
@@ -3730,7 +3730,7 @@
       "doc":"Define a symbol macro. Because symbol macros are not part of\n   Clojure's built-in macro expansion system, they can be used only\n   inside a with-symbol-macros form."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#170",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#179",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#macrolet",
       "name":"macrolet",
       "arglists":[
@@ -3743,7 +3743,7 @@
       "doc":"Define local macros that are used in the expansion of exprs. The\n   syntax is the same as for letfn forms."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#213",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#222",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#mexpand",
       "name":"mexpand",
       "arglists":[
@@ -3754,7 +3754,7 @@
       "doc":"Like clojure.core/macroexpand, but takes into account symbol macros."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#205",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#214",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#mexpand-1",
       "name":"mexpand-1",
       "arglists":[
@@ -3765,7 +3765,7 @@
       "doc":"Like clojure.core/macroexpand-1, but takes into account symbol macros."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#221",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#230",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#mexpand-all",
       "name":"mexpand-all",
       "arglists":[
@@ -3776,7 +3776,7 @@
       "doc":"Perform a full recursive macro expansion of a form."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#181",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#190",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#symbol-macrolet",
       "name":"symbol-macrolet",
       "arglists":[
@@ -3789,7 +3789,7 @@
       "doc":"Define local symbol macros that are used in the expansion of exprs.\n   The syntax is the same as for let forms."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#200",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#209",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#with-symbol-macros",
       "name":"with-symbol-macros",
       "arglists":[
