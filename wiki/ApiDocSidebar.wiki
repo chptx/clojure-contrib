@@ -40,6 +40,7 @@ namespace.
 [JsonWriteApiDoc json.write]<br/>
 [LazySeqsApiDoc lazy-seqs]<br/>
 [LazyXmlApiDoc lazy-xml]<br/>
+[MacroUtilsApiDoc macro-utils]<br/>
 [MacrosApiDoc macros]<br/>
 [MapUtilsApiDoc map-utils]<br/>
 [MathApiDoc math]<br/>

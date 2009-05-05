@@ -415,6 +415,26 @@ Public Variables and Functions:
 [LazyXmlApiDoc#emit emit] [LazyXmlApiDoc#emit-element emit-element] [LazyXmlApiDoc#parse-seq parse-seq] [LazyXmlApiDoc#parse-trim parse-trim] 
 
 ----
+===macro-utils===
+by Konrad Hinsen<br>
+API Overview [MacroUtilsApiDoc here]
+
+<pre> Local macros and symbol macros 
+ 
+Local macros are defined by a macrolet form. They are usable only 
+inside its body. Symbol macros can be defined globally 
+(defsymbolmacro) or locally (symbol-macrolet). A symbol 
+macro defines a form that replaces a symbol during macro 
+expansion. Function arguments and symbols bound in let 
+forms are not subject to symbol macro expansion. 
+ 
+Local macros are most useful in the definition of the expansion 
+of another macro, they may be used anywhere. Global symbol 
+macros can be used only inside a with-symbol-macros form.</pre>
+Public Variables and Functions:
+[MacroUtilsApiDoc#defsymbolmacro defsymbolmacro] [MacroUtilsApiDoc#macrolet macrolet] [MacroUtilsApiDoc#mexpand mexpand] [MacroUtilsApiDoc#mexpand-1 mexpand-1] [MacroUtilsApiDoc#mexpand-all mexpand-all] [MacroUtilsApiDoc#symbol-macrolet symbol-macrolet] [MacroUtilsApiDoc#with-symbol-macros with-symbol-macros] 
+
+----
 ===macros===
 by Konrad Hinsen<br>
 API Overview [MacrosApiDoc here]

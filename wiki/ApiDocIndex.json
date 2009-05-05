@@ -281,6 +281,13 @@
       "doc":"Functions to parse xml lazily and emit back to text."
     },
     {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc",
+      "name":"clojure.contrib.macro-utils",
+      "author":"Konrad Hinsen",
+      "doc":"Local macros and symbol macros\n\n           Local macros are defined by a macrolet form. They are usable only\n           inside its body. Symbol macros can be defined globally\n           (defsymbolmacro) or locally (symbol-macrolet). A symbol\n           macro defines a form that replaces a symbol during macro\n           expansion. Function arguments and symbols bound in let\n           forms are not subject to symbol macro expansion.\n\n           Local macros are most useful in the definition of the expansion\n           of another macro, they may be used anywhere. Global symbol\n           macros can be used only inside a with-symbol-macros form."
+    },
+    {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros.clj",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacrosApiDoc",
       "name":"clojure.contrib.macros",
@@ -2605,6 +2612,71 @@
       "doc":"Calls generate-documentation on the libraries named by libs and\nemits the generated HTML to the path named by path."
     },
     {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#110",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#*",
+      "name":"*",
+      "doc":"Return the product of all arguments. The minimal implementation for type\n   ::my-type is the binary form with dispatch value [::my-type ::my-type]."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#45",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#+",
+      "name":"+",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
+      "doc":"Return the sum of all arguments. The minimal implementation for type\n   ::my-type is the binary form with dispatch value [::my-type ::my-type]."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#77",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#-",
+      "name":"-",
+      "doc":"Return the difference of the first argument and the sum of all other\n   arguments. The minimal implementation for type ::my-type is the binary\n   form with dispatch value [::my-type ::my-type]."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#141",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#/",
+      "name":"/",
+      "doc":"Return the quotient of the first argument and the product of all other\n   arguments. The minimal implementation for type ::my-type is the binary\n   form with dispatch value [::my-type ::my-type]."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#170",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#defmethod*",
+      "name":"defmethod*",
+      "arglists":[
+        [
+"ns",
+"name",
+"&",
+"args"
+        ]
+      ],
+      "doc":"Define a method implementation for the multimethod name in namespace ns.\n   Required for implementing the division function from another namespace."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#177",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#qsym",
+      "name":"qsym",
+      "arglists":[
+        [
+"ns",
+"sym"
+        ]
+      ],
+      "doc":"Create the qualified symbol corresponding to sym in namespace ns.\n   Required to access the division function from another namespace,\n   e.g. as (qsym clojure.contrib.generic.arithmetic /)."
+    },
+    {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#26",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#assoc",
       "name":"assoc",
@@ -2618,7 +2690,13 @@
       "doc":"Returns a new collection in which the values corresponding to the\n   given keys are updated by the given values. Each type of collection\n   can have specific restrictions on the possible keys."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#51",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#42",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#conj",
+      "name":"conj",
+      "doc":"Returns a new collection resulting from adding all xs to coll."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#53",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#dissoc",
       "name":"dissoc",
       "arglists":[
@@ -2631,7 +2709,7 @@
       "doc":"Returns a new collection in which the entries corresponding to the\n   given keys are removed. Each type of collection can have specific\n   restrictions on the possible keys."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#65",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#67",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#empty",
       "name":"empty",
       "arglists":[
@@ -2642,7 +2720,7 @@
       "doc":"Returns an empty collection of the same kind as the argument"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#77",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#79",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#get",
       "name":"get",
       "arglists":[
@@ -2659,7 +2737,7 @@
       "doc":"Returns the element of coll referred to by key. Each type of collection\n   can have specific restrictions on the possible keys."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#92",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#94",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#into",
       "name":"into",
       "arglists":[
@@ -2671,7 +2749,7 @@
       "doc":"Returns a new coll consisting of to-coll with all of the items of\n  from-coll conjoined."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#106",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/collection.clj#108",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericCollectionApiDoc#seq",
       "name":"seq",
       "arglists":[
@@ -2680,6 +2758,62 @@
         ]
       ],
       "doc":"Returns a seq on the object s."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#76",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#<",
+      "name":"<",
+      "doc":"Return true if each argument is smaller than the following ones.\n   The minimal implementation for type ::my-type is the binary form\n   with dispatch value [::my-type ::my-type]. A default implementation\n   is provided in terms of >."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#126",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#<=",
+      "name":"<=",
+      "doc":"Return true if each arguments is smaller than or equal to the following\n   ones. The minimal implementation for type ::my-type is the binary form\n   with dispatch value [::my-type ::my-type]. A default implementation\n   is provided in terms of >."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#36",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#=",
+      "name":"=",
+      "arglists":[
+        [
+"x"
+        ],
+        [
+"x",
+"y"
+        ],
+        [
+"x",
+"y",
+"&",
+"more"
+        ]
+      ],
+      "doc":"Return true if all arguments are equal. The minimal implementation for type\n   ::my-type is the binary form with dispatch value [::my-type ::my-type]."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#56",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#>",
+      "name":">",
+      "doc":"Return true if each argument is larger than the following ones.\n   The minimal implementation for type ::my-type is the binary form\n   with dispatch value [::my-type ::my-type]."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#101",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#>=",
+      "name":">=",
+      "doc":"Return true if each argument is larger than or equal to the following\n   ones. The minimal implementation for type ::my-type is the binary form\n   with dispatch value [::my-type ::my-type]. A default implementation\n   is provided in terms of <."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#28",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#zero?",
+      "name":"zero?",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return true of x is zero."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/functor.clj#20",
@@ -2694,7 +2828,29 @@
       "doc":"Applies function f to each item in the data structure s and returns\n   a structure of the same kind."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#94",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#53",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#abs",
+      "name":"abs",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the abs of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#54",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#acos",
+      "name":"acos",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the acos of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#110",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#approx=",
       "name":"approx=",
       "arglists":[
@@ -2704,7 +2860,196 @@
 "eps"
         ]
       ],
-      "doc":"Return true if the absolute value of the difference between x and y\n   is less than eps"
+      "doc":"Return true if the absolute value of the difference between x and y\n   is less than eps."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#55",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#asin",
+      "name":"asin",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the asin of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#56",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#atan",
+      "name":"atan",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the atan of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#57",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#atan2",
+      "name":"atan2",
+      "arglists":[
+        [
+"x",
+"y"
+        ]
+      ],
+      "doc":"Return the atan2 of x and y."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#58",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#ceil",
+      "name":"ceil",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the ceil of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#87",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#conjugate",
+      "name":"conjugate",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the conjugate of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#59",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#cos",
+      "name":"cos",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the cos of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#60",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#exp",
+      "name":"exp",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the exp of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#61",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#floor",
+      "name":"floor",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the floor of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#62",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#log",
+      "name":"log",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the log of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#63",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#pow",
+      "name":"pow",
+      "arglists":[
+        [
+"x",
+"y"
+        ]
+      ],
+      "doc":"Return the pow of x and y."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#64",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#rint",
+      "name":"rint",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the rint of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#65",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#round",
+      "name":"round",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the round of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#73",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#sgn",
+      "name":"sgn",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the sign of x (-1, 0, or 1)."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#66",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#sin",
+      "name":"sin",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the sin of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#98",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#sqr",
+      "name":"sqr",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the square of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#67",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#sqrt",
+      "name":"sqrt",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the sqrt of x."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#68",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#tan",
+      "name":"tan",
+      "arglists":[
+        [
+"x"
+        ]
+      ],
+      "doc":"Return the tan of x."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/graph.clj#49",
@@ -3371,6 +3716,89 @@
         ]
       ],
       "doc":"Parses the source s, which can be a File, InputStream or String\n  naming a URI. Returns a lazy tree of the clojure.xml/element\n  struct-map, which has the keys :tag, :attrs, and :content and\n  accessor fns tag, attrs, and content, with the whitespace trimmed\n  from around each content string. This format is compatible with what\n  clojure.xml/parse produces, except :content is a lazy seq instead of\n  a vector.  Other SAX-compatible parsers can be supplied by passing\n  startparse, a fn taking a source and a ContentHandler and returning\n  a parser. If a parser is specified, it will be run in a separate\n  thread and be allowed to get ahead by queue-size items, which\n  defaults to maxing.  If no parser is specified and\n  org.xmlpull.v1.XmlPullParser is in the classpath, this superior pull\n  parser will be used."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#191",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#defsymbolmacro",
+      "name":"defsymbolmacro",
+      "arglists":[
+        [
+"symbol",
+"expansion"
+        ]
+      ],
+      "doc":"Define a symbol macro. Because symbol macros are not part of\n   Clojure's built-in macro expansion system, they can be used only\n   inside a with-symbol-macros form."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#170",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#macrolet",
+      "name":"macrolet",
+      "arglists":[
+        [
+"fn-bindings",
+"&",
+"exprs"
+        ]
+      ],
+      "doc":"Define local macros that are used in the expansion of exprs. The\n   syntax is the same as for letfn forms."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#213",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#mexpand",
+      "name":"mexpand",
+      "arglists":[
+        [
+"form"
+        ]
+      ],
+      "doc":"Like clojure.core/macroexpand, but takes into account symbol macros."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#205",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#mexpand-1",
+      "name":"mexpand-1",
+      "arglists":[
+        [
+"form"
+        ]
+      ],
+      "doc":"Like clojure.core/macroexpand-1, but takes into account symbol macros."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#221",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#mexpand-all",
+      "name":"mexpand-all",
+      "arglists":[
+        [
+"form"
+        ]
+      ],
+      "doc":"Perform a full recursive macro expansion of a form."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#181",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#symbol-macrolet",
+      "name":"symbol-macrolet",
+      "arglists":[
+        [
+"symbol-bindings",
+"&",
+"exprs"
+        ]
+      ],
+      "doc":"Define local symbol macros that are used in the expansion of exprs.\n   The syntax is the same as for let forms."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#200",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMacroUtilsApiDoc#with-symbol-macros",
+      "name":"with-symbol-macros",
+      "arglists":[
+        [
+"&",
+"exprs"
+        ]
+      ],
+      "doc":"Fully expand exprs, including symbol macros."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macros.clj#18",
@@ -6234,7 +6662,7 @@
       "doc":"Generic reporting function, may be overridden to plug in\n   different report formats (e.g., TAP, JUnit).  Assertions such as\n   'is' call 'report' to indicate results.  The argument given to\n   'report' will be a map with a :type key.  See the documentation at\n   the top of test_is.clj for more information on the types of\n   arguments for 'report'."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#917",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#920",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#run-all-tests",
       "name":"run-all-tests",
       "arglists":[
@@ -6248,7 +6676,7 @@
       "doc":"Runs all tests in all namespaces; prints results.\n  Optional argument is a regular expression; only namespaces with\n  names matching the regular expression (with re-matches) will be\n  tested."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#909",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#912",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#run-tests",
       "name":"run-tests",
       "arglists":[
