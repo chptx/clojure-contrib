@@ -8,13 +8,6 @@
       "doc":"A generic accumulator interface and implementations of various\n           accumulators."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/accumulators/examples.clj",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribAccumulatorsExamplesApiDoc",
-      "name":"clojure.contrib.accumulators.examples",
-      "author":"Konrad Hinsen",
-      "doc":"Examples for using accumulators"
-    },
-    {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/agent_utils.clj",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribAgentUtilsApiDoc",
       "name":"clojure.contrib.agent-utils",
@@ -174,13 +167,6 @@
       "name":"clojure.contrib.gen-html-docs",
       "author":"Craig Andera",
       "doc":"Generates a single HTML page that contains the documentation for\none or more Clojure libraries."
-    },
-    {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic.clj",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericApiDoc",
-      "name":"clojure.contrib.generic",
-      "author":"Konrad Hinsen",
-      "doc":"Generic interfaces\n           This library provides generic interfaces in the form of\n           multimethods that can be implemented for any type.\n           The interfaces partly duplicate existing non-generic\n           functions in clojure.core (arithmetic, comparison,\n           collections) and partly provide additional functions that\n           can be defined for a wide variety of types (functors, math\n           functions). More functions will be added in the future."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj",
@@ -352,13 +338,6 @@
       "doc":"This library contains the most commonly used monads as well\n           as macros for defining and using monads and useful monadic\n           functions."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads/examples.clj",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsExamplesApiDoc",
-      "name":"clojure.contrib.monads.examples",
-      "author":"Konrad Hinsen",
-      "doc":"Examples for using monads"
-    },
-    {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/ns_utils.clj",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribNsUtilsApiDoc",
       "name":"clojure.contrib.ns-utils",
@@ -408,13 +387,6 @@
       "name":"clojure.contrib.pprint.utilities"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/examples_finite_distributions.clj",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesExamplesFiniteDistributionsApiDoc",
-      "name":"clojure.contrib.probabilities.examples-finite-distributions",
-      "author":"Konrad Hinsen",
-      "doc":"Examples for finite probability distribution"
-    },
-    {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc",
       "name":"clojure.contrib.probabilities.finite-distributions",
@@ -434,13 +406,6 @@
       "name":"clojure.contrib.probabilities.random-numbers",
       "author":"Konrad Hinsen",
       "doc":"Random number streams\n\n           This library provides random number generators with a common\n           stream interface. They all produce pseudo-random numbers that are\n           uniformly distributed in the interval [0, 1), i.e. 0 is a\n           possible value but 1 isn't. For transformations to other\n           distributions, see clojure.contrib.probabilities.monte-carlo.\n\n           At the moment, the only generator provided is a rather simple\n           linear congruential generator."
-    },
-    {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/random/examples_monte_carlo.clj",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesRandomExamplesMonteCarloApiDoc",
-      "name":"clojure.contrib.probabilities.random.examples-monte-carlo",
-      "author":"Konrad Hinsen",
-      "doc":"Examples for monte carlo methods"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj",
@@ -537,13 +502,6 @@
       "doc":"Functions for setting up computational pipelines via data streams.\n\n           NOTE: This library is experimental. It may change significantly\n                 with future release.\n\n           This library defines:\n           - an abstract stream type, whose interface consists of the\n             multimethod stream-next\n           - a macro for implementing streams\n           - implementations of stream for\n             1) Clojure sequences, and vectors\n             2) nil, representing an empty stream\n           - tools for writing stream transformers, including the\n             monad stream-m\n           - various utility functions for working with streams\n\n           Streams are building blocks in the construction of computational\n           pipelines. A stream is represented by its current state plus\n           a function that takes a stream state and obtains the next item\n           in the stream as well as the new stream state. The state is\n           implemented as a Java class or a Clojure type (as defined by the\n           function clojure.core/type), and the function is provided as an\n           implementation of the multimethod stream-next for this class or type.\n\n           While setting up pipelines using this mechanism is somewhat more\n           cumbersome than using Clojure's lazy seq mechanisms, there are a\n           few advantages:\n           - The state of a stream can be stored in any Clojure data structure,\n             and the stream can be re-generated from it any number of times.\n             Any number of states can be stored this way.\n           - The elements of the stream are never cached, so keeping a reference\n             to a stream state does not incur an uncontrollable memory penalty.\n\n           Note that the stream mechanism is thread-safe as long as the\n           concrete stream implementations do not use any mutable state.\n\n           Stream transformers take any number of input streams and produce one\n           output stream. They are typically written using the stream-m\n           monad. In the definition of a stream transformer, (pick s) returns\n           the next value of stream argument s, whereas pick-all returns the\n           next value of all stream arguments in the form of a vector."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils/examples.clj",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribStreamUtilsExamplesApiDoc",
-      "name":"clojure.contrib.stream-utils.examples",
-      "author":"Konrad Hinsen",
-      "doc":"Examples for data streams"
-    },
-    {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTemplateApiDoc",
       "name":"clojure.contrib.template",
@@ -585,13 +543,6 @@
       "name":"clojure.contrib.types",
       "author":"Konrad Hinsen",
       "doc":"General and algebraic data types"
-    },
-    {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/examples.clj",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTypesExamplesApiDoc",
-      "name":"clojure.contrib.types.examples",
-      "author":"Konrad Hinsen",
-      "doc":"Examples for data type definitions"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj",
@@ -6623,12 +6574,6 @@
         ]
       ],
       "doc":"Given a value and a list of template-expr clauses, evaluate the first\n   expr whose template matches the value. There are four kinds of templates:\n   1) Lists of the form (tag x1 x2 ...) match instances of types\n      whose constructor has the same form as the list.\n   2) Quoted lists of the form '(x1 x2 ...) match lists of the same\n      length.\n   3) Vectors of the form [x1 x2 ...] match vectors of the same length.\n   4) Maps of the form {:key1 x1 :key2 x2 ...} match maps that have\n      the same keys as the template, but which can have additional keys\n      that are not part of the template.\n   The values x1, x2, ... can be symbols or non-symbol values. Non-symbols\n   must be equal to the corresponding values in the object to be matched.\n   Symbols will be bound to the corresponding value in the object in the\n   evaluation of expr. If the same symbol occurs more than once in a,\n   template the corresponding elements of the object must be equal\n   for the template to match."
-    },
-    {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/examples.clj#25",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTypesExamplesApiDoc#multiset",
-      "name":"multiset",
-      "doc":"Multiset (demo implementation)"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/walk.clj#102",

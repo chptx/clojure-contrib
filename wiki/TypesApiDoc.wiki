@@ -24,9 +24,6 @@ Usage:
 Shortcuts:
 [#defadt defadt] [#deftype deftype] [#deftype- deftype-] [#match match] 
 
-Variables and Functions in types.examples:
-[TypesApiDoc#multiset multiset] 
-
 ----
 ===defadt===
 ====macro====
@@ -91,11 +88,3 @@ template the corresponding elements of the object must be equal
 for the template to match.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types.clj#240 Source] [http://www.google.com/codesearch?hl=en&lr=&q=match+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
-==Namespace clojure.contrib.types.examples==
-<pre> Examples for data type definitions</pre>
-----
-===multiset===
-====var====
-<pre> Multiset (demo implementation)</pre>
-
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/types/examples.clj#25 Source] [http://www.google.com/codesearch?hl=en&lr=&q=multiset+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

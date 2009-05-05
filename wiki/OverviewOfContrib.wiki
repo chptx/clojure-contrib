@@ -268,28 +268,6 @@ Public Variables and Functions:
 [GenHtmlDocsApiDoc#generate-documentation generate-documentation] [GenHtmlDocsApiDoc#generate-documentation-to-file generate-documentation-to-file] 
 
 ----
-===generic===
-by Konrad Hinsen<br>
-API Overview [GenericApiDoc here]
-
-<pre> Generic interfaces 
-This library provides generic interfaces in the form of 
-multimethods that can be implemented for any type. 
-The interfaces partly duplicate existing non-generic 
-functions in clojure.core (arithmetic, comparison, 
-collections) and partly provide additional functions that 
-can be defined for a wide variety of types (functors, math 
-functions). More functions will be added in the future.</pre>
-Variables and Functions in generic.collection:
-[GenericApiDoc#assoc assoc] [GenericApiDoc#dissoc dissoc] [GenericApiDoc#empty empty] [GenericApiDoc#get get] [GenericApiDoc#into into] [GenericApiDoc#seq seq] 
-
-Variables and Functions in generic.functor:
-[GenericApiDoc#fmap fmap] 
-
-Variables and Functions in generic.math-functions:
-[GenericApiDoc#approx= approx=] 
-
-----
 ===graph===
 by Jeffrey Straszheim<br>
 API Overview [GraphApiDoc here]
@@ -573,12 +551,6 @@ Public Variables and Functions:
 [PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] 
 
 ----
-===probabilities.examples-finite-distributions===
-by Konrad Hinsen<br>
-API Overview [ProbabilitiesExamplesFiniteDistributionsApiDoc here]
-
-<pre> Examples for finite probability distribution</pre>
-----
 ===probabilities.finite-distributions===
 by Konrad Hinsen<br>
 API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
@@ -632,12 +604,6 @@ linear congruential generator.</pre>
 Public Variables and Functions:
 [ProbabilitiesRandomNumbersApiDoc#lcg lcg] [ProbabilitiesRandomNumbersApiDoc#rand-stream rand-stream] 
 
-----
-===probabilities.random.examples-monte-carlo===
-by Konrad Hinsen<br>
-API Overview [ProbabilitiesRandomExamplesMonteCarloApiDoc here]
-
-<pre> Examples for monte carlo methods</pre>
 ----
 ===prxml===
 by Stuart Sierra<br>
@@ -1089,9 +1055,6 @@ API Overview [TypesApiDoc here]
 <pre> General and algebraic data types</pre>
 Public Variables and Functions:
 [TypesApiDoc#defadt defadt] [TypesApiDoc#deftype deftype] [TypesApiDoc#deftype- deftype-] [TypesApiDoc#match match] 
-
-Variables and Functions in types.examples:
-[TypesApiDoc#multiset multiset] 
 
 ----
 ===walk===
