@@ -25,7 +25,7 @@ greater/less-than relations, types must minimally implement >.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#< <] [#<= <=] [#= =] [#> >] [#>= >=] [#zero? zero?] 
+[#< <] [#<_= <=] [#_= =] [#> >] [#>_= >=] [#zero? zero?] 
 
 ----
 ===<===

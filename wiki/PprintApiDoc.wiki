@@ -29,7 +29,7 @@ clojure.contrib wiki RSN.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#*print-circle* *print-circle*] [#*print-lines* *print-lines*] [#*print-miser-width* *print-miser-width*] [#*print-pprint-dispatch* *print-pprint-dispatch*] [#*print-pretty* *print-pretty*] [#*print-right-margin* *print-right-margin*] [#*print-shared* *print-shared*] [#*print-suppress-namespaces* *print-suppress-namespaces*] [#cl-format cl-format] [#compile-format compile-format] [#formatter formatter] [#fresh-line fresh-line] [#pp pp] [#pprint pprint] [#pprint-indent pprint-indent] [#pprint-logical-block pprint-logical-block] [#pprint-newline pprint-newline] [#pprint-tab pprint-tab] [#set-pprint-dispatch set-pprint-dispatch] [#with-pprint-dispatch with-pprint-dispatch] [#write write] 
+[#_*print-circle_* *print-circle*] [#_*print-lines_* *print-lines*] [#_*print-miser-width_* *print-miser-width*] [#_*print-pprint-dispatch_* *print-pprint-dispatch*] [#_*print-pretty_* *print-pretty*] [#_*print-right-margin_* *print-right-margin*] [#_*print-shared_* *print-shared*] [#_*print-suppress-namespaces_* *print-suppress-namespaces*] [#cl-format cl-format] [#compile-format compile-format] [#formatter formatter] [#fresh-line fresh-line] [#pp pp] [#pprint pprint] [#pprint-indent pprint-indent] [#pprint-logical-block pprint-logical-block] [#pprint-newline pprint-newline] [#pprint-tab pprint-tab] [#set-pprint-dispatch set-pprint-dispatch] [#with-pprint-dispatch with-pprint-dispatch] [#write write] 
 
 ----
 ===`*`print-circle`*`===

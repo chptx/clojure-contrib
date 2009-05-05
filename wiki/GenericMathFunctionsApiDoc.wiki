@@ -25,7 +25,7 @@ defined for any type.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#abs abs] [#acos acos] [#approx= approx=] [#asin asin] [#atan atan] [#atan2 atan2] [#ceil ceil] [#conjugate conjugate] [#cos cos] [#exp exp] [#floor floor] [#log log] [#pow pow] [#rint rint] [#round round] [#sgn sgn] [#sin sin] [#sqr sqr] [#sqrt sqrt] [#tan tan] 
+[#abs abs] [#acos acos] [#approx_= approx=] [#asin asin] [#atan atan] [#atan2 atan2] [#ceil ceil] [#conjugate conjugate] [#cos cos] [#exp exp] [#floor floor] [#log log] [#pow pow] [#rint rint] [#round round] [#sgn sgn] [#sin sin] [#sqr sqr] [#sqrt sqrt] [#tan tan] 
 
 ----
 ===abs===

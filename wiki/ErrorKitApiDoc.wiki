@@ -25,7 +25,7 @@ or API adjustments.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#bind-continue bind-continue] [#deferror deferror] [#do-not-handle do-not-handle] [#error error] [#handle handle] [#raise raise] [#raise* raise*] [#throw-msg throw-msg] [#with-handler with-handler] 
+[#bind-continue bind-continue] [#deferror deferror] [#do-not-handle do-not-handle] [#error error] [#handle handle] [#raise raise] [#raise_* raise*] [#throw-msg throw-msg] [#with-handler with-handler] 
 
 ----
 ===bind-continue===

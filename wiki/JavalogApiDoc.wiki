@@ -22,7 +22,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#*logger* *logger*] [#add-log-file add-log-file] [#log log] [#log-level log-level] [#root-logger root-logger] [#set-console-log-level set-console-log-level] [#with-logger with-logger] 
+[#_*logger_* *logger*] [#add-log-file add-log-file] [#log log] [#log-level log-level] [#root-logger root-logger] [#set-console-log-level set-console-log-level] [#with-logger with-logger] 
 
 ----
 ===`*`logger`*`===

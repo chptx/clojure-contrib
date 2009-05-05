@@ -22,7 +22,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#*local-javadocs* *local-javadocs*] [#*remote-javadocs* *remote-javadocs*] [#add-break-thread! add-break-thread!] [#add-local-javadoc add-local-javadoc] [#add-remote-javadoc add-remote-javadoc] [#break-threads break-threads] [#find-javadoc-url find-javadoc-url] [#get-source get-source] [#javadoc javadoc] [#show show] [#source source] [#start-handling-break start-handling-break] 
+[#_*local-javadocs_* *local-javadocs*] [#_*remote-javadocs_* *remote-javadocs*] [#add-break-thread! add-break-thread!] [#add-local-javadoc add-local-javadoc] [#add-remote-javadoc add-remote-javadoc] [#break-threads break-threads] [#find-javadoc-url find-javadoc-url] [#get-source get-source] [#javadoc javadoc] [#show show] [#source source] [#start-handling-break start-handling-break] 
 
 ----
 ===`*`local-javadocs`*`===

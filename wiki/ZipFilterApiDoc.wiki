@@ -26,7 +26,7 @@ Shortcuts:
 [#ancestors ancestors] [#children children] [#children-auto children-auto] [#descendants descendants] [#left-locs left-locs] [#leftmost? leftmost?] [#right-locs right-locs] [#rightmost? rightmost?] 
 
 Variables and Functions in zip-filter.xml:
-[ZipFilterApiDoc#attr attr] [ZipFilterApiDoc#attr= attr=] [ZipFilterApiDoc#seq-test seq-test] [ZipFilterApiDoc#tag= tag=] [ZipFilterApiDoc#text text] [ZipFilterApiDoc#text= text=] [ZipFilterApiDoc#xml-> xml->] [ZipFilterApiDoc#xml1-> xml1->] 
+[ZipFilterApiDoc#attr attr] [ZipFilterApiDoc#attr_= attr=] [ZipFilterApiDoc#seq-test seq-test] [ZipFilterApiDoc#tag_= tag=] [ZipFilterApiDoc#text text] [ZipFilterApiDoc#text_= text=] [ZipFilterApiDoc#xml-> xml->] [ZipFilterApiDoc#xml1-> xml1->] 
 
 ----
 ===ancestors===

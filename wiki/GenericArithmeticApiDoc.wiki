@@ -28,7 +28,7 @@ efficiency reasons.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#* *] [#+ +] [#- -] [#/ /] [#defmethod* defmethod*] [#qsym qsym] 
+[#_* *] [#+ +] [#- -] [#/ /] [#defmethod_* defmethod*] [#qsym qsym] 
 
 ----
 ===`*`===

@@ -31,7 +31,7 @@ or "just-give-me-a-stream", but ducks are funnier.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#file-str file-str] [#pwd pwd] [#read-lines read-lines] [#reader reader] [#slurp* slurp*] [#spit spit] [#with-in-reader with-in-reader] [#with-out-writer with-out-writer] [#write-lines write-lines] [#writer writer] 
+[#file-str file-str] [#pwd pwd] [#read-lines read-lines] [#reader reader] [#slurp_* slurp*] [#spit spit] [#with-in-reader with-in-reader] [#with-out-writer with-out-writer] [#write-lines write-lines] [#writer writer] 
 
 ----
 ===file-str===

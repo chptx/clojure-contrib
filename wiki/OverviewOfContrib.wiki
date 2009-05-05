@@ -207,7 +207,7 @@ Note: this is not really "duck typing" as implemented in languages
 like Ruby.  A better name would have been "do-what-I-mean-streams" 
 or "just-give-me-a-stream", but ducks are funnier.</pre>
 Public Variables and Functions:
-[DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
+[DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp_* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
 
 ----
 ===error-kit===
@@ -219,7 +219,7 @@ System for defining and using custom errors
 Please contact Chouser if you have any suggestions for better names 
 or API adjustments.</pre>
 Public Variables and Functions:
-[ErrorKitApiDoc#bind-continue bind-continue] [ErrorKitApiDoc#deferror deferror] [ErrorKitApiDoc#do-not-handle do-not-handle] [ErrorKitApiDoc#error error] [ErrorKitApiDoc#handle handle] [ErrorKitApiDoc#raise raise] [ErrorKitApiDoc#raise* raise*] [ErrorKitApiDoc#throw-msg throw-msg] [ErrorKitApiDoc#with-handler with-handler] 
+[ErrorKitApiDoc#bind-continue bind-continue] [ErrorKitApiDoc#deferror deferror] [ErrorKitApiDoc#do-not-handle do-not-handle] [ErrorKitApiDoc#error error] [ErrorKitApiDoc#handle handle] [ErrorKitApiDoc#raise raise] [ErrorKitApiDoc#raise_* raise*] [ErrorKitApiDoc#throw-msg throw-msg] [ErrorKitApiDoc#with-handler with-handler] 
 
 ----
 ===except===
@@ -280,7 +280,7 @@ Everything else is derived from these automatically. Explicit
 binary definitions for - and / can be provided for 
 efficiency reasons.</pre>
 Public Variables and Functions:
-[GenericArithmeticApiDoc#* *] [GenericArithmeticApiDoc#+ +] [GenericArithmeticApiDoc#- -] [GenericArithmeticApiDoc#/ /] [GenericArithmeticApiDoc#defmethod* defmethod*] [GenericArithmeticApiDoc#qsym qsym] 
+[GenericArithmeticApiDoc#_* *] [GenericArithmeticApiDoc#+ +] [GenericArithmeticApiDoc#- -] [GenericArithmeticApiDoc#/ /] [GenericArithmeticApiDoc#defmethod_* defmethod*] [GenericArithmeticApiDoc#qsym qsym] 
 
 ----
 ===generic.collection===
@@ -304,7 +304,7 @@ This library defines generic versions of `=` < > <`=` >`=` zero?
 as multimethods that can be defined for any type. Of the 
 greater/less-than relations, types must minimally implement >.</pre>
 Public Variables and Functions:
-[GenericComparisonApiDoc#< <] [GenericComparisonApiDoc#<= <=] [GenericComparisonApiDoc#= =] [GenericComparisonApiDoc#> >] [GenericComparisonApiDoc#>= >=] [GenericComparisonApiDoc#zero? zero?] 
+[GenericComparisonApiDoc#< <] [GenericComparisonApiDoc#<_= <=] [GenericComparisonApiDoc#_= =] [GenericComparisonApiDoc#> >] [GenericComparisonApiDoc#>_= >=] [GenericComparisonApiDoc#zero? zero?] 
 
 ----
 ===generic.functor===
@@ -325,7 +325,7 @@ This library defines generic versions of common mathematical
 functions such as sqrt or sin as multimethods that can be 
 defined for any type.</pre>
 Public Variables and Functions:
-[GenericMathFunctionsApiDoc#abs abs] [GenericMathFunctionsApiDoc#acos acos] [GenericMathFunctionsApiDoc#approx= approx=] [GenericMathFunctionsApiDoc#asin asin] [GenericMathFunctionsApiDoc#atan atan] [GenericMathFunctionsApiDoc#atan2 atan2] [GenericMathFunctionsApiDoc#ceil ceil] [GenericMathFunctionsApiDoc#conjugate conjugate] [GenericMathFunctionsApiDoc#cos cos] [GenericMathFunctionsApiDoc#exp exp] [GenericMathFunctionsApiDoc#floor floor] [GenericMathFunctionsApiDoc#log log] [GenericMathFunctionsApiDoc#pow pow] [GenericMathFunctionsApiDoc#rint rint] [GenericMathFunctionsApiDoc#round round] [GenericMathFunctionsApiDoc#sgn sgn] [GenericMathFunctionsApiDoc#sin sin] [GenericMathFunctionsApiDoc#sqr sqr] [GenericMathFunctionsApiDoc#sqrt sqrt] [GenericMathFunctionsApiDoc#tan tan] 
+[GenericMathFunctionsApiDoc#abs abs] [GenericMathFunctionsApiDoc#acos acos] [GenericMathFunctionsApiDoc#approx_= approx=] [GenericMathFunctionsApiDoc#asin asin] [GenericMathFunctionsApiDoc#atan atan] [GenericMathFunctionsApiDoc#atan2 atan2] [GenericMathFunctionsApiDoc#ceil ceil] [GenericMathFunctionsApiDoc#conjugate conjugate] [GenericMathFunctionsApiDoc#cos cos] [GenericMathFunctionsApiDoc#exp exp] [GenericMathFunctionsApiDoc#floor floor] [GenericMathFunctionsApiDoc#log log] [GenericMathFunctionsApiDoc#pow pow] [GenericMathFunctionsApiDoc#rint rint] [GenericMathFunctionsApiDoc#round round] [GenericMathFunctionsApiDoc#sgn sgn] [GenericMathFunctionsApiDoc#sin sin] [GenericMathFunctionsApiDoc#sqr sqr] [GenericMathFunctionsApiDoc#sqrt sqrt] [GenericMathFunctionsApiDoc#tan tan] 
 
 ----
 ===graph===
@@ -406,7 +406,7 @@ API Overview [JavalogApiDoc here]
 
 <pre> Convenient access to java.util.logging in Clojure</pre>
 Public Variables and Functions:
-[JavalogApiDoc#*logger* *logger*] [JavalogApiDoc#add-log-file add-log-file] [JavalogApiDoc#log log] [JavalogApiDoc#log-level log-level] [JavalogApiDoc#root-logger root-logger] [JavalogApiDoc#set-console-log-level set-console-log-level] [JavalogApiDoc#with-logger with-logger] 
+[JavalogApiDoc#_*logger_* *logger*] [JavalogApiDoc#add-log-file add-log-file] [JavalogApiDoc#log log] [JavalogApiDoc#log-level log-level] [JavalogApiDoc#root-logger root-logger] [JavalogApiDoc#set-console-log-level set-console-log-level] [JavalogApiDoc#with-logger with-logger] 
 
 ----
 ===json.read===
@@ -628,7 +628,7 @@ The most complete documentation can be found at http://github.com/tomfaulhaber/c
 where the markdown README is currently displayed. I will be moving it into the 
 clojure.contrib wiki RSN.</pre>
 Public Variables and Functions:
-[PprintApiDoc#*print-circle* *print-circle*] [PprintApiDoc#*print-lines* *print-lines*] [PprintApiDoc#*print-miser-width* *print-miser-width*] [PprintApiDoc#*print-pprint-dispatch* *print-pprint-dispatch*] [PprintApiDoc#*print-pretty* *print-pretty*] [PprintApiDoc#*print-right-margin* *print-right-margin*] [PprintApiDoc#*print-shared* *print-shared*] [PprintApiDoc#*print-suppress-namespaces* *print-suppress-namespaces*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] 
+[PprintApiDoc#_*print-circle_* *print-circle*] [PprintApiDoc#_*print-lines_* *print-lines*] [PprintApiDoc#_*print-miser-width_* *print-miser-width*] [PprintApiDoc#_*print-pprint-dispatch_* *print-pprint-dispatch*] [PprintApiDoc#_*print-pretty_* *print-pretty*] [PprintApiDoc#_*print-right-margin_* *print-right-margin*] [PprintApiDoc#_*print-shared_* *print-shared*] [PprintApiDoc#_*print-suppress-namespaces_* *print-suppress-namespaces*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] 
 
 ----
 ===probabilities.finite-distributions===
@@ -692,7 +692,7 @@ API Overview [PrxmlApiDoc here]
 <pre> Compact syntax for generating XML. See the documentation of "prxml"  
 for details.</pre>
 Public Variables and Functions:
-[PrxmlApiDoc#*html-compatible* *html-compatible*] [PrxmlApiDoc#*prxml-indent* *prxml-indent*] [PrxmlApiDoc#prxml prxml] 
+[PrxmlApiDoc#_*html-compatible_* *html-compatible*] [PrxmlApiDoc#_*prxml-indent_* *prxml-indent*] [PrxmlApiDoc#prxml prxml] 
 
 ----
 ===repl-ln===
@@ -711,7 +711,7 @@ API Overview [ReplUtilsApiDoc here]
 
 <pre> Utilities meant to be used interactively at the REPL</pre>
 Public Variables and Functions:
-[ReplUtilsApiDoc#*local-javadocs* *local-javadocs*] [ReplUtilsApiDoc#*remote-javadocs* *remote-javadocs*] [ReplUtilsApiDoc#add-break-thread! add-break-thread!] [ReplUtilsApiDoc#add-local-javadoc add-local-javadoc] [ReplUtilsApiDoc#add-remote-javadoc add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#find-javadoc-url find-javadoc-url] [ReplUtilsApiDoc#get-source get-source] [ReplUtilsApiDoc#javadoc javadoc] [ReplUtilsApiDoc#show show] [ReplUtilsApiDoc#source source] [ReplUtilsApiDoc#start-handling-break start-handling-break] 
+[ReplUtilsApiDoc#_*local-javadocs_* *local-javadocs*] [ReplUtilsApiDoc#_*remote-javadocs_* *remote-javadocs*] [ReplUtilsApiDoc#add-break-thread! add-break-thread!] [ReplUtilsApiDoc#add-local-javadoc add-local-javadoc] [ReplUtilsApiDoc#add-remote-javadoc add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#find-javadoc-url find-javadoc-url] [ReplUtilsApiDoc#get-source get-source] [ReplUtilsApiDoc#javadoc javadoc] [ReplUtilsApiDoc#show show] [ReplUtilsApiDoc#source source] [ReplUtilsApiDoc#start-handling-break start-handling-break] 
 
 ----
 ===seq-utils===
@@ -773,7 +773,7 @@ Public Variables and Functions:
 [SqlApiDoc#connection connection] [SqlApiDoc#create-table create-table] [SqlApiDoc#delete-rows delete-rows] [SqlApiDoc#do-commands do-commands] [SqlApiDoc#do-prepared do-prepared] [SqlApiDoc#drop-table drop-table] [SqlApiDoc#find-connection find-connection] [SqlApiDoc#insert-records insert-records] [SqlApiDoc#insert-rows insert-rows] [SqlApiDoc#insert-values insert-values] [SqlApiDoc#is-rollback-only is-rollback-only] [SqlApiDoc#set-rollback-only set-rollback-only] [SqlApiDoc#transaction transaction] [SqlApiDoc#update-or-insert-values update-or-insert-values] [SqlApiDoc#update-values update-values] [SqlApiDoc#with-connection with-connection] [SqlApiDoc#with-query-results with-query-results] 
 
 Variables and Functions in sql.internal:
-[SqlApiDoc#connection* connection*] [SqlApiDoc#find-connection* find-connection*] [SqlApiDoc#get-connection get-connection] [SqlApiDoc#print-sql-exception print-sql-exception] [SqlApiDoc#print-sql-exception-chain print-sql-exception-chain] [SqlApiDoc#print-update-counts print-update-counts] [SqlApiDoc#rollback rollback] [SqlApiDoc#throw-rollback throw-rollback] [SqlApiDoc#transaction* transaction*] [SqlApiDoc#with-connection* with-connection*] [SqlApiDoc#with-query-results* with-query-results*] 
+[SqlApiDoc#connection_* connection*] [SqlApiDoc#find-connection_* find-connection*] [SqlApiDoc#get-connection get-connection] [SqlApiDoc#print-sql-exception print-sql-exception] [SqlApiDoc#print-sql-exception-chain print-sql-exception-chain] [SqlApiDoc#print-update-counts print-update-counts] [SqlApiDoc#rollback rollback] [SqlApiDoc#throw-rollback throw-rollback] [SqlApiDoc#transaction_* transaction*] [SqlApiDoc#with-connection_* with-connection*] [SqlApiDoc#with-query-results_* with-query-results*] 
 
 Variables and Functions in sql.test:
 [SqlApiDoc#create-fruit create-fruit] [SqlApiDoc#db-batchupdate-exception db-batchupdate-exception] [SqlApiDoc#db-exception db-exception] [SqlApiDoc#db-get-tables db-get-tables] [SqlApiDoc#db-grade-a db-grade-a] [SqlApiDoc#db-grade-range db-grade-range] [SqlApiDoc#db-read db-read] [SqlApiDoc#db-read-all db-read-all] [SqlApiDoc#db-rollback db-rollback] [SqlApiDoc#db-sql-exception db-sql-exception] [SqlApiDoc#db-update db-update] [SqlApiDoc#db-update-appearance-cost db-update-appearance-cost] [SqlApiDoc#db-update-or-insert db-update-or-insert] [SqlApiDoc#db-write db-write] [SqlApiDoc#drop-fruit drop-fruit] [SqlApiDoc#insert-records-fruit insert-records-fruit] [SqlApiDoc#insert-rows-fruit insert-rows-fruit] [SqlApiDoc#insert-values-fruit insert-values-fruit] 
@@ -1112,7 +1112,7 @@ of `*`test-out`*`.
  
 For additional event types, see the examples in the code.</pre>
 Public Variables and Functions:
-[TestIsApiDoc#*load-tests* *load-tests*] [TestIsApiDoc#*stack-trace-depth* *stack-trace-depth*] [TestIsApiDoc#are are] [TestIsApiDoc#assert-any assert-any] [TestIsApiDoc#assert-predicate assert-predicate] [TestIsApiDoc#compose-fixtures compose-fixtures] [TestIsApiDoc#deftest deftest] [TestIsApiDoc#deftest- deftest-] [TestIsApiDoc#file-position file-position] [TestIsApiDoc#function? function?] [TestIsApiDoc#get-possibly-unbound-var get-possibly-unbound-var] [TestIsApiDoc#inc-report-counter inc-report-counter] [TestIsApiDoc#is is] [TestIsApiDoc#join-fixtures join-fixtures] [TestIsApiDoc#report report] [TestIsApiDoc#run-all-tests run-all-tests] [TestIsApiDoc#run-tests run-tests] [TestIsApiDoc#set-test set-test] [TestIsApiDoc#test-all-vars test-all-vars] [TestIsApiDoc#test-ns test-ns] [TestIsApiDoc#test-var test-var] [TestIsApiDoc#testing testing] [TestIsApiDoc#testing-contexts-str testing-contexts-str] [TestIsApiDoc#testing-vars-str testing-vars-str] [TestIsApiDoc#try-expr try-expr] [TestIsApiDoc#with-test with-test] [TestIsApiDoc#with-test-out with-test-out] 
+[TestIsApiDoc#_*load-tests_* *load-tests*] [TestIsApiDoc#_*stack-trace-depth_* *stack-trace-depth*] [TestIsApiDoc#are are] [TestIsApiDoc#assert-any assert-any] [TestIsApiDoc#assert-predicate assert-predicate] [TestIsApiDoc#compose-fixtures compose-fixtures] [TestIsApiDoc#deftest deftest] [TestIsApiDoc#deftest- deftest-] [TestIsApiDoc#file-position file-position] [TestIsApiDoc#function? function?] [TestIsApiDoc#get-possibly-unbound-var get-possibly-unbound-var] [TestIsApiDoc#inc-report-counter inc-report-counter] [TestIsApiDoc#is is] [TestIsApiDoc#join-fixtures join-fixtures] [TestIsApiDoc#report report] [TestIsApiDoc#run-all-tests run-all-tests] [TestIsApiDoc#run-tests run-tests] [TestIsApiDoc#set-test set-test] [TestIsApiDoc#test-all-vars test-all-vars] [TestIsApiDoc#test-ns test-ns] [TestIsApiDoc#test-var test-var] [TestIsApiDoc#testing testing] [TestIsApiDoc#testing-contexts-str testing-contexts-str] [TestIsApiDoc#testing-vars-str testing-vars-str] [TestIsApiDoc#try-expr try-expr] [TestIsApiDoc#with-test with-test] [TestIsApiDoc#with-test-out with-test-out] 
 
 Variables and Functions in test-is.tap:
 [TestIsApiDoc#print-tap-diagnostic print-tap-diagnostic] [TestIsApiDoc#print-tap-fail print-tap-fail] [TestIsApiDoc#print-tap-pass print-tap-pass] [TestIsApiDoc#print-tap-plan print-tap-plan] [TestIsApiDoc#with-tap-output with-tap-output] 
@@ -1125,7 +1125,7 @@ API Overview [TraceApiDoc here]
 <pre> This file defines simple "tracing" macros to help you see what your 
 code is doing.</pre>
 Public Variables and Functions:
-[TraceApiDoc#*trace-depth* *trace-depth*] [TraceApiDoc#deftrace deftrace] [TraceApiDoc#trace trace] [TraceApiDoc#trace-fn-call trace-fn-call] [TraceApiDoc#trace-indent trace-indent] [TraceApiDoc#tracer tracer] 
+[TraceApiDoc#_*trace-depth_* *trace-depth*] [TraceApiDoc#deftrace deftrace] [TraceApiDoc#trace trace] [TraceApiDoc#trace-fn-call trace-fn-call] [TraceApiDoc#trace-indent trace-indent] [TraceApiDoc#tracer tracer] 
 
 ----
 ===types===
@@ -1174,5 +1174,5 @@ Public Variables and Functions:
 [ZipFilterApiDoc#ancestors ancestors] [ZipFilterApiDoc#children children] [ZipFilterApiDoc#children-auto children-auto] [ZipFilterApiDoc#descendants descendants] [ZipFilterApiDoc#left-locs left-locs] [ZipFilterApiDoc#leftmost? leftmost?] [ZipFilterApiDoc#right-locs right-locs] [ZipFilterApiDoc#rightmost? rightmost?] 
 
 Variables and Functions in zip-filter.xml:
-[ZipFilterApiDoc#attr attr] [ZipFilterApiDoc#attr= attr=] [ZipFilterApiDoc#seq-test seq-test] [ZipFilterApiDoc#tag= tag=] [ZipFilterApiDoc#text text] [ZipFilterApiDoc#text= text=] [ZipFilterApiDoc#xml-> xml->] [ZipFilterApiDoc#xml1-> xml1->] 
+[ZipFilterApiDoc#attr attr] [ZipFilterApiDoc#attr_= attr=] [ZipFilterApiDoc#seq-test seq-test] [ZipFilterApiDoc#tag_= tag=] [ZipFilterApiDoc#text text] [ZipFilterApiDoc#text_= text=] [ZipFilterApiDoc#xml-> xml->] [ZipFilterApiDoc#xml1-> xml1->] 
 

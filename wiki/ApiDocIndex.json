@@ -2132,7 +2132,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#197",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#slurp*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#slurp_*",
       "name":"slurp*",
       "arglists":[
         [
@@ -2307,7 +2307,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/error_kit.clj#86",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribErrorKitApiDoc#raise*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribErrorKitApiDoc#raise_*",
       "name":"raise*",
       "arglists":[
         [
@@ -2613,7 +2613,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#111",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#_*",
       "name":"*",
       "arglists":[
         [
@@ -2697,7 +2697,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#173",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#defmethod*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#defmethod_*",
       "name":"defmethod*",
       "arglists":[
         [
@@ -2834,7 +2834,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#129",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#<=",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#<_=",
       "name":"<=",
       "arglists":[
         [
@@ -2855,7 +2855,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#36",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#=",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#_=",
       "name":"=",
       "arglists":[
         [
@@ -2897,7 +2897,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#103",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#>=",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#>_=",
       "name":">=",
       "arglists":[
         [
@@ -2963,7 +2963,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/math_functions.clj#110",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#approx=",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericMathFunctionsApiDoc#approx_=",
       "name":"approx=",
       "arglists":[
         [
@@ -3614,7 +3614,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#42",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#*logger*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#_*logger_*",
       "name":"*logger*",
       "doc":"The current java.util.logging.Logger.  By default, the\n          global logger, modified by 'with-logger'."
     },
@@ -4627,49 +4627,49 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#54",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*print-circle*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-circle_*",
       "name":"*print-circle*",
       "doc":"Mark circular structures (N.B. This is not yet used)"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#49",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*print-lines*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-lines_*",
       "name":"*print-lines*",
       "doc":"Maximum number of lines to print in a pretty print instance (N.B. This is not yet used)"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#42",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*print-miser-width*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-miser-width_*",
       "name":"*print-miser-width*",
       "doc":"The column at which to enter miser style. Depending on the dispatch table, \nmiser style add newlines in more places to try to keep lines short allowing for further \nlevels of nesting."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#34",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*print-pprint-dispatch*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-pprint-dispatch_*",
       "name":"*print-pprint-dispatch*",
       "doc":"The pretty print dispatch table"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#29",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*print-pretty*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-pretty_*",
       "name":"*print-pretty*",
       "doc":"Bind to true if you want write to use pretty printing"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#38",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*print-right-margin*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-right-margin_*",
       "name":"*print-right-margin*",
       "doc":"Pretty printing will try to avoid anything going beyond this column."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#59",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*print-shared*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-shared_*",
       "name":"*print-shared*",
       "doc":"Mark repeated structures rather than repeat them (N.B. This is not yet used)"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#63",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*print-suppress-namespaces*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-suppress-namespaces_*",
       "name":"*print-suppress-namespaces*",
       "doc":"Don't print namespaces with symbols. This is particularly useful when \npretty printing the results of macro expansions"
     },
@@ -5113,13 +5113,13 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#32",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc#*html-compatible*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc#_*html-compatible_*",
       "name":"*html-compatible*",
       "doc":"If true, empty tags will have a space before the closing />"
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#36",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc#*prxml-indent*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc#_*prxml-indent_*",
       "name":"*prxml-indent*",
       "doc":"The number of spaces to indent sub-tags.  nil for no indent\n  and no extra line-breaks."
     },
@@ -5222,13 +5222,13 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#18",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribReplUtilsApiDoc#*local-javadocs*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribReplUtilsApiDoc#_*local-javadocs_*",
       "name":"*local-javadocs*",
       "doc":"Ref to a list of local paths for Javadoc-generated HTML\n  files."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#28",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribReplUtilsApiDoc#*remote-javadocs*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribReplUtilsApiDoc#_*remote-javadocs_*",
       "name":"*remote-javadocs*",
       "doc":"Ref to a map from package name prefixes to URLs for remote\n  Javadocs."
     },
@@ -5879,7 +5879,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#32",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#connection*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#connection_*",
       "name":"connection*",
       "arglists":[
         [
@@ -5890,7 +5890,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#27",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#find-connection*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#find-connection_*",
       "name":"find-connection*",
       "arglists":[
         [
@@ -5983,7 +5983,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#118",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#transaction*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#transaction_*",
       "name":"transaction*",
       "arglists":[
         [
@@ -5994,7 +5994,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#71",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#with-connection*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#with-connection_*",
       "name":"with-connection*",
       "arglists":[
         [
@@ -6006,7 +6006,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#152",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#with-query-results*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#with-query-results_*",
       "name":"with-query-results*",
       "arglists":[
         [
@@ -6612,13 +6612,13 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#468",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#*load-tests*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#_*load-tests_*",
       "name":"*load-tests*",
       "doc":"True by default.  If set to false, no test functions will\n   be created by deftest, set-test, or with-test.  Use this to omit\n   tests when compiling or loading production code."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#474",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#*stack-trace-depth*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#_*stack-trace-depth_*",
       "name":"*stack-trace-depth*",
       "doc":"The maximum depth of stack traces to print when an Exception\n  is thrown during a test.  Defaults to nil, which means print the \n  complete stack trace."
     },
@@ -6978,7 +6978,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#40",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTraceApiDoc#*trace-depth*",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTraceApiDoc#_*trace-depth_*",
       "name":"*trace-depth*",
       "doc":"Current stack depth of traced function calls."
     },
@@ -7361,7 +7361,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#23",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribZipFilterXmlApiDoc#attr=",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribZipFilterXmlApiDoc#attr_=",
       "name":"attr=",
       "arglists":[
         [
@@ -7384,7 +7384,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#28",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribZipFilterXmlApiDoc#tag=",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribZipFilterXmlApiDoc#tag_=",
       "name":"tag=",
       "arglists":[
         [
@@ -7406,7 +7406,7 @@
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/zip_filter/xml.clj#46",
-      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribZipFilterXmlApiDoc#text=",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribZipFilterXmlApiDoc#text_=",
       "name":"text=",
       "arglists":[
         [
