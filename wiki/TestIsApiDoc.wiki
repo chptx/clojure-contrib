@@ -427,7 +427,7 @@ Optional argument is a regular expression; only namespaces with
 names matching the regular expression (with re-matches) will be 
 tested.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#920 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-all-tests+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#917 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-all-tests+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===run-tests===
 ====function====
@@ -438,7 +438,7 @@ Usage: *(_run-tests_)
 <pre> Runs all tests in the given namespaces; prints results. 
 Defaults to current namespace if none given.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#912 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-tests+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#909 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run-tests+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-test===
 ====macro====

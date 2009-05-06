@@ -4228,7 +4228,7 @@
       "doc":"Reads the file named by f and returns it as a string."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#408",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#407",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#call-cc",
       "name":"call-cc",
       "arglists":[
@@ -4239,13 +4239,13 @@
       "doc":"A computation in the cont monad that calls function f with a single\n   argument representing the current continuation. The function f should\n   return a continuation (which becomes the return value of call-cc),\n   or call the passed-in current continuation to terminate."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#392",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#391",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#cont-m",
       "name":"cont-m",
       "doc":"Monad describing computations in continuation-passing style. The monadic\n   values are functions that are called with a single argument representing\n   the continuation of the computation, to which they pass their result."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#50",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#51",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#defmonad",
       "name":"defmonad",
       "arglists":[
@@ -4262,7 +4262,7 @@
       "doc":"Define a named monad by defining the monad operations. The definitions\n    are written like bindings to the monad operations m-bind and\n    m-result (required) and m-zero and m-plus (optional)."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#135",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#137",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#defmonadfn",
       "name":"defmonadfn",
       "arglists":[
@@ -4287,7 +4287,7 @@
       "doc":"Like defn, but for functions that use monad operations and are used inside\n   a with-monad block."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#112",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#114",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#domonad",
       "name":"domonad",
       "arglists":[
@@ -4304,47 +4304,31 @@
       "doc":"Monad comprehension. Takes the name of a monad, a vector of steps\n    given as binding-form/monadic-expression pairs, and a result value\n    specified by expr. The monadic-expression terms can use the binding\n    variables of the previous steps.\n    If the monad contains a definition of m-zero, the step list can also\n    contain conditions of the form :when p, where the predicate p can\n    contain the binding variables from all previous steps.\n    A clause of the form :let [binding-form expr ...], where the bindings\n    are given as a vector as for the use in let, establishes additional\n    bindings that can be used in the following steps."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#267",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#266",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#identity-m",
       "name":"identity-m",
       "doc":"Monad describing plain computations. This monad does in fact nothing\n    at all. It is useful for testing, for combination with monad\n    transformers, and for code that is parameterized with a monad."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#210",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#209",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-chain",
       "name":"m-chain",
-      "arglists":[
-        [
-"steps"
-        ]
-      ],
       "doc":"Chains together monadic computation steps that are each functions\n   of one parameter. Each step is called with the result of the previous\n   step as its argument. (m-chain (step1 step2)) is equivalent to\n   (fn [x] (domonad [r1 (step1 x) r2 (step2 r1)] r2))."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#188",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#187",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-fmap",
       "name":"m-fmap",
-      "arglists":[
-        [
-"f",
-"m"
-        ]
-      ],
       "doc":"Bind the monadic value m to the function returning (f x) for argument x"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#182",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#181",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-join",
       "name":"m-join",
-      "arglists":[
-        [
-"m"
-        ]
-      ],
       "doc":"Converts a monadic value containing a monadic value into a 'simple'\n   monadic value."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#173",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#172",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-lift",
       "name":"m-lift",
       "arglists":[
@@ -4356,47 +4340,25 @@
       "doc":"Converts a function f of n arguments into a function of n\n  monadic arguments returning a monadic value."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#204",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#203",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-map",
       "name":"m-map",
-      "arglists":[
-        [
-"f",
-"xs"
-        ]
-      ],
       "doc":"'Executes' the sequence of monadic values resulting from mapping\n   f onto the values xs. f must return a monadic value."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#221",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#220",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-reduce",
       "name":"m-reduce",
-      "arglists":[
-        [
-"f",
-"mvs"
-        ],
-        [
-"f",
-"val",
-"mvs"
-        ]
-      ],
       "doc":"Return the reduction of (m-lift 2 f) over the list of monadic values mvs\n   with initial value (m-result val)."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#193",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#192",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-seq",
       "name":"m-seq",
-      "arglists":[
-        [
-"ms"
-        ]
-      ],
       "doc":"'Executes' the monadic values in ms and returns a sequence of the\n   basic values contained in them."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#234",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#233",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-when",
       "name":"m-when",
       "arglists":[
@@ -4408,7 +4370,7 @@
       "doc":"If test if logical true, return monadic value m-expr, else return\n   (m-result nil)."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#240",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#239",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#m-when-not",
       "name":"m-when-not",
       "arglists":[
@@ -4420,13 +4382,13 @@
       "doc":"If test if logical false, return monadic value m-expr, else return\n   (m-result nil)."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#277",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#276",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#maybe-m",
       "name":"maybe-m",
       "doc":"Monad describing computations with possible failures. Failure is\n    represented by nil, any other value is considered valid. As soon as\n    a step returns nil, the whole computation will yield nil as well."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#448",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#447",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#maybe-t",
       "name":"maybe-t",
       "arglists":[
@@ -4446,7 +4408,7 @@
       "doc":"Monad transformer that transforms a monad m into a monad in which\n   the base values can be invalid (represented by nothing, which defaults\n   to nil). The third argument chooses if m-zero and m-plus are inherited\n   from the base monad (use :m-plus-from-base) or adopt maybe-like\n   behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base\n   if the base monad m has a definition for m-plus, and\n   :m-plus-from-transformer otherwise."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#35",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#36",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#monad",
       "name":"monad",
       "arglists":[
@@ -4457,7 +4419,7 @@
       "doc":"Define a monad by defining the monad operations. The definitions\n    are written like bindings to the monad operations m-bind and\n    m-result (required) and m-zero and m-plus (optional)."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#426",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#425",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#monad-transformer",
       "name":"monad-transformer",
       "arglists":[
@@ -4470,7 +4432,7 @@
       "doc":"Define a monad transforer in terms of the monad operations and the base\n    monad. The argument which-m-plus chooses if m-zero and m-plus are taken\n    from the base monad or from the transformer."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#403",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#402",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#run-cont",
       "name":"run-cont",
       "arglists":[
@@ -4481,13 +4443,13 @@
       "doc":"Execute the computation c in the cont monad and return its result."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#290",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#289",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#sequence-m",
       "name":"sequence-m",
       "doc":"Monad describing multi-valued computations, i.e. computations\n    that can yield multiple values. Any object implementing the seq\n    protocol can be used as a monadic value."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#480",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#479",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#sequence-t",
       "name":"sequence-t",
       "arglists":[
@@ -4502,19 +4464,19 @@
       "doc":"Monad transformer that transforms a monad m into a monad in which\n   the base values are sequences. The argument which-m-plus chooses\n   if m-zero and m-plus are inherited from the base monad\n   (use :m-plus-from-base) or adopt sequence-like\n   behaviour (use :m-plus-from-transformer). The default is :m-plus-from-base\n   if the base monad m has a definition for m-plus, and\n   :m-plus-from-transformer otherwise."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#304",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#303",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#set-m",
       "name":"set-m",
       "doc":"Monad describing multi-valued computations, like sequence-m,\n    but returning sets of results instead of sequences of results."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#317",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#316",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#state-m",
       "name":"state-m",
       "doc":"Monad describing stateful computations. The monadic values have the\n    structure (fn [old-state] (list result new-state))."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#507",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#506",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#state-t",
       "name":"state-t",
       "arglists":[
@@ -4525,12 +4487,12 @@
       "doc":"Monad transformer that transforms a monad m into a monad of stateful\n  computations that have the base monad type as their result."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#101",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#102",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#with-monad",
       "name":"with-monad",
       "arglists":[
         [
-"name",
+"monad",
 "&",
 "exprs"
         ]
@@ -4538,7 +4500,7 @@
       "doc":"Evaluates an expression after replacing the keywords defining the\n    monad operations by the functions associated with these keywords\n    in the monad definition given by name."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#365",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/monads.clj#364",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribMonadsApiDoc#writer-m",
       "name":"writer-m",
       "arglists":[
@@ -4837,7 +4799,7 @@
       "doc":"Write an object subject to the current bindings of the printer control variables.\nUse the kw-args argument to override individual variables for this call (and any \nrecursive calls). Returns the string result if :stream is nil or nil otherwise.\n\nThe following keyword arguments can be passed with values:\n  Keyword              Meaning                              Default value\n  :stream              Writer for output or nil             true (indicates *out*)\n  :circle*             If true, mark circular structures    Current value of *print-circle*\n  :length              Maximum elements to show in sublists Current value of *print-length*\n  :level               Maximum depth                        Current value of *print-level*\n  :lines*              Maximum lines of output              Current value of *print-lines*\n  :miser-width         Width to enter miser mode            Current value of *print-miser-width*\n  :dispatch            The pretty print dispatch function   Current value of *print-pprint-dispatch*\n  :pretty              If true, do pretty printing          Current value of *print-pretty*\n  :readably*           If true, print readably              Current value of *print-readably*\n  :right-margin        The column for the right margin      Current value of *print-right-margin*\n  :suppress-namespaces If true, no namespaces in symbols    Current value of *print-suppress-namespaces*\n\n  * = not yet supported\n"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#110",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#108",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#certainly",
       "name":"certainly",
       "arglists":[
@@ -4866,7 +4828,7 @@
       "doc":"Variant of the dist monad that can handle undefined values."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#123",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#122",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#cond-prob",
       "name":"cond-prob",
       "arglists":[
@@ -4884,7 +4846,7 @@
       "doc":"Monad describing computations on fuzzy quantities, represented by a finite\n   probability distribution for the possible values. A distribution is\n   represented by a map from values to probabilities."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#115",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#108",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#join-with",
       "name":"join-with",
       "arglists":[
@@ -4931,7 +4893,7 @@
       "doc":"Return a distribution in which each of the elements of coll\n   has the same probability."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#87",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#86",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#discrete",
       "name":"discrete",
       "arglists":[
@@ -4942,7 +4904,7 @@
       "doc":"A discrete distribution, defined by a map dist mapping values\n     to probabilities. The sum of probabilities must be one."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#146",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#145",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#exponential",
       "name":"exponential",
       "arglists":[
@@ -4953,7 +4915,7 @@
       "doc":"Transform a sequence of uniform random numbers in the interval [0, 1)\n     into a sequence of exponential random numbers with parameter lambda."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#137",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#136",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#lognormal",
       "name":"lognormal",
       "arglists":[
@@ -4965,7 +4927,7 @@
       "doc":"Transform a sequence of uniform random numbesr in the interval [0, 1)\n     into a sequence of lognormal random numbers with mean mu and standard\n     deviation sigma."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#228",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#227",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#n-sphere",
       "name":"n-sphere",
       "arglists":[
@@ -5025,7 +4987,7 @@
       "doc":"Return the distribution that results from rejecting the values from\n   dist that do not satisfy predicate p."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#183",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#181",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#sample",
       "name":"sample",
       "arglists":[
@@ -5037,7 +4999,7 @@
       "doc":"Return the distribution of samples of length n from the\n       distribution dist"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#210",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#181",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#sample-mean",
       "name":"sample-mean",
       "arglists":[
@@ -5049,7 +5011,7 @@
       "doc":"Return the distribution of the mean over n samples from the\n       distribution dist"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#217",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#181",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#sample-mean-variance",
       "name":"sample-mean-variance",
       "arglists":[
@@ -5061,7 +5023,7 @@
       "doc":"Return the distribution of the mean-and-variance (a vector containing\n       the mean and the variance) over n samples from the distribution dist"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#189",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#181",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#sample-reduce",
       "name":"sample-reduce",
       "arglists":[
@@ -5080,7 +5042,7 @@
       "doc":"Returns the distribution of the reduction of f over n samples from the\n       distribution dist."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#204",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#181",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesMonteCarloApiDoc#sample-sum",
       "name":"sample-sum",
       "arglists":[
@@ -6774,7 +6736,7 @@
       "doc":"Generic reporting function, may be overridden to plug in\n   different report formats (e.g., TAP, JUnit).  Assertions such as\n   'is' call 'report' to indicate results.  The argument given to\n   'report' will be a map with a :type key.  See the documentation at\n   the top of test_is.clj for more information on the types of\n   arguments for 'report'."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#920",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#917",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#run-all-tests",
       "name":"run-all-tests",
       "arglists":[
@@ -6788,7 +6750,7 @@
       "doc":"Runs all tests in all namespaces; prints results.\n  Optional argument is a regular expression; only namespaces with\n  names matching the regular expression (with re-matches) will be\n  tested."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#912",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#909",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#run-tests",
       "name":"run-tests",
       "arglists":[
