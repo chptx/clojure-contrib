@@ -3718,7 +3718,7 @@
       "doc":"Read the next JSON record from stream, which must be an instance of\n  java.io.PushbackReader."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#69",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#77",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribJsonWriteApiDoc#json-str",
       "name":"json-str",
       "arglists":[
@@ -3729,7 +3729,7 @@
       "doc":"Converts Clojure data structures to a JSON-formatted string."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#27",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#34",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribJsonWriteApiDoc#print-json",
       "name":"print-json",
       "arglists":[
