@@ -356,7 +356,7 @@
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc",
       "name":"clojure.contrib.pprint",
       "author":"Tom Faulhaber",
-      "doc":"This module comprises two elements:\n1) A pretty printer for Clojure data structures, implemented in the function \"pprint\"\n2) A Common Lisp compatible format function, implemented as \"cl-format\" because\n   Clojure is using the name \"format\" for its own format.\n\nThe most complete documentation can be found at http://github.com/tomfaulhaber/cl-format\nwhere the markdown README is currently displayed. I will be moving it into the\nclojure.contrib wiki RSN.\n"
+      "doc":"This module comprises two elements:\n1) A pretty printer for Clojure data structures, implemented in the function \"pprint\"\n2) A Common Lisp compatible format function, implemented as \"cl-format\" because\n   Clojure is using the name \"format\" for its own format.\n\nThe most complete documentation can be found at http://github.com/tomfaulhaber/cl-format\nwhere the markdown README is currently displayed. I will be moving it into the\nclojure.contrib wiki RSN."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/ColumnWriter.clj",
@@ -4588,6 +4588,17 @@
       "doc":"Returns a sorted seq of symbols naming public vars in\n  a namespace"
     },
     {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#317",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*code-dispatch_*",
+      "name":"*code-dispatch*",
+      "arglists":[
+        [
+"object"
+        ]
+      ],
+      "doc":"The pretty print dispatch function for pretty printing Clojure code."
+    },
+    {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#54",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-circle_*",
       "name":"*print-circle*",
@@ -4606,10 +4617,10 @@
       "doc":"The column at which to enter miser style. Depending on the dispatch table, \nmiser style add newlines in more places to try to keep lines short allowing for further \nlevels of nesting."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#34",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#33",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-pprint-dispatch_*",
       "name":"*print-pprint-dispatch*",
-      "doc":"The pretty print dispatch table"
+      "doc":"The pretty print dispatch function. Use with-pprint-dispatch or set-pprint-dispatch\nto modify."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#29",
@@ -4636,6 +4647,17 @@
       "doc":"Don't print namespaces with symbols. This is particularly useful when \npretty printing the results of macro expansions"
     },
     {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#88",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*simple-dispatch_*",
+      "name":"*simple-dispatch*",
+      "arglists":[
+        [
+"object"
+        ]
+      ],
+      "doc":"The pretty print dispatch function for simple data structure format."
+    },
+    {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#26",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#cl-format",
       "name":"cl-format",
@@ -4650,7 +4672,7 @@
       "doc":"An implementation of a Common Lisp compatible format function. cl-format formats its\narguments to an output stream or string based on the format control string given. It \nsupports sophisticated formatting of structured data.\n\nWriter is an instance of java.io.Writer, true to output to *out* or nil to output \nto a string, format-in is the format control string and the remaining arguments \nare the data to be formatted.\n\nThe format control string is a string to be output with embedded 'format directives' \ndescribing how to format the various arguments passed in.\n\nIf writer is nil, cl-format returns the formatted result string. Otherwise, cl-format \nreturns nil.\n\nFor example:\n (let [results [46 38 22]]\n        (cl-format true \"There ~[are~;is~:;are~]~:* ~d result~:p: ~{~d~^, ~}~%\" \n                   (count results) results))\n\nPrints to *out*:\n There are 3 results: 46, 38, 22\n\nDetailed documentation on format control strings is available in the \"Common Lisp the \nLanguage, 2nd edition\", Chapter 22 (available online at:\nhttp://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000) \nand in the Common Lisp HyperSpec at \nhttp://www.lispworks.com/documentation/HyperSpec/Body/22_c.htm\n"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1718",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1724",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#compile-format",
       "name":"compile-format",
       "arglists":[
@@ -4661,7 +4683,7 @@
       "doc":"Compiles format-str into a compiled format which can be used as an argument\nto cl-format just like a plain format string. Use this function for improved \nperformance when you're using the same format string repeatedly"
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1784",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1792",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#formatter",
       "name":"formatter",
       "arglists":[
@@ -4670,6 +4692,17 @@
         ]
       ],
       "doc":"Makes a function which can directly run format-in. The function is\nfn [stream & args] ... and returns nil unless the stream is nil (meaning \noutput to a string) in which case it returns the resulting string.\n\nformat-in can be either a control string or a previously compiled format."
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1806",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#formatter-out",
+      "name":"formatter-out",
+      "arglists":[
+        [
+"format-in"
+        ]
+      ],
+      "doc":"Makes a function which can directly run format-in. The function is\nfn [& args] ... and returns nil. This version of the formatter macro is\ndesigned to be used with *out* set to an appropriate Writer. In particular,\nthis is meant to be used as part of a pretty printer dispatch method.\n\nformat-in can be either a control string or a previously compiled format."
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1128",
@@ -4683,7 +4716,7 @@
       "doc":"Make a newline if the Writer is not already at the beginning of the line.\nN.B. Only works on ColumnWriters right now."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#198",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#209",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#pp",
       "name":"pp",
       "arglists":[
@@ -4694,99 +4727,107 @@
       "doc":"A convenience macro that pretty prints the last thing output. This is\nexactly equivalent to (pprint *1)."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#186",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#198",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#pprint",
       "name":"pprint",
       "arglists":[
         [
+"object"
+        ],
+        [
 "object",
-"&",
-"more"
+"writer"
         ]
       ],
       "doc":"Pretty print object to the optional output writer. If the writer is not provided, \nprint the object to the currently bound value of *out*."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#270",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#278",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#pprint-indent",
       "name":"pprint-indent",
       "arglists":[
         [
 "relative-to",
-"n",
-"&",
-"more"
+"n"
         ]
       ],
-      "doc":"Create an indent at this point in the pretty printing stream. This defines how \nfollowing lines are indented. relative-to can be either :block or :current depending \nwhether the indent should be computed relative to the start of the logical block or\nthe current column position. n is an offset. \n\nOptionally, a third argument which is a stream may be used. If supplied, that is \nthe writer indented, otherwise *out* is used.\n\nIf the requested stream is not a PrettyWriter, this function does nothing."
+      "doc":"Create an indent at this point in the pretty printing stream. This defines how \nfollowing lines are indented. relative-to can be either :block or :current depending \nwhether the indent should be computed relative to the start of the logical block or\nthe current column position. n is an offset. \n\nOutput is sent to *out* which must be a pretty printing writer."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#234",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#249",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#pprint-logical-block",
       "name":"pprint-logical-block",
       "arglists":[
         [
-"base-stream",
-"&",
+"options*",
 "body"
         ]
       ],
-      "doc":"Execute the body as a pretty printing logical block with output to *out* which \nis a pretty printing writer wrapping base-stream (unless base-stream is already a pretty \nprinting writer in which case *out* is just bound to base-stream). \n\nAfter the writer, the caller can optionally specify :prefix, :per-line-prefix, and\n:suffix."
+      "doc":"Execute the body as a pretty printing logical block with output to *out* which \nmust be a pretty printing writer. When used from pprint or cl-format, this can be \nassumed. \n\nBefore the body, the caller can optionally specify options: :prefix, :per-line-prefix, \nand :suffix."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#254",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#269",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#pprint-newline",
       "name":"pprint-newline",
       "arglists":[
         [
-"kind",
-"&",
-"more"
+"kind"
         ]
       ],
-      "doc":"Print a conditional newline to a pretty printing stream. kind specifies if the \nnewline is :linear, :miser, :fill, or :mandatory. \n\nOptionally, a second argument which is a stream may be used. If supplied, that is \nthe writer to which the newline is sent, otherwise *out* is used.\n\nIf the requested stream is not a PrettyWriter, this function does nothing."
+      "doc":"Print a conditional newline to a pretty printing stream. kind specifies if the \nnewline is :linear, :miser, :fill, or :mandatory. \n\nOutput is sent to *out* which must be a pretty printing writer."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#289",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#290",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#pprint-tab",
       "name":"pprint-tab",
       "arglists":[
         [
 "kind",
 "colnum",
-"colinc",
-"&",
-"more"
+"colinc"
         ]
       ],
-      "doc":"Tab at this point in the pretty printing stream. kind specifies whether the tab\nis :line, :section, :line-relative, or :section-relative. \n\nColnum and colinc specify the target column and the increment to move the target\nforward if the output is already past the original target.\n\nOptionally, a fourth argument which is a stream may be used. If supplied, that is \nthe writer indented, otherwise *out* is used.\n\nIf the requested stream is not a PrettyWriter, this function does nothing.\n\nTHIS FUNCTION IS NOT YET IMPLEMENTED."
+      "doc":"Tab at this point in the pretty printing stream. kind specifies whether the tab\nis :line, :section, :line-relative, or :section-relative. \n\nColnum and colinc specify the target column and the increment to move the target\nforward if the output is already past the original target.\n\nOutput is sent to *out* which must be a pretty printing writer.\n\nTHIS FUNCTION IS NOT YET IMPLEMENTED."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#203",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#214",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#set-pprint-dispatch",
       "name":"set-pprint-dispatch",
       "arglists":[
         [
-"table"
+"function"
         ]
       ],
-      "doc":"Set the pretty print dispatch table to TABLE. Currently the supported values are\n*simple-dispatch* or *code-dispatch*. In the future, this will support custom tables."
+      "doc":"Set the pretty print dispatch function to a function matching (fn [obj] ...)\nwhere obj is the object to pretty print. That function will be called with *out* set\nto a pretty printing writer to which it should do its printing.\n\nFor example functions, see *simple-dispatch* and *code-dispatch* in \nclojure.contrib.pprint.dispatch.clj."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#210",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#19",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#use-method",
+      "name":"use-method",
+      "arglists":[
+        [
+"multifn",
+"dispatch-val",
+"func"
+        ]
+      ],
+      "doc":"Installs a function as a new method of multimethod associated with dispatch-value. "
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#225",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#with-pprint-dispatch",
       "name":"with-pprint-dispatch",
       "arglists":[
         [
-"table",
+"function",
 "&",
 "body"
         ]
       ],
-      "doc":"Execute body with the pretty print dispatch table bound to table."
+      "doc":"Execute body with the pretty print dispatch function bound to function."
     },
     {
-      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#133",
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#158",
       "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#write",
       "name":"write",
       "arglists":[
@@ -4797,6 +4838,17 @@
         ]
       ],
       "doc":"Write an object subject to the current bindings of the printer control variables.\nUse the kw-args argument to override individual variables for this call (and any \nrecursive calls). Returns the string result if :stream is nil or nil otherwise.\n\nThe following keyword arguments can be passed with values:\n  Keyword              Meaning                              Default value\n  :stream              Writer for output or nil             true (indicates *out*)\n  :circle*             If true, mark circular structures    Current value of *print-circle*\n  :length              Maximum elements to show in sublists Current value of *print-length*\n  :level               Maximum depth                        Current value of *print-level*\n  :lines*              Maximum lines of output              Current value of *print-lines*\n  :miser-width         Width to enter miser mode            Current value of *print-miser-width*\n  :dispatch            The pretty print dispatch function   Current value of *print-pprint-dispatch*\n  :pretty              If true, do pretty printing          Current value of *print-pretty*\n  :readably*           If true, print readably              Current value of *print-readably*\n  :right-margin        The column for the right margin      Current value of *print-right-margin*\n  :suppress-namespaces If true, no namespaces in symbols    Current value of *print-suppress-namespaces*\n\n  * = not yet supported\n"
+    },
+    {
+      "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#133",
+      "wiki-url":"http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#write-out",
+      "name":"write-out",
+      "arglists":[
+        [
+"object"
+        ]
+      ],
+      "doc":"Write an object to *out* subject to the current bindings of the printer control \nvariables. Use the kw-args argument to override individual variables for this call (and \nany recursive calls).\n\n*out* must be a PrettyWriter if pretty printing is enabled. This is the responsibility\nof the caller.\n\nThis method is primarily intended for use by pretty print dispatch functions that \nalready know that the pretty printer will have set up their environment appropriately.\nNormal library clients should use the standard \"write\" interface. "
     },
     {
       "source-url":"http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#108",

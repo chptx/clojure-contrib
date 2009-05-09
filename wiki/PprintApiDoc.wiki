@@ -29,8 +29,17 @@ clojure.contrib wiki RSN.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*print-circle_* *print-circle*] [#_*print-lines_* *print-lines*] [#_*print-miser-width_* *print-miser-width*] [#_*print-pprint-dispatch_* *print-pprint-dispatch*] [#_*print-pretty_* *print-pretty*] [#_*print-right-margin_* *print-right-margin*] [#_*print-shared_* *print-shared*] [#_*print-suppress-namespaces_* *print-suppress-namespaces*] [#cl-format cl-format] [#compile-format compile-format] [#formatter formatter] [#fresh-line fresh-line] [#pp pp] [#pprint pprint] [#pprint-indent pprint-indent] [#pprint-logical-block pprint-logical-block] [#pprint-newline pprint-newline] [#pprint-tab pprint-tab] [#set-pprint-dispatch set-pprint-dispatch] [#with-pprint-dispatch with-pprint-dispatch] [#write write] 
+[#_*code-dispatch_* *code-dispatch*] [#_*print-circle_* *print-circle*] [#_*print-lines_* *print-lines*] [#_*print-miser-width_* *print-miser-width*] [#_*print-pprint-dispatch_* *print-pprint-dispatch*] [#_*print-pretty_* *print-pretty*] [#_*print-right-margin_* *print-right-margin*] [#_*print-shared_* *print-shared*] [#_*print-suppress-namespaces_* *print-suppress-namespaces*] [#_*simple-dispatch_* *simple-dispatch*] [#cl-format cl-format] [#compile-format compile-format] [#formatter formatter] [#formatter-out formatter-out] [#fresh-line fresh-line] [#pp pp] [#pprint pprint] [#pprint-indent pprint-indent] [#pprint-logical-block pprint-logical-block] [#pprint-newline pprint-newline] [#pprint-tab pprint-tab] [#set-pprint-dispatch set-pprint-dispatch] [#use-method use-method] [#with-pprint-dispatch with-pprint-dispatch] [#write write] [#write-out write-out] 
 
+----
+===`*`code-dispatch`*`===
+====multimethod====
+<pre>
+Usage: *(_`*`code-dispatch`*`_ object)*
+</pre>
+<pre> The pretty print dispatch function for pretty printing Clojure code.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#317 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*code-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-circle`*`===
 ====var====
@@ -54,9 +63,10 @@ levels of nesting.</pre>
 ----
 ===`*`print-pprint-dispatch`*`===
 ====var====
-<pre> The pretty print dispatch table</pre>
+<pre> The pretty print dispatch function. Use with-pprint-dispatch or set-pprint-dispatch 
+to modify.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-pprint-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#33 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-pprint-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-pretty`*`===
 ====var====
@@ -82,6 +92,15 @@ levels of nesting.</pre>
 pretty printing the results of macro expansions</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*print-suppress-namespaces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===`*`simple-dispatch`*`===
+====multimethod====
+<pre>
+Usage: *(_`*`simple-dispatch`*`_ object)*
+</pre>
+<pre> The pretty print dispatch function for simple data structure format.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*simple-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===cl-format===
 ====function====
@@ -129,7 +148,7 @@ Usage: *(_compile-format_ format-str)*
 to cl-format just like a plain format string. Use this function for improved  
 performance when you're using the same format string repeatedly</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1718 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compile-format+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1724 Source] [http://www.google.com/codesearch?hl=en&lr=&q=compile-format+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===formatter===
 ====macro====
@@ -142,7 +161,21 @@ output to a string) in which case it returns the resulting string.
  
 format-in can be either a control string or a previously compiled format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1784 Source] [http://www.google.com/codesearch?hl=en&lr=&q=formatter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1792 Source] [http://www.google.com/codesearch?hl=en&lr=&q=formatter+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===formatter-out===
+====macro====
+<pre>
+Usage: *(_formatter-out_ format-in)*
+</pre>
+<pre> Makes a function which can directly run format-in. The function is 
+fn `[`& args`]` ... and returns nil. This version of the formatter macro is 
+designed to be used with `*`out`*` set to an appropriate Writer. In particular, 
+this is meant to be used as part of a pretty printer dispatch method. 
+ 
+format-in can be either a control string or a previously compiled format.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/cl-format.clj#1806 Source] [http://www.google.com/codesearch?hl=en&lr=&q=formatter-out+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===fresh-line===
 ====function====
@@ -162,68 +195,63 @@ Usage: *(_pp_)*
 <pre> A convenience macro that pretty prints the last thing output. This is 
 exactly equivalent to (pprint `*`1).</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#209 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint===
 ====function====
 <pre>
-Usage: *(_pprint_ object & more)*
+Usage: *(_pprint_ object)
+       (_pprint_ object writer)*
 </pre>
 <pre> Pretty print object to the optional output writer. If the writer is not provided,  
 print the object to the currently bound value of `*`out`*`.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#186 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#198 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint-indent===
 ====function====
 <pre>
-Usage: *(_pprint-indent_ relative-to n & more)*
+Usage: *(_pprint-indent_ relative-to n)*
 </pre>
 <pre> Create an indent at this point in the pretty printing stream. This defines how  
 following lines are indented. relative-to can be either :block or :current depending  
 whether the indent should be computed relative to the start of the logical block or 
 the current column position. n is an offset.  
  
-Optionally, a third argument which is a stream may be used. If supplied, that is  
-the writer indented, otherwise `*`out`*` is used. 
- 
-If the requested stream is not a PrettyWriter, this function does nothing.</pre>
+Output is sent to `*`out`*` which must be a pretty printing writer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#270 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-indent+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#278 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-indent+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint-logical-block===
 ====macro====
 <pre>
-Usage: *(_pprint-logical-block_ base-stream & body)*
+Usage: *(_pprint-logical-block_ options`*` body)*
 </pre>
 <pre> Execute the body as a pretty printing logical block with output to `*`out`*` which  
-is a pretty printing writer wrapping base-stream (unless base-stream is already a pretty  
-printing writer in which case `*`out`*` is just bound to base-stream).  
+must be a pretty printing writer. When used from pprint or cl-format, this can be  
+assumed.  
  
-After the writer, the caller can optionally specify :prefix, :per-line-prefix, and 
-:suffix.</pre>
+Before the body, the caller can optionally specify options: :prefix, :per-line-prefix,  
+and :suffix.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#234 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-logical-block+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#249 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-logical-block+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint-newline===
 ====function====
 <pre>
-Usage: *(_pprint-newline_ kind & more)*
+Usage: *(_pprint-newline_ kind)*
 </pre>
 <pre> Print a conditional newline to a pretty printing stream. kind specifies if the  
 newline is :linear, :miser, :fill, or :mandatory.  
  
-Optionally, a second argument which is a stream may be used. If supplied, that is  
-the writer to which the newline is sent, otherwise `*`out`*` is used. 
- 
-If the requested stream is not a PrettyWriter, this function does nothing.</pre>
+Output is sent to `*`out`*` which must be a pretty printing writer.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#254 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-newline+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#269 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-newline+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===pprint-tab===
 ====function====
 <pre>
-Usage: *(_pprint-tab_ kind colnum colinc & more)*
+Usage: *(_pprint-tab_ kind colnum colinc)*
 </pre>
 <pre> Tab at this point in the pretty printing stream. kind specifies whether the tab 
 is :line, :section, :line-relative, or :section-relative.  
@@ -231,33 +259,43 @@ is :line, :section, :line-relative, or :section-relative.
 Colnum and colinc specify the target column and the increment to move the target 
 forward if the output is already past the original target. 
  
-Optionally, a fourth argument which is a stream may be used. If supplied, that is  
-the writer indented, otherwise `*`out`*` is used. 
- 
-If the requested stream is not a PrettyWriter, this function does nothing. 
+Output is sent to `*`out`*` which must be a pretty printing writer. 
  
 THIS FUNCTION IS NOT YET IMPLEMENTED.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#289 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-tab+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#290 Source] [http://www.google.com/codesearch?hl=en&lr=&q=pprint-tab+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===set-pprint-dispatch===
 ====function====
 <pre>
-Usage: *(_set-pprint-dispatch_ table)*
+Usage: *(_set-pprint-dispatch_ function)*
 </pre>
-<pre> Set the pretty print dispatch table to TABLE. Currently the supported values are 
-`*`simple-dispatch`*` or `*`code-dispatch`*`. In the future, this will support custom tables.</pre>
+<pre> Set the pretty print dispatch function to a function matching (fn `[`obj`]` ...) 
+where obj is the object to pretty print. That function will be called with `*`out`*` set 
+to a pretty printing writer to which it should do its printing. 
+ 
+For example functions, see `*`simple-dispatch`*` and `*`code-dispatch`*` in  
+clojure.contrib.pprint.dispatch.clj.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#203 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#214 Source] [http://www.google.com/codesearch?hl=en&lr=&q=set-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===use-method===
+====function====
+<pre>
+Usage: *(_use-method_ multifn dispatch-val func)*
+</pre>
+<pre> Installs a function as a new method of multimethod associated with dispatch-value. </pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=use-method+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-pprint-dispatch===
 ====macro====
 <pre>
-Usage: *(_with-pprint-dispatch_ table & body)*
+Usage: *(_with-pprint-dispatch_ function & body)*
 </pre>
-<pre> Execute body with the pretty print dispatch table bound to table.</pre>
+<pre> Execute body with the pretty print dispatch function bound to function.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#210 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#225 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-pprint-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===write===
 ====function====
@@ -284,4 +322,22 @@ The following keyword arguments can be passed with values:
  
   `*` `=` not yet supported</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#158 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===write-out===
+====function====
+<pre>
+Usage: *(_write-out_ object)*
+</pre>
+<pre> Write an object to `*`out`*` subject to the current bindings of the printer control  
+variables. Use the kw-args argument to override individual variables for this call (and  
+any recursive calls). 
+ 
+`*`out`*` must be a PrettyWriter if pretty printing is enabled. This is the responsibility 
+of the caller. 
+ 
+This method is primarily intended for use by pretty print dispatch functions that  
+already know that the pretty printer will have set up their environment appropriately. 
+Normal library clients should use the standard "write" interface. </pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#133 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-out+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
