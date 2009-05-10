@@ -17,8 +17,26 @@ Usage:
   (:use clojure.contrib.json.write))
 }}}
 ==Overview==
-<pre> JavaScript Object Notation (JSON) generator</pre>
-See also: [http://www.json.org JSON Home Page]
+<pre> JavaScript Object Notation (JSON) generator. 
+ 
+This is a low-level implementation of JSON.  It supports basic types, 
+arrays, Collections, and Maps.  You can extend it to handle new types 
+by adding methods to print-json. 
+ 
+This library does NOT attempt to preserve round-trip equality between 
+JSON and Clojure data types.  That is, if you write a JSON string with 
+this library, then read it back with clojure.contrib.json.read, you 
+won't necessarily get the exact same data structure. 
+ 
+If you want round-trip equality and/or indented output, try Dan 
+Larkin's clojure-json library at 
+http://github.com/danlarkin/clojure-json 
+ 
+This implementation attempts to follow the description of JSON at 
+<http://json.org/>.  Maps become JSON objects, all other collections 
+become JSON arrays.  JSON object keys are always converted to strings. 
+Within strings, all non-ASCII characters are hexadecimal escaped.</pre>
+See also: [http://json.org/ JSON Home Page]
 
 
 
@@ -32,18 +50,19 @@ Shortcuts:
 <pre>
 Usage: *(_json-str_ x)*
 </pre>
-<pre> Converts Clojure data structures to a JSON-formatted string.</pre>
+<pre> Converts x to a JSON-formatted string.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#77 Source] [http://www.google.com/codesearch?hl=en&lr=&q=json-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#123 Source] [http://www.google.com/codesearch?hl=en&lr=&q=json-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-json===
 ====multimethod====
 <pre>
 Usage: *(_print-json_ x)*
 </pre>
-<pre> Prints Clojure data types as JSON.  Nil becomes JSON null. 
-Keywords become strings, without the leading colon.  Maps become 
-JSON objects, all other collection types become JSON arrays. 
-Strings and numbers print as with pr.</pre>
+<pre> Prints x as JSON.  Nil becomes JSON null.  Keywords become 
+strings, without the leading colon.  Maps become JSON objects, all 
+other collection types become JSON arrays.  Java arrays become JSON 
+arrays.  Unicode characters in strings are escaped as \uXXXX. 
+Numbers print as with pr.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

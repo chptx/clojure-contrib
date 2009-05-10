@@ -255,7 +255,7 @@ API Overview [FindNamespacesApiDoc here]
 
 <pre> Search for ns declarations in dirs, JARs, or CLASSPATH</pre>
 Public Variables and Functions:
-[FindNamespacesApiDoc#clojure-source-file? clojure-source-file?] [FindNamespacesApiDoc#clojure-sources-in-jar clojure-sources-in-jar] [FindNamespacesApiDoc#find-clojure-sources-in-dir find-clojure-sources-in-dir] [FindNamespacesApiDoc#find-namespaces-in-dir find-namespaces-in-dir] [FindNamespacesApiDoc#find-namespaces-in-jarfile find-namespaces-in-jarfile] [FindNamespacesApiDoc#find-namespaces-on-classpath find-namespaces-on-classpath] [FindNamespacesApiDoc#find-ns-decls-in-dir find-ns-decls-in-dir] [FindNamespacesApiDoc#find-ns-decls-in-jarfile find-ns-decls-in-jarfile] [FindNamespacesApiDoc#find-ns-decls-on-classpath find-ns-decls-on-classpath] [FindNamespacesApiDoc#read-file-ns-decl read-file-ns-decl] [FindNamespacesApiDoc#read-ns-decl read-ns-decl] [FindNamespacesApiDoc#read-ns-decl-from-jarfile-entry read-ns-decl-from-jarfile-entry] 
+[FindNamespacesApiDoc#clojure-source-file? clojure-source-file?] [FindNamespacesApiDoc#clojure-sources-in-jar clojure-sources-in-jar] [FindNamespacesApiDoc#comment? comment?] [FindNamespacesApiDoc#find-clojure-sources-in-dir find-clojure-sources-in-dir] [FindNamespacesApiDoc#find-namespaces-in-dir find-namespaces-in-dir] [FindNamespacesApiDoc#find-namespaces-in-jarfile find-namespaces-in-jarfile] [FindNamespacesApiDoc#find-namespaces-on-classpath find-namespaces-on-classpath] [FindNamespacesApiDoc#find-ns-decls-in-dir find-ns-decls-in-dir] [FindNamespacesApiDoc#find-ns-decls-in-jarfile find-ns-decls-in-jarfile] [FindNamespacesApiDoc#find-ns-decls-on-classpath find-ns-decls-on-classpath] [FindNamespacesApiDoc#ns-decl? ns-decl?] [FindNamespacesApiDoc#read-file-ns-decl read-file-ns-decl] [FindNamespacesApiDoc#read-ns-decl read-ns-decl] [FindNamespacesApiDoc#read-ns-decl-from-jarfile-entry read-ns-decl-from-jarfile-entry] 
 
 ----
 ===gen-html-docs===
@@ -432,8 +432,26 @@ Public Variables and Functions:
 by Stuart Sierra<br>
 API Overview [JsonWriteApiDoc here]
 
-<pre> JavaScript Object Notation (JSON) generator</pre>
-See also: [http://www.json.org JSON Home Page]
+<pre> JavaScript Object Notation (JSON) generator. 
+ 
+This is a low-level implementation of JSON.  It supports basic types, 
+arrays, Collections, and Maps.  You can extend it to handle new types 
+by adding methods to print-json. 
+ 
+This library does NOT attempt to preserve round-trip equality between 
+JSON and Clojure data types.  That is, if you write a JSON string with 
+this library, then read it back with clojure.contrib.json.read, you 
+won't necessarily get the exact same data structure. 
+ 
+If you want round-trip equality and/or indented output, try Dan 
+Larkin's clojure-json library at 
+http://github.com/danlarkin/clojure-json 
+ 
+This implementation attempts to follow the description of JSON at 
+<http://json.org/>.  Maps become JSON objects, all other collections 
+become JSON arrays.  JSON object keys are always converted to strings. 
+Within strings, all non-ASCII characters are hexadecimal escaped.</pre>
+See also: [http://json.org/ JSON Home Page]
 
 Public Variables and Functions:
 [JsonWriteApiDoc#json-str json-str] [JsonWriteApiDoc#print-json print-json] 
