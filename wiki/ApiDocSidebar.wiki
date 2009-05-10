@@ -57,6 +57,7 @@ namespace.
 [ProbabilitiesFiniteDistributionsApiDoc probabilities.finite-distributions]<br/>
 [ProbabilitiesMonteCarloApiDoc probabilities.monte-carlo]<br/>
 [ProbabilitiesRandomNumbersApiDoc probabilities.random-numbers]<br/>
+[ProfileApiDoc profile]<br/>
 [PrxmlApiDoc prxml]<br/>
 [ReplLnApiDoc repl-ln]<br/>
 [ReplUtilsApiDoc repl-utils]<br/>

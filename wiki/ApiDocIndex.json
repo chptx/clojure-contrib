@@ -446,6 +446,14 @@
    "doc":
    "Random number streams\n\n           This library provides random number generators with a common\n           stream interface. They all produce pseudo-random numbers that are\n           uniformly distributed in the interval [0, 1), i.e. 0 is a\n           possible value but 1 isn't. For transformations to other\n           distributions, see clojure.contrib.probabilities.monte-carlo.\n\n           At the moment, the only generator provided is a rather simple\n           linear congruential generator."},
   {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/profile.clj",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc",
+   "name":"clojure.contrib.profile",
+   "author":"Stuart Sierra",
+   "doc":
+   "Simple code profiling & timing measurement.\n\nWrap any section of code in the prof macro, giving it a name, like this:\n\n       (defn my-function [x y]\n         (let [sum (prof :addition (+ x y))\n               product (prof :multiplication (* x y))]\n           [sum product]))\n\nThe run your code in the profile macro, like this:\n\n       (profile (dotimes [i 10000] (my-function 3 4)))\n\nWhich prints a report for each named section of code:\n\n          Name      mean       min       max     count       sum\n      addition       265         0     37000     10000   2655000\nmultiplication       274         0     53000     10000   2747000\n\nTimes are measured in nanoseconds, to the maximum precision available\nunder the JVM.  See the function documentation for more details.\n"},
+  {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc",
@@ -3579,6 +3587,52 @@
    "name":"rand-stream",
    "doc":
    "A random number stream based on clojure.core/rand. Note that this\n   generator uses an internal mutable state. The state is thus not stored\n   in the stream object and cannot be restored."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/profile.clj#42",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc#_*enable-profiling_*",
+   "name":"*enable-profiling*",
+   "doc":
+   "Set this to false before loading/compiling to omit\nprofiling code."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/profile.clj#95",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc#print-summary",
+   "name":"print-summary",
+   "arglists":[["profile-summary"]],
+   "doc":"Prints a table of the results returned by summarize."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/profile.clj#45",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc#prof",
+   "name":"prof",
+   "arglists":[["name", "&", "body"]],
+   "doc":
+   "If *enable-profiling* is true, wraps body in profiling code.\n  Returns the result of body. Profile timings will be stored in\n  *profile-data* using name, which must be a keyword, as the key.\n  Timings are measured with System/nanoTime."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/profile.clj#106",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc#profile",
+   "name":"profile",
+   "arglists":[["&", "body"]],
+   "doc":
+   "Runs body with profiling enabled, then prints a summary of\n  results.  Returns nil."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/profile.clj#73",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc#summarize",
+   "name":"summarize",
+   "arglists":[["profile-data"]],
+   "doc":
+   "Takes the raw data returned by with-profile-data and returns a map\n  from names to summary statistics.  Each value in the map will look\n  like:\n\n     {:mean ..., :min ..., :max ..., :count ..., :sum ...}\n\n  :mean, :min, and :max are how long the profiled section took to run,\n  in nanoseconds.  :count is the total number of times the profiled\n  section was executed.  :sum is the total amount of time spent in the\n  profiled section, in nanoseconds."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/profile.clj#63",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc#with-profile-data",
+   "name":"with-profile-data",
+   "arglists":[["&", "body"]],
+   "doc":
+   "Executes body with *profile-data* bound to an atom of a new map.\n  Returns the raw profile data as a map.  Keys in the map are profile\n  names (keywords), and values are lists of elapsed time, in\n  nanoseconds."},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#32",
    "wiki-url":
