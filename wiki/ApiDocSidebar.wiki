@@ -40,7 +40,6 @@ namespace.
 [JarApiDoc jar]<br/>
 [JavaUtilsApiDoc java-utils]<br/>
 [JavadocBrowseApiDoc javadoc.browse]<br/>
-[JavalogApiDoc javalog]<br/>
 [JsonReadApiDoc json.read]<br/>
 [JsonWriteApiDoc json.write]<br/>
 [LazySeqsApiDoc lazy-seqs]<br/>

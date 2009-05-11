@@ -265,13 +265,6 @@
    "author":"Christophe Grand",
    "doc":"Start a web browser from Clojure"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj",
-   "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc",
-   "name":"clojure.contrib.javalog",
-   "author":"Stuart Sierra",
-   "doc":"Convenient access to java.util.logging in Clojure"},
-  {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJsonReadApiDoc",
@@ -2552,61 +2545,6 @@
    "name":"open-url-in-swing",
    "arglists":[["url"]],
    "doc":"Opens url (a string) in a Swing window."},
-  {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#42",
-   "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#_*logger_*",
-   "name":"*logger*",
-   "doc":
-   "The current java.util.logging.Logger.  By default, the\n          global logger, modified by 'with-logger'."},
-  {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#86",
-   "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#add-log-file",
-   "name":"add-log-file",
-   "arglists":
-   [["logger-name", "filename"], ["logger-name", "filename", "level"]],
-   "doc":
-   "Attaches a log file, using SimpleFormatter, with the given level,\n  to the named logger.  'level' defaults to ALL.  Note: multiple\n  invocations will create multiple log files, with numbers appended to\n  the names."},
-  {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#108",
-   "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#log",
-   "name":"log",
-   "arglists":[["level", "&", "strings"]],
-   "doc":
-   "Logs a message to *logger*.  'level' is expanded with 'log-level'.\n  Example: (log :severe \"Bad argument: \" object)"},
-  {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#51",
-   "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#log-level",
-   "name":"log-level",
-   "arglists":[["level"]],
-   "doc":
-   "Translates 'level' (a lower-case keyword) into a static field of\n  java.util.logging.Level, by name.  \n\n  Example: (log-level :severe)  =>  java.util.logging.Level.SEVERE\n\n  If 'level' is not a keyword, it is assumed to be a user-defined\n  instance of java.util.logging.Level and is returned unchanged."},
-  {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#65",
-   "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#root-logger",
-   "name":"root-logger",
-   "arglists":[[], ["logger"]],
-   "doc":"Returns the root Logger instance."},
-  {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#73",
-   "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#set-console-log-level",
-   "name":"set-console-log-level",
-   "arglists":[["level"]],
-   "doc":
-   "Attempts to set the level of the current logger and the root\n  ConsoleHandler to 'level' (a java.util.logging.Level).  Useful for\n  debugging at the REPL."},
-  {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/javalog.clj#100",
-   "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavalogApiDoc#with-logger",
-   "name":"with-logger",
-   "arglists":[["logger-name", "level", "&", "body"]],
-   "doc":
-   "Executes 'body' with *logger* bound to a logger with the given name\n  and level.  'level' is expanded with 'log-level'."},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#133",
    "wiki-url":

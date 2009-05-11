@@ -400,15 +400,6 @@ Public Variables and Functions:
 [JavadocBrowseApiDoc#open-url-in-browser open-url-in-browser] [JavadocBrowseApiDoc#open-url-in-swing open-url-in-swing] 
 
 ----
-===javalog===
-by Stuart Sierra<br>
-API Overview [JavalogApiDoc here]
-
-<pre> Convenient access to java.util.logging in Clojure</pre>
-Public Variables and Functions:
-[JavalogApiDoc#_*logger_* *logger*] [JavalogApiDoc#add-log-file add-log-file] [JavalogApiDoc#log log] [JavalogApiDoc#log-level log-level] [JavalogApiDoc#root-logger root-logger] [JavalogApiDoc#set-console-log-level set-console-log-level] [JavalogApiDoc#with-logger with-logger] 
-
-----
 ===json.read===
 by Stuart Sierra<br>
 API Overview [JsonReadApiDoc here]
