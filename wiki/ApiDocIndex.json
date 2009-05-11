@@ -3338,7 +3338,7 @@
    "doc":
    "Write an object to *out* subject to the current bindings of the printer control \nvariables. Use the kw-args argument to override individual variables for this call (and \nany recursive calls).\n\n*out* must be a PrettyWriter if pretty printing is enabled. This is the responsibility\nof the caller.\n\nThis method is primarily intended for use by pretty print dispatch functions that \nalready know that the pretty printer will have set up their environment appropriately.\nNormal library clients should use the standard \"write\" interface. "},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#149",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#148",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#certainly",
    "name":"certainly",
@@ -3361,7 +3361,7 @@
    "doc":
    "Variant of the dist monad that can handle undefined values."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#163",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#162",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#cond-prob",
    "name":"cond-prob",
@@ -3376,13 +3376,21 @@
    "doc":
    "Monad describing computations on fuzzy quantities, represented by a finite\n   probability distribution for the possible values. A distribution is\n   represented by a map from values to probabilities."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#154",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#153",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#join-with",
    "name":"join-with",
    "arglists":[["f", "dist1", "dist2"]],
    "doc":
    "Returns the distribution of (f x y) with x from dist1 and y from dist2."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#136",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#make-distribution",
+   "name":"make-distribution",
+   "arglists":[["coll", "f"]],
+   "doc":
+   "Returns the distribution in which each element x of the collection\n   has a probability proportional to (f x)"},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#72",
    "wiki-url":
@@ -3392,7 +3400,7 @@
    "doc":
    "Convert a weight map (e.g. a map of counter values) to a distribution\n   by multiplying with a normalization factor. If the map has a key\n   :total, its value is assumed to be the sum over all the other values and\n   it is used for normalization. Otherwise, the sum is calculated\n   explicitly. The :total key is removed from the resulting distribution."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#200",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#199",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#prob",
    "name":"prob",
@@ -3408,7 +3416,7 @@
    "doc":
    "Return a distribution in which each of the elements of coll\n   has the same probability."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#141",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#142",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#zipf",
    "name":"zipf",
