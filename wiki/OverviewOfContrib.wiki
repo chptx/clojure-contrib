@@ -648,7 +648,7 @@ API Overview [ProbabilitiesFiniteDistributionsApiDoc here]
 This library defines a monad for combining finite probability 
 distributions.</pre>
 Public Variables and Functions:
-[ProbabilitiesFiniteDistributionsApiDoc#certainly certainly] [ProbabilitiesFiniteDistributionsApiDoc#choose choose] [ProbabilitiesFiniteDistributionsApiDoc#cond-dist-m cond-dist-m] [ProbabilitiesFiniteDistributionsApiDoc#cond-prob cond-prob] [ProbabilitiesFiniteDistributionsApiDoc#dist-m dist-m] [ProbabilitiesFiniteDistributionsApiDoc#join-with join-with] [ProbabilitiesFiniteDistributionsApiDoc#normalize normalize] [ProbabilitiesFiniteDistributionsApiDoc#prob prob] [ProbabilitiesFiniteDistributionsApiDoc#uniform uniform] 
+[ProbabilitiesFiniteDistributionsApiDoc#certainly certainly] [ProbabilitiesFiniteDistributionsApiDoc#choose choose] [ProbabilitiesFiniteDistributionsApiDoc#cond-dist-m cond-dist-m] [ProbabilitiesFiniteDistributionsApiDoc#cond-prob cond-prob] [ProbabilitiesFiniteDistributionsApiDoc#dist-m dist-m] [ProbabilitiesFiniteDistributionsApiDoc#join-with join-with] [ProbabilitiesFiniteDistributionsApiDoc#normalize normalize] [ProbabilitiesFiniteDistributionsApiDoc#prob prob] [ProbabilitiesFiniteDistributionsApiDoc#uniform uniform] [ProbabilitiesFiniteDistributionsApiDoc#zipf zipf] 
 
 ----
 ===probabilities.monte-carlo===

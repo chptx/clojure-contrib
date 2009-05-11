@@ -674,6 +674,7 @@ Shortcuts:
 ==Z==
 <pre>
 [GenericComparisonApiDoc#zero? zero?]                         multimethod  generic.comparison Return true of x is zero..
+[ProbabilitiesFiniteDistributionsApiDoc#zipf zipf]                          function     probabilities.finite-distributions Returns the Zipf distribution in w...
 </pre>
 ==Other==
 <pre>

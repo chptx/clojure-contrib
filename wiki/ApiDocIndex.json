@@ -3338,7 +3338,7 @@
    "doc":
    "Write an object to *out* subject to the current bindings of the printer control \nvariables. Use the kw-args argument to override individual variables for this call (and \nany recursive calls).\n\n*out* must be a PrettyWriter if pretty printing is enabled. This is the responsibility\nof the caller.\n\nThis method is primarily intended for use by pretty print dispatch functions that \nalready know that the pretty printer will have set up their environment appropriately.\nNormal library clients should use the standard \"write\" interface. "},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#108",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#149",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#certainly",
    "name":"certainly",
@@ -3361,7 +3361,7 @@
    "doc":
    "Variant of the dist monad that can handle undefined values."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#122",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#163",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#cond-prob",
    "name":"cond-prob",
@@ -3376,7 +3376,7 @@
    "doc":
    "Monad describing computations on fuzzy quantities, represented by a finite\n   probability distribution for the possible values. A distribution is\n   represented by a map from values to probabilities."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#108",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#154",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#join-with",
    "name":"join-with",
@@ -3392,7 +3392,7 @@
    "doc":
    "Convert a weight map (e.g. a map of counter values) to a distribution\n   by multiplying with a normalization factor. If the map has a key\n   :total, its value is assumed to be the sum over all the other values and\n   it is used for normalization. Otherwise, the sum is calculated\n   explicitly. The :total key is removed from the resulting distribution."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#159",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#200",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#prob",
    "name":"prob",
@@ -3407,6 +3407,14 @@
    "arglists":[["coll"]],
    "doc":
    "Return a distribution in which each of the elements of coll\n   has the same probability."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/finite_distributions.clj#141",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProbabilitiesFiniteDistributionsApiDoc#zipf",
+   "name":"zipf",
+   "arglists":[["s", "n"]],
+   "doc":
+   "Returns the Zipf distribution in which the numbers k=1..n have\n   probabilities proportional to 1/k^s."},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/probabilities/monte_carlo.clj#86",
    "wiki-url":
@@ -3943,7 +3951,7 @@
    "doc":
    "Returns the current database connection (or throws if there is none)"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#97",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#101",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#create-table",
    "name":"create-table",
@@ -3951,7 +3959,7 @@
    "doc":
    "Creates a table on the open database connection given a table name and\n  specs. Each spec is either a column spec: a vector containing a column\n  name and optionally a type and other constraints, or a table-level\n  constraint: a vector containing words that express the constraint. All\n  words used to describe the table may be supplied as strings or keywords."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#151",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#155",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#delete-rows",
    "name":"delete-rows",
@@ -3959,14 +3967,14 @@
    "doc":
    "Deletes rows from a table. where-params is a vector containing a string\n  providing the (optionally parameterized) selection criteria followed by\n  values for any parameters."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#75",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#79",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#do-commands",
    "name":"do-commands",
    "arglists":[["&", "commands"]],
    "doc":"Executes SQL commands on the open database connection."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#84",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#88",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#do-prepared",
    "name":"do-prepared",
@@ -3974,7 +3982,7 @@
    "doc":
    "Executes an (optionally parameterized) SQL prepared statement on the\n  open database connection. Each param-group is a seq of values for all of\n  the parameters."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#113",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#117",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#drop-table",
    "name":"drop-table",
@@ -3990,7 +3998,7 @@
    "doc":
    "Returns the current database connection (or nil if there is none)"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#144",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#148",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#insert-records",
    "name":"insert-records",
@@ -3998,7 +4006,7 @@
    "doc":
    "Inserts records into a table. records are maps from strings or\n  keywords (identifying columns) to values."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#138",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#142",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#insert-rows",
    "name":"insert-rows",
@@ -4006,7 +4014,7 @@
    "doc":
    "Inserts complete rows into a table. Each row is a vector of values for\n  each of the table's columns in order."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#120",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#124",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#insert-values",
    "name":"insert-values",
@@ -4014,7 +4022,7 @@
    "doc":
    "Inserts rows into a table with values for specified columns only.\n  column-names is a vector of strings or keywords identifying columns. Each\n  value-group is a vector containing a values for each column in\n  order. When inserting complete rows (all columns), consider using\n  insert-rows instead."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#69",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#73",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#is-rollback-only",
    "name":"is-rollback-only",
@@ -4022,7 +4030,7 @@
    "doc":
    "Returns true if the outermost transaction will rollback rather than\n  commit when complete"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#63",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#67",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#set-rollback-only",
    "name":"set-rollback-only",
@@ -4030,7 +4038,7 @@
    "doc":
    "Marks the outermost transaction such that it will rollback rather than\n  commit when complete"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#52",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#56",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#transaction",
    "name":"transaction",
@@ -4038,7 +4046,7 @@
    "doc":
    "Evaluates body as a transaction on the open database connection. Any\n  nested transactions are absorbed into the outermost transaction. By\n  default, all database updates are committed together as a group after\n  evaluating the outermost body, or rolled back on any uncaught\n  exception. If set-rollback-only is called within scope of the outermost\n  transaction, the entire transaction will be rolled back rather than\n  committed when complete."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#176",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#180",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#update-or-insert-values",
    "name":"update-or-insert-values",
@@ -4046,7 +4054,7 @@
    "doc":
    "Updates values on selected rows in a table, or inserts a new row when no\n  existing row matches the selection criteria. where-params is a vector\n  containing a string providing the (optionally parameterized) selection\n  criteria followed by values for any parameters. record is a map from\n  strings or keywords (identifying columns) to updated values."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#162",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#166",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#update-values",
    "name":"update-values",
@@ -4060,9 +4068,9 @@
    "name":"with-connection",
    "arglists":[["db-spec", "&", "body"]],
    "doc":
-   "Evaluates body in the context of a new connection to a database then\n  closes the connection. db-spec is a map containing values for one of the\n  following parameter sets:\n\n  DataSource:\n    :datasource  (required) a javax.sql.DataSource\n    :username    (optional) a String\n    :password    (optional) a String\n\n  DriverManager:\n    :classname   (required) a String, the jdbc driver class name\n    :subprotocol (required) a String, the jdbc subprotocol\n    :subname     (required) a String, the jdbc subname\n    (others)     (optional) passed to the driver as properties."},
+   "Evaluates body in the context of a new connection to a database then\n  closes the connection. db-spec is a map containing values for one of the\n  following parameter sets:\n\n  DriverManager:\n    :classname   (required) a String, the jdbc driver class name\n    :subprotocol (required) a String, the jdbc subprotocol\n    :subname     (required) a String, the jdbc subname\n    (others)     (optional) passed to the driver as properties.\n\n  DataSource:\n    :datasource  (required) a javax.sql.DataSource\n    :username    (optional) a String\n    :password    (optional) a String, required if :username is supplied\n\n  JNDI:\n    :name        (required) a String or javax.naming.Name\n    :environment (optional) a java.util.Map"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#189",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql.clj#193",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlApiDoc#with-query-results",
    "name":"with-query-results",
@@ -4070,7 +4078,7 @@
    "doc":
    "Executes a query, then evaluates body with results bound to a seq of the\n  results. sql-params is a vector containing a string providing\n  the (optionally parameterized) SQL query followed by values for any\n  parameters."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#32",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#38",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#connection_*",
    "name":"connection*",
@@ -4078,7 +4086,7 @@
    "doc":
    "Returns the current database connection (or throws if there is none)"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#27",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#33",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#find-connection_*",
    "name":"find-connection*",
@@ -4086,33 +4094,33 @@
    "doc":
    "Returns the current database connection (or nil if there is none)"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#45",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#51",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#get-connection",
    "name":"get-connection",
    "arglists":
    [[{"keys":
-      ["datasource", "username", "password", "classname",
-       "subprotocol", "subname"],
+      ["classname", "subprotocol", "subname", "datasource", "username",
+       "password", "name", "environment"],
       "as":"db-spec"}]],
    "doc":
-   "Creates a connection to a database. db-spec is a map containing values\n  for one of the following parameter sets:\n\n  DataSource:\n    :datasource  (required) a javax.sql.DataSource\n    :username    (optional) a String\n    :password    (optional) a String\n\n  DriverManager:\n    :classname   (required) a String, the jdbc driver class name\n    :subprotocol (required) a String, the jdbc subprotocol\n    :subname     (required) a String, the jdbc subname\n    (others)     (optional) passed to the driver as properties."},
+   "Creates a connection to a database. db-spec is a map containing values\n  for one of the following parameter sets:\n\n  DriverManager:\n    :classname   (required) a String, the jdbc driver class name\n    :subprotocol (required) a String, the jdbc subprotocol\n    :subname     (required) a String, the jdbc subname\n    (others)     (optional) passed to the driver as properties.\n\n  DataSource:\n    :datasource  (required) a javax.sql.DataSource\n    :username    (optional) a String\n    :password    (optional) a String, required if :username is supplied\n\n  JNDI:\n    :name        (required) a String or javax.naming.Name\n    :environment (optional) a java.util.Map"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#80",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#100",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#print-sql-exception",
    "name":"print-sql-exception",
    "arglists":[["stream", "exception"]],
    "doc":"Prints the contents of an SQLException to stream"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#94",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#114",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#print-sql-exception-chain",
    "name":"print-sql-exception-chain",
    "arglists":[["stream", "exception"]],
    "doc":"Prints a chain of SQLExceptions to stream"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#102",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#122",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#print-update-counts",
    "name":"print-update-counts",
@@ -4120,21 +4128,21 @@
    "doc":
    "Prints the update counts from a BatchUpdateException to stream"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#38",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#44",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#rollback",
    "name":"rollback",
    "arglists":[[], ["val"]],
    "doc":"Accessor for the rollback flag on the current connection"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#111",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#131",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#throw-rollback",
    "name":"throw-rollback",
    "arglists":[["e"]],
    "doc":"Sets rollback and throws a wrapped exception"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#118",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#138",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#transaction_*",
    "name":"transaction*",
@@ -4142,7 +4150,7 @@
    "doc":
    "Evaluates func as a transaction on the open database connection. Any\n  nested transactions are absorbed into the outermost transaction. By\n  default, all database updates are committed together as a group after\n  evaluating the outermost body, or rolled back on any uncaught\n  exception. If rollback is set within scope of the outermost transaction,\n  the entire transaction will be rolled back rather than committed when\n  complete."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#71",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#91",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#with-connection_*",
    "name":"with-connection*",
@@ -4150,7 +4158,7 @@
    "doc":
    "Evaluates func in the context of a new connection to a database then\n  closes the connection."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#152",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#172",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlInternalApiDoc#with-query-results_*",
    "name":"with-query-results*",
