@@ -271,7 +271,7 @@
    "name":"clojure.contrib.json.read",
    "author":"Stuart Sierra",
    "doc":
-   "JavaScript Object Notation (JSON) parser\n\n           For more information on JSON, see http://www.json.org/\n\n           This library parses data in JSON format.  This is a fairly strict\n           implementation of JSON as described at json.org, not a full-fledged\n           JavaScript parser.  JavaScript functions and object constructors\n           are not supported.  Object field names must be quoted strings; they\n           may not be bare symbols."},
+   "JavaScript Object Notation (JSON) parser\n\n           For more information on JSON, see http://www.json.org/\n\n           This library parses data in JSON format.  This is a fairly strict\n           implementation of JSON as described at json.org, not a full-fledged\n           JavaScript parser.  JavaScript functions and object constructors\n           are not supported.  Object field names must be quoted strings; they\n           may not be bare symbols.\n\n           If you want to convert map keys from strings to keywords, use\n           clojure.contrib.walk/keywordize-keys\n"},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj",
    "wiki-url":
@@ -2546,7 +2546,7 @@
    "arglists":[["url"]],
    "doc":"Opens url (a string) in a Swing window."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#133",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#137",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJsonReadApiDoc#read-json",
    "name":"read-json",
@@ -2554,7 +2554,7 @@
    "doc":
    "Read the next JSON record from stream, which must be an instance of\n  java.io.PushbackReader."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#123",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/write.clj#128",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJsonWriteApiDoc#json-str",
    "name":"json-str",
