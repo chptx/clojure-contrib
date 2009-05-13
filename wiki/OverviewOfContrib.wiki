@@ -207,7 +207,7 @@ Note: this is not really "duck typing" as implemented in languages
 like Ruby.  A better name would have been "do-what-I-mean-streams" 
 or "just-give-me-a-stream", but ducks are funnier.</pre>
 Public Variables and Functions:
-[DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp_* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
+[DuckStreamsApiDoc#_*append-to-writer_* *append-to-writer*] [DuckStreamsApiDoc#append-spit append-spit] [DuckStreamsApiDoc#append-writer append-writer] [DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp_* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-append-writer with-out-append-writer] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
 
 ----
 ===error-kit===

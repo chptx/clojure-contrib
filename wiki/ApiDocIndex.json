@@ -1613,7 +1613,29 @@
    "doc":
    "To be used in macro definitions.\n   Handles optional docstrings and attribute maps for a name to be defined\n   in a list of macro arguments. If the first macro argument is a string,\n   it is added as a docstring to name and removed from the macro argument\n   list. If afterwards the first macro argument is a map, its entries are\n   added to the name's metadata map and the map is removed from the\n   macro argument list. The return value is a vector containing the name\n   with its extended metadata map and the list of unprocessed macro\n   arguments."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#69",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#126",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#_*append-to-writer_*",
+   "name":"*append-to-writer*",
+   "doc":
+   "If true, writer and spit will open files in append mode.\n Defaults to false.  Use append-writer or append-spit."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#241",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#append-spit",
+   "name":"append-spit",
+   "arglists":[["f", "content"]],
+   "doc":"Like spit but appends to file."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#193",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#append-writer",
+   "name":"append-writer",
+   "arglists":[["x"]],
+   "doc":
+   "Like writer but opens file for appending.  Does not work on streams\n  that are already open."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#71",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#file-str",
    "name":"file-str",
@@ -1621,7 +1643,7 @@
    "doc":
    "Concatenates args as strings and returns a java.io.File.  Replaces\n  all / and \\ with File/separatorChar.  Replaces ~ at the start of\n  the path with the user.home system property."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#215",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#247",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#pwd",
    "name":"pwd",
@@ -1629,7 +1651,7 @@
    "doc":
    "Returns current working directory as a String.  (Like UNIX 'pwd'.)\n  Note: In Java, you cannot change the current working directory."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#186",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#212",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#read-lines",
    "name":"read-lines",
@@ -1637,7 +1659,7 @@
    "doc":
    "Like clojure.core/line-seq but opens f with reader.  Automatically\n  closes the reader AFTER YOU CONSUME THE ENTIRE SEQUENCE."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#83",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#85",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#reader",
    "name":"reader",
@@ -1645,14 +1667,14 @@
    "doc":
    "Attempts to coerce its argument into an open\n  java.io.BufferedReader.  Argument may be an instance of Reader,\n  BufferedReader, InputStream, File, URI, URL, or String.\n\n  If argument is a String, it tries to resolve it first as a URI, then\n  as a local file name.  URIs with a 'file' protocol are converted to\n  local file names.  Uses *default-encoding* as the text encoding.\n\n  Should be used inside with-open to ensure the Reader is properly\n  closed."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#197",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#223",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#slurp_*",
    "name":"slurp*",
    "arglists":[["f"]],
    "doc":"Like clojure.core/slurp but opens f with reader."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#208",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#234",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#spit",
    "name":"spit",
@@ -1660,7 +1682,7 @@
    "doc":
    "Opposite of slurp.  Opens f with writer, writes content, then\n  closes f."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#230",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#270",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#with-in-reader",
    "name":"with-in-reader",
@@ -1668,15 +1690,22 @@
    "doc":
    "Opens a PushbackReader on f, binds it to *in*, and evaluates body."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#223",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#263",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#with-out-append-writer",
+   "name":"with-out-append-writer",
+   "arglists":[["f", "&", "body"]],
+   "doc":"Like with-out-writer but appends to file."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#255",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#with-out-writer",
    "name":"with-out-writer",
    "arglists":[["f", "&", "body"]],
    "doc":
-   "Opens a writer on f, binds it to *out*, and evalutes body."},
+   "Opens a writer on f, binds it to *out*, and evalutes body.\n  Anything printed within body will be written to f."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#175",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#201",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#write-lines",
    "name":"write-lines",
@@ -1684,7 +1713,7 @@
    "doc":
    "Writes lines (a seq) to f, separated by newlines.  f is opened with\n  writer, and automatically closed at the end of the sequence."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#125",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#132",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#writer",
    "name":"writer",
