@@ -23,7 +23,7 @@ http://www.miglayout.com/
 Example: 
  
   (use '`[`clojure.contrib.miglayout.test :as mlt :only ()`]`) 
-  (doseq `[`i (range 3)`]` (mlt/run-test i))</pre>
+  (dotimes `[`i 5`]` (mlt/run-test i))</pre>
 
 
 ==Public Variables and Functions==

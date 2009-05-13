@@ -337,7 +337,7 @@
    "name":"clojure.contrib.miglayout",
    "author":"Stephen C. Gilardi",
    "doc":
-   "Clojure support for the MiGLayout layout manager\nhttp://www.miglayout.com/\n\nExample:\n\n  (use '[clojure.contrib.miglayout.test :as mlt :only ()])\n  (doseq [i (range 3)] (mlt/run-test i))\n\n"},
+   "Clojure support for the MiGLayout layout manager\nhttp://www.miglayout.com/\n\nExample:\n\n  (use '[clojure.contrib.miglayout.test :as mlt :only ()])\n  (dotimes [i 5] (mlt/run-test i))\n\n"},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/internal.clj",
    "wiki-url":
