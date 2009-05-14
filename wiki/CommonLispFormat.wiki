@@ -1,8 +1,9 @@
 #summary Documentation for the Common Lisp-compatible format function
+<wiki:toc max_depth="4" />
 
-=== Common Lisp-compatible Format function ===
+= Common Lisp-compatible Format function =
 cl-format is an implementation of the incredibly baroque Common Lisp format function as specified 
-in [http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000 _Common Lisp the Language_, 2nd edition, Chapter 22].
+in [http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000 Common Lisp, the Language, 2nd edition, Chapter 22].
 
 Format gives you an easy and powerful way to format text and data for output. It supports rich 
 formatting of strings and numbers, loops, conditionals, embedded formats, etc. It is really a 
@@ -11,11 +12,11 @@ domain-specific language for formatting.
 This implementation for clojure has the following goals:
 
  * Support the full feature set of the Common Lisp format function (including
-the X3J13 extensions) with the only exception 
-being concepts that make no sense or are differently interpreted in Clojure.
+ the X3J13 extensions) with the only exception 
+ being concepts that make no sense or are differently interpreted in Clojure.
  * Make porting code from Common Lisp easier.
  * Provide a more native feeling solution for Clojure programmers than the Java format method and
-its relatives.
+ its relatives.
  * Be fast. This includes the ability to precompile formats that are going to be used reptitively.
  * Include useful error handling and comprehensive documentation.
 
@@ -43,7 +44,7 @@ you simply say:
 
 (This example is taken from 
 [http://www.gigamonkeys.com/book/ Practical Common Lisp]
- by Peter Seibel.)
+by Peter Seibel.)
 
 The corresponding output using Clojure's Java-based _format_ function
 would involve a nasty loop/recur with some code to figure out about
@@ -129,10 +130,10 @@ _true_, _false_, or _nil_. The argument _true_ is identical to using
 its result as a string rather than writing it to a stream.
 
 _format_ is either a format string or a compiled format (see
- below). The format string controls the output that's written in a way
- that's similar to (but much more powerful than) the standard Clojure
- API format function (which is based on Java's
- java.lang.String.Format).
+below). The format string controls the output that's written in a way
+that's similar to (but much more powerful than) the standard Clojure
+API format function (which is based on Java's
+java.lang.String.Format).
 
 Format strings consist of characters that are to be written to the
 output stream plus directives (which are marked by ~) as in "The
@@ -216,9 +217,9 @@ There are some more examples in the clojure.contrib.pprint.examples
 package:
 
  * hexdump - a program that uses cl-format to create a standard
-formatted hexdump of the requested stream.
+ formatted hexdump of the requested stream.
  * multiply - a function to show a formatted multipication table in a
-very "first-order" way.
+ very "first-order" way.
  * props - the show-props example shown above.
  * show_doc - some utilities for showing documentation from various name spaces.
 
@@ -236,9 +237,9 @@ Clojure has 3 different reader syntaxes for characters. The ~@c
 directive to cl-format has an argument extension to let you choose:
 
  * ~@c (with no argument) prints "\c" (backslash followed by the
-printed representation of the character or \newline, \space, \tab,
+ printed representation of the character or \newline, \space, \tab,
 \backspace, \return)
  * ~'o@c prints "\oDDD" where DDD are the octal digits representing the
-character. 
+ character. 
  * ~'u@c prints "\uXXXX" prints the hex Unicode representation of the
-character.  
+ character.  

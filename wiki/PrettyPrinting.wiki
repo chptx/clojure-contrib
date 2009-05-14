@@ -1,4 +1,6 @@
 #summary Detailed documentation for the pretty printer
+<wiki:toc max_depth="4" />
+
 = A Pretty Printer for Clojure =
 
 To use pretty printing in clojure.contrib, it is necessary to build
@@ -40,8 +42,8 @@ The pretty printer is easy to use:
     user=>
 }}}
 
-The pretty printer supports two modes: *code* which has special
-formatting for special forms and core macros and *simple* (the
+The pretty printer supports two modes: _code_ which has special
+formatting for special forms and core macros and _simple_ (the
 default) which formats the various Clojure data structures as
 appropriate for raw data. In the future, the pretty printer will be
 highly customizable, but right now it is pretty simple.
@@ -96,12 +98,12 @@ comfortably. Just type:
 }}}
 
 and you'll get a pretty printed version of the last thing output (the
-magic variable *1).
+magic variable `*`1).
 
 === Dispatch tables and code formatting ==
 
 The behavior of the pretty printer can be finely controlled through
-the use of *dispatch tables* that contain descriptions for how
+the use of _dispatch tables_ that contain descriptions for how
 different structures should be formatted. The exact design of the
 dispatch table is still evolving and is, therefore, not yet
 documented.
@@ -213,7 +215,7 @@ For example:
     user=>
 }}}
 
-=== Current limitations and future plans ==
+=== Current limitations and future plans ===
 
 This is an early version release of the pretty printer and there is
 plenty that is yet to come.
@@ -223,10 +225,8 @@ Here are some examples:
  * Support all the types and forms in Clojure (most of the way there now).
  * Support for limiting pretty printing based on line counts.
  * Support for circular and shared substructure detection.
- * Finishing the integration with the format function (support for ~/
-and tabular pretty printing).
- * Performance! (Not much thought has been made to making this go fast,
-but there are a bunch of pretty obvious speedups to be had.)
+ * Finishing the integration with the format function (support for ~/ and tabular pretty printing).
+ * Performance! (Not much thought has been made to making this go fast, but there are a bunch of pretty obvious speedups to be had.)
  * Handle Java objects intelligently
 
 Please let me know about anything that's not working right, anything that
