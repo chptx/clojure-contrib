@@ -35,8 +35,16 @@ See also: [http://www.json.org JSON Home Page]
 
 ==Public Variables and Functions==
 Shortcuts:
-[#read-json read-json] 
+[#_*json-keyword-keys_* *json-keyword-keys*] [#read-json read-json] 
 
+----
+===`*`json-keyword-keys`*`===
+====var====
+<pre> If true, JSON object keys will be converted to keywords 
+instead of strings.  Defaults to false.  There are no checks that 
+the strings form valid keywords.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*json-keyword-keys*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===read-json===
 ====function====
@@ -48,4 +56,4 @@ Usage: *(_read-json_)
 <pre> Read the next JSON record from stream, which must be an instance of 
 java.io.PushbackReader.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#137 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#143 Source] [http://www.google.com/codesearch?hl=en&lr=&q=read-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
