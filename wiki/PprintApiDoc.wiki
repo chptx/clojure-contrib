@@ -31,6 +31,12 @@ clojure.contrib wiki RSN.</pre>
 Shortcuts:
 [#_*code-dispatch_* *code-dispatch*] [#_*print-circle_* *print-circle*] [#_*print-lines_* *print-lines*] [#_*print-miser-width_* *print-miser-width*] [#_*print-pprint-dispatch_* *print-pprint-dispatch*] [#_*print-pretty_* *print-pretty*] [#_*print-right-margin_* *print-right-margin*] [#_*print-shared_* *print-shared*] [#_*print-suppress-namespaces_* *print-suppress-namespaces*] [#_*simple-dispatch_* *simple-dispatch*] [#cl-format cl-format] [#compile-format compile-format] [#formatter formatter] [#formatter-out formatter-out] [#fresh-line fresh-line] [#pp pp] [#pprint pprint] [#pprint-indent pprint-indent] [#pprint-logical-block pprint-logical-block] [#pprint-newline pprint-newline] [#pprint-tab pprint-tab] [#set-pprint-dispatch set-pprint-dispatch] [#use-method use-method] [#with-pprint-dispatch with-pprint-dispatch] [#write write] [#write-out write-out] 
 
+Variables and Functions in pprint.examples.json:
+[PprintApiDoc#dispatch-json dispatch-json] [PprintApiDoc#json-str json-str] [PprintApiDoc#print-json print-json] 
+
+Variables and Functions in pprint.examples.xml:
+[PprintApiDoc#_*html-compatible_* *html-compatible*] [PprintApiDoc#_*prxml-indent_* *prxml-indent*] [PprintApiDoc#prxml prxml] 
+
 ----
 ===`*`code-dispatch`*`===
 ====multimethod====
@@ -343,3 +349,84 @@ already know that the pretty printer will have set up their environment appropri
 Normal library clients should use the standard "write" interface. </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#135 Source] [http://www.google.com/codesearch?hl=en&lr=&q=write-out+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+==Namespace clojure.contrib.pprint.examples.json==
+<pre> Pretty printing JavaScript Object Notation (JSON) generator. 
+ 
+This is an example of using a pretty printer dispatch function to generate JSON output</pre>
+See also: [http://json.org/ JSON Home Page]
+
+----
+===dispatch-json===
+====multimethod====
+<pre>
+Usage: *(_dispatch-json_ x)*
+</pre>
+<pre> The dispatch function for printing objects as JSON</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/json.clj#28 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dispatch-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===json-str===
+====function====
+<pre>
+Usage: *(_json-str_ x)*
+</pre>
+<pre> Converts x to a JSON-formatted string.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/json.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=json-str+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===print-json===
+====function====
+<pre>
+Usage: *(_print-json_ x)*
+</pre>
+<pre> Prints x as JSON.  Nil becomes JSON null.  Keywords become 
+strings, without the leading colon.  Maps become JSON objects, all 
+other collection types become JSON arrays.  Java arrays become JSON 
+arrays.  Unicode characters in strings are escaped as \uXXXX. 
+Numbers print as with pr.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/json.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-json+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+==Namespace clojure.contrib.pprint.examples.xml==
+<pre> A version of prxml that uses a pretty print dispatch function.</pre>
+----
+===`*`html-compatible`*`===
+====var====
+<pre> If true, empty tags will have a space before the closing /></pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#27 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*html-compatible*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===`*`prxml-indent`*`===
+====var====
+<pre> The number of spaces to indent sub-tags.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#31 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*prxml-indent*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===prxml===
+====function====
+<pre>
+Usage: *(_prxml_ & args)*
+</pre>
+<pre> Print XML to `*`out`*`.  Vectors become XML tags: the first item is the 
+tag name; optional second item is a map of attributes. 
+ 
+Sequences are processed recursively, so you can use map and other 
+sequence functions inside prxml. 
+ 
+  (prxml `[`:p {:class "greet"} `[`:i "Ladies & gentlemen"`]``]`) 
+  ; `=`> <p class`=`"greet"><i>Ladies &amp; gentlemen</i></p> 
+ 
+PSEUDO-TAGS: some keywords have special meaning: 
+ 
+  :raw!      do not XML-escape contents 
+  :comment!  create an XML comment 
+  :decl!     create an XML declaration, with attributes 
+  :cdata!    create a CDATA section 
+  :doctype!  create a DOCTYPE! 
+ 
+  (prxml `[`:p `[`:raw! "<i>here & gone</i>"`]``]`) 
+  ; `=`> <p><i>here & gone</i></p> 
+ 
+  (prxml `[`:decl! {:version "1.1"}`]`) 
+  ; `=`> <?xml version`=`"1.1" encoding`=`"UTF-8"?></pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#91 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prxml+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
