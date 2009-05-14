@@ -22,9 +22,9 @@ Usage:
 2) A Common Lisp compatible format function, implemented as "cl-format" because 
    Clojure is using the name "format" for its own format. 
  
-The most complete documentation can be found at http://github.com/tomfaulhaber/cl-format 
-where the markdown README is currently displayed. I will be moving it into the 
-clojure.contrib wiki RSN.</pre>
+Complete documentation is available on the wiki at the contrib google code site.</pre>
+See also: [PrettyPrinter Documentation for the pretty printer], [CommonLispFormat Documentation for Common Lisp format function]
+
 
 
 ==Public Variables and Functions==
