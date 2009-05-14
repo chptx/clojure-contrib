@@ -17,7 +17,7 @@ This implementation for clojure has the following goals:
  * Be fast. This includes the ability to precompile formats that are going to be used reptitively.
  * Include useful error handling and comprehensive documentation.
 
-=== Why would I use cl-format? ===
+== Why would I use cl-format? ==
 
 For some people the answer to this question is that they are used to
 Common Lisp and, therefore, they already know the syntax of format
@@ -47,7 +47,7 @@ The corresponding output using Clojure's Java-based _format_ function
 would involve a nasty loop/recur with some code to figure out about
 the commas. Yuck!
 
-=== Current Status of cl-format ===
+== Current Status of cl-format ==
 
 cl-format is 100% compatible with the Common Lisp standard as
 specified in CLtLv2.
@@ -81,9 +81,9 @@ Next up:
  * Unit tests for exception conditions.
  * Interactive documentation
  
-=== How to use cl-format ===
+== How to use cl-format ==
 
-==== Loading cl-format in your program ====
+=== Loading cl-format in your program ===
 
 Once cl-format is in your path, adding it to your code is easy:
 
@@ -112,7 +112,7 @@ From the REPL, you can grab it using (use):
     (use 'clojure.contrib.pprint)
 }}}
 
-==== Calling cl-format ====
+=== Calling cl-format ===
 
 cl-format is a standard clojure function that takes a variable number
 of arguments. You call it like this:
@@ -139,7 +139,7 @@ answer is ~,2f". Format strings are documented in detail in
 
 _args_ is a set of arguments whose use is defined by the format.
 
-==== Compiled formats ====
+=== Compiled formats ===
 
 When you use a format string many times (for example, when you're outputting
 in a loop), you can improve your performance by compiling the format
@@ -157,7 +157,7 @@ For example:
         (cl-format log-format m d y h min am? msg)))
 }}}
  
-=== Using column aware streams across format invocations === 
+== Using column aware streams across format invocations == 
 
 Writers in Java have no real idea of current column or device page width, so the format
 directives that want to work relative to the current position on the
@@ -197,7 +197,7 @@ as a table (returning the result as a string):
 The constructor to PrettyWriter takes the Writer it's wrapping and
 (optionally) the page width (in columns) for use with ~<...~>. 
 
-=== Examples ===
+== Examples ==
 
 The following function uses cl-format to dump a columnized table of the Java system properties:
 
@@ -218,7 +218,7 @@ package:
  * props - the show-props example shown above.
  * show_doc - some utilities for showing documentation from various name spaces.
 
-=== Differences from the Common Lisp format function ===
+== Differences from the Common Lisp format function ==
 
 The floating point directives that show exponents (~E, ~G) show E for
 the exponent character in all cases (unless overridden with an
