@@ -645,7 +645,7 @@ API Overview [PprintApiDoc here]
    Clojure is using the name "format" for its own format. 
  
 Complete documentation is available on the wiki at the contrib google code site.</pre>
-See also: [PrettyPrinter Documentation for the pretty printer], [CommonLispFormat Documentation for Common Lisp format function]
+See also: [PrettyPrinting Documentation for the pretty printer], [CommonLispFormat Documentation for Common Lisp format function]
 
 Public Variables and Functions:
 [PprintApiDoc#_*code-dispatch_* *code-dispatch*] [PprintApiDoc#_*print-circle_* *print-circle*] [PprintApiDoc#_*print-lines_* *print-lines*] [PprintApiDoc#_*print-miser-width_* *print-miser-width*] [PprintApiDoc#_*print-pprint-dispatch_* *print-pprint-dispatch*] [PprintApiDoc#_*print-pretty_* *print-pretty*] [PprintApiDoc#_*print-right-margin_* *print-right-margin*] [PprintApiDoc#_*print-shared_* *print-shared*] [PprintApiDoc#_*print-suppress-namespaces_* *print-suppress-namespaces*] [PprintApiDoc#_*simple-dispatch_* *simple-dispatch*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#formatter-out formatter-out] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#use-method use-method] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] [PprintApiDoc#write-out write-out] 
