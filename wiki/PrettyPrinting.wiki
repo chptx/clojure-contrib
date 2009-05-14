@@ -1,4 +1,5 @@
-== A Pretty Printer for Clojure ==
+#summary Detailed documentation for the pretty printer
+= A Pretty Printer for Clojure =
 
 To use pretty printing in clojure.contrib, it is necessary to build
 clojure.contrib with compiled classes. To do this, you must tell
@@ -11,10 +12,10 @@ ant where to find clojure.jar. For me, this looks like:
 because I keep clojure source and clojure.contrib source right next to
 each other. Just point the pathname to wherever you keep clojure.jar.
 
-=== Overview ===
+== Overview ==
 
-This library adds two new features to Clojure: a generalized pretty
-printer and a Common Lisp-compatible format function.
+This library adds a new feature to Clojure: a generalized pretty
+printer.
 
 The pretty printer is easy to use:
 
@@ -62,7 +63,7 @@ Future development is guided by those using it, so send feedback about
 what's working and not working for you and what you'd like to see in the 
 pretty printer.
 
-=== Pretty Printing ===
+== Pretty Printing ==
 
 Pretty printing is primarily implemented with the function
 pprint. pprint takes a single argument and formats it according to the
@@ -97,7 +98,7 @@ comfortably. Just type:
 and you'll get a pretty printed version of the last thing output (the
 magic variable *1).
 
-==== Dispatch tables and code formatting ====
+=== Dispatch tables and code formatting ==
 
 The behavior of the pretty printer can be finely controlled through
 the use of *dispatch tables* that contain descriptions for how
@@ -145,7 +146,7 @@ There are two ways to set the current dispatch: set it to a specific
 table permanantly with set-pprint-dispatch or bind it with
 with-pprint-dispatch (as shown in the example above).
 
-==== Control variables ====
+=== Control variables ===
 
 The operation of pretty printing is also controlled by a set of variables
 that control general parameters of how the pretty printer makes
@@ -212,21 +213,21 @@ For example:
     user=>
 }}}
 
-==== Current limitations and future plans ====
+=== Current limitations and future plans ==
 
 This is an early version release of the pretty printer and there is
 plenty that is yet to come.
 
 Here are some examples:
 
-* Support all the types and forms in Clojure (most of the way there now).
-* Support for limiting pretty printing based on line counts.
-* Support for circular and shared substructure detection.
-* Finishing the integration with the format function (support for ~/
+ * Support all the types and forms in Clojure (most of the way there now).
+ * Support for limiting pretty printing based on line counts.
+ * Support for circular and shared substructure detection.
+ * Finishing the integration with the format function (support for ~/
 and tabular pretty printing).
-* Performance! (Not much thought has been made to making this go fast,
+ * Performance! (Not much thought has been made to making this go fast,
 but there are a bunch of pretty obvious speedups to be had.)
-* Handle Java objects intelligently
+ * Handle Java objects intelligently
 
 Please let me know about anything that's not working right, anything that
 should work differently, or the feature you think should be at the top

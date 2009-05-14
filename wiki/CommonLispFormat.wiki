@@ -1,3 +1,5 @@
+#summary Documentation for the Common Lisp-compatible format function
+
 === Common Lisp-compatible Format function ===
 cl-format is an implementation of the incredibly baroque Common Lisp format function as specified 
 in [http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html#SECTION002633000000000000000 _Common Lisp the Language_, 2nd edition, Chapter 22].
@@ -8,14 +10,14 @@ domain-specific language for formatting.
 
 This implementation for clojure has the following goals:
 
-* Support the full feature set of the Common Lisp format function (including
+ * Support the full feature set of the Common Lisp format function (including
 the X3J13 extensions) with the only exception 
 being concepts that make no sense or are differently interpreted in Clojure.
-* Make porting code from Common Lisp easier.
-* Provide a more native feeling solution for Clojure programmers than the Java format method and
+ * Make porting code from Common Lisp easier.
+ * Provide a more native feeling solution for Clojure programmers than the Java format method and
 its relatives.
-* Be fast. This includes the ability to precompile formats that are going to be used reptitively.
-* Include useful error handling and comprehensive documentation.
+ * Be fast. This includes the ability to precompile formats that are going to be used reptitively.
+ * Include useful error handling and comprehensive documentation.
 
 === Why would I use cl-format? ===
 
@@ -75,11 +77,11 @@ The custom dispatch table functionality is not fully fleshed out yet.
 
 Next up: 
 
-* Support for ~/
-* Restructure unit tests into modular chunks.
-* Import tests from CLISP and SBCL.
-* Unit tests for exception conditions.
-* Interactive documentation
+ * Support for ~/
+ * Restructure unit tests into modular chunks.
+ * Import tests from CLISP and SBCL.
+ * Unit tests for exception conditions.
+ * Interactive documentation
  
 === How to use cl-format ===
 
@@ -213,12 +215,12 @@ The following function uses cl-format to dump a columnized table of the Java sys
 There are some more examples in the clojure.contrib.pprint.examples
 package:
 
-* hexdump - a program that uses cl-format to create a standard
+ * hexdump - a program that uses cl-format to create a standard
 formatted hexdump of the requested stream.
-* multiply - a function to show a formatted multipication table in a
+ * multiply - a function to show a formatted multipication table in a
 very "first-order" way.
-* props - the show-props example shown above.
-* show_doc - some utilities for showing documentation from various name spaces.
+ * props - the show-props example shown above.
+ * show_doc - some utilities for showing documentation from various name spaces.
 
 === Differences from the Common Lisp format function ===
 
@@ -233,10 +235,10 @@ The ~A and ~S directives accept the colon prefix, but ignore it since
 Clojure has 3 different reader syntaxes for characters. The ~@c
 directive to cl-format has an argument extension to let you choose:
 
-* ~@c (with no argument) prints "\c" (backslash followed by the
+ * ~@c (with no argument) prints "\c" (backslash followed by the
 printed representation of the character or \newline, \space, \tab,
 \backspace, \return)
-* ~'o@c prints "\oDDD" where DDD are the octal digits representing the
+ * ~'o@c prints "\oDDD" where DDD are the octal digits representing the
 character. 
-* ~'u@c prints "\uXXXX" prints the hex Unicode representation of the
+ * ~'u@c prints "\uXXXX" prints the hex Unicode representation of the
 character.  
