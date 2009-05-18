@@ -65,7 +65,7 @@ Future development is guided by those using it, so send feedback about
 what's working and not working for you and what you'd like to see in the 
 pretty printer.
 
-== Pretty Printing ==
+== Pretty Printing Basics ==
 
 Pretty printing is primarily implemented with the function
 pprint. pprint takes a single argument and formats it according to the
@@ -100,13 +100,17 @@ comfortably. Just type:
 and you'll get a pretty printed version of the last thing output (the
 magic variable `*`1).
 
-=== Dispatch tables and code formatting ==
+== Dispatch tables and code formatting ==
 
 The behavior of the pretty printer can be finely controlled through
 the use of _dispatch tables_ that contain descriptions for how
-different structures should be formatted. The exact design of the
-dispatch table is still evolving and is, therefore, not yet
-documented.
+different structures should be formatted. 
+
+Using custom dispatch tables, the pretty printer can create formatted
+output for data structures that is customized for the
+application. This allows pretty printing to be baked into any
+structured output. For information and examples, see below in
+[#Custom_Dispatch_Functions Custom Dispatch Functions].
 
 The pretty printer comes with two pre-defined dispatch tables to cover
 the most common situations:
@@ -144,11 +148,12 @@ An example formatted with code dispatch:
     user=> 
 }}}
 
-There are two ways to set the current dispatch: set it to a specific
-table permanantly with set-pprint-dispatch or bind it with
-with-pprint-dispatch (as shown in the example above).
+There are three ways to set the current dispatch: set it to a specific
+table permanantly with set-pprint-dispatch, bind it with
+with-pprint-dispatch (as shown in the example above), or use the
+:dispatch keyword argument to write.
 
-=== Control variables ===
+== Control variables ==
 
 The operation of pretty printing is also controlled by a set of variables
 that control general parameters of how the pretty printer makes
@@ -215,7 +220,66 @@ For example:
     user=>
 }}}
 
-=== Current limitations and future plans ===
+== Custom Dispatch Functions ==
+
+Using custom dispatch, you can easily create your own formatted output
+for structured data. Examples included with the pretty printer show
+how to use custom dispatch to translate simple Clojure structures into
+nicely formatted JSON and XML.
+
+=== Basic Concepts of Pretty Printing ===
+
+In order to create custom dispatch functions, you need to understand
+the fundamentals of pretty printing. The clojure pretty printer is
+based on the XP pretty printer algorithm (used in many Lisps including
+Common Lisp) which supports sophisticated decision-making about line
+breaking and indentation with reasonable performance even for very
+large structures. The XP algorithm is documented in the paper,
+[http://dspace.mit.edu/handle/1721.1/6504 XP. A Common Lisp Pretty
+Printing System].
+
+The Clojure implementation of XP is similar in spirit to the Common
+Lisp implementation, but the details of the interface are somewhat
+different. The result is that writing custom dispatch in Clojure is
+more "Clojure-y."
+
+There are three key concepts to understand when creating custom pretty
+printing functions: _logical blocks_,  _conditional newlines_, and
+_indentation_.
+
+A _logical block_ marks a set of output that should be thought about
+as a single unit by the pretty printer. Logical blocks can contain
+other logical blocks (that is, they nest). As a simple example, when
+printing list structure, every sublist will typically be a logical
+block.
+
+_Conditional newlines_ tell the pretty printer where it can insert
+line breaks and how to make the decisions about when to do it. There
+are four types of conditional newline:
+
+ * Linear newlines tell the pretty printer to insert a newline in a
+   place whenever the enclosing logical block won't fit on a single
+   line. Linear newlines are an all-or-nothing proposition; if the
+   logical block doesn't fit on a single line, *all* the linear
+   newlines are emitted as actual newlines.
+ * Fill newlines tell the pretty printer that it should fit as many
+   chunks of the logical block as possible on this line and then emit
+   a newline.
+ * Mandatory newlines tell the pretty printer to emit a newline
+   regardless of where it is in the output line.  
+ * Miser newlines tell the pretty printer to emit a newline if the
+   output column is in the miser region (as defined by the pretty
+   printer variable `*`pprint-miser-width`*`). This allows you to
+   define special behavior as the output gets heavily nested near the
+   right margin.
+
+_Indentation_ commands allow you to specify how wrapped lines should
+be indented. Indentation can be relative to either the start column of
+the current logical block or the current column position of the output. 
+
+(This section is still incomplete...)
+
+== Current limitations and future plans ==
 
 This is an early version release of the pretty printer and there is
 plenty that is yet to come.
