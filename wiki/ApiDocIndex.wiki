@@ -135,6 +135,7 @@ Shortcuts:
 </pre>
 ==D==
 <pre>
+[CoreApiDoc#dissoc-in dissoc-in]                     function     core               Dissociates an entry from a nested associative str...
 [DataflowApiDoc#display-cell display-cell]                  multimethod  dataflow           A 'readable' form of the cell.
 [DatalogApiDoc#database-counts database-counts]               function     datalog.database   Returns a map with the count of elements in each r...
 [DatalogApiDoc#database-merge database-merge]                function     datalog.database   Merges databases together.

@@ -23,7 +23,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#-?> -?>] [#.?. .?.] 
+[#-?> -?>] [#.?. .?.] [#dissoc-in dissoc-in] 
 
 ----
 ===-?>===
@@ -53,3 +53,14 @@ Examples :
 </pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#38 Source] [http://www.google.com/codesearch?hl=en&lr=&q=.?.+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===dissoc-in===
+====function====
+<pre>
+Usage: *(_dissoc-in_ m `[`k & ks :as keys`]`)*
+</pre>
+<pre> Dissociates an entry from a nested associative structure returning a new 
+nested structure. keys is a sequence of keys. Any empty maps that result 
+will not be present in the new structure.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dissoc-in+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

@@ -141,7 +141,7 @@ API Overview [CoreApiDoc here]
 <pre> Functions/macros variants of the ones that can be found in clojure.core  
 (note to other contrib members: feel free to add to this lib)</pre>
 Public Variables and Functions:
-[CoreApiDoc#-?> -?>] [CoreApiDoc#.?. .?.] 
+[CoreApiDoc#-?> -?>] [CoreApiDoc#.?. .?.] [CoreApiDoc#dissoc-in dissoc-in] 
 
 ----
 ===dataflow===
