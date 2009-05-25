@@ -14,7 +14,7 @@ by Stephen C. Gilardi
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.miglayout))
+  (:require clojure.contrib.miglayout))
 }}}
 ==Overview==
 <pre> Clojure support for the MiGLayout layout manager 

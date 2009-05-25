@@ -14,7 +14,7 @@ by Jeffrey Straszheim
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.datalog))
+  (:require clojure.contrib.datalog))
 }}}
 ==Overview==
 <pre> A Clojure implementation of Datalog</pre>

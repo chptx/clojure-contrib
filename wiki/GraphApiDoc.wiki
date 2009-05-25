@@ -14,7 +14,7 @@ by Jeffrey Straszheim
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.graph))
+  (:require clojure.contrib.graph))
 }}}
 ==Overview==
 <pre> Basic graph theory algorithms</pre>

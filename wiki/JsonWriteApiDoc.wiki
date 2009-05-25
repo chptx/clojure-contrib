@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.json.write))
+  (:require clojure.contrib.json.write))
 }}}
 ==Overview==
 <pre> JavaScript Object Notation (JSON) generator. 

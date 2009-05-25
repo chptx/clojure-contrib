@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.condt))
+  (:require clojure.contrib.condt))
 }}}
 ==Overview==
 <pre> Generic case-like macro using template expressions</pre>

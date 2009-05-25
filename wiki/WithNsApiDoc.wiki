@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.with-ns))
+  (:require clojure.contrib.with-ns))
 }}}
 ==Overview==
 <pre> Temporary namespace macro</pre>

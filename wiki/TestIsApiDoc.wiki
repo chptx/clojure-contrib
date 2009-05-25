@@ -15,7 +15,7 @@ Chas Emerick, Allen Rohner, and Stuart Halloway
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.test-is))
+  (:require clojure.contrib.test-is))
 }}}
 ==Overview==
 <pre> Inspired by many Common Lisp test frameworks and clojure/test, 

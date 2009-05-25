@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.singleton))
+  (:require clojure.contrib.singleton))
 }}}
 ==Overview==
 <pre> Singleton functions</pre>

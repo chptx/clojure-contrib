@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.trace))
+  (:require clojure.contrib.trace))
 }}}
 ==Overview==
 <pre> This file defines simple "tracing" macros to help you see what your 

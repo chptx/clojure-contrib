@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.stream-utils))
+  (:require clojure.contrib.stream-utils))
 }}}
 ==Overview==
 <pre> Functions for setting up computational pipelines via data streams. 

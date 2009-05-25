@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.monads))
+  (:require clojure.contrib.monads))
 }}}
 ==Overview==
 <pre> This library contains the most commonly used monads as well 

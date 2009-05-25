@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.find-namespaces))
+  (:require clojure.contrib.find-namespaces))
 }}}
 ==Overview==
 <pre> Search for ns declarations in dirs, JARs, or CLASSPATH</pre>

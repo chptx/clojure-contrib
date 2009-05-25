@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.stacktrace))
+  (:require clojure.contrib.stacktrace))
 }}}
 ==Overview==
 <pre> Print Clojure-centric stack traces</pre>

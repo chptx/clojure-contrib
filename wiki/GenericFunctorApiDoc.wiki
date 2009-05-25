@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.generic.functor))
+  (:require clojure.contrib.generic.functor))
 }}}
 ==Overview==
 <pre> Generic functor interface (fmap)</pre>

@@ -14,7 +14,7 @@ by Christophe Grand
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.javadoc.browse))
+  (:require clojure.contrib.javadoc.browse))
 }}}
 ==Overview==
 <pre> Start a web browser from Clojure</pre>

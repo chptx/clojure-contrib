@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.auto-agent))
+  (:require clojure.contrib.auto-agent))
 }}}
 ==Overview==
 <pre> This is superficially similar to Ken Tilton's "Cells" library for 

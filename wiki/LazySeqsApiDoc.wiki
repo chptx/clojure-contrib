@@ -14,7 +14,7 @@ by Stephen C. Gilardi
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.lazy-seqs))
+  (:require clojure.contrib.lazy-seqs))
 }}}
 ==Overview==
 <pre>  

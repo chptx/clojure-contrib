@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.accumulators))
+  (:require clojure.contrib.accumulators))
 }}}
 ==Overview==
 <pre> A generic accumulator interface and implementations of various 

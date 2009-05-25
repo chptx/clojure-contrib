@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.complex-numbers))
+  (:require clojure.contrib.complex-numbers))
 }}}
 ==Overview==
 <pre> Complex numbers 

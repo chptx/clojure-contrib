@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.macro-utils))
+  (:require clojure.contrib.macro-utils))
 }}}
 ==Overview==
 <pre> Local macros and symbol macros 

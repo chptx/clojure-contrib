@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.import-static))
+  (:require clojure.contrib.import-static))
 }}}
 ==Overview==
 <pre> Import static Java methods/fields into Clojure</pre>

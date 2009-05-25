@@ -14,7 +14,7 @@ by Stuart Halloway, Stephen C. Gilardi, Shawn Hoover, Perry Trolard
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.java-utils))
+  (:require clojure.contrib.java-utils))
 }}}
 ==Overview==
 <pre> A set of utilties for dealing with Java stuff like files and properties. 

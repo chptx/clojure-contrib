@@ -14,7 +14,7 @@ by Chris Houser
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.shell-out))
+  (:require clojure.contrib.shell-out))
 }}}
 ==Overview==
 <pre> Conveniently launch a sub-process providing to its stdin and 

@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.probabilities.finite-distributions))
+  (:require clojure.contrib.probabilities.finite-distributions))
 }}}
 ==Overview==
 <pre> Finite probability distributions 

@@ -14,7 +14,7 @@ by Jason Wolfe
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.set))
+  (:require clojure.contrib.set))
 }}}
 ==Overview==
 <pre> Clojure functions for operating on sets (supplemental to clojure.set)</pre>

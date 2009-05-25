@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.classpath))
+  (:require clojure.contrib.classpath))
 }}}
 ==Overview==
 <pre> Utilities for dealing with the JVM's classpath</pre>

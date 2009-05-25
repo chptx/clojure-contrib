@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.types))
+  (:require clojure.contrib.types))
 }}}
 ==Overview==
 <pre> General and algebraic data types</pre>

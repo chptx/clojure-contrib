@@ -14,7 +14,7 @@ by Craig McDaniel
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.server-socket))
+  (:require clojure.contrib.server-socket))
 }}}
 ==Overview==
 <pre> Server socket library - includes REPL on socket</pre>

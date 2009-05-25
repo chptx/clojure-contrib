@@ -14,7 +14,7 @@ by Tom Faulhaber
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.pprint))
+  (:require clojure.contrib.pprint))
 }}}
 ==Overview==
 <pre> This module comprises two elements: 

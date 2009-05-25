@@ -14,7 +14,7 @@ by Vincent Foley
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.greatest-least))
+  (:require clojure.contrib.greatest-least))
 }}}
 ==Overview==
 <pre> Various functions for finding greatest and least values in a collection</pre>

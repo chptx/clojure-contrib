@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.str-utils))
+  (:require clojure.contrib.str-utils))
 }}}
 ==Overview==
 <pre> String utilities for Clojure</pre>

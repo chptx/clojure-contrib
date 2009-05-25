@@ -14,7 +14,7 @@ by Stephen C. Gilardi
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.def))
+  (:require clojure.contrib.def))
 }}}
 ==Overview==
 <pre> def.clj provides variants of def that make including doc strings and 

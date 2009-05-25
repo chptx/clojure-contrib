@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.duck-streams))
+  (:require clojure.contrib.duck-streams))
 }}}
 ==Overview==
 <pre> This file defines "duck-typed" I/O utility functions for Clojure. 

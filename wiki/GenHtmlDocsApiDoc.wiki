@@ -14,7 +14,7 @@ by Craig Andera
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.gen-html-docs))
+  (:require clojure.contrib.gen-html-docs))
 }}}
 ==Overview==
 <pre> Generates a single HTML page that contains the documentation for 

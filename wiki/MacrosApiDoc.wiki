@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.macros))
+  (:require clojure.contrib.macros))
 }}}
 ==Overview==
 <pre> Various small macros</pre>

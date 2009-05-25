@@ -14,7 +14,7 @@ by Chris Houser
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.mmap))
+  (:require clojure.contrib.mmap))
 }}}
 ==Overview==
 <pre> Functions for memory-mapping files, plus some functions that use a 

@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.json.read))
+  (:require clojure.contrib.json.read))
 }}}
 ==Overview==
 <pre> JavaScript Object Notation (JSON) parser 

@@ -14,7 +14,7 @@ by Stephen C. Gilardi
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.ns-utils))
+  (:require clojure.contrib.ns-utils))
 }}}
 ==Overview==
 <pre> Namespace utilities</pre>

@@ -14,7 +14,7 @@ by Stephen C. Gilardi
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.repl-ln))
+  (:require clojure.contrib.repl-ln))
 }}}
 ==Overview==
 <pre> A repl with that provides support for lines and line numbers in the 

@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.jar))
+  (:require clojure.contrib.jar))
 }}}
 ==Overview==
 <pre> Utilities for working with Java JAR files</pre>

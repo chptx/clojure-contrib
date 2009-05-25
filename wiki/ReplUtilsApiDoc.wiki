@@ -14,7 +14,7 @@ by Chris Houser
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.repl-utils))
+  (:require clojure.contrib.repl-utils))
 }}}
 ==Overview==
 <pre> Utilities meant to be used interactively at the REPL</pre>

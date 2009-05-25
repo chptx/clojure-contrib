@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.walk))
+  (:require clojure.contrib.walk))
 }}}
 ==Overview==
 <pre> This file defines a generic tree walker for Clojure data 

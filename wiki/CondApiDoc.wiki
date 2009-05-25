@@ -14,7 +14,7 @@ by Stephen C. Gilardi
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.cond))
+  (:require clojure.contrib.cond))
 }}}
 ==Overview==
 <pre> Extensions to the basic cond function.</pre>

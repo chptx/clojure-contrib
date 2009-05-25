@@ -14,7 +14,7 @@ by Jason Wolfe, Chris Houser
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.map-utils))
+  (:require clojure.contrib.map-utils))
 }}}
 ==Overview==
 <pre> Utilities for operating on Clojure maps.</pre>

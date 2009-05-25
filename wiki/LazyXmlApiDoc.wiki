@@ -14,7 +14,7 @@ by Chris Houser
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.lazy-xml))
+  (:require clojure.contrib.lazy-xml))
 }}}
 ==Overview==
 <pre> Functions to parse xml lazily and emit back to text.</pre>

@@ -14,7 +14,7 @@ by Mark Engelberg
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.combinatorics))
+  (:require clojure.contrib.combinatorics))
 }}}
 ==Overview==
 <pre> Efficient, functional algorithms for generating lazy 

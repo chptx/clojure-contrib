@@ -14,7 +14,7 @@ by Christophe Grande
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.agent-utils))
+  (:require clojure.contrib.agent-utils))
 }}}
 ==Overview==
 <pre> Miscellaneous agent utilities 

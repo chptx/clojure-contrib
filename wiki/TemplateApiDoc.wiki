@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.template))
+  (:require clojure.contrib.template))
 }}}
 ==Overview==
 <pre> Anonymous functions that pre-evaluate sub-expressions 

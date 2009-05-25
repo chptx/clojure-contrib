@@ -14,7 +14,7 @@ by Laurent Petit (and others)
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.core))
+  (:require clojure.contrib.core))
 }}}
 ==Overview==
 <pre> Functions/macros variants of the ones that can be found in clojure.core  

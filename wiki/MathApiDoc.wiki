@@ -14,7 +14,7 @@ by Mark Engelberg
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.math))
+  (:require clojure.contrib.math))
 }}}
 ==Overview==
 <pre> Math functions that deal intelligently with the various 

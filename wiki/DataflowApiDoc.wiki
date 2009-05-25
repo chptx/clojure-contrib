@@ -14,7 +14,7 @@ by Jeffrey Straszheim
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.dataflow))
+  (:require clojure.contrib.dataflow))
 }}}
 ==Overview==
 <pre> A library to support a dataflow model of state</pre>

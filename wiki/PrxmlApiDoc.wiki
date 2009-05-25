@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.prxml))
+  (:require clojure.contrib.prxml))
 }}}
 ==Overview==
 <pre> Compact syntax for generating XML. See the documentation of "prxml"  

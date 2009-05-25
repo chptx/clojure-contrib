@@ -14,7 +14,7 @@ by Stuart Sierra (and others)
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.seq-utils))
+  (:require clojure.contrib.seq-utils))
 }}}
 ==Overview==
 <pre> Sequence utilities for Clojure</pre>

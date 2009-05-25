@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.fcase))
+  (:require clojure.contrib.fcase))
 }}}
 ==Overview==
 <pre> This file defines a generic "case" macro called "fcase" which takes 

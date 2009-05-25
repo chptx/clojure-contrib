@@ -14,7 +14,7 @@ by Chris Houser
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.command-line))
+  (:require clojure.contrib.command-line))
 }}}
 ==Overview==
 <pre> Process command-line arguments according to a given cmdspec</pre>

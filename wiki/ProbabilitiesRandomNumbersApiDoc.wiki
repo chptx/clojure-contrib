@@ -14,7 +14,7 @@ by Konrad Hinsen
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.probabilities.random-numbers))
+  (:require clojure.contrib.probabilities.random-numbers))
 }}}
 ==Overview==
 <pre> Random number streams 

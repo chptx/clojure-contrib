@@ -14,7 +14,7 @@ by Stuart Sierra
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.profile))
+  (:require clojure.contrib.profile))
 }}}
 ==Overview==
 <pre> Simple code profiling & timing measurement. 

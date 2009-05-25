@@ -14,7 +14,7 @@ by Stephen C. Gilardi
 Usage: 
 {{{
 (ns <your-namespace>
-  (:use clojure.contrib.except))
+  (:require clojure.contrib.except))
 }}}
 ==Overview==
 <pre> Provides functions that make it easy to specify the class and message 
