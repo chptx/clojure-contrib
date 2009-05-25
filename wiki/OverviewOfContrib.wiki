@@ -61,24 +61,6 @@ Public Variables and Functions:
 [AgentUtilsApiDoc#capture-and-send capture-and-send] 
 
 ----
-===auto-agent===
-by Stuart Sierra<br>
-API Overview [AutoAgentApiDoc here]
-
-<pre> This is superficially similar to Ken Tilton's "Cells" library for 
-Common Lisp.  But Cells is single-threaded and synchronous.  This 
-version is built on Clojure agents, so it is multi-threaded and 
-asynchronous. 
- 
-An auto-agent is an agent whose value is the result of an 
-expression.  That expression can include other mutable Clojure 
-types -- agents, atoms, and refs -- dereferenced with "deref" or 
-"@".  Whenever one of those derefernced things changes, the 
-auto-agent will be automatically updated to reflect the new value.</pre>
-Public Variables and Functions:
-[AutoAgentApiDoc#auto-agent auto-agent] 
-
-----
 ===classpath===
 by Stuart Sierra<br>
 API Overview [ClasspathApiDoc here]
@@ -512,7 +494,7 @@ Local macros are most useful in the definition of the expansion
 of another macro, they may be used anywhere. Global symbol 
 macros can be used only inside a with-symbol-macros form.</pre>
 Public Variables and Functions:
-[MacroUtilsApiDoc#defsymbolmacro defsymbolmacro] [MacroUtilsApiDoc#macrolet macrolet] [MacroUtilsApiDoc#mexpand mexpand] [MacroUtilsApiDoc#mexpand-1 mexpand-1] [MacroUtilsApiDoc#mexpand-all mexpand-all] [MacroUtilsApiDoc#symbol-macrolet symbol-macrolet] [MacroUtilsApiDoc#with-symbol-macros with-symbol-macros] 
+[MacroUtilsApiDoc#defsymbolmacro defsymbolmacro] [MacroUtilsApiDoc#deftemplate deftemplate] [MacroUtilsApiDoc#macrolet macrolet] [MacroUtilsApiDoc#mexpand mexpand] [MacroUtilsApiDoc#mexpand-1 mexpand-1] [MacroUtilsApiDoc#mexpand-all mexpand-all] [MacroUtilsApiDoc#symbol-macrolet symbol-macrolet] [MacroUtilsApiDoc#with-symbol-macros with-symbol-macros] 
 
 ----
 ===macros===

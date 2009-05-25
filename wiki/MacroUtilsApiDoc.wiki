@@ -33,7 +33,7 @@ macros can be used only inside a with-symbol-macros form.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#defsymbolmacro defsymbolmacro] [#macrolet macrolet] [#mexpand mexpand] [#mexpand-1 mexpand-1] [#mexpand-all mexpand-all] [#symbol-macrolet symbol-macrolet] [#with-symbol-macros with-symbol-macros] 
+[#defsymbolmacro defsymbolmacro] [#deftemplate deftemplate] [#macrolet macrolet] [#mexpand mexpand] [#mexpand-1 mexpand-1] [#mexpand-all mexpand-all] [#symbol-macrolet symbol-macrolet] [#with-symbol-macros with-symbol-macros] 
 
 ----
 ===defsymbolmacro===
@@ -46,6 +46,17 @@ Clojure's built-in macro expansion system, they can be used only
 inside a with-symbol-macros form.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#200 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defsymbolmacro+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===deftemplate===
+====macro====
+<pre>
+Usage: *(_deftemplate_ name params & forms)*
+</pre>
+<pre> Define a macro that expands into forms after replacing the 
+symbols in params (a vector) by the corresponding parameters 
+given in the macro call.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#214 Source] [http://www.google.com/codesearch?hl=en&lr=&q=deftemplate+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===macrolet===
 ====macro====
@@ -64,7 +75,7 @@ Usage: *(_mexpand_ form)*
 </pre>
 <pre> Like clojure.core/macroexpand, but takes into account symbol macros.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#222 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mexpand+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#234 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mexpand+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===mexpand-1===
 ====function====
@@ -73,7 +84,7 @@ Usage: *(_mexpand-1_ form)*
 </pre>
 <pre> Like clojure.core/macroexpand-1, but takes into account symbol macros.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#214 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mexpand-1+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#226 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mexpand-1+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===mexpand-all===
 ====function====
@@ -82,7 +93,7 @@ Usage: *(_mexpand-all_ form)*
 </pre>
 <pre> Perform a full recursive macro expansion of a form.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#230 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mexpand-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/macro_utils.clj#242 Source] [http://www.google.com/codesearch?hl=en&lr=&q=mexpand-all+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===symbol-macrolet===
 ====macro====

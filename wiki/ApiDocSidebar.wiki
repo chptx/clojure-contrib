@@ -12,7 +12,6 @@ namespace.
 
 [AccumulatorsApiDoc accumulators]<br/>
 [AgentUtilsApiDoc agent-utils]<br/>
-[AutoAgentApiDoc auto-agent]<br/>
 [ClasspathApiDoc classpath]<br/>
 [CombinatoricsApiDoc combinatorics]<br/>
 [CommandLineApiDoc command-line]<br/>
