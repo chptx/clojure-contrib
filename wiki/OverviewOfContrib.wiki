@@ -579,7 +579,7 @@ Public Variables and Functions:
 [MiglayoutApiDoc#miglayout miglayout] 
 
 Variables and Functions in miglayout.internal:
-[MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
+[MiglayoutApiDoc#add-components add-components] [MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#new-instance new-instance] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
 
 Variables and Functions in miglayout.test:
 [MiglayoutApiDoc#label label] [MiglayoutApiDoc#sep sep] [MiglayoutApiDoc#text-field text-field] 
@@ -990,18 +990,18 @@ assertion.  This message will be included in the error report.
  
 In addition, you can document groups of assertions with the 
 "testing" macro, which takes a string followed by any number of 
-"is" assertions.  The string will be included in failure reports. 
+assertions.  The string will be included in failure reports. 
 Calls to "testing" may be nested, and all of the strings will be 
 joined together with spaces in the final report, in a style 
 similar to RSpec <http://rspec.info/> 
  
 (testing "Arithmetic" 
   (testing "with positive integers" 
-    (`=` 4 (+ 2 2)) 
-    (`=` 7 (+ 3 4))) 
+    (is (`=` 4 (+ 2 2))) 
+    (is (`=` 7 (+ 3 4)))) 
   (testing "with negative integers" 
-    (`=` -4 (+ -2 -2)) 
-    (`=` -1 (+ 3 -4)))) 
+    (is (`=` -4 (+ -2 -2))) 
+    (is (`=` -1 (+ 3 -4))))) 
  
 Note that, unlike RSpec, the "testing" macro may only be used 
 INSIDE a "deftest" or "with-test" form (see below). 
