@@ -397,6 +397,7 @@ Shortcuts:
 </pre>
 ==N==
 <pre>
+[CoreApiDoc#new-by-name new-by-name]                   function     core               Constructs a Java object whose class is specified ...
 [DatalogApiDoc#negated-literal negated-literal]               function     datalog.literals   Given a literal l, return a negated version.
 [DatalogApiDoc#negated? negated?]                      function     datalog.literals   Is this literal a negated literal?.
 [DatalogApiDoc#negative-vars negative-vars]                 multimethod  datalog.literals   Returns the logic vars used in a negative position.

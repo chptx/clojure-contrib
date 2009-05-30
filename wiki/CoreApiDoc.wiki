@@ -23,7 +23,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#-?> -?>] [#.?. .?.] [#dissoc-in dissoc-in] 
+[#-?> -?>] [#.?. .?.] [#dissoc-in dissoc-in] [#new-by-name new-by-name] 
 
 ----
 ===-?>===
@@ -64,3 +64,12 @@ nested structure. keys is a sequence of keys. Any empty maps that result
 will not be present in the new structure.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dissoc-in+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===new-by-name===
+====function====
+<pre>
+Usage: *(_new-by-name_ class-name & args)*
+</pre>
+<pre> Constructs a Java object whose class is specified by a String.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=new-by-name+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
