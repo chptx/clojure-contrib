@@ -68,6 +68,7 @@ namespace.
 [StacktraceApiDoc stacktrace]<br/>
 [StrUtilsApiDoc str-utils]<br/>
 [StreamUtilsApiDoc stream-utils]<br/>
+[SwingUtilsApiDoc swing-utils]<br/>
 [TemplateApiDoc template]<br/>
 [TestIsApiDoc test-is]<br/>
 [TraceApiDoc trace]<br/>

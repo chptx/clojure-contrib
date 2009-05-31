@@ -1,0 +1,32 @@
+#summary swing-utils API Reference
+#sidebar ApiDocSidebar
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for swing-utils=
+Usage: 
+{{{
+(ns <your-namespace>
+  (:require clojure.contrib.swing-utils))
+}}}
+
+
+==Public Variables and Functions==
+Shortcuts:
+[#add-action-listener add-action-listener] 
+
+----
+===add-action-listener===
+====function====
+<pre>
+Usage: *(_add-action-listener_ component f & args)*
+</pre>
+<pre> Adds an ActionLister to component. When the action fires, f will be 
+invoked with the event as its first argument followed by args</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-action-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
