@@ -18,7 +18,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#add-action-listener add-action-listener] 
+[#add-action-listener add-action-listener] [#add-key-typed-listener add-key-typed-listener] 
 
 ----
 ===add-action-listener===
@@ -30,3 +30,14 @@ Usage: *(_add-action-listener_ component f & args)*
 invoked with the event as its first argument followed by args</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-action-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===add-key-typed-listener===
+====function====
+<pre>
+Usage: *(_add-key-typed-listener_ component f & args)*
+</pre>
+<pre> Adds a KeyListener to component that only responds to KeyTyped events. 
+When a key is typed, f is invoked with the KeyEvent as its first argument 
+followed by args</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#26 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-key-typed-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

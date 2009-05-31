@@ -579,7 +579,7 @@ Public Variables and Functions:
 [MiglayoutApiDoc#components components] [MiglayoutApiDoc#miglayout miglayout] 
 
 Variables and Functions in miglayout.example:
-[MiglayoutApiDoc#fahrenheit fahrenheit] [MiglayoutApiDoc#main main] 
+[MiglayoutApiDoc#converter-ui converter-ui] [MiglayoutApiDoc#fahrenheit fahrenheit] [MiglayoutApiDoc#main main] 
 
 Variables and Functions in miglayout.internal:
 [MiglayoutApiDoc#add-components add-components] [MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#do-layout do-layout] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#get-components get-components] [MiglayoutApiDoc#parse-component-constraint parse-component-constraint] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
@@ -890,7 +890,7 @@ Public Variables and Functions:
 API Overview [SwingUtilsApiDoc here]
 
 Public Variables and Functions:
-[SwingUtilsApiDoc#add-action-listener add-action-listener] 
+[SwingUtilsApiDoc#add-action-listener add-action-listener] [SwingUtilsApiDoc#add-key-typed-listener add-key-typed-listener] 
 
 ----
 ===template===

@@ -31,7 +31,7 @@ Shortcuts:
 [#components components] [#miglayout miglayout] 
 
 Variables and Functions in miglayout.example:
-[MiglayoutApiDoc#fahrenheit fahrenheit] [MiglayoutApiDoc#main main] 
+[MiglayoutApiDoc#converter-ui converter-ui] [MiglayoutApiDoc#fahrenheit fahrenheit] [MiglayoutApiDoc#main main] 
 
 Variables and Functions in miglayout.internal:
 [MiglayoutApiDoc#add-components add-components] [MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#do-layout do-layout] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#get-components get-components] [MiglayoutApiDoc#parse-component-constraint parse-component-constraint] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
@@ -90,14 +90,22 @@ clojure.contrib.miglayout/components.</pre>
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout.clj#37 Source] [http://www.google.com/codesearch?hl=en&lr=&q=miglayout+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.miglayout.example==
 ----
+===converter-ui===
+====function====
+<pre>
+Usage: *(_converter-ui_)*
+</pre>
+<pre> Lays out and shows a Temperature Converter UI</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/example.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=converter-ui+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
 ===fahrenheit===
 ====function====
 <pre>
-Usage: *(_fahrenheit_ c-str)*
+Usage: *(_fahrenheit_ celsius)*
 </pre>
-<pre> Converts a string containing a Celsius temperature to a string 
-containing a Fahrenheit temperature. Returns "input?" if the 
-input can't be read</pre>
+<pre> Converts a Celsius temperature to Fahrenheit. Input and output are 
+strings. Returns "input?" if the input can't be parsed as a Double.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/example.clj#24 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fahrenheit+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
@@ -106,9 +114,9 @@ input can't be read</pre>
 <pre>
 Usage: *(_main_)*
 </pre>
-<pre> Creates a converter UI</pre>
+<pre> Invokes converter-ui in the AWT Event thread</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/example.clj#35 Source] [http://www.google.com/codesearch?hl=en&lr=&q=main+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/miglayout/example.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=main+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.miglayout.internal==
 ----
 ===add-components===
