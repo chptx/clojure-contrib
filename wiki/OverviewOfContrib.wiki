@@ -576,10 +576,13 @@ Example:
   (use '`[`clojure.contrib.miglayout.test :as mlt :only ()`]`) 
   (dotimes `[`i 5`]` (mlt/run-test i))</pre>
 Public Variables and Functions:
-[MiglayoutApiDoc#miglayout miglayout] 
+[MiglayoutApiDoc#components components] [MiglayoutApiDoc#miglayout miglayout] 
+
+Variables and Functions in miglayout.example:
+[MiglayoutApiDoc#fahrenheit fahrenheit] [MiglayoutApiDoc#main main] 
 
 Variables and Functions in miglayout.internal:
-[MiglayoutApiDoc#add-components add-components] [MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#new-instance new-instance] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
+[MiglayoutApiDoc#add-components add-components] [MiglayoutApiDoc#component? component?] [MiglayoutApiDoc#constraint? constraint?] [MiglayoutApiDoc#do-layout do-layout] [MiglayoutApiDoc#format-constraint format-constraint] [MiglayoutApiDoc#format-constraints format-constraints] [MiglayoutApiDoc#get-components get-components] [MiglayoutApiDoc#parse-component-constraint parse-component-constraint] [MiglayoutApiDoc#parse-item-constraints parse-item-constraints] 
 
 Variables and Functions in miglayout.test:
 [MiglayoutApiDoc#label label] [MiglayoutApiDoc#sep sep] [MiglayoutApiDoc#text-field text-field] 
