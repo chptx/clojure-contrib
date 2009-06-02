@@ -27,6 +27,7 @@ namespace.
 [ExceptApiDoc except]<br/>
 [FcaseApiDoc fcase]<br/>
 [FindNamespacesApiDoc find-namespaces]<br/>
+[FnmapApiDoc fnmap]<br/>
 [GenHtmlDocsApiDoc gen-html-docs]<br/>
 [GenericArithmeticApiDoc generic.arithmetic]<br/>
 [GenericCollectionApiDoc generic.collection]<br/>

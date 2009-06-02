@@ -240,6 +240,14 @@ Public Variables and Functions:
 [FindNamespacesApiDoc#clojure-source-file? clojure-source-file?] [FindNamespacesApiDoc#clojure-sources-in-jar clojure-sources-in-jar] [FindNamespacesApiDoc#comment? comment?] [FindNamespacesApiDoc#find-clojure-sources-in-dir find-clojure-sources-in-dir] [FindNamespacesApiDoc#find-namespaces-in-dir find-namespaces-in-dir] [FindNamespacesApiDoc#find-namespaces-in-jarfile find-namespaces-in-jarfile] [FindNamespacesApiDoc#find-namespaces-on-classpath find-namespaces-on-classpath] [FindNamespacesApiDoc#find-ns-decls-in-dir find-ns-decls-in-dir] [FindNamespacesApiDoc#find-ns-decls-in-jarfile find-ns-decls-in-jarfile] [FindNamespacesApiDoc#find-ns-decls-on-classpath find-ns-decls-on-classpath] [FindNamespacesApiDoc#ns-decl? ns-decl?] [FindNamespacesApiDoc#read-file-ns-decl read-file-ns-decl] [FindNamespacesApiDoc#read-ns-decl read-ns-decl] [FindNamespacesApiDoc#read-ns-decl-from-jarfile-entry read-ns-decl-from-jarfile-entry] 
 
 ----
+===fnmap===
+by Stuart Sierra<br>
+API Overview [FnmapApiDoc here]
+
+<pre> Maps that dispatch get/assoc to user-defined functions. 
+ 
+Note: requires AOT-compilation</pre>
+----
 ===gen-html-docs===
 by Craig Andera<br>
 API Overview [GenHtmlDocsApiDoc here]
