@@ -22,7 +22,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*local-javadocs_* *local-javadocs*] [#_*remote-javadocs_* *remote-javadocs*] [#add-break-thread! add-break-thread!] [#add-local-javadoc add-local-javadoc] [#add-remote-javadoc add-remote-javadoc] [#break-threads break-threads] [#find-javadoc-url find-javadoc-url] [#get-source get-source] [#javadoc javadoc] [#show show] [#source source] [#start-handling-break start-handling-break] 
+[#_*local-javadocs_* *local-javadocs*] [#_*remote-javadocs_* *remote-javadocs*] [#add-break-thread! add-break-thread!] [#add-local-javadoc add-local-javadoc] [#add-remote-javadoc add-remote-javadoc] [#break-threads break-threads] [#find-javadoc-url find-javadoc-url] [#get-source get-source] [#javadoc javadoc] [#run run] [#run_* run*] [#show show] [#source source] [#start-handling-break start-handling-break] 
 
 ----
 ===`*`local-javadocs`*`===
@@ -110,6 +110,26 @@ Usage: *(_javadoc_ class-or-object)*
 Tries `*`local-javadocs`*` first, then `*`remote-javadocs`*`.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#74 Source] [http://www.google.com/codesearch?hl=en&lr=&q=javadoc+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===run===
+====macro====
+<pre>
+Usage: *(_run_ ns-name & args)*
+</pre>
+<pre> Loads the specified namespace and invokes its "main" function with 
+optional args. ns-name is not evaluated.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#162 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===run`*`===
+====function====
+<pre>
+Usage: *(_run`*`_ ns-sym & args)*
+</pre>
+<pre> Loads the specified namespace and invokes its "main" function with 
+optional args.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils.clj#155 Source] [http://www.google.com/codesearch?hl=en&lr=&q=run*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===show===
 ====function====

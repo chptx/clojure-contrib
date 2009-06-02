@@ -751,7 +751,7 @@ API Overview [ReplUtilsApiDoc here]
 
 <pre> Utilities meant to be used interactively at the REPL</pre>
 Public Variables and Functions:
-[ReplUtilsApiDoc#_*local-javadocs_* *local-javadocs*] [ReplUtilsApiDoc#_*remote-javadocs_* *remote-javadocs*] [ReplUtilsApiDoc#add-break-thread! add-break-thread!] [ReplUtilsApiDoc#add-local-javadoc add-local-javadoc] [ReplUtilsApiDoc#add-remote-javadoc add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#find-javadoc-url find-javadoc-url] [ReplUtilsApiDoc#get-source get-source] [ReplUtilsApiDoc#javadoc javadoc] [ReplUtilsApiDoc#show show] [ReplUtilsApiDoc#source source] [ReplUtilsApiDoc#start-handling-break start-handling-break] 
+[ReplUtilsApiDoc#_*local-javadocs_* *local-javadocs*] [ReplUtilsApiDoc#_*remote-javadocs_* *remote-javadocs*] [ReplUtilsApiDoc#add-break-thread! add-break-thread!] [ReplUtilsApiDoc#add-local-javadoc add-local-javadoc] [ReplUtilsApiDoc#add-remote-javadoc add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#find-javadoc-url find-javadoc-url] [ReplUtilsApiDoc#get-source get-source] [ReplUtilsApiDoc#javadoc javadoc] [ReplUtilsApiDoc#run run] [ReplUtilsApiDoc#run_* run*] [ReplUtilsApiDoc#show show] [ReplUtilsApiDoc#source source] [ReplUtilsApiDoc#start-handling-break start-handling-break] 
 
 ----
 ===seq-utils===
