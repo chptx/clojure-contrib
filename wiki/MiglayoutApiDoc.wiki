@@ -55,7 +55,7 @@ an id constraint set</pre>
 <pre>
 Usage: *(_miglayout_ container & args)*
 </pre>
-<pre> Adds java.awt.Components to a java.awt.Container with constraints 
+<pre> Adds java.awt.Components to a javax.swing.JComponent with constraints 
 formatted for the MiGLayout layout manager. 
  
 Arguments: container `[`item constraint`*``]``*` 
