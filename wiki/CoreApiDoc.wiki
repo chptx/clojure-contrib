@@ -23,7 +23,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#-?> -?>] [#.?. .?.] [#dissoc-in dissoc-in] [#new-by-name new-by-name] 
+[#-?> -?>] [#.?. .?.] [#dissoc-in dissoc-in] [#new-by-name new-by-name] [#seqable? seqable?] 
 
 ----
 ===-?>===
@@ -73,3 +73,12 @@ Usage: *(_new-by-name_ class-name & args)*
 <pre> Constructs a Java object whose class is specified by a String.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#63 Source] [http://www.google.com/codesearch?hl=en&lr=&q=new-by-name+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===seqable?===
+====function====
+<pre>
+Usage: *(_seqable?_ x)*
+</pre>
+<pre> Returns true if (seq x) will succeed, false otherwise.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/core.clj#70 Source] [http://www.google.com/codesearch?hl=en&lr=&q=seqable?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
