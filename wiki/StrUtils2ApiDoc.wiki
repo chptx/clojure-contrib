@@ -81,7 +81,9 @@ from characters to their replacements.</pre>
 ----
 ===replace===
 ====multimethod====
-_No usage documentation available_
+<pre>
+Usage: *(_replace_ s a b)*
+</pre>
 <pre> Replaces all instances of a in s with b.  a and b may be 
 Characters, Strings, Pattern/String, or Pattern/Fn.</pre>
 
@@ -89,11 +91,13 @@ Characters, Strings, Pattern/String, or Pattern/Fn.</pre>
 ----
 ===replace-first===
 ====multimethod====
-_No usage documentation available_
+<pre>
+Usage: *(_replace-first_ s a b)*
+</pre>
 <pre> Replaces the first instance of a in s with b.  a must be 
 Pattern, b may be String or Fn.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=replace-first+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#129 Source] [http://www.google.com/codesearch?hl=en&lr=&q=replace-first+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===tail===
 ====function====

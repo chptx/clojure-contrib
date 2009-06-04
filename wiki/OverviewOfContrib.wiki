@@ -171,7 +171,7 @@ API Overview [DefApiDoc here]
 <pre> def.clj provides variants of def that make including doc strings and 
 making private definitions more succinct.</pre>
 Public Variables and Functions:
-[DefApiDoc#defalias defalias] [DefApiDoc#defhinted defhinted] [DefApiDoc#defmacro- defmacro-] [DefApiDoc#defonce- defonce-] [DefApiDoc#defstruct- defstruct-] [DefApiDoc#defunbound defunbound] [DefApiDoc#defunbound- defunbound-] [DefApiDoc#defvar defvar] [DefApiDoc#defvar- defvar-] [DefApiDoc#name-with-attributes name-with-attributes] 
+[DefApiDoc#defalias defalias] [DefApiDoc#defhinted defhinted] [DefApiDoc#defmacro- defmacro-] [DefApiDoc#defnk defnk] [DefApiDoc#defonce- defonce-] [DefApiDoc#defstruct- defstruct-] [DefApiDoc#defunbound defunbound] [DefApiDoc#defunbound- defunbound-] [DefApiDoc#defvar defvar] [DefApiDoc#defvar- defvar-] [DefApiDoc#name-with-attributes name-with-attributes] 
 
 ----
 ===duck-streams===

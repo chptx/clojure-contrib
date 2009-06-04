@@ -23,7 +23,7 @@ making private definitions more succinct.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#defalias defalias] [#defhinted defhinted] [#defmacro- defmacro-] [#defonce- defonce-] [#defstruct- defstruct-] [#defunbound defunbound] [#defunbound- defunbound-] [#defvar defvar] [#defvar- defvar-] [#name-with-attributes name-with-attributes] 
+[#defalias defalias] [#defhinted defhinted] [#defmacro- defmacro-] [#defnk defnk] [#defonce- defonce-] [#defstruct- defstruct-] [#defunbound defunbound] [#defunbound- defunbound-] [#defvar defvar] [#defvar- defvar-] [#name-with-attributes name-with-attributes] 
 
 ----
 ===defalias===
@@ -57,6 +57,20 @@ Usage: *(_defmacro-_ name & decls)*
 <pre> Same as defmacro but yields a private definition</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#39 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defmacro-+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===defnk===
+====macro====
+<pre>
+Usage: *(_defnk_ fn-name & fn-tail)*
+</pre>
+<pre> Define a function accepting keyword arguments. Symbols up to the first 
+keyword in the parameter list are taken as positional arguments.  Then 
+an alternating sequence of keywords and defaults values is expected. The 
+values of the keyword arguments are available in the function body by 
+virtue of the symbol corresponding to the keyword (cf. :keys destructuring). 
+defnk accepts an optional docstring as well as an optional metadata map.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/def.clj#120 Source] [http://www.google.com/codesearch?hl=en&lr=&q=defnk+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===defonce-===
 ====macro====
