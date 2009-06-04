@@ -845,6 +845,29 @@ Public Variables and Functions:
 [StrUtilsApiDoc#chomp chomp] [StrUtilsApiDoc#chop chop] [StrUtilsApiDoc#re-gsub re-gsub] [StrUtilsApiDoc#re-partition re-partition] [StrUtilsApiDoc#re-split re-split] [StrUtilsApiDoc#re-sub re-sub] [StrUtilsApiDoc#str-join str-join] 
 
 ----
+===str-utils2===
+by Stuart Sierra<br>
+API Overview [StrUtils2ApiDoc here]
+
+<pre> This is a library of string manipulation functions.  It 
+is intented as a replacement for clojure.contrib.str-utils. 
+ 
+You cannot (use 'clojure.contrib.str-utils2) because it defines 
+functions with the same names as functions in clojure.core. 
+Instead, do (require '`[`clojure.contrib.str-utils2 :as s`]`)  
+or something similar. 
+ 
+Goals: 
+  1. Be functional 
+  2. String argument first, to work with -> 
+  3. Performance linear in string length 
+ 
+Some ideas are borrowed from 
+http://github.com/francoisdevlin/devlinsf-clojure-utils/</pre>
+Public Variables and Functions:
+[StrUtils2ApiDoc#blank? blank?] [StrUtils2ApiDoc#butlast butlast] [StrUtils2ApiDoc#dochars dochars] [StrUtils2ApiDoc#escape escape] [StrUtils2ApiDoc#replace replace] [StrUtils2ApiDoc#replace-first replace-first] [StrUtils2ApiDoc#tail tail] [StrUtils2ApiDoc#take take] 
+
+----
 ===stream-utils===
 by Konrad Hinsen<br>
 API Overview [StreamUtilsApiDoc here]

@@ -1,0 +1,114 @@
+#summary str-utils2 API Reference
+#sidebar ApiDocSidebar
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for str-utils2=
+by Stuart Sierra
+
+Usage: 
+{{{
+(ns <your-namespace>
+  (:require clojure.contrib.str-utils2))
+}}}
+==Overview==
+<pre> This is a library of string manipulation functions.  It 
+is intented as a replacement for clojure.contrib.str-utils. 
+ 
+You cannot (use 'clojure.contrib.str-utils2) because it defines 
+functions with the same names as functions in clojure.core. 
+Instead, do (require '`[`clojure.contrib.str-utils2 :as s`]`)  
+or something similar. 
+ 
+Goals: 
+  1. Be functional 
+  2. String argument first, to work with -> 
+  3. Performance linear in string length 
+ 
+Some ideas are borrowed from 
+http://github.com/francoisdevlin/devlinsf-clojure-utils/</pre>
+
+
+==Public Variables and Functions==
+Shortcuts:
+[#blank? blank?] [#butlast butlast] [#dochars dochars] [#escape escape] [#replace replace] [#replace-first replace-first] [#tail tail] [#take take] 
+
+----
+===blank?===
+====function====
+<pre>
+Usage: *(_blank?_ s)*
+</pre>
+<pre> True if s is nil, empty, or contains only whitespace.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#68 Source] [http://www.google.com/codesearch?hl=en&lr=&q=blank?+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===butlast===
+====function====
+<pre>
+Usage: *(_butlast_ s n)*
+</pre>
+<pre> Returns s without the last n characters.  Returns an empty string 
+if n is greater than the length of s.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#87 Source] [http://www.google.com/codesearch?hl=en&lr=&q=butlast+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===dochars===
+====macro====
+<pre>
+Usage: *(_dochars_ bindings & body)*
+</pre>
+<pre> bindings `=`> `[`name string`]` 
+Repeatedly executes body, with name bound to each character in 
+string.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#36 Source] [http://www.google.com/codesearch?hl=en&lr=&q=dochars+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===escape===
+====function====
+<pre>
+Usage: *(_escape_ s cmap)*
+</pre>
+<pre> Escapes characters in string according to a cmap, a function or map 
+from characters to their replacements.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#48 Source] [http://www.google.com/codesearch?hl=en&lr=&q=escape+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===replace===
+====multimethod====
+_No usage documentation available_
+<pre> Replaces all instances of a in s with b.  a and b may be 
+Characters, Strings, Pattern/String, or Pattern/Fn.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#102 Source] [http://www.google.com/codesearch?hl=en&lr=&q=replace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===replace-first===
+====multimethod====
+_No usage documentation available_
+<pre> Replaces the first instance of a in s with b.  a must be 
+Pattern, b may be String or Fn.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=replace-first+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===tail===
+====function====
+<pre>
+Usage: *(_tail_ s n)*
+</pre>
+<pre> Returns the last n characters of s.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#95 Source] [http://www.google.com/codesearch?hl=en&lr=&q=tail+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===take===
+====function====
+<pre>
+Usage: *(_take_ s n)*
+</pre>
+<pre> Take first n characters from s, up to the length of s.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#73 Source] [http://www.google.com/codesearch?hl=en&lr=&q=take+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

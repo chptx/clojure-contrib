@@ -68,6 +68,7 @@ namespace.
 [SqlApiDoc sql]<br/>
 [StacktraceApiDoc stacktrace]<br/>
 [StrUtilsApiDoc str-utils]<br/>
+[StrUtils2ApiDoc str-utils2]<br/>
 [StreamUtilsApiDoc stream-utils]<br/>
 [SwingUtilsApiDoc swing-utils]<br/>
 [TemplateApiDoc template]<br/>
