@@ -865,7 +865,7 @@ Goals:
 Some ideas are borrowed from 
 http://github.com/francoisdevlin/devlinsf-clojure-utils/</pre>
 Public Variables and Functions:
-[StrUtils2ApiDoc#blank? blank?] [StrUtils2ApiDoc#butlast butlast] [StrUtils2ApiDoc#chomp chomp] [StrUtils2ApiDoc#chop chop] [StrUtils2ApiDoc#dochars dochars] [StrUtils2ApiDoc#escape escape] [StrUtils2ApiDoc#join join] [StrUtils2ApiDoc#partition partition] [StrUtils2ApiDoc#replace replace] [StrUtils2ApiDoc#replace-first replace-first] [StrUtils2ApiDoc#tail tail] [StrUtils2ApiDoc#take take] 
+[StrUtils2ApiDoc#blank? blank?] [StrUtils2ApiDoc#butlast butlast] [StrUtils2ApiDoc#chomp chomp] [StrUtils2ApiDoc#chop chop] [StrUtils2ApiDoc#codepoints codepoints] [StrUtils2ApiDoc#dochars dochars] [StrUtils2ApiDoc#docodepoints docodepoints] [StrUtils2ApiDoc#escape escape] [StrUtils2ApiDoc#join join] [StrUtils2ApiDoc#partition partition] [StrUtils2ApiDoc#replace replace] [StrUtils2ApiDoc#replace-first replace-first] [StrUtils2ApiDoc#tail tail] [StrUtils2ApiDoc#take take] 
 
 ----
 ===stream-utils===
