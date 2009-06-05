@@ -35,7 +35,7 @@ See also: [http://www.json.org JSON Home Page]
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*json-keyword-keys_* *json-keyword-keys*] [#read-json read-json] 
+[#*_json-keyword-keys_* *json-keyword-keys*] [#read-json read-json] 
 
 ----
 ===`*`json-keyword-keys`*`===

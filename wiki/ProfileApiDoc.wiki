@@ -42,7 +42,7 @@ under the JVM.  See the function documentation for more details.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*enable-profiling_* *enable-profiling*] [#print-summary print-summary] [#prof prof] [#profile profile] [#summarize summarize] [#with-profile-data with-profile-data] 
+[#*_enable-profiling_* *enable-profiling*] [#print-summary print-summary] [#prof prof] [#profile profile] [#summarize summarize] [#with-profile-data with-profile-data] 
 
 ----
 ===`*`enable-profiling`*`===

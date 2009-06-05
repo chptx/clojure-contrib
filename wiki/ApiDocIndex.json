@@ -1806,7 +1806,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#140",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#_*append-to-writer_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#*_append-to-writer_*",
    "namespace":"clojure.contrib.duck-streams",
    "name":"*append-to-writer*",
    "doc":
@@ -1814,7 +1814,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#75",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#_*buffer-size_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#*_buffer-size_*",
    "namespace":"clojure.contrib.duck-streams",
    "name":"*buffer-size*",
    "doc":
@@ -1822,14 +1822,14 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#80",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#_*byte-array-type_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#*_byte-array-type_*",
    "namespace":"clojure.contrib.duck-streams",
    "name":"*byte-array-type*",
    "doc":"Type object for a Java primitive byte array."},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/duck_streams.clj#70",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#_*default-encoding_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribDuckStreamsApiDoc#*_default-encoding_*",
    "namespace":"clojure.contrib.duck-streams",
    "name":"*default-encoding*",
    "doc":
@@ -2295,7 +2295,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/arithmetic.clj#111",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericArithmeticApiDoc#*",
    "namespace":"clojure.contrib.generic.arithmetic",
    "name":"*",
    "arglists":[["x"], ["x", "y"], ["x", "y", "&", "more"]],
@@ -2429,7 +2429,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/generic/comparison.clj#36",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#_=",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenericComparisonApiDoc#=",
    "namespace":"clojure.contrib.generic.comparison",
    "name":"=",
    "arglists":[["x"], ["x", "y"], ["x", "y", "&", "more"]],
@@ -2952,7 +2952,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/json/read.clj#55",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJsonReadApiDoc#_*json-keyword-keys_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJsonReadApiDoc#*_json-keyword-keys_*",
    "namespace":"clojure.contrib.json.read",
    "name":"*json-keyword-keys*",
    "doc":
@@ -3711,7 +3711,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#317",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*code-dispatch_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_code-dispatch_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*code-dispatch*",
    "arglists":[["object"]],
@@ -3720,14 +3720,14 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#56",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-circle_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_print-circle_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*print-circle*",
    "doc":"Mark circular structures (N.B. This is not yet used)"},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#51",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-lines_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_print-lines_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*print-lines*",
    "doc":
@@ -3735,7 +3735,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#44",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-miser-width_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_print-miser-width_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*print-miser-width*",
    "doc":
@@ -3743,7 +3743,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#33",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-pprint-dispatch_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_print-pprint-dispatch_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*print-pprint-dispatch*",
    "doc":
@@ -3751,14 +3751,14 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#29",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-pretty_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_print-pretty_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*print-pretty*",
    "doc":"Bind to true if you want write to use pretty printing"},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#38",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-right-margin_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_print-right-margin_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*print-right-margin*",
    "doc":
@@ -3766,7 +3766,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#61",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-shared_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_print-shared_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*print-shared*",
    "doc":
@@ -3774,7 +3774,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/pprint_base.clj#65",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*print-suppress-namespaces_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_print-suppress-namespaces_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*print-suppress-namespaces*",
    "doc":
@@ -3782,7 +3782,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#88",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#_*simple-dispatch_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_simple-dispatch_*",
    "namespace":"clojure.contrib.pprint",
    "name":"*simple-dispatch*",
    "arglists":[["object"]],
@@ -3960,7 +3960,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#27",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintExamplesXmlApiDoc#_*html-compatible_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintExamplesXmlApiDoc#*_html-compatible_*",
    "namespace":"clojure.contrib.pprint.examples.xml",
    "name":"*html-compatible*",
    "doc":
@@ -3968,7 +3968,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#31",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintExamplesXmlApiDoc#_*prxml-indent_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintExamplesXmlApiDoc#*_prxml-indent_*",
    "namespace":"clojure.contrib.pprint.examples.xml",
    "name":"*prxml-indent*",
    "doc":"The number of spaces to indent sub-tags."},
@@ -4214,7 +4214,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/profile.clj#42",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc#_*enable-profiling_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribProfileApiDoc#*_enable-profiling_*",
    "namespace":"clojure.contrib.profile",
    "name":"*enable-profiling*",
    "doc":
@@ -4266,7 +4266,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#32",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc#_*html-compatible_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc#*_html-compatible_*",
    "namespace":"clojure.contrib.prxml",
    "name":"*html-compatible*",
    "doc":
@@ -4274,7 +4274,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/prxml.clj#36",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc#_*prxml-indent_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPrxmlApiDoc#*_prxml-indent_*",
    "namespace":"clojure.contrib.prxml",
    "name":"*prxml-indent*",
    "doc":
@@ -4352,7 +4352,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#18",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribReplUtilsApiDoc#_*local-javadocs_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribReplUtilsApiDoc#*_local-javadocs_*",
    "namespace":"clojure.contrib.repl-utils",
    "name":"*local-javadocs*",
    "doc":
@@ -4360,7 +4360,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/repl_utils/javadoc.clj#28",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribReplUtilsApiDoc#_*remote-javadocs_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribReplUtilsApiDoc#*_remote-javadocs_*",
    "namespace":"clojure.contrib.repl-utils",
    "name":"*remote-javadocs*",
    "doc":
@@ -5631,7 +5631,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#468",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#_*load-tests_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#*_load-tests_*",
    "namespace":"clojure.contrib.test-is",
    "name":"*load-tests*",
    "doc":
@@ -5639,7 +5639,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/test_is.clj#474",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#_*stack-trace-depth_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribTestIsApiDoc#*_stack-trace-depth_*",
    "namespace":"clojure.contrib.test-is",
    "name":"*stack-trace-depth*",
    "doc":
@@ -5913,7 +5913,7 @@
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/trace.clj#40",
    "wiki-url":
-   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribTraceApiDoc#_*trace-depth_*",
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribTraceApiDoc#*_trace-depth_*",
    "namespace":"clojure.contrib.trace",
    "name":"*trace-depth*",
    "doc":"Current stack depth of traced function calls."},

@@ -31,7 +31,7 @@ or "just-give-me-a-stream", but ducks are funnier.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*append-to-writer_* *append-to-writer*] [#_*buffer-size_* *buffer-size*] [#_*byte-array-type_* *byte-array-type*] [#_*default-encoding_* *default-encoding*] [#append-spit append-spit] [#append-writer append-writer] [#copy copy] [#file-str file-str] [#make-parents make-parents] [#pwd pwd] [#read-lines read-lines] [#reader reader] [#slurp_* slurp*] [#spit spit] [#to-byte-array to-byte-array] [#with-in-reader with-in-reader] [#with-out-append-writer with-out-append-writer] [#with-out-writer with-out-writer] [#write-lines write-lines] [#writer writer] 
+[#*_append-to-writer_* *append-to-writer*] [#*_buffer-size_* *buffer-size*] [#*_byte-array-type_* *byte-array-type*] [#*_default-encoding_* *default-encoding*] [#append-spit append-spit] [#append-writer append-writer] [#copy copy] [#file-str file-str] [#make-parents make-parents] [#pwd pwd] [#read-lines read-lines] [#reader reader] [#slurp_* slurp*] [#spit spit] [#to-byte-array to-byte-array] [#with-in-reader with-in-reader] [#with-out-append-writer with-out-append-writer] [#with-out-writer with-out-writer] [#write-lines write-lines] [#writer writer] 
 
 ----
 ===`*`append-to-writer`*`===

@@ -189,7 +189,7 @@ Note: this is not really "duck typing" as implemented in languages
 like Ruby.  A better name would have been "do-what-I-mean-streams" 
 or "just-give-me-a-stream", but ducks are funnier.</pre>
 Public Variables and Functions:
-[DuckStreamsApiDoc#_*append-to-writer_* *append-to-writer*] [DuckStreamsApiDoc#_*buffer-size_* *buffer-size*] [DuckStreamsApiDoc#_*byte-array-type_* *byte-array-type*] [DuckStreamsApiDoc#_*default-encoding_* *default-encoding*] [DuckStreamsApiDoc#append-spit append-spit] [DuckStreamsApiDoc#append-writer append-writer] [DuckStreamsApiDoc#copy copy] [DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#make-parents make-parents] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp_* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#to-byte-array to-byte-array] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-append-writer with-out-append-writer] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
+[DuckStreamsApiDoc#*_append-to-writer_* *append-to-writer*] [DuckStreamsApiDoc#*_buffer-size_* *buffer-size*] [DuckStreamsApiDoc#*_byte-array-type_* *byte-array-type*] [DuckStreamsApiDoc#*_default-encoding_* *default-encoding*] [DuckStreamsApiDoc#append-spit append-spit] [DuckStreamsApiDoc#append-writer append-writer] [DuckStreamsApiDoc#copy copy] [DuckStreamsApiDoc#file-str file-str] [DuckStreamsApiDoc#make-parents make-parents] [DuckStreamsApiDoc#pwd pwd] [DuckStreamsApiDoc#read-lines read-lines] [DuckStreamsApiDoc#reader reader] [DuckStreamsApiDoc#slurp_* slurp*] [DuckStreamsApiDoc#spit spit] [DuckStreamsApiDoc#to-byte-array to-byte-array] [DuckStreamsApiDoc#with-in-reader with-in-reader] [DuckStreamsApiDoc#with-out-append-writer with-out-append-writer] [DuckStreamsApiDoc#with-out-writer with-out-writer] [DuckStreamsApiDoc#write-lines write-lines] [DuckStreamsApiDoc#writer writer] 
 
 ----
 ===error-kit===
@@ -273,7 +273,7 @@ Everything else is derived from these automatically. Explicit
 binary definitions for - and / can be provided for 
 efficiency reasons.</pre>
 Public Variables and Functions:
-[GenericArithmeticApiDoc#_* *] [GenericArithmeticApiDoc#+ +] [GenericArithmeticApiDoc#- -] [GenericArithmeticApiDoc#/ /] [GenericArithmeticApiDoc#defmethod_* defmethod*] [GenericArithmeticApiDoc#qsym qsym] 
+[GenericArithmeticApiDoc#* *] [GenericArithmeticApiDoc#+ +] [GenericArithmeticApiDoc#- -] [GenericArithmeticApiDoc#/ /] [GenericArithmeticApiDoc#defmethod_* defmethod*] [GenericArithmeticApiDoc#qsym qsym] 
 
 ----
 ===generic.collection===
@@ -297,7 +297,7 @@ This library defines generic versions of `=` < > <`=` >`=` zero?
 as multimethods that can be defined for any type. Of the 
 greater/less-than relations, types must minimally implement >.</pre>
 Public Variables and Functions:
-[GenericComparisonApiDoc#< <] [GenericComparisonApiDoc#<_= <=] [GenericComparisonApiDoc#_= =] [GenericComparisonApiDoc#> >] [GenericComparisonApiDoc#>_= >=] [GenericComparisonApiDoc#zero? zero?] 
+[GenericComparisonApiDoc#< <] [GenericComparisonApiDoc#<_= <=] [GenericComparisonApiDoc#= =] [GenericComparisonApiDoc#> >] [GenericComparisonApiDoc#>_= >=] [GenericComparisonApiDoc#zero? zero?] 
 
 ----
 ===generic.functor===
@@ -412,7 +412,7 @@ clojure.contrib.walk/keywordize-keys</pre>
 See also: [http://www.json.org JSON Home Page]
 
 Public Variables and Functions:
-[JsonReadApiDoc#_*json-keyword-keys_* *json-keyword-keys*] [JsonReadApiDoc#read-json read-json] 
+[JsonReadApiDoc#*_json-keyword-keys_* *json-keyword-keys*] [JsonReadApiDoc#read-json read-json] 
 
 ----
 ===json.write===
@@ -644,13 +644,13 @@ Complete documentation is available on the wiki at the contrib google code site.
 See also: [PrettyPrinting Documentation for the pretty printer], [CommonLispFormat Documentation for Common Lisp format function]
 
 Public Variables and Functions:
-[PprintApiDoc#_*code-dispatch_* *code-dispatch*] [PprintApiDoc#_*print-circle_* *print-circle*] [PprintApiDoc#_*print-lines_* *print-lines*] [PprintApiDoc#_*print-miser-width_* *print-miser-width*] [PprintApiDoc#_*print-pprint-dispatch_* *print-pprint-dispatch*] [PprintApiDoc#_*print-pretty_* *print-pretty*] [PprintApiDoc#_*print-right-margin_* *print-right-margin*] [PprintApiDoc#_*print-shared_* *print-shared*] [PprintApiDoc#_*print-suppress-namespaces_* *print-suppress-namespaces*] [PprintApiDoc#_*simple-dispatch_* *simple-dispatch*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#formatter-out formatter-out] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#use-method use-method] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] [PprintApiDoc#write-out write-out] 
+[PprintApiDoc#*_code-dispatch_* *code-dispatch*] [PprintApiDoc#*_print-circle_* *print-circle*] [PprintApiDoc#*_print-lines_* *print-lines*] [PprintApiDoc#*_print-miser-width_* *print-miser-width*] [PprintApiDoc#*_print-pprint-dispatch_* *print-pprint-dispatch*] [PprintApiDoc#*_print-pretty_* *print-pretty*] [PprintApiDoc#*_print-right-margin_* *print-right-margin*] [PprintApiDoc#*_print-shared_* *print-shared*] [PprintApiDoc#*_print-suppress-namespaces_* *print-suppress-namespaces*] [PprintApiDoc#*_simple-dispatch_* *simple-dispatch*] [PprintApiDoc#cl-format cl-format] [PprintApiDoc#compile-format compile-format] [PprintApiDoc#formatter formatter] [PprintApiDoc#formatter-out formatter-out] [PprintApiDoc#fresh-line fresh-line] [PprintApiDoc#pp pp] [PprintApiDoc#pprint pprint] [PprintApiDoc#pprint-indent pprint-indent] [PprintApiDoc#pprint-logical-block pprint-logical-block] [PprintApiDoc#pprint-newline pprint-newline] [PprintApiDoc#pprint-tab pprint-tab] [PprintApiDoc#set-pprint-dispatch set-pprint-dispatch] [PprintApiDoc#use-method use-method] [PprintApiDoc#with-pprint-dispatch with-pprint-dispatch] [PprintApiDoc#write write] [PprintApiDoc#write-out write-out] 
 
 Variables and Functions in pprint.examples.json:
 [PprintApiDoc#dispatch-json dispatch-json] [PprintApiDoc#json-str json-str] [PprintApiDoc#print-json print-json] 
 
 Variables and Functions in pprint.examples.xml:
-[PprintApiDoc#_*html-compatible_* *html-compatible*] [PprintApiDoc#_*prxml-indent_* *prxml-indent*] [PprintApiDoc#prxml prxml] 
+[PprintApiDoc#*_html-compatible_* *html-compatible*] [PprintApiDoc#*_prxml-indent_* *prxml-indent*] [PprintApiDoc#prxml prxml] 
 
 ----
 ===probabilities.finite-distributions===
@@ -733,7 +733,7 @@ multiplication       274         0     53000     10000   2747000
 Times are measured in nanoseconds, to the maximum precision available 
 under the JVM.  See the function documentation for more details.</pre>
 Public Variables and Functions:
-[ProfileApiDoc#_*enable-profiling_* *enable-profiling*] [ProfileApiDoc#print-summary print-summary] [ProfileApiDoc#prof prof] [ProfileApiDoc#profile profile] [ProfileApiDoc#summarize summarize] [ProfileApiDoc#with-profile-data with-profile-data] 
+[ProfileApiDoc#*_enable-profiling_* *enable-profiling*] [ProfileApiDoc#print-summary print-summary] [ProfileApiDoc#prof prof] [ProfileApiDoc#profile profile] [ProfileApiDoc#summarize summarize] [ProfileApiDoc#with-profile-data with-profile-data] 
 
 ----
 ===prxml===
@@ -743,7 +743,7 @@ API Overview [PrxmlApiDoc here]
 <pre> Compact syntax for generating XML. See the documentation of "prxml"  
 for details.</pre>
 Public Variables and Functions:
-[PrxmlApiDoc#_*html-compatible_* *html-compatible*] [PrxmlApiDoc#_*prxml-indent_* *prxml-indent*] [PrxmlApiDoc#prxml prxml] 
+[PrxmlApiDoc#*_html-compatible_* *html-compatible*] [PrxmlApiDoc#*_prxml-indent_* *prxml-indent*] [PrxmlApiDoc#prxml prxml] 
 
 ----
 ===repl-ln===
@@ -762,7 +762,7 @@ API Overview [ReplUtilsApiDoc here]
 
 <pre> Utilities meant to be used interactively at the REPL</pre>
 Public Variables and Functions:
-[ReplUtilsApiDoc#_*local-javadocs_* *local-javadocs*] [ReplUtilsApiDoc#_*remote-javadocs_* *remote-javadocs*] [ReplUtilsApiDoc#add-break-thread! add-break-thread!] [ReplUtilsApiDoc#add-local-javadoc add-local-javadoc] [ReplUtilsApiDoc#add-remote-javadoc add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#expression-info expression-info] [ReplUtilsApiDoc#find-javadoc-url find-javadoc-url] [ReplUtilsApiDoc#get-source get-source] [ReplUtilsApiDoc#javadoc javadoc] [ReplUtilsApiDoc#run run] [ReplUtilsApiDoc#run_* run*] [ReplUtilsApiDoc#show show] [ReplUtilsApiDoc#source source] [ReplUtilsApiDoc#start-handling-break start-handling-break] 
+[ReplUtilsApiDoc#*_local-javadocs_* *local-javadocs*] [ReplUtilsApiDoc#*_remote-javadocs_* *remote-javadocs*] [ReplUtilsApiDoc#add-break-thread! add-break-thread!] [ReplUtilsApiDoc#add-local-javadoc add-local-javadoc] [ReplUtilsApiDoc#add-remote-javadoc add-remote-javadoc] [ReplUtilsApiDoc#break-threads break-threads] [ReplUtilsApiDoc#expression-info expression-info] [ReplUtilsApiDoc#find-javadoc-url find-javadoc-url] [ReplUtilsApiDoc#get-source get-source] [ReplUtilsApiDoc#javadoc javadoc] [ReplUtilsApiDoc#run run] [ReplUtilsApiDoc#run_* run*] [ReplUtilsApiDoc#show show] [ReplUtilsApiDoc#source source] [ReplUtilsApiDoc#start-handling-break start-handling-break] 
 
 ----
 ===seq-utils===
@@ -1193,7 +1193,7 @@ of `*`test-out`*`.
  
 For additional event types, see the examples in the code.</pre>
 Public Variables and Functions:
-[TestIsApiDoc#_*load-tests_* *load-tests*] [TestIsApiDoc#_*stack-trace-depth_* *stack-trace-depth*] [TestIsApiDoc#are are] [TestIsApiDoc#assert-any assert-any] [TestIsApiDoc#assert-predicate assert-predicate] [TestIsApiDoc#compose-fixtures compose-fixtures] [TestIsApiDoc#deftest deftest] [TestIsApiDoc#deftest- deftest-] [TestIsApiDoc#file-position file-position] [TestIsApiDoc#function? function?] [TestIsApiDoc#get-possibly-unbound-var get-possibly-unbound-var] [TestIsApiDoc#inc-report-counter inc-report-counter] [TestIsApiDoc#is is] [TestIsApiDoc#join-fixtures join-fixtures] [TestIsApiDoc#report report] [TestIsApiDoc#run-all-tests run-all-tests] [TestIsApiDoc#run-tests run-tests] [TestIsApiDoc#set-test set-test] [TestIsApiDoc#test-all-vars test-all-vars] [TestIsApiDoc#test-ns test-ns] [TestIsApiDoc#test-var test-var] [TestIsApiDoc#testing testing] [TestIsApiDoc#testing-contexts-str testing-contexts-str] [TestIsApiDoc#testing-vars-str testing-vars-str] [TestIsApiDoc#try-expr try-expr] [TestIsApiDoc#with-test with-test] [TestIsApiDoc#with-test-out with-test-out] 
+[TestIsApiDoc#*_load-tests_* *load-tests*] [TestIsApiDoc#*_stack-trace-depth_* *stack-trace-depth*] [TestIsApiDoc#are are] [TestIsApiDoc#assert-any assert-any] [TestIsApiDoc#assert-predicate assert-predicate] [TestIsApiDoc#compose-fixtures compose-fixtures] [TestIsApiDoc#deftest deftest] [TestIsApiDoc#deftest- deftest-] [TestIsApiDoc#file-position file-position] [TestIsApiDoc#function? function?] [TestIsApiDoc#get-possibly-unbound-var get-possibly-unbound-var] [TestIsApiDoc#inc-report-counter inc-report-counter] [TestIsApiDoc#is is] [TestIsApiDoc#join-fixtures join-fixtures] [TestIsApiDoc#report report] [TestIsApiDoc#run-all-tests run-all-tests] [TestIsApiDoc#run-tests run-tests] [TestIsApiDoc#set-test set-test] [TestIsApiDoc#test-all-vars test-all-vars] [TestIsApiDoc#test-ns test-ns] [TestIsApiDoc#test-var test-var] [TestIsApiDoc#testing testing] [TestIsApiDoc#testing-contexts-str testing-contexts-str] [TestIsApiDoc#testing-vars-str testing-vars-str] [TestIsApiDoc#try-expr try-expr] [TestIsApiDoc#with-test with-test] [TestIsApiDoc#with-test-out with-test-out] 
 
 Variables and Functions in test-is.tap:
 [TestIsApiDoc#print-tap-diagnostic print-tap-diagnostic] [TestIsApiDoc#print-tap-fail print-tap-fail] [TestIsApiDoc#print-tap-pass print-tap-pass] [TestIsApiDoc#print-tap-plan print-tap-plan] [TestIsApiDoc#with-tap-output with-tap-output] 
@@ -1206,7 +1206,7 @@ API Overview [TraceApiDoc here]
 <pre> This file defines simple "tracing" macros to help you see what your 
 code is doing.</pre>
 Public Variables and Functions:
-[TraceApiDoc#_*trace-depth_* *trace-depth*] [TraceApiDoc#deftrace deftrace] [TraceApiDoc#trace trace] [TraceApiDoc#trace-fn-call trace-fn-call] [TraceApiDoc#trace-indent trace-indent] [TraceApiDoc#tracer tracer] 
+[TraceApiDoc#*_trace-depth_* *trace-depth*] [TraceApiDoc#deftrace deftrace] [TraceApiDoc#trace trace] [TraceApiDoc#trace-fn-call trace-fn-call] [TraceApiDoc#trace-indent trace-indent] [TraceApiDoc#tracer tracer] 
 
 ----
 ===types===

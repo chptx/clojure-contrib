@@ -23,7 +23,7 @@ code is doing.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*trace-depth_* *trace-depth*] [#deftrace deftrace] [#trace trace] [#trace-fn-call trace-fn-call] [#trace-indent trace-indent] [#tracer tracer] 
+[#*_trace-depth_* *trace-depth*] [#deftrace deftrace] [#trace trace] [#trace-fn-call trace-fn-call] [#trace-indent trace-indent] [#tracer tracer] 
 
 ----
 ===`*`trace-depth`*`===

@@ -23,7 +23,7 @@ for details.</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*html-compatible_* *html-compatible*] [#_*prxml-indent_* *prxml-indent*] [#prxml prxml] 
+[#*_html-compatible_* *html-compatible*] [#*_prxml-indent_* *prxml-indent*] [#prxml prxml] 
 
 ----
 ===`*`html-compatible`*`===

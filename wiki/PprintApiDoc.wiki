@@ -29,13 +29,13 @@ See also: [PrettyPrinting Documentation for the pretty printer], [CommonLispForm
 
 ==Public Variables and Functions==
 Shortcuts:
-[#_*code-dispatch_* *code-dispatch*] [#_*print-circle_* *print-circle*] [#_*print-lines_* *print-lines*] [#_*print-miser-width_* *print-miser-width*] [#_*print-pprint-dispatch_* *print-pprint-dispatch*] [#_*print-pretty_* *print-pretty*] [#_*print-right-margin_* *print-right-margin*] [#_*print-shared_* *print-shared*] [#_*print-suppress-namespaces_* *print-suppress-namespaces*] [#_*simple-dispatch_* *simple-dispatch*] [#cl-format cl-format] [#compile-format compile-format] [#formatter formatter] [#formatter-out formatter-out] [#fresh-line fresh-line] [#pp pp] [#pprint pprint] [#pprint-indent pprint-indent] [#pprint-logical-block pprint-logical-block] [#pprint-newline pprint-newline] [#pprint-tab pprint-tab] [#set-pprint-dispatch set-pprint-dispatch] [#use-method use-method] [#with-pprint-dispatch with-pprint-dispatch] [#write write] [#write-out write-out] 
+[#*_code-dispatch_* *code-dispatch*] [#*_print-circle_* *print-circle*] [#*_print-lines_* *print-lines*] [#*_print-miser-width_* *print-miser-width*] [#*_print-pprint-dispatch_* *print-pprint-dispatch*] [#*_print-pretty_* *print-pretty*] [#*_print-right-margin_* *print-right-margin*] [#*_print-shared_* *print-shared*] [#*_print-suppress-namespaces_* *print-suppress-namespaces*] [#*_simple-dispatch_* *simple-dispatch*] [#cl-format cl-format] [#compile-format compile-format] [#formatter formatter] [#formatter-out formatter-out] [#fresh-line fresh-line] [#pp pp] [#pprint pprint] [#pprint-indent pprint-indent] [#pprint-logical-block pprint-logical-block] [#pprint-newline pprint-newline] [#pprint-tab pprint-tab] [#set-pprint-dispatch set-pprint-dispatch] [#use-method use-method] [#with-pprint-dispatch with-pprint-dispatch] [#write write] [#write-out write-out] 
 
 Variables and Functions in pprint.examples.json:
 [PprintApiDoc#dispatch-json dispatch-json] [PprintApiDoc#json-str json-str] [PprintApiDoc#print-json print-json] 
 
 Variables and Functions in pprint.examples.xml:
-[PprintApiDoc#_*html-compatible_* *html-compatible*] [PprintApiDoc#_*prxml-indent_* *prxml-indent*] [PprintApiDoc#prxml prxml] 
+[PprintApiDoc#*_html-compatible_* *html-compatible*] [PprintApiDoc#*_prxml-indent_* *prxml-indent*] [PprintApiDoc#prxml prxml] 
 
 ----
 ===`*`code-dispatch`*`===
