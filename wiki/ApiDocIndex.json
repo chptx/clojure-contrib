@@ -5155,7 +5155,7 @@
    "doc":
    "Returns a string of all elements in 'sequence', separated by\n  'separator'.  Like Perl's 'join'."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#106",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#101",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#blank?",
    "namespace":"clojure.contrib.str-utils2",
@@ -5163,7 +5163,7 @@
    "arglists":[["s"]],
    "doc":"True if s is nil, empty, or contains only whitespace."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#125",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#120",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#butlast",
    "namespace":"clojure.contrib.str-utils2",
@@ -5172,7 +5172,7 @@
    "doc":
    "Returns s without the last n characters.  Returns an empty string\n  if n is greater than the length of s."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#236",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#231",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#chomp",
    "namespace":"clojure.contrib.str-utils2",
@@ -5181,7 +5181,7 @@
    "doc":
    "Removes all trailing newline \\n or return \\r characters from\n  string.  Note: String.trim() is similar and faster."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#231",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#226",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#chop",
    "namespace":"clojure.contrib.str-utils2",
@@ -5197,6 +5197,14 @@
    "arglists":[["s"]],
    "doc":
    "Returns a sequence of integer Unicode code points in s.  Handles\n  Unicode supplementary characters (above U+FFFF) correctly."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#286",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#contains?",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"contains?",
+   "arglists":[["s", "substring"]],
+   "doc":"True if s contains the substring."},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#37",
    "wiki-url":
@@ -5225,7 +5233,15 @@
    "doc":
    "Escapes characters in string according to a cmap, a function or map\n  from characters to their replacements."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#225",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#291",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#get",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"get",
+   "arglists":[["s", "i"]],
+   "doc":"Gets the i'th character in string."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#220",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#join",
    "namespace":"clojure.contrib.str-utils2",
@@ -5234,7 +5250,23 @@
    "doc":
    "Returns a string of all elements in coll, separated by\n  separator.  Like Perl's join."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#204",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#270",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#lower-case",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"lower-case",
+   "arglists":[["s"]],
+   "doc":"Converts string to all lower-case."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#243",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#ltrim",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"ltrim",
+   "arglists":[["s"]],
+   "doc":"Removes whitespace from the left side of string."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#199",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#partition",
    "namespace":"clojure.contrib.str-utils2",
@@ -5243,7 +5275,7 @@
    "doc":
    "Splits the string into a lazy sequence of substrings, alternating\n  between substrings that match the patthern and the substrings\n  between the matches.  The sequence always starts with the substring\n  before the first match, or an empty string if the beginning of the\n  string matches.\n\n  For example: (partition \"abc123def\" #\"[a-z]+\")\n  returns: (\"\" \"abc\" \"123\" \"def\")"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#140",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#135",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#replace",
    "namespace":"clojure.contrib.str-utils2",
@@ -5252,7 +5284,7 @@
    "doc":
    "Replaces all instances of pattern in string with replacement.  \n  \n  Allowed argument types for pattern and replacement are:\n   1. String and String\n   2. Character and Character\n   3. regex Pattern and String\n      (Uses java.util.regex.Matcher.replaceAll)\n   4. regex Pattern and function\n      (Calls function with re-groups of each match, uses return \n       value as replacement.)"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#175",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#170",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#replace-first",
    "namespace":"clojure.contrib.str-utils2",
@@ -5261,7 +5293,32 @@
    "doc":
    "Replaces the first instance of pattern in s with replacement.\n\n  Allowed argument types for pattern and replacement are:\n   1. String and String\n   2. regex Pattern and String\n      (Uses java.util.regex.Matcher.replaceAll)\n   3. regex Pattern and function\n"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#133",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#248",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#rtrim",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"rtrim",
+   "arglists":[["s"]],
+   "doc":"Removes whitespace from the right side of string."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#275",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#split",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"split",
+   "arglists":[["s", "re"], ["s", "re", "limit"]],
+   "doc":
+   "Splits string on a regular expression.  Optional argument limit is\n  the maximum number of splits."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#253",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#split-lines",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"split-lines",
+   "arglists":[["s"]],
+   "doc":"Splits s on \\n or \\r\\n."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#128",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#tail",
    "namespace":"clojure.contrib.str-utils2",
@@ -5269,13 +5326,29 @@
    "arglists":[["s", "n"]],
    "doc":"Returns the last n characters of s."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#111",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#106",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#take",
    "namespace":"clojure.contrib.str-utils2",
    "name":"take",
    "arglists":[["s", "n"]],
    "doc":"Take first n characters from s, up to the length of s."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#281",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#trim",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"trim",
+   "arglists":[["s"]],
+   "doc":"Removes whitespace from both ends of string."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#265",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#upper-case",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"upper-case",
+   "arglists":[["s"]],
+   "doc":"Converts string to all upper-case."},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/stream_utils.clj#182",
    "wiki-url":
