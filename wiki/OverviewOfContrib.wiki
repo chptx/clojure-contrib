@@ -921,7 +921,7 @@ Public Variables and Functions:
 API Overview [SwingUtilsApiDoc here]
 
 Public Variables and Functions:
-[SwingUtilsApiDoc#add-action-listener add-action-listener] [SwingUtilsApiDoc#add-key-typed-listener add-key-typed-listener] 
+[SwingUtilsApiDoc#add-action-listener add-action-listener] [SwingUtilsApiDoc#add-key-typed-listener add-key-typed-listener] [SwingUtilsApiDoc#do-swing do-swing] [SwingUtilsApiDoc#do-swing_* do-swing*] [SwingUtilsApiDoc#do-swing-and-wait do-swing-and-wait] 
 
 ----
 ===template===

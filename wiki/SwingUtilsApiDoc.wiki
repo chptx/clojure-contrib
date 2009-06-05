@@ -18,7 +18,7 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#add-action-listener add-action-listener] [#add-key-typed-listener add-key-typed-listener] 
+[#add-action-listener add-action-listener] [#add-key-typed-listener add-key-typed-listener] [#do-swing do-swing] [#do-swing_* do-swing*] [#do-swing-and-wait do-swing-and-wait] 
 
 ----
 ===add-action-listener===
@@ -30,7 +30,7 @@ Usage: *(_add-action-listener_ component f & args)*
 invoked with the event as its first argument followed by args. 
 Returns the listener.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-action-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-action-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===add-key-typed-listener===
 ====function====
@@ -41,4 +41,35 @@ Usage: *(_add-key-typed-listener_ component f & args)*
 When a key is typed, f is invoked with the KeyEvent as its first argument 
 followed by args. Returns the listener.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#29 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-key-typed-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#30 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-key-typed-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===do-swing===
+====macro====
+<pre>
+Usage: *(_do-swing_ & body)*
+</pre>
+<pre> Executes body in the Swing event thread asynchronously. Returns 
+immediately after scheduling the execution.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===do-swing`*`===
+====function====
+<pre>
+Usage: *(_do-swing`*`_ schedule thunk)*
+</pre>
+<pre> Runs thunk in the Swing event thread according to schedule: 
+- :later `=`> schedule the execution and return immediately 
+- :now   `=`> wait until the execution completes.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===do-swing-and-wait===
+====macro====
+<pre>
+Usage: *(_do-swing-and-wait_ & body)*
+</pre>
+<pre> Executes body in the Swing event thread synchronously. Returns 
+after the execution is complete.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#61 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing-and-wait+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
