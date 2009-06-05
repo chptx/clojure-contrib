@@ -247,6 +247,9 @@ API Overview [FnmapApiDoc here]
 <pre> Maps that dispatch get/assoc to user-defined functions. 
  
 Note: requires AOT-compilation</pre>
+Public Variables and Functions:
+[FnmapApiDoc#fnmap fnmap] 
+
 ----
 ===gen-html-docs===
 by Craig Andera<br>

@@ -2265,6 +2265,16 @@
    "doc":
    "Attempts to read a (ns ...) declaration from the named entry in the\n  JAR file, and returns the unevaluated form.  Returns nil if the read\n  fails, or if the first form is not a ns declaration."},
   {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fnmap.clj#19",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribFnmapApiDoc#fnmap",
+   "namespace":"clojure.contrib.fnmap",
+   "name":"fnmap",
+   "arglists":
+   [["getter", "setter"], ["getter", "setter", "&", "keyvals"]],
+   "doc":
+   "Creates a fnmap, or functional map.  A fnmap behaves like an\n  ordinary Clojure map, except that calls to get and assoc are\n  filtered through user-defined getter and setter functions, which\n  operate on an internal map.\n\n  (getter m key) should return a value for key.\n\n  (setter m key value) should assoc key with value and return a new\n  map for m.\n\n  All other map operations are passed through to the internal map."},
+  {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/gen_html_docs.clj#430",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribGenHtmlDocsApiDoc#generate-documentation",
@@ -3963,7 +3973,7 @@
    "name":"*prxml-indent*",
    "doc":"The number of spaces to indent sub-tags."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#91",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#92",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintExamplesXmlApiDoc#prxml",
    "namespace":"clojure.contrib.pprint.examples.xml",

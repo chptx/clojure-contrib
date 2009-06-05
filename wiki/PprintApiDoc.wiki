@@ -429,4 +429,4 @@ PSEUDO-TAGS: some keywords have special meaning:
   (prxml `[`:decl! {:version "1.1"}`]`) 
   ; `=`> <?xml version`=`"1.1" encoding`=`"UTF-8"?></pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#91 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prxml+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/examples/xml.clj#92 Source] [http://www.google.com/codesearch?hl=en&lr=&q=prxml+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

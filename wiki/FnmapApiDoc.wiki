@@ -23,3 +23,26 @@ Note: requires AOT-compilation</pre>
 
 
 ==Public Variables and Functions==
+Shortcuts:
+[#fnmap fnmap] 
+
+----
+===fnmap===
+====function====
+<pre>
+Usage: *(_fnmap_ getter setter)
+       (_fnmap_ getter setter & keyvals)*
+</pre>
+<pre> Creates a fnmap, or functional map.  A fnmap behaves like an 
+ordinary Clojure map, except that calls to get and assoc are 
+filtered through user-defined getter and setter functions, which 
+operate on an internal map. 
+ 
+(getter m key) should return a value for key. 
+ 
+(setter m key value) should assoc key with value and return a new 
+map for m. 
+ 
+All other map operations are passed through to the internal map.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/fnmap.clj#19 Source] [http://www.google.com/codesearch?hl=en&lr=&q=fnmap+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
