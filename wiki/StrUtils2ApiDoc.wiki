@@ -36,7 +36,7 @@ http://github.com/francoisdevlin/devlinsf-clojure-utils/</pre>
 
 ==Public Variables and Functions==
 Shortcuts:
-[#blank? blank?] [#butlast butlast] [#dochars dochars] [#escape escape] [#replace replace] [#replace-first replace-first] [#tail tail] [#take take] 
+[#blank? blank?] [#butlast butlast] [#chomp chomp] [#chop chop] [#dochars dochars] [#escape escape] [#join join] [#partition partition] [#replace replace] [#replace-first replace-first] [#tail tail] [#take take] 
 
 ----
 ===blank?===
@@ -58,6 +58,25 @@ if n is greater than the length of s.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#87 Source] [http://www.google.com/codesearch?hl=en&lr=&q=butlast+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
+===chomp===
+====function====
+<pre>
+Usage: *(_chomp_ s)*
+</pre>
+<pre> Removes all trailing newline \n or return \r characters from 
+string.  Note: String.trim() is similar and faster.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#181 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chomp+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===chop===
+====function====
+<pre>
+Usage: *(_chop_ s)*
+</pre>
+<pre> Removes the last character of string.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#176 Source] [http://www.google.com/codesearch?hl=en&lr=&q=chop+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
 ===dochars===
 ====macro====
 <pre>
@@ -78,6 +97,32 @@ Usage: *(_escape_ s cmap)*
 from characters to their replacements.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#48 Source] [http://www.google.com/codesearch?hl=en&lr=&q=escape+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===join===
+====function====
+<pre>
+Usage: *(_join_ separator coll)*
+</pre>
+<pre> Returns a string of all elements in coll, separated by 
+separator.  Like Perl's join.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#170 Source] [http://www.google.com/codesearch?hl=en&lr=&q=join+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===partition===
+====function====
+<pre>
+Usage: *(_partition_ s re)*
+</pre>
+<pre> Splits the string into a lazy sequence of substrings, alternating 
+between substrings that match the patthern and the substrings 
+between the matches.  The sequence always starts with the substring 
+before the first match, or an empty string if the beginning of the 
+string matches. 
+ 
+For example: (partition "abc123def" #"`[`a-z`]`+") 
+returns: ("" "abc" "123" "def")</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#149 Source] [http://www.google.com/codesearch?hl=en&lr=&q=partition+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===replace===
 ====multimethod====

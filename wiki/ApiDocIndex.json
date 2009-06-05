@@ -5172,6 +5172,23 @@
    "doc":
    "Returns s without the last n characters.  Returns an empty string\n  if n is greater than the length of s."},
   {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#181",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#chomp",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"chomp",
+   "arglists":[["s"]],
+   "doc":
+   "Removes all trailing newline \\n or return \\r characters from\n  string.  Note: String.trim() is similar and faster."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#176",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#chop",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"chop",
+   "arglists":[["s"]],
+   "doc":"Removes the last character of string."},
+  {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#36",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#dochars",
@@ -5189,6 +5206,24 @@
    "arglists":[["s", "cmap"]],
    "doc":
    "Escapes characters in string according to a cmap, a function or map\n  from characters to their replacements."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#170",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#join",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"join",
+   "arglists":[["separator", "coll"]],
+   "doc":
+   "Returns a string of all elements in coll, separated by\n  separator.  Like Perl's join."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#149",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribStrUtils2ApiDoc#partition",
+   "namespace":"clojure.contrib.str-utils2",
+   "name":"partition",
+   "arglists":[["s", "re"]],
+   "doc":
+   "Splits the string into a lazy sequence of substrings, alternating\n  between substrings that match the patthern and the substrings\n  between the matches.  The sequence always starts with the substring\n  before the first match, or an empty string if the beginning of the\n  string matches.\n\n  For example: (partition \"abc123def\" #\"[a-z]+\")\n  returns: (\"\" \"abc\" \"123\" \"def\")"},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/str_utils2.clj#102",
    "wiki-url":
