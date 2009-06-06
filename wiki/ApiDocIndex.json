@@ -4960,7 +4960,7 @@
    "arglists":[[]],
    "doc":"Create a table"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#189",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#177",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-batchupdate-exception",
    "namespace":"clojure.contrib.sql.test",
@@ -4968,7 +4968,7 @@
    "arglists":[[]],
    "doc":"Demonstrate a batch update exception"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#160",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#150",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-exception",
    "namespace":"clojure.contrib.sql.test",
@@ -4977,7 +4977,7 @@
    "doc":
    "Demonstrate rolling back a partially completed transaction on exception"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#149",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#140",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-get-tables",
    "namespace":"clojure.contrib.sql.test",
@@ -4985,7 +4985,7 @@
    "arglists":[[]],
    "doc":"Demonstrate getting table info"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#144",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#135",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-grade-a",
    "namespace":"clojure.contrib.sql.test",
@@ -4994,7 +4994,7 @@
    "doc":
    "Print rows describing all grade a fruit (grade between 90 and 100)"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#130",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#123",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-grade-range",
    "namespace":"clojure.contrib.sql.test",
@@ -5002,7 +5002,7 @@
    "arglists":[["min", "max"]],
    "doc":"Print rows describing fruit that are within a grade range"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#81",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#80",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-read",
    "namespace":"clojure.contrib.sql.test",
@@ -5010,7 +5010,7 @@
    "arglists":[[]],
    "doc":"Read the entire fruit table"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#120",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#115",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-read-all",
    "namespace":"clojure.contrib.sql.test",
@@ -5018,7 +5018,7 @@
    "arglists":[[]],
    "doc":"Return all the rows of the fruit table as a vector"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#199",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#186",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-rollback",
    "namespace":"clojure.contrib.sql.test",
@@ -5026,7 +5026,7 @@
    "arglists":[[]],
    "doc":"Demonstrate a rollback-only trasaction"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#176",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#165",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-sql-exception",
    "namespace":"clojure.contrib.sql.test",
@@ -5034,7 +5034,7 @@
    "arglists":[[]],
    "doc":"Demonstrate an sql exception"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#100",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#97",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-update",
    "namespace":"clojure.contrib.sql.test",
@@ -5042,7 +5042,7 @@
    "arglists":[[]],
    "doc":"Update two fruits as a transaction"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#92",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#89",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-update-appearance-cost",
    "namespace":"clojure.contrib.sql.test",
@@ -5050,7 +5050,7 @@
    "arglists":[["name", "appearance", "cost"]],
    "doc":"Update the appearance and cost of the named fruit"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#110",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/test.clj#106",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSqlTestApiDoc#db-update-or-insert",
    "namespace":"clojure.contrib.sql.test",
