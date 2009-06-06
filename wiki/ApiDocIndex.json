@@ -5515,7 +5515,14 @@
    "doc":
    "The root type for the stream hierarchy. For each stream type,\n   add a derivation from this type."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#20",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#70",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#action-translation-table",
+   "namespace":"clojure.contrib.swing-utils",
+   "name":"action-translation-table",
+   "doc":"Translation table for the make-action constructor."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#23",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#add-action-listener",
    "namespace":"clojure.contrib.swing-utils",
@@ -5524,7 +5531,7 @@
    "doc":
    "Adds an ActionLister to component. When the action fires, f will be\n  invoked with the event as its first argument followed by args.\n  Returns the listener."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#30",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#33",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#add-key-typed-listener",
    "namespace":"clojure.contrib.swing-utils",
@@ -5533,7 +5540,16 @@
    "doc":
    "Adds a KeyListener to component that only responds to KeyTyped events.\n  When a key is typed, f is invoked with the KeyEvent as its first argument\n  followed by args. Returns the listener."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#55",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#101",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#add-menu-item",
+   "namespace":"clojure.contrib.swing-utils",
+   "name":"add-menu-item",
+   "arglists":[["parent", "item"]],
+   "doc":
+   "Adds a menu item to the parent according to the item description.\n   The item description is a map of the following structure.\n\n Either:\n   - one single :action specifying a javax.swing.Action to be associated\n     with the item.\n   - a specification suitable for make-action\n   - a set of :name, :mnemonic and :items keys, specifying a submenu with\n     the given sequence of item entries.\n   - an empty map specifying a separator."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#58",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#do-swing",
    "namespace":"clojure.contrib.swing-utils",
@@ -5542,7 +5558,7 @@
    "doc":
    "Executes body in the Swing event thread asynchronously. Returns\n  immediately after scheduling the execution."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#43",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#46",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#do-swing_*",
    "namespace":"clojure.contrib.swing-utils",
@@ -5551,7 +5567,7 @@
    "doc":
    "Runs thunk in the Swing event thread according to schedule:\n    - :later => schedule the execution and return immediately\n    - :now   => wait until the execution completes."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#61",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#64",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#do-swing-and-wait",
    "namespace":"clojure.contrib.swing-utils",
@@ -5559,6 +5575,32 @@
    "arglists":[["&", "body"]],
    "doc":
    "Executes body in the Swing event thread synchronously. Returns\n  after the execution is complete."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#80",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#make-action",
+   "namespace":"clojure.contrib.swing-utils",
+   "name":"make-action",
+   "arglists":[["spec"]],
+   "doc":
+   "Create an Action proxy from the given action spec. The standard keys\n  recognised are: :name, :accelerator, :command-key, :long-desc,\n  :short-desc, :mnemonic and :icon - corresponding to the similar named\n  Action properties.  The :handler value is used in the actionPerformed\n  method of the proxy to pass on the event."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#142",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#make-menubar",
+   "namespace":"clojure.contrib.swing-utils",
+   "name":"make-menubar",
+   "arglists":[["menubar-items"]],
+   "doc":
+   "Create a menubar containing the given sequence of menu items. The menu\n  items are described by a map as is detailed in the docstring of the\n  add-menu-item function."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#97",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribSwingUtilsApiDoc#menu-constructor-dispatch",
+   "namespace":"clojure.contrib.swing-utils",
+   "name":"menu-constructor-dispatch",
+   "doc":
+   "An atom containing the dispatch set for the add-menu-item method."},
   {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/template.clj#173",
    "wiki-url":

@@ -18,8 +18,14 @@ Usage:
 
 ==Public Variables and Functions==
 Shortcuts:
-[#add-action-listener add-action-listener] [#add-key-typed-listener add-key-typed-listener] [#do-swing do-swing] [#do-swing_* do-swing*] [#do-swing-and-wait do-swing-and-wait] 
+[#action-translation-table action-translation-table] [#add-action-listener add-action-listener] [#add-key-typed-listener add-key-typed-listener] [#add-menu-item add-menu-item] [#do-swing do-swing] [#do-swing_* do-swing*] [#do-swing-and-wait do-swing-and-wait] [#make-action make-action] [#make-menubar make-menubar] [#menu-constructor-dispatch menu-constructor-dispatch] 
 
+----
+===action-translation-table===
+====var====
+<pre> Translation table for the make-action constructor.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#70 Source] [http://www.google.com/codesearch?hl=en&lr=&q=action-translation-table+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===add-action-listener===
 ====function====
@@ -30,7 +36,7 @@ Usage: *(_add-action-listener_ component f & args)*
 invoked with the event as its first argument followed by args. 
 Returns the listener.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#20 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-action-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#23 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-action-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===add-key-typed-listener===
 ====function====
@@ -41,7 +47,25 @@ Usage: *(_add-key-typed-listener_ component f & args)*
 When a key is typed, f is invoked with the KeyEvent as its first argument 
 followed by args. Returns the listener.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#30 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-key-typed-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#33 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-key-typed-listener+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===add-menu-item===
+====multimethod====
+<pre>
+Usage: *(_add-menu-item_ parent item)*
+</pre>
+<pre> Adds a menu item to the parent according to the item description. 
+  The item description is a map of the following structure. 
+ 
+Either: 
+  - one single :action specifying a javax.swing.Action to be associated 
+    with the item. 
+  - a specification suitable for make-action 
+  - a set of :name, :mnemonic and :items keys, specifying a submenu with 
+    the given sequence of item entries. 
+  - an empty map specifying a separator.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#101 Source] [http://www.google.com/codesearch?hl=en&lr=&q=add-menu-item+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===do-swing===
 ====macro====
@@ -51,7 +75,7 @@ Usage: *(_do-swing_ & body)*
 <pre> Executes body in the Swing event thread asynchronously. Returns 
 immediately after scheduling the execution.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#55 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===do-swing`*`===
 ====function====
@@ -62,7 +86,7 @@ Usage: *(_do-swing`*`_ schedule thunk)*
 - :later `=`> schedule the execution and return immediately 
 - :now   `=`> wait until the execution completes.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===do-swing-and-wait===
 ====macro====
@@ -72,4 +96,34 @@ Usage: *(_do-swing-and-wait_ & body)*
 <pre> Executes body in the Swing event thread synchronously. Returns 
 after the execution is complete.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#61 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing-and-wait+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=do-swing-and-wait+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===make-action===
+====function====
+<pre>
+Usage: *(_make-action_ spec)*
+</pre>
+<pre> Create an Action proxy from the given action spec. The standard keys 
+recognised are: :name, :accelerator, :command-key, :long-desc, 
+:short-desc, :mnemonic and :icon - corresponding to the similar named 
+Action properties.  The :handler value is used in the actionPerformed 
+method of the proxy to pass on the event.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#80 Source] [http://www.google.com/codesearch?hl=en&lr=&q=make-action+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===make-menubar===
+====function====
+<pre>
+Usage: *(_make-menubar_ menubar-items)*
+</pre>
+<pre> Create a menubar containing the given sequence of menu items. The menu 
+items are described by a map as is detailed in the docstring of the 
+add-menu-item function.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#142 Source] [http://www.google.com/codesearch?hl=en&lr=&q=make-menubar+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===menu-constructor-dispatch===
+====var====
+<pre> An atom containing the dispatch set for the add-menu-item method.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/swing_utils.clj#97 Source] [http://www.google.com/codesearch?hl=en&lr=&q=menu-constructor-dispatch+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
