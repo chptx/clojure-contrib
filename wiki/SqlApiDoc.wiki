@@ -341,7 +341,7 @@ exception. If rollback is set within scope of the outermost transaction,
 the entire transaction will be rolled back rather than committed when 
 complete.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#138 Source] [http://www.google.com/codesearch?hl=en&lr=&q=transaction*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#137 Source] [http://www.google.com/codesearch?hl=en&lr=&q=transaction*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===with-connection`*`===
 ====function====
@@ -362,7 +362,7 @@ Usage: *(_with-query-results`*`_ `[`sql & params :as sql-params`]` func)*
 an argument. The first argument is a vector containing the (optionally 
 parameterized) sql query string followed by values for any parameters.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#172 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-query-results*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/sql/internal.clj#171 Source] [http://www.google.com/codesearch?hl=en&lr=&q=with-query-results*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ==Namespace clojure.contrib.sql.test==
 ----
 ===create-fruit===

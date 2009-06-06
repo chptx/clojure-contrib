@@ -17,9 +17,9 @@ Usage:
   (:require clojure.contrib.except))
 }}}
 ==Overview==
-<pre> Provides functions that make it easy to specify the class and message 
-when throwing an Exception or Error. The optional message is formatted 
-using clojure/format.</pre>
+<pre> Provides functions that make it easy to specify the class, cause, and 
+message when throwing an Exception or Error. The optional message is 
+formatted using clojure.core/format.</pre>
 
 
 ==Public Variables and Functions==
@@ -34,13 +34,14 @@ Usage: *(_throw-arg_ & args)*
 </pre>
 <pre> Throws an IllegalArgumentException. All arguments are optional: 
  
-      format? format-args`*` 
+      cause? format? format-args`*` 
  
-- format is a format string for clojure/format 
+- cause defaults to nil, if present it must be a Throwable 
+- format is a format string for clojure.core/format 
 - format-args are objects that correspond to format specifiers in 
   format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-arg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#57 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-arg+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throw-if===
 ====function====
@@ -50,7 +51,7 @@ Usage: *(_throw-if_ test & args)*
 <pre> Throws an Exception or Error if test is true. args are those documented 
 for throwf.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#42 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#43 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throw-if-not===
 ====function====
@@ -60,7 +61,7 @@ Usage: *(_throw-if-not_ test & args)*
 <pre> Throws an Exception or Error if test is false. args are those documented 
 for throwf.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#49 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if-not+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/except.clj#50 Source] [http://www.google.com/codesearch?hl=en&lr=&q=throw-if-not+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===throwf===
 ====function====
@@ -68,13 +69,14 @@ for throwf.</pre>
 Usage: *(_throwf_ & args)*
 </pre>
 <pre> Throws an Exception or Error with an optional message formatted using 
-clojure/format. All arguments are optional: 
+clojure.core/format. All arguments are optional: 
  
-    class? format? format-args`*` 
+    class? cause? format? format-args`*` 
  
 - class defaults to Exception, if present it must name a kind of 
   Throwable 
-- format is a format string for clojure/format 
+- cause defaults to nil, if present it must be a Throwable 
+- format is a format string for clojure.core/format 
 - format-args are objects that correspond to format specifiers in 
   format.</pre>
 

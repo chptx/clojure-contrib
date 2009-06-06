@@ -208,9 +208,9 @@ Public Variables and Functions:
 by Stephen C. Gilardi<br>
 API Overview [ExceptApiDoc here]
 
-<pre> Provides functions that make it easy to specify the class and message 
-when throwing an Exception or Error. The optional message is formatted 
-using clojure/format.</pre>
+<pre> Provides functions that make it easy to specify the class, cause, and 
+message when throwing an Exception or Error. The optional message is 
+formatted using clojure.core/format.</pre>
 Public Variables and Functions:
 [ExceptApiDoc#throw-arg throw-arg] [ExceptApiDoc#throw-if throw-if] [ExceptApiDoc#throw-if-not throw-if-not] [ExceptApiDoc#throwf throwf] 
 
