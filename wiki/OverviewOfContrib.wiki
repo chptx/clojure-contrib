@@ -339,6 +339,19 @@ Public Variables and Functions:
 [GreatestLeastApiDoc#all-greatest all-greatest] [GreatestLeastApiDoc#all-greatest-by all-greatest-by] [GreatestLeastApiDoc#all-least all-least] [GreatestLeastApiDoc#all-least-by all-least-by] [GreatestLeastApiDoc#greatest greatest] [GreatestLeastApiDoc#greatest-by greatest-by] [GreatestLeastApiDoc#least least] [GreatestLeastApiDoc#least-by least-by] 
 
 ----
+===http.agent===
+API Overview [HttpAgentApiDoc here]
+
+<pre> Agent-based asynchronous HTTP client.</pre>
+----
+===http.connection===
+API Overview [HttpConnectionApiDoc here]
+
+<pre> Low-level HTTP client API around HttpURLConnection</pre>
+Public Variables and Functions:
+[HttpConnectionApiDoc#http-connection http-connection] [HttpConnectionApiDoc#send-request-entity send-request-entity] 
+
+----
 ===import-static===
 by Stuart Sierra<br>
 API Overview [ImportStaticApiDoc here]
@@ -358,7 +371,7 @@ Public Variables and Functions:
 
 ----
 ===java-utils===
-by Stuart Halloway, Stephen C. Gilardi, Shawn Hoover, Perry Trolard<br>
+by Stuart Halloway, Stephen C. Gilardi, Shawn Hoover, Perry Trolard, Stuart Sierra<br>
 API Overview [JavaUtilsApiDoc here]
 
 <pre> A set of utilties for dealing with Java stuff like files and properties. 
@@ -381,7 +394,7 @@ Feedback welcome!
 If something in this module violates the principle of least surprise, please  
 let me (Stu) and the Clojure community know via the mailing list.</pre>
 Public Variables and Functions:
-[JavaUtilsApiDoc#as-file as-file] [JavaUtilsApiDoc#as-properties as-properties] [JavaUtilsApiDoc#as-str as-str] [JavaUtilsApiDoc#file file] [JavaUtilsApiDoc#get-system-property get-system-property] [JavaUtilsApiDoc#read-properties read-properties] [JavaUtilsApiDoc#relative-path-string relative-path-string] [JavaUtilsApiDoc#set-system-properties set-system-properties] [JavaUtilsApiDoc#with-system-properties with-system-properties] [JavaUtilsApiDoc#write-properties write-properties] 
+[JavaUtilsApiDoc#as-file as-file] [JavaUtilsApiDoc#as-properties as-properties] [JavaUtilsApiDoc#as-str as-str] [JavaUtilsApiDoc#as-url as-url] [JavaUtilsApiDoc#file file] [JavaUtilsApiDoc#get-system-property get-system-property] [JavaUtilsApiDoc#read-properties read-properties] [JavaUtilsApiDoc#relative-path-string relative-path-string] [JavaUtilsApiDoc#set-system-properties set-system-properties] [JavaUtilsApiDoc#with-system-properties with-system-properties] [JavaUtilsApiDoc#write-properties write-properties] 
 
 ----
 ===javadoc.browse===

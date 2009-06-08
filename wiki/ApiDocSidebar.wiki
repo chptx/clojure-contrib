@@ -36,6 +36,8 @@ namespace.
 [GenericMathFunctionsApiDoc generic.math-functions]<br/>
 [GraphApiDoc graph]<br/>
 [GreatestLeastApiDoc greatest-least]<br/>
+[HttpAgentApiDoc http.agent]<br/>
+[HttpConnectionApiDoc http.connection]<br/>
 [ImportStaticApiDoc import-static]<br/>
 [JarApiDoc jar]<br/>
 [JavaUtilsApiDoc java-utils]<br/>

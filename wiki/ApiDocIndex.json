@@ -240,6 +240,18 @@
    "doc":
    "Various functions for finding greatest and least values in a collection"},
   {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/http/agent.clj",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribHttpAgentApiDoc",
+   "name":"clojure.contrib.http.agent",
+   "doc":"Agent-based asynchronous HTTP client."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/http/connection.clj",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribHttpConnectionApiDoc",
+   "name":"clojure.contrib.http.connection",
+   "doc":"Low-level HTTP client API around HttpURLConnection"},
+  {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/import_static.clj",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribImportStaticApiDoc",
@@ -259,7 +271,7 @@
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc",
    "name":"clojure.contrib.java-utils",
    "author":
-   "Stuart Halloway, Stephen C. Gilardi, Shawn Hoover, Perry Trolard",
+   "Stuart Halloway, Stephen C. Gilardi, Shawn Hoover, Perry Trolard, Stuart Sierra",
    "doc":
    "A set of utilties for dealing with Java stuff like files and properties.\n\n   Design goals:\n\n   (1) Ease-of-use. These APIs should be convenient. Performance is secondary.\n\n   (2) Duck typing. I hate having to think about the difference between\n       a string that names a file, and a File. Ditto for a ton of other \n       wrapper classes in the Java world (URL, InternetAddress). With these\n       APIs you should be able to think about domain equivalence, not type\n       equivalence.\n\n   (3) No bossiness. I am not marking any of these functions as private\n       the docstrings will tell you the intended usage but do what works for you. \t\t\t\t\t\n\n   Feedback welcome!\n\n   If something in this module violates the principle of least surprise, please \n   let me (Stu) and the Clojure community know via the mailing list.\n"},
   {"source-url":
@@ -2823,6 +2835,21 @@
    "doc":
    "Return the argument for which f yields the smallest value."},
   {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/http/connection.clj#21",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribHttpConnectionApiDoc#http-connection",
+   "namespace":"clojure.contrib.http.connection",
+   "name":"http-connection",
+   "arglists":[["url"]],
+   "doc":"Opens an HttpURLConnection at the URL, handled by as-url."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/http/connection.clj#26",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribHttpConnectionApiDoc#send-request-entity",
+   "namespace":"clojure.contrib.http.connection",
+   "name":"send-request-entity",
+   "doc":"Transmits a request entity body."},
+  {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/import_static.clj#22",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribImportStaticApiDoc#import-static",
@@ -2850,7 +2877,7 @@
    "doc":
    "Returns true if file is a normal file with a .jar or .JAR extension."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#73",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#75",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#as-file",
    "namespace":"clojure.contrib.java-utils",
@@ -2858,7 +2885,7 @@
    "doc":
    "Interpret a String or a java.io.File as a File. Building block\n   for clojure.contrib.java-utils/file, which you should prefer\n   in most cases."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#132",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#134",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#as-properties",
    "namespace":"clojure.contrib.java-utils",
@@ -2867,7 +2894,7 @@
    "doc":
    "Convert any seq of pairs to a java.utils.Properties instance.\n   Uses as-str to convert both keys and values into strings."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#90",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#92",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#as-str",
    "namespace":"clojure.contrib.java-utils",
@@ -2875,7 +2902,15 @@
    "arglists":[["x"]],
    "doc":"Returns the name or string representation of x"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#81",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#160",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#as-url",
+   "namespace":"clojure.contrib.java-utils",
+   "name":"as-url",
+   "arglists":[["arg"]],
+   "doc":"Coerces argument (URL, URI, or String) to a java.net.URL."},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#83",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#file",
    "namespace":"clojure.contrib.java-utils",
@@ -2884,7 +2919,7 @@
    [["arg"], ["parent", "child"], ["parent", "child", "&", "more"]],
    "doc":"Returns a java.io.File from string or file args."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#97",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#99",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#get-system-property",
    "namespace":"clojure.contrib.java-utils",
@@ -2892,7 +2927,7 @@
    "arglists":[["stringable"], ["stringable", "default"]],
    "doc":"Get a system property."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#142",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#144",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#read-properties",
    "namespace":"clojure.contrib.java-utils",
@@ -2900,7 +2935,7 @@
    "arglists":[["file-able"]],
    "doc":"Read properties from file-able."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#60",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#62",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#relative-path-string",
    "namespace":"clojure.contrib.java-utils",
@@ -2908,7 +2943,7 @@
    "doc":
    "Interpret a String or java.io.File as a relative path string. \n   Building block for clojure.contrib.java-utils/file."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#104",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#106",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#set-system-properties",
    "namespace":"clojure.contrib.java-utils",
@@ -2916,7 +2951,7 @@
    "arglists":[["settings"]],
    "doc":"Set some system properties. Nil clears a property."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#112",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#114",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#with-system-properties",
    "namespace":"clojure.contrib.java-utils",
@@ -2925,7 +2960,7 @@
    "doc":
    "setting => property-name value\n\n  Sets the system properties to the supplied values, executes the body, and\n  sets the properties back to their original values. Values of nil are\n  translated to a clearing of the property."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#149",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/java_utils.clj#151",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribJavaUtilsApiDoc#write-properties",
    "namespace":"clojure.contrib.java-utils",
