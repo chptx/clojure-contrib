@@ -343,6 +343,9 @@ Public Variables and Functions:
 API Overview [HttpAgentApiDoc here]
 
 <pre> Agent-based asynchronous HTTP client.</pre>
+Public Variables and Functions:
+[HttpAgentApiDoc#http-agent http-agent] [HttpAgentApiDoc#response-headers-seq response-headers-seq] 
+
 ----
 ===http.connection===
 API Overview [HttpConnectionApiDoc here]

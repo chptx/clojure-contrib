@@ -2835,6 +2835,24 @@
    "doc":
    "Return the argument for which f yields the smallest value."},
   {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/http/agent.clj#51",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribHttpAgentApiDoc#http-agent",
+   "namespace":"clojure.contrib.http.agent",
+   "name":"http-agent",
+   "arglists":[["url", "&", "options"]],
+   "doc":
+   "Creates (and immediately returns) an Agent representing an HTTP\n  request running in a new thread.\n\n  options are key/value pairs:\n\n  :method string\n\n  The HTTP method name.  Default is \"GET\".\n\n  :headers h\n\n  HTTP headers, as a Map or a sequence of pairs like \n  ([key1,value1], [key2,value2])  Default is nil.\n\n  :body b\n  \n  HTTP request entity body, one of nil, String, byte[], InputStream,\n  Reader, or File.  Default is nil.\n\n  :connect-timeout int\n\n  Timeout value, in milliseconds, when opening a connection to the\n  URL.  Default is zero, meaning no timeout.\n\n  :read-timeout int\n\n  Timeout value, in milliseconds, when reading data from the\n  connection.  Default is zero, meaning no timeout.\n\n  :follow-redirects boolean\n\n  If true, HTTP 3xx redirects will be followed automatically.  Default\n  is true.\n  "},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/http/agent.clj#114",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribHttpAgentApiDoc#response-headers-seq",
+   "namespace":"clojure.contrib.http.agent",
+   "name":"response-headers-seq",
+   "arglists":[["http-agnt"]],
+   "doc":
+   "Returns the HTTP response headers in order as a sequence of\n  [String,String] pairs.  The first 'header' name may be null for the\n  HTTP status line."},
+  {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/http/connection.clj#21",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribHttpConnectionApiDoc#http-connection",
