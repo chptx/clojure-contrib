@@ -1,0 +1,65 @@
+#summary condition API Reference
+#sidebar ApiDocSidebar
+
+<wiki:comment>
+This document was auto-generated from the clojure.contrib source by contrib-autodoc.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+</wiki:comment>
+=API for condition=
+by Stephen C. Gilardi
+
+Usage: 
+{{{
+(ns <your-namespace>
+  (:require clojure.contrib.condition))
+}}}
+==Overview==
+<pre> Flexible raising and handling of conditions. A condition is a map 
+containing: 
+  - keys and values specified as arguments to raise, and 
+  - a stack trace at key :stack-trace. 
+ 
+Note: requires AOT compilation.</pre>
+
+
+==Public Variables and Functions==
+Shortcuts:
+[#handler-case handler-case] [#raise raise] 
+
+----
+===handler-case===
+====macro====
+<pre>
+Usage: *(_handler-case_ dispatch-fn condition & body)*
+</pre>
+<pre> Executes body in a context in which any raised conditions can be handled. 
+ 
+dispatch-fn accepts a raised condition: a map, and returns a value used 
+to select a handler. 
+ 
+The name specified by condition is bound to the condition within 
+handlers. 
+ 
+Handlers are forms within body: 
+ 
+  (handle key 
+    ...) 
+ 
+If a condition is raised, executes the body of the first handler whose 
+key satisfies (isa? selector key). If no handlers match, the condition is 
+re-raised.</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===raise===
+====macro====
+<pre>
+Usage: *(_raise_ & keyvals)*
+</pre>
+<pre> Raises a condition with the supplied mappings. 
+keyval `=`> key val</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#34 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

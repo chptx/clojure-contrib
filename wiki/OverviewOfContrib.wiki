@@ -107,6 +107,20 @@ Public Variables and Functions:
 [CondApiDoc#cond-let cond-let] 
 
 ----
+===condition===
+by Stephen C. Gilardi<br>
+API Overview [ConditionApiDoc here]
+
+<pre> Flexible raising and handling of conditions. A condition is a map 
+containing: 
+  - keys and values specified as arguments to raise, and 
+  - a stack trace at key :stack-trace. 
+ 
+Note: requires AOT compilation.</pre>
+Public Variables and Functions:
+[ConditionApiDoc#handler-case handler-case] [ConditionApiDoc#raise raise] 
+
+----
 ===condt===
 by Stuart Sierra<br>
 API Overview [CondtApiDoc here]

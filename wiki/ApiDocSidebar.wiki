@@ -17,6 +17,7 @@ namespace.
 [CommandLineApiDoc command-line]<br/>
 [ComplexNumbersApiDoc complex-numbers]<br/>
 [CondApiDoc cond]<br/>
+[ConditionApiDoc condition]<br/>
 [CondtApiDoc condt]<br/>
 [CoreApiDoc core]<br/>
 [DataflowApiDoc dataflow]<br/>
