@@ -116,7 +116,10 @@ containing:
   - keys and values specified as arguments to raise, and 
   - a stack trace at key :stack-trace. 
  
-Note: requires AOT compilation.</pre>
+Note: requires AOT compilation. 
+ 
+Based on an idea from Chouser: 
+http://groups.google.com/group/clojure/browse`_`frm/thread/da1285c538f22bb5</pre>
 Public Variables and Functions:
 [ConditionApiDoc#handler-case handler-case] [ConditionApiDoc#raise raise] 
 
