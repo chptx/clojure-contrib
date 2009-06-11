@@ -19,6 +19,7 @@ Usage:
 ==Overview==
 <pre> Flexible raising and handling of conditions. A condition is a map 
 containing: 
+ 
   - keys and values specified as arguments to raise, and 
   - a stack trace at key :stack-trace. 
  
@@ -36,33 +37,34 @@ Shortcuts:
 ===handler-case===
 ====macro====
 <pre>
-Usage: *(_handler-case_ dispatch-fn condition & body)*
+Usage: *(_handler-case_ dispatch-fn & body)*
 </pre>
-<pre> Executes body in a context in which any raised conditions can be handled. 
+<pre> Executes body in a context in which raised conditions can be handled. 
  
-dispatch-fn accepts a raised condition: a map, and returns a value used 
-to select a handler. 
- 
-The name specified by condition is bound to the condition within 
-handlers. 
+dispatch-fn accepts a raised condition (a map) and returns a selector 
+value used to choose a handler. 
  
 Handlers are forms within body: 
  
   (handle key 
     ...) 
  
-If a condition is raised, executes the body of the first handler whose 
-key satisfies (isa? selector key). If no handlers match, the condition is 
-re-raised.</pre>
+If a condition is raised, handler-case executes the body of the first 
+handler whose key satisfies (isa? selector key). If no handlers match, 
+the condition is re-raised. 
+ 
+While a handler is running, `*`condition`*` is bound to the condition being 
+handled and `*`selector`*` is bound to to the value returned by dispatch-fn 
+that matched the handler's key.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#46 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#61 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===raise===
 ====macro====
 <pre>
 Usage: *(_raise_ & keyvals)*
 </pre>
-<pre> Raises a condition with the supplied mappings. 
-keyval `=`> key val</pre>
+<pre> Raises a condition with the supplied mappings. With no arguments, 
+re-raises the current condition. (keyval `=`> key val)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#40 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
