@@ -938,6 +938,14 @@
    "doc":
    "Executes body in a context in which raised conditions can be handled.\n\n  dispatch-fn accepts a raised condition (a map) and returns a selector\n  value used to choose a handler.\n\n  Handlers are forms within body:\n\n    (handle key\n      ...)\n\n  If a condition is raised, handler-case executes the body of the first\n  handler whose key satisfies (isa? selector key). If no handlers match,\n  the condition is re-raised.\n\n  While a handler is running, *condition* is bound to the condition being\n  handled and *selector* is bound to to the value returned by dispatch-fn\n  that matched the handler's key."},
   {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#100",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribConditionApiDoc#print-stack-trace",
+   "namespace":"clojure.contrib.condition",
+   "name":"print-stack-trace",
+   "arglists":[["condition"]],
+   "doc":"Prints the stack trace for a condition"},
+  {"source-url":
    "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#52",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribConditionApiDoc#raise",

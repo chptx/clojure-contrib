@@ -31,7 +31,7 @@ http://groups.google.com/group/clojure/browse`_`frm/thread/da1285c538f22bb5</pre
 
 ==Public Variables and Functions==
 Shortcuts:
-[#handler-case handler-case] [#raise raise] 
+[#handler-case handler-case] [#print-stack-trace print-stack-trace] [#raise raise] 
 
 ----
 ===handler-case===
@@ -58,6 +58,15 @@ handled and `*`selector`*` is bound to to the value returned by dispatch-fn
 that matched the handler's key.</pre>
 
 [http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#61 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===print-stack-trace===
+====function====
+<pre>
+Usage: *(_print-stack-trace_ condition)*
+</pre>
+<pre> Prints the stack trace for a condition</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#100 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===raise===
 ====macro====

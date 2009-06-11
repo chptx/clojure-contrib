@@ -122,7 +122,7 @@ Note: requires AOT compilation.
 Based on an idea from Chouser: 
 http://groups.google.com/group/clojure/browse`_`frm/thread/da1285c538f22bb5</pre>
 Public Variables and Functions:
-[ConditionApiDoc#handler-case handler-case] [ConditionApiDoc#raise raise] 
+[ConditionApiDoc#handler-case handler-case] [ConditionApiDoc#print-stack-trace print-stack-trace] [ConditionApiDoc#raise raise] 
 
 ----
 ===condt===
