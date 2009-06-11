@@ -31,49 +31,59 @@ http://groups.google.com/group/clojure/browse`_`frm/thread/da1285c538f22bb5</pre
 
 ==Public Variables and Functions==
 Shortcuts:
-[#handler-case handler-case] [#print-stack-trace print-stack-trace] [#raise raise] 
+[#*_full-stack-traces_* *full-stack-traces*] [#handler-case handler-case] [#print-stack-trace print-stack-trace] [#raise raise] 
 
+----
+===`*`full-stack-traces`*`===
+====var====
+<pre> Bind to true to include clojure.{core,lang,main} frames in stack 
+traces</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*full-stack-traces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===handler-case===
 ====macro====
 <pre>
 Usage: *(_handler-case_ dispatch-fn & body)*
 </pre>
-<pre> Executes body in a context in which raised conditions can be handled. 
+<pre> Executes body in a context where raised conditions can be handled. 
  
 dispatch-fn accepts a raised condition (a map) and returns a selector 
-value used to choose a handler. 
+used to choose a handler. 
  
 Handlers are forms within body: 
  
   (handle key 
     ...) 
  
-If a condition is raised, handler-case executes the body of the first 
-handler whose key satisfies (isa? selector key). If no handlers match, 
-the condition is re-raised. 
+If a condition is raised, executes the body of the first handler whose 
+key satisfies (isa? selector key). If no handlers match, re-raises the 
+condition. 
  
 While a handler is running, `*`condition`*` is bound to the condition being 
 handled and `*`selector`*` is bound to to the value returned by dispatch-fn 
 that matched the handler's key.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#61 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-stack-trace===
 ====function====
 <pre>
 Usage: *(_print-stack-trace_ condition)*
 </pre>
-<pre> Prints the stack trace for a condition</pre>
+<pre> Prints the stack trace for a condition. Skips frames for classes in 
+clojure.{core,lang,main} unless the `*`full-stack-traces`*` is bound to 
+logical true</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#100 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===raise===
 ====macro====
 <pre>
-Usage: *(_raise_ & keyvals)*
+Usage: *(_raise_)
+       (_raise_ & keyvals)*
 </pre>
 <pre> Raises a condition with the supplied mappings. With no arguments, 
 re-raises the current condition. (keyval `=`> key val)</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

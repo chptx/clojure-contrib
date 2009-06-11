@@ -929,29 +929,38 @@
    "doc":
    "Takes a binding-form and a set of test/expr pairs. Evaluates each test\n  one at a time. If a test returns logical true, cond-let evaluates and\n  returns expr with binding-form bound to the value of test and doesn't\n  evaluate any of the other tests or exprs. To provide a default value\n  either provide a literal that evaluates to logical true and is\n  binding-compatible with binding-form, or use :else as the test and don't\n  refer to any parts of binding-form in the expr. (cond-let binding-form)\n  returns nil."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#61",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#52",
+   "wiki-url":
+   "http://code.google.com/p/clojure-contrib/wiki/ClojureContribConditionApiDoc#*_full-stack-traces_*",
+   "namespace":"clojure.contrib.condition",
+   "name":"*full-stack-traces*",
+   "doc":
+   "Bind to true to include clojure.{core,lang,main} frames in stack\n  traces"},
+  {"source-url":
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#64",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribConditionApiDoc#handler-case",
    "namespace":"clojure.contrib.condition",
    "name":"handler-case",
    "arglists":[["dispatch-fn", "&", "body"]],
    "doc":
-   "Executes body in a context in which raised conditions can be handled.\n\n  dispatch-fn accepts a raised condition (a map) and returns a selector\n  value used to choose a handler.\n\n  Handlers are forms within body:\n\n    (handle key\n      ...)\n\n  If a condition is raised, handler-case executes the body of the first\n  handler whose key satisfies (isa? selector key). If no handlers match,\n  the condition is re-raised.\n\n  While a handler is running, *condition* is bound to the condition being\n  handled and *selector* is bound to to the value returned by dispatch-fn\n  that matched the handler's key."},
+   "Executes body in a context where raised conditions can be handled.\n\n  dispatch-fn accepts a raised condition (a map) and returns a selector\n  used to choose a handler.\n\n  Handlers are forms within body:\n\n    (handle key\n      ...)\n\n  If a condition is raised, executes the body of the first handler whose\n  key satisfies (isa? selector key). If no handlers match, re-raises the\n  condition.\n\n  While a handler is running, *condition* is bound to the condition being\n  handled and *selector* is bound to to the value returned by dispatch-fn\n  that matched the handler's key."},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#100",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#104",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribConditionApiDoc#print-stack-trace",
    "namespace":"clojure.contrib.condition",
    "name":"print-stack-trace",
    "arglists":[["condition"]],
-   "doc":"Prints the stack trace for a condition"},
+   "doc":
+   "Prints the stack trace for a condition. Skips frames for classes in\n  clojure.{core,lang,main} unless the *full-stack-traces* is bound to\n  logical true"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#52",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#56",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribConditionApiDoc#raise",
    "namespace":"clojure.contrib.condition",
    "name":"raise",
-   "arglists":[["&", "keyvals"]],
+   "arglists":[[], ["&", "keyvals"]],
    "doc":
    "Raises a condition with the supplied mappings. With no arguments,\n  re-raises the current condition. (keyval => key val)"},
   {"source-url":
