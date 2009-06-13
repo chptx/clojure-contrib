@@ -39,7 +39,7 @@ Shortcuts:
 <pre> Bind to true to include clojure.{core,lang,main} frames in stack 
 traces</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#52 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*full-stack-traces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*full-stack-traces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===handler-case===
 ====macro====
@@ -64,7 +64,7 @@ While a handler is running, `*`condition`*` is bound to the condition being
 handled and `*`selector`*` is bound to to the value returned by dispatch-fn 
 that matched the handler's key.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#64 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#69 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-stack-trace===
 ====function====
@@ -75,15 +75,17 @@ Usage: *(_print-stack-trace_ condition)*
 clojure.{core,lang,main} unless the `*`full-stack-traces`*` is bound to 
 logical true</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#104 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#103 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===raise===
 ====macro====
 <pre>
 Usage: *(_raise_)
-       (_raise_ & keyvals)*
+       (_raise_ m)
+       (_raise_ key val & keyvals)*
 </pre>
-<pre> Raises a condition with the supplied mappings. With no arguments, 
-re-raises the current condition. (keyval `=`> key val)</pre>
+<pre> Raises a condition. With no arguments, re-raises the current condition. 
+With one argument (a map), raises the argument. With two or more 
+arguments, raises a map with keys and values from the arguments.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
