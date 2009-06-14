@@ -45,7 +45,7 @@ Usage: *(_`*`code-dispatch`*`_ object)*
 </pre>
 <pre> The pretty print dispatch function for pretty printing Clojure code.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#317 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*code-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#353 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*code-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===`*`print-circle`*`===
 ====var====
@@ -108,7 +108,7 @@ Usage: *(_`*`simple-dispatch`*`_ object)*
 </pre>
 <pre> The pretty print dispatch function for simple data structure format.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#88 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*simple-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#124 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*simple-dispatch*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===cl-format===
 ====function====

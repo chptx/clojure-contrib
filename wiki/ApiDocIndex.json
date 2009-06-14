@@ -3815,7 +3815,7 @@
    "doc":
    "Returns a sorted seq of symbols naming public vars in\n  a namespace"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#317",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#353",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_code-dispatch_*",
    "namespace":"clojure.contrib.pprint",
@@ -3886,7 +3886,7 @@
    "doc":
    "Don't print namespaces with symbols. This is particularly useful when \npretty printing the results of macro expansions"},
   {"source-url":
-   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#88",
+   "http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/pprint/dispatch.clj#124",
    "wiki-url":
    "http://code.google.com/p/clojure-contrib/wiki/ClojureContribPprintApiDoc#*_simple-dispatch_*",
    "namespace":"clojure.contrib.pprint",
