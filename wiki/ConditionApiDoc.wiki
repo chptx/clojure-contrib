@@ -17,11 +17,23 @@ Usage:
   (:require clojure.contrib.condition))
 }}}
 ==Overview==
-<pre> Flexible raising and handling of conditions. A condition is a map 
-containing: 
+<pre> Flexible raising and handling of conditions: 
  
-  - keys and values specified as arguments to raise, and 
-  - a stack trace at key :stack-trace. 
+Functions: 
+ 
+              raise: raises a condition 
+       handler-case: dispatches raised conditions to appropriate handlers 
+  print-stack-trace: prints abbreviated or full condition stack traces 
+ 
+Data: 
+ 
+  A condition is a map containing values for these keys: 
+ 
+    - :type, a condition type specifier, typically a keyword 
+    - :stack-trace, a stack trace to the site of the raise 
+    - :message, a human-readable message (optional) 
+    - :cause, a wrapped exception or condition (optional) 
+    - other keys given as arguments to raise (optional) 
  
 Note: requires AOT compilation. 
  
@@ -31,7 +43,7 @@ http://groups.google.com/group/clojure/browse`_`frm/thread/da1285c538f22bb5</pre
 
 ==Public Variables and Functions==
 Shortcuts:
-[#*_full-stack-traces_* *full-stack-traces*] [#handler-case handler-case] [#print-stack-trace print-stack-trace] [#raise raise] 
+[#*_full-stack-traces_* *full-stack-traces*] [#handler-case handler-case] [#print-stack-trace print-stack-trace] [#raise raise] [#stack-trace-info stack-trace-info] 
 
 ----
 ===`*`full-stack-traces`*`===
@@ -39,7 +51,7 @@ Shortcuts:
 <pre> Bind to true to include clojure.{core,lang,main} frames in stack 
 traces</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#54 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*full-stack-traces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#56 Source] [http://www.google.com/codesearch?hl=en&lr=&q=*full-stack-traces*+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===handler-case===
 ====macro====
@@ -49,7 +61,8 @@ Usage: *(_handler-case_ dispatch-fn & body)*
 <pre> Executes body in a context where raised conditions can be handled. 
  
 dispatch-fn accepts a raised condition (a map) and returns a selector 
-used to choose a handler. 
+used to choose a handler. Commonly, dispatch-fn will be :type to dispatch 
+on the condition's :type value. 
  
 Handlers are forms within body: 
  
@@ -64,18 +77,18 @@ While a handler is running, `*`condition`*` is bound to the condition being
 handled and `*`selector`*` is bound to to the value returned by dispatch-fn 
 that matched the handler's key.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#69 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#71 Source] [http://www.google.com/codesearch?hl=en&lr=&q=handler-case+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===print-stack-trace===
 ====function====
 <pre>
-Usage: *(_print-stack-trace_ condition)*
+Usage: *(_print-stack-trace_ x)*
 </pre>
-<pre> Prints the stack trace for a condition. Skips frames for classes in 
-clojure.{core,lang,main} unless the `*`full-stack-traces`*` is bound to 
-logical true</pre>
+<pre> Prints a stack trace for a condition or Throwable. Skips frames for 
+classes in clojure.{core,lang,main} unless the `*`full-stack-traces`*` is 
+bound to logical true</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#103 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#128 Source] [http://www.google.com/codesearch?hl=en&lr=&q=print-stack-trace+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
 ----
 ===raise===
 ====macro====
@@ -88,4 +101,12 @@ Usage: *(_raise_)
 With one argument (a map), raises the argument. With two or more 
 arguments, raises a map with keys and values from the arguments.</pre>
 
-[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#58 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#60 Source] [http://www.google.com/codesearch?hl=en&lr=&q=raise+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]
+----
+===stack-trace-info===
+====multimethod====
+_No usage documentation available_
+<pre> Returns header, stack-trace, and cause info from conditions and 
+Throwables</pre>
+
+[http://code.google.com/p/clojure-contrib/source/browse/trunk/src/clojure/contrib/condition.clj#106 Source] [http://www.google.com/codesearch?hl=en&lr=&q=stack-trace-info+package%3Ahttp%3A%2F%2Fclojure-contrib\.googlecode\.com&sbtn=Search Search for references in contrib]

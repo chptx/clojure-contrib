@@ -111,18 +111,30 @@ Public Variables and Functions:
 by Stephen C. Gilardi<br>
 API Overview [ConditionApiDoc here]
 
-<pre> Flexible raising and handling of conditions. A condition is a map 
-containing: 
+<pre> Flexible raising and handling of conditions: 
  
-  - keys and values specified as arguments to raise, and 
-  - a stack trace at key :stack-trace. 
+Functions: 
+ 
+              raise: raises a condition 
+       handler-case: dispatches raised conditions to appropriate handlers 
+  print-stack-trace: prints abbreviated or full condition stack traces 
+ 
+Data: 
+ 
+  A condition is a map containing values for these keys: 
+ 
+    - :type, a condition type specifier, typically a keyword 
+    - :stack-trace, a stack trace to the site of the raise 
+    - :message, a human-readable message (optional) 
+    - :cause, a wrapped exception or condition (optional) 
+    - other keys given as arguments to raise (optional) 
  
 Note: requires AOT compilation. 
  
 Based on an idea from Chouser: 
 http://groups.google.com/group/clojure/browse`_`frm/thread/da1285c538f22bb5</pre>
 Public Variables and Functions:
-[ConditionApiDoc#*_full-stack-traces_* *full-stack-traces*] [ConditionApiDoc#handler-case handler-case] [ConditionApiDoc#print-stack-trace print-stack-trace] [ConditionApiDoc#raise raise] 
+[ConditionApiDoc#*_full-stack-traces_* *full-stack-traces*] [ConditionApiDoc#handler-case handler-case] [ConditionApiDoc#print-stack-trace print-stack-trace] [ConditionApiDoc#raise raise] [ConditionApiDoc#stack-trace-info stack-trace-info] 
 
 ----
 ===condt===
