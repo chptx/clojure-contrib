@@ -1,6 +1,7 @@
-This library, clojure-contrib, has a dependency on Clojure: the clojure-lang JAR file. This is needed to compile the Clojure classes.
-Normally, it is specified using -Dclojure.jar=<path>.
+THIS PROJECT HAS MOVED
 
-The nightly-build and stable-build targets are intended for use on the Tapestry360 continuous integration server
-(http://tapestry.formos.com/bamboo). They require the presense of the Maven Ant Tasks in the Ant lib folder.
+clojure-contrib source code can now be found on github:
+http://github.com/richhickey/clojure-contrib
 
+With additional information at Assembla:
+http://www.assembla.com/spaces/dashboard/index/clojure-contrib
