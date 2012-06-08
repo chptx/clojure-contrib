@@ -2,6 +2,4 @@
 
 =The User Contributions Library, clojure.contrib=
 
-The code and documentation for clojure.contrib has moved to github. 
-
-To see the new documentation, go to http://richhickey.github.com/clojure-contrib/index.html
+Clojure contrib has been split into separate libraries. For a complete overview, see the Clojure dev [http://dev.clojure.org/display/doc/Clojure+Contrib wiki].
